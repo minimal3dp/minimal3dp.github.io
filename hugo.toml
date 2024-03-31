@@ -51,17 +51,6 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
-# Language configuration
-
-[languages]
-[languages.en]
-languageName ="English"
-# Weight used for sorting.
-weight = 1
-[languages.en.params]
-title = "Minimal 3DP"
-description = “All Things 3D Printing”
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.parser.attribute]
