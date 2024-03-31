@@ -1,35 +1,31 @@
 ---
-title: About Goldydocs
+title: About Minimal 3DP
 linkTitle: About
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="About Goldydocs" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="About Minimal 3DP" image_anchor="bottom" height="auto" %}}
 
-A sample site using the Docsy Hugo theme.
-{.mt-5}
+<br />
+<br />
+<br />
+<br />
+<br />
+
 
 {{% /blocks/cover %}}
 
 {{% blocks/lead %}}
 
-Goldydocs is a sample site using the [Docsy](https://github.com/google/docsy)
-Hugo theme that shows what it can do and provides you with a template site
-structure. It’s designed for you to clone and edit as much as you like. See the
-different sections of the documentation and site for more ideas.
+My Name is Mike Wilson
+
+*NEED HELP?*
+
+Schedule a FREE 15-minute Google Meet Consultation: 
+
+[Schedule 15 Minutes](https://calendly.com/minimal3dp/m3dp-15-minute-session)
+
+NEED MORE HELP? Contact me regarding a 1-2 Help Session. I can be reached at minimal3dp@gmail.com.
 
 {{% /blocks/lead %}}
 
-{{% blocks/section %}}
-
-# This is another section
-{.text-center}
-
-{{% /blocks/section %}}
-
-{{% blocks/section %}}
-
-# This is another section
-{.text-center}
-
-{{% /blocks/section %}}
