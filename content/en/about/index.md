@@ -28,4 +28,3 @@ Schedule a FREE 15-minute Google Meet Consultation:
 NEED MORE HELP? Contact me regarding a 1-2 Help Session. I can be reached at minimal3dp@gmail.com.
 
 {{% /blocks/lead %}}
-
