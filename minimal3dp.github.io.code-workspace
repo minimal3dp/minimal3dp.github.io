@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#02360D",
+			"titleBar.activeBackground": "#024B12",
+			"titleBar.activeForeground": "#ECFEF0"
+		},
+		"cSpell.words": [
+			"Lastmod",
+			"Subdir"
+		]
+	}
+}
