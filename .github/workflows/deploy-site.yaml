@@ -1,5 +1,7 @@
 name: Deploy to Github Pages
 
+# v1
+
 # run when a commit is pushed to "main" branch
 on:
   push:
