@@ -1,8 +1,6 @@
 name: Deploy to Github Pages
 
-# v1.01
-
-# run when a commit is pushed to "main" branch
+# run when a commit is pushed to "source" branch
 on:
   push:
     branches:
@@ -33,9 +31,9 @@ jobs:
       run: |
         hugo mod npm pack
         npm install        
-			
-		- name: Build
-		  run: hugo --minify
+
+    - name: Build
+      run: hugo --minify
 
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
