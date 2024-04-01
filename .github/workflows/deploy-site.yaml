@@ -33,9 +33,6 @@ jobs:
       run: |
         hugo mod npm pack
         npm install        
-
-    - name: Clean
-      run: hugo --cleanDestinationDir
 			
 		- name: Build
 		  run: hugo --minify
