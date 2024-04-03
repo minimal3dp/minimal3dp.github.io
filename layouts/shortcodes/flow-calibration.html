@@ -1,52 +1,60 @@
 <div class="container">
     <form method="post" id="myform">
         <div class="row mb-3">
-            <div class="col-xl-6">
-                <label for="initial_mark_distance" class="form-label">Initial Mark Distance:</label>
-                <input type="number" class="form-control" name="initial_mark_distance" id="initial_mark_distance"
-                    value="70" />
+            <div class="col-md-6">
+                <label for="nozzle" class="form-label">Nozzle Dieameter</label>
+                <input type="number" value=".4" class="form-control" name="nozzle" id="nozzle" />
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-xl-6">
-                <label for="requested_extrude_distance" class="form-label">Requested Extrude Distance</label>
-                <input type="number" class="form-control" name="requested_extrude_distance"
-                    id="requested_extrude_distance" value="50" />
+            <div class="col-md-6">
+                <label for="m1" class="form-label">Measurement 1</label>
+                <input type="number" class="form-control" name="m1" id="m1" />
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-xl-6">
-                <label for="measured_extrude_distance" class="form-label">Measured Extrude Distance</label>
-                <input type="number" class="form-control" name="measured_extrude_distance"
-                    id="measured_extrude_distance" />
+            <div class="col-md-6">
+                <label for="m2" class="form-label">Measurement 2</label>
+                <input type="number" class="form-control" name="m2" id="m2" />
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-xl-6">
-                <label for="previous_rotation_distance" class="form-label">Previous Extruder Rotational
-                    Distance:</label>
-                <input type="number" class="form-control" name="previous_rotation_distance"
-                    id="previous_rotation_distance" />
+            <div class="col-md-6">
+                <label for="m3" class="form-label">Measurement 3</label>
+                <input type="number" class="form-control" name="m3" id="m3" />
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-xl-6">
-                <label for="rotational_distance" class="form-label">Extruder Rotation Distance:</label>
-                <input type="number" class="form-control" name="rotational_distance" id="rotational_distance" />
+            <div class="col-md-6">
+                <label for="m4" class="form-label">Measurement 4</label>
+                <input type="number" class="form-control" name="m4" id="m4" />
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-xl-6 d-flex align-items-center">
-                <label>Copy Value and Paste into Printer.cfg</label>
+            <div class="col-md-6">
+                <label for="average" class="form-label">Average Value</label>
+                <input type="number" class="form-control" name="average" id="average" disabled />
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-xl-6 d-flex align-items-center">
+            <div class="col-md-6">
+                <label for="flow" class="form-label">Flow Rate</label>
+                <input type="number" class="form-control" name="flow" id="flow" disabled />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+                <label>Copy and Paste Value into Slicer</label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 d-flex align-items-center">
                 <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
-                    type="button" onclick="rdRunner()">Calculate</button>
+                    type="button" onclick="fcRunner()">Calculate</button>
             </div>
         </div>
     </form>
 </div>
 
-<script src="/js/rotational-distance.js"></script>
+
+<script src="/js/flow-calibration.js"></script>

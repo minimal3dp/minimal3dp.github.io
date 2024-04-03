@@ -117,7 +117,15 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>2: <a href="#pg-49e2e0bfdee399f8c7043c22c27e0047">Flow Calibratipn</a></li>
+<li>2: <a href="#pg-49e2e0bfdee399f8c7043c22c27e0047">Flow Calibration</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-11c59b7c3fe7807b1ed88b2dd5be6dc8">Run Current for TMC2208/2209</a></li>
 
 
     
@@ -174,32 +182,55 @@ This is the multi-page printable view of this section.
 <pre tabindex="0"><code>G91
 G1 E50 F60
 </code></pre><h2 id="rotational-distance-calculator">Rotational Distance Calculator<a class="td-heading-self-link" href="#rotational-distance-calculator" aria-label="Heading self-link"></a></h2>
-<form id="rd">
-  
-    <label for="initial_mark_distance">Initial Mark Distance:</label><br>
-    <input type="text" id="initial_mark_distance" name="initial_mark_distance" value="70"><b>*</b><br>
-    <br>
-    <label for="requested_extrude_distance">Requested Extrude Distance:</label><br>
-    <input type="text" id="requested_extrude_distance" name="requested_extrude_distance" value="50"><b>*</b><br>   <br>
-    
-      <label for="measured_extrude_distance">Measured Extrude Distance:</label><br>
-    <input type="text" id="measured_extrude_distance" name="measured_extrude_distance" value="0"><br>   <br>
-    
-    <label for="previous_rotation_distance">Previous Extruder Rotational Distance:</label><br>
-    <input type="text" id="previous_rotation_distance" name="previous_rotation_distance" value="0"><br>   <br>
-    
-    <b>Extruder Rotation Distance: <input type="text" id="rotational_distance" name="rotational-distance" value="0" disabled></b> <br>
-    <br>
-    <button type="button" onclick="rdRunner()">
-          Calculate
-      </button>
-  </form> 
-  <br />
-  
-  <b>*</b> Optional Edit
-  <br />
+<div class="container">
+  <form id="myform">
+    <div class="row mb-3">
+      <div class="col-xl-6">
+        <label for="initial_mark_distance" class="form-label">Initial Mark Distance:</label>
+        <input type="number" class="form-control" name="initial_mark_distance" id="initial_mark_distance" value="70" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-xl-6">
+        <label for="requested_extrude_distance" class="form-label">Requested Extrude Distance</label>
+        <input type="number" class="form-control" name="requested_extrude_distance" id="requested_extrude_distance"
+          value="50" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-xl-6">
+        <label for="measured_extrude_distance" class="form-label">Measured Extrude Distance</label>
+        <input type="number" class="form-control" name="measured_extrude_distance" id="measured_extrude_distance" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-xl-6">
+        <label for="previous_rotation_distance" class="form-label">Previous Extruder Rotational
+          Distance:</label>
+        <input type="number" class="form-control" name="previous_rotation_distance" id="previous_rotation_distance" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-xl-6">
+        <label for="rotational_distance" class="form-label">Extruder Rotation Distance:</label>
+        <input type="number" class="form-control" name="rotational_distance" id="rotational_distance" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-xl-6 d-flex align-items-center">
+        <label>Copy Value and Paste into Printer.cfg</label>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-xl-6 d-flex align-items-center">
+        <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;" type="button"
+          onclick="rdRunner()">Calculate</button>
+      </div>
+    </div>
+  </form>
+</div>
 
-  <script src="/js/rotational-distance.js"></script>
+<script src="/js/rotational-distance.js"></script>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 <p>The value calculated should be pasted into your printer.cfg file under &ldquo;Extruder&rdquo;.</p>
 <pre tabindex="0"><code>[extruder]
@@ -235,54 +266,180 @@ max_extrude_cross_section: 4
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-49e2e0bfdee399f8c7043c22c27e0047">2 - Flow Calibratipn</h1>
-    
+	<h1 id="pg-49e2e0bfdee399f8c7043c22c27e0047">2 - Flow Calibration</h1>
+    <div class="lead">Calibrate the Flow of your Extruder in your Slicer</div>
 	<h1 id="flow-calibration">Flow Calibration<a class="td-heading-self-link" href="#flow-calibration" aria-label="Heading self-link"></a></h1>
 <h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
-<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="slicer-settings">Slicer Settings<a class="td-heading-self-link" href="#slicer-settings" aria-label="Heading self-link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Slicer Settings</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Layer Height</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>Paerimeters</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Line Width</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>Print Thin Walls</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Top Layer</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Bottom Layer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Infill</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
 <h2 id="flow-calibration-calculator">Flow Calibration Calculator<a class="td-heading-self-link" href="#flow-calibration-calculator" aria-label="Heading self-link"></a></h2>
-
 <div class="container">
     <form method="post" id="myform">
         <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="nozzle" class="form-label">Nozzle Dieameter</label>
+                <input type="number" value=".4" class="form-control" name="nozzle" id="nozzle" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="m1" class="form-label">Measurement 1</label>
+                <input type="number" class="form-control" name="m1" id="m1" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="m2" class="form-label">Measurement 2</label>
+                <input type="number" class="form-control" name="m2" id="m2" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="m3" class="form-label">Measurement 3</label>
+                <input type="number" class="form-control" name="m3" id="m3" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="m4" class="form-label">Measurement 4</label>
+                <input type="number" class="form-control" name="m4" id="m4" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="average" class="form-label">Average Value</label>
+                <input type="number" class="form-control" name="average" id="average" disabled />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="flow" class="form-label">Flow Rate</label>
+                <input type="number" class="form-control" name="flow" id="flow" disabled />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+                <label>Copy and Paste Value into Slicer</label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button" onclick="fcRunner()">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="/js/flow-calibration.js"></script>
+
+<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-11c59b7c3fe7807b1ed88b2dd5be6dc8">3 - Run Current for TMC2208/2209</h1>
+    <div class="lead">Calculate your Run Current for your Steppers</div>
+	<h1 id="run-current-for-tmc22082209">Run Current for TMC2208/2209<a class="td-heading-self-link" href="#run-current-for-tmc22082209" aria-label="Heading self-link"></a></h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="rotational-distance-calculator">Rotational Distance Calculator<a class="td-heading-self-link" href="#rotational-distance-calculator" aria-label="Heading self-link"></a></h2>
+<div class="container">
+    <form id="myform">
+        <div class="row mb-3">
             <div class="col-xl-6">
-                <label for="initial_mark_distance" class="form-label">Initial Mark Distance:</label>
-                <input type="number" class="form-control" name="initial_mark_distance" id="initial_mark_distance"
-                    value="70" />
+                <label for="peak_current" class="form-label">Peak Current</label>
+                <input type="number" class="form-control" name="peak_current" id="peak_current" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>See Motor Spec Sheet</i></label>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col-xl-6">
-                <label for="requested_extrude_distance" class="form-label">Requested Extrude Distance</label>
-                <input type="number" class="form-control" name="requested_extrude_distance"
-                    id="requested_extrude_distance" value="50" />
+                <label for="rms_factor" class="form-label">RMS Factor</label>
+                <input type="number" class="form-control" disabled name="rms_factor" id="rms_factor" value="0.707" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>See Reference for more info</i></label>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col-xl-6">
-                <label for="measured_extrude_distance" class="form-label">Measured Extrude Distance</label>
-                <input type="number" class="form-control" name="measured_extrude_distance"
-                    id="measured_extrude_distance" />
+                <label for="run_current" class="form-label">Run Current</label>
+                <input type="number" class="form-control" name="run_current" disabled id="run_current" />
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-xl-6">
-                <label for="previous_rotation_distance" class="form-label">Previous Extruder Rotational
-                    Distance:</label>
-                <input type="number" class="form-control" name="previous_rotation_distance"
-                    id="previous_rotation_distance" />
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Copy and Paste into Printer.cfg</i></label>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col-xl-6 d-flex align-items-center">
                 <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
-                    type="submit">Calculate</button>
+                    type="button" onclick="rcRunner()">Calculate</button>
             </div>
         </div>
     </form>
 </div>
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 
+<script src="/js/run-current.js"></script>
+<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<pre tabindex="0"><code></code></pre>
 </div>
 
 
