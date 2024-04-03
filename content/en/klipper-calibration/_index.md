@@ -1,12 +1,11 @@
 ---
 title: Klipper Calibration
-menu: {main: {weight: 40}}
+menu: { main: { weight: 40 } }
 cascade:
   - type: "docs"
 categories: [Landing Page]
 tags: [calibration, how-to]
 ---
-
 
 {{% pageinfo %}}
 Minimal 3DP Klipper Calibration Website - A Work in Progress

@@ -1,0 +1,52 @@
+<div class="container">
+    <form method="post" id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="initial_mark_distance" class="form-label">Initial Mark Distance:</label>
+                <input type="number" class="form-control" name="initial_mark_distance" id="initial_mark_distance"
+                    value="70" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="requested_extrude_distance" class="form-label">Requested Extrude Distance</label>
+                <input type="number" class="form-control" name="requested_extrude_distance"
+                    id="requested_extrude_distance" value="50" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="measured_extrude_distance" class="form-label">Measured Extrude Distance</label>
+                <input type="number" class="form-control" name="measured_extrude_distance"
+                    id="measured_extrude_distance" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="previous_rotation_distance" class="form-label">Previous Extruder Rotational
+                    Distance:</label>
+                <input type="number" class="form-control" name="previous_rotation_distance"
+                    id="previous_rotation_distance" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="rotational_distance" class="form-label">Extruder Rotation Distance:</label>
+                <input type="number" class="form-control" name="rotational_distance" id="rotational_distance" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label>Copy Value and Paste into Printer.cfg</label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button" onclick="rdRunner()">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="/js/rotational-distance.js"></script>
