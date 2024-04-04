@@ -26,6 +26,8 @@ The maximum Klipper RUN current settings can be calculated via the following ste
 3. Round down to the nearest .1
 4. Verify settings for each motor. 
 
+** maximum capacity of the 2209 driver is 1.2 Amps. **
+
 ## Run Current Calculator
 
 {{< run-current >}}
