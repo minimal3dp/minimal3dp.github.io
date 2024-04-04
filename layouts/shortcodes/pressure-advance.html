@@ -1,0 +1,49 @@
+<div class="container">
+    <form method="post" id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="start" class="form-label">Start</label>
+                <input type="number" class="form-control" name="start" value="0" id="start" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="ddf" class="form-label">Direct Drive Factor</label>
+                <input type="number" class="form-control" disabled name="ddf" id="ddf" value="0.005" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="bf" class="form-label">Bowden Factor</label>
+                <input type="number" class="form-control" disabled name="bf" id="bf" value="0.02" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="measured_height" class="form-label">Measured Height</label>
+                <input type="number" class="form-control" name="measured_height" id="measured_height" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="dd_pa" class="form-label">Direct Drive Pressure Advance</label>
+                <input type="number" class="form-control" disabled name="dd_pa" id="dd_pa" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="b_pa" class="form-label">Bowden Pressure Advance</label>
+                <input type="number" class="form-control" disabled name="b_pa" id="b_pa" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="/js/pressure-advance.js"></script>
+
