@@ -11,16 +11,15 @@ function paRunner() {
 
 function pressureAdvance() {
 
-    let ddf_val = parseFloat(ddf.value);
-    let bf_val = parseFloat(bf.value);
-    let start_val = parseFloat(start.value);
-    let measured_height_val = parseFloat(measured_height.value);
+    let ddf_val = ddf.value;
+    let bf_val = bf.value;
+    let measured_height_val = measured_height.value;
 
-    let dd_pa_val = start_val + measured_height_val * ddf_val;
-    let b_pa_val = start_val + measured_height_val * bf_val;
+    let dd_pa_val = ddf_val - measured_height_val;
+    let b_pa_val = bf_val - measured_height_val;
 
-    dd_pa.value = dd_pa_val.toString();
-    b_pa.value = b_pa_val.toString();
+    dd_pa.value = dd_pa_val;
+    b_pa.value = b_pa_val;
 
     console.log('DD_PA: ', dd_pa_val);
     console.log('B_PA: ', b_pa_val);
