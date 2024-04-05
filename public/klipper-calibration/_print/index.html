@@ -130,6 +130,14 @@ This is the multi-page printable view of this section.
 
     
   
+    
+    
+	
+<li>4: <a href="#pg-ab177cc82acb1e91a799daa7b31c4072">Pressure Advance</a></li>
+
+
+    
+  
 
     </ul>
 
@@ -269,7 +277,12 @@ max_extrude_cross_section: 4
 	<h1 id="pg-49e2e0bfdee399f8c7043c22c27e0047">2 - Flow Calibration</h1>
     <div class="lead">Calibrate the Flow of your Extruder in your Slicer</div>
 	<h1 id="flow-calibration">Flow Calibration<a class="td-heading-self-link" href="#flow-calibration" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="from-3d-print-beginner">From 3D Print Beginner<a class="td-heading-self-link" href="#from-3d-print-beginner" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>The flow rate calibration is done in order to fine tune the amount of plastic extruded by the printer. Also known as Extrusion Multiplier, by calibrating the flow rate you can fix issues caused by under-extrusion or over-extrusion. Besides this, flow rate calibration can also improve retraction values a bit and help with bulging corners and layer seam.
+If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).</p>
+</blockquote>
+<p><a href="https://3dprintbeginner.com/flow-rate-calibration/">Flow Rate Calibration – Improve Print Accuracy</a></p>
 <h2 id="slicer-settings">Slicer Settings<a class="td-heading-self-link" href="#slicer-settings" aria-label="Heading self-link"></a></h2>
 <table>
 <thead>
@@ -371,7 +384,10 @@ max_extrude_cross_section: 4
 
 <script src="/js/flow-calibration.js"></script>
 
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="update-your-slicer">Update Your Slicer<a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link"></a></h2>
+<h3 id="cura">Cura<a class="td-heading-self-link" href="#cura" aria-label="Heading self-link"></a></h3>
+<h3 id="prusaslicer">PrusaSlicer<a class="td-heading-self-link" href="#prusaslicer" aria-label="Heading self-link"></a></h3>
+<h3 id="orca-slicer">Orca Slicer<a class="td-heading-self-link" href="#orca-slicer" aria-label="Heading self-link"></a></h3>
 
 </div>
 
@@ -389,10 +405,22 @@ max_extrude_cross_section: 4
     
 	<h1 id="pg-11c59b7c3fe7807b1ed88b2dd5be6dc8">3 - Run Current for TMC2208/2209</h1>
     <div class="lead">Calculate your Run Current for your Steppers</div>
-	<h1 id="run-current-for-tmc22082209">Run Current for TMC2208/2209<a class="td-heading-self-link" href="#run-current-for-tmc22082209" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
-<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
-<h2 id="rotational-distance-calculator">Rotational Distance Calculator<a class="td-heading-self-link" href="#rotational-distance-calculator" aria-label="Heading self-link"></a></h2>
+	<h1 id="run-current">Run Current<a class="td-heading-self-link" href="#run-current" aria-label="Heading self-link"></a></h1>
+<h2 id="from-the-voron-docs">From the Voron Docs<a class="td-heading-self-link" href="#from-the-voron-docs" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.</p>
+</blockquote>
+<p><a href="https://docs.vorondesign.com/community/howto/120decibell/calculating_driver_current.html#:~:text=Calculating%20Currents,is%20the%20maximum%20run%20current.">Calculating Driver Current Settings</a></p>
+<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<p>The maximum Klipper RUN current settings can be calculated via the following steps:</p>
+<ol>
+<li>Use the peak current limit from the stepper specifications sheet for the stepper motor.</li>
+<li>Multiply the peak current by 0.707 to determine the max run current in RMS.</li>
+<li>Round down to the nearest .1</li>
+<li>Verify settings for each motor.</li>
+</ol>
+<p>** maximum capacity of the 2209 driver is 1.2 Amps. **</p>
+<h2 id="run-current-calculator">Run Current Calculator<a class="td-heading-self-link" href="#run-current-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form id="myform">
         <div class="row mb-3">
@@ -438,6 +466,79 @@ max_extrude_cross_section: 4
 </div>
 
 <script src="/js/run-current.js"></script>
+<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<p>Edit the run current for each motor.</p>
+<pre tabindex="0"><code></code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-ab177cc82acb1e91a799daa7b31c4072">4 - Pressure Advance</h1>
+    <div class="lead">Calculate the ideal Pressure Advance</div>
+	<h1 id="pressure-advance">Pressure Advance<a class="td-heading-self-link" href="#pressure-advance" aria-label="Heading self-link"></a></h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="pressure-advance-calculator">Pressure Advance Calculator<a class="td-heading-self-link" href="#pressure-advance-calculator" aria-label="Heading self-link"></a></h2>
+<div class="container">
+    <form method="post" id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="start" class="form-label">Start</label>
+                <input type="number" class="form-control" name="start" value="0" id="start" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="ddf" class="form-label">Direct Drive Factor</label>
+                <input type="number" class="form-control" disabled name="ddf" id="ddf" value="0.005" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="bf" class="form-label">Bowden Factor</label>
+                <input type="number" class="form-control" disabled name="bf" id="bf" value="0.02" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="measured_height" class="form-label">Measured Height</label>
+                <input type="number" class="form-control" name="measured_height" id="measured_height" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="dd_pa" class="form-label">Direct Drive Pressure Advance</label>
+                <input type="number" class="form-control" disabled name="dd_pa" id="dd_pa" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="b_pa" class="form-label">Bowden Pressure Advance</label>
+                <input type="number" class="form-control" disabled name="b_pa" id="b_pa" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button" onclick="paRunner()">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="/js/pressure-advance.js"></script>
+
+
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 <pre tabindex="0"><code></code></pre>
 </div>

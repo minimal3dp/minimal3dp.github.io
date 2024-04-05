@@ -25,13 +25,13 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="//localhost:1313/klipper-calibration/run-current/" /><meta property="og:image" content="//localhost:1313/klipper-calibration/run-current/featured-sunset-get.png" /><meta property="article:section" content="klipper-calibration" />
-<meta property="article:published_time" content="2024-03-31T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-03-31T00:00:00+00:00" />
+<meta property="article:published_time" content="2024-04-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-04T08:33:39-05:00" />
 <meta itemprop="name" content="Run Current for TMC2208/2209">
 <meta itemprop="description" content="Calculate your Run Current for your Steppers
-"><meta itemprop="datePublished" content="2024-03-31T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2024-03-31T00:00:00+00:00" />
-<meta itemprop="wordCount" content="34"><meta itemprop="image" content="//localhost:1313/klipper-calibration/run-current/featured-sunset-get.png" />
+"><meta itemprop="datePublished" content="2024-04-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-04-04T08:33:39-05:00" />
+<meta itemprop="wordCount" content="160"><meta itemprop="image" content="//localhost:1313/klipper-calibration/run-current/featured-sunset-get.png" />
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="//localhost:1313/klipper-calibration/run-current/featured-sunset-get.png" /><meta name="twitter:title" content="Run Current for TMC2208/2209"/>
 <meta name="twitter:description" content="Calculate your Run Current for your Steppers
@@ -127,8 +127,8 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#from-the-klipper-documents">From the Klipper Documents</a></li>
-    <li><a href="#console-commands">Console Commands</a></li>
+    <li><a href="#from-the-voron-docs">From the Voron Docs</a></li>
+    <li><a href="#steps">Steps</a></li>
     <li><a href="#run-current-calculator">Run Current Calculator</a></li>
     <li><a href="#edit-printercfg">Edit Printer.cfg</a></li>
   </ul>
@@ -177,8 +177,20 @@
 		
   </header>
 	<h1 id="run-current">Run Current<a class="td-heading-self-link" href="#run-current" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
-<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="from-the-voron-docs">From the Voron Docs<a class="td-heading-self-link" href="#from-the-voron-docs" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.</p>
+</blockquote>
+<p><a href="https://docs.vorondesign.com/community/howto/120decibell/calculating_driver_current.html#:~:text=Calculating%20Currents,is%20the%20maximum%20run%20current.">Calculating Driver Current Settings</a></p>
+<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<p>The maximum Klipper RUN current settings can be calculated via the following steps:</p>
+<ol>
+<li>Use the peak current limit from the stepper specifications sheet for the stepper motor.</li>
+<li>Multiply the peak current by 0.707 to determine the max run current in RMS.</li>
+<li>Round down to the nearest .1</li>
+<li>Verify settings for each motor.</li>
+</ol>
+<p>** maximum capacity of the 2209 driver is 1.2 Amps. **</p>
 <h2 id="run-current-calculator">Run Current Calculator<a class="td-heading-self-link" href="#run-current-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form id="myform">
@@ -226,6 +238,7 @@
 
 <script src="/js/run-current.js"></script>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<p>Edit the run current for each motor.</p>
 <pre tabindex="0"><code></code></pre>
 	<style>
   .feedback--answer {
@@ -283,6 +296,9 @@
   });
 </script>
 <br />
+<div class="td-page-meta__lastmod">
+  Last modified April 4, 2024: <a href="https://github.com/minimal3dp/minimal3dp.github.io/commit/bbbdb39de4407cf17a75fb93117965b020a7bedf">Forgotten commit (bbbdb39)</a>
+</div>
 
 </div>
 

@@ -15,7 +15,7 @@ weight: 40
 
 ## Console Commands
 
-## Run Current Calculator
+## Pressure Advance Calculator
 
 {{< pressure-advance >}}
 

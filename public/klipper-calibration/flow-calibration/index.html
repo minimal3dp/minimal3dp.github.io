@@ -25,13 +25,13 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="//localhost:1313/klipper-calibration/flow-calibration/" /><meta property="og:image" content="//localhost:1313/klipper-calibration/flow-calibration/featured-sunset-get.png" /><meta property="article:section" content="klipper-calibration" />
-<meta property="article:published_time" content="2024-04-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-04-02T22:06:34-05:00" />
+<meta property="article:published_time" content="2024-04-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-03T20:46:31-05:00" />
 <meta itemprop="name" content="Flow Calibration">
 <meta itemprop="description" content="Calibrate the Flow of your Extruder in your Slicer
-"><meta itemprop="datePublished" content="2024-04-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2024-04-02T22:06:34-05:00" />
-<meta itemprop="wordCount" content="56"><meta itemprop="image" content="//localhost:1313/klipper-calibration/flow-calibration/featured-sunset-get.png" />
+"><meta itemprop="datePublished" content="2024-04-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-04-03T20:46:31-05:00" />
+<meta itemprop="wordCount" content="147"><meta itemprop="image" content="//localhost:1313/klipper-calibration/flow-calibration/featured-sunset-get.png" />
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="//localhost:1313/klipper-calibration/flow-calibration/featured-sunset-get.png" /><meta name="twitter:title" content="Flow Calibration"/>
 <meta name="twitter:description" content="Calibrate the Flow of your Extruder in your Slicer
@@ -127,10 +127,16 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#from-the-klipper-documents">From the Klipper Documents</a></li>
+    <li><a href="#from-3d-print-beginner">From 3D Print Beginner</a></li>
     <li><a href="#slicer-settings">Slicer Settings</a></li>
     <li><a href="#flow-calibration-calculator">Flow Calibration Calculator</a></li>
-    <li><a href="#edit-printercfg">Edit Printer.cfg</a></li>
+    <li><a href="#update-your-slicer">Update Your Slicer</a>
+      <ul>
+        <li><a href="#cura">Cura</a></li>
+        <li><a href="#prusaslicer">PrusaSlicer</a></li>
+        <li><a href="#orca-slicer">Orca Slicer</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -177,7 +183,12 @@
 		
   </header>
 	<h1 id="flow-calibration">Flow Calibration<a class="td-heading-self-link" href="#flow-calibration" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="from-3d-print-beginner">From 3D Print Beginner<a class="td-heading-self-link" href="#from-3d-print-beginner" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>The flow rate calibration is done in order to fine tune the amount of plastic extruded by the printer. Also known as Extrusion Multiplier, by calibrating the flow rate you can fix issues caused by under-extrusion or over-extrusion. Besides this, flow rate calibration can also improve retraction values a bit and help with bulging corners and layer seam.
+If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).</p>
+</blockquote>
+<p><a href="https://3dprintbeginner.com/flow-rate-calibration/">Flow Rate Calibration – Improve Print Accuracy</a></p>
 <h2 id="slicer-settings">Slicer Settings<a class="td-heading-self-link" href="#slicer-settings" aria-label="Heading self-link"></a></h2>
 <table>
 <thead>
@@ -279,7 +290,10 @@
 
 <script src="/js/flow-calibration.js"></script>
 
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="update-your-slicer">Update Your Slicer<a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link"></a></h2>
+<h3 id="cura">Cura<a class="td-heading-self-link" href="#cura" aria-label="Heading self-link"></a></h3>
+<h3 id="prusaslicer">PrusaSlicer<a class="td-heading-self-link" href="#prusaslicer" aria-label="Heading self-link"></a></h3>
+<h3 id="orca-slicer">Orca Slicer<a class="td-heading-self-link" href="#orca-slicer" aria-label="Heading self-link"></a></h3>
 
 	<style>
   .feedback--answer {
@@ -338,7 +352,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified April 2, 2024: <a href="https://github.com/minimal3dp/minimal3dp.github.io/commit/789782614185d4d93f5b28f01b1a80f7d36f9b57">updated rotational distance (7897826)</a>
+  Last modified April 3, 2024: <a href="https://github.com/minimal3dp/minimal3dp.github.io/commit/b07470731e4133b97c36b88520f3960ccf0261ce">updated calculator descriptions (b074707)</a>
 </div>
 
 </div>
