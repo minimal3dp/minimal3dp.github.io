@@ -11,6 +11,7 @@ resources:
     title: "Image #:counter"
     params:
       byline: "Photo: Riona MacNamara / CC-BY-CA"
+draft: draft
 ---
 
 **This is a typical blog post that includes images.**
@@ -44,5 +45,3 @@ Fetch and scale an image in the upcoming Hugo 0.43.
 ```
 
 The image will be rendered at the size and byline specified in the front matter.
-
-
