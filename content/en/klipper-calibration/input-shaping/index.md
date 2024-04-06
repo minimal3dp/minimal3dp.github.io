@@ -19,11 +19,11 @@ weight: 50
 
 Basic tuning requires measuring the ringing frequencies of the printer by printing a test model.
 
-According to the [Klipper docs](, slice the ringing test model, which can https://www.klipper3d.org/Resonance_Compensation.html) be found in [docs/prints/ringing_tower.stl](https://www.klipper3d.org/prints/ringing_tower.stl), in the slicer:
+According to the [Klipper docs](https://www.klipper3d.org/Resonance_Compensation.html), slice the ringing test model, which can be found in [docs/prints/ringing_tower.stl](https://www.klipper3d.org/prints/ringing_tower.stl), in the slicer:
 
 - Use a layer height is 0.2 or 0.25 mm.
 - Both the infill and top layers can be set to 0.
--  Use eithet 1-2 perimeters, or vase mode with 1-2 mm base.
+- Use eithet 1-2 perimeters, or vase mode with 1-2 mm base.
 - Use a high speed that is around 80-100 mm/sec, for external perimeters.
 - aThe minimum layer time is at most 3 seconds.
 - Turn off any "dynamic acceleration control" controls in the slicer.

@@ -31,7 +31,7 @@
 <meta itemprop="description" content="Setup and Calculate Input Shaping Values
 "><meta itemprop="datePublished" content="2024-03-31T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-03-31T00:00:00+00:00" />
-<meta itemprop="wordCount" content="69"><meta itemprop="image" content="//localhost:1313/klipper-calibration/input-shaping/featured-sunset-get.png" />
+<meta itemprop="wordCount" content="251"><meta itemprop="image" content="//localhost:1313/klipper-calibration/input-shaping/featured-sunset-get.png" />
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="//localhost:1313/klipper-calibration/input-shaping/featured-sunset-get.png" /><meta name="twitter:title" content="Input Shaping"/>
 <meta name="twitter:description" content="Setup and Calculate Input Shaping Values
@@ -180,6 +180,21 @@
   </header>
 	<h1 id="input-shaping">Input Shaping<a class="td-heading-self-link" href="#input-shaping" aria-label="Heading self-link"></a></h1>
 <h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>&ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&rdquo;</p>
+</blockquote>
+<p><a href="https://all3dp.com/2/klipper-input-shaping-simply-explained/">Klipper: Input Shaping – Simply Explained</a></p>
+<p>Basic tuning requires measuring the ringing frequencies of the printer by printing a test model.</p>
+<p>According to the <a href="https://www.klipper3d.org/Resonance_Compensation.html">Klipper docs</a>, slice the ringing test model, which can be found in <a href="https://www.klipper3d.org/prints/ringing_tower.stl">docs/prints/ringing_tower.stl</a>, in the slicer:</p>
+<ul>
+<li>Use a layer height is 0.2 or 0.25 mm.</li>
+<li>Both the infill and top layers can be set to 0.</li>
+<li>Use eithet 1-2 perimeters, or vase mode with 1-2 mm base.</li>
+<li>Use a high speed that is around 80-100 mm/sec, for external perimeters.</li>
+<li>aThe minimum layer time is at most 3 seconds.</li>
+<li>Turn off any &ldquo;dynamic acceleration control&rdquo; controls in the slicer.</li>
+<li>Do not turn the model. It has X and Y marks at the back of the model. Note the unusual location of the marks vs. the axes of the printer - it is not a mistake. The marks can be used later in the tuning process as a reference, because they show which axis the measurements correspond to.</li>
+</ul>
 <h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
 <h2 id="input-shaping-calculator">Input Shaping Calculator<a class="td-heading-self-link" href="#input-shaping-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
