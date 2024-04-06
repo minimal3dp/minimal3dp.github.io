@@ -6,11 +6,11 @@ var y_measure = document.getElementById('y_measure');
 var x_freq = document.getElementById('x_freq');
 var y_freq = document.getElementById('y_freq');
 
-function paRunner() {
-    pressureAdvance();
+function isRunner() {
+    inputShaper();
 }
 
-function pressureAdvance() {
+function inputShaper() {
 
     let ddf_val = ddf.value;
     let bf_val = bf.value;
