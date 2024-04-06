@@ -138,6 +138,14 @@ This is the multi-page printable view of this section.
 
     
   
+    
+    
+	
+<li>5: <a href="#pg-ea77303d287f6e3634755429cd6cfcc8">Input Shaping</a></li>
+
+
+    
+  
 
     </ul>
 
@@ -539,6 +547,115 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 <script src="/js/pressure-advance.js"></script>
 
 
+<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<pre tabindex="0"><code></code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-ea77303d287f6e3634755429cd6cfcc8">5 - Input Shaping</h1>
+    <div class="lead">Setup and Calculate Input Shaping Values</div>
+	<h1 id="input-shaping">Input Shaping<a class="td-heading-self-link" href="#input-shaping" aria-label="Heading self-link"></a></h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="input-shaping-calculator">Input Shaping Calculator<a class="td-heading-self-link" href="#input-shaping-calculator" aria-label="Heading self-link"></a></h2>
+<div class="container">
+    <form id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="print_speed" class="form-label">Print Speed</label>
+                <input type="number" class="form-control" name="print_speed" id="print_speed" value="100" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Based on above Klipper commands, usually 100 or 80.</i></label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="x_rings" class="form-label">Number of X Rings</label>
+                <input type="number" class="form-control" name="x_rings" id="x_rings" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Based on X Ring Count</i></label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="x_measure" class="form-label">X Measurement</label>
+                <input type="number" class="form-control" name="x_measure" id="x_measure" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Based on Caliper Measurements</i></label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="y_rings" class="form-label">Number of Y Rings</label>
+                <input type="number" class="form-control" name="y_rings" id="y_rings" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Based on Y Ring Count</i></label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="y_measure" class="form-label">Y Measurement</label>
+                <input type="number" class="form-control" name="y_measure" id="y_measure" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Based on Caliper Measurements</i></label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="x_freq" class="form-label">X Frequency</label>
+                <input type="number" class="form-control" name="x_freq" id="x_freq" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Copy and Paste into Printer.cfg</i></label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="y_freq" class="form-label">Y Frequency</label>
+                <input type="number" class="form-control" name="y_freq" id="y_freq" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <label><i>Copy and Paste into Printer.cfg</i></label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 <pre tabindex="0"><code></code></pre>
 </div>
