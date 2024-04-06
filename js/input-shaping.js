@@ -1,9 +1,10 @@
-var start = document.getElementById('start');
-var ddf = document.getElementById('ddf');
-var bf = document.getElementById('bf');
-var measured_height = document.getElementById('measured_height');
-var dd_pa = document.getElementById('dd_pa');
-var b_pa = document.getElementById('b_pa');
+var print_speed = document.getElementById('print_speed');
+var x_rings = document.getElementById('x_rings');
+var x_measure = document.getElementById('x_measure');
+var y_rings = document.getElementById('y_rings');
+var y_measure = document.getElementById('y_measure');
+var x_freq = document.getElementById('x_freq');
+var y_freq = document.getElementById('y_freq');
 
 function paRunner() {
     pressureAdvance();
