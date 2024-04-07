@@ -38,6 +38,8 @@ G1 E50 F60
 
 ## Edit Printer.cfg
 
+{{< youtube 4XOe1ejogE8 >}}
+
 The value calculated should be pasted into your printer.cfg file under "Extruder".
 
 ```
