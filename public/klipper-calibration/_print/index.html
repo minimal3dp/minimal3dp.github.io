@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="//localhost:1313/klipper-calibration/">
-<link rel="alternate" type="application/rss&#43;xml" href="//localhost:1313/klipper-calibration/index.xml">
+<link rel="canonical" type="text/html" href="/klipper-calibration/">
+<link rel="alternate" type="application/rss&#43;xml" href="/klipper-calibration/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -24,7 +24,7 @@
 <meta property="og:title" content="Klipper Calibration" />
 <meta property="og:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="//localhost:1313/klipper-calibration/" />
+<meta property="og:url" content="/klipper-calibration/" />
 <meta itemprop="name" content="Klipper Calibration">
 <meta itemprop="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Klipper Calibration"/>
 <meta name="twitter:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."/>
@@ -32,8 +32,8 @@
 
 
 
-
-<link href="/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/scss/main.min.b57c11116582dfb62ae140b6ea11e4a58b7567b721dd79552e9ae2535883cce9.css" as="style">
+<link href="/scss/main.min.b57c11116582dfb62ae140b6ea11e4a58b7567b721dd79552e9ae2535883cce9.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -504,8 +504,13 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 
 <script src="/js/run-current.js"></script>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
-<p>Edit the run current for each motor.</p>
-<pre tabindex="0"><code></code></pre>
+<p>Edit the run current for each motor (x, y, z).</p>
+<pre tabindex="0"><code>
+[tmc2209 stepper_x]
+uart_pin: PE0
+run_current: &lt;RUN CURRENT&gt;
+diag_pin:
+</code></pre>
 </div>
 
 
@@ -524,8 +529,47 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
     <div class="lead">Calculate the ideal Pressure Advance</div>
 	<h1 id="pressure-advance">Pressure Advance<a class="td-heading-self-link" href="#pressure-advance" aria-label="Heading self-link"></a></h1>
 <h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.</p>
+</blockquote>
+<p><a href="https://www.klipper3d.org/Pressure_Advance.html">Klipper Documents</a></p>
+<h2 id="slicer-settings">Slicer Settings<a class="td-heading-self-link" href="#slicer-settings" aria-label="Heading self-link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Paramenter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nozzle Diameter</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>Layer Height</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>Infill</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Test Model: <a href="https://www.klipper3d.org/prints/square_tower.stl">Square Tower</a></p>
 <h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
-<h2 id="pressure-advance-calculator">Pressure Advance Calculator<a class="td-heading-self-link" href="#pressure-advance-calculator" aria-label="Heading self-link"></a></h2>
+<ol>
+<li>Setup</li>
+</ol>
+<pre tabindex="0"><code>SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=1 ACCEL=500
+</code></pre><ol start="2">
+<li>Select command based on drive:</li>
+</ol>
+<p>Direct Drive:</p>
+<pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.005
+</code></pre><p>Bowden Tube:</p>
+<pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020
+</code></pre><h2 id="pressure-advance-calculator">Pressure Advance Calculator<a class="td-heading-self-link" href="#pressure-advance-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form method="post" id="myform">
         <div class="row mb-3">
@@ -576,7 +620,10 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 <script src="/js/pressure-advance.js"></script>
 
 
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="edit-your-slicer">Edit Your Slicer<a class="td-heading-self-link" href="#edit-your-slicer" aria-label="Heading self-link"></a></h2>
+<h3 id="orca-slicer">Orca Slicer<a class="td-heading-self-link" href="#orca-slicer" aria-label="Heading self-link"></a></h3>
+<h3 id="prusaslicer">PrusaSlicer<a class="td-heading-self-link" href="#prusaslicer" aria-label="Heading self-link"></a></h3>
+<h3 id="cura">Cura<a class="td-heading-self-link" href="#cura" aria-label="Heading self-link"></a></h3>
 <pre tabindex="0"><code></code></pre>
 </div>
 
@@ -892,8 +939,20 @@ shaper_type: mzv
 	<h1 id="pg-5551bb95e8f0ea863ff562dab3dda275">7 - Max Volumentric Speed</h1>
     <div class="lead">Calculate and Set Max Volumentric Speed (in Orca Slicer)</div>
 	<h1 id="setting-max-volumentric-speed">Setting Max Volumentric Speed<a class="td-heading-self-link" href="#setting-max-volumentric-speed" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="from-orca-slicer">From Orca Slicer<a class="td-heading-self-link" href="#from-orca-slicer" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.</p>
+</blockquote>
+<p><a href="https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#max-volumetric-speed">Max Volumetric speed</a></p>
 <h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<ol>
+<li>Open Orca Slicer</li>
+<li>Go to &ldquo;Calibration&rdquo; -&gt; &ldquo;More&hellip;&rdquo; -&gt; &ldquo;Max Flowrate</li>
+<li>Fill out &ldquo;Max volumetric speed test&rdquo; dialog</li>
+<li>Print model</li>
+<li>Measure with Calipers to spot on model before the print starts to fail</li>
+<li>Paste Max Flow Value into Orca Slicer Filament Section</li>
+</ol>
 <h2 id="max-volumentric-speed-calculator">Max Volumentric Speed Calculator<a class="td-heading-self-link" href="#max-volumentric-speed-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form id="myform">
@@ -949,7 +1008,10 @@ shaper_type: mzv
 
 
 <script src="/js/max-volumetric-speed.js"></script>
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="update-your-slicer">Update your Slicer<a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link"></a></h2>
+<h3 id="update-orca-slicer">Update Orca Slicer<a class="td-heading-self-link" href="#update-orca-slicer" aria-label="Heading self-link"></a></h3>
+<h3 id="update-prusa-slicer">Update Prusa Slicer<a class="td-heading-self-link" href="#update-prusa-slicer" aria-label="Heading self-link"></a></h3>
+<h3 id="update-cura">Update Cura<a class="td-heading-self-link" href="#update-cura" aria-label="Heading self-link"></a></h3>
 
 </div>
 
@@ -969,7 +1031,9 @@ shaper_type: mzv
     <div class="lead">Calculate Lead Screw Rotation Distance</div>
 	<h1 id="setting-lead-screw-rotation-distance">Setting Lead Screw Rotation Distance<a class="td-heading-self-link" href="#setting-lead-screw-rotation-distance" aria-label="Heading self-link"></a></h1>
 <h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
-<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<p>The rotational axes with a lead screw can be easily calculated with the following formula:</p>
+<pre tabindex="0"><code>rotation_distance = &lt;screw_pitch&gt; * &lt;number_of_separate_threads&gt;
+</code></pre><h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
 <table>
 <thead>
 <tr>
@@ -1032,7 +1096,6 @@ shaper_type: mzv
 
 
 <script src="/js/lead-screw-rotation-distance.js"></script>
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 
 </div>
 
@@ -1106,8 +1169,8 @@ shaper_type: mzv
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+    <script src="/js/main.min.26b35480299b932e285af8358c943de97509b95a0086d091584e7cb9b00c5c7b.js" integrity="sha256-JrNUgCmbky4oWvg1jJQ96XUJuVoAhtCRWE58ubAMXHs=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.f724d3de49218995223b7316aa2e53e2b34bf42026bf399ebb21bb02212402d1.js" integrity="sha256-9yTT3kkhiZUiO3MWqi5T4rNL9CAmvzmeuyG7AiEkAtE=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>

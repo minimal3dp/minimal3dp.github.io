@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Orcaslicer</title>
-    <link>//localhost:1313/tags/orcaslicer/</link>
+    <link>/tags/orcaslicer/</link>
     <description>Recent content in Orcaslicer on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="//localhost:1313/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Blog: OrcaSlicer Calibration and Max Flowrate</title>
-      <link>//localhost:1313/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</link>
+      <link>/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</guid>
+      <guid>/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</guid>
       <description>
         
         

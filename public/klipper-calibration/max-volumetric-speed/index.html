@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -24,24 +24,24 @@
 <meta property="og:description" content="Calculate and Set Max Volumentric Speed (in Orca Slicer)
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="//localhost:1313/klipper-calibration/max-volumetric-speed/" /><meta property="og:image" content="//localhost:1313/klipper-calibration/max-volumetric-speed/featured-sunset-get.png" /><meta property="article:section" content="klipper-calibration" />
+<meta property="og:url" content="/klipper-calibration/max-volumetric-speed/" /><meta property="og:image" content="/klipper-calibration/max-volumetric-speed/featured-sunset-get.png" /><meta property="article:section" content="klipper-calibration" />
 <meta property="article:published_time" content="2024-03-31T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-03-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-06T23:11:58-05:00" />
 <meta itemprop="name" content="Max Volumentric Speed">
 <meta itemprop="description" content="Calculate and Set Max Volumentric Speed (in Orca Slicer)
 "><meta itemprop="datePublished" content="2024-03-31T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2024-03-31T00:00:00+00:00" />
-<meta itemprop="wordCount" content="42"><meta itemprop="image" content="//localhost:1313/klipper-calibration/max-volumetric-speed/featured-sunset-get.png" />
+<meta itemprop="dateModified" content="2024-04-06T23:11:58-05:00" />
+<meta itemprop="wordCount" content="143"><meta itemprop="image" content="/klipper-calibration/max-volumetric-speed/featured-sunset-get.png" />
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="//localhost:1313/klipper-calibration/max-volumetric-speed/featured-sunset-get.png" /><meta name="twitter:title" content="Max Volumentric Speed"/>
+<meta name="twitter:image" content="/klipper-calibration/max-volumetric-speed/featured-sunset-get.png" /><meta name="twitter:title" content="Max Volumentric Speed"/>
 <meta name="twitter:description" content="Calculate and Set Max Volumentric Speed (in Orca Slicer)
 "/>
 
 
 
 
-
-<link href="/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/scss/main.min.b57c11116582dfb62ae140b6ea11e4a58b7567b721dd79552e9ae2535883cce9.css" as="style">
+<link href="/scss/main.min.b57c11116582dfb62ae140b6ea11e4a58b7567b721dd79552e9ae2535883cce9.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -135,10 +135,16 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#from-the-klipper-documents">From the Klipper Documents</a></li>
+    <li><a href="#from-orca-slicer">From Orca Slicer</a></li>
     <li><a href="#steps">Steps</a></li>
     <li><a href="#max-volumentric-speed-calculator">Max Volumentric Speed Calculator</a></li>
-    <li><a href="#edit-printercfg">Edit Printer.cfg</a></li>
+    <li><a href="#update-your-slicer">Update your Slicer</a>
+      <ul>
+        <li><a href="#update-orca-slicer">Update Orca Slicer</a></li>
+        <li><a href="#update-prusa-slicer">Update Prusa Slicer</a></li>
+        <li><a href="#update-cura">Update Cura</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -146,20 +152,29 @@
             <div class="taxonomy taxonomy-terms-cloud taxo-tags">
       <h5 class="taxonomy-title">Tag Cloud</h5>
       <ul class="taxonomy-terms">
-        <li><a class="taxonomy-term" href="//localhost:1313/tags/calibration/" data-taxonomy-term="calibration"><span class="taxonomy-label">Calibration</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="//localhost:1313/tags/how-to/" data-taxonomy-term="how-to"><span class="taxonomy-label">How-To</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="//localhost:1313/tags/orcaslicer/" data-taxonomy-term="orcaslicer"><span class="taxonomy-label">Orcaslicer</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="//localhost:1313/tags/swx1/" data-taxonomy-term="swx1"><span class="taxonomy-label">Swx1</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/calibration/" data-taxonomy-term="calibration"><span class="taxonomy-label">Calibration</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/drybox/" data-taxonomy-term="drybox"><span class="taxonomy-label">Drybox</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/filament/" data-taxonomy-term="filament"><span class="taxonomy-label">Filament</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/fixdry/" data-taxonomy-term="fixdry"><span class="taxonomy-label">Fixdry</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/how-to/" data-taxonomy-term="how-to"><span class="taxonomy-label">How-To</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/klipper/" data-taxonomy-term="klipper"><span class="taxonomy-label">Klipper</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/mercury/" data-taxonomy-term="mercury"><span class="taxonomy-label">Mercury</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/orcaslicer/" data-taxonomy-term="orcaslicer"><span class="taxonomy-label">Orcaslicer</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/swx1/" data-taxonomy-term="swx1"><span class="taxonomy-label">Swx1</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/zerog/" data-taxonomy-term="zerog"><span class="taxonomy-label">Zerog</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
   <div class="taxonomy taxonomy-terms-cloud taxo-categories">
       <h5 class="taxonomy-title">Categories</h5>
       <ul class="taxonomy-terms">
-        <li><a class="taxonomy-term" href="//localhost:1313/categories/3d-printers/" data-taxonomy-term="3d-printers"><span class="taxonomy-label">3D Printers</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="//localhost:1313/categories/landing-page/" data-taxonomy-term="landing-page"><span class="taxonomy-label">Landing Page</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="//localhost:1313/categories/projects/" data-taxonomy-term="projects"><span class="taxonomy-label">Projects</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="//localhost:1313/categories/tutorials/" data-taxonomy-term="tutorials"><span class="taxonomy-label">Tutorials</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="//localhost:1313/categories/videos/" data-taxonomy-term="videos"><span class="taxonomy-label">Videos</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/3d-printers/" data-taxonomy-term="3d-printers"><span class="taxonomy-label">3D Printers</span><span class="taxonomy-count">3</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/configs/" data-taxonomy-term="configs"><span class="taxonomy-label">Configs</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/klipper/" data-taxonomy-term="klipper"><span class="taxonomy-label">Klipper</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/landing-page/" data-taxonomy-term="landing-page"><span class="taxonomy-label">Landing Page</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/projects/" data-taxonomy-term="projects"><span class="taxonomy-label">Projects</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/reviews/" data-taxonomy-term="reviews"><span class="taxonomy-label">Reviews</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/tutorials/" data-taxonomy-term="tutorials"><span class="taxonomy-label">Tutorials</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/categories/videos/" data-taxonomy-term="videos"><span class="taxonomy-label">Videos</span><span class="taxonomy-count">2</span></a></li>
         </ul>
     </div>
   
@@ -185,8 +200,20 @@
 		
   </header>
 	<h1 id="setting-max-volumentric-speed">Setting Max Volumentric Speed<a class="td-heading-self-link" href="#setting-max-volumentric-speed" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="from-orca-slicer">From Orca Slicer<a class="td-heading-self-link" href="#from-orca-slicer" aria-label="Heading self-link"></a></h2>
+<blockquote>
+<p>This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.</p>
+</blockquote>
+<p><a href="https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#max-volumetric-speed">Max Volumetric speed</a></p>
 <h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<ol>
+<li>Open Orca Slicer</li>
+<li>Go to &ldquo;Calibration&rdquo; -&gt; &ldquo;More&hellip;&rdquo; -&gt; &ldquo;Max Flowrate</li>
+<li>Fill out &ldquo;Max volumetric speed test&rdquo; dialog</li>
+<li>Print model</li>
+<li>Measure with Calipers to spot on model before the print starts to fail</li>
+<li>Paste Max Flow Value into Orca Slicer Filament Section</li>
+</ol>
 <h2 id="max-volumentric-speed-calculator">Max Volumentric Speed Calculator<a class="td-heading-self-link" href="#max-volumentric-speed-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form id="myform">
@@ -242,7 +269,10 @@
 
 
 <script src="/js/max-volumetric-speed.js"></script>
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="update-your-slicer">Update your Slicer<a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link"></a></h2>
+<h3 id="update-orca-slicer">Update Orca Slicer<a class="td-heading-self-link" href="#update-orca-slicer" aria-label="Heading self-link"></a></h3>
+<h3 id="update-prusa-slicer">Update Prusa Slicer<a class="td-heading-self-link" href="#update-prusa-slicer" aria-label="Heading self-link"></a></h3>
+<h3 id="update-cura">Update Cura<a class="td-heading-self-link" href="#update-cura" aria-label="Heading self-link"></a></h3>
 
 	<style>
   .feedback--answer {
@@ -300,6 +330,9 @@
   });
 </script>
 <br />
+<div class="td-page-meta__lastmod">
+  Last modified April 6, 2024: <a href="https://github.com/minimal3dp/minimal3dp.github.io/commit/85df27c6565478d5d85132cdae89ed2eec93c685">added descriptions (85df27c)</a>
+</div>
 
 </div>
 
@@ -366,8 +399,8 @@
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+    <script src="/js/main.min.26b35480299b932e285af8358c943de97509b95a0086d091584e7cb9b00c5c7b.js" integrity="sha256-JrNUgCmbky4oWvg1jJQ96XUJuVoAhtCRWE58ubAMXHs=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.f724d3de49218995223b7316aa2e53e2b34bf42026bf399ebb21bb02212402d1.js" integrity="sha256-9yTT3kkhiZUiO3MWqi5T4rNL9CAmvzmeuyG7AiEkAtE=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>

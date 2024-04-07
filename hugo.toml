@@ -106,7 +106,7 @@ github_project_repo = "https://github.com/minimal3dp/minimal3dp.github.io"
 github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+gcs_engine_id = "978d6ba868554406c"
 
 # Enable Lunr.js offline search
 offlineSearch = false
