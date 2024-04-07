@@ -1,4 +1,20 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Videos</title><link>/categories/videos/</link><description>Recent content in Videos on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/videos/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: OrcaSlicer Calibration and Max Flowrate</title><link>/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Videos</title><link>/categories/videos/</link><description>Recent content in Videos on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/videos/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: FIXDRY 3D Filament 2 Spools Compatible Dryerbox DOUBLE-NT1</title><link>/blog/2024/04/07/fixdry-3d-filament-2-spools-compatible-dryerbox-double-nt1/</link><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate><guid>/blog/2024/04/07/fixdry-3d-filament-2-spools-compatible-dryerbox-double-nt1/</guid><description>
+&lt;h1 id="fixdry-nt1-review">FixDry NT1 Review&lt;a class="td-heading-self-link" href="#fixdry-nt1-review" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>Level Up Your 3D Printer! FIXDRY DOUBLE-NT1 Filament Dryer Box Review &amp;amp; Demonstration&lt;/p>
+&lt;p>red of battling wet filament and failed 3D prints? Struggling to keep your prints crisp and free of warping?&lt;/p>
+&lt;p>In this video, we take action! We unbox and put the FIXDRY DOUBLE-NT1 Filament Dryer to the test. See for yourself how this 2-spool dryer can transform your printing experience.&lt;/p>
+&lt;p>We&amp;rsquo;ll show you exactly how it works, test its drying capabilities, and reveal if the FIXDRY DOUBLE-NT1 is the key to unlocking perfect prints. Don&amp;rsquo;t waste another minute on failed projects - watch now and take control of your filament!&lt;/p>
+&lt;p>Plus: Stick around for a special bonus at the end - we&amp;rsquo;ll share our top tips for getting the most out of your filament dryer!&lt;/p>
+&lt;h2 id="video">Video&lt;a class="td-heading-self-link" href="#video" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/3rJCSjowuIM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="links">Links:&lt;a class="td-heading-self-link" href="#links" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>FIXDRY 3D Filament 2 Spools Compatible Dryerbox DOUBLE-NT1: &lt;a href="https://bit.ly/3vSfOOa">https://bit.ly/3vSfOOa&lt;/a>&lt;/p>
+&lt;p>Amazon Link: &lt;a href="https://amzn.to/4apTZEN">https://amzn.to/4apTZEN&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Note: I may earn a commission at no extra cost to you if you click an affiliate link and make a purchase. *&lt;/li>
+&lt;/ul></description></item><item><title>Blog: OrcaSlicer Calibration and Max Flowrate</title><link>/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</guid><description>
 &lt;h1 id="orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool">OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;a class="td-heading-self-link" href="#orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;h2 id="max-volumetric-speed-defined">Max Volumetric Speed Defined&lt;a class="td-heading-self-link" href="#max-volumetric-speed-defined" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>According to &lt;a href="https://help.prusa3d.com/article/max-volumetric-speed_127176">Prusa3D&lt;/a>, Max Volumetric Speed is defined as:&lt;/p>
