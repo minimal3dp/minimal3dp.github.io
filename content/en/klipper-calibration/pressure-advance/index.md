@@ -19,24 +19,32 @@ weight: 40
 
 ## Slicer Settings
 
-
+| Paramenter      | Value |
+| --------------- | ----- |
+| Nozzle Diameter | 0.4   |
+| Layer Height    | 0.3   |
+| Infill          | 0     |
 
 Test Model: [Square Tower](https://www.klipper3d.org/prints/square_tower.stl)
 
 ## Console Commands
 
 1. Setup
+
 ```
 SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=1 ACCEL=500
 ```
+
 2. Select command based on drive:
 
 Direct Drive:
+
 ```
 TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.005
 ```
 
 Bowden Tube:
+
 ```
 TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020
 ```
@@ -45,7 +53,13 @@ TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020
 
 {{< pressure-advance >}}
 
-## Edit Printer.cfg
+## Edit Your Slicer
+
+### Orca Slicer
+
+### PrusaSlicer
+
+### Cura
 
 ```
 
