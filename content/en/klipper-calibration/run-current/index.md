@@ -34,8 +34,14 @@ The maximum Klipper RUN current settings can be calculated via the following ste
 
 ## Edit Printer.cfg
 
-Edit the run current for each motor. 
+Edit the run current for each motor (x, y, z). 
 
 ```
+
+[tmc2209 stepper_x]
+uart_pin: PE0
+run_current: <RUN CURRENT>
+diag_pin:
+
 
 ```
