@@ -31,7 +31,7 @@
 <meta itemprop="description" content="Setup and Calculate Input Shaping Values
 "><meta itemprop="datePublished" content="2024-03-31T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-06T11:49:34-05:00" />
-<meta itemprop="wordCount" content="251"><meta itemprop="image" content="//localhost:1313/klipper-calibration/input-shaping/featured-sunset-get.png" />
+<meta itemprop="wordCount" content="456"><meta itemprop="image" content="//localhost:1313/klipper-calibration/input-shaping/featured-sunset-get.png" />
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="//localhost:1313/klipper-calibration/input-shaping/featured-sunset-get.png" /><meta name="twitter:title" content="Input Shaping"/>
 <meta name="twitter:description" content="Setup and Calculate Input Shaping Values
@@ -130,7 +130,7 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#from-the-klipper-documents">From the Klipper Documents</a></li>
-    <li><a href="#console-commands">Console Commands</a></li>
+    <li><a href="#steps">Steps</a></li>
     <li><a href="#input-shaping-calculator">Input Shaping Calculator</a></li>
     <li><a href="#edit-printercfg">Edit Printer.cfg</a></li>
   </ul>
@@ -195,7 +195,75 @@
 <li>Turn off any &ldquo;dynamic acceleration control&rdquo; controls in the slicer.</li>
 <li>Do not turn the model. It has X and Y marks at the back of the model. Note the unusual location of the marks vs. the axes of the printer - it is not a mistake. The marks can be used later in the tuning process as a reference, because they show which axis the measurements correspond to.</li>
 </ul>
-<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Layer Height</td>
+<td>0.2</td>
+<td>or .25</td>
+</tr>
+<tr>
+<td>Paerimeters</td>
+<td>1</td>
+<td>0r 2 0r Vase Mode</td>
+</tr>
+<tr>
+<td>Line Width</td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td>Print Speed</td>
+<td>100</td>
+<td>0r 80</td>
+</tr>
+<tr>
+<td>Top Layer</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>Bottom Layer</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>Infill</td>
+<td>0%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>If square_corner_velocity parameter was changed, revert it back to 5.0.</li>
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>SET_VELOCITY_LIMIT ACCEL_TO_DECEL=7000
+</code></pre><ol start="3">
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>SET_PRESSURE_ADVANCE ADVANCE=0
+</code></pre><ol start="4">
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>SET_INPUT_SHAPER SHAPER_FREQ_X=0 SHAPER_FREQ_Y=0
+</code></pre><ol start="5">
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1500 STEP_DELTA=500 STEP_HEIGHT=5
+</code></pre><ol start="6">
+<li>Print with Settings Above</li>
+<li>Count the &ldquo;rings&rdquo; on X and Y sides of ringing tower</li>
+<li>Measure the distance between Rings</li>
+</ol>
 <h2 id="input-shaping-calculator">Input Shaping Calculator<a class="td-heading-self-link" href="#input-shaping-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form id="myform">
@@ -285,7 +353,40 @@
     </form>
 </div>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
-<pre tabindex="0"><code></code></pre>
+<p><strong>Add Below to Printer.cfg with above X and Y Frequencies</strong></p>
+<pre tabindex="0"><code>[input_shaper]
+shaper_freq_x: &lt;X Frequency&gt;  # frequency for the X mark of the test model
+shaper_freq_y: &lt;Y Frequency&gt;  # frequency for the Y mark of the test model
+</code></pre><p>Then Run the following Steps in the Klipper Console:</p>
+<ol>
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>RESTART
+</code></pre><ol start="2">
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>SET_VELOCITY_LIMIT ACCEL_TO_DECEL=7000
+</code></pre><ol start="3">
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>SET_PRESSURE_ADVANCE ADVANCE=0
+</code></pre><ol start="4">
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>SET_INPUT_SHAPER SHAPER_TYPE=MZV
+</code></pre><ol start="5">
+<li>Klipper Console Command:</li>
+</ol>
+<pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1500 STEP_DELTA=500 STEP_HEIGHT=5
+</code></pre><ol start="6">
+<li>Print the Model as above</li>
+</ol>
+<p>If you see no rings add the following to the [input_shaper] section</p>
+<pre tabindex="0"><code>[input_shaper]
+shaper_freq_x: &lt;X Frequency&gt;  # frequency for the X mark of the test model
+shaper_freq_y: &lt;Y Frequency&gt;  # frequency for the Y mark of the test model
+shaper_type: mzv
+</code></pre>
 	<style>
   .feedback--answer {
     display: inline-block;
