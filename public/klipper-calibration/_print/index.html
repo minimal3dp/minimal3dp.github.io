@@ -154,6 +154,14 @@ This is the multi-page printable view of this section.
 
     
   
+    
+    
+	
+<li>7: <a href="#pg-5551bb95e8f0ea863ff562dab3dda275">Max Volumentric Speed</a></li>
+
+
+    
+  
 
     </ul>
 
@@ -857,6 +865,82 @@ shaper_type: mzv
 </div>
 
 <script src="/js/x-and-y-offsets.js"></script>
+<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-5551bb95e8f0ea863ff562dab3dda275">7 - Max Volumentric Speed</h1>
+    <div class="lead">Calculate and Set Max Volumentric Speed (in Orca Slicer)</div>
+	<h1 id="setting-max-volumentric-speed">Setting Max Volumentric Speed<a class="td-heading-self-link" href="#setting-max-volumentric-speed" aria-label="Heading self-link"></a></h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<h2 id="max-volumentric-speed-calculator">Max Volumentric Speed Calculator<a class="td-heading-self-link" href="#max-volumentric-speed-calculator" aria-label="Heading self-link"></a></h2>
+<div class="container">
+    <form id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center justify-content-center">
+                <label>max flow value = start + (height-measured * step)</label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="start" class="form-label">Start</label>
+                <input type="number" class="form-control" value="0" name="start" id="start" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="height_measure" class="form-label">Height Measured</label>
+                <input type="number" class="form-control" name="height_measure" id="height_measure" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="step" class="form-label">Step</label>
+                <input type="number" class="form-control" name="step_1" id="step" value="0.5" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="max_flow" class="form-label">Max Flow Value</label>
+                <input type="number" class="form-control" disabled name="max_flow" id="max_flow" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="percent5" class="form-label">Max Flow Value at 95%</label>
+                <input type="number" class="form-control" disabled name="percent5" id="percent5" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="percent10" class="form-label">Max Flow Value at 90%</label>
+                <input type="number" class="form-control" disabled name="percent10" id="percent10" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button" onclick="mfRunner()">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="/js/max-volumetric-speed.js"></script>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 
 </div>

@@ -1,0 +1,54 @@
+<div class="container">
+    <form id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center justify-content-center">
+                <label>max flow value = start + (height-measured * step)</label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="start" class="form-label">Start</label>
+                <input type="number" class="form-control" value="0" name="start" id="start" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="height_measure" class="form-label">Height Measured</label>
+                <input type="number" class="form-control" name="height_measure" id="height_measure" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="step" class="form-label">Step</label>
+                <input type="number" class="form-control" name="step_1" id="step" value="0.5" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="max_flow" class="form-label">Max Flow Value</label>
+                <input type="number" class="form-control" disabled name="max_flow" id="max_flow" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="percent5" class="form-label">Max Flow Value at 95%</label>
+                <input type="number" class="form-control" disabled name="percent5" id="percent5" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="percent10" class="form-label">Max Flow Value at 90%</label>
+                <input type="number" class="form-control" disabled name="percent10" id="percent10" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button" onclick="mfRunner()">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="/js/max-volumetric-speed.js"></script>
