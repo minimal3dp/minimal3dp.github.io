@@ -162,6 +162,14 @@ This is the multi-page printable view of this section.
 
     
   
+    
+    
+	
+<li>8: <a href="#pg-7778255083206da223024c61736c12cd">Lead Screw Rotation Distance</a></li>
+
+
+    
+  
 
     </ul>
 
@@ -941,6 +949,89 @@ shaper_type: mzv
 
 
 <script src="/js/max-volumetric-speed.js"></script>
+<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-7778255083206da223024c61736c12cd">8 - Lead Screw Rotation Distance</h1>
+    <div class="lead">Calculate Lead Screw Rotation Distance</div>
+	<h1 id="setting-lead-screw-rotation-distance">Setting Lead Screw Rotation Distance<a class="td-heading-self-link" href="#setting-lead-screw-rotation-distance" aria-label="Heading self-link"></a></h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pitch</th>
+<th># of Threads</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variables</td>
+<td>2</td>
+<td>4</td>
+<td>T8x8</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>T8x4</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>1</td>
+<td>T8x2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lead-screw-rotation-distance-calculator">Lead Screw Rotation Distance Calculator<a class="td-heading-self-link" href="#lead-screw-rotation-distance-calculator" aria-label="Heading self-link"></a></h2>
+<div class="container">
+    <form method="post" id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="pitch" class="form-label">Pitch</label>
+                <input type="number" class="form-control" name="pitch" id="pitch" value="2" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="threads" class="form-label">Number of Threads</label>
+                <input type="number" class="form-control" name="threads" id="threads" value="1" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="lsdistance" class="form-label">Lead Screw Rotation Distance</label>
+                <input type="number" class="form-control" disabled name="lsdistance" id="lsdistance" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button" onclick="lsRunner()">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="/js/lead-screw-rotation-distance.js"></script>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 
 </div>
