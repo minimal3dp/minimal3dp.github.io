@@ -15,7 +15,7 @@
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/klipper-calibration/rotational-distance/</loc>
-    <lastmod>2024-04-02T22:06:34-05:00</lastmod>
+    <lastmod>2024-04-06T19:07:59-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/klipper-calibration/flow-calibration/</loc>
     <lastmod>2024-04-03T20:46:31-05:00</lastmod>
@@ -34,6 +34,9 @@
   </url><url>
     <loc>//localhost:1313/klipper-calibration/pressure-advance/</loc>
     <lastmod>2024-04-04T21:10:52-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/klipper-calibration/input-shaping/</loc>
+    <lastmod>2024-04-06T11:49:34-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/3d-printers/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>

@@ -36,9 +36,9 @@ G1 E50 F60
 
 {{< rotational-distance >}}
 
-## Edit Printer.cfg
-
 {{< youtube 4XOe1ejogE8 >}}
+
+## Edit Printer.cfg
 
 The value calculated should be pasted into your printer.cfg file under "Extruder".
 
