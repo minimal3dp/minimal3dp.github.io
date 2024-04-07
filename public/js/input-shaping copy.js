@@ -12,12 +12,19 @@ function isRunner() {
 
 function inputShaper() {
 
-    x_freq_val = parseFloat(print_speed.value) * parseFloat(x_rings.value) / parseFloat(x_measure.value);
-    
-    y_freq_val = parseFloat(print_speed.value) * parseFloat(y_rings.value) / parseFloat(y_measure.value);
+    let ddf_val = ddf.value;
+    let bf_val = bf.value;
+    let measured_height_val = measured_height.value;
 
-    x_freq.value = x_freq_val;
-    y_freq.value = y_freq_val;
+    let dd_pa_val = ddf_val - measured_height_val;
+    let b_pa_val = bf_val - measured_height_val;
+
+    dd_pa.value = dd_pa_val;
+    b_pa.value = b_pa_val;
+
+    console.log('DD_PA: ', dd_pa_val);
+    console.log('B_PA: ', b_pa_val);
+
 }
 
 function copyRd() {

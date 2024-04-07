@@ -107,6 +107,8 @@
   <a href="/klipper-calibration/pressure-advance/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationpressure-advance"><span class="">Pressure Advance</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-klipper-calibrationinput-shaping-li">
   <a href="/klipper-calibration/input-shaping/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationinput-shaping"><span class="td-sidebar-nav-active-item">Input Shaping</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-klipper-calibrationx-and-y-offsets-li">
+  <a href="/klipper-calibration/x-and-y-offsets/" title="Setting X and Y Offsets" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationx-and-y-offsets"><span class="">X and Y Offsets</span></a>
 </li>
   </ul>
 </li>
@@ -325,7 +327,7 @@
         <div class="row mb-3">
             <div class="col-xl-6">
                 <label for="x_freq" class="form-label">X Frequency</label>
-                <input type="number" class="form-control" name="x_freq" id="x_freq" />
+                <input type="number" disabled class="form-control" name="x_freq" id="x_freq" />
             </div>
         </div>
         <div class="row mb-3">
@@ -336,7 +338,7 @@
         <div class="row mb-3">
             <div class="col-xl-6">
                 <label for="y_freq" class="form-label">Y Frequency</label>
-                <input type="number" class="form-control" name="y_freq" id="y_freq" />
+                <input type="number" disabled class="form-control" name="y_freq" id="y_freq" />
             </div>
         </div>
         <div class="row mb-3">
@@ -347,11 +349,13 @@
         <div class="row mb-3">
             <div class="col-xl-6 d-flex align-items-center">
                 <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
-                    type="button">Submit</button>
+                    type="button" onclick="isRunner()">Submit</button>
             </div>
         </div>
     </form>
 </div>
+
+<script src="/js/input-shaping.js"></script>
 <h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
 <p><strong>Add Below to Printer.cfg with above X and Y Frequencies</strong></p>
 <pre tabindex="0"><code>[input_shaper]

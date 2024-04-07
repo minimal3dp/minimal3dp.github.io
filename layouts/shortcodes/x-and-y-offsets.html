@@ -1,0 +1,48 @@
+<div class="container">
+    <form id="myform">
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="x_probe" class="form-label">Toolhead X Probe</label>
+                <input type="number" class="form-control" name="x_probe" id="x_probe" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="y_probe" class="form-label">Toolhead Y Probe</label>
+                <input type="number" class="form-control" name="y_probe" id="y_probe" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="x_nozzle" class="form-label">Toolhead X Nozzle</label>
+                <input type="number" class="form-control" name="x_nozzle" id="x_nozzle" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="y_nozzle" class="form-label">Toolhead Y Nozzle</label>
+                <input type="number" class="form-control" name="y_nozzle" id="y_nozzle" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="x_offset" class="form-label">X Offset</label>
+                <input type="number" class="form-control"disabled name="x_offset" id="x_offset" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6">
+                <label for="y_offset" class="form-label">Y Offset</label>
+                <input type="number" class="form-control" disabled name="y_offset" id="y_offset" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-6 d-flex align-items-center">
+                <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+                    type="button" onclick="xyRunner()">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="/js/x-and-y-offsets.js"></script>

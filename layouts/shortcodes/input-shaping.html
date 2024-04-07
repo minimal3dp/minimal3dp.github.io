@@ -58,7 +58,7 @@
         <div class="row mb-3">
             <div class="col-xl-6">
                 <label for="x_freq" class="form-label">X Frequency</label>
-                <input type="number" class="form-control" name="x_freq" id="x_freq" />
+                <input type="number" disabled class="form-control" name="x_freq" id="x_freq" />
             </div>
         </div>
         <div class="row mb-3">
@@ -69,7 +69,7 @@
         <div class="row mb-3">
             <div class="col-xl-6">
                 <label for="y_freq" class="form-label">Y Frequency</label>
-                <input type="number" class="form-control" name="y_freq" id="y_freq" />
+                <input type="number" disabled class="form-control" name="y_freq" id="y_freq" />
             </div>
         </div>
         <div class="row mb-3">
@@ -80,8 +80,10 @@
         <div class="row mb-3">
             <div class="col-xl-6 d-flex align-items-center">
                 <button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
-                    type="button">Submit</button>
+                    type="button" onclick="isRunner()">Submit</button>
             </div>
         </div>
     </form>
 </div>
+
+<script src="/js/input-shaping.js"></script>
