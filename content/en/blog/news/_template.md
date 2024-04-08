@@ -1,8 +1,7 @@
 ---
 title: 
 date: 
-description: >
-  
+description: 
 categories: [, ]
 tags: [,]
 draft: true
