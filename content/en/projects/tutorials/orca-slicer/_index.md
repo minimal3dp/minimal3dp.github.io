@@ -2,11 +2,12 @@
 title: Orca Slicer Tutorials
 description: >
   This is a section dedicated to my Orca Slicer Tutorials
-date: 2017-01-05
+date: 2024-04-07
+drafts: false
 ---
 
 {{% pageinfo %}}
-Artillery Sidewinder X1 (SWX1)
+Orca Slicer Tutorials
 {{% /pageinfo %}}
 
-SWX1 landing page.
+Orca Slicer landing page.

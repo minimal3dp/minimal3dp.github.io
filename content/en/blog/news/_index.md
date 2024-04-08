@@ -1,4 +1,4 @@
 ---
-title: M3DP Videos
+title: M3DP News
 weight: 20
 ---
