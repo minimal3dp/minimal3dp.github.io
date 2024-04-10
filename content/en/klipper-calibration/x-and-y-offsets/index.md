@@ -15,7 +15,7 @@ weight: 60
 
 ## Steps
 
-## Input Shaping Calculator
+## X and Y Offsets Calculator
 
 {{< x-and-y-offsets >}}
 
