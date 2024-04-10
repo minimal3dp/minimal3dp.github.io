@@ -26,8 +26,8 @@
     <loc>/klipper-calibration/flow-calibration/</loc>
     <lastmod>2024-04-03T20:46:31-05:00</lastmod>
   </url><url>
-    <loc>/blog/videos/</loc>
-    <lastmod>2024-03-31T12:58:58-05:00</lastmod>
+    <loc>/blog/news/</loc>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
     <loc>/blog/posts/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>
@@ -53,26 +53,11 @@
     <loc>/klipper-calibration/lead-screw-rotation-distance/</loc>
     <lastmod>2024-04-06T23:11:58-05:00</lastmod>
   </url><url>
+    <loc>/projects/tutorials/orca-slicer/</loc>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>/tags/drybox/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>/tags/fixdry/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>/blog/2024/04/07/fixdry-3d-filament-2-spools-compatible-dryerbox-double-nt1/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>/categories/reviews/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>/categories/videos/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
     <loc>/categories/configs/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
@@ -86,11 +71,17 @@
     <loc>/tags/swx1/</loc>
     <lastmod>2024-04-06T22:31:38-05:00</lastmod>
   </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
+  </url><url>
     <loc>/categories/3d-printers/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
     <loc>/projects/3d-printers/sidewinder-x1/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>
+  </url><url>
+    <loc>/tags/drybox/</loc>
+    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
     <loc>/tags/filament/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
@@ -99,28 +90,31 @@
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
     <loc>/tags/how-to/</loc>
-    <lastmod>2024-04-02T22:06:34-05:00</lastmod>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
     <loc>/tags/mercury/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
     <loc>/tags/orcaslicer/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/blog/2024/03/31/orcaslicer-calibration-and-max-flowrate/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
+    <loc>/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</loc>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
+  </url><url>
+    <loc>/categories/reviews/</loc>
+    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
     <loc>/categories/tutorials/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
+  </url><url>
+    <loc>/categories/videos/</loc>
+    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
     <loc>/projects/3d-printers/mercury-one/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
     <loc>/tags/zerog/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
-  </url><url>
-    <loc>/projects/tutorials/orca-slicer/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
   </url><url>
     <loc>/about/</loc>
     <lastmod>2024-03-31T10:09:21-05:00</lastmod>
