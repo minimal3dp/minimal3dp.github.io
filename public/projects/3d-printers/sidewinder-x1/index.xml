@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Artillary Sidewinder X1</title>
-    <link>/projects/3d-printers/sidewinder-x1/</link>
+    <link>//localhost:1313/projects/3d-printers/sidewinder-x1/</link>
     <description>Recent content in Artillary Sidewinder X1 on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="/projects/3d-printers/sidewinder-x1/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/projects/3d-printers/sidewinder-x1/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Projects: Sidewinder X1 (SWX1) Klipper Config</title>
-      <link>/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
+      <link>//localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
+      <guid>//localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
       <description>
         
         

@@ -2,142 +2,145 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/projects/overview/</loc>
-    <lastmod>2024-03-30T22:41:54-05:00</lastmod>
+    <loc>//localhost:1313/projects/overview/</loc>
+    <lastmod>2024-04-10T19:55:36-05:00</lastmod>
   </url><url>
-    <loc>/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</loc>
+    <loc>//localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</loc>
     <lastmod>2024-04-06T22:31:38-05:00</lastmod>
   </url><url>
-    <loc>/projects/3d-printers/</loc>
+    <loc>//localhost:1313/projects/3d-printers/</loc>
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
   </url><url>
-    <loc>/projects/3d-printing-reviews/</loc>
+    <loc>//localhost:1313/projects/3d-printing-reviews/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
-    <loc>/projects/tutorials/</loc>
+    <loc>//localhost:1313/projects/tutorials/</loc>
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
   </url><url>
-    <loc>/projects/reference/</loc>
+    <loc>//localhost:1313/projects/reference/</loc>
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/rotational-distance/</loc>
+    <loc>//localhost:1313/klipper-calibration/rotational-distance/</loc>
     <lastmod>2024-04-06T19:54:22-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/flow-calibration/</loc>
+    <loc>//localhost:1313/klipper-calibration/flow-calibration/</loc>
     <lastmod>2024-04-03T20:46:31-05:00</lastmod>
   </url><url>
-    <loc>/blog/news/</loc>
+    <loc>//localhost:1313/blog/news/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/blog/posts/</loc>
+    <loc>//localhost:1313/blog/posts/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/run-current/</loc>
+    <loc>//localhost:1313/klipper-calibration/run-current/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
-    <loc>/projects/</loc>
+    <loc>//localhost:1313/projects/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/pressure-advance/</loc>
+    <loc>//localhost:1313/klipper-calibration/pressure-advance/</loc>
     <lastmod>2024-04-07T21:33:46-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/input-shaping/</loc>
+    <loc>//localhost:1313/klipper-calibration/input-shaping/</loc>
     <lastmod>2024-04-06T20:12:28-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/x-and-y-offsets/</loc>
-    <lastmod>2024-04-06T21:30:50-05:00</lastmod>
+    <loc>//localhost:1313/klipper-calibration/x-and-y-offsets/</loc>
+    <lastmod>2024-04-10T17:22:02-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/max-volumetric-speed/</loc>
+    <loc>//localhost:1313/klipper-calibration/max-volumetric-speed/</loc>
     <lastmod>2024-04-06T23:11:58-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/lead-screw-rotation-distance/</loc>
+    <loc>//localhost:1313/klipper-calibration/lead-screw-rotation-distance/</loc>
     <lastmod>2024-04-06T23:11:58-05:00</lastmod>
   </url><url>
-    <loc>/projects/tutorials/orca-slicer/</loc>
+    <loc>//localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</loc>
+    <lastmod>2024-04-09T20:08:07-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects/tutorials/orca-slicer/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/categories/configs/</loc>
+    <loc>//localhost:1313/categories/configs/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
-    <loc>/tags/klipper/</loc>
+    <loc>//localhost:1313/tags/klipper/</loc>
     <lastmod>2024-04-06T22:31:38-05:00</lastmod>
   </url><url>
-    <loc>/categories/klipper/</loc>
+    <loc>//localhost:1313/categories/klipper/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
-    <loc>/tags/swx1/</loc>
+    <loc>//localhost:1313/tags/swx1/</loc>
     <lastmod>2024-04-06T22:31:38-05:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/categories/3d-printers/</loc>
+    <loc>//localhost:1313/categories/3d-printers/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
-    <loc>/projects/3d-printers/sidewinder-x1/</loc>
+    <loc>//localhost:1313/projects/3d-printers/sidewinder-x1/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>
   </url><url>
-    <loc>/tags/drybox/</loc>
+    <loc>//localhost:1313/tags/drybox/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
-    <loc>/tags/filament/</loc>
+    <loc>//localhost:1313/tags/filament/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
-    <loc>/projects/3d-printing-reviews/fixdry-double-nt1/</loc>
+    <loc>//localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
-    <loc>/tags/how-to/</loc>
+    <loc>//localhost:1313/tags/how-to/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/tags/mercury/</loc>
+    <loc>//localhost:1313/tags/mercury/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
-    <loc>/tags/orcaslicer/</loc>
+    <loc>//localhost:1313/tags/orcaslicer/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</loc>
+    <loc>//localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/categories/reviews/</loc>
+    <loc>//localhost:1313/categories/reviews/</loc>
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
-    <loc>/categories/tutorials/</loc>
+    <loc>//localhost:1313/categories/tutorials/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/categories/videos/</loc>
+    <loc>//localhost:1313/categories/videos/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
-    <loc>/projects/3d-printers/mercury-one/</loc>
+    <loc>//localhost:1313/projects/3d-printers/mercury-one/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
-    <loc>/tags/zerog/</loc>
+    <loc>//localhost:1313/tags/zerog/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2024-03-31T10:09:21-05:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>//localhost:1313/blog/</loc>
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
   </url><url>
-    <loc>/tags/calibration/</loc>
+    <loc>//localhost:1313/tags/calibration/</loc>
     <lastmod>2024-04-02T22:06:34-05:00</lastmod>
   </url><url>
-    <loc>/klipper-calibration/</loc>
+    <loc>//localhost:1313/klipper-calibration/</loc>
     <lastmod>2024-04-02T22:06:34-05:00</lastmod>
   </url><url>
-    <loc>/categories/landing-page/</loc>
+    <loc>//localhost:1313/categories/landing-page/</loc>
     <lastmod>2024-04-02T22:06:34-05:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
   </url><url>
-    <loc>/categories/projects/</loc>
+    <loc>//localhost:1313/categories/projects/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>
   </url><url>
-    <loc>/search/</loc>
+    <loc>//localhost:1313/search/</loc>
     <lastmod>2024-03-30T20:24:04-05:00</lastmod>
   </url>
 </urlset>
