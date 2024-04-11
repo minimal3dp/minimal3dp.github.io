@@ -1,1 +1,21 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Minimal 3DP</title><link>/</link><description>Recent content on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Minimal 3DP</title><link>/</link><description>Recent content on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: New Minimal 3DP Website</title><link>/blog/2024/04/10/new-minimal-3dp-website/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>/blog/2024/04/10/new-minimal-3dp-website/</guid><description>
+&lt;img src="/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_640x0_resize_q75_catmullrom.jpg" width="640" height="360"/>
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+&lt;img class="card-img-top" src="/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_600x300_fill_q75_catmullrom_smart1.jpg" width="600" height="300">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+Minimal 3DP YouTube Banner
+&lt;small class="text-muted">&lt;br/>Photo: Mike Wilson / CC-BY-CA&lt;/small>
+&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h1 id="new-website">New Website&lt;a class="td-heading-self-link" href="#new-website" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&lt;/p>
+&lt;p>I have used Hugo in the past and I thought I would try to rewrite the site in it. I liked the Docsy theme but I was not sure I could create the Klipper Calibration website. It turns out it was easier that I thought.&lt;/p>
+&lt;h2 id="klipper-calibration">Klipper Calibration&lt;a class="td-heading-self-link" href="#klipper-calibration" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>One of my main goals for creating this site, is the Klipper Calibration calculators I have put together. I have my &lt;a href="https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing">Klipper Calibration Spreadsheet&lt;/a> but many people are requesting edit access. To simplify things, I thought it would be a good idea to create these online tools. It also gave me the opportunity to do some simple programming. It has been a while.&lt;/p>
+&lt;p>Because I am using Docsy, there are tools built in to leave comments and post issues on github. I thought this integration would be helpful as I tried to improve and expand the tools. I am looking forward to the feedback. I know that there is room for improvement.&lt;/p>
+&lt;h2 id="projects">Projects&lt;a class="td-heading-self-link" href="#projects" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>To many time I do not document my work well enough. I have several different tools for reference and documentation. Because it is &lt;em>several different&lt;/em> tools, I never know where to look. With this in mind, I am hoping this site can serve as a repository of knowledge for my work. I sometime wish I had more time. There are so many cool ideas to try. Hopefully, I will have a chance to explore.&lt;/p>
+&lt;h2 id="blog">Blog&lt;a class="td-heading-self-link" href="#blog" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The blog is a minor feature for me. I always have good intentions for keeping it up but I always have trouble finding the time. We will see how this iteration goes. I am thinking that Hugo will make it easy. A lot of content here was done via my iPhone. Working Copy and Textastic are amazing apps and worth every penny.&lt;/p></description></item></channel></rss>
