@@ -1,18 +1,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Posts</title>
-    <link>//localhost:1313/blog/posts/</link>
+    <link>/blog/posts/</link>
     <description>Recent content in Posts on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
       
         
       
     
+    
+    <item>
+      <title>Blog: Klipper Calibration Website</title>
+      <link>/blog/2024/04/10/klipper-calibration-website/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2024/04/10/klipper-calibration-website/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;klipper-calibration&#34;&gt;Klipper Calibration&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#klipper-calibration&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 610px&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;/blog/2024/04/10/klipper-calibration-website/m3dp-tools_hu427c4279dc7ff8715afa30484c93bc4b_115729_600x450_fill_q75_catmullrom_smart1.jpg&#34; width=&#34;600&#34; height=&#34;450&#34;&gt;
+&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+&lt;p class=&#34;card-text&#34;&gt;
+
+
+M3DP Tools and Connections
+&lt;small class=&#34;text-muted&#34;&gt;&lt;br/&gt;Photo: Mike Wilson / CC-BY-CA&lt;/small&gt;
+&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A while ago, I create the my &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing&#34;&gt;Klipper Calibration Spreadsheet&lt;/a&gt; to help myself keep track of and remember various Klipper formulas to tune and improve my 3D prints. I decided to share the tools and i have received lots of requests to share the Spreadsheet. Rather than giving everyone access to edit my original sheet, I have recommended to everyone to &amp;ldquo;Make a Copy&amp;rdquo; of the sheet for their personal use. In a lot of cases this has caused some confusion. By making a copy, there is no way to any edits or updates I do to the tools.&lt;/p&gt;
+&lt;p&gt;Because of this (and my desire to do a little programming), I have put together the &lt;a href=&#34;https://minimal3dp.com/klipper-calibration/&#34;&gt;Klipper Calibration Website&lt;/a&gt;. The standalone site gives me an opportunity to create some useful tools and program. It also give me a way to create more detailed documentation and video links.&lt;/p&gt;
+&lt;p&gt;Another hope is that, because I am using &lt;a href=&#34;https://www.docsy.dev/&#34;&gt;Docsy&lt;/a&gt;, I can use the tie-ins with GitHub to allow the community to comment, make suggestions, and give feedback. I could than further refine the tools. It is my hope that this site will continue to evolve over time and include additional tools.&lt;/p&gt;
+
+      </description>
+    </item>
     
   </channel>
 </rss>

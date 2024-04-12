@@ -20,3 +20,5 @@ weight: 60
 {{< x-and-y-offsets >}}
 
 ## Edit Printer.cfg
+
+** Video Coming Soon **

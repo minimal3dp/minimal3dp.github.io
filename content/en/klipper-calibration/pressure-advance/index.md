@@ -53,14 +53,6 @@ TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020
 
 {{< pressure-advance >}}
 
-## Edit Your Slicer
+## Edit Your Slicer or Printer.cfg
 
-### Orca Slicer
-
-### PrusaSlicer
-
-### Cura
-
-```
-
-```
+** Video Coming Soon **

@@ -24,7 +24,7 @@ The maximum Klipper RUN current settings can be calculated via the following ste
 1. Use the peak current limit from the stepper specifications sheet for the stepper motor.
 2. Multiply the peak current by 0.707 to determine the max run current in RMS.
 3. Round down to the nearest .1
-4. Verify settings for each motor. 
+4. Verify settings for each motor.
 
 ** maximum capacity of the 2209 driver is 1.2 Amps. **
 
@@ -34,7 +34,7 @@ The maximum Klipper RUN current settings can be calculated via the following ste
 
 ## Edit Printer.cfg
 
-Edit the run current for each motor (x, y, z). 
+Edit the run current for each motor (x, y, z).
 
 ```
 
@@ -45,3 +45,5 @@ diag_pin:
 
 
 ```
+
+** Video Coming Soon **

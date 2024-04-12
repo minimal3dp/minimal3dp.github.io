@@ -14,7 +14,7 @@ weight: 20
 ## From 3D Print Beginner
 
 > The flow rate calibration is done in order to fine tune the amount of plastic extruded by the printer. Also known as Extrusion Multiplier, by calibrating the flow rate you can fix issues caused by under-extrusion or over-extrusion. Besides this, flow rate calibration can also improve retraction values a bit and help with bulging corners and layer seam.
-If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).
+> If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).
 
 [Flow Rate Calibration – Improve Print Accuracy](https://3dprintbeginner.com/flow-rate-calibration/)
 
@@ -36,10 +36,4 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 
 ## Update Your Slicer
 
-### Cura
-
-
-### PrusaSlicer
-
-
-### Orca Slicer
+** Video Coming Soon **
