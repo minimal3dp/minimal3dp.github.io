@@ -8,7 +8,9 @@ tags: [calibration, how-to]
 ---
 
 {{% pageinfo %}}
-Minimal 3DP Klipper Calibration Website - A Work in Progress
+Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress
 {{% /pageinfo %}}
+
+Launched - 2024-04-12
 
 This section is my attempt to to create a Klipper Calibration website. It is based on my [Klipper Calibration Spreadsheet](https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing)
