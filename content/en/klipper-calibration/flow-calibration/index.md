@@ -36,4 +36,4 @@ weight: 20
 
 ## Update Your Slicer
 
-** Video Coming Soon **
+{{< youtube qmEKuqc5gAU >}}
