@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minimal 3DP – Voron 2.4 R2</title>
+    <link>https://minimal3dp.com/projects/ideas/voron-2.4-r2/</link>
+    <description>Recent content in Voron 2.4 R2 on Minimal 3DP</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
