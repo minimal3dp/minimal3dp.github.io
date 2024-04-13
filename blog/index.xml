@@ -1,7 +1,7 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Blog</title><link>minimal3dp.com/blog/</link><description>Recent content in Blog on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="minimal3dp.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Klipper Calibration Website</title><link>minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Blog</title><link>https://minimal3dp.com/blog/</link><description>Recent content in Blog on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://minimal3dp.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Klipper Calibration Website</title><link>https://minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</guid><description>
 &lt;h1 id="klipper-calibration">Klipper Calibration&lt;a class="td-heading-self-link" href="#klipper-calibration" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-&lt;img class="card-img-top" src="minimal3dp.com/blog/2024/04/10/klipper-calibration-website/m3dp-tools_hu427c4279dc7ff8715afa30484c93bc4b_115729_600x450_fill_q75_catmullrom_smart1.jpg" width="600" height="450">
+&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/10/klipper-calibration-website/m3dp-tools_hu427c4279dc7ff8715afa30484c93bc4b_115729_600x450_fill_q75_catmullrom_smart1.jpg" width="600" height="450">
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text">
 M3DP Tools and Connections
@@ -14,10 +14,10 @@ M3DP Tools and Connections
 &lt;p>Another hope is that, because I am using &lt;a href="https://www.docsy.dev/">Docsy&lt;/a>, I can use the tie-ins with GitHub to allow the community to comment, make suggestions, and give feedback. I could than further refine the tools. It is my hope that this site will continue to evolve over time and include additional tools.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/Hkfeu0-F7xo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div></description></item><item><title>Blog: New Minimal 3DP Website</title><link>minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</guid><description>
-&lt;img src="minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_640x0_resize_q75_catmullrom.jpg" width="640" height="360"/>
+&lt;/div></description></item><item><title>Blog: New Minimal 3DP Website</title><link>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</guid><description>
+&lt;img src="https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_640x0_resize_q75_catmullrom.jpg" width="640" height="360"/>
 &lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-&lt;img class="card-img-top" src="minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_600x300_fill_q75_catmullrom_smart1.jpg" width="600" height="300">
+&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_600x300_fill_q75_catmullrom_smart1.jpg" width="600" height="300">
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text">
 Minimal 3DP YouTube Banner
