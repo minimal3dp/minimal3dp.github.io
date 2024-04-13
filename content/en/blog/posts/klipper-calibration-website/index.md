@@ -24,3 +24,5 @@ A while ago, I create the my [Klipper Calibration Spreadsheet](https://docs.goog
 Because of this (and my desire to do a little programming), I have put together the [Klipper Calibration Website](https://minimal3dp.com/klipper-calibration/). The standalone site gives me an opportunity to create some useful tools and program. It also give me a way to create more detailed documentation and video links.
 
 Another hope is that, because I am using [Docsy](https://www.docsy.dev/), I can use the tie-ins with GitHub to allow the community to comment, make suggestions, and give feedback. I could than further refine the tools. It is my hope that this site will continue to evolve over time and include additional tools.
+
+{{< youyube Hkfeu0-F7xo >}}
