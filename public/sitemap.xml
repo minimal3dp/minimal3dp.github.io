@@ -20,11 +20,14 @@
     <loc>/projects/reference/</loc>
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
   </url><url>
+    <loc>/projects/ideas/</loc>
+    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
+  </url><url>
     <loc>/klipper-calibration/rotational-distance/</loc>
     <lastmod>2024-04-12T11:14:55-05:00</lastmod>
   </url><url>
     <loc>/klipper-calibration/flow-calibration/</loc>
-    <lastmod>2024-04-12T11:14:55-05:00</lastmod>
+    <lastmod>2024-04-13T10:25:11-05:00</lastmod>
   </url><url>
     <loc>/blog/news/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
@@ -53,16 +56,28 @@
     <loc>/klipper-calibration/lead-screw-rotation-distance/</loc>
     <lastmod>2024-04-06T23:11:58-05:00</lastmod>
   </url><url>
+    <loc>/categories/3d-printers/</loc>
+    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
+  </url><url>
+    <loc>/tags/ender-3-s1-plus/</loc>
+    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
+  </url><url>
+    <loc>/projects/3d-printers/ender-3-s1-plus/</loc>
+    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
+  </url><url>
     <loc>/blog/2024/04/10/klipper-calibration-website/</loc>
-    <lastmod>2024-04-10T21:55:35-05:00</lastmod>
+    <lastmod>2024-04-12T23:11:07-05:00</lastmod>
   </url><url>
     <loc>/blog/2024/04/10/new-minimal-3dp-website/</loc>
     <lastmod>2024-04-10T21:28:11-05:00</lastmod>
   </url><url>
     <loc>/projects/tutorials/orca-slicer/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
     <lastmod>2024-04-07T22:13:26-05:00</lastmod>
   </url><url>
     <loc>/categories/configs/</loc>
@@ -77,12 +92,6 @@
     <loc>/tags/swx1/</loc>
     <lastmod>2024-04-06T22:31:38-05:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
-  </url><url>
-    <loc>/categories/3d-printers/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
     <loc>/projects/3d-printers/sidewinder-x1/</loc>
     <lastmod>2024-03-31T14:36:29-05:00</lastmod>
   </url><url>
@@ -96,7 +105,7 @@
     <lastmod>2024-04-07T11:06:32-05:00</lastmod>
   </url><url>
     <loc>/tags/how-to/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
+    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
   </url><url>
     <loc>/tags/mercury/</loc>
     <lastmod>2024-04-07T10:26:11-05:00</lastmod>
@@ -129,13 +138,13 @@
     <lastmod>2024-04-10T21:55:35-05:00</lastmod>
   </url><url>
     <loc>/tags/calibration/</loc>
-    <lastmod>2024-04-02T22:06:34-05:00</lastmod>
+    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
   </url><url>
     <loc>/klipper-calibration/</loc>
-    <lastmod>2024-04-02T22:06:34-05:00</lastmod>
+    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
   </url><url>
     <loc>/categories/landing-page/</loc>
-    <lastmod>2024-04-02T22:06:34-05:00</lastmod>
+    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2024-03-30T22:41:54-05:00</lastmod>
@@ -145,5 +154,8 @@
   </url><url>
     <loc>/search/</loc>
     <lastmod>2024-03-30T20:24:04-05:00</lastmod>
+  </url><url>
+    <loc>/projects/ideas/voron-2.4-r2/</loc>
+    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
   </url>
 </urlset>
