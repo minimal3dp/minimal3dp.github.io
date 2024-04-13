@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Configs</title>
-    <link>minimal3dp.com/categories/configs/</link>
+    <link>https://minimal3dp.com/categories/configs/</link>
     <description>Recent content in Configs on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="minimal3dp.com/categories/configs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://minimal3dp.com/categories/configs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Projects: Sidewinder X1 (SWX1) Klipper Config</title>
-      <link>minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
+      <link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
+      <guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
       <description>
         
         
@@ -261,10 +261,10 @@ verbose: True
     
     <item>
       <title>Projects: Zero G Mercury One.1</title>
-      <link>minimal3dp.com/projects/3d-printers/mercury-one/</link>
+      <link>https://minimal3dp.com/projects/3d-printers/mercury-one/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>minimal3dp.com/projects/3d-printers/mercury-one/</guid>
+      <guid>https://minimal3dp.com/projects/3d-printers/mercury-one/</guid>
       <description>
         
         

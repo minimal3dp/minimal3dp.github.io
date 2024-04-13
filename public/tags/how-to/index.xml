@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – How-To</title>
-    <link>minimal3dp.com/tags/how-to/</link>
+    <link>https://minimal3dp.com/tags/how-to/</link>
     <description>Recent content in How-To on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="minimal3dp.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://minimal3dp.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Projects: OrcaSlicer Calibration and Max Flowrate</title>
-      <link>minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
+      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
+      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
       <description>
         
         
@@ -61,10 +61,10 @@
     
     <item>
       <title>Klipper-Calibration: Klipper Calibration</title>
-      <link>minimal3dp.com/klipper-calibration/</link>
+      <link>https://minimal3dp.com/klipper-calibration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>minimal3dp.com/klipper-calibration/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/</guid>
       <description>
         
         
