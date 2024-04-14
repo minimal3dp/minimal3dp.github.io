@@ -92,3 +92,8 @@ Obtaining results: After the cycle, Klipper might display the calculated PID val
 2. Consider consulting your printer's documentation or online resources for specific recommendations on target temperatures.
 
 By following these steps, you can effectively PID tune your Klipper setup and achieve better temperature control for your 3D prints.
+
+## References
+
+- [Klipper PID Tuning - How to Guide](https://www.obico.io/blog/klipper-pid-tuning/)
+- [Configuration checks](https://www.klipper3d.org/Config_checks.html?h=pid)
