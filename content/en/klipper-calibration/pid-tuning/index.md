@@ -59,7 +59,7 @@ SAVE_CONFIG
 2. Initiate PID calibration: In the console, enter the following command:
 
 ```
-PID_CALIBRATE HEATER=bed TARGET=65
+PID_CALIBRATE HEATER=heater_bed TARGET=65
 ```
 I usually go with the bed at 65 for PLA.
 
@@ -74,7 +74,7 @@ SAVE_CONFIG
 ### Explanation:
 
 - *PID_CALIBRATE HEATER* is the extended G-code for starting PID calibration.
-- *extruder* specifies that you're tuning the extruder heater (replace with "bed" for the heated bed).
+- *extruder* specifies that you're tuning the extruder heater (replace with "heater_bed" for the heated bed).
 - *TARGET=200* sets the desired temperature for calibration (you can adjust this value).
 
 The PID calibration cycle: Klipper will now run the extruder or bed through heat up, cool down, and heat up again cycles. This collects data to calculate optimal PID values.
