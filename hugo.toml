@@ -91,7 +91,7 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://minimal3dp.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/minimal3dp/minimal3dp.github.io"
@@ -150,20 +150,20 @@ enable = false
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
-  name = "User mailing list"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discussion and help from your fellow users"
+  name = "YouTube"
+  url = "https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1"
+  icon = "fa fa-youtube"
+  desc = "Minimal 3DP On YouTube"
 [[params.links.user]]
   name ="Twitter"
-  url = "https://example.org/twitter"
+  url = "https://twitter.com/Michael24919360"
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 [[params.links.user]]
-  name = "Stack Overflow"
-  url = "https://example.org/stack"
-  icon = "fab fa-stack-overflow"
-  desc = "Practical questions and curated answers"
+  name = "Facebook"
+  url = "https://www.facebook.com/profile.php?id=100089187391163"
+  icon = "fab facebook"
+  desc = "Minimal 3DP Facebook Group"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
@@ -171,10 +171,10 @@ enable = false
   icon = "fab fa-github"
   desc = "Development takes place here!"
 [[params.links.developer]]
-  name = "Slack"
-  url = "https://example.org/slack"
-  icon = "fab fa-slack"
-  desc = "Chat with other project developers"
+  name = "Minimal 3DP Github"
+  url = "https://github.com/minimal3dp/minimal3dp.github.io"
+  icon = "fab fa-github"
+  desc = "Code and Resources for Minimal 3DP"
 [[params.links.developer]]
   name = "Developer mailing list"
   url = "https://example.org/mail"
