@@ -764,7 +764,11 @@ RUN_SHELL_COMMAND CMD=update_git_script
 command: bash -c &amp;#34;bash $HOME/klipper-backup/script.sh&amp;#34;
 timeout: 90.0
 verbose: True
-&lt;/code>&lt;/pre></description></item><item><title>Projects: Zero G Mercury One.1</title><link>https://minimal3dp.com/projects/3d-printers/mercury-one/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/mercury-one/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Projects: Creality CR6 SE</title><link>https://minimal3dp.com/projects/3d-printers/cr6-se/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/cr6-se/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Creality CR6 SE&lt;/p>
+&lt;/div>
+&lt;p>Creality CR6 SE landing page.&lt;/p></description></item><item><title>Projects: Zero G Mercury One.1</title><link>https://minimal3dp.com/projects/3d-printers/mercury-one/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/mercury-one/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Zero G Mercury One.1&lt;/p>
 &lt;/div>
