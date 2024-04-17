@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Landing Page</title>
-    <link>https://minimal3dp.com/categories/landing-page/</link>
+    <link>http://localhost:1313/categories/landing-page/</link>
     <description>Recent content in Landing Page on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://minimal3dp.com/categories/landing-page/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/categories/landing-page/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Projects: Projects</title>
-      <link>https://minimal3dp.com/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/projects/</guid>
+      <guid>http://localhost:1313/projects/</guid>
       <description>
         
         
@@ -37,10 +37,10 @@
     
     <item>
       <title>Klipper-Calibration: Klipper Calibration</title>
-      <link>https://minimal3dp.com/klipper-calibration/</link>
+      <link>http://localhost:1313/klipper-calibration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/klipper-calibration/</guid>
+      <guid>http://localhost:1313/klipper-calibration/</guid>
       <description>
         
         

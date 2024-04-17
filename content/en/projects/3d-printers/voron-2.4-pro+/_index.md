@@ -8,7 +8,7 @@ tags: [voron, Voron 2.4]
 ---
 
 {{% pageinfo %}}
-Creality CR6 SE
+Voron 2.4 Pro+
 {{% /pageinfo %}}
 
-Creality CR6 SE landing page.
+Voron 2.4 landing page.
