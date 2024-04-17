@@ -55,4 +55,4 @@ TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020
 
 ## Edit Your Slicer or Printer.cfg
 
-** Video Coming Soon **
+{{< youtube 9hVzGcU4R84 >}}
