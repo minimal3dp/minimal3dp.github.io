@@ -6,7 +6,8 @@
 &lt;p>The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p>
 &lt;/blockquote>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/midXjBUha74" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer's Calibration Tool"
+>&lt;/iframe>
 &lt;/div>
 &lt;h2 id="video-description">Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p>
