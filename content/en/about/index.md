@@ -17,7 +17,7 @@ menu: {main: {weight: 10}}
 
 {{% blocks/lead %}}
 
-My Name is Mike Wilson and I am willing to help. 
+My Name is Mike Wilson and I can help. 
 
 *NEED HELP?*
 
