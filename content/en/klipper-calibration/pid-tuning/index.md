@@ -5,20 +5,22 @@ linkTitle: PID Tuning
 description: >
   Running PID Tuning in Klipper
 author: Mike Wilson (minimal3dp@gmail.com)
-draft: true
+draft: false
 weight: 90
 ---
 
 **TL;DR**
 
-*Extruder*
+_Extruder_
+
 ```
 PID_CALIBRATE HEATER=extruder TARGET=205
 ```
 
-*Bed*
+_Bed_
+
 ```
-PID_CALIBRATE HEATER=bed TARGET=65
+PID_CALIBRATE HEATER=heater_bed TARGET=65
 ```
 
 # PID Tuning in Klipper
@@ -61,8 +63,8 @@ SAVE_CONFIG
 ```
 PID_CALIBRATE HEATER=heater_bed TARGET=65
 ```
-I usually go with the bed at 65 for PLA.
 
+I usually go with the bed at 65 for PLA.
 
 3. Use the following command to save the PID values into your Printer.cfg:
 
@@ -73,9 +75,9 @@ SAVE_CONFIG
 
 ### Explanation:
 
-- *PID_CALIBRATE HEATER* is the extended G-code for starting PID calibration.
-- *extruder* specifies that you're tuning the extruder heater (replace with "heater_bed" for the heated bed).
-- *TARGET=200* sets the desired temperature for calibration (you can adjust this value).
+- _PID_CALIBRATE HEATER_ is the extended G-code for starting PID calibration.
+- _extruder_ specifies that you're tuning the extruder heater (replace with "heater_bed" for the heated bed).
+- _TARGET=200_ sets the desired temperature for calibration (you can adjust this value).
 
 The PID calibration cycle: Klipper will now run the extruder or bed through heat up, cool down, and heat up again cycles. This collects data to calculate optimal PID values.
 

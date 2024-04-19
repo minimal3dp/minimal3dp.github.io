@@ -20,21 +20,25 @@
 <title>Flow Calibration | Minimal 3DP</title>
 <meta name="description" content="Calibrate the Flow of your Extruder in your Slicer
 ">
-<meta property="og:title" content="Flow Calibration" />
-<meta property="og:description" content="Calibrate the Flow of your Extruder in your Slicer
-" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/klipper-calibration/flow-calibration/" /><meta property="article:section" content="klipper-calibration" />
-<meta property="article:published_time" content="2024-04-03T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-04-13T10:25:11-05:00" />
-<meta itemprop="name" content="Flow Calibration">
-<meta itemprop="description" content="Calibrate the Flow of your Extruder in your Slicer
-"><meta itemprop="datePublished" content="2024-04-03T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2024-04-13T10:25:11-05:00" />
-<meta itemprop="wordCount" content="143">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Flow Calibration"/>
+<meta property="og:url" content="http://localhost:1313/klipper-calibration/flow-calibration/">
+  <meta property="og:site_name" content="Minimal 3DP">
+  <meta property="og:title" content="Flow Calibration">
+  <meta property="og:description" content="Calibrate the Flow of your Extruder in your Slicer
+">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="klipper-calibration">
+    <meta property="article:published_time" content="2024-04-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-13T10:25:11-05:00">
+
+  <meta itemprop="name" content="Flow Calibration">
+  <meta itemprop="description" content="Calibrate the Flow of your Extruder in your Slicer
+">
+  <meta itemprop="datePublished" content="2024-04-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-04-13T10:25:11-05:00">
+  <meta itemprop="wordCount" content="143"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Flow Calibration">
 <meta name="twitter:description" content="Calibrate the Flow of your Extruder in your Slicer
-"/>
+">
 
 
 
@@ -43,8 +47,8 @@
 <link href="/scss/main.css" rel="stylesheet">
 
 <script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
   </head>
@@ -112,6 +116,8 @@
   <a href="/klipper-calibration/max-volumetric-speed/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationmax-volumetric-speed"><span class="">Max Volumentric Speed</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-klipper-calibrationlead-screw-rotation-distance-li">
   <a href="/klipper-calibration/lead-screw-rotation-distance/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationlead-screw-rotation-distance"><span class="">Lead Screw Rotation Distance</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-klipper-calibrationpid-tuning-li">
+  <a href="/klipper-calibration/pid-tuning/" title="PID Tuning in Klipper" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationpid-tuning"><span class="">PID Tuning</span></a>
 </li>
   </ul>
 </li>
@@ -309,9 +315,12 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 
 <h2 id="update-your-slicer">Update Your Slicer<a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link"></a></h2>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/qmEKuqc5gAU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qmEKuqc5gAU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Calculated Klipper Flow Calibration? Now it's Time to Update Your Slicer"
+      ></iframe>
+    </div>
 
 
 	<style>
