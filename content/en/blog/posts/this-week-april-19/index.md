@@ -1,7 +1,8 @@
 ---
 date: 2024-04-19
 title: This Wwek on Minimal 3DP (April 19)
-linkTitle: Monimal 3DP April 19description: >
+linkTitle: Monimal 3DP April 19
+description: >
   I am getting ready to start a new project this week. I am building a Voron 2.4 Pro+
 author: Mike Wilson (minimal3dp@gmail.com)
 resources:
@@ -31,5 +32,3 @@ Fetch and scale an image in the upcoming Hugo 0.43.
 ```
 
 The image will be rendered at the size and byline specified in the front matter.
-
-
