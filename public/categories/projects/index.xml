@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Projects</title>
-    <link>http://localhost:1313/categories/projects/</link>
+    <link>https://minimal3dp.com/categories/projects/</link>
     <description>Recent content in Projects on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://minimal3dp.com/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Projects: Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>https://minimal3dp.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>https://minimal3dp.com/projects/</guid>
       <description>
         
         
