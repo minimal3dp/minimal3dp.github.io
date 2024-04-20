@@ -23,6 +23,8 @@ _Bed_
 PID_CALIBRATE HEATER=heater_bed TARGET=65
 ```
 
+{{< youtube YoZpvX5Ep2s >}}
+
 # PID Tuning in Klipper
 
 PID tuning is essential for maintaining consistent temperatures in your 3D printer's hot end and heat bed, leading to better print quality. Here's a breakdown of PID tuning in Klipper:
