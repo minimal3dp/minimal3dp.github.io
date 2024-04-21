@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Voron</title><link>https://minimal3dp.com/tags/voron/</link><description>Recent content in Voron on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://minimal3dp.com/tags/voron/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects: Voron 2.4 R2 Pro+ Build References</title><link>https://minimal3dp.com/projects/ideas/voron-2.4-r2/voron-build-references/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/ideas/voron-2.4-r2/voron-build-references/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Voron</title><link>https://minimal3dp.com/tags/voron/</link><description>Recent content in Voron on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 21 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://minimal3dp.com/tags/voron/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects: Voron 2.4 R2 Pro+ Build References</title><link>https://minimal3dp.com/projects/ideas/voron-2.4-r2/voron-build-references/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/ideas/voron-2.4-r2/voron-build-references/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Build references and links for the Voron 2.4 R2 Pro+ FormBot kit. I needed a centralized location for all the reference material I need to build the 3D printer.&lt;/p>
 &lt;/div>
@@ -20,7 +20,30 @@
 &lt;li>&lt;a href="https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view">Wiring Instruction for Voron 2.4 Pro&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://drive.google.com/file/d/1HAoaRFFA4JQNH5PZTGo-tmtvavjdQbKO/view">Voron 2.4 R2 Pro+ Instructions&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view">STL Files of Voron 2.4 R2 Pro+&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Projects: Voron 2.4 Pro+</title><link>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</guid><description>
+&lt;/ul></description></item><item><title>Blog: This Week on Minimal 3DP (April 21)</title><link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid><description>
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
+&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/features-voron_hua3b3e9223fbb606719b4c49ac6ade85b_108177_500x500_fill_catmullrom_smart1_3.png" width="500" height="500">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+Voron Circuit Board Logo
+&lt;small class="text-muted">&lt;br/>Photo: Team FDM&lt;/small>
+&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h1 id="the-week-of-april-21st-2024">The Week of April 21st 2024&lt;a class="td-heading-self-link" href="#the-week-of-april-21st-2024" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>I am currently working on several projects this week. They include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/">Voron 2.4 R2 Pro+ Build&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kevinakasam.com/belt-driven-ender-3/">Belt Driven Ender 3&lt;/a>&lt;/li>
+&lt;li>STEM Outreach&lt;/li>
+&lt;/ul>
+&lt;h2 id="voron-24-r2-pro-build">Voron 2.4 R2 Pro+ Build&lt;a class="td-heading-self-link" href="#voron-24-r2-pro-build" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>I have started getting together my project website for my Voron build. One of the newer ideas I am trying is to create a project website. I am hoping that it makes it easier for me to save references and other links. I typically try to research a project before I begin and it will make it to asier to share my research.&lt;/p>
+&lt;p>With the Voron build, I have mostly saved basic references from the &lt;a href="https://vorondesign.com/">Voron site&lt;/a>. I have also saved doc from the FormBot site. They appear to have some updated instructions for their kits.&lt;/p>
+&lt;h2 id="belt-driven-ender-3">Belt Driven Ender 3&lt;a class="td-heading-self-link" href="#belt-driven-ender-3" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>I stumbled across this project a while ago. It seemed like an interesting conversion for my Ender 3 v2. This week I am going to work on adding a project website and printing the needed parts. The hardware cost less than $30 USD.&lt;/p>
+&lt;h2 id="stem-outreach">STEM Outreach&lt;a class="td-heading-self-link" href="#stem-outreach" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>As part of my job, I sometimes do STEM outreach with local schools. This usually involves taking a 3D printer and talking to kids (and parents) about STEM careers. Before I go to an event, I have gotten into the habit of 3D printing a bunch of print-in-place and flexi animals to give out. This week I am hoping to print 100 animals.&lt;/p></description></item><item><title>Projects: Voron 2.4 Pro+</title><link>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Voron 2.4 Pro+&lt;/p>
 &lt;/div>
