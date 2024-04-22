@@ -5,7 +5,7 @@ description: >
 date: 2024-04-20
 weight: 2
 categories: [References, Builds]
-tags: [voron, 2.4]
+tags: [voron, voron 2.4]
 draft: false
 ---
 
