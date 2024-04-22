@@ -2,8 +2,8 @@
 title: Belt Driven Ender 3 Build
 description: >
   I am starting work on a Belt Driven Ender 3
-date: 
-drafts: true
+date: 2024-04-21
+drafts: false
 ---
 
 {{% pageinfo %}}
