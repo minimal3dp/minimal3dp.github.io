@@ -31,4 +31,4 @@ Build references and links for the Voron 2.4 R2 Pro+ FormBot kit. I needed a cen
 - [Wiring Diagram](https://drive.google.com/file/d/1Cq7LWvDv7ZkAo8UH1fZQUC-eRevE1t4u/view?pli=1)
 - [Wiring Instruction for Voron 2.4 Pro](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view)
 - [Voron 2.4 R2 Pro+ Instructions](https://drive.google.com/file/d/1HAoaRFFA4JQNH5PZTGo-tmtvavjdQbKO/view)
-- [STL Files of Voron 2.4 R2 Pro+](https://drive.google.com/file/d/1VGESvXycgMbUvep2g-nsu8e-c_ZA2rYF/view)
+- [STL Files of Voron 2.4 R2 Pro+ from FormBot](https://drive.google.com/file/d/1VGESvXycgMbUvep2g-nsu8e-c_ZA2rYF/view)
