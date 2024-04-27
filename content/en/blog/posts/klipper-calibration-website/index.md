@@ -6,7 +6,7 @@ description: >
   The Klipper Calibration Website is a series of tools and calculators to help you tune and optimize Klipper and your 3D prints.
 author: Mike Wilson (minimal3dp@gmail.com)
 resources:
-  - src: "*.{png,jpg}"
+  - src: "**.{png,jpg}"
     title: "Image #:counter"
     params:
       byline: "Photo: Mike Wilson / CC-BY-CA"
@@ -15,7 +15,7 @@ draft: false
 
 # Klipper Calibration
 
-{{< imgproc tools Fill "600x450" >}}
+{{< imgproc tools Fill "600x362" >}}
 M3DP Tools and Connections
 {{< /imgproc >}}
 
