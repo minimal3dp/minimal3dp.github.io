@@ -46,4 +46,4 @@ diag_pin:
 
 ```
 
-** Video Coming Soon **
+{{< youtube vc99RUIzn-I >}}
