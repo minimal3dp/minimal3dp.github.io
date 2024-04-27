@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/projects/ideas/voron-2.4-r2/voron-build-parts-list/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/overview/</loc>
     <lastmod>2024-04-10T19:55:36-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/ideas/voron-2.4-r2/voron-build-references/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</loc>
     <lastmod>2024-04-06T22:31:38-05:00</lastmod>
@@ -18,7 +21,7 @@
     <lastmod>2024-04-14T19:19:15-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/ideas/voron-2.4-r2/voron-build-frame/</loc>
-    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printers/</loc>
     <lastmod>2024-04-14T20:54:32-05:00</lastmod>
@@ -69,22 +72,25 @@
     <lastmod>2024-04-20T10:18:05-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/assembly/</loc>
-    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/builds/</loc>
-    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/rassembly/</loc>
     <lastmod>2024-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/voron/</loc>
-    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/voron-2.4/</loc>
-    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/ideas/belt-driven-ender-3/</loc>
     <lastmod>2024-04-21T22:06:44-05:00</lastmod>
@@ -96,7 +102,7 @@
     <lastmod>2024-04-21T16:34:02-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/references/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/ideas/voron-2.4-r2/</loc>
     <lastmod>2024-04-20T15:13:42-05:00</lastmod>
@@ -111,7 +117,7 @@
     <lastmod>2024-04-13T10:18:29-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/2024/04/10/klipper-calibration-website/</loc>
-    <lastmod>2024-04-12T23:11:07-05:00</lastmod>
+    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</loc>
     <lastmod>2024-04-10T21:28:11-05:00</lastmod>

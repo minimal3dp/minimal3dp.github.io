@@ -20,7 +20,7 @@ In this section, I will be building the frame of my Voron 2.4 R2 Kit
 
 **References and Links**
 
-- [2.4 Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
+- [Voron 2.4 R2 Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
 
 # Build Steps
 
