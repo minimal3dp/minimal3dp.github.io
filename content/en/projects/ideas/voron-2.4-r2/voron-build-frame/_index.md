@@ -1,7 +1,7 @@
 ---
 title: Voron 2.4 R2 Pro+ Build - Building the Frame
 description: >
-  Build the FormBot Voron 2.4 R@ Pro + Frame
+  Build the FormBot Voron 2.4 R@ Pro+ Frame
 date: 2024-04-27
 weight: 3
 categories: [Assembly, Builds]

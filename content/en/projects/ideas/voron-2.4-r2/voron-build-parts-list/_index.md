@@ -35,3 +35,11 @@ FormBot Parts List
 ## M3DP Parts List (Updated as I use Parts)
 
 ### Frame
+
+- M5 x 16 BHCS
+- 10 A Extrusions
+- 4 B Extrusions
+- 2 C Extrusions
+- 1 D Extrusion
+- 1 E Extrusion
+- 4 Corner Brackets
