@@ -1,13 +1,82 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – M3DP Ideas and Project Plans</title><link>https://minimal3dp.com/projects/ideas/</link><description>Recent content in M3DP Ideas and Project Plans on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://minimal3dp.com/projects/ideas/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects: Belt Driven Ender 3 Build</title><link>https://minimal3dp.com/projects/ideas/belt-driven-ender-3/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/ideas/belt-driven-ender-3/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Belt Driven Ender 3 Project Log and References&lt;/p>
-&lt;/div>
-&lt;p>Belt Driven Ender 3 landing page.&lt;/p></description></item><item><title>Projects: Voron 2.4 R2</title><link>https://minimal3dp.com/projects/ideas/voron-2.4-r2/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/ideas/voron-2.4-r2/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Voron 2.4 R2 Project log and References&lt;/p>
-&lt;/div>
-&lt;p>Voron 2.4 R2 landing page.&lt;/p></description></item><item><title>Projects: vzBot Build</title><link>https://minimal3dp.com/projects/ideas/vzbot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/ideas/vzbot/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>vzBot Project log and References&lt;/p>
-&lt;/div>
-&lt;p>vzBot landing page.&lt;/p></description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minimal 3DP – M3DP Ideas and Project Plans</title>
+    <link>https://minimal3dp.com/projects/ideas/</link>
+    <description>Recent content in M3DP Ideas and Project Plans on Minimal 3DP</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://minimal3dp.com/projects/ideas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Projects: Belt Driven Ender 3 Build</title>
+      <link>https://minimal3dp.com/projects/ideas/belt-driven-ender-3/</link>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://minimal3dp.com/projects/ideas/belt-driven-ender-3/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Belt Driven Ender 3 Project Log and References&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Belt Driven Ender 3 landing page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Projects: Voron 2.4 R2</title>
+      <link>https://minimal3dp.com/projects/ideas/voron-2.4-r2/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://minimal3dp.com/projects/ideas/voron-2.4-r2/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Voron 2.4 R2 Project log and References&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Voron 2.4 R2 landing page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Projects: vzBot Build</title>
+      <link>https://minimal3dp.com/projects/ideas/vzbot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://minimal3dp.com/projects/ideas/vzbot/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;vzBot Project log and References&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;vzBot landing page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
