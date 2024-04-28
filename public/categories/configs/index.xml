@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Configs</title>
-    <link>https://minimal3dp.com/categories/configs/</link>
+    <link>http://localhost:1313/categories/configs/</link>
     <description>Recent content in Configs on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://minimal3dp.com/categories/configs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/categories/configs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Projects: Sidewinder X1 (SWX1) Klipper Config</title>
-      <link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
+      <link>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
       <description>
         
         
@@ -261,10 +261,10 @@ verbose: True
     
     <item>
       <title>Projects: Ender 3 S1 Plus (e3s1p) Klipper Config</title>
-      <link>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link>
+      <link>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid>
       <description>
         
         
@@ -559,10 +559,10 @@ square_corner_velocity: 5.0
     
     <item>
       <title>Projects: Zero G Mercury One.1 Klipper Config</title>
-      <link>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link>
+      <link>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid>
       <description>
         
         
@@ -955,10 +955,10 @@ verbose: True
     
     <item>
       <title>Projects: Creality CR6 SE</title>
-      <link>https://minimal3dp.com/projects/3d-printers/cr6-se/</link>
+      <link>http://localhost:1313/projects/3d-printers/cr6-se/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/projects/3d-printers/cr6-se/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/cr6-se/</guid>
       <description>
         
         
@@ -976,10 +976,10 @@ verbose: True
     
     <item>
       <title>Projects: Voron 2.4 Pro&#43;</title>
-      <link>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro&#43;/</link>
+      <link>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro&#43;/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</guid>
       <description>
         
         
@@ -997,10 +997,10 @@ verbose: True
     
     <item>
       <title>Projects: Zero G Mercury One.1</title>
-      <link>https://minimal3dp.com/projects/3d-printers/mercury-one/</link>
+      <link>http://localhost:1313/projects/3d-printers/mercury-one/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://minimal3dp.com/projects/3d-printers/mercury-one/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/mercury-one/</guid>
       <description>
         
         
