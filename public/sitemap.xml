@@ -3,225 +3,216 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-references/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/overview/</loc>
-    <lastmod>2024-04-10T19:55:36-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-parts-list/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</loc>
-    <lastmod>2024-04-06T22:31:38-05:00</lastmod>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</loc>
-    <lastmod>2024-04-13T14:54:30-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</loc>
-    <lastmod>2024-04-14T19:19:15-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-frame/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printers/</loc>
-    <lastmod>2024-04-14T20:54:32-05:00</lastmod>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printing-reviews/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
+    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/tutorials/</loc>
-    <lastmod>2024-04-13T11:44:31-05:00</lastmod>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/journal/voron-2.4-r2/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/journal/</loc>
-    <lastmod>2024-04-28T05:19:01-05:00</lastmod>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/klipper-calibration/rotational-distance/</loc>
-    <lastmod>2024-04-12T11:14:55-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/journal/belt-driven-ender-3/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/klipper-calibration/flow-calibration/</loc>
-    <lastmod>2024-04-13T10:25:11-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/news/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
+    <lastmod>2024-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/klipper-calibration/run-current/</loc>
-    <lastmod>2024-04-27T11:57:18-05:00</lastmod>
+    <loc>http://localhost:1313/projects/journal/belt-driven-ender-3/</loc>
+    <lastmod>2024-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/news/</loc>
+    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/klipper-calibration/flow-calibration/</loc>
+    <lastmod>2024-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/klipper-calibration/run-current/</loc>
+    <lastmod>2024-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/klipper-calibration/pressure-advance/</loc>
-    <lastmod>2024-04-17T12:50:45-05:00</lastmod>
+    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/klipper-calibration/input-shaping/</loc>
-    <lastmod>2024-04-12T11:14:55-05:00</lastmod>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/klipper-calibration/x-and-y-offsets/</loc>
-    <lastmod>2024-04-12T11:14:55-05:00</lastmod>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/klipper-calibration/max-volumetric-speed/</loc>
-    <lastmod>2024-04-06T23:11:58-05:00</lastmod>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/klipper-calibration/lead-screw-rotation-distance/</loc>
-    <lastmod>2024-04-06T23:11:58-05:00</lastmod>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/klipper-calibration/pid-tuning/</loc>
-    <lastmod>2024-04-20T10:18:05-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/assembly/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/builds/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/rassembly/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/voron/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/voron-2.4/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</loc>
-    <lastmod>2024-04-21T16:34:02-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/this-week/</loc>
-    <lastmod>2024-04-21T16:34:02-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/references/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/3d-printers/</loc>
-    <lastmod>2024-04-17T09:14:04-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ender-3-s1-plus/</loc>
-    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/</loc>
-    <lastmod>2024-04-13T10:18:29-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/2024/04/10/klipper-calibration-website/</loc>
-    <lastmod>2024-04-27T13:47:03-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</loc>
-    <lastmod>2024-04-10T21:28:11-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/tutorials/orca-slicer/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/configs/</loc>
-    <lastmod>2024-04-17T09:14:04-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/klipper/</loc>
-    <lastmod>2024-04-14T19:19:15-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/klipper/</loc>
-    <lastmod>2024-04-17T09:14:04-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swx1/</loc>
-    <lastmod>2024-04-06T22:31:38-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/3d-printers/sidewinder-x1/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cr6/</loc>
-    <lastmod>2024-04-15T22:22:09-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/creality/</loc>
-    <lastmod>2024-04-15T22:22:09-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/3d-printers/cr6-se/</loc>
-    <lastmod>2024-04-15T22:22:09-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/drybox/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/filament/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/how-to/</loc>
-    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mercury/</loc>
-    <lastmod>2024-04-07T10:26:11-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/orcaslicer/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/reviews/</loc>
-    <lastmod>2024-04-07T11:06:32-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/tutorials/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/videos/</loc>
-    <lastmod>2024-04-07T22:13:26-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</loc>
-    <lastmod>2024-04-17T09:14:04-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/3d-printers/mercury-one/</loc>
-    <lastmod>2024-04-07T10:26:11-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/zerog/</loc>
-    <lastmod>2024-04-07T10:26:11-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-04-18T20:20:56-05:00</lastmod>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-04-10T21:55:35-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/calibration/</loc>
-    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ender-3/</loc>
-    <lastmod>2024-04-13T14:54:30-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/klipper-calibration/</loc>
-    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/landing-page/</loc>
-    <lastmod>2024-04-12T11:18:13-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mercury.one/</loc>
-    <lastmod>2024-04-14T19:19:15-05:00</lastmod>
+    <lastmod>2024-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-30T22:41:54-05:00</lastmod>
+    <lastmod>2024-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/assembly/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/builds/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/landing-page/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/projects/</loc>
-    <lastmod>2024-03-31T14:36:29-05:00</lastmod>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/rassembly/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/voron/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/voron-2.4/</loc>
+    <lastmod>2024-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</loc>
+    <lastmod>2024-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/this-week/</loc>
+    <lastmod>2024-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/references/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/calibration/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/how-to/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/klipper-calibration/</loc>
+    <lastmod>2024-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/3d-printers/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ender-3-s1-plus/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2024/04/10/klipper-calibration-website/</loc>
+    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</loc>
+    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/tutorials/orca-slicer/</loc>
+    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/configs/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/klipper/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/klipper/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swx1/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/sidewinder-x1/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cr6/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/creality/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/cr6-se/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/drybox/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/filament/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mercury/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/orcaslicer/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/reviews/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/tutorials/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/videos/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/mercury-one/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/zerog/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/ender-3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/mercury.one/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/s1-plus/</loc>
-    <lastmod>2024-04-13T14:54:30-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
-    <lastmod>2024-03-30T20:24:04-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/journal/vzbot/</loc>
-    <lastmod>2024-04-27T22:01:15-05:00</lastmod>
   </url>
 </urlset>
