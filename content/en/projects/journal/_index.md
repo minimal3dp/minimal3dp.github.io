@@ -1,12 +1,12 @@
 ---
-title: M3DP Ideas and Project Plans
-description: Minimal3DP project idea and plans
+title: M3DP Project Plans and Journals
+description: Minimal3DP project plans and journals. A place for me to document my projects
 date: 2024-04-13
 weight: 10
 ---
 
 {{% pageinfo %}}
-As I plan projects, I wanted a place where I could gather my thoughts and plans
+As I plan projects, I wanted a place where I could gather my thoughts and plans. I also want to start keeping project journals.  
 {{% /pageinfo %}}
 
 Unfortunately, it usually takes me a while to work on my various projects. I store references all over the place. I am hoping that this could be a place for me to gather everything.

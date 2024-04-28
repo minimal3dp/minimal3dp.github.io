@@ -3,7 +3,7 @@ title: Voron 2.4 R2 Pro+ Build References
 description: >
   Build references for the Voron 2.4 R2 Pro+ from FormBot
 date: 2024-04-20
-weight: 2
+weight: 1
 categories: [References, Builds]
 tags: [voron, voron 2.4]
 draft: false

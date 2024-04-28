@@ -3,7 +3,7 @@ title: Voron 2.4 R2 Pro+ Build Parts List
 description: >
   Parts List for the Voron 2.4 R2 Pro+ from FormBot
 date: 2024-04-27
-weight: 1
+weight: 2
 categories: [RAssembly, Builds]
 tags: [voron, voron 2.4]
 resources:
