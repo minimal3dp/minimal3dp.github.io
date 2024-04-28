@@ -12,7 +12,7 @@ resources:
       byline: "Photo: Team FDM"
 draft: true
 categories: [This Week]
-tags: [voron]
+tags: [voron, orca slicer]
 ---
 
 {{< imgproc voron Fill "500x500" >}}
