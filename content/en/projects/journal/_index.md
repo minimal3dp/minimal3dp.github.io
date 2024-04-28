@@ -9,6 +9,6 @@ weight: 10
 As I plan projects, I wanted a place where I could gather my thoughts and plans. I also want to start keeping project journals.  
 {{% /pageinfo %}}
 
-Unfortunately, it usually takes me a while to work on my various projects. I store references all over the place. I am hoping that this could be a place for me to gather everything.
+It usually takes me a while to work on my various projects. I store references all over the place. I am hoping that this could be a place for me to gather everything. As I work in a project, I would like to be able to document the process. 
 
-I actually have alot of projects planned for Minimal 3DP. I look forward to getting to work and sharing.
+I have alot of projects planned for Minimal 3DP. I look forward to getting to work and sharing.
