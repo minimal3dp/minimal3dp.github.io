@@ -9,14 +9,14 @@ resources:
   - src: "**.{png,jpg}"
     title: "Image #:counter"
     params:
-      byline: "Photo: Team FDM"
-draft: true
+      byline: "Photo: SoftFever"
+draft: false
 categories: [This Week]
 tags: [voron, Orcaslicer]
 ---
 
-{{< imgproc voron Fill "500x500" >}}
-Voron Circuit Board Logo
+{{< imgproc orcaslicer Fill >}}
+OrcaSlicer Logo
 {{< /imgproc >}}
 
 # The Week of April 28st 2024
@@ -24,19 +24,17 @@ Voron Circuit Board Logo
 I am currently working on several projects this week. They include:
 
 - [Voron 2.4 R2 Pro+ Build](https://minimal3dp.com/projects/ideas/voron-2.4-r2/)
-- [Belt Driven Ender 3](https://kevinakasam.com/belt-driven-ender-3/)
 - Orca Slicer Seam Settings
 - STEM Outreach
 
 ## Voron 2.4 R2 Pro+ Build
+i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend. 
 
-I have started getting together my project website for my Voron build. One of the newer ideas I am trying is to create a project website. I am hoping that it makes it easier for me to save references and other links. I typically try to research a project before I begin and it will make it to asier to share my research.
+{{< youtube Hiyof41s9Jo >}}
 
-With the Voron build, I have mostly saved basic references from the [Voron site](https://vorondesign.com/). I have also saved doc from the FormBot site. They appear to have some updated instructions for their kits.
 
-## Belt Driven Ender 3
-
-I stumbled across this project a while ago. It seemed like an interesting conversion for my Ender 3 v2. This week I am going to work on adding a project website and printing the needed parts. The hardware cost less than $30 USD.
+## Orca Slicer Tutorials
+I am working to add to my Orca Slicer tutorials th ok s week. i want to do a post on ideal settings for support (based on a viewer question) and do a video on my recommendation for seam settings.
 
 ## STEM Outreach
 
