@@ -1,5 +1,5 @@
 ---
-date: 2024-04-10
+date: 2024-04-29
 title: New Minimal 3DP Website
 linkTitle:
 description: >
@@ -11,7 +11,7 @@ resources:
     title: "Image #:counter"
     params:
       byline: "Photo: Mike Wilson / CC-BY-CA"
-draft: true
+draft: false
 ---
 
 {{< imgproc banner Fill "600x300" >}}
