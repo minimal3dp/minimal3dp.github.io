@@ -73,7 +73,28 @@ FormBot Parts List
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text">
 Voron Build Guide - Blind Joints
-&lt;small class="text-muted">&lt;br/>Photo: Voron Build Guide&lt;/small>
+&lt;small class="text-muted">&lt;br/>Photo: Various&lt;/small>
+&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="frame">Frame&lt;a class="td-heading-self-link" href="#frame" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Using the blind joints. The Frame is assembled.&lt;/p>
+&lt;h3 id="frame-parts">Frame Parts&lt;a class="td-heading-self-link" href="#frame-parts" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>M5 x 16 BHCS&lt;/li>
+&lt;li>10 A Extrusions&lt;/li>
+&lt;li>4 B Extrusions&lt;/li>
+&lt;li>2 C Extrusions&lt;/li>
+&lt;li>1 D Extrusion&lt;/li>
+&lt;li>1 E Extrusion&lt;/li>
+&lt;li>4 Corner Brackets&lt;/li>
+&lt;/ul>
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 460px">
+&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-build-frame_hu498dd86ad35f3d26c00e096265d31015_549618_450x600_fill_catmullrom_smart1_3.png" width="450" height="600">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+Assembled Frame
+&lt;small class="text-muted">&lt;br/>Photo: Various&lt;/small>
 &lt;/p>
 &lt;/figcaption>
 &lt;/figure></description></item></channel></rss>

@@ -1,4 +1,30 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Posts</title><link>https://minimal3dp.com/blog/posts/</link><description>Recent content in Posts on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://minimal3dp.com/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: This Week on Minimal 3DP (April 21)</title><link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Posts</title><link>https://minimal3dp.com/blog/posts/</link><description>Recent content in Posts on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://minimal3dp.com/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: This Week on Minimal 3DP (April 28)</title><link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid><description>
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 202px">
+&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu9770179d4afc95ddd65735612e8f1f88_10374_192x192_fill_catmullrom_smart1_3.PNG" width="192" height="192">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+OrcaSlicer Logo
+&lt;small class="text-muted">&lt;br/>Photo: SoftFever&lt;/small>
+&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h1 id="the-week-of-april-28st-2024">The Week of April 28st 2024&lt;a class="td-heading-self-link" href="#the-week-of-april-28st-2024" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>I am currently working on several projects this week. They include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/">Voron 2.4 R2 Pro+ Build&lt;/a>&lt;/li>
+&lt;li>Orca Slicer Seam Settings&lt;/li>
+&lt;li>STEM Outreach&lt;/li>
+&lt;/ul>
+&lt;h2 id="voron-24-r2-pro-build">Voron 2.4 R2 Pro+ Build&lt;a class="td-heading-self-link" href="#voron-24-r2-pro-build" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Hiyof41s9Jo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+>&lt;/iframe>
+&lt;/div>
+&lt;h2 id="orca-slicer-tutorials">Orca Slicer Tutorials&lt;a class="td-heading-self-link" href="#orca-slicer-tutorials" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>I am working to add to my Orca Slicer tutorials th ok s week. i want to do a post on ideal settings for support (based on a viewer question) and do a video on my recommendation for seam settings.&lt;/p>
+&lt;h2 id="stem-outreach">STEM Outreach&lt;a class="td-heading-self-link" href="#stem-outreach" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>As part of my job, I sometimes do STEM outreach with local schools. This usually involves taking a 3D printer and talking to kids (and parents) about STEM careers. Before I go to an event, I have gotten into the habit of 3D printing a bunch of print-in-place and flexi animals to give out. This week I am hoping to print 100 animals.&lt;/p></description></item><item><title>Blog: This Week on Minimal 3DP (April 21)</title><link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid><description>
 &lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
 &lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/features-voron_hua3b3e9223fbb606719b4c49ac6ade85b_108177_500x500_fill_catmullrom_smart1_3.png" width="500" height="500">
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
