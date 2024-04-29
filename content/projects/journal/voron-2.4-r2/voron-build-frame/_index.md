@@ -10,7 +10,7 @@ resources:
   - src: "**.{png,jpg}"
     title: "Image #:counter"
     params:
-      byline: "Photo: Voron Build Guide"
+      byline: "Photo: Various"
 draft: false
 ---
 
@@ -30,4 +30,22 @@ The Voron assembly manual starts with the building of the frame. I will start fr
 
 {{< imgproc joints Fill "600x450" >}}
 Voron Build Guide - Blind Joints
+{{< /imgproc >}}
+
+## Frame
+
+Using the blind joints. The Frame is assembled.
+
+### Frame Parts
+
+- M5 x 16 BHCS
+- 10 A Extrusions
+- 4 B Extrusions
+- 2 C Extrusions
+- 1 D Extrusion
+- 1 E Extrusion
+- 4 Corner Brackets
+
+{{< imgproc frame Fill "450x600" >}}
+Assembled Frame
 {{< /imgproc >}}

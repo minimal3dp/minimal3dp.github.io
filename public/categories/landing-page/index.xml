@@ -5,7 +5,6 @@
     <description>Recent content in Landing Page on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Apr 2024 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/categories/landing-page/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +17,7 @@
     <item>
       <title>Projects: Projects</title>
       <link>http://localhost:1313/projects/</link>
-      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/</guid>
       <description>
@@ -39,7 +38,7 @@
     <item>
       <title>Klipper-Calibration: Klipper Calibration</title>
       <link>http://localhost:1313/klipper-calibration/</link>
-      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/klipper-calibration/</guid>
       <description>

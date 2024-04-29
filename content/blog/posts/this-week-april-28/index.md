@@ -3,7 +3,7 @@ date: 2024-04-28
 title: This Week on Minimal 3DP (April 28)
 linkTitle: Minimal 3DP April 28
 description: >
-  This week I am continuing work on my Voron 2.4. I will be adding toy Orca Slicer tutorials as
+  This week I am continuing work on my Voron 2.4. I will be adding to my Orca Slicer tutorials as I can as well.
 author: Mike Wilson (minimal3dp@gmail.com)
 resources:
   - src: "**.{png,jpg}"
@@ -15,7 +15,7 @@ categories: [This Week]
 tags: [voron, Orcaslicer]
 ---
 
-{{< imgproc orcaslicer Fill >}}
+{{< imgproc orcaslicer Fill "192x192" >}}
 OrcaSlicer Logo
 {{< /imgproc >}}
 
@@ -28,12 +28,13 @@ I am currently working on several projects this week. They include:
 - STEM Outreach
 
 ## Voron 2.4 R2 Pro+ Build
-i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend. 
+
+i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.
 
 {{< youtube Hiyof41s9Jo >}}
 
-
 ## Orca Slicer Tutorials
+
 I am working to add to my Orca Slicer tutorials th ok s week. i want to do a post on ideal settings for support (based on a viewer question) and do a video on my recommendation for seam settings.
 
 ## STEM Outreach
