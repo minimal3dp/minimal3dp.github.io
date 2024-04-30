@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Voron 2.4</title>
-    <link>http://localhost:1313/tags/voron-2.4/</link>
+    <link>https://minimal3dp.com/tags/voron-2.4/</link>
     <description>Recent content in Voron 2.4 on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Apr 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/tags/voron-2.4/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://minimal3dp.com/tags/voron-2.4/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Projects: Voron 2.4 R2 Pro&#43; Build References</title>
-      <link>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-references/</link>
+      <link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-references/</guid>
+      <guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</guid>
       <description>
         
         
@@ -65,10 +65,10 @@
     
     <item>
       <title>Projects: Voron 2.4 R2 Pro&#43; Build Parts List</title>
-      <link>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-parts-list/</link>
+      <link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-parts-list/</guid>
+      <guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/</guid>
       <description>
         
         
@@ -88,7 +88,7 @@
 &lt;h2 id=&#34;formbot-parts&#34;&gt;FormBot Parts&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#formbot-parts&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://ueeshop.ly200-cdn.com/u_file/UPAY/UPAY131/2403/12/photo/814.jpg?x-oss-process=image/format,webp/quality,q_100&#34;&gt;FormBot Parts List&lt;/a&gt;
 &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 610px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-parts-list/formbot-parts-list_hu63c1ac2240ad23679ae8a994bc5a9674_386301_600x450_fill_catmullrom_smart1_3.png&#34; width=&#34;600&#34; height=&#34;450&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/formbot-parts-list_hu63c1ac2240ad23679ae8a994bc5a9674_386301_600x450_fill_catmullrom_smart1_3.png&#34; width=&#34;600&#34; height=&#34;450&#34;&gt;
 &lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 &lt;p class=&#34;card-text&#34;&gt;
 
@@ -116,10 +116,10 @@ FormBot Parts List
     
     <item>
       <title>Projects: Voron 2.4 R2 Pro&#43; Build - Building the Frame</title>
-      <link>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-frame/</link>
+      <link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-frame/</guid>
+      <guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</guid>
       <description>
         
         
@@ -138,7 +138,7 @@ FormBot Parts List
 &lt;p&gt;The Voron assembly manual starts with the building of the frame. I will start from this point.&lt;/p&gt;
 &lt;h2 id=&#34;blind-joints&#34;&gt;Blind Joints&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#blind-joints&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 610px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-frame/voron-blind-joints_hucb291759848b08618273f21227ea418e_77376_600x450_fill_catmullrom_smart1_3.png&#34; width=&#34;600&#34; height=&#34;450&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-blind-joints_hucb291759848b08618273f21227ea418e_77376_600x450_fill_catmullrom_smart1_3.png&#34; width=&#34;600&#34; height=&#34;450&#34;&gt;
 &lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 &lt;p class=&#34;card-text&#34;&gt;
 
@@ -162,7 +162,7 @@ Voron Build Guide - Blind Joints
 &lt;li&gt;4 Corner Brackets&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 460px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-frame/voron-build-frame_hu498dd86ad35f3d26c00e096265d31015_549618_450x600_fill_catmullrom_smart1_3.png&#34; width=&#34;450&#34; height=&#34;600&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-build-frame_hu498dd86ad35f3d26c00e096265d31015_549618_450x600_fill_catmullrom_smart1_3.png&#34; width=&#34;450&#34; height=&#34;600&#34;&gt;
 &lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 &lt;p class=&#34;card-text&#34;&gt;
 
@@ -179,10 +179,10 @@ Assembled Frame
     
     <item>
       <title>Projects: Voron 2.4 Pro&#43;</title>
-      <link>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</link>
+      <link>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro&#43;/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</guid>
+      <guid>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro&#43;/</guid>
       <description>
         
         

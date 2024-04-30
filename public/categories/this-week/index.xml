@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – This Week</title>
-    <link>http://localhost:1313/categories/this-week/</link>
+    <link>https://minimal3dp.com/categories/this-week/</link>
     <description>Recent content in This Week on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/categories/this-week/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://minimal3dp.com/categories/this-week/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,15 +17,15 @@
     
     <item>
       <title>Blog: This Week on Minimal 3DP (April 28)</title>
-      <link>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
+      <link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
       <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
+      <guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
       <description>
         
         
         &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 202px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu9770179d4afc95ddd65735612e8f1f88_10374_192x192_fill_catmullrom_smart1_3.png&#34; width=&#34;192&#34; height=&#34;192&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu9770179d4afc95ddd65735612e8f1f88_10374_192x192_fill_catmullrom_smart1_3.png&#34; width=&#34;192&#34; height=&#34;192&#34;&gt;
 &lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 &lt;p class=&#34;card-text&#34;&gt;
 
@@ -63,15 +63,15 @@ OrcaSlicer Logo
     
     <item>
       <title>Blog: This Week on Minimal 3DP (April 21)</title>
-      <link>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link>
+      <link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link>
       <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid>
+      <guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid>
       <description>
         
         
         &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 510px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/features-voron_hua3b3e9223fbb606719b4c49ac6ade85b_108177_500x500_fill_catmullrom_smart1_3.png&#34; width=&#34;500&#34; height=&#34;500&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/features-voron_hua3b3e9223fbb606719b4c49ac6ade85b_108177_500x500_fill_catmullrom_smart1_3.png&#34; width=&#34;500&#34; height=&#34;500&#34;&gt;
 &lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 &lt;p class=&#34;card-text&#34;&gt;
 

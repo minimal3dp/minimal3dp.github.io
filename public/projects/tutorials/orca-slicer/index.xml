@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP – Orca Slicer Tutorials</title>
-    <link>http://localhost:1313/projects/tutorials/orca-slicer/</link>
+    <link>https://minimal3dp.com/projects/tutorials/orca-slicer/</link>
     <description>Recent content in Orca Slicer Tutorials on Minimal 3DP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/projects/tutorials/orca-slicer/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://minimal3dp.com/projects/tutorials/orca-slicer/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Projects: OrcaSlicer Calibration and Max Flowrate</title>
-      <link>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
+      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
+      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
       <description>
         
         
