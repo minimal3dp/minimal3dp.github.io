@@ -1,31 +1,3 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP – Orca Slicer Tutorials</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/</link><description>Recent content in Orca Slicer Tutorials on Minimal 3DP</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://minimal3dp.com/projects/tutorials/orca-slicer/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects: OrcaSlicer Calibration and Max Flowrate</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid><description>
-&lt;h1 id="orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool">OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;a class="td-heading-self-link" href="#orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="max-volumetric-speed-defined">Max Volumetric Speed Defined&lt;a class="td-heading-self-link" href="#max-volumetric-speed-defined" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>According to &lt;a href="https://help.prusa3d.com/article/max-volumetric-speed_127176">Prusa3D&lt;/a>, Max Volumetric Speed is defined as:&lt;/p>
-&lt;blockquote>
-&lt;p>The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p>
-&lt;/blockquote>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
->&lt;/iframe>
-&lt;/div>
-&lt;h2 id="video-description">Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p>
-&lt;p>Stop printing with gaps and blobs! Master your flow rate with OrcaSlicer&amp;rsquo;s built-in Max Flow Rate Calibration Test.&lt;/p>
-&lt;p>This beginner-friendly tutorial will guide you step-by-step through the entire calibration process. Learn how to:&lt;/p>
-&lt;ul>
-&lt;li>Access and configure the Max Flow Rate test in Orca Slicer&lt;/li>
-&lt;li>Print the test model and identify the optimal flow rate for your filament&lt;/li>
-&lt;li>Apply the new flow rate settings to achieve flawless prints with consistent material extrusion&lt;/li>
-&lt;/ul>
-&lt;p>Say goodbye to under-extrusion and hello to smooth surfaces and sharp details! This video is perfect for anyone who wants to take their 3D printing to the next level with OrcaSlicer.&lt;/p>
-&lt;p>Calibration Spreadsheet: &lt;a href="https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing&lt;/a>&lt;/p>
-&lt;p>References:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://help.prusa3d.com/article/max-volumetric-speed_127176">https://help.prusa3d.com/article/max-volumetric-speed_127176&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#advanced-calibration">https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#advanced-calibration&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>#3dprinting
-#klipper
-#3dprinter
-#orcaslicer&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Orca Slicer Tutorials on Minimal 3DP</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/</link><description>Recent content in Orca Slicer Tutorials on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 04 May 2024 13:54:48 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/projects/tutorials/orca-slicer/index.xml" rel="self" type="application/rss+xml"/><item><title>OrcaSlicer Calibration and Max Flowrate</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid><description>OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool Max Volumetric Speed Defined According to Prusa3D, Max Volumetric Speed is defined as:
+The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.
+Video Description Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test</description></item></channel></rss>
