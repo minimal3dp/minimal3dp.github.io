@@ -1,40 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal 3DP – Tutorials</title>
-    <link>https://minimal3dp.com/projects/tutorials/</link>
+    <title>Tutorials on Minimal 3DP</title>
+    <link>http://localhost:1313/projects/tutorials/</link>
     <description>Recent content in Tutorials on Minimal 3DP</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
-    
-	  <atom:link href="https://minimal3dp.com/projects/tutorials/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Projects: Orca Slicer Tutorials</title>
-      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/</link>
-      <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Orca Slicer Tutorials&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Orca Slicer landing page.&lt;/p&gt;
-
-      </description>
-    </item>
-    
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/tutorials/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

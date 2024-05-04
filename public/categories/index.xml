@@ -1,19 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal 3DP – Categories</title>
-    <link>https://minimal3dp.com/categories/</link>
+    <title>Categories on Minimal 3DP</title>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Minimal 3DP</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate>
-    
-	  <atom:link href="https://minimal3dp.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <lastBuildDate>Sun, 28 Apr 2024 20:01:02 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>This Week</title>
+      <link>http://localhost:1313/categories/this-week/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/this-week/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Assembly</title>
+      <link>http://localhost:1313/categories/assembly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/assembly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Builds</title>
+      <link>http://localhost:1313/categories/builds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/builds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RAssembly</title>
+      <link>http://localhost:1313/categories/rassembly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/rassembly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>References</title>
+      <link>http://localhost:1313/categories/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/references/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3D Printers</title>
+      <link>http://localhost:1313/categories/3d-printers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/3d-printers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configs</title>
+      <link>http://localhost:1313/categories/configs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/configs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Klipper</title>
+      <link>http://localhost:1313/categories/klipper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/klipper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reviews</title>
+      <link>http://localhost:1313/categories/reviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>http://localhost:1313/categories/tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Videos</title>
+      <link>http://localhost:1313/categories/videos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/videos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Landing Page</title>
+      <link>http://localhost:1313/categories/landing-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/landing-page/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/categories/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/projects/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

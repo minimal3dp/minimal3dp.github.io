@@ -1,39 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal 3DP – Projects</title>
-    <link>https://minimal3dp.com/categories/projects/</link>
+    <title>Projects on Minimal 3DP</title>
+    <link>http://localhost:1313/categories/projects/</link>
     <description>Recent content in Projects on Minimal 3DP</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="https://minimal3dp.com/categories/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="http://localhost:1313/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Projects: Projects</title>
-      <link>https://minimal3dp.com/projects/</link>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://minimal3dp.com/projects/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Minimal 3DP Projects, Ideas, and Links&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;This section is my attempt to document my projects, ideas, and other informational links/references.&lt;/p&gt;
-
-      </description>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>Minimal 3DP Projects, Ideas, and Links&#xA;This section is my attempt to document my projects, ideas, and other informational links/references.</description>
     </item>
-    
   </channel>
 </rss>

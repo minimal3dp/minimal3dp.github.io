@@ -36,6 +36,8 @@ Voron Build Guide - Blind Joints
 
 Using the blind joints. The Frame is assembled.
 
+{{< youtube Z0Cd19ETfkI >}}
+
 ### Frame Parts
 
 - M5 x 16 BHCS

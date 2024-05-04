@@ -1,19 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal 3DP – Belt Driven Ender 3 Build</title>
-    <link>https://minimal3dp.com/projects/journal/belt-driven-ender-3/</link>
+    <title>Belt Driven Ender 3 Build on Minimal 3DP</title>
+    <link>http://localhost:1313/projects/journal/belt-driven-ender-3/</link>
     <description>Recent content in Belt Driven Ender 3 Build on Minimal 3DP</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Apr 2024 00:00:00 +0000</lastBuildDate>
-    
-	  <atom:link href="https://minimal3dp.com/projects/journal/belt-driven-ender-3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/journal/belt-driven-ender-3/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

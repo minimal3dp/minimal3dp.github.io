@@ -1,56 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal 3DP – M3DP News</title>
-    <link>https://minimal3dp.com/blog/news/</link>
+    <title>M3DP News on Minimal 3DP</title>
+    <link>http://localhost:1313/blog/news/</link>
     <description>Recent content in M3DP News on Minimal 3DP</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="https://minimal3dp.com/blog/news/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <atom:link href="http://localhost:1313/blog/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog: New Minimal 3DP Website</title>
-      <link>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</guid>
-      <description>
-        
-        
-        
-        <![CDATA[<img src="https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_640x0_resize_q75_catmullrom.jpg" width="640" height="360"/>]]>
-        
-        &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 610px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/featured-banner-get_hu3e28b1e2e9067e97f4eb10c2859a85f7_930348_600x300_fill_q75_catmullrom_smart1.jpg&#34; width=&#34;600&#34; height=&#34;300&#34;&gt;
-&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
-&lt;p class=&#34;card-text&#34;&gt;
-
-
-Minimal 3DP YouTube Banner
-&lt;small class=&#34;text-muted&#34;&gt;&lt;br/&gt;Photo: Mike Wilson / CC-BY-CA&lt;/small&gt;
-&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h1 id=&#34;new-website&#34;&gt;New Website&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#new-website&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&lt;/p&gt;
-&lt;p&gt;I have used Hugo in the past and I thought I would try to rewrite the site in it. I liked the Docsy theme but I was not sure I could create the Klipper Calibration website. It turns out it was easier that I thought.&lt;/p&gt;
-&lt;h2 id=&#34;klipper-calibration&#34;&gt;Klipper Calibration&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#klipper-calibration&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;One of my main goals for creating this site, is the Klipper Calibration calculators I have put together. I have my &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing&#34;&gt;Klipper Calibration Spreadsheet&lt;/a&gt; but many people are requesting edit access. To simplify things, I thought it would be a good idea to create these online tools. It also gave me the opportunity to do some simple programming. It has been a while.&lt;/p&gt;
-&lt;p&gt;Because I am using Docsy, there are tools built in to leave comments and post issues on github. I thought this integration would be helpful as I tried to improve and expand the tools. I am looking forward to the feedback. I know that there is room for improvement.&lt;/p&gt;
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#projects&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;To many time I do not document my work well enough. I have several different tools for reference and documentation. Because it is &lt;em&gt;several different&lt;/em&gt; tools, I never know where to look. With this in mind, I am hoping this site can serve as a repository of knowledge for my work. I sometime wish I had more time. There are so many cool ideas to try. Hopefully, I will have a chance to explore.&lt;/p&gt;
-&lt;h2 id=&#34;blog&#34;&gt;Blog&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#blog&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The blog is a minor feature for me. I always have good intentions for keeping it up but I always have trouble finding the time. We will see how this iteration goes. I am thinking that Hugo will make it easy. A lot of content here was done via my iPhone. Working Copy and Textastic are amazing apps and worth every penny.&lt;/p&gt;
-
-      </description>
+      <title>New Minimal 3DP Website</title>
+      <link>http://localhost:1313/blog/2024/04/29/new-minimal-3dp-website/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024/04/29/new-minimal-3dp-website/</guid>
+      <description>Minimal 3DP YouTube Banner Photo: Mike Wilson / CC-BY-CA New Website With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&#xA;I have used Hugo in the past and I thought I would try to rewrite the site in it.</description>
     </item>
-    
+    <item>
+      <title>New Minimal 3DP Website</title>
+      <link>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</guid>
+      <description>Minimal 3DP YouTube Banner Photo: Mike Wilson / CC-BY-CA New Website With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&#xA;I have used Hugo in the past and I thought I would try to rewrite the site in it.</description>
+    </item>
   </channel>
 </rss>

@@ -1,19 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal 3DP – Tags</title>
-    <link>https://minimal3dp.com/tags/</link>
+    <title>Tags on Minimal 3DP</title>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Minimal 3DP</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate>
-    
-	  <atom:link href="https://minimal3dp.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <lastBuildDate>Sun, 28 Apr 2024 20:01:02 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orcaslicer</title>
+      <link>http://localhost:1313/tags/orcaslicer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/orcaslicer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voron</title>
+      <link>http://localhost:1313/tags/voron/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/voron/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voron 2.4</title>
+      <link>http://localhost:1313/tags/voron-2.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/voron-2.4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ender 3 S1 Plus</title>
+      <link>http://localhost:1313/tags/ender-3-s1-plus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ender-3-s1-plus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Klipper</title>
+      <link>http://localhost:1313/tags/klipper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/klipper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swx1</title>
+      <link>http://localhost:1313/tags/swx1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/swx1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cr6</title>
+      <link>http://localhost:1313/tags/cr6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cr6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Creality</title>
+      <link>http://localhost:1313/tags/creality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/creality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drybox</title>
+      <link>http://localhost:1313/tags/drybox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/drybox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Filament</title>
+      <link>http://localhost:1313/tags/filament/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/filament/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How-To</title>
+      <link>http://localhost:1313/tags/how-to/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mercury</title>
+      <link>http://localhost:1313/tags/mercury/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mercury/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zerog</title>
+      <link>http://localhost:1313/tags/zerog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/zerog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calibration</title>
+      <link>http://localhost:1313/tags/calibration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/calibration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ender 3</title>
+      <link>http://localhost:1313/tags/ender-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ender-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mercury.one</title>
+      <link>http://localhost:1313/tags/mercury.one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mercury.one/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>S1 Plus</title>
+      <link>http://localhost:1313/tags/s1-plus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/s1-plus/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

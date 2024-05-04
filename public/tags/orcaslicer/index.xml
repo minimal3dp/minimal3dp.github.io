@@ -1,112 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal 3DP – Orcaslicer</title>
-    <link>https://minimal3dp.com/tags/orcaslicer/</link>
+    <title>Orcaslicer on Minimal 3DP</title>
+    <link>http://localhost:1313/tags/orcaslicer/</link>
     <description>Recent content in Orcaslicer on Minimal 3DP</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate>
-    
-	  <atom:link href="https://minimal3dp.com/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <lastBuildDate>Sun, 28 Apr 2024 20:01:02 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog: This Week on Minimal 3DP (April 28)</title>
-      <link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
+      <title>This Week on Minimal 3DP (April 28)</title>
+      <link>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
       <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
-      <description>
-        
-        
-        &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 202px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu9770179d4afc95ddd65735612e8f1f88_10374_192x192_fill_catmullrom_smart1_3.png&#34; width=&#34;192&#34; height=&#34;192&#34;&gt;
-&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
-&lt;p class=&#34;card-text&#34;&gt;
-
-
-OrcaSlicer Logo
-&lt;small class=&#34;text-muted&#34;&gt;&lt;br/&gt;Photo: SoftFever&lt;/small&gt;
-&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h1 id=&#34;the-week-of-april-28st-2024&#34;&gt;The Week of April 28st 2024&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#the-week-of-april-28st-2024&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;I am currently working on several projects this week. They include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://minimal3dp.com/projects/ideas/voron-2.4-r2/&#34;&gt;Voron 2.4 R2 Pro+ Build&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Orca Slicer Seam Settings&lt;/li&gt;
-&lt;li&gt;STEM Outreach&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;voron-24-r2-pro-build&#34;&gt;Voron 2.4 R2 Pro+ Build&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#voron-24-r2-pro-build&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p&gt;
-
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Hiyof41s9Jo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;h2 id=&#34;orca-slicer-tutorials&#34;&gt;Orca Slicer Tutorials&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#orca-slicer-tutorials&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;I am working to add to my Orca Slicer tutorials th ok s week. i want to do a post on ideal settings for support (based on a viewer question) and do a video on my recommendation for seam settings.&lt;/p&gt;
-&lt;h2 id=&#34;stem-outreach&#34;&gt;STEM Outreach&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#stem-outreach&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;As part of my job, I sometimes do STEM outreach with local schools. This usually involves taking a 3D printer and talking to kids (and parents) about STEM careers. Before I go to an event, I have gotten into the habit of 3D printing a bunch of print-in-place and flexi animals to give out. This week I am hoping to print 100 animals.&lt;/p&gt;
-
-      </description>
+      <guid>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
+      <description>OrcaSlicer Logo Photo: SoftFever The Week of April 28st 2024 I am currently working on several projects this week. They include:&#xA;Voron 2.4 R2 Pro+ Build Orca Slicer Seam Settings STEM Outreach Voron 2.4 R2 Pro+ Build i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.</description>
     </item>
-    
     <item>
-      <title>Projects: OrcaSlicer Calibration and Max Flowrate</title>
-      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
+      <title>OrcaSlicer Calibration and Max Flowrate</title>
+      <link>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool&#34;&gt;OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;max-volumetric-speed-defined&#34;&gt;Max Volumetric Speed Defined&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#max-volumetric-speed-defined&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;According to &lt;a href=&#34;https://help.prusa3d.com/article/max-volumetric-speed_127176&#34;&gt;Prusa3D&lt;/a&gt;, Max Volumetric Speed is defined as:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;h2 id=&#34;video-description&#34;&gt;Video Description&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#video-description&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;
-&lt;p&gt;Stop printing with gaps and blobs! Master your flow rate with OrcaSlicer&amp;rsquo;s built-in Max Flow Rate Calibration Test.&lt;/p&gt;
-&lt;p&gt;This beginner-friendly tutorial will guide you step-by-step through the entire calibration process. Learn how to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Access and configure the Max Flow Rate test in Orca Slicer&lt;/li&gt;
-&lt;li&gt;Print the test model and identify the optimal flow rate for your filament&lt;/li&gt;
-&lt;li&gt;Apply the new flow rate settings to achieve flawless prints with consistent material extrusion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Say goodbye to under-extrusion and hello to smooth surfaces and sharp details!  This video is perfect for anyone who wants to take their 3D printing to the next level with OrcaSlicer.&lt;/p&gt;
-&lt;p&gt;Calibration Spreadsheet: &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing&#34;&gt;https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;References:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://help.prusa3d.com/article/max-volumetric-speed_127176&#34;&gt;https://help.prusa3d.com/article/max-volumetric-speed_127176&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#advanced-calibration&#34;&gt;https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#advanced-calibration&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;#3dprinting
-#klipper
-#3dprinter
-#orcaslicer&lt;/p&gt;
-
-      </description>
+      <guid>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
+      <description>OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool Max Volumetric Speed Defined According to Prusa3D, Max Volumetric Speed is defined as:&#xA;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&#xA;Video Description Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test</description>
     </item>
-    
   </channel>
 </rss>
