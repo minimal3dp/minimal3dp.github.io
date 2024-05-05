@@ -11,39 +11,36 @@ resources:
     title: "Image #:counter"
     params:
       byline: "Photo: Various"
-draft: true
+draft: false
 ---
 
 {{% pageinfo %}}
-In this section, I will be building the Z Drive of my Voron 2.4 R2 Kit
+Downloading and Installing Cura
 {{% /pageinfo %}}
 
-**References and Links**
+# Install Process
 
-- [Voron 2.4 R2 Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
+{{< youtube >}}
 
-# Build Steps
+## Download Ultimaker Cura:
+   - Visit the [Ultimaker Cura website](https://ultimaker.com/software/ultimaker-cura) to download the latest version.
+   - Choose the appropriate version for your operating system (Windows, Mac, or Linux).
+   - Click the download link to start the download process.
 
-Once I build the frame, I am starting to work on building the Z Drive.
+## Installation:
+   - Once the download is complete, locate the downloaded file (e.g., `*.exe` for Windows, `*.dmg` for Mac).
+   - Run the install wizard by double-clicking the downloaded file.
+   - Follow the on-screen instructions to install Ultimaker Cura.
+   - During installation, you may be prompted to configure the software for your specific 3D printer. Choose the appropriate printer model if applicable. The various printer profiles can be found under "Non-Network Printers".
 
-## Linear Rails
+## Launching for the First Time:
+   - After installation, launch Ultimaker Cura.
+   - You'll see an interface where you can load your 3D models, adjust settings, and prepare them for printing.
+   - Ultimaker Cura provides recommended for yourselected printer with settings for various print quality levels. I use these profiles as a base for custom profiles. 
 
-{{< imgproc logo Fill "400x350" >}}
-Cura GitHub - Cura Logo
-{{< /imgproc >}}
-
-## Frame
-
-Using the blind joints. The Frame is assembled.
-
-{{< youtube  >}}
-
-### Z Drive Parts
-
-- M3 x 8
-- M3 T Nuts
-- MGN9 Linear Rails
-
-{{< imgproc frame Fill "450x600" >}}
-Assembled Z Drive
-{{< /imgproc >}}
+## References:
+(1) UltiMaker Cura - UltiMaker. https://ultimaker.com/software/ultimaker-cura/.
+(2) Install Ultimaker™ Cura on Ubuntu using the Snap Store - Snapcraft. https://snapcraft.io/install/cura-slicer/ubuntu.
+(3) UltiMaker Cura installation. https://support.ultimaker.com/s/article/1667410778218.
+(4) How to Use Ultimaker Cura to Prepare Designs for 3D Printing. https://www.tomshardware.com/how-to/use-ultimaker-cura-to-prepare-designs-for-3d-printing.
+(5) Cura. https://ultimaker.com/software/ultimaker-cura.
