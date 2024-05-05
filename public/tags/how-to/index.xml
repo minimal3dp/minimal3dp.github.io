@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How-To on Minimal 3DP</title>
-    <link>http://localhost:1313/tags/how-to/</link>
+    <link>https://minimal3dp.com/tags/how-to/</link>
     <description>Recent content in How-To on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://minimal3dp.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OrcaSlicer Calibration and Max Flowrate</title>
-      <link>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
+      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
+      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
       <description>OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool Max Volumetric Speed Defined According to Prusa3D, Max Volumetric Speed is defined as:&#xA;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&#xA;Video Description Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test</description>
     </item>
     <item>
       <title>Klipper Calibration</title>
-      <link>http://localhost:1313/klipper-calibration/</link>
+      <link>https://minimal3dp.com/klipper-calibration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/</guid>
       <description>Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress&#xA;Launched - 2024-04-12&#xA;This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet</description>
     </item>
   </channel>

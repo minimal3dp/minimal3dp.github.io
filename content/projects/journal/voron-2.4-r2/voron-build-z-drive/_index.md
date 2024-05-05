@@ -24,11 +24,11 @@ In this section, I will be building the Z Drive of my Voron 2.4 R2 Kit
 
 # Build Steps
 
-Once I build the frame, I am starting to work on building the Z Drive. 
+Once I build the frame, I am starting to work on building the Z Drive.
 
 ## Linear Rails
 
-{{< imgproc joints Fill "600x450" >}}
+{{< imgproc zdrives Fill "600x600" >}}
 Voron Build Guide - Z Drive
 {{< /imgproc >}}
 
@@ -40,7 +40,7 @@ Using the blind joints. The Frame is assembled.
 
 ### Z Drive Parts
 
-- M3 x 8 
+- M3 x 8
 - M3 T Nuts
 - MGN9 Linear Rails
 

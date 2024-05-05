@@ -2,149 +2,149 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimal 3DP</title>
-    <link>http://localhost:1313/</link>
+    <link>https://minimal3dp.com/</link>
     <description>Recent content on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://minimal3dp.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sidewinder X1 (SWX1) Klipper Config</title>
-      <link>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
+      <link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
+      <guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
       <description>SWX1 with a BTT SKR 2&#xA;GitHub Backup&#xA;[include shell_command.cfg] [include fluidd.cfg] [include mainsail.cfg] # This file contains common pin mappings for the BigTreeTech SKR 2. # To use this config, the firmware should be compiled for the # STM32F407 with a &amp;#34;32KiB bootloader&amp;#34;. # In newer versions of this board shipped in late 2021 the STM32F429 # is used, if this is the case compile for this with a &amp;#34;32KiB bootloader&amp;#34; # You will need to check the chip on your board to identify which you have.</description>
     </item>
     <item>
       <title>Ender 3 S1 Plus (e3s1p) Klipper Config</title>
-      <link>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link>
+      <link>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid>
+      <guid>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid>
       <description>Ender 3 S1 Plus with the default Creality Board&#xA;# !Ender-3 S1 Plus # printer_size: 300x300x300 # version: 3.6 # This file contains pin mappings for the stock 2021 Creality Ender 3 # S1 &amp;amp; S1 Pro. To use this config, check the STM32 Chip on the # Mainboard, during &amp;#34;make menuconfig&amp;#34; select accordingly either the # STM32F103 with &amp;#34;28KiB bootloader&amp;#34; or the STM32F401 with # &amp;#34;64KiB bootloader&amp;#34; and serial (on USART1 PA10/PA9) for both.</description>
     </item>
     <item>
       <title>Zero G Mercury One.1 Klipper Config</title>
-      <link>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link>
+      <link>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid>
+      <guid>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid>
       <description>Mercury One.1 with a BTT Manta M8P&#xA;GitHub Backup&#xA;[include shell_command.cfg] [include mainsail.cfg] # host MCU service is preinstalled and ready to use with: [mcu CB1] serial: /tmp/klipper_host_mcu # This file contains common pin mappings for the BIGTREETECH Manta M8P # To use this config, the firmware should be compiled for the # STM32G0B1 with a &amp;#34;8KiB bootloader&amp;#34; &amp;#34;8 MHz crystal&amp;#34; # and &amp;#34;USB (on PA11/PA12)&amp;#34; or &amp;#34;CAN bus (on PD12/PD13)&amp;#34;.</description>
     </item>
     <item>
       <title>Rotational Distance</title>
-      <link>http://localhost:1313/klipper-calibration/rotational-distance/</link>
+      <link>https://minimal3dp.com/klipper-calibration/rotational-distance/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/rotational-distance/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/rotational-distance/</guid>
       <description>Rotational Distance From the Klipper Documents On an extruder, the rotation_distance is the amount of distance the filament travels for one full rotation of the stepper motor. The best way to get an accurate value for this setting is to use a &amp;ldquo;measure and trim&amp;rdquo; procedure.&#xA;First start with an initial guess for the rotation distance. This may be obtained from steps_per_mm or by inspecting the hardware.&#xA;Then use the following procedure to &amp;ldquo;measure and trim&amp;rdquo;:</description>
     </item>
     <item>
       <title>Flow Calibration</title>
-      <link>http://localhost:1313/klipper-calibration/flow-calibration/</link>
+      <link>https://minimal3dp.com/klipper-calibration/flow-calibration/</link>
       <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/flow-calibration/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/flow-calibration/</guid>
       <description>Flow Calibration From 3D Print Beginner The flow rate calibration is done in order to fine tune the amount of plastic extruded by the printer. Also known as Extrusion Multiplier, by calibrating the flow rate you can fix issues caused by under-extrusion or over-extrusion. Besides this, flow rate calibration can also improve retraction values a bit and help with bulging corners and layer seam. If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.</description>
     </item>
     <item>
       <title>Run Current for TMC2208/2209</title>
-      <link>http://localhost:1313/klipper-calibration/run-current/</link>
+      <link>https://minimal3dp.com/klipper-calibration/run-current/</link>
       <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/run-current/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/run-current/</guid>
       <description>Run Current From the Voron Docs Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.&#xA;Calculating Driver Current Settings&#xA;Steps The maximum Klipper RUN current settings can be calculated via the following steps:</description>
     </item>
     <item>
       <title>Pressure Advance</title>
-      <link>http://localhost:1313/klipper-calibration/pressure-advance/</link>
+      <link>https://minimal3dp.com/klipper-calibration/pressure-advance/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/pressure-advance/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/pressure-advance/</guid>
       <description>Pressure Advance From the Klipper Documents Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.&#xA;Klipper Documents&#xA;Slicer Settings Paramenter Value Nozzle Diameter 0.4 Layer Height 0.3 Infill 0 Test Model: Square Tower&#xA;Console Commands Setup SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=1 ACCEL=500 Select command based on drive: Direct Drive:</description>
     </item>
     <item>
       <title>Input Shaping</title>
-      <link>http://localhost:1313/klipper-calibration/input-shaping/</link>
+      <link>https://minimal3dp.com/klipper-calibration/input-shaping/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/input-shaping/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/input-shaping/</guid>
       <description>Input Shaping From the Klipper Documents &amp;ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&amp;rdquo;&#xA;Klipper: Input Shaping – Simply Explained&#xA;Basic tuning requires measuring the ringing frequencies of the printer by printing a test model.&#xA;According to the Klipper docs, slice the ringing test model, which can be found in docs/prints/ringing_tower.stl, in the slicer:&#xA;Use a layer height is 0.</description>
     </item>
     <item>
       <title>Setting X and Y Offsets</title>
-      <link>http://localhost:1313/klipper-calibration/x-and-y-offsets/</link>
+      <link>https://minimal3dp.com/klipper-calibration/x-and-y-offsets/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/x-and-y-offsets/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/x-and-y-offsets/</guid>
       <description>Setting X and Y Offsets From the Klipper Documents Steps X and Y Offsets Calculator Toolhead X Probe Toolhead Y Probe Toolhead X Nozzle Toolhead Y Nozzle X Offset Y Offset Submit Edit Printer.cfg ** Video Coming Soon **</description>
     </item>
     <item>
       <title>Max Volumentric Speed</title>
-      <link>http://localhost:1313/klipper-calibration/max-volumetric-speed/</link>
+      <link>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/max-volumetric-speed/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</guid>
       <description>Setting Max Volumentric Speed From Orca Slicer This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.&#xA;Max Volumetric speed&#xA;Steps Open Orca Slicer Go to &amp;ldquo;Calibration&amp;rdquo; -&amp;gt; &amp;ldquo;More&amp;hellip;&amp;rdquo; -&amp;gt; &amp;ldquo;Max Flowrate Fill out &amp;ldquo;Max volumetric speed test&amp;rdquo; dialog Print model Measure with Calipers to spot on model before the print starts to fail Paste Max Flow Value into Orca Slicer Filament Section Max Volumentric Speed Calculator max flow value = start + (height-measured * step) Start Height Measured Step Max Flow Value Max Flow Value at 95% Max Flow Value at 90% Calculate Update your Slicer Update Orca Slicer Update Prusa Slicer Update Cura </description>
     </item>
     <item>
       <title>Lead Screw Rotation Distance</title>
-      <link>http://localhost:1313/klipper-calibration/lead-screw-rotation-distance/</link>
+      <link>https://minimal3dp.com/klipper-calibration/lead-screw-rotation-distance/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/lead-screw-rotation-distance/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/lead-screw-rotation-distance/</guid>
       <description>Setting Lead Screw Rotation Distance From the Klipper Documents The rotational axes with a lead screw can be easily calculated with the following formula:&#xA;rotation_distance = &amp;lt;screw_pitch&amp;gt; * &amp;lt;number_of_separate_threads&amp;gt; Steps Pitch # of Threads Variables 2 4 T8x8 2 2 T8x4 2 1 T8x2 Lead Screw Rotation Distance Calculator Pitch Number of Threads Lead Screw Rotation Distance Calculate </description>
     </item>
     <item>
       <title>PID Tuning in Klipper</title>
-      <link>http://localhost:1313/klipper-calibration/pid-tuning/</link>
+      <link>https://minimal3dp.com/klipper-calibration/pid-tuning/</link>
       <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/pid-tuning/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/pid-tuning/</guid>
       <description>TL;DR&#xA;Extruder&#xA;PID_CALIBRATE HEATER=extruder TARGET=205 Bed&#xA;PID_CALIBRATE HEATER=heater_bed TARGET=65 PID Tuning in Klipper PID tuning is essential for maintaining consistent temperatures in your 3D printer&amp;rsquo;s hot end and heat bed, leading to better print quality. Here&amp;rsquo;s a breakdown of PID tuning in Klipper:&#xA;What is PID Tuning? PID stands for Proportional-Integral-Derivative. It&amp;rsquo;s a method that helps the printer controller adjust heating power based on the difference between the desired temperature (setpoint) and the actual temperature reading from the sensor.</description>
     </item>
     <item>
       <title>New Minimal 3DP Website</title>
-      <link>http://localhost:1313/blog/2024/04/29/new-minimal-3dp-website/</link>
+      <link>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/04/29/new-minimal-3dp-website/</guid>
+      <guid>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</guid>
       <description>Minimal 3DP YouTube Banner Photo: Mike Wilson / CC-BY-CA New Website With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&#xA;I have used Hugo in the past and I thought I would try to rewrite the site in it.</description>
     </item>
     <item>
       <title>This Week on Minimal 3DP (April 28)</title>
-      <link>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
+      <link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
       <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
+      <guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
       <description>OrcaSlicer Logo Photo: SoftFever The Week of April 28st 2024 I am currently working on several projects this week. They include:&#xA;Voron 2.4 R2 Pro+ Build Orca Slicer Seam Settings STEM Outreach Voron 2.4 R2 Pro+ Build i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.</description>
     </item>
     <item>
       <title>This Week on Minimal 3DP (April 21)</title>
-      <link>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link>
+      <link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link>
       <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid>
+      <guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid>
       <description>Voron Circuit Board Logo Photo: Team FDM The Week of April 21st 2024 I am currently working on several projects this week. They include:&#xA;Voron 2.4 R2 Pro+ Build Belt Driven Ender 3 STEM Outreach Voron 2.4 R2 Pro+ Build I have started getting together my project website for my Voron build. One of the newer ideas I am trying is to create a project website. I am hoping that it makes it easier for me to save references and other links.</description>
     </item>
     <item>
       <title>Klipper Calibration Website</title>
-      <link>http://localhost:1313/blog/2024/04/10/klipper-calibration-website/</link>
+      <link>https://minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/04/10/klipper-calibration-website/</guid>
+      <guid>https://minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</guid>
       <description>Klipper Calibration M3DP Tools and Connections Photo: Mike Wilson / CC-BY-CA A while ago, I create the my Klipper Calibration Spreadsheet to help myself keep track of and remember various Klipper formulas to tune and improve my 3D prints. I decided to share the tools and i have received lots of requests to share the Spreadsheet. Rather than giving everyone access to edit my original sheet, I have recommended to everyone to &amp;ldquo;Make a Copy&amp;rdquo; of the sheet for their personal use.</description>
     </item>
     <item>
       <title>New Minimal 3DP Website</title>
-      <link>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</link>
+      <link>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</guid>
+      <guid>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</guid>
       <description>Minimal 3DP YouTube Banner Photo: Mike Wilson / CC-BY-CA New Website With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&#xA;I have used Hugo in the past and I thought I would try to rewrite the site in it.</description>
     </item>
     <item>
       <title>OrcaSlicer Calibration and Max Flowrate</title>
-      <link>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
+      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
+      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
       <description>OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool Max Volumetric Speed Defined According to Prusa3D, Max Volumetric Speed is defined as:&#xA;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&#xA;Video Description Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test</description>
     </item>
     <item>
       <title>About Minimal 3DP</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://minimal3dp.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://minimal3dp.com/about/</guid>
       <description>About Minimal 3DP My Name is Mike Wilson and I can help.&#xA;NEED HELP?&#xA;Schedule a FREE 15-minute Google Meet&#xA;Consultation:&#xA;Schedule 15 Minutes&#xA;NEED MORE HELP? Contact me regarding scheduling an extended Help Session. I can be reached at minimal3dp@gmail.com.</description>
     </item>
     <item>
       <title>Search Results</title>
-      <link>http://localhost:1313/search/</link>
+      <link>https://minimal3dp.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/search/</guid>
+      <guid>https://minimal3dp.com/search/</guid>
       <description></description>
     </item>
   </channel>

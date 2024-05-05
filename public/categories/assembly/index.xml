@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assembly on Minimal 3DP</title>
-    <link>http://localhost:1313/categories/assembly/</link>
+    <link>https://minimal3dp.com/categories/assembly/</link>
     <description>Recent content in Assembly on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Apr 2024 20:01:02 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/assembly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 May 2024 13:54:48 -0500</lastBuildDate>
+    <atom:link href="https://minimal3dp.com/categories/assembly/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Voron 2.4 R2 Pro&#43; Build - Building the Frame</title>
-      <link>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-frame/</link>
+      <link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-frame/</guid>
+      <guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</guid>
       <description> In this section, I will be building the frame of my Voron 2.4 R2 Kit&#xA;References and Links&#xA;Voron 2.4 R2 Manual Build Steps The Voron assembly manual starts with the building of the frame. I will start from this point.&#xA;Blind Joints Voron Build Guide - Blind Joints Photo: Various Frame Using the blind joints. The Frame is assembled.&#xA;Frame Parts M5 x 16 BHCS 10 A Extrusions 4 B Extrusions 2 C Extrusions 1 D Extrusion 1 E Extrusion 4 Corner Brackets Assembled Frame Photo: Various </description>
     </item>
   </channel>
