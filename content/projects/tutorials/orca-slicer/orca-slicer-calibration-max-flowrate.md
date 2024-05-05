@@ -4,7 +4,7 @@ date: 2024-03-31
 description: >
   Think of MVS as an automatic speed limiter for your 3D printer's filament flow.
 categories: [Videos, Tutorials]
-tags: [orcaslicer, slicers]
+tags: [orcaslicer, how-to]
 ---
 
 # OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer's Calibration Tool
