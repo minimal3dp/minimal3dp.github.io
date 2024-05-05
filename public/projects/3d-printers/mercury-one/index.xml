@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zero G Mercury One.1 on Minimal 3DP</title>
-    <link>https://minimal3dp.com/projects/3d-printers/mercury-one/</link>
+    <link>http://localhost:1313/projects/3d-printers/mercury-one/</link>
     <description>Recent content in Zero G Mercury One.1 on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate>
-    <atom:link href="https://minimal3dp.com/projects/3d-printers/mercury-one/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/3d-printers/mercury-one/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zero G Mercury One.1 Klipper Config</title>
-      <link>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link>
+      <link>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid>
       <description>Mercury One.1 with a BTT Manta M8P&#xA;GitHub Backup&#xA;[include shell_command.cfg] [include mainsail.cfg] # host MCU service is preinstalled and ready to use with: [mcu CB1] serial: /tmp/klipper_host_mcu # This file contains common pin mappings for the BIGTREETECH Manta M8P # To use this config, the firmware should be compiled for the # STM32G0B1 with a &amp;#34;8KiB bootloader&amp;#34; &amp;#34;8 MHz crystal&amp;#34; # and &amp;#34;USB (on PA11/PA12)&amp;#34; or &amp;#34;CAN bus (on PD12/PD13)&amp;#34;.</description>
     </item>
   </channel>
