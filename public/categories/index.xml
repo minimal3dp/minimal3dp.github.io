@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 May 2024 21:15:32 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2024 15:40:19 -0500</lastBuildDate>
     <atom:link href="https://minimal3dp.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorials</title>
+      <link>https://minimal3dp.com/categories/tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://minimal3dp.com/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Videos</title>
+      <link>https://minimal3dp.com/categories/videos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://minimal3dp.com/categories/videos/</guid>
+      <description></description>
+    </item>
     <item>
       <title>This Week</title>
       <link>https://minimal3dp.com/categories/this-week/</link>
@@ -69,20 +83,6 @@
       <link>https://minimal3dp.com/categories/reviews/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://minimal3dp.com/categories/reviews/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tutorials</title>
-      <link>https://minimal3dp.com/categories/tutorials/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/categories/tutorials/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Videos</title>
-      <link>https://minimal3dp.com/categories/videos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/categories/videos/</guid>
       <description></description>
     </item>
     <item>

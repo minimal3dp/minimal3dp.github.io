@@ -30,6 +30,12 @@ weight: 20
 | Bottom Layer     | 1   |
 | Infill           | 0%  |
 
+Cube STL File: [Flow Cube](https://drive.google.com/file/d/11vJEoea94jWu8c0bYwK1tcJ92S1TD9wj/view)
+
+1. Print Cube with Settings Above
+2. Measure the top of all 4 sides and place values below
+3. Update Flow in Slicer with "FLOW" Value
+
 ## Flow Calibration Calculator
 
 {{< flow-calibration >}}

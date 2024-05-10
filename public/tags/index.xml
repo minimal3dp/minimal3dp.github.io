@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 May 2024 21:15:32 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2024 15:40:19 -0500</lastBuildDate>
     <atom:link href="https://minimal3dp.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cura</title>
+      <link>https://minimal3dp.com/tags/cura/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://minimal3dp.com/tags/cura/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slicers</title>
+      <link>https://minimal3dp.com/tags/slicers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://minimal3dp.com/tags/slicers/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Orcaslicer</title>
       <link>https://minimal3dp.com/tags/orcaslicer/</link>
@@ -79,17 +93,17 @@
       <description></description>
     </item>
     <item>
+      <title>How-To</title>
+      <link>https://minimal3dp.com/tags/how-to/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://minimal3dp.com/tags/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Mercury</title>
       <link>https://minimal3dp.com/tags/mercury/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://minimal3dp.com/tags/mercury/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Slicers</title>
-      <link>https://minimal3dp.com/tags/slicers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/tags/slicers/</guid>
       <description></description>
     </item>
     <item>
@@ -111,13 +125,6 @@
       <link>https://minimal3dp.com/tags/ender-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://minimal3dp.com/tags/ender-3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>How-To</title>
-      <link>https://minimal3dp.com/tags/how-to/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/tags/how-to/</guid>
       <description></description>
     </item>
     <item>
