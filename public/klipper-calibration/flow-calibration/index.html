@@ -28,14 +28,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="klipper-calibration">
     <meta property="article:published_time" content="2024-04-03T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-04-28T10:32:41-05:00">
+    <meta property="article:modified_time" content="2024-05-10T16:18:00-05:00">
 
   <meta itemprop="name" content="Flow Calibration">
   <meta itemprop="description" content="Calibrate the Flow of your Extruder in your Slicer
 ">
   <meta itemprop="datePublished" content="2024-04-03T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-04-28T10:32:41-05:00">
-  <meta itemprop="wordCount" content="143"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Flow Calibration">
+  <meta itemprop="dateModified" content="2024-05-10T16:18:00-05:00">
+  <meta itemprop="wordCount" content="171"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Flow Calibration">
 <meta name="twitter:description" content="Calibrate the Flow of your Extruder in your Slicer
 ">
 
@@ -126,6 +126,8 @@ if (!doNotTrack) {
   <a href="/klipper-calibration/lead-screw-rotation-distance/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationlead-screw-rotation-distance"><span class="">Lead Screw Rotation Distance</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-klipper-calibrationpid-tuning-li">
   <a href="/klipper-calibration/pid-tuning/" title="PID Tuning in Klipper" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationpid-tuning"><span class="">PID Tuning</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-klipper-calibrationbltouch-testing-li">
+  <a href="/klipper-calibration/bltouch-testing/" title="Testing a Bltouch, CRTouch, ora clone in Klipper" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-klipper-calibrationbltouch-testing"><span class="">Bltouch Testing</span></a>
 </li>
   </ul>
 </li>
@@ -266,6 +268,12 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 </tr>
 </tbody>
 </table>
+<p>Cube STL File: <a href="https://drive.google.com/file/d/11vJEoea94jWu8c0bYwK1tcJ92S1TD9wj/view">Flow Cube</a></p>
+<ol>
+<li>Print Cube with Settings Above</li>
+<li>Measure the top of all 4 sides and place values below</li>
+<li>Update Flow in Slicer with &ldquo;FLOW&rdquo; Value</li>
+</ol>
 <h2 id="flow-calibration-calculator">Flow Calibration Calculator<a class="td-heading-self-link" href="#flow-calibration-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form method="post" id="myform">
@@ -395,7 +403,7 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified April 28, 2024: <a href="https://github.com/minimal3dp/minimal3dp.github.io/commit/3a0cd97dbe686240870f6eaff7ff2dfff5d921ee">Updated links and file locations (3a0cd97)</a>
+  Last modified May 10, 2024: <a href="https://github.com/minimal3dp/minimal3dp.github.io/commit/b1579597dc5ebdaca88835ed3fce62569a7e0379">Fixed flow calibration (b157959)</a>
 </div>
 
 </div>

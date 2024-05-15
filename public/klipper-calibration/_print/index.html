@@ -197,6 +197,14 @@ This is the multi-page printable view of this section.
 
     
   
+    
+    
+	
+<li>10: <a href="#pg-f53c259eadcf6bfee08b0b509a0f833e">Testing a Bltouch, CRTouch, ora clone in Klipper</a></li>
+
+
+    
+  
 
     </ul>
 
@@ -391,6 +399,12 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 </tr>
 </tbody>
 </table>
+<p>Cube STL File: <a href="https://drive.google.com/file/d/11vJEoea94jWu8c0bYwK1tcJ92S1TD9wj/view">Flow Cube</a></p>
+<ol>
+<li>Print Cube with Settings Above</li>
+<li>Measure the top of all 4 sides and place values below</li>
+<li>Update Flow in Slicer with &ldquo;FLOW&rdquo; Value</li>
+</ol>
 <h2 id="flow-calibration-calculator">Flow Calibration Calculator<a class="td-heading-self-link" href="#flow-calibration-calculator" aria-label="Heading self-link"></a></h2>
 <div class="container">
     <form method="post" id="myform">
@@ -1238,6 +1252,74 @@ shaper_type: mzv
 <li><a href="https://www.obico.io/blog/klipper-pid-tuning/">Klipper PID Tuning - How to Guide</a></li>
 <li><a href="https://www.klipper3d.org/Config_checks.html?h=pid">Configuration checks</a></li>
 </ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-f53c259eadcf6bfee08b0b509a0f833e">10 - Testing a Bltouch, CRTouch, ora clone in Klipper</h1>
+    <div class="lead">Testing a BLTOUCH or a clone in Klipper</div>
+	<p>Testing a BLTouch with Klipper involves several steps to ensure that the probe is functioning correctly. Here&rsquo;s a simplified process:</p>
+<ol>
+<li>
+<p><strong>Initial Setup</strong>: Make sure the BLTouch is correctly mounted and the pin is about 2 mm above the nozzle when retracted (1).</p>
+</li>
+<li>
+<p><strong>Self-Test</strong>: Power on the printer; the BLTouch should perform a self-test, moving the pin up and down. After this, the pin should retract, and the red LED should light up (1).</p>
+</li>
+<li>
+<p><strong>Control Pin Test</strong>:</p>
+<ul>
+<li>
+<p>Send <code>BLTOUCH_DEBUG COMMAND=pin_down</code> in the printer terminal to move the pin down.</p>
+<pre tabindex="0"><code>BLTOUCH_DEBUG COMMAND=pin_down
+</code></pre></li>
+<li>
+<p>Verify that the red LED turns off.</p>
+</li>
+<li>
+<p>Send <code>BLTOUCH_DEBUG COMMAND=pin_up</code> to retract the pin and ensure the red LED turns on (1).</p>
+<pre tabindex="0"><code>BLTOUCH_DEBUG COMMAND=pin_up
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Sensor Pin Test</strong>:</p>
+<ul>
+<li>
+<p>With the pin down, send <code>BLTOUCH_DEBUG COMMAND=touch_mode</code>, then <code>QUERY_PROBE</code> and check for &ldquo;probe: open&rdquo;.</p>
+<pre tabindex="0"><code>BLTOUCH_DEBUG COMMAND=touch_mode
+</code></pre><p>&amp;</p>
+<pre tabindex="0"><code>QUERY_PROBE
+</code></pre></li>
+<li>
+<p>Gently push the pin up with your finger, send <code>QUERY_PROBE</code> again, and look for &ldquo;probe: TRIGGERED&rdquo;.</p>
+<pre tabindex="0"><code></code></pre></li>
+</ul>
+<p>QUERY_PROBE</p>
+<pre tabindex="0"><code>
+- If the responses are incorrect, check your wiring and configuration (1).
+</code></pre></li>
+<li>
+<p><strong>Probing Test</strong>: Move the print head away from the bed and repeat the control and sensor pin tests to confirm the probe&rsquo;s response when not near the bed surface (1).</p>
+</li>
+</ol>
+<p>Remember to handle the BLTouch probe gently and avoid touching the pin with your fingers, as it&rsquo;s sensitive to grease and pressure. If you encounter any issues during these tests, it&rsquo;s usually a sign to double-check your wiring and configuration settings¹. Always refer to the official Klipper documentation for detailed instructions and troubleshooting tips. Happy printing!</p>
+<p>References:
+(1) <a href="https://www.klipper3d.org/BLTouch.html">BL-Touch - Klipper documentation.</a>
+(2) <a href="https://all3dp.com/2/klipper-bltouch-simply-explained">Klipper &amp; BLTouch: How to Make Them Work Together | All3DP.</a>
+(3) <a href="https://help.matterhackers.com/article/196-testing-bltouch">Testing the BLTouch - MatterHackers Knowledge Base</a>
+(4) <a href="https://github.com/Klipper3d/klipper/blob/master/docs/BLTouch.md">klipper/docs/BLTouch.md at master · Klipper3d/klipper · GitHub</a></p>
 
 </div>
 
