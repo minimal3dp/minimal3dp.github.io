@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>M3DP News on Minimal 3DP</title>
-    <link>https://minimal3dp.com/blog/news/</link>
+    <link>http://localhost:1313/blog/news/</link>
     <description>Recent content in M3DP News on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://minimal3dp.com/blog/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Minimal 3DP Website</title>
-      <link>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</link>
+      <link>http://localhost:1313/blog/2024/04/29/new-minimal-3dp-website/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</guid>
+      <guid>http://localhost:1313/blog/2024/04/29/new-minimal-3dp-website/</guid>
       <description>Minimal 3DP YouTube Banner Photo: Mike Wilson / CC-BY-CA New Website With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&#xA;I have used Hugo in the past and I thought I would try to rewrite the site in it.</description>
     </item>
     <item>
       <title>New Minimal 3DP Website</title>
-      <link>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</link>
+      <link>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/blog/2024/04/10/new-minimal-3dp-website/</guid>
+      <guid>http://localhost:1313/blog/2024/04/10/new-minimal-3dp-website/</guid>
       <description>Minimal 3DP YouTube Banner Photo: Mike Wilson / CC-BY-CA New Website With my previous website, I put it together with Wordpress. As what typically happens, WordPress was just too cumbersome for me to maintain. Additionally, it seemed like someone was always trying to hack it. It was a pain and I worried about the hacks.&#xA;I have used Hugo in the past and I thought I would try to rewrite the site in it.</description>
     </item>
   </channel>

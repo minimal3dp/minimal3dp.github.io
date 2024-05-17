@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Minimal 3DP</title>
-    <link>https://minimal3dp.com/blog/posts/</link>
+    <link>http://localhost:1313/blog/posts/</link>
     <description>Recent content in Posts on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://minimal3dp.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This Week on Minimal 3DP (April 28)</title>
-      <link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
+      <link>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
       <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
+      <guid>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
       <description>OrcaSlicer Logo Photo: SoftFever The Week of April 28st 2024 I am currently working on several projects this week. They include:&#xA;Voron 2.4 R2 Pro+ Build Orca Slicer Seam Settings STEM Outreach Voron 2.4 R2 Pro+ Build i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.</description>
     </item>
     <item>
       <title>This Week on Minimal 3DP (April 21)</title>
-      <link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link>
+      <link>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link>
       <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid>
+      <guid>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid>
       <description>Voron Circuit Board Logo Photo: Team FDM The Week of April 21st 2024 I am currently working on several projects this week. They include:&#xA;Voron 2.4 R2 Pro+ Build Belt Driven Ender 3 STEM Outreach Voron 2.4 R2 Pro+ Build I have started getting together my project website for my Voron build. One of the newer ideas I am trying is to create a project website. I am hoping that it makes it easier for me to save references and other links.</description>
     </item>
     <item>
       <title>Klipper Calibration Website</title>
-      <link>https://minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</link>
+      <link>http://localhost:1313/blog/2024/04/10/klipper-calibration-website/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/blog/2024/04/10/klipper-calibration-website/</guid>
+      <guid>http://localhost:1313/blog/2024/04/10/klipper-calibration-website/</guid>
       <description>Klipper Calibration M3DP Tools and Connections Photo: Mike Wilson / CC-BY-CA A while ago, I create the my Klipper Calibration Spreadsheet to help myself keep track of and remember various Klipper formulas to tune and improve my 3D prints. I decided to share the tools and i have received lots of requests to share the Spreadsheet. Rather than giving everyone access to edit my original sheet, I have recommended to everyone to &amp;ldquo;Make a Copy&amp;rdquo; of the sheet for their personal use.</description>
     </item>
   </channel>

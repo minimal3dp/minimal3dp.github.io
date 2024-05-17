@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials on Minimal 3DP</title>
-    <link>https://minimal3dp.com/categories/tutorials/</link>
+    <link>http://localhost:1313/categories/tutorials/</link>
     <description>Recent content in Tutorials on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 05 May 2024 15:40:19 -0500</lastBuildDate>
-    <atom:link href="https://minimal3dp.com/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ultimaker Cura - Download and Install</title>
-      <link>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</link>
+      <link>http://localhost:1313/projects/tutorials/ultimaker-cura/cura-download-install/</link>
       <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</guid>
+      <guid>http://localhost:1313/projects/tutorials/ultimaker-cura/cura-download-install/</guid>
       <description>Downloading and Installing Cura&#xA;Install Process Download Ultimaker Cura: Visit the Ultimaker Cura website to download the latest version. Choose the appropriate version for your operating system (Windows, Mac, or Linux). Click the download link to start the download process. Installation: Once the download is complete, locate the downloaded file (e.g., *.exe for Windows, *.dmg for Mac). Run the install wizard by double-clicking the downloaded file. Follow the on-screen instructions to install Ultimaker Cura.</description>
     </item>
     <item>
       <title>OrcaSlicer Calibration and Max Flowrate</title>
-      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
+      <link>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
+      <guid>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
       <description>OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool Max Volumetric Speed Defined According to Prusa3D, Max Volumetric Speed is defined as:&#xA;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&#xA;Video Description Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test</description>
     </item>
   </channel>

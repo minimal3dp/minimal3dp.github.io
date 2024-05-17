@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3D Printers on Minimal 3DP</title>
-    <link>https://minimal3dp.com/categories/3d-printers/</link>
+    <link>http://localhost:1313/categories/3d-printers/</link>
     <description>Recent content in 3D Printers on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate>
-    <atom:link href="https://minimal3dp.com/categories/3d-printers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/3d-printers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ender 3 S1 Plus</title>
-      <link>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/</link>
+      <link>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/</link>
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/</guid>
       <description>Ender 3 S1 Plus&#xA;Ender 3 S1 Plus landing page.</description>
     </item>
     <item>
       <title>Artillary Sidewinder X1</title>
-      <link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</link>
+      <link>http://localhost:1313/projects/3d-printers/sidewinder-x1/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/sidewinder-x1/</guid>
       <description>Artillery Sidewinder X1 (SWX1)&#xA;SWX1 landing page.</description>
     </item>
     <item>
       <title>Creality CR6 SE</title>
-      <link>https://minimal3dp.com/projects/3d-printers/cr6-se/</link>
+      <link>http://localhost:1313/projects/3d-printers/cr6-se/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printers/cr6-se/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/cr6-se/</guid>
       <description>Creality CR6 SE&#xA;Creality CR6 SE landing page.</description>
     </item>
     <item>
       <title>FixDry Double NT1</title>
-      <link>https://minimal3dp.com/projects/3d-printing-reviews/fixdry-double-nt1/</link>
+      <link>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printing-reviews/fixdry-double-nt1/</guid>
+      <guid>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</guid>
       <description>FIXDRY 3D Filament 2 Spools Compatible Dryerbox DOUBLE-NT1&#xA;FixDry NT1 Review Level Up Your 3D Printer! FIXDRY DOUBLE-NT1 Filament Dryer Box Review &amp;amp; Demonstration&#xA;red of battling wet filament and failed 3D prints? Struggling to keep your prints crisp and free of warping?&#xA;In this video, we take action! We unbox and put the FIXDRY DOUBLE-NT1 Filament Dryer to the test. See for yourself how this 2-spool dryer can transform your printing experience.</description>
     </item>
     <item>
       <title>Voron 2.4 Pro&#43;</title>
-      <link>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro&#43;/</link>
+      <link>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro&#43;/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/</guid>
       <description>Voron 2.4 Pro+&#xA;Voron 2.4 landing page.</description>
     </item>
     <item>
       <title>Zero G Mercury One.1</title>
-      <link>https://minimal3dp.com/projects/3d-printers/mercury-one/</link>
+      <link>http://localhost:1313/projects/3d-printers/mercury-one/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printers/mercury-one/</guid>
+      <guid>http://localhost:1313/projects/3d-printers/mercury-one/</guid>
       <description>Zero G Mercury One.1&#xA;Mercury One.1 landing page.</description>
     </item>
   </channel>
