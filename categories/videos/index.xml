@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Videos on Minimal 3DP</title><link>https://minimal3dp.com/categories/videos/</link><description>Recent content in Videos on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 17 May 2024 10:05:41 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/categories/videos/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker Cura - Download and Install</title><link>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</guid><description>Downloading and Installing Cura
-Install Process Download Ultimaker Cura: Visit the Ultimaker Cura website to download the latest version. Choose the appropriate version for your operating system (Windows, Mac, or Linux). Click the download link to start the download process. Installation: Once the download is complete, locate the downloaded file (e.g., *.exe for Windows, *.dmg for Mac). Run the install wizard by double-clicking the downloaded file. Follow the on-screen instructions to install Ultimaker Cura.</description></item><item><title>OrcaSlicer Calibration and Max Flowrate</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid><description>OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool Max Volumetric Speed Defined According to Prusa3D, Max Volumetric Speed is defined as:
-The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.
-Video Description Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Videos on Minimal 3DP</title><link>https://minimal3dp.com/categories/videos/</link><description>Recent content in Videos on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 01 Dec 2024 16:10:16 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/categories/videos/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker Cura - Download and Install</title><link>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</guid><description>&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Downloading and Installing Cura&lt;/p>
+
+&lt;/div>
+
+&lt;h1 id="install-process">Install Process&lt;a class="td-heading-self-link" href="#install-process" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wbL86wn9v2Q?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="download-ultimaker-cura">Download Ultimaker Cura:&lt;a class="td-heading-self-link" href="#download-ultimaker-cura" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Visit the &lt;a href="https://ultimaker.com/software/ultimaker-cura">Ultimaker Cura website&lt;/a> to download the latest version.&lt;/li>
+&lt;li>Choose the appropriate version for your operating system (Windows, Mac, or Linux).&lt;/li>
+&lt;li>Click the download link to start the download process.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation:&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Once the download is complete, locate the downloaded file (e.g., &lt;code>*.exe&lt;/code> for Windows, &lt;code>*.dmg&lt;/code> for Mac).&lt;/li>
+&lt;li>Run the install wizard by double-clicking the downloaded file.&lt;/li>
+&lt;li>Follow the on-screen instructions to install Ultimaker Cura.&lt;/li>
+&lt;li>During installation, you may be prompted to configure the software for your specific 3D printer. Choose the appropriate printer model if applicable. The various printer profiles can be found under &amp;ldquo;Non-Network Printers&amp;rdquo;.&lt;/li>
+&lt;/ul>
+&lt;h2 id="launching-for-the-first-time">Launching for the First Time:&lt;a class="td-heading-self-link" href="#launching-for-the-first-time" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>After installation, launch Ultimaker Cura.&lt;/li>
+&lt;li>You&amp;rsquo;ll see an interface where you can load your 3D models, adjust settings, and prepare them for printing.&lt;/li>
+&lt;li>Ultimaker Cura provides recommended for yourselected printer with settings for various print quality levels. I use these profiles as a base for custom profiles.&lt;/li>
+&lt;/ul>
+&lt;h2 id="references">References:&lt;a class="td-heading-self-link" href="#references" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>(1) UltiMaker Cura - UltiMaker. &lt;a href="https://ultimaker.com/software/ultimaker-cura/">https://ultimaker.com/software/ultimaker-cura/&lt;/a>.
+(2) Install Ultimaker™ Cura on Ubuntu using the Snap Store - Snapcraft. &lt;a href="https://snapcraft.io/install/cura-slicer/ubuntu">https://snapcraft.io/install/cura-slicer/ubuntu&lt;/a>.
+(3) UltiMaker Cura installation. &lt;a href="https://support.ultimaker.com/s/article/1667410778218">https://support.ultimaker.com/s/article/1667410778218&lt;/a>.
+(4) How to Use Ultimaker Cura to Prepare Designs for 3D Printing. &lt;a href="https://www.tomshardware.com/how-to/use-ultimaker-cura-to-prepare-designs-for-3d-printing">https://www.tomshardware.com/how-to/use-ultimaker-cura-to-prepare-designs-for-3d-printing&lt;/a>.
+(5) Cura. &lt;a href="https://ultimaker.com/software/ultimaker-cura">https://ultimaker.com/software/ultimaker-cura&lt;/a>.&lt;/p></description></item><item><title>OrcaSlicer Calibration and Max Flowrate</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid><description>&lt;h1 id="orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool">OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;a class="td-heading-self-link" href="#orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="max-volumetric-speed-defined">Max Volumetric Speed Defined&lt;a class="td-heading-self-link" href="#max-volumetric-speed-defined" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>According to &lt;a href="https://help.prusa3d.com/article/max-volumetric-speed_127176">Prusa3D&lt;/a>, Max Volumetric Speed is defined as:&lt;/p>
+&lt;blockquote>
+&lt;p>The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p>
+&lt;/blockquote>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="video-description">Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p></description></item></channel></rss>
