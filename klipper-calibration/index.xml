@@ -255,11 +255,8 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;/code>&lt;/pre>&lt;p>&lt;em>Bed&lt;/em>&lt;/p>
 &lt;pre tabindex="0">&lt;code>PID_CALIBRATE HEATER=heater_bed TARGET=65
 &lt;/code>&lt;/pre>
-
- 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
- >&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h1 id="pid-tuning-in-klipper">PID Tuning in Klipper&lt;a class="td-heading-self-link" href="#pid-tuning-in-klipper" aria-label="Heading self-link">&lt;/a>&lt;/h1>

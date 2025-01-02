@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Minimal 3DP</title><link>https://minimal3dp.com/categories/tutorials/</link><description>Recent content in Tutorials on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 01 Dec 2024 16:25:25 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/categories/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker Cura - Download and Install</title><link>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</guid><description>&lt;div class="pageinfo pageinfo-primary">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Minimal 3DP</title><link>https://minimal3dp.com/categories/tutorials/</link><description>Recent content in Tutorials on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 01 Jan 2025 22:07:30 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/categories/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker Cura - Download and Install</title><link>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</guid><description>&lt;div class="pageinfo pageinfo-primary">
 &lt;p>Downloading and Installing Cura&lt;/p>
 
 &lt;/div>
 
 &lt;h1 id="install-process">Install Process&lt;a class="td-heading-self-link" href="#install-process" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 
-
- 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wbL86wn9v2Q?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
- >&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wbL86wn9v2Q?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="download-ultimaker-cura">Download Ultimaker Cura:&lt;a class="td-heading-self-link" href="#download-ultimaker-cura" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -43,11 +40,8 @@
 &lt;p>The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p>
 &lt;/blockquote>
 
-
- 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
- >&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="video-description">Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link">&lt;/a>&lt;/h2>

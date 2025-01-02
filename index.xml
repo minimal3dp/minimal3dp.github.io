@@ -1148,11 +1148,8 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;/code>&lt;/pre>&lt;p>&lt;em>Bed&lt;/em>&lt;/p>
 &lt;pre tabindex="0">&lt;code>PID_CALIBRATE HEATER=heater_bed TARGET=65
 &lt;/code>&lt;/pre>
-
- 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
- >&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h1 id="pid-tuning-in-klipper">PID Tuning in Klipper&lt;a class="td-heading-self-link" href="#pid-tuning-in-klipper" aria-label="Heading self-link">&lt;/a>&lt;/h1>
@@ -1164,7 +1161,9 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;p>&lt;strong>Initial Setup&lt;/strong>: Make sure the BLTouch is correctly mounted and the pin is about 2 mm above the nozzle when retracted (1).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Self-Test&lt;/strong>: Power on the printer; the BLTouch should perform a self-test, moving the pin up and down. After this, the pin should retract, and the red LED should light up (1).&lt;/p></description></item><item><title>New Minimal 3DP Website</title><link>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</link><pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+&lt;p>&lt;strong>Self-Test&lt;/strong>: Power on the printer; the BLTouch should perform a self-test, moving the pin up and down. After this, the pin should retract, and the red LED should light up (1).&lt;/p></description></item><item><title>3D Printing and Max Volumetric Speed</title><link>https://minimal3dp.com/blog/2025/01/01/3d-printing-and-max-volumetric-speed/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2025/01/01/3d-printing-and-max-volumetric-speed/</guid><description>&lt;h2 id="finding-your-3d-printers-sweet-spot---a-guide-to-maximizing-print-speed">Finding Your 3D Printer&amp;rsquo;s Sweet Spot - A Guide to Maximizing Print Speed&lt;a class="td-heading-self-link" href="#finding-your-3d-printers-sweet-spot---a-guide-to-maximizing-print-speed" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Have you ever wondered how fast your 3D printer can truly go? When I get a new printer or see a new model released, the first question that pops into my head is always, &amp;ldquo;How fast can I print with this thing?&amp;rdquo;&lt;/p>
+&lt;p>This post will explore how to determine the optimal print speed for your 3D printer, ensuring both speed and quality.&lt;/p></description></item><item><title>New Minimal 3DP Website</title><link>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</link><pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
 &lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/29/new-minimal-3dp-website/featured-banner-get_hu2748545015001248249.jpg" width="600" height="300">
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text">
@@ -1252,11 +1251,8 @@ Minimal 3DP YouTube Banner
 &lt;p>The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p>
 &lt;/blockquote>
 
-
- 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
- >&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="video-description">Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link">&lt;/a>&lt;/h2>
