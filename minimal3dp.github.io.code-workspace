@@ -6,15 +6,9 @@
 	],
 	"settings": {
 		"workbench.colorCustomizations": {
-			"activityBar.background": "#02360D",
-			"titleBar.activeBackground": "#024B12",
-			"titleBar.activeForeground": "#ECFEF0"
-		},
-		"cSpell.words": [
-			"Flowrate",
-			"Lastmod",
-			"Rapido",
-			"Subdir"
-		]
+			"activityBar.background": "#550D44",
+			"titleBar.activeBackground": "#78125F",
+			"titleBar.activeForeground": "#FEFCFE"
+		}
 	}
 }
