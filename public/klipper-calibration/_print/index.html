@@ -233,8 +233,8 @@ This is the multi-page printable view of this section.
     
 	<h1 id="pg-0a90cbc70286b74a00ea059b475fbe66">1 - Rotational Distance</h1>
     <div class="lead">Calculate your Rotational Distance for Klipper</div>
-	<h1 id="rotational-distance">Rotational Distance<a class="td-heading-self-link" href="#rotational-distance" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+	<h1 id="rotational-distance">Rotational Distance</h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents</h2>
 <p>On an extruder, the rotation_distance is the amount of distance the filament travels for one full rotation of the stepper motor. The best way to get an accurate value for this setting is to use a &ldquo;measure and trim&rdquo; procedure.</p>
 <p>First start with an initial guess for the rotation distance. This may be obtained from steps_per_mm or by inspecting the hardware.</p>
 <p>Then use the following procedure to &ldquo;measure and trim&rdquo;:</p>
@@ -245,10 +245,10 @@ This is the multi-page printable view of this section.
 <li>Use the digital calipers to measure the new distance between the extruder body and the mark on the filament. Note this as &lt;subsequent_mark_distance&gt;. Then calculate: actual_extrude_distance = &lt;initial_mark_distance&gt; - &lt;subsequent_mark_distance&gt;</li>
 <li>Calculate rotation_distance as: rotation_distance = &lt;previous_rotation_distance&gt; * &lt;actual_extrude_distance&gt; / &lt;requested_extrude_distance&gt; Round the new rotation_distance to three decimal places.</li>
 </ol>
-<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="console-commands">Console Commands</h2>
 <pre tabindex="0"><code>G91
 G1 E50 F60
-</code></pre><h2 id="rotational-distance-calculator">Rotational Distance Calculator<a class="td-heading-self-link" href="#rotational-distance-calculator" aria-label="Heading self-link"></a></h2>
+</code></pre><h2 id="rotational-distance-calculator">Rotational Distance Calculator</h2>
 <div class="container">
   <form id="myform">
     <div class="row mb-3">
@@ -298,12 +298,11 @@ G1 E50 F60
 </div>
 
 <script src="/js/rotational-distance.js"></script>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4XOe1ejogE8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4XOe1ejogE8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="edit-printercfg">Edit Printer.cfg</h2>
 <p>The value calculated should be pasted into your printer.cfg file under &ldquo;Extruder&rdquo;.</p>
 <pre tabindex="0"><code>[extruder]
 step_pin: PD15
@@ -341,14 +340,13 @@ max_extrude_cross_section: 4
     
 	<h1 id="pg-49e2e0bfdee399f8c7043c22c27e0047">2 - Flow Calibration</h1>
     <div class="lead">Calibrate the Flow of your Extruder in your Slicer</div>
-	<h1 id="flow-calibration">Flow Calibration<a class="td-heading-self-link" href="#flow-calibration" aria-label="Heading self-link"></a></h1>
-<h2 id="from-3d-print-beginner">From 3D Print Beginner<a class="td-heading-self-link" href="#from-3d-print-beginner" aria-label="Heading self-link"></a></h2>
+	<h1 id="flow-calibration">Flow Calibration</h1>
+<h2 id="from-3d-print-beginner">From 3D Print Beginner</h2>
 <blockquote>
 <p>The flow rate calibration is done in order to fine tune the amount of plastic extruded by the printer. Also known as Extrusion Multiplier, by calibrating the flow rate you can fix issues caused by under-extrusion or over-extrusion. Besides this, flow rate calibration can also improve retraction values a bit and help with bulging corners and layer seam.
-If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).</p>
-</blockquote>
+If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).</p></blockquote>
 <p><a href="https://3dprintbeginner.com/flow-rate-calibration/">Flow Rate Calibration – Improve Print Accuracy</a></p>
-<h2 id="slicer-settings">Slicer Settings<a class="td-heading-self-link" href="#slicer-settings" aria-label="Heading self-link"></a></h2>
+<h2 id="slicer-settings">Slicer Settings</h2>
 <table>
   <thead>
       <tr>
@@ -393,7 +391,7 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 <li>Measure the top of all 4 sides and place values below</li>
 <li>Update Flow in Slicer with &ldquo;FLOW&rdquo; Value</li>
 </ol>
-<h2 id="flow-calibration-calculator">Flow Calibration Calculator<a class="td-heading-self-link" href="#flow-calibration-calculator" aria-label="Heading self-link"></a></h2>
+<h2 id="flow-calibration-calculator">Flow Calibration Calculator</h2>
 <div class="container">
     <form method="post" id="myform">
         <div class="row mb-3">
@@ -455,10 +453,9 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 
 <script src="/js/flow-calibration.js"></script>
 
-<h2 id="update-your-slicer">Update Your Slicer<a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link"></a></h2>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qmEKuqc5gAU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+<h2 id="update-your-slicer">Update Your Slicer</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qmEKuqc5gAU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 
@@ -478,13 +475,12 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
     
 	<h1 id="pg-11c59b7c3fe7807b1ed88b2dd5be6dc8">3 - Run Current for TMC2208/2209</h1>
     <div class="lead">Calculate your Run Current for your Steppers</div>
-	<h1 id="run-current">Run Current<a class="td-heading-self-link" href="#run-current" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-voron-docs">From the Voron Docs<a class="td-heading-self-link" href="#from-the-voron-docs" aria-label="Heading self-link"></a></h2>
+	<h1 id="run-current">Run Current</h1>
+<h2 id="from-the-voron-docs">From the Voron Docs</h2>
 <blockquote>
-<p>Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.</p>
-</blockquote>
+<p>Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.</p></blockquote>
 <p><a href="https://docs.vorondesign.com/community/howto/120decibell/calculating_driver_current.html#:~:text=Calculating%20Currents,is%20the%20maximum%20run%20current.">Calculating Driver Current Settings</a></p>
-<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<h2 id="steps">Steps</h2>
 <p>The maximum Klipper RUN current settings can be calculated via the following steps:</p>
 <ol>
 <li>Use the peak current limit from the stepper specifications sheet for the stepper motor.</li>
@@ -493,7 +489,7 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 <li>Verify settings for each motor.</li>
 </ol>
 <p>** maximum capacity of the 2209 driver is 1.2 Amps. **</p>
-<h2 id="run-current-calculator">Run Current Calculator<a class="td-heading-self-link" href="#run-current-calculator" aria-label="Heading self-link"></a></h2>
+<h2 id="run-current-calculator">Run Current Calculator</h2>
 <div class="container">
     <form id="myform">
         <div class="row mb-3">
@@ -539,16 +535,15 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 </div>
 
 <script src="/js/run-current.js"></script>
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="edit-printercfg">Edit Printer.cfg</h2>
 <p>Edit the run current for each motor (x, y, z).</p>
 <pre tabindex="0"><code>
 [tmc2209 stepper_x]
 uart_pin: PE0
 run_current: &lt;RUN CURRENT&gt;
 diag_pin:
-</code></pre>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/vc99RUIzn-I?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+</code></pre><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/vc99RUIzn-I?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 
@@ -568,13 +563,12 @@ diag_pin:
     
 	<h1 id="pg-ab177cc82acb1e91a799daa7b31c4072">4 - Pressure Advance</h1>
     <div class="lead">Calculate the ideal Pressure Advance</div>
-	<h1 id="pressure-advance">Pressure Advance<a class="td-heading-self-link" href="#pressure-advance" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+	<h1 id="pressure-advance">Pressure Advance</h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents</h2>
 <blockquote>
-<p>Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.</p>
-</blockquote>
+<p>Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.</p></blockquote>
 <p><a href="https://www.klipper3d.org/Pressure_Advance.html">Klipper Documents</a></p>
-<h2 id="slicer-settings">Slicer Settings<a class="td-heading-self-link" href="#slicer-settings" aria-label="Heading self-link"></a></h2>
+<h2 id="slicer-settings">Slicer Settings</h2>
 <table>
   <thead>
       <tr>
@@ -598,7 +592,7 @@ diag_pin:
   </tbody>
 </table>
 <p>Test Model: <a href="https://www.klipper3d.org/prints/square_tower.stl">Square Tower</a></p>
-<h2 id="console-commands">Console Commands<a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link"></a></h2>
+<h2 id="console-commands">Console Commands</h2>
 <ol>
 <li>Setup</li>
 </ol>
@@ -610,7 +604,7 @@ diag_pin:
 <pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.005
 </code></pre><p>Bowden Tube:</p>
 <pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020
-</code></pre><h2 id="pressure-advance-calculator">Pressure Advance Calculator<a class="td-heading-self-link" href="#pressure-advance-calculator" aria-label="Heading self-link"></a></h2>
+</code></pre><h2 id="pressure-advance-calculator">Pressure Advance Calculator</h2>
 <div class="container">
     <form method="post" id="myform">
         <div class="row mb-3">
@@ -661,10 +655,9 @@ diag_pin:
 <script src="/js/pressure-advance.js"></script>
 
 
-<h2 id="edit-your-slicer-or-printercfg">Edit Your Slicer or Printer.cfg<a class="td-heading-self-link" href="#edit-your-slicer-or-printercfg" aria-label="Heading self-link"></a></h2>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9hVzGcU4R84?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+<h2 id="edit-your-slicer-or-printercfg">Edit Your Slicer or Printer.cfg</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9hVzGcU4R84?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 
@@ -684,11 +677,10 @@ diag_pin:
     
 	<h1 id="pg-ea77303d287f6e3634755429cd6cfcc8">5 - Input Shaping</h1>
     <div class="lead">Setup and Calculate Input Shaping Values</div>
-	<h1 id="input-shaping">Input Shaping<a class="td-heading-self-link" href="#input-shaping" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+	<h1 id="input-shaping">Input Shaping</h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents</h2>
 <blockquote>
-<p>&ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&rdquo;</p>
-</blockquote>
+<p>&ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&rdquo;</p></blockquote>
 <p><a href="https://all3dp.com/2/klipper-input-shaping-simply-explained/">Klipper: Input Shaping – Simply Explained</a></p>
 <p>Basic tuning requires measuring the ringing frequencies of the printer by printing a test model.</p>
 <p>According to the <a href="https://www.klipper3d.org/Resonance_Compensation.html">Klipper docs</a>, slice the ringing test model, which can be found in <a href="https://www.klipper3d.org/prints/ringing_tower.stl">docs/prints/ringing_tower.stl</a>, in the slicer:</p>
@@ -701,7 +693,7 @@ diag_pin:
 <li>Turn off any &ldquo;dynamic acceleration control&rdquo; controls in the slicer.</li>
 <li>Do not turn the model. It has X and Y marks at the back of the model. Note the unusual location of the marks vs. the axes of the printer - it is not a mistake. The marks can be used later in the tuning process as a reference, because they show which axis the measurements correspond to.</li>
 </ul>
-<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<h2 id="steps">Steps</h2>
 <table>
   <thead>
       <tr>
@@ -770,7 +762,7 @@ diag_pin:
 <li>Count the &ldquo;rings&rdquo; on X and Y sides of ringing tower</li>
 <li>Measure the distance between Rings</li>
 </ol>
-<h2 id="input-shaping-calculator">Input Shaping Calculator<a class="td-heading-self-link" href="#input-shaping-calculator" aria-label="Heading self-link"></a></h2>
+<h2 id="input-shaping-calculator">Input Shaping Calculator</h2>
 <div class="container">
     <form id="myform">
         <div class="row mb-3">
@@ -860,7 +852,7 @@ diag_pin:
 </div>
 
 <script src="/js/input-shaping.js"></script>
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="edit-printercfg">Edit Printer.cfg</h2>
 <p><strong>Add Below to Printer.cfg with above X and Y Frequencies</strong></p>
 <pre tabindex="0"><code>[input_shaper]
 shaper_freq_x: &lt;X Frequency&gt;  # frequency for the X mark of the test model
@@ -912,10 +904,10 @@ shaper_type: mzv
     
 	<h1 id="pg-bd01dae893883b1d1fb12e7315cb9d7b">6 - Setting X and Y Offsets</h1>
     <div class="lead">Calculate and Setup the X and Y Offsets</div>
-	<h1 id="setting-x-and-y-offsets">Setting X and Y Offsets<a class="td-heading-self-link" href="#setting-x-and-y-offsets" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
-<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
-<h2 id="x-and-y-offsets-calculator">X and Y Offsets Calculator<a class="td-heading-self-link" href="#x-and-y-offsets-calculator" aria-label="Heading self-link"></a></h2>
+	<h1 id="setting-x-and-y-offsets">Setting X and Y Offsets</h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents</h2>
+<h2 id="steps">Steps</h2>
+<h2 id="x-and-y-offsets-calculator">X and Y Offsets Calculator</h2>
 <div class="container">
     <form id="myform">
         <div class="row mb-3">
@@ -964,7 +956,7 @@ shaper_type: mzv
 </div>
 
 <script src="/js/x-and-y-offsets.js"></script>
-<h2 id="edit-printercfg">Edit Printer.cfg<a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link"></a></h2>
+<h2 id="edit-printercfg">Edit Printer.cfg</h2>
 <p>** Video Coming Soon **</p>
 
 </div>
@@ -983,13 +975,12 @@ shaper_type: mzv
     
 	<h1 id="pg-5551bb95e8f0ea863ff562dab3dda275">7 - Max Volumentric Speed</h1>
     <div class="lead">Calculate and Set Max Volumentric Speed (in Orca Slicer)</div>
-	<h1 id="setting-max-volumentric-speed">Setting Max Volumentric Speed<a class="td-heading-self-link" href="#setting-max-volumentric-speed" aria-label="Heading self-link"></a></h1>
-<h2 id="from-orca-slicer">From Orca Slicer<a class="td-heading-self-link" href="#from-orca-slicer" aria-label="Heading self-link"></a></h2>
+	<h1 id="setting-max-volumentric-speed">Setting Max Volumentric Speed</h1>
+<h2 id="from-orca-slicer">From Orca Slicer</h2>
 <blockquote>
-<p>This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.</p>
-</blockquote>
+<p>This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.</p></blockquote>
 <p><a href="https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#max-volumetric-speed">Max Volumetric speed</a></p>
-<h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+<h2 id="steps">Steps</h2>
 <ol>
 <li>Open Orca Slicer</li>
 <li>Go to &ldquo;Calibration&rdquo; -&gt; &ldquo;More&hellip;&rdquo; -&gt; &ldquo;Max Flowrate</li>
@@ -998,7 +989,7 @@ shaper_type: mzv
 <li>Measure with Calipers to spot on model before the print starts to fail</li>
 <li>Paste Max Flow Value into Orca Slicer Filament Section</li>
 </ol>
-<h2 id="max-volumentric-speed-calculator">Max Volumentric Speed Calculator<a class="td-heading-self-link" href="#max-volumentric-speed-calculator" aria-label="Heading self-link"></a></h2>
+<h2 id="max-volumentric-speed-calculator">Max Volumentric Speed Calculator</h2>
 <div class="container">
     <form id="myform">
         <div class="row mb-3">
@@ -1053,10 +1044,10 @@ shaper_type: mzv
 
 
 <script src="/js/max-volumetric-speed.js"></script>
-<h2 id="update-your-slicer">Update your Slicer<a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link"></a></h2>
-<h3 id="update-orca-slicer">Update Orca Slicer<a class="td-heading-self-link" href="#update-orca-slicer" aria-label="Heading self-link"></a></h3>
-<h3 id="update-prusa-slicer">Update Prusa Slicer<a class="td-heading-self-link" href="#update-prusa-slicer" aria-label="Heading self-link"></a></h3>
-<h3 id="update-cura">Update Cura<a class="td-heading-self-link" href="#update-cura" aria-label="Heading self-link"></a></h3>
+<h2 id="update-your-slicer">Update your Slicer</h2>
+<h3 id="update-orca-slicer">Update Orca Slicer</h3>
+<h3 id="update-prusa-slicer">Update Prusa Slicer</h3>
+<h3 id="update-cura">Update Cura</h3>
 
 </div>
 
@@ -1074,11 +1065,11 @@ shaper_type: mzv
     
 	<h1 id="pg-7778255083206da223024c61736c12cd">8 - Lead Screw Rotation Distance</h1>
     <div class="lead">Calculate Lead Screw Rotation Distance</div>
-	<h1 id="setting-lead-screw-rotation-distance">Setting Lead Screw Rotation Distance<a class="td-heading-self-link" href="#setting-lead-screw-rotation-distance" aria-label="Heading self-link"></a></h1>
-<h2 id="from-the-klipper-documents">From the Klipper Documents<a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link"></a></h2>
+	<h1 id="setting-lead-screw-rotation-distance">Setting Lead Screw Rotation Distance</h1>
+<h2 id="from-the-klipper-documents">From the Klipper Documents</h2>
 <p>The rotational axes with a lead screw can be easily calculated with the following formula:</p>
 <pre tabindex="0"><code>rotation_distance = &lt;screw_pitch&gt; * &lt;number_of_separate_threads&gt;
-</code></pre><h2 id="steps">Steps<a class="td-heading-self-link" href="#steps" aria-label="Heading self-link"></a></h2>
+</code></pre><h2 id="steps">Steps</h2>
 <table>
   <thead>
       <tr>
@@ -1109,7 +1100,7 @@ shaper_type: mzv
       </tr>
   </tbody>
 </table>
-<h2 id="lead-screw-rotation-distance-calculator">Lead Screw Rotation Distance Calculator<a class="td-heading-self-link" href="#lead-screw-rotation-distance-calculator" aria-label="Heading self-link"></a></h2>
+<h2 id="lead-screw-rotation-distance-calculator">Lead Screw Rotation Distance Calculator</h2>
 <div class="container">
     <form method="post" id="myform">
         <div class="row mb-3">
@@ -1163,18 +1154,17 @@ shaper_type: mzv
 <pre tabindex="0"><code>PID_CALIBRATE HEATER=extruder TARGET=205
 </code></pre><p><em>Bed</em></p>
 <pre tabindex="0"><code>PID_CALIBRATE HEATER=heater_bed TARGET=65
-</code></pre>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+</code></pre><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
-<h1 id="pid-tuning-in-klipper">PID Tuning in Klipper<a class="td-heading-self-link" href="#pid-tuning-in-klipper" aria-label="Heading self-link"></a></h1>
+<h1 id="pid-tuning-in-klipper">PID Tuning in Klipper</h1>
 <p>PID tuning is essential for maintaining consistent temperatures in your 3D printer&rsquo;s hot end and heat bed, leading to better print quality. Here&rsquo;s a breakdown of PID tuning in Klipper:</p>
-<h2 id="what-is-pid-tuning">What is PID Tuning?<a class="td-heading-self-link" href="#what-is-pid-tuning" aria-label="Heading self-link"></a></h2>
+<h2 id="what-is-pid-tuning">What is PID Tuning?</h2>
 <p>PID stands for Proportional-Integral-Derivative. It&rsquo;s a method that helps the printer controller adjust heating power based on the difference between the desired temperature (setpoint) and the actual temperature reading from the sensor. By fine-tuning these adjustments, the printer maintains a stable temperature with minimal fluctuations.</p>
-<h2 id="pid-tuning-process-in-klipper">PID Tuning Process in Klipper<a class="td-heading-self-link" href="#pid-tuning-process-in-klipper" aria-label="Heading self-link"></a></h2>
+<h2 id="pid-tuning-process-in-klipper">PID Tuning Process in Klipper</h2>
 <p>Klipper offers a straightforward approach to PID tuning using extended G-codes. Here&rsquo;s a step-by-step process:</p>
-<h3 id="pid-tuning-the-extruder">PID Tuning the Extruder<a class="td-heading-self-link" href="#pid-tuning-the-extruder" aria-label="Heading self-link"></a></h3>
+<h3 id="pid-tuning-the-extruder">PID Tuning the Extruder</h3>
 <ol>
 <li>
 <p>Access your Klipper interface: Open your Klipper instance through the web interface (Fluidd, Mainsail, etc.).</p>
@@ -1189,7 +1179,7 @@ shaper_type: mzv
 <li>Use the following command to save the PID values into your Printer.cfg:</li>
 </ol>
 <pre tabindex="0"><code>SAVE_CONFIG
-</code></pre><h3 id="pid-tuning-the-heated-bed">PID Tuning the Heated Bed<a class="td-heading-self-link" href="#pid-tuning-the-heated-bed" aria-label="Heading self-link"></a></h3>
+</code></pre><h3 id="pid-tuning-the-heated-bed">PID Tuning the Heated Bed</h3>
 <ol>
 <li>
 <p>Access your Klipper interface: Open your Klipper instance through the web interface (Fluidd, Mainsail, etc.).</p>
@@ -1204,7 +1194,7 @@ shaper_type: mzv
 <li>Use the following command to save the PID values into your Printer.cfg:</li>
 </ol>
 <pre tabindex="0"><code>SAVE_CONFIG
-</code></pre><h3 id="explanation">Explanation:<a class="td-heading-self-link" href="#explanation" aria-label="Heading self-link"></a></h3>
+</code></pre><h3 id="explanation">Explanation:</h3>
 <ul>
 <li><em>PID_CALIBRATE HEATER</em> is the extended G-code for starting PID calibration.</li>
 <li><em>extruder</em> specifies that you&rsquo;re tuning the extruder heater (replace with &ldquo;heater_bed&rdquo; for the heated bed).</li>
@@ -1212,18 +1202,18 @@ shaper_type: mzv
 </ul>
 <p>The PID calibration cycle: Klipper will now run the extruder or bed through heat up, cool down, and heat up again cycles. This collects data to calculate optimal PID values.</p>
 <p>Obtaining results: After the cycle, Klipper might display the calculated PID values in the console. You can also find them in the &ldquo;klippy.log&rdquo; file.</p>
-<h2 id="saving-the-new-pid-values">Saving the new PID values:<a class="td-heading-self-link" href="#saving-the-new-pid-values" aria-label="Heading self-link"></a></h2>
+<h2 id="saving-the-new-pid-values">Saving the new PID values:</h2>
 <ul>
 <li>Automatic saving: If configured correctly, sending the SAVE_CONFIG command might automatically save the new PID values in your &ldquo;printer.cfg&rdquo; file.</li>
 <li>Manual saving: If automatic saving isn&rsquo;t working, locate the pid_Kp line (for extruder or heater_bed) in &ldquo;printer.cfg&rdquo;, replace the values with the calculated ones, save the file, and restart Klipper.</li>
 </ul>
-<h2 id="additional-tips">Additional Tips:<a class="td-heading-self-link" href="#additional-tips" aria-label="Heading self-link"></a></h2>
+<h2 id="additional-tips">Additional Tips:</h2>
 <ol>
 <li>Ensure proper configuration before running PID tuning Klipper Documentation: Configuration Checks: <a href="https://www.klipper3d.org/Config_Reference.html">https://www.klipper3d.org/Config_Reference.html</a></li>
 <li>Consider consulting your printer&rsquo;s documentation or online resources for specific recommendations on target temperatures.</li>
 </ol>
 <p>By following these steps, you can effectively PID tune your Klipper setup and achieve better temperature control for your 3D prints.</p>
-<h2 id="references">References<a class="td-heading-self-link" href="#references" aria-label="Heading self-link"></a></h2>
+<h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.obico.io/blog/klipper-pid-tuning/">Klipper PID Tuning - How to Guide</a></li>
 <li><a href="https://www.klipper3d.org/Config_checks.html?h=pid">Configuration checks</a></li>

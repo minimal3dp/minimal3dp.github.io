@@ -6,13 +6,20 @@
     <description>Recent content in Tags on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 22:07:30 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Voron</title>
-      <link>http://localhost:1313/tags/voron/</link>
+      <title>How-To</title>
+      <link>http://localhost:1313/tags/how-to/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/voron/</guid>
+      <guid>http://localhost:1313/tags/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slicers</title>
+      <link>http://localhost:1313/tags/slicers/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/slicers/</guid>
       <description></description>
     </item>
     <item>
@@ -23,17 +30,17 @@
       <description></description>
     </item>
     <item>
-      <title>Slicers</title>
-      <link>http://localhost:1313/tags/slicers/</link>
-      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/slicers/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Orcaslicer</title>
       <link>http://localhost:1313/tags/orcaslicer/</link>
       <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/orcaslicer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voron</title>
+      <link>http://localhost:1313/tags/voron/</link>
+      <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/voron/</guid>
       <description></description>
     </item>
     <item>
@@ -90,13 +97,6 @@
       <link>http://localhost:1313/tags/filament/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/filament/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>How-To</title>
-      <link>http://localhost:1313/tags/how-to/</link>
-      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/how-to/</guid>
       <description></description>
     </item>
     <item>
