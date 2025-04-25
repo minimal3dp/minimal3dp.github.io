@@ -1,29 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Minimal 3DP</title><link>https://minimal3dp.com/categories/references/</link><description>Recent content in References on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 01 Jan 2025 22:07:30 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/categories/references/index.xml" rel="self" type="application/rss+xml"/><item><title>Voron 2.4 R2 Pro+ Build References</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</guid><description>&lt;div class="pageinfo pageinfo-primary">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>References on Minimal 3DP</title><link>https://minimal3dp.com/categories/references/</link><description>Recent content in References on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 24 Apr 2025 21:55:36 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/categories/references/index.xml" rel="self" type="application/rss+xml"/><item><title>Voron 2.4 R2 Pro+ Build References</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</guid><description>&lt;div class="pageinfo pageinfo-primary">
 &lt;p>Build references and links for the Voron 2.4 R2 Pro+ FormBot kit. I needed a centralized location for all the reference material I need to build the 3D printer.&lt;/p>
 
 &lt;/div>
 
-&lt;h1 id="references-and-links">References and Links&lt;a class="td-heading-self-link" href="#references-and-links" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="kit">Kit&lt;a class="td-heading-self-link" href="#kit" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h1 id="references-and-links">References and Links&lt;/h1>
+&lt;h2 id="kit">Kit&lt;/h2>
 &lt;ul>
 &lt;li>Kit on AliExpress: &lt;a href="https://www.aliexpress.us/item/3256803199034766.html?spm=a2g0o.order_list.order_list_main.5.2cfe1802Npe2Rk&amp;amp;gatewayAdapt=glo2usa">Voron 2.4 V2.4 R2 Pro+ Latest Version Best Quality CoreXY 3D Printer Kit&lt;/a>)&lt;/li>
 &lt;li>FormBot Site: &lt;a href="https://www.formbot3d.com/products/voron-24-r2-pro-corexy-3d-printer-kit-with-m8p-cb1-board-and-canbus-wiring-system?VariantsId=10481">Voron Kit&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="voron-refs">Voron Refs&lt;a class="td-heading-self-link" href="#voron-refs" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="voron-refs">Voron Refs&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://vorondesign.com/voron2.4">Voron 2.4 Website&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf">2.4 Manual&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/VoronDesign/Voron-2/">Voron 2.4 GitHub&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="formbot-references">FormBot References:&lt;a class="td-heading-self-link" href="#formbot-references" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="formbot-references">FormBot References:&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://drive.google.com/file/d/1Cq7LWvDv7ZkAo8UH1fZQUC-eRevE1t4u/view?pli=1">Wiring Diagram&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view">Wiring Instruction for Voron 2.4 Pro&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://drive.google.com/file/d/1HAoaRFFA4JQNH5PZTGo-tmtvavjdQbKO/view">Voron 2.4 R2 Pro+ Instructions&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://drive.google.com/file/d/1VGESvXycgMbUvep2g-nsu8e-c_ZA2rYF/view">STL Files of Voron 2.4 R2 Pro+ from FormBot&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="youtube">YouTube&lt;a class="td-heading-self-link" href="#youtube" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Hiyof41s9Jo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;h2 id="youtube">YouTube&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Hiyof41s9Jo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item></channel></rss>

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Orcaslicer on Minimal 3DP</title><link>https://minimal3dp.com/tags/orcaslicer/</link><description>Recent content in Orcaslicer on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 01 Jan 2025 22:07:30 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml"/><item><title>This Week on Minimal 3DP (April 28)</title><link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 202px">
-&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu15878666125249042932.PNG" width="192" height="192">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Orcaslicer on Minimal 3DP</title><link>https://minimal3dp.com/tags/orcaslicer/</link><description>Recent content in Orcaslicer on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 24 Apr 2025 21:55:36 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml"/><item><title>This Week on Minimal 3DP (April 28)</title><link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 202px">
+&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu_e991f8ad21a544bc.PNG" width="192" height="192">
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text">
 
@@ -10,24 +10,22 @@ OrcaSlicer Logo
 &lt;/figcaption>
 &lt;/figure>
 
-&lt;h1 id="the-week-of-april-28st-2024">The Week of April 28st 2024&lt;a class="td-heading-self-link" href="#the-week-of-april-28st-2024" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h1 id="the-week-of-april-28st-2024">The Week of April 28st 2024&lt;/h1>
 &lt;p>I am currently working on several projects this week. They include:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/">Voron 2.4 R2 Pro+ Build&lt;/a>&lt;/li>
 &lt;li>Orca Slicer Seam Settings&lt;/li>
 &lt;li>STEM Outreach&lt;/li>
 &lt;/ul>
-&lt;h2 id="voron-24-r2-pro-build">Voron 2.4 R2 Pro+ Build&lt;a class="td-heading-self-link" href="#voron-24-r2-pro-build" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p></description></item><item><title>OrcaSlicer Calibration and Max Flowrate</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid><description>&lt;h1 id="orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool">OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;a class="td-heading-self-link" href="#orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="max-volumetric-speed-defined">Max Volumetric Speed Defined&lt;a class="td-heading-self-link" href="#max-volumetric-speed-defined" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="voron-24-r2-pro-build">Voron 2.4 R2 Pro+ Build&lt;/h2>
+&lt;p>i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p></description></item><item><title>OrcaSlicer Calibration and Max Flowrate</title><link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid><description>&lt;h1 id="orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool">OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;/h1>
+&lt;h2 id="max-volumetric-speed-defined">Max Volumetric Speed Defined&lt;/h2>
 &lt;p>According to &lt;a href="https://help.prusa3d.com/article/max-volumetric-speed_127176">Prusa3D&lt;/a>, Max Volumetric Speed is defined as:&lt;/p>
 &lt;blockquote>
-&lt;p>The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p>
-&lt;/blockquote>
-
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;p>The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p>&lt;/blockquote>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
-&lt;h2 id="video-description">Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="video-description">Video Description&lt;/h2>
 &lt;p>Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p></description></item></channel></rss>

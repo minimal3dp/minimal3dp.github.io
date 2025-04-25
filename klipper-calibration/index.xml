@@ -1,24 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Klipper Calibration on Minimal 3DP</title><link>https://minimal3dp.com/klipper-calibration/</link><description>Recent content in Klipper Calibration on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/klipper-calibration/index.xml" rel="self" type="application/rss+xml"/><item><title>Rotational Distance</title><link>https://minimal3dp.com/klipper-calibration/rotational-distance/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/rotational-distance/</guid><description>&lt;h1 id="rotational-distance">Rotational Distance&lt;a class="td-heading-self-link" href="#rotational-distance" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Klipper Calibration on Minimal 3DP</title><link>https://minimal3dp.com/klipper-calibration/</link><description>Recent content in Klipper Calibration on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/klipper-calibration/index.xml" rel="self" type="application/rss+xml"/><item><title>Rotational Distance</title><link>https://minimal3dp.com/klipper-calibration/rotational-distance/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/rotational-distance/</guid><description>&lt;h1 id="rotational-distance">Rotational Distance&lt;/h1>
+&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;/h2>
 &lt;p>On an extruder, the rotation_distance is the amount of distance the filament travels for one full rotation of the stepper motor. The best way to get an accurate value for this setting is to use a &amp;ldquo;measure and trim&amp;rdquo; procedure.&lt;/p>
-&lt;p>First start with an initial guess for the rotation distance. This may be obtained from steps_per_mm or by inspecting the hardware.&lt;/p></description></item><item><title>Flow Calibration</title><link>https://minimal3dp.com/klipper-calibration/flow-calibration/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/flow-calibration/</guid><description>&lt;h1 id="flow-calibration">Flow Calibration&lt;a class="td-heading-self-link" href="#flow-calibration" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-3d-print-beginner">From 3D Print Beginner&lt;a class="td-heading-self-link" href="#from-3d-print-beginner" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>First start with an initial guess for the rotation distance. This may be obtained from steps_per_mm or by inspecting the hardware.&lt;/p>
+&lt;p>Then use the following procedure to &amp;ldquo;measure and trim&amp;rdquo;:&lt;/p></description></item><item><title>Flow Calibration</title><link>https://minimal3dp.com/klipper-calibration/flow-calibration/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/flow-calibration/</guid><description>&lt;h1 id="flow-calibration">Flow Calibration&lt;/h1>
+&lt;h2 id="from-3d-print-beginner">From 3D Print Beginner&lt;/h2>
 &lt;blockquote>
 &lt;p>The flow rate calibration is done in order to fine tune the amount of plastic extruded by the printer. Also known as Extrusion Multiplier, by calibrating the flow rate you can fix issues caused by under-extrusion or over-extrusion. Besides this, flow rate calibration can also improve retraction values a bit and help with bulging corners and layer seam.
-If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).&lt;/p></description></item><item><title>Run Current for TMC2208/2209</title><link>https://minimal3dp.com/klipper-calibration/run-current/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/run-current/</guid><description>&lt;h1 id="run-current">Run Current&lt;a class="td-heading-self-link" href="#run-current" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-the-voron-docs">From the Voron Docs&lt;a class="td-heading-self-link" href="#from-the-voron-docs" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).&lt;/p></description></item><item><title>Run Current for TMC2208/2209</title><link>https://minimal3dp.com/klipper-calibration/run-current/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/run-current/</guid><description>&lt;h1 id="run-current">Run Current&lt;/h1>
+&lt;h2 id="from-the-voron-docs">From the Voron Docs&lt;/h2>
 &lt;blockquote>
-&lt;p>Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.&lt;/p>
-&lt;/blockquote>
+&lt;p>Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a href="https://docs.vorondesign.com/community/howto/120decibell/calculating_driver_current.html#:~:text=Calculating%20Currents,is%20the%20maximum%20run%20current.">Calculating Driver Current Settings&lt;/a>&lt;/p>
-&lt;h2 id="steps">Steps&lt;a class="td-heading-self-link" href="#steps" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>The maximum Klipper RUN current settings can be calculated via the following steps:&lt;/p></description></item><item><title>Pressure Advance</title><link>https://minimal3dp.com/klipper-calibration/pressure-advance/</link><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/pressure-advance/</guid><description>&lt;h1 id="pressure-advance">Pressure Advance&lt;a class="td-heading-self-link" href="#pressure-advance" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;p>The maximum Klipper RUN current settings can be calculated via the following steps:&lt;/p></description></item><item><title>Pressure Advance</title><link>https://minimal3dp.com/klipper-calibration/pressure-advance/</link><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/pressure-advance/</guid><description>&lt;h1 id="pressure-advance">Pressure Advance&lt;/h1>
+&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;/h2>
 &lt;blockquote>
-&lt;p>Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.&lt;/p>
-&lt;/blockquote>
+&lt;p>Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a href="https://www.klipper3d.org/Pressure_Advance.html">Klipper Documents&lt;/a>&lt;/p>
-&lt;h2 id="slicer-settings">Slicer Settings&lt;a class="td-heading-self-link" href="#slicer-settings" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="slicer-settings">Slicer Settings&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -42,7 +41,7 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
  &lt;/tbody>
 &lt;/table>
 &lt;p>Test Model: &lt;a href="https://www.klipper3d.org/prints/square_tower.stl">Square Tower&lt;/a>&lt;/p>
-&lt;h2 id="console-commands">Console Commands&lt;a class="td-heading-self-link" href="#console-commands" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="console-commands">Console Commands&lt;/h2>
 &lt;ol>
 &lt;li>Setup&lt;/li>
 &lt;/ol>
@@ -50,17 +49,186 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;/code>&lt;/pre>&lt;ol start="2">
 &lt;li>Select command based on drive:&lt;/li>
 &lt;/ol>
-&lt;p>Direct Drive:&lt;/p></description></item><item><title>Input Shaping</title><link>https://minimal3dp.com/klipper-calibration/input-shaping/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/input-shaping/</guid><description>&lt;h1 id="input-shaping">Input Shaping&lt;a class="td-heading-self-link" href="#input-shaping" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Direct Drive:&lt;/p></description></item><item><title>Input Shaping</title><link>https://minimal3dp.com/klipper-calibration/input-shaping/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/input-shaping/</guid><description>&lt;h1 id="input-shaping">Input Shaping&lt;/h1>
+&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;/h2>
 &lt;blockquote>
-&lt;p>&amp;ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&amp;rdquo;&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&amp;rdquo;&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a href="https://all3dp.com/2/klipper-input-shaping-simply-explained/">Klipper: Input Shaping – Simply Explained&lt;/a>&lt;/p>
 &lt;p>Basic tuning requires measuring the ringing frequencies of the printer by printing a test model.&lt;/p>
-&lt;p>According to the &lt;a href="https://www.klipper3d.org/Resonance_Compensation.html">Klipper docs&lt;/a>, slice the ringing test model, which can be found in &lt;a href="https://www.klipper3d.org/prints/ringing_tower.stl">docs/prints/ringing_tower.stl&lt;/a>, in the slicer:&lt;/p></description></item><item><title>Setting X and Y Offsets</title><link>https://minimal3dp.com/klipper-calibration/x-and-y-offsets/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/x-and-y-offsets/</guid><description>&lt;h1 id="setting-x-and-y-offsets">Setting X and Y Offsets&lt;a class="td-heading-self-link" href="#setting-x-and-y-offsets" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h2 id="steps">Steps&lt;a class="td-heading-self-link" href="#steps" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h2 id="x-and-y-offsets-calculator">X and Y Offsets Calculator&lt;a class="td-heading-self-link" href="#x-and-y-offsets-calculator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>According to the &lt;a href="https://www.klipper3d.org/Resonance_Compensation.html">Klipper docs&lt;/a>, slice the ringing test model, which can be found in &lt;a href="https://www.klipper3d.org/prints/ringing_tower.stl">docs/prints/ringing_tower.stl&lt;/a>, in the slicer:&lt;/p>
+&lt;ul>
+&lt;li>Use a layer height is 0.2 or 0.25 mm.&lt;/li>
+&lt;li>Both the infill and top layers can be set to 0.&lt;/li>
+&lt;li>Use eithet 1-2 perimeters, or vase mode with 1-2 mm base.&lt;/li>
+&lt;li>Use a high speed that is around 80-100 mm/sec, for external perimeters.&lt;/li>
+&lt;li>aThe minimum layer time is at most 3 seconds.&lt;/li>
+&lt;li>Turn off any &amp;ldquo;dynamic acceleration control&amp;rdquo; controls in the slicer.&lt;/li>
+&lt;li>Do not turn the model. It has X and Y marks at the back of the model. Note the unusual location of the marks vs. the axes of the printer - it is not a mistake. The marks can be used later in the tuning process as a reference, because they show which axis the measurements correspond to.&lt;/li>
+&lt;/ul>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;th>Notes&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Layer Height&lt;/td>
+ &lt;td>0.2&lt;/td>
+ &lt;td>or .25&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Paerimeters&lt;/td>
+ &lt;td>1&lt;/td>
+ &lt;td>0r 2 0r Vase Mode&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Line Width&lt;/td>
+ &lt;td>0.5&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Print Speed&lt;/td>
+ &lt;td>100&lt;/td>
+ &lt;td>0r 80&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Top Layer&lt;/td>
+ &lt;td>0&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Bottom Layer&lt;/td>
+ &lt;td>5&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Infill&lt;/td>
+ &lt;td>0%&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;ol>
+&lt;li>If square_corner_velocity parameter was changed, revert it back to 5.0.&lt;/li>
+&lt;li>Klipper Console Command:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>SET_VELOCITY_LIMIT ACCEL_TO_DECEL=7000
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>Klipper Console Command:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>SET_PRESSURE_ADVANCE ADVANCE=0
+&lt;/code>&lt;/pre>&lt;ol start="4">
+&lt;li>Klipper Console Command:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>SET_INPUT_SHAPER SHAPER_FREQ_X=0 SHAPER_FREQ_Y=0
+&lt;/code>&lt;/pre>&lt;ol start="5">
+&lt;li>Klipper Console Command:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1500 STEP_DELTA=500 STEP_HEIGHT=5
+&lt;/code>&lt;/pre>&lt;ol start="6">
+&lt;li>Print with Settings Above&lt;/li>
+&lt;li>Count the &amp;ldquo;rings&amp;rdquo; on X and Y sides of ringing tower&lt;/li>
+&lt;li>Measure the distance between Rings&lt;/li>
+&lt;/ol>
+&lt;h2 id="input-shaping-calculator">Input Shaping Calculator&lt;/h2>
+&lt;div class="container">
+ &lt;form id="myform">
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6">
+ &lt;label for="print_speed" class="form-label">Print Speed&lt;/label>
+ &lt;input type="number" class="form-control" name="print_speed" id="print_speed" value="100" />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;label>&lt;i>Based on above Klipper commands, usually 100 or 80.&lt;/i>&lt;/label>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6">
+ &lt;label for="x_rings" class="form-label">Number of X Rings&lt;/label>
+ &lt;input type="number" class="form-control" name="x_rings" id="x_rings" />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;label>&lt;i>Based on X Ring Count&lt;/i>&lt;/label>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6">
+ &lt;label for="x_measure" class="form-label">X Measurement&lt;/label>
+ &lt;input type="number" class="form-control" name="x_measure" id="x_measure" />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;label>&lt;i>Based on Caliper Measurements&lt;/i>&lt;/label>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6">
+ &lt;label for="y_rings" class="form-label">Number of Y Rings&lt;/label>
+ &lt;input type="number" class="form-control" name="y_rings" id="y_rings" />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;label>&lt;i>Based on Y Ring Count&lt;/i>&lt;/label>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6">
+ &lt;label for="y_measure" class="form-label">Y Measurement&lt;/label>
+ &lt;input type="number" class="form-control" name="y_measure" id="y_measure" />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;label>&lt;i>Based on Caliper Measurements&lt;/i>&lt;/label>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6">
+ &lt;label for="x_freq" class="form-label">X Frequency&lt;/label>
+ &lt;input type="number" disabled class="form-control" name="x_freq" id="x_freq" />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;label>&lt;i>Copy and Paste into Printer.cfg&lt;/i>&lt;/label>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6">
+ &lt;label for="y_freq" class="form-label">Y Frequency&lt;/label>
+ &lt;input type="number" disabled class="form-control" name="y_freq" id="y_freq" />
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;label>&lt;i>Copy and Paste into Printer.cfg&lt;/i>&lt;/label>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row mb-3">
+ &lt;div class="col-xl-6 d-flex align-items-center">
+ &lt;button class="btn btn-lg px-4" style="background-color:#007bff;border-color:#007bff;color:white;"
+ type="button" onclick="isRunner()">Submit&lt;/button>
+ &lt;/div>
+ &lt;/div>
+ &lt;/form>
+&lt;/div>
+
+&lt;script src="https://minimal3dp.com/js/input-shaping.js">&lt;/script>
+&lt;h2 id="edit-printercfg">Edit Printer.cfg&lt;/h2>
+&lt;p>&lt;strong>Add Below to Printer.cfg with above X and Y Frequencies&lt;/strong>&lt;/p></description></item><item><title>Setting X and Y Offsets</title><link>https://minimal3dp.com/klipper-calibration/x-and-y-offsets/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/x-and-y-offsets/</guid><description>&lt;h1 id="setting-x-and-y-offsets">Setting X and Y Offsets&lt;/h1>
+&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;/h2>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;h2 id="x-and-y-offsets-calculator">X and Y Offsets Calculator&lt;/h2>
 &lt;div class="container">
  &lt;form id="myform">
  &lt;div class="row mb-3">
@@ -109,14 +277,13 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;/div>
 
 &lt;script src="https://minimal3dp.com/js/x-and-y-offsets.js">&lt;/script>
-&lt;h2 id="edit-printercfg">Edit Printer.cfg&lt;a class="td-heading-self-link" href="#edit-printercfg" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>** Video Coming Soon **&lt;/p></description></item><item><title>Max Volumentric Speed</title><link>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</guid><description>&lt;h1 id="setting-max-volumentric-speed">Setting Max Volumentric Speed&lt;a class="td-heading-self-link" href="#setting-max-volumentric-speed" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-orca-slicer">From Orca Slicer&lt;a class="td-heading-self-link" href="#from-orca-slicer" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="edit-printercfg">Edit Printer.cfg&lt;/h2>
+&lt;p>** Video Coming Soon **&lt;/p></description></item><item><title>Max Volumentric Speed</title><link>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</guid><description>&lt;h1 id="setting-max-volumentric-speed">Setting Max Volumentric Speed&lt;/h1>
+&lt;h2 id="from-orca-slicer">From Orca Slicer&lt;/h2>
 &lt;blockquote>
-&lt;p>This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.&lt;/p>
-&lt;/blockquote>
+&lt;p>This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a href="https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#max-volumetric-speed">Max Volumetric speed&lt;/a>&lt;/p>
-&lt;h2 id="steps">Steps&lt;a class="td-heading-self-link" href="#steps" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="steps">Steps&lt;/h2>
 &lt;ol>
 &lt;li>Open Orca Slicer&lt;/li>
 &lt;li>Go to &amp;ldquo;Calibration&amp;rdquo; -&amp;gt; &amp;ldquo;More&amp;hellip;&amp;rdquo; -&amp;gt; &amp;ldquo;Max Flowrate&lt;/li>
@@ -125,7 +292,7 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;li>Measure with Calipers to spot on model before the print starts to fail&lt;/li>
 &lt;li>Paste Max Flow Value into Orca Slicer Filament Section&lt;/li>
 &lt;/ol>
-&lt;h2 id="max-volumentric-speed-calculator">Max Volumentric Speed Calculator&lt;a class="td-heading-self-link" href="#max-volumentric-speed-calculator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="max-volumentric-speed-calculator">Max Volumentric Speed Calculator&lt;/h2>
 &lt;div class="container">
  &lt;form id="myform">
  &lt;div class="row mb-3">
@@ -180,14 +347,14 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 
 
 &lt;script src="https://minimal3dp.com/js/max-volumetric-speed.js">&lt;/script>
-&lt;h2 id="update-your-slicer">Update your Slicer&lt;a class="td-heading-self-link" href="#update-your-slicer" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h3 id="update-orca-slicer">Update Orca Slicer&lt;a class="td-heading-self-link" href="#update-orca-slicer" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;h3 id="update-prusa-slicer">Update Prusa Slicer&lt;a class="td-heading-self-link" href="#update-prusa-slicer" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;h3 id="update-cura">Update Cura&lt;a class="td-heading-self-link" href="#update-cura" aria-label="Heading self-link">&lt;/a>&lt;/h3></description></item><item><title>Lead Screw Rotation Distance</title><link>https://minimal3dp.com/klipper-calibration/lead-screw-rotation-distance/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/lead-screw-rotation-distance/</guid><description>&lt;h1 id="setting-lead-screw-rotation-distance">Setting Lead Screw Rotation Distance&lt;a class="td-heading-self-link" href="#setting-lead-screw-rotation-distance" aria-label="Heading self-link">&lt;/a>&lt;/h1>
-&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;a class="td-heading-self-link" href="#from-the-klipper-documents" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="update-your-slicer">Update your Slicer&lt;/h2>
+&lt;h3 id="update-orca-slicer">Update Orca Slicer&lt;/h3>
+&lt;h3 id="update-prusa-slicer">Update Prusa Slicer&lt;/h3>
+&lt;h3 id="update-cura">Update Cura&lt;/h3></description></item><item><title>Lead Screw Rotation Distance</title><link>https://minimal3dp.com/klipper-calibration/lead-screw-rotation-distance/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/lead-screw-rotation-distance/</guid><description>&lt;h1 id="setting-lead-screw-rotation-distance">Setting Lead Screw Rotation Distance&lt;/h1>
+&lt;h2 id="from-the-klipper-documents">From the Klipper Documents&lt;/h2>
 &lt;p>The rotational axes with a lead screw can be easily calculated with the following formula:&lt;/p>
 &lt;pre tabindex="0">&lt;code>rotation_distance = &amp;lt;screw_pitch&amp;gt; * &amp;lt;number_of_separate_threads&amp;gt;
-&lt;/code>&lt;/pre>&lt;h2 id="steps">Steps&lt;a class="td-heading-self-link" href="#steps" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;/code>&lt;/pre>&lt;h2 id="steps">Steps&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -218,7 +385,7 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="lead-screw-rotation-distance-calculator">Lead Screw Rotation Distance Calculator&lt;a class="td-heading-self-link" href="#lead-screw-rotation-distance-calculator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="lead-screw-rotation-distance-calculator">Lead Screw Rotation Distance Calculator&lt;/h2>
 &lt;div class="container">
  &lt;form method="post" id="myform">
  &lt;div class="row mb-3">
@@ -254,14 +421,13 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;pre tabindex="0">&lt;code>PID_CALIBRATE HEATER=extruder TARGET=205
 &lt;/code>&lt;/pre>&lt;p>&lt;em>Bed&lt;/em>&lt;/p>
 &lt;pre tabindex="0">&lt;code>PID_CALIBRATE HEATER=heater_bed TARGET=65
-&lt;/code>&lt;/pre>
- &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+&lt;/code>&lt;/pre>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
-&lt;h1 id="pid-tuning-in-klipper">PID Tuning in Klipper&lt;a class="td-heading-self-link" href="#pid-tuning-in-klipper" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h1 id="pid-tuning-in-klipper">PID Tuning in Klipper&lt;/h1>
 &lt;p>PID tuning is essential for maintaining consistent temperatures in your 3D printer&amp;rsquo;s hot end and heat bed, leading to better print quality. Here&amp;rsquo;s a breakdown of PID tuning in Klipper:&lt;/p>
-&lt;h2 id="what-is-pid-tuning">What is PID Tuning?&lt;a class="td-heading-self-link" href="#what-is-pid-tuning" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h2 id="what-is-pid-tuning">What is PID Tuning?&lt;/h2>
 &lt;p>PID stands for Proportional-Integral-Derivative. It&amp;rsquo;s a method that helps the printer controller adjust heating power based on the difference between the desired temperature (setpoint) and the actual temperature reading from the sensor. By fine-tuning these adjustments, the printer maintains a stable temperature with minimal fluctuations.&lt;/p></description></item><item><title>Testing a Bltouch, CRTouch, ora clone in Klipper</title><link>https://minimal3dp.com/klipper-calibration/bltouch-testing/</link><pubDate>Mon, 06 May 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/bltouch-testing/</guid><description>&lt;p>Testing a BLTouch with Klipper involves several steps to ensure that the probe is functioning correctly. Here&amp;rsquo;s a simplified process:&lt;/p>
 &lt;ol>
 &lt;li>
