@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How-To on Minimal 3DP</title>
-    <link>http://localhost:1313/tags/how-to/</link>
+    <link>https://minimal3dp.com/tags/how-to/</link>
     <description>Recent content in How-To on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Jan 2025 22:07:30 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://minimal3dp.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Printing and Max Volumetric Speed</title>
-      <link>http://localhost:1313/blog/2025/01/01/3d-printing-and-max-volumetric-speed/</link>
+      <link>https://minimal3dp.com/blog/2025/01/01/3d-printing-and-max-volumetric-speed/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025/01/01/3d-printing-and-max-volumetric-speed/</guid>
+      <guid>https://minimal3dp.com/blog/2025/01/01/3d-printing-and-max-volumetric-speed/</guid>
       <description>&lt;h2 id=&#34;finding-your-3d-printers-sweet-spot---a-guide-to-maximizing-print-speed&#34;&gt;Finding Your 3D Printer&amp;rsquo;s Sweet Spot - A Guide to Maximizing Print Speed&lt;/h2&gt;&#xA;&lt;p&gt;Have you ever wondered how fast your 3D printer can truly go? When I get a new printer or see a new model released, the first question that pops into my head is always, &amp;ldquo;How fast can I print with this thing?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;This post will explore how to determine the optimal print speed for your 3D printer, ensuring both speed and quality.&lt;/p&gt;</description>
     </item>
     <item>
       <title>OrcaSlicer Calibration and Max Flowrate</title>
-      <link>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
+      <link>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
+      <guid>https://minimal3dp.com/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
       <description>&lt;h1 id=&#34;orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool&#34;&gt;OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;/h1&gt;&#xA;&lt;h2 id=&#34;max-volumetric-speed-defined&#34;&gt;Max Volumetric Speed Defined&lt;/h2&gt;&#xA;&lt;p&gt;According to &lt;a href=&#34;https://help.prusa3d.com/article/max-volumetric-speed_127176&#34;&gt;Prusa3D&lt;/a&gt;, Max Volumetric Speed is defined as:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;video-description&#34;&gt;Video Description&lt;/h2&gt;&#xA;&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;</description>
     </item>
     <item>
       <title>Klipper Calibration</title>
-      <link>http://localhost:1313/klipper-calibration/</link>
+      <link>https://minimal3dp.com/klipper-calibration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/klipper-calibration/</guid>
+      <guid>https://minimal3dp.com/klipper-calibration/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Launched - 2024-04-12&lt;/p&gt;&#xA;&lt;p&gt;This section is my attempt to to create a Klipper Calibration website. It is based on my &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing&#34;&gt;Klipper Calibration Spreadsheet&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
