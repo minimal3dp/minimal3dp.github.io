@@ -33,7 +33,7 @@
   <meta itemprop="description" content="Running PID Tuning in Klipper">
   <meta itemprop="datePublished" content="2024-04-14T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-04-28T10:32:41-05:00">
-  <meta itemprop="wordCount" content="435">
+  <meta itemprop="wordCount" content="440">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="PID Tuning in Klipper">
   <meta name="twitter:description" content="Running PID Tuning in Klipper">
@@ -230,11 +230,11 @@
   </header>
 	<p><strong>TL;DR</strong></p>
 <p><em>Extruder</em></p>
-
-<div class="chem">$$PID_CALIBRATE HEATER=extruder TARGET=205$$</div><p><em>Bed</em></p>
-
-<div class="chem">$$PID_CALIBRATE HEATER=heater_bed TARGET=65$$</div><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+<pre tabindex="0"><code>PID_CALIBRATE HEATER=extruder TARGET=205
+</code></pre><p><em>Bed</em></p>
+<pre tabindex="0"><code>PID_CALIBRATE HEATER=heater_bed TARGET=65
+</code></pre><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YoZpvX5Ep2s?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 <h1 id="pid-tuning-in-klipper">PID Tuning in Klipper</h1>
@@ -252,13 +252,13 @@
 <p>Initiate PID calibration: In the console, enter the following command, replacing &ldquo;extruder&rdquo; with the actual name of your extruder if it&rsquo;s different:</p>
 </li>
 </ol>
-
-<div class="chem">$$PID_CALIBRATE HEATER=extruder TARGET=205$$</div><p>For me, 205 typically works the best for PLA.</p>
+<pre tabindex="0"><code>PID_CALIBRATE HEATER=extruder TARGET=205
+</code></pre><p>For me, 205 typically works the best for PLA.</p>
 <ol start="3">
 <li>Use the following command to save the PID values into your Printer.cfg:</li>
 </ol>
-
-<div class="chem">$$SAVE_CONFIG$$</div><h3 id="pid-tuning-the-heated-bed">PID Tuning the Heated Bed</h3>
+<pre tabindex="0"><code>SAVE_CONFIG
+</code></pre><h3 id="pid-tuning-the-heated-bed">PID Tuning the Heated Bed</h3>
 <ol>
 <li>
 <p>Access your Klipper interface: Open your Klipper instance through the web interface (Fluidd, Mainsail, etc.).</p>
@@ -267,13 +267,13 @@
 <p>Initiate PID calibration: In the console, enter the following command:</p>
 </li>
 </ol>
-
-<div class="chem">$$PID_CALIBRATE HEATER=heater_bed TARGET=65$$</div><p>I usually go with the bed at 65 for PLA.</p>
+<pre tabindex="0"><code>PID_CALIBRATE HEATER=heater_bed TARGET=65
+</code></pre><p>I usually go with the bed at 65 for PLA.</p>
 <ol start="3">
 <li>Use the following command to save the PID values into your Printer.cfg:</li>
 </ol>
-
-<div class="chem">$$SAVE_CONFIG$$</div><h3 id="explanation">Explanation:</h3>
+<pre tabindex="0"><code>SAVE_CONFIG
+</code></pre><h3 id="explanation">Explanation:</h3>
 <ul>
 <li><em>PID_CALIBRATE HEATER</em> is the extended G-code for starting PID calibration.</li>
 <li><em>extruder</em> specifies that you&rsquo;re tuning the extruder heater (replace with &ldquo;heater_bed&rdquo; for the heated bed).</li>
@@ -423,21 +423,7 @@
 </footer>
 
     </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
-      integrity="sha512-r2+FkHzf1u0+SQbZOoIz2RxWOIWfdEzRuYybGjzKq18jG9zaSfEy9s3+jMqG/zPtRor/q4qaUCYQpmSjTw8M+g==" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
-        integrity="sha512-INps9zQ2GUEMCQD7xiZQbGUVnqnzEvlynVy6eqcTcHN4+aQiLo9/uaQqckDpdJ8Zm3M0QBs+Pktg4pz0kEklUg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/mhchem.min.js"
-        integrity="sha512-mxjNw/u1lIsFC09k/unscDRY3ofIYPVFbWkP8slrePcS36ht4d/OZ8rRu5yddB2uiqajhTcLD8+jupOWuYPebg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
-       integrity="sha512-YJVxTjqttjsU3cSvaTRqsSl0wbRgZUNF+NGGCgto/MUbIvaLdXQzGTCQu4CvyJZbZctgflVB0PXw9LLmTWm5/w==" crossorigin="anonymous"
-       onload='renderMathInElement(document.body, null);'>
-</script>
-<script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
 <script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 

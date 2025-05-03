@@ -296,8 +296,7 @@
 </div>
 
 <p><a href="">GitHub Backup</a></p>
-
-<div class="chem">$$[include shell_command.cfg]
+<pre tabindex="0"><code>[include shell_command.cfg]
 [include mainsail.cfg]
 
 # host MCU service is preinstalled and ready to use with:
@@ -306,8 +305,8 @@ serial: /tmp/klipper_host_mcu
 
 # This file contains common pin mappings for the BIGTREETECH Manta M8P
 # To use this config, the firmware should be compiled for the
-# STM32G0B1 with a "8KiB bootloader" "8 MHz crystal"
-# and "USB (on PA11/PA12)" or "CAN bus (on PD12/PD13)".
+# STM32G0B1 with a &#34;8KiB bootloader&#34; &#34;8 MHz crystal&#34;
+# and &#34;USB (on PA11/PA12)&#34; or &#34;CAN bus (on PD12/PD13)&#34;.
 
 # https://github.com/Klipper3d/klipper/blob/master/config/generic-bigtreetech-manta-m8p-v1.1.cfg
 
@@ -480,7 +479,7 @@ heater_temp: 50.0
 heater_pin: PB5
 sensor_type: ATC Semitec 104GT-2
 sensor_pin: PA0
-##	Adjust Max Power so your heater doesn't warp your bed
+##	Adjust Max Power so your heater doesn&#39;t warp your bed
 max_power: 0.7
 min_temp: 0
 max_temp: 120
@@ -497,14 +496,14 @@ aliases:
     EXP1_3=PE11, EXP1_4=PE12,
     EXP1_5=PE13, EXP1_6=PE14,    # Slot in the socket on this side
     EXP1_7=PE15, EXP1_8=PB10,
-    EXP1_9=<GND>, EXP1_10=<5V>,
+    EXP1_9=&lt;GND&gt;, EXP1_10=&lt;5V&gt;,
 
     # EXP2 header
     EXP2_1=PB14, EXP2_2=PB13,
     EXP2_3=PF7, EXP2_4=PB12,
     EXP2_5=PE7, EXP2_6=PB11,      # Slot in the socket on this side
-    EXP2_7=PE8, EXP2_8=<RST>,
-    EXP2_9=<GND>, EXP2_10=<NC>
+    EXP2_7=PE8, EXP2_8=&lt;RST&gt;,
+    EXP2_9=&lt;GND&gt;, EXP2_10=&lt;NC&gt;
 
 # See the sample-lcd.cfg file for definitions of common LCD displays.
 
@@ -612,16 +611,16 @@ shaper_type_y: 2hump_ei
 [gcode_macro _km_options]
 # These are examples of some likely customizations:
 # Any sheets in the below list will be available with a configurable offset.
-#variable_bed_surfaces: ['smooth_1','texture_1']
+#variable_bed_surfaces: [&#39;smooth_1&#39;,&#39;texture_1&#39;]
 # Length (in mm) of filament to load (bowden tubes will be longer).
 variable_load_length: 50.0
-# Hide the Octoprint LCD menu since I don't use it.
+# Hide the Octoprint LCD menu since I don&#39;t use it.
 #variable_menu_show_octoprint: False
 # Customize the filament menus (up to 10 entries).
 #variable_menu_temperature: [
-#  {'name' : 'PLA',  'extruder' : 200.0, 'bed' : 60.0},
-#  {'name' : 'PETG', 'extruder' : 230.0, 'bed' : 85.0},
-#  {'name' : 'ABS',  'extruder' : 245.0, 'bed' : 110.0, 'chamber' : 60}]
+#  {&#39;name&#39; : &#39;PLA&#39;,  &#39;extruder&#39; : 200.0, &#39;bed&#39; : 60.0},
+#  {&#39;name&#39; : &#39;PETG&#39;, &#39;extruder&#39; : 230.0, &#39;bed&#39; : 85.0},
+#  {&#39;name&#39; : &#39;ABS&#39;,  &#39;extruder&#39; : 245.0, &#39;bed&#39; : 110.0, &#39;chamber&#39; : 60}]
 # Length of filament (in millimeters) to purge at print start.
 variable_start_purge_length: 30 # This value works for most setups.
 gcode: # This line is required by Klipper.
@@ -631,7 +630,7 @@ gcode: # This line is required by Klipper.
 # to your Z endstop or probe offset.
 #  ADJUST_SURFACE_OFFSETS
 variable_park_x: 10.0
-# Y position to park toolhead (set "max" or "min" to infer from stepper config).
+# Y position to park toolhead (set &#34;max&#34; or &#34;min&#34; to infer from stepper config).
 variable_park_y: 350.0
 
 # This line includes all the standard macros.
@@ -669,9 +668,10 @@ gcode:
     RUN_SHELL_COMMAND CMD=update_git_script
 
 [gcode_shell_command update_git_script]
-command: bash -c "bash $HOME/klipper-backup/script.sh"
+command: bash -c &#34;bash $HOME/klipper-backup/script.sh&#34;
 timeout: 90.0
-verbose: True$$</div>
+verbose: True
+</code></pre>
 	<style>
   .feedback--answer {
     display: inline-block;
@@ -797,21 +797,7 @@ verbose: True$$</div>
 </footer>
 
     </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
-      integrity="sha512-r2+FkHzf1u0+SQbZOoIz2RxWOIWfdEzRuYybGjzKq18jG9zaSfEy9s3+jMqG/zPtRor/q4qaUCYQpmSjTw8M+g==" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
-        integrity="sha512-INps9zQ2GUEMCQD7xiZQbGUVnqnzEvlynVy6eqcTcHN4+aQiLo9/uaQqckDpdJ8Zm3M0QBs+Pktg4pz0kEklUg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/mhchem.min.js"
-        integrity="sha512-mxjNw/u1lIsFC09k/unscDRY3ofIYPVFbWkP8slrePcS36ht4d/OZ8rRu5yddB2uiqajhTcLD8+jupOWuYPebg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
-       integrity="sha512-YJVxTjqttjsU3cSvaTRqsSl0wbRgZUNF+NGGCgto/MUbIvaLdXQzGTCQu4CvyJZbZctgflVB0PXw9LLmTWm5/w==" crossorigin="anonymous"
-       onload='renderMathInElement(document.body, null);'>
-</script>
-<script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
 <script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 

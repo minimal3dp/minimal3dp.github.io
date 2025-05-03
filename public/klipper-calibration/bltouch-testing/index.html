@@ -33,7 +33,7 @@
   <meta itemprop="description" content="Testing a BLTOUCH or a clone in Klipper">
   <meta itemprop="datePublished" content="2024-05-06T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-05-05T21:36:08-05:00">
-  <meta itemprop="wordCount" content="285">
+  <meta itemprop="wordCount" content="284">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Testing a Bltouch, CRTouch, ora clone in Klipper">
   <meta name="twitter:description" content="Testing a BLTOUCH or a clone in Klipper">
@@ -224,15 +224,15 @@
 <ul>
 <li>
 <p>Send <code>BLTOUCH_DEBUG COMMAND=pin_down</code> in the printer terminal to move the pin down.</p>
-
-<div class="chem">$$BLTOUCH_DEBUG COMMAND=pin_down$$</div></li>
+<pre tabindex="0"><code>BLTOUCH_DEBUG COMMAND=pin_down
+</code></pre></li>
 <li>
 <p>Verify that the red LED turns off.</p>
 </li>
 <li>
 <p>Send <code>BLTOUCH_DEBUG COMMAND=pin_up</code> to retract the pin and ensure the red LED turns on (1).</p>
-
-<div class="chem">$$BLTOUCH_DEBUG COMMAND=pin_up$$</div></li>
+<pre tabindex="0"><code>BLTOUCH_DEBUG COMMAND=pin_up
+</code></pre></li>
 </ul>
 </li>
 <li>
@@ -240,19 +240,18 @@
 <ul>
 <li>
 <p>With the pin down, send <code>BLTOUCH_DEBUG COMMAND=touch_mode</code>, then <code>QUERY_PROBE</code> and check for &ldquo;probe: open&rdquo;.</p>
-
-<div class="chem">$$BLTOUCH_DEBUG COMMAND=touch_mode$$</div><p>&amp;</p>
-
-<div class="chem">$$QUERY_PROBE$$</div></li>
+<pre tabindex="0"><code>BLTOUCH_DEBUG COMMAND=touch_mode
+</code></pre><p>&amp;</p>
+<pre tabindex="0"><code>QUERY_PROBE
+</code></pre></li>
 <li>
 <p>Gently push the pin up with your finger, send <code>QUERY_PROBE</code> again, and look for &ldquo;probe: TRIGGERED&rdquo;.</p>
-
-<div class="chem">$$$$</div></li>
+<pre tabindex="0"><code></code></pre></li>
 </ul>
 <p>QUERY_PROBE</p>
-
-<div class="chem">$$
-- If the responses are incorrect, check your wiring and configuration (1).$$</div></li>
+<pre tabindex="0"><code>
+- If the responses are incorrect, check your wiring and configuration (1).
+</code></pre></li>
 <li>
 <p><strong>Probing Test</strong>: Move the print head away from the bed and repeat the control and sensor pin tests to confirm the probe&rsquo;s response when not near the bed surface (1).</p>
 </li>
@@ -389,21 +388,7 @@
 </footer>
 
     </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
-      integrity="sha512-r2+FkHzf1u0+SQbZOoIz2RxWOIWfdEzRuYybGjzKq18jG9zaSfEy9s3+jMqG/zPtRor/q4qaUCYQpmSjTw8M+g==" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
-        integrity="sha512-INps9zQ2GUEMCQD7xiZQbGUVnqnzEvlynVy6eqcTcHN4+aQiLo9/uaQqckDpdJ8Zm3M0QBs+Pktg4pz0kEklUg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/mhchem.min.js"
-        integrity="sha512-mxjNw/u1lIsFC09k/unscDRY3ofIYPVFbWkP8slrePcS36ht4d/OZ8rRu5yddB2uiqajhTcLD8+jupOWuYPebg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
-       integrity="sha512-YJVxTjqttjsU3cSvaTRqsSl0wbRgZUNF+NGGCgto/MUbIvaLdXQzGTCQu4CvyJZbZctgflVB0PXw9LLmTWm5/w==" crossorigin="anonymous"
-       onload='renderMathInElement(document.body, null);'>
-</script>
-<script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
 <script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 

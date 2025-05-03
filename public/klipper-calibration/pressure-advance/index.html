@@ -34,7 +34,7 @@
   <meta itemprop="description" content="Calculate the ideal Pressure Advance">
   <meta itemprop="datePublished" content="2024-04-07T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-04-28T10:32:41-05:00">
-  <meta itemprop="wordCount" content="105">
+  <meta itemprop="wordCount" content="107">
   <meta itemprop="image" content="https://minimal3dp.com/klipper-calibration/pressure-advance/featured-sunset-get.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://minimal3dp.com/klipper-calibration/pressure-advance/featured-sunset-get.png">
@@ -258,15 +258,15 @@
 <ol>
 <li>Setup</li>
 </ol>
-
-<div class="chem">$$SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=1 ACCEL=500$$</div><ol start="2">
+<pre tabindex="0"><code>SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=1 ACCEL=500
+</code></pre><ol start="2">
 <li>Select command based on drive:</li>
 </ol>
 <p>Direct Drive:</p>
-
-<div class="chem">$$TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.005$$</div><p>Bowden Tube:</p>
-
-<div class="chem">$$TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020$$</div><h2 id="pressure-advance-calculator">Pressure Advance Calculator</h2>
+<pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.005
+</code></pre><p>Bowden Tube:</p>
+<pre tabindex="0"><code>TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.020
+</code></pre><h2 id="pressure-advance-calculator">Pressure Advance Calculator</h2>
 <div class="container">
     <form method="post" id="myform">
         <div class="row mb-3">
@@ -319,7 +319,7 @@
 
 <h2 id="edit-your-slicer-or-printercfg">Edit Your Slicer or Printer.cfg</h2>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9hVzGcU4R84?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9hVzGcU4R84?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 
@@ -448,21 +448,7 @@
 </footer>
 
     </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
-      integrity="sha512-r2+FkHzf1u0+SQbZOoIz2RxWOIWfdEzRuYybGjzKq18jG9zaSfEy9s3+jMqG/zPtRor/q4qaUCYQpmSjTw8M+g==" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
-        integrity="sha512-INps9zQ2GUEMCQD7xiZQbGUVnqnzEvlynVy6eqcTcHN4+aQiLo9/uaQqckDpdJ8Zm3M0QBs+Pktg4pz0kEklUg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/mhchem.min.js"
-        integrity="sha512-mxjNw/u1lIsFC09k/unscDRY3ofIYPVFbWkP8slrePcS36ht4d/OZ8rRu5yddB2uiqajhTcLD8+jupOWuYPebg=="
-        crossorigin="anonymous">
-</script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
-       integrity="sha512-YJVxTjqttjsU3cSvaTRqsSl0wbRgZUNF+NGGCgto/MUbIvaLdXQzGTCQu4CvyJZbZctgflVB0PXw9LLmTWm5/w==" crossorigin="anonymous"
-       onload='renderMathInElement(document.body, null);'>
-</script>
-<script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.c97ce1bb54fd7d408526fdeca426f65151c2eeee99153e13032ce39793752fba.js" integrity="sha256-yXzhu1T9fUCFJv3spCb2UVHC7u6ZFT4TAyzjl5N1L7o=" crossorigin="anonymous"></script>
 <script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
