@@ -10,7 +10,9 @@ resources:
     title: "Orca Slicer Line Width"
     params:
       byline: "Photo: Created by Mike Wilson"
-draft: true
+draft: false
+categories: [3D Printers, videos]
+tags: [How-To, slicers]
 ---
 
 ## Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon
