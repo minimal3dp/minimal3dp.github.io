@@ -1,6 +1,6 @@
 ---
 date: 2025-05-03
-title: Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon
+title: "Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon"
 linkTitle: 
 description: >
   
