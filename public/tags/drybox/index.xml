@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drybox on Minimal 3DP</title>
-    <link>https://minimal3dp.com/tags/drybox/</link>
+    <link>http://localhost:1313/tags/drybox/</link>
     <description>Recent content in Drybox on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate>
-    <atom:link href="https://minimal3dp.com/tags/drybox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/drybox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FixDry Double NT1</title>
-      <link>https://minimal3dp.com/projects/3d-printing-reviews/fixdry-double-nt1/</link>
+      <link>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printing-reviews/fixdry-double-nt1/</guid>
+      <guid>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bit.ly/3vSfOOa&#34;&gt;FIXDRY 3D Filament 2 Spools Compatible Dryerbox DOUBLE-NT1&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;fixdry-nt1-review&#34;&gt;FixDry NT1 Review&lt;/h1&gt;&#xA;&lt;p&gt;Level Up Your 3D Printer! FIXDRY DOUBLE-NT1 Filament Dryer Box Review &amp;amp; Demonstration&lt;/p&gt;&#xA;&lt;p&gt;red of battling wet filament and failed 3D prints? Struggling to keep your prints crisp and free of warping?&lt;/p&gt;&#xA;&lt;p&gt;In this video, we take action! We unbox and put the FIXDRY DOUBLE-NT1 Filament Dryer to the test. See for yourself how this 2-spool dryer can transform your printing experience.&lt;/p&gt;</description>
     </item>
   </channel>
