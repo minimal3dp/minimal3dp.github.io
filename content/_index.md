@@ -40,7 +40,7 @@ Popular Videos
 
 {{% blocks/section type="row" %}}
 
-{{% blocks/feature icon="fa-solid fa-video" title="Orca Slicer Tutorials" url="https://www.youtube.com/playlist?list=PLXcVv43EZh9D2qMndOhCnRsNkQEww_xcN" %}}
+{{% blocks/feature icon="fa-solid fa-video" title="Orca Slicer Tutorials" url="https://youtu.be/VLMo24oDwQE" %}}
 
 {{% /blocks/feature %}}
 

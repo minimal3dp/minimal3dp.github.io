@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>OrcaSlicer 2.3.1 Alpha Just Dropped &amp; How to Use the New Flow Rate Calibration</title>
+      <link>http://localhost:1313/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/</link>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/</guid>
+      <description>&lt;h2 id=&#34;mastering-extrusion-a-deep-dive-into-orcaslicers-new-archimedean-flow-calibration&#34;&gt;Mastering Extrusion: A Deep Dive into OrcaSlicer’s New Archimedean Flow Calibration&lt;/h2&gt;&#xA;&lt;h3 id=&#34;from-subjective-guesswork-to-visual-precision-a-step-by-step-guide-to-perfecting-your-flow-rate-with-the-orcaslicer-231-alpha-feature&#34;&gt;From Subjective Guesswork to Visual Precision: A Step-by-Step Guide to Perfecting Your Flow Rate with the OrcaSlicer 2.3.1 Alpha Feature&lt;/h3&gt;&#xA;&lt;h2 id=&#34;the-next-evolution-in-slicing-introducing-orcaslicer-231-alpha&#34;&gt;The Next Evolution in Slicing: Introducing OrcaSlicer 2.3.1 Alpha&lt;/h2&gt;&#xA;&lt;h3 id=&#34;the-relentless-pursuit-of-perfection&#34;&gt;The Relentless Pursuit of Perfection&lt;/h3&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re like me, you&amp;rsquo;re constantly on the lookout for the latest and greatest features to elevate your 3D prints from good to flawless.&lt;a href=&#34;https://www.youtube.com/watch?v=afuKB8T133s&#34;&gt;1&lt;/a&gt; This relentless pursuit of perfection is the lifeblood of the 3D printing community, and it&amp;rsquo;s a spirit embodied by the team behind OrcaSlicer. More than just a piece of software, OrcaSlicer has established itself as a dynamic, open-source project at the vanguard of Fused Deposition Modeling (FDM) technology.&lt;a href=&#34;https://github.com/OrcaSlicer/OrcaSlicer&#34;&gt;2&lt;/a&gt; It&amp;rsquo;s a slicer built by and for the community, characterized by a rapid development cycle that consistently delivers powerful, cutting-edge tools into our hands.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon</title>
       <link>http://localhost:1313/blog/2025/05/03/level-up-your-prints-why-line-width-is-your-3d-printing-secret-weapon/</link>
       <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
