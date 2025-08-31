@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Swx1 on Minimal 3DP</title><link>https://minimal3dp.com/tags/swx1/</link><description>Recent content in Swx1 on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 24 Aug 2025 15:01:29 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/swx1/index.xml" rel="self" type="application/rss+xml"/><item><title>Sidewinder X1 (SWX1) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>SWX1 with a BTT SKR 2&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Swx1 on Minimal 3DP</title><link>https://minimal3dp.com/tags/swx1/</link><description>Recent content in Swx1 on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 31 Aug 2025 17:32:53 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/swx1/index.xml" rel="self" type="application/rss+xml"/><item><title>Sidewinder X1 (SWX1) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;SWX1 with a BTT SKR 2&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;p>&lt;a href="https://github.com/minimal3dp/swx1-skr2-klipper/tree/main">GitHub Backup&lt;/a>&lt;/p>
-&lt;pre tabindex="0">&lt;code>[include shell_command.cfg]
+&lt;p&gt;&lt;a href="https://github.com/minimal3dp/swx1-skr2-klipper/tree/main"&gt;GitHub Backup&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[include shell_command.cfg]
 [include fluidd.cfg]
 [include mainsail.cfg]
 
@@ -227,9 +227,9 @@ gcode:
 command: bash /home/wilsonm/printer_1_data/klipper-backup/script.sh
 timeout: 90.0
 verbose: True
-&lt;/code>&lt;/pre></description></item><item><title>Artillary Sidewinder X1</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Artillery Sidewinder X1 (SWX1)&lt;/p>
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Artillary Sidewinder X1</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;Artillery Sidewinder X1 (SWX1)&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;p>SWX1 landing page.&lt;/p></description></item></channel></rss>
+&lt;p&gt;SWX1 landing page.&lt;/p&gt;</description></item></channel></rss>

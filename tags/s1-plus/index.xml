@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>S1 Plus on Minimal 3DP</title><link>https://minimal3dp.com/tags/s1-plus/</link><description>Recent content in S1 Plus on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/tags/s1-plus/index.xml" rel="self" type="application/rss+xml"/><item><title>Ender 3 S1 Plus (e3s1p) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Ender 3 S1 Plus with the default Creality Board&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>S1 Plus on Minimal 3DP</title><link>https://minimal3dp.com/tags/s1-plus/</link><description>Recent content in S1 Plus on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/tags/s1-plus/index.xml" rel="self" type="application/rss+xml"/><item><title>Ender 3 S1 Plus (e3s1p) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;Ender 3 S1 Plus with the default Creality Board&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;pre tabindex="0">&lt;code># !Ender-3 S1 Plus
+&lt;pre tabindex="0"&gt;&lt;code&gt;# !Ender-3 S1 Plus
 # printer_size: 300x300x300
 # version: 3.6
 # This file contains pin mappings for the stock 2021 Creality Ender 3
@@ -281,4 +281,4 @@ square_corner_velocity: 5.0
 
 [include timelapse.cfg]
 [include cx_gmcro.cfg]
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

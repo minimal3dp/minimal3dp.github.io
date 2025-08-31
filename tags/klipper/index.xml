@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Klipper on Minimal 3DP</title><link>https://minimal3dp.com/tags/klipper/</link><description>Recent content in Klipper on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 24 Aug 2025 15:01:29 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/klipper/index.xml" rel="self" type="application/rss+xml"/><item><title>Sidewinder X1 (SWX1) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>SWX1 with a BTT SKR 2&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Klipper on Minimal 3DP</title><link>https://minimal3dp.com/tags/klipper/</link><description>Recent content in Klipper on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 31 Aug 2025 17:32:53 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/klipper/index.xml" rel="self" type="application/rss+xml"/><item><title>Sidewinder X1 (SWX1) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;SWX1 with a BTT SKR 2&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;p>&lt;a href="https://github.com/minimal3dp/swx1-skr2-klipper/tree/main">GitHub Backup&lt;/a>&lt;/p>
-&lt;pre tabindex="0">&lt;code>[include shell_command.cfg]
+&lt;p&gt;&lt;a href="https://github.com/minimal3dp/swx1-skr2-klipper/tree/main"&gt;GitHub Backup&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[include shell_command.cfg]
 [include fluidd.cfg]
 [include mainsail.cfg]
 
@@ -227,12 +227,12 @@ gcode:
 command: bash /home/wilsonm/printer_1_data/klipper-backup/script.sh
 timeout: 90.0
 verbose: True
-&lt;/code>&lt;/pre></description></item><item><title>Ender 3 S1 Plus (e3s1p) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Ender 3 S1 Plus with the default Creality Board&lt;/p>
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Ender 3 S1 Plus (e3s1p) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;Ender 3 S1 Plus with the default Creality Board&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;pre tabindex="0">&lt;code># !Ender-3 S1 Plus
+&lt;pre tabindex="0"&gt;&lt;code&gt;# !Ender-3 S1 Plus
 # printer_size: 300x300x300
 # version: 3.6
 # This file contains pin mappings for the stock 2021 Creality Ender 3
@@ -510,13 +510,13 @@ square_corner_velocity: 5.0
 
 [include timelapse.cfg]
 [include cx_gmcro.cfg]
-&lt;/code>&lt;/pre></description></item><item><title>Zero G Mercury One.1 Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Mercury One.1 with a BTT Manta M8P&lt;/p>
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Zero G Mercury One.1 Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/mercury-one/mercury-one-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;Mercury One.1 with a BTT Manta M8P&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;p>&lt;a href="">GitHub Backup&lt;/a>&lt;/p>
-&lt;pre tabindex="0">&lt;code>[include shell_command.cfg]
+&lt;p&gt;&lt;a href=""&gt;GitHub Backup&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[include shell_command.cfg]
 [include mainsail.cfg]
 
 # host MCU service is preinstalled and ready to use with:
@@ -891,4 +891,4 @@ gcode:
 command: bash -c &amp;#34;bash $HOME/klipper-backup/script.sh&amp;#34;
 timeout: 90.0
 verbose: True
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

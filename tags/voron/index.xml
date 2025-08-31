@@ -1,142 +1,142 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Voron on Minimal 3DP</title><link>https://minimal3dp.com/tags/voron/</link><description>Recent content in Voron on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 24 Aug 2025 15:01:29 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/voron/index.xml" rel="self" type="application/rss+xml"/><item><title>Voron 2.4 R2 Pro+ Build References</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Build references and links for the Voron 2.4 R2 Pro+ FormBot kit. I needed a centralized location for all the reference material I need to build the 3D printer.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Voron on Minimal 3DP</title><link>https://minimal3dp.com/tags/voron/</link><description>Recent content in Voron on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 31 Aug 2025 17:32:53 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/voron/index.xml" rel="self" type="application/rss+xml"/><item><title>Voron 2.4 R2 Pro+ Build References</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-references/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;Build references and links for the Voron 2.4 R2 Pro+ FormBot kit. I needed a centralized location for all the reference material I need to build the 3D printer.&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;h1 id="references-and-links">References and Links&lt;/h1>
-&lt;h2 id="kit">Kit&lt;/h2>
-&lt;ul>
-&lt;li>Kit on AliExpress: &lt;a href="https://www.aliexpress.us/item/3256803199034766.html?spm=a2g0o.order_list.order_list_main.5.2cfe1802Npe2Rk&amp;amp;gatewayAdapt=glo2usa">Voron 2.4 V2.4 R2 Pro+ Latest Version Best Quality CoreXY 3D Printer Kit&lt;/a>)&lt;/li>
-&lt;li>FormBot Site: &lt;a href="https://www.formbot3d.com/products/voron-24-r2-pro-corexy-3d-printer-kit-with-m8p-cb1-board-and-canbus-wiring-system?VariantsId=10481">Voron Kit&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="voron-refs">Voron Refs&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://vorondesign.com/voron2.4">Voron 2.4 Website&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf">2.4 Manual&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/VoronDesign/Voron-2/">Voron 2.4 GitHub&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="formbot-references">FormBot References:&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://drive.google.com/file/d/1Cq7LWvDv7ZkAo8UH1fZQUC-eRevE1t4u/view?pli=1">Wiring Diagram&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view">Wiring Instruction for Voron 2.4 Pro&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://drive.google.com/file/d/1HAoaRFFA4JQNH5PZTGo-tmtvavjdQbKO/view">Voron 2.4 R2 Pro+ Instructions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://drive.google.com/file/d/1VGESvXycgMbUvep2g-nsu8e-c_ZA2rYF/view">STL Files of Voron 2.4 R2 Pro+ from FormBot&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="youtube">YouTube&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Hiyof41s9Jo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div></description></item><item><title>Voron 2.4 R2 Pro+ Build Parts List</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/</link><pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Parts List for the Voron 2.4 R2 Pro+ FormBot kit. I will show the parts list from FrormBot but at the end of the page I will include my cross-checks.&lt;/p>
+&lt;h1 id="references-and-links"&gt;References and Links&lt;/h1&gt;
+&lt;h2 id="kit"&gt;Kit&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kit on AliExpress: &lt;a href="https://www.aliexpress.us/item/3256803199034766.html?spm=a2g0o.order_list.order_list_main.5.2cfe1802Npe2Rk&amp;amp;gatewayAdapt=glo2usa"&gt;Voron 2.4 V2.4 R2 Pro+ Latest Version Best Quality CoreXY 3D Printer Kit&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FormBot Site: &lt;a href="https://www.formbot3d.com/products/voron-24-r2-pro-corexy-3d-printer-kit-with-m8p-cb1-board-and-canbus-wiring-system?VariantsId=10481"&gt;Voron Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="voron-refs"&gt;Voron Refs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vorondesign.com/voron2.4"&gt;Voron 2.4 Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf"&gt;2.4 Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/VoronDesign/Voron-2/"&gt;Voron 2.4 GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="formbot-references"&gt;FormBot References:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://drive.google.com/file/d/1Cq7LWvDv7ZkAo8UH1fZQUC-eRevE1t4u/view?pli=1"&gt;Wiring Diagram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view"&gt;Wiring Instruction for Voron 2.4 Pro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drive.google.com/file/d/1HAoaRFFA4JQNH5PZTGo-tmtvavjdQbKO/view"&gt;Voron 2.4 R2 Pro+ Instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drive.google.com/file/d/1VGESvXycgMbUvep2g-nsu8e-c_ZA2rYF/view"&gt;STL Files of Voron 2.4 R2 Pro+ from FormBot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="youtube"&gt;YouTube&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Hiyof41s9Jo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;</description></item><item><title>Voron 2.4 R2 Pro+ Build Parts List</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/</link><pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;Parts List for the Voron 2.4 R2 Pro+ FormBot kit. I will show the parts list from FrormBot but at the end of the page I will include my cross-checks.&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;h1 id="parts-list-from-formbot">Parts List from FormBot&lt;/h1>
-&lt;h2 id="kit">Kit&lt;/h2>
-&lt;ul>
-&lt;li>Kit on AliExpress: &lt;a href="https://www.aliexpress.us/item/3256803199034766.html?spm=a2g0o.order_list.order_list_main.5.2cfe1802Npe2Rk&amp;amp;gatewayAdapt=glo2usa">Voron 2.4 V2.4 R2 Pro+ Latest Version Best Quality CoreXY 3D Printer Kit&lt;/a>)&lt;/li>
-&lt;li>FormBot Site: &lt;a href="https://www.formbot3d.com/products/voron-24-r2-pro-corexy-3d-printer-kit-with-m8p-cb1-board-and-canbus-wiring-system?VariantsId=10481">Voron Kit&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="formbot-parts">FormBot Parts&lt;/h2>
-&lt;p>&lt;a href="https://ueeshop.ly200-cdn.com/u_file/UPAY/UPAY131/2403/12/photo/814.jpg?x-oss-process=image/format,webp/quality,q_100">FormBot Parts List&lt;/a>
-&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/formbot-parts-list_hu_43772695fd9d8a24.png" width="600" height="450">
-&lt;figcaption class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text">
+&lt;h1 id="parts-list-from-formbot"&gt;Parts List from FormBot&lt;/h1&gt;
+&lt;h2 id="kit"&gt;Kit&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kit on AliExpress: &lt;a href="https://www.aliexpress.us/item/3256803199034766.html?spm=a2g0o.order_list.order_list_main.5.2cfe1802Npe2Rk&amp;amp;gatewayAdapt=glo2usa"&gt;Voron 2.4 V2.4 R2 Pro+ Latest Version Best Quality CoreXY 3D Printer Kit&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FormBot Site: &lt;a href="https://www.formbot3d.com/products/voron-24-r2-pro-corexy-3d-printer-kit-with-m8p-cb1-board-and-canbus-wiring-system?VariantsId=10481"&gt;Voron Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="formbot-parts"&gt;FormBot Parts&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://ueeshop.ly200-cdn.com/u_file/UPAY/UPAY131/2403/12/photo/814.jpg?x-oss-process=image/format,webp/quality,q_100"&gt;FormBot Parts List&lt;/a&gt;
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px"&gt;
+&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-parts-list/formbot-parts-list_hu_43772695fd9d8a24.png" width="600" height="450"&gt;
+&lt;figcaption class="card-body px-0 pt-2 pb-0"&gt;
+&lt;p class="card-text"&gt;
 
 
 FormBot Parts List
-&lt;small class="text-body-secondary">&lt;br/>Photo: Various Sources&lt;/small>
-&lt;/p></description></item><item><title>Voron 2.4 R2 Pro+ Build - Building the Frame</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</link><pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>In this section, I will be building the frame of my Voron 2.4 R2 Kit&lt;/p>
+&lt;small class="text-body-secondary"&gt;&lt;br/&gt;Photo: Various Sources&lt;/small&gt;
+&lt;/p&gt;</description></item><item><title>Voron 2.4 R2 Pro+ Build - Building the Frame</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</link><pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;In this section, I will be building the frame of my Voron 2.4 R2 Kit&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;p>&lt;strong>References and Links&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf">Voron 2.4 R2 Manual&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h1 id="build-steps">Build Steps&lt;/h1>
-&lt;p>The Voron assembly manual starts with the building of the frame. I will start from this point.&lt;/p>
-&lt;h2 id="blind-joints">Blind Joints&lt;/h2>
-&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-blind-joints_hu_b502350ae4978cc4.png" width="600" height="450">
-&lt;figcaption class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text">
+&lt;p&gt;&lt;strong&gt;References and Links&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf"&gt;Voron 2.4 R2 Manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="build-steps"&gt;Build Steps&lt;/h1&gt;
+&lt;p&gt;The Voron assembly manual starts with the building of the frame. I will start from this point.&lt;/p&gt;
+&lt;h2 id="blind-joints"&gt;Blind Joints&lt;/h2&gt;
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px"&gt;
+&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-blind-joints_hu_b502350ae4978cc4.png" width="600" height="450"&gt;
+&lt;figcaption class="card-body px-0 pt-2 pb-0"&gt;
+&lt;p class="card-text"&gt;
 
 
 Voron Build Guide - Blind Joints
-&lt;small class="text-body-secondary">&lt;br/>Photo: Various&lt;/small>
-&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
+&lt;small class="text-body-secondary"&gt;&lt;br/&gt;Photo: Various&lt;/small&gt;
+&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;h2 id="frame">Frame&lt;/h2>
-&lt;p>Using the blind joints. The Frame is assembled.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Z0Cd19ETfkI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div>
+&lt;h2 id="frame"&gt;Frame&lt;/h2&gt;
+&lt;p&gt;Using the blind joints. The Frame is assembled.&lt;/p&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Z0Cd19ETfkI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
-&lt;h3 id="frame-parts">Frame Parts&lt;/h3>
-&lt;ul>
-&lt;li>M5 x 16 BHCS&lt;/li>
-&lt;li>10 A Extrusions&lt;/li>
-&lt;li>4 B Extrusions&lt;/li>
-&lt;li>2 C Extrusions&lt;/li>
-&lt;li>1 D Extrusion&lt;/li>
-&lt;li>1 E Extrusion&lt;/li>
-&lt;li>4 Corner Brackets&lt;/li>
-&lt;/ul>
-&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 460px">
-&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-build-frame_hu_c0282bfaff0f9ca7.png" width="450" height="600">
-&lt;figcaption class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text">
+&lt;h3 id="frame-parts"&gt;Frame Parts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;M5 x 16 BHCS&lt;/li&gt;
+&lt;li&gt;10 A Extrusions&lt;/li&gt;
+&lt;li&gt;4 B Extrusions&lt;/li&gt;
+&lt;li&gt;2 C Extrusions&lt;/li&gt;
+&lt;li&gt;1 D Extrusion&lt;/li&gt;
+&lt;li&gt;1 E Extrusion&lt;/li&gt;
+&lt;li&gt;4 Corner Brackets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 460px"&gt;
+&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-build-frame_hu_c0282bfaff0f9ca7.png" width="450" height="600"&gt;
+&lt;figcaption class="card-body px-0 pt-2 pb-0"&gt;
+&lt;p class="card-text"&gt;
 
 
 Assembled Frame
-&lt;small class="text-body-secondary">&lt;br/>Photo: Various&lt;/small>
-&lt;/p></description></item><item><title>This Week on Minimal 3DP (April 28)</title><link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 202px">
-&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu_e991f8ad21a544bc.PNG" width="192" height="192">
-&lt;figcaption class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text">
+&lt;small class="text-body-secondary"&gt;&lt;br/&gt;Photo: Various&lt;/small&gt;
+&lt;/p&gt;</description></item><item><title>This Week on Minimal 3DP (April 28)</title><link>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 202px"&gt;
+&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu_e991f8ad21a544bc.PNG" width="192" height="192"&gt;
+&lt;figcaption class="card-body px-0 pt-2 pb-0"&gt;
+&lt;p class="card-text"&gt;
 
 
 OrcaSlicer Logo
-&lt;small class="text-body-secondary">&lt;br/>Photo: SoftFever&lt;/small>
-&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
+&lt;small class="text-body-secondary"&gt;&lt;br/&gt;Photo: SoftFever&lt;/small&gt;
+&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;h1 id="the-week-of-april-28st-2024">The Week of April 28st 2024&lt;/h1>
-&lt;p>I am currently working on several projects this week. They include:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/">Voron 2.4 R2 Pro+ Build&lt;/a>&lt;/li>
-&lt;li>Orca Slicer Seam Settings&lt;/li>
-&lt;li>STEM Outreach&lt;/li>
-&lt;/ul>
-&lt;h2 id="voron-24-r2-pro-build">Voron 2.4 R2 Pro+ Build&lt;/h2>
-&lt;p>i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p></description></item><item><title>This Week on Minimal 3DP (April 21)</title><link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
-&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/features-voron_hu_54a561ea5ed55f07.png" width="500" height="500">
-&lt;figcaption class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text">
+&lt;h1 id="the-week-of-april-28st-2024"&gt;The Week of April 28st 2024&lt;/h1&gt;
+&lt;p&gt;I am currently working on several projects this week. They include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/"&gt;Voron 2.4 R2 Pro+ Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Orca Slicer Seam Settings&lt;/li&gt;
+&lt;li&gt;STEM Outreach&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="voron-24-r2-pro-build"&gt;Voron 2.4 R2 Pro+ Build&lt;/h2&gt;
+&lt;p&gt;i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p&gt;</description></item><item><title>This Week on Minimal 3DP (April 21)</title><link>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px"&gt;
+&lt;img class="card-img-top" src="https://minimal3dp.com/blog/2024/04/21/this-week-on-minimal-3dp-april-21/features-voron_hu_54a561ea5ed55f07.png" width="500" height="500"&gt;
+&lt;figcaption class="card-body px-0 pt-2 pb-0"&gt;
+&lt;p class="card-text"&gt;
 
 
 Voron Circuit Board Logo
-&lt;small class="text-body-secondary">&lt;br/>Photo: Team FDM&lt;/small>
-&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
+&lt;small class="text-body-secondary"&gt;&lt;br/&gt;Photo: Team FDM&lt;/small&gt;
+&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;h1 id="the-week-of-april-21st-2024">The Week of April 21st 2024&lt;/h1>
-&lt;p>I am currently working on several projects this week. They include:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/">Voron 2.4 R2 Pro+ Build&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://kevinakasam.com/belt-driven-ender-3/">Belt Driven Ender 3&lt;/a>&lt;/li>
-&lt;li>STEM Outreach&lt;/li>
-&lt;/ul>
-&lt;h2 id="voron-24-r2-pro-build">Voron 2.4 R2 Pro+ Build&lt;/h2>
-&lt;p>I have started getting together my project website for my Voron build. One of the newer ideas I am trying is to create a project website. I am hoping that it makes it easier for me to save references and other links. I typically try to research a project before I begin and it will make it to asier to share my research.&lt;/p></description></item><item><title>Voron 2.4 Pro+</title><link>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</guid><description>&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Voron 2.4 Pro+&lt;/p>
+&lt;h1 id="the-week-of-april-21st-2024"&gt;The Week of April 21st 2024&lt;/h1&gt;
+&lt;p&gt;I am currently working on several projects this week. They include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/"&gt;Voron 2.4 R2 Pro+ Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kevinakasam.com/belt-driven-ender-3/"&gt;Belt Driven Ender 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;STEM Outreach&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="voron-24-r2-pro-build"&gt;Voron 2.4 R2 Pro+ Build&lt;/h2&gt;
+&lt;p&gt;I have started getting together my project website for my Voron build. One of the newer ideas I am trying is to create a project website. I am hoping that it makes it easier for me to save references and other links. I typically try to research a project before I begin and it will make it to asier to share my research.&lt;/p&gt;</description></item><item><title>Voron 2.4 Pro+</title><link>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/voron-2.4-pro+/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;Voron 2.4 Pro+&lt;/p&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
-&lt;p>Voron 2.4 landing page.&lt;/p></description></item></channel></rss>
+&lt;p&gt;Voron 2.4 landing page.&lt;/p&gt;</description></item></channel></rss>
