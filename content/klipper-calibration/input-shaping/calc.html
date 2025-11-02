@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klipper Calibration Calculator</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* Use Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* dark:bg-gray-900 */
+            color: #d1d5db; /* dark:text-gray-300 */
+        }
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2937; /* dark:bg-gray-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563; /* dark:bg-gray-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* dark:bg-gray-500 */
+        }
+        /* Hide number input spinners */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Active sidebar link */
+        .sidebar-link.active {
+            background-color: #374151; /* dark:bg-gray-700 */
+            color: #f9fafb; /* dark:text-gray-50 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="flex h-screen">
+
+    <!-- Sidebar Navigation -->
+    <aside class="w-64 flex-shrink-0 overflow-y-auto bg-gray-900 border-r border-gray-700 p-4 flex flex-col">
+        <h1 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+            <i class="ph-bold ph-gear text-cyan-400"></i>
+            Klipper Calculators
+        </h1>
+        <nav class="flex-grow space-y-2">
+            <a href="#home" class="sidebar-link active flex items-center gap-3 px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white transition-colors" data-page="home">
+                <i class="ph ph-house"></i> Home
+            </a>
+            <a href="#extruder" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white transition-colors" data-page="extruder">
+                <i class="ph ph-ruler"></i> Extruder Distance
+            </a>
+            <a href="#flow" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white transition-colors" data-page="flow">
+                <i class="ph ph-waves"></i> OrcaSlicer Flow
+            </a>
+            <a href="#pa" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white transition-colors" data-page="pa">
+                <i class="ph ph-corners-out"></i> Pressure Advance
+            </a>
+            <a href="#checks" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white transition-colors" data-page="checks">
+                <i class="ph ph-check-list"></i> Basic Config Checks
+            </a>
+            <!-- Add more links here as you add sections -->
+        </nav>
+        <div class="mt-6 pt-6 border-t border-gray-700">
+            <p class="text-xs text-gray-500">
+                From spreadsheet by Minimal 3DP.
+                <br>Based on guides from
+                <a href="https://github.com/SoftFever/OrcaSlicer/wiki" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">OrcaSlicer</a> &
+                <a href="https://ellis3dp.com/Print-Tuning-Guide/" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">Ellis3DP</a>.
+            </p>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 overflow-y-auto p-6 md:p-10">
+        
+        <!-- Page: Home -->
+        <section id="home" class="page-content space-y-6">
+            <h2 class="text-3xl font-bold text-white border-b border-gray-700 pb-2">Home & Instructions</h2>
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                <p class="text-lg mb-4">Welcome to the Klipper Calibration web application!</p>
+                <p class="mb-2">
+                    This tool is a web-based version of the popular Klipper Calibration spreadsheet, designed to be easier to use without needing to make a copy.
+                </p>
+                <p class="mb-4">
+                    Select a calculator from the sidebar on the left to get started. All calculations are based on the fantastic guides from the <a href="https://github.com/SoftFever/OrcaSlicer/wiki" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">OrcaSlicer Wiki</a> and <a href="https://ellis3dp.com/Print-Tuning-Guide/" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">Ellis' Print Tuning Guide</a>.
+                </p>
+                <div class="mt-4 p-4 bg-gray-900 border border-cyan-500/30 rounded-lg">
+                    <p class="font-semibold text-cyan-400 flex items-center gap-2"><i class="ph ph-info"></i> How to Use</p>
+                    <ol class="list-decimal list-inside mt-2 space-y-1 text-gray-300">
+                        <li>Select a calibration tool from the sidebar menu.</li>
+                        <li>Enter your measured values into the <span class="text-yellow-400">yellow input fields</span>.</li>
+                        <li>Your results will be calculated automatically and shown in the <span class="text-green-400">green result boxes</span>.</li>
+                        <li>Follow the instructions and copy any generated commands to your Klipper console.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page: Extruder Rotation Distance -->
+        <section id="extruder" class="page-content space-y-6 hidden">
+            <h2 class="text-3xl font-bold text-white border-b border-gray-700 pb-2">Extruder Rotation Distance</h2>
+            
+            <!-- Card 1: E-Steps to Rotation Distance -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-white mb-4">Calculate from E-Steps</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="full_steps" class="block text-sm font-medium text-gray-300">Full Steps per Rotation</label>
+                        <select id="full_steps" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500">
+                            <option value="200">1.8° Stepper (200)</option>
+                            <option value="400">0.9° Stepper (400)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="microsteps" class="block text-sm font-medium text-gray-300">Microsteps</label>
+                        <input type="number" id="microsteps" value="16" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateExtruderFromESteps()">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="e_steps" class="block text-sm font-medium text-gray-300">Your Old E-Steps Value</label>
+                        <input type="number" id="e_steps" placeholder="e.g., 400" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateExtruderFromESteps()">
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <p class="text-sm font-medium text-gray-300">Calculated Rotation Distance:</p>
+                    <code id="rotation_distance_from_esteps" class="block w-full text-lg font-bold bg-gray-900 text-green-400 p-3 rounded-md mt-1">...</code>
+                    <p class="text-xs text-gray-400 mt-2">Formula: (Full Steps * Microsteps) / E-Steps</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Measure and Trim -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-white mb-4">Calculate from Measurement (Measure & Trim)</h3>
+                <p class="text-sm text-gray-400 mb-4">Reference: <a href="https://www.klipper3d.org/Rotation_Distance.html" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">Klipper Rotation Distance Docs</a></p>
+                <div class="space-y-4">
+                    <div>
+                        <label for="prev_rotation" class="block text-sm font-medium text-gray-300">Previous Rotation Distance</label>
+                        <input type="number" step="any" id="prev_rotation" placeholder="e.g., 20.112" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateExtruderFromMeasurement()">
+                    </div>
+                    <div>
+                        <label for="initial_mark" class="block text-sm font-medium text-gray-300">Initial Mark Distance (mm)</label>
+                        <input type="number" step="any" id="initial_mark" value="120" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateExtruderFromMeasurement()">
+                    </div>
+                    <div>
+                        <label for="requested_extrude" class="block text-sm font-medium text-gray-300">Requested Extrude Distance (mm)</label>
+                        <input type="number" step="any" id="requested_extrude" value="100" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateExtruderFromMeasurement()">
+                    </div>
+                    <div>
+                        <label for="subsequent_mark" class="block text-sm font-medium text-gray-300">Subsequent Mark Distance (mm)</label>
+                        <input type="number" step="any" id="subsequent_mark" placeholder="e.g., 19" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateExtruderFromMeasurement()">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-sm font-medium text-gray-300">Actual Extruded Distance (mm):</p>
+                    <code id="actual_extrude" class="block w-full text-lg font-bold bg-gray-900 text-yellow-400 p-3 rounded-md mt-1">...</code>
+                    <p class="text-xs text-gray-400 mt-2">Formula: Initial Mark - Subsequent Mark</p>
+                </div>
+                <div class="mt-4">
+                    <p class="text-sm font-medium text-gray-300">New Rotation Distance:</p>
+                    <code id="rotation_distance_from_measurement" class="block w-full text-lg font-bold bg-gray-900 text-green-400 p-3 rounded-md mt-1">...</code>
+                    <p class="text-xs text-gray-400 mt-2">Formula: Previous Rotation * Actual Extruded / Requested Extrude</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page: OrcaSlicer Flow -->
+        <section id="flow" class="page-content space-y-6 hidden">
+            <h2 class="text-3xl font-bold text-white border-b border-gray-700 pb-2">OrcaSlicer Flow Calibration (Recommended)</h2>
+            
+            <!-- Card 1: Pass 1 & 2 -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-white mb-4">Pass 1 & Pass 2 Method</h3>
+                <p class="text-sm text-gray-400 mb-4">Use Orca Slicer -> Calibration -> Flow Rate -> Pass 1 & 2. Find the smoothest patch and enter its value below.</p>
+                
+                <!-- Pass 1 -->
+                <div class="border-b border-gray-700 pb-4 mb-4">
+                    <h4 class="text-lg font-semibold text-white mb-3">Pass 1</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="flow_pass1_old" class="block text-sm font-medium text-gray-300">Old Flow Rate</label>
+                            <input type="number" step="any" id="flow_pass1_old" value="0.99" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateOrcaFlow()">
+                        </div>
+                        <div>
+                            <label for="flow_pass1_slide" class="block text-sm font-medium text-gray-300">Pass 1 Slide Value (%)</label>
+                            <input type="number" step="any" id="flow_pass1_slide" placeholder="e.g., -10" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateOrcaFlow()">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm font-medium text-gray-300">Pass 1 Flow Value (use for Pass 2):</p>
+                        <code id="flow_pass1_result" class="block w-full text-lg font-bold bg-gray-900 text-yellow-400 p-3 rounded-md mt-1">...</code>
+                        <p class="text-xs text-gray-400 mt-2">Formula: Old Flow * (1 + Slide Value / 100)</p>
+                    </div>
+                </div>
+
+                <!-- Pass 2 -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Pass 2</h4>
+                     <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="flow_pass2_slide" class="block text-sm font-medium text-gray-300">Pass 2 Slide Value (%)</label>
+                            <input type="number" step="any" id="flow_pass2_slide" placeholder="e.g., -1" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateOrcaFlow()">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm font-medium text-gray-300">New FLOW Value (Final):</p>
+                        <code id="flow_pass2_result" class="block w-full text-lg font-bold bg-gray-900 text-green-400 p-3 rounded-md mt-1">...</code>
+                        <p class="text-xs text-gray-400 mt-2">Formula: Pass 1 Flow * (1 + Slide Value / 100)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: YOLO Method -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-white mb-4">YOLO Method</h3>
+                <p class="text-sm text-gray-400 mb-4">Use Orca Slicer -> Calibration -> Flow Rate -> YOLO. Find the smoothest patch and enter its value below.</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="flow_yolo_old" class="block text-sm font-medium text-gray-300">Old Flow Rate</label>
+                        <input type="number" step="any" id="flow_yolo_old" value="1" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateOrcaFlowYOLO()">
+                    </div>
+                    <div>
+                        <label for="flow_yolo_slide" class="block text-sm font-medium text-gray-300">YOLO Slide Value</label>
+                        <input type="number" step="any" id="flow_yolo_slide" placeholder="e.g., -0.035" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculateOrcaFlowYOLO()">
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <p class="text-sm font-medium text-gray-300">New FLOW Value (Final):</p>
+                    <code id="flow_yolo_result" class="block w-full text-lg font-bold bg-gray-900 text-green-400 p-3 rounded-md mt-1">...</code>
+                    <p class="text-xs text-gray-400 mt-2">Formula: Old Flow + Slide Value</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page: Pressure Advance -->
+        <section id="pa" class="page-content space-y-6 hidden">
+            <h2 class="text-3xl font-bold text-white border-b border-gray-700 pb-2">Pressure Advance</h2>
+            
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-white mb-4">Klipper PA Tower Method</h3>
+                <p class="text-sm text-gray-400 mb-4">Reference: <a href="https://www.klipper3d.org/Pressure_Advance.html" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">Klipper PA Docs</a></p>
+                
+                <div class="bg-gray-900 p-4 rounded-lg mb-4">
+                    <p class="text-sm font-medium text-gray-300 mb-2">Console Commands:</p>
+                    <code class="block text-sm text-cyan-300 mb-2">SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=1 ACCEL=500</code>
+                    <p class="text-xs text-gray-400 mb-2">For Direct Drive:</p>
+                    <code class="block text-sm text-cyan-300 mb-2">TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=0.005</code>
+                    <p class="text-xs text-gray-400 mb-2">For Bowden:</p>
+                    <code class="block text-sm text-cyan-300">TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=0.020</code>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="pa_start" class="block text-sm font-medium text-gray-300">Start Value (from command)</label>
+                        <input type="number" step="any" id="pa_start" value="0" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculatePA()">
+                    </div>
+                    <div>
+                        <label for="pa_measured_height" class="block text-sm font-medium text-gray-300">Measured Height (mm)</label>
+                        <input type="number" step="any" id="pa_measured_height" placeholder="e.g., 12.29" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculatePA()">
+                    </div>
+                    <div>
+                        <label for="pa_factor_dd" class="block text-sm font-medium text-gray-300">Direct Drive Factor</label>
+                        <input type="number" step="any" id="pa_factor_dd" value="0.005" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculatePA()">
+                    </div>
+                    <div>
+                        <label for="pa_factor_bowden" class="block text-sm font-medium text-gray-300">Bowden Factor</label>
+                        <input type="number" step="any" id="pa_factor_bowden" value="0.020" class="mt-1 block w-full bg-gray-700 border-gray-600 text-white rounded-md shadow-sm p-2 focus:ring-cyan-500 focus:border-cyan-500 input-yellow" oninput="calculatePA()">
+                    </div>
+                </div>
+
+                <div class="mt-6 space-y-4">
+                    <div>
+                        <p class="text-sm font-medium text-gray-300">Direct Drive Pressure Advance:</p>
+                        <code id="pa_result_dd" class="block w-full text-lg font-bold bg-gray-900 text-green-400 p-3 rounded-md mt-1">...</code>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-300">Bowden Pressure Advance:</p>
+                        <code id="pa_result_bowden" class="block w-full text-lg font-bold bg-gray-900 text-green-400 p-3 rounded-md mt-1">...</code>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Formula: Start + (Measured Height * Factor)</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Page: Basic Config Checks -->
+        <section id="checks" class="page-content space-y-6 hidden">
+            <h2 class="text-3xl font-bold text-white border-b border-gray-700 pb-2">Basic Configuration Checks</h2>
+            
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-gray-300 prose prose-invert max-w-none prose-table:border-gray-600 prose-th:border-gray-600 prose-td:border-gray-600 prose-th:text-white prose-code:text-cyan-300 prose-code:bg-gray-900 prose-code:p-1 prose-code:rounded">
+                <p>A selection of recommended configuration checks to do on the first boot of Klipper.</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border border-gray-700 divide-y divide-gray-700">
+                        <thead class="bg-gray-900">
+                            <tr>
+                                <th class="px-4 py-2 text-left text-sm font-semibold">Process</th>
+                                <th class="px-4 py-2 text-left text-sm font-semibold">Commands (Use in Console)</th>
+                                <th class="px-4 py-2 text-left text-sm font-semibold">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700">
+                            <tr>
+                                <td class="px-4 py-2 align-top">Verify temperature</td>
+                                <td class="px-4 py-2 align-top"></td>
+                                <td class="px-4 py-2 align-top">Look at the interface. The displayed temperatures for the nozzle and bed should be around ambient room temperature.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top">Verify M112</td>
+                                <td class="px-4 py-2 align-top"><code>M112</code></td>
+                                <td class="px-4 py-2 align-top">This will put the printer into a shutdown state.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top">Restart Firmware</td>
+                                <td class="px-4 py-2 align-top"><code>FIRMWARE_RESTART</code></td>
+                                <td class="px-4 py-2 align-top">Reboot the printer. Verify temps are staying at ambient and not rising. If they are rising, <strong>Power Off!</strong> Check wiring and <code>printer.cfg</code>.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top">Verify heaters</td>
+                                <td class="px-4 py-2 align-top"></td>
+                                <td class="px-4 py-2 align-top">Set extruder temperature to 50°C. Watch the graph; it should start to rise within 30 seconds. If not, verify <code>heater_pin</code>. Turn off the heater and repeat for the heated bed (e.g., to 60°C). Verify it heats and cools.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top">Verify fans</td>
+                                <td class="px-4 py-2 align-top"><code>M106 S255</code> (Part Fan)</td>
+                                <td class="px-4 py-2 align-top">Turns on the print cooling fan to 100%. Verify it turns on.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top"></td>
+                                <td class="px-4 py-2 align-top"><code>M106 S0</code></td>
+                                <td class="px-4 py-2 align-top">Turns off the print cooling fan.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top"></td>
+                                <td class="px-4 py-2 align-top"><code>SET_HEATER_FAN_SPEED HEATER=hotend_fan SPEED=1</code></td>
+                                <td class="px-4 py-2 align-top">(If you have a <code>[heater_fan]</code>) Turns on the hotend fan. Verify it turns on. Use <code>SPEED=0</code> to turn off.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top">Verify stepper motors</td>
+                                <td class="px-4 py-2 align-top"><code>G28</code> (Home All)</td>
+                                <td class="px-4 py-2 align-top"><strong>Keep a hand on the power switch!</strong> Verify all axes move in the correct direction towards their endstops. If an axis moves the wrong way, <strong>E-Stop or power off!</strong> You will need to invert the <code>dir_pin</code> for that axis (add or remove a <code>!</code>) in your <code>printer.cfg</code>.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top">Verify extruder motor</td>
+                                <td class="px-4 py-2 align-top"></td>
+                                <td class="px-4 py-2 align-top">Heat the hotend to printing temp (e.g., 200°C). Once at temp, go to the console and click "Extrude". Verify the extruder motor turns in the correct direction (pushing filament towards the nozzle). If not, verify the <code>dir_pin</code> for the extruder.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top">Calibrate PID settings</td>
+                                <td class="px-4 py-2 align-top"><code>PID_CALIBRATE HEATER=extruder TARGET=220</code></td>
+                                <td class="px-4 py-2 align-top">Calibrate the extruder PID. Use your typical printing temperature.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 align-top"></td>
+                                <td class="px-4 py-2 align-top"><code>PID_CALIBRATE HEATER=heater_bed TARGET=60</code></td>
+                                <td class="px-4 py-2 align-top">Caligate the bed PID. Use your typical bed temperature.</td>
+                            </tr>
+                             <tr>
+                                <td class="px-4 py-2 align-top">Save Configuration</td>
+                                <td class="px-4 py-2 align-top"><code>SAVE_CONFIG</code></td>
+                                <td class="px-4 py-2 align-top">After PID tuning is complete, run this to save the new values to your <code>printer.cfg</code>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- Page Navigation ---
+        const links = document.querySelectorAll('.sidebar-link');
+        const pages = document.querySelectorAll('.page-content');
+
+        function showPage(pageId) {
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.remove('hidden');
+                } else {
+                    page.classList.add('hidden');
+                }
+            });
+            links.forEach(link => {
+                if (link.dataset.page === pageId) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            // Scroll to top of content area on page change
+            document.querySelector('main').scrollTop = 0;
+        }
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageId = e.currentTarget.dataset.page;
+                showPage(pageId);
+                // Update URL hash
+                window.location.hash = pageId;
+            });
+        });
+
+        // Show page on initial load based on hash or default to 'home'
+        const initialPage = window.location.hash.substring(1) || 'home';
+        showPage(initialPage);
+
+        // --- Input Styling ---
+        // Add/remove yellow border class on focus/blur for designated inputs
+        const numberInputs = document.querySelectorAll('.input-yellow');
+        numberInputs.forEach(input => {
+            input.classList.add('border-2', 'border-transparent', 'focus:border-yellow-400', 'focus:ring-yellow-400');
+        });
+
+
+        // --- Calculation Functions ---
+
+        // Extruder Rotation Distance: From E-Steps
+        function calculateExtruderFromESteps() {
+            const fullSteps = parseFloat(document.getElementById('full_steps').value) || 0;
+            const microsteps = parseFloat(document.getElementById('microsteps').value) || 0;
+            const eSteps = parseFloat(document.getElementById('e_steps').value) || 0;
+            const resultEl = document.getElementById('rotation_distance_from_esteps');
+
+            if (eSteps > 0) {
+                const rotationDistance = (fullSteps * microsteps) / eSteps;
+                resultEl.textContent = rotationDistance.toFixed(3);
+            } else {
+                resultEl.textContent = '...';
+            }
+        }
+
+        // Extruder Rotation Distance: From Measurement
+        function calculateExtruderFromMeasurement() {
+            const prevRotation = parseFloat(document.getElementById('prev_rotation').value) || 0;
+            const initialMark = parseFloat(document.getElementById('initial_mark').value) || 0;
+            const requestedExtrude = parseFloat(document.getElementById('requested_extrude').value) || 0;
+            const subsequentMark = parseFloat(document.getElementById('subsequent_mark').value) || 0;
+            
+            const actualEl = document.getElementById('actual_extrude');
+            const resultEl = document.getElementById('rotation_distance_from_measurement');
+
+            if (initialMark > 0 && subsequentMark > 0) {
+                const actualExtrude = initialMark - subsequentMark;
+                actualEl.textContent = actualExtrude.toFixed(3);
+
+                if (prevRotation > 0 && requestedExtrude > 0 && actualExtrude > 0) {
+                    const newRotation = (prevRotation * actualExtrude) / requestedExtrude;
+                    resultEl.textContent = newRotation.toFixed(3);
+                } else {
+                    resultEl.textContent = '...';
+                }
+            } else {
+                actualEl.textContent = '...';
+                resultEl.textContent = '...';
+            }
+        }
+
+        // OrcaSlicer Flow: Pass 1 & 2
+        function calculateOrcaFlow() {
+            // Pass 1
+            const pass1Old = parseFloat(document.getElementById('flow_pass1_old').value) || 0;
+            const pass1Slide = parseFloat(document.getElementById('flow_pass1_slide').value) || 0;
+            const pass1ResultEl = document.getElementById('flow_pass1_result');
+            
+            let pass1Flow = 0;
+            if (pass1Old > 0) {
+                pass1Flow = pass1Old * (1 + (pass1Slide / 100));
+                pass1ResultEl.textContent = pass1Flow.toFixed(3);
+            } else {
+                pass1ResultEl.textContent = '...';
+            }
+
+            // Pass 2
+            const pass2Slide = parseFloat(document.getElementById('flow_pass2_slide').value) || 0;
+            const pass2ResultEl = document.getElementById('flow_pass2_result');
+
+            if (pass1Flow > 0) {
+                const pass2Flow = pass1Flow * (1 + (pass2Slide / 100));
+                pass2ResultEl.textContent = pass2Flow.toFixed(3);
+            } else {
+                pass2ResultEl.textContent = '...';
+            }
+        }
+
+        // OrcaSlicer Flow: YOLO
+        function calculateOrcaFlowYOLO() {
+            const yoloOld = parseFloat(document.getElementById('flow_yolo_old').value) || 0;
+            const yoloSlide = parseFloat(document.getElementById('flow_yolo_slide').value) || 0;
+            const resultEl = document.getElementById('flow_yolo_result');
+
+            if (yoloOld > 0) {
+                const newFlow = yoloOld + yoloSlide;
+                resultEl.textContent = newFlow.toFixed(3);
+            } else {
+                resultEl.textContent = '...';
+            }
+        }
+
+        // Pressure Advance
+        function calculatePA() {
+            const start = parseFloat(document.getElementById('pa_start').value) || 0;
+            const height = parseFloat(document.getElementById('pa_measured_height').value) || 0;
+            const factorDD = parseFloat(document.getElementById('pa_factor_dd').value) || 0;
+            const factorBowden = parseFloat(document.getElementById('pa_factor_bowden').value) || 0;
+
+            const resultDDEl = document.getElementById('pa_result_dd');
+            const resultBowdenEl = document.getElementById('pa_result_bowden');
+
+            if (height > 0) {
+                if (factorDD > 0) {
+                    const paDD = start + (height * factorDD);
+                    resultDDEl.textContent = paDD.toFixed(5);
+                } else {
+                    resultDDEl.textContent = '...';
+                }
+                if (factorBowden > 0) {
+                    const paBowden = start + (height * factorBowden);
+                    resultBowdenEl.textContent = paBowden.toFixed(5);
+                } else {
+                    resultBowdenEl.textContent = '...';
+                }
+            } else {
+                resultDDEl.textContent = '...';
+                resultBowdenEl.textContent = '...';
+            }
+        }
+
+        // --- Initial Calculation Call ---
+        // Run all calculations on load to populate fields with default values
+        function runAllCalculations() {
+            calculateExtruderFromESteps();
+            calculateExtruderFromMeasurement();
+            calculateOrcaFlow();
+            calculateOrcaFlowYOLO();
+            calculatePA();
+        }
+        
+        window.onload = runAllCalculations;
+
+    </script>
+</body>
+</html>
