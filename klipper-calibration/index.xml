@@ -9,13 +9,15 @@
 If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).&lt;/p&gt;</description></item><item><title>Run Current for TMC2208/2209</title><link>https://minimal3dp.com/klipper-calibration/run-current/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/run-current/</guid><description>&lt;h1 id="run-current"&gt;Run Current&lt;/h1&gt;
 &lt;h2 id="from-the-voron-docs"&gt;From the Voron Docs&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://docs.vorondesign.com/community/howto/120decibell/calculating_driver_current.html#:~:text=Calculating%20Currents,is%20the%20maximum%20run%20current."&gt;Calculating Driver Current Settings&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
 &lt;p&gt;The maximum Klipper RUN current settings can be calculated via the following steps:&lt;/p&gt;</description></item><item><title>Pressure Advance</title><link>https://minimal3dp.com/klipper-calibration/pressure-advance/</link><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/pressure-advance/</guid><description>&lt;h1 id="pressure-advance"&gt;Pressure Advance&lt;/h1&gt;
 &lt;h2 id="from-the-klipper-documents"&gt;From the Klipper Documents&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://www.klipper3d.org/Pressure_Advance.html"&gt;Klipper Documents&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="slicer-settings"&gt;Slicer Settings&lt;/h2&gt;
 &lt;table&gt;
@@ -52,7 +54,8 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;p&gt;Direct Drive:&lt;/p&gt;</description></item><item><title>Input Shaping</title><link>https://minimal3dp.com/klipper-calibration/input-shaping/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/input-shaping/</guid><description>&lt;h1 id="input-shaping"&gt;Input Shaping&lt;/h1&gt;
 &lt;h2 id="from-the-klipper-documents"&gt;From the Klipper Documents&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://all3dp.com/2/klipper-input-shaping-simply-explained/"&gt;Klipper: Input Shaping – Simply Explained&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Basic tuning requires measuring the ringing frequencies of the printer by printing a test model.&lt;/p&gt;
 &lt;p&gt;According to the &lt;a href="https://www.klipper3d.org/Resonance_Compensation.html"&gt;Klipper docs&lt;/a&gt;, slice the ringing test model, which can be found in &lt;a href="https://www.klipper3d.org/prints/ringing_tower.stl"&gt;docs/prints/ringing_tower.stl&lt;/a&gt;, in the slicer:&lt;/p&gt;
@@ -281,7 +284,8 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;p&gt;** Video Coming Soon **&lt;/p&gt;</description></item><item><title>Max Volumentric Speed</title><link>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</guid><description>&lt;h1 id="setting-max-volumentric-speed"&gt;Setting Max Volumentric Speed&lt;/h1&gt;
 &lt;h2 id="from-orca-slicer"&gt;From Orca Slicer&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#max-volumetric-speed"&gt;Max Volumetric speed&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;

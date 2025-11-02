@@ -902,13 +902,15 @@ verbose: True
 If the extruder steps are properly calibrated, the flow rate value should be really close to a single digit value (1.00).&lt;/p&gt;</description></item><item><title>Run Current for TMC2208/2209</title><link>https://minimal3dp.com/klipper-calibration/run-current/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/run-current/</guid><description>&lt;h1 id="run-current"&gt;Run Current&lt;/h1&gt;
 &lt;h2 id="from-the-voron-docs"&gt;From the Voron Docs&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Calculating Currents - To calculate the maximum Klipper current settings for a given stepper, follow this process: Look up the specifications for the stepper motor and locate the peak current limits of the motor. Multiply the peak current by 0.707 to determine the maximum current in RMS. This is the maximum run current.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://docs.vorondesign.com/community/howto/120decibell/calculating_driver_current.html#:~:text=Calculating%20Currents,is%20the%20maximum%20run%20current."&gt;Calculating Driver Current Settings&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
 &lt;p&gt;The maximum Klipper RUN current settings can be calculated via the following steps:&lt;/p&gt;</description></item><item><title>Pressure Advance</title><link>https://minimal3dp.com/klipper-calibration/pressure-advance/</link><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/pressure-advance/</guid><description>&lt;h1 id="pressure-advance"&gt;Pressure Advance&lt;/h1&gt;
 &lt;h2 id="from-the-klipper-documents"&gt;From the Klipper Documents&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Pressure advance does two useful things - it reduces ooze during non-extrude moves and it reduces blobbing during cornering. This guide uses the second feature (reducing blobbing during cornering) as a mechanism for tuning.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://www.klipper3d.org/Pressure_Advance.html"&gt;Klipper Documents&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="slicer-settings"&gt;Slicer Settings&lt;/h2&gt;
 &lt;table&gt;
@@ -945,7 +947,8 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;p&gt;Direct Drive:&lt;/p&gt;</description></item><item><title>Input Shaping</title><link>https://minimal3dp.com/klipper-calibration/input-shaping/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/input-shaping/</guid><description>&lt;h1 id="input-shaping"&gt;Input Shaping&lt;/h1&gt;
 &lt;h2 id="from-the-klipper-documents"&gt;From the Klipper Documents&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ldquo;Klipper Input Shaping improves print quality by exorcising the ghosts caused by vibrations and resonances. Read on to learn all about it!&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://all3dp.com/2/klipper-input-shaping-simply-explained/"&gt;Klipper: Input Shaping – Simply Explained&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Basic tuning requires measuring the ringing frequencies of the printer by printing a test model.&lt;/p&gt;
 &lt;p&gt;According to the &lt;a href="https://www.klipper3d.org/Resonance_Compensation.html"&gt;Klipper docs&lt;/a&gt;, slice the ringing test model, which can be found in &lt;a href="https://www.klipper3d.org/prints/ringing_tower.stl"&gt;docs/prints/ringing_tower.stl&lt;/a&gt;, in the slicer:&lt;/p&gt;
@@ -1174,7 +1177,8 @@ If the extruder steps are properly calibrated, the flow rate value should be rea
 &lt;p&gt;** Video Coming Soon **&lt;/p&gt;</description></item><item><title>Max Volumentric Speed</title><link>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/max-volumetric-speed/</guid><description>&lt;h1 id="setting-max-volumentric-speed"&gt;Setting Max Volumentric Speed&lt;/h1&gt;
 &lt;h2 id="from-orca-slicer"&gt;From Orca Slicer&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This is a test designed to calibrate the maximum volumetric speed of the specific filament. The generic or 3rd party filament types may not have the correct volumetric flow rate set in the filament. This test will help you to find the maximum volumetric speed of the filament.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://github.com/SoftFever/OrcaSlicer/wiki/Calibration#max-volumetric-speed"&gt;Max Volumetric speed&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
 &lt;ol&gt;
@@ -1419,13 +1423,213 @@ Minimal 3DP YouTube Banner
 &lt;h2 id="max-volumetric-speed-defined"&gt;Max Volumetric Speed Defined&lt;/h2&gt;
 &lt;p&gt;According to &lt;a href="https://help.prusa3d.com/article/max-volumetric-speed_127176"&gt;Prusa3D&lt;/a&gt;, Max Volumetric Speed is defined as:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
 &lt;h2 id="video-description"&gt;Video Description&lt;/h2&gt;
-&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;</description></item><item><title>About Minimal 3DP</title><link>https://minimal3dp.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/about/</guid><description>&lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_567dd2861871d105.jpg" media="(max-width: 1200px)"&gt;
+&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;</description></item><item><title>3D Print Cost Calculator</title><link>https://minimal3dp.com/m3dp-fdm-cost-calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/m3dp-fdm-cost-calculator/</guid><description>&lt;html lang="en" class="h-full"&gt;
+
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ &lt;title&gt;M3DP FDM 3D Print Cost Calculator&lt;/title&gt;
+ &lt;!-- Load Tailwind CSS --&gt;
+ &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+ &lt;!-- Import Inter font --&gt;
+ &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+ &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;
+ &lt;style&gt;
+ /* Custom styles */
+ body {
+ font-family: 'Inter', sans-serif;
+ background-color: #f3f4f6;
+ /* Light gray background */
+ }
+
+ /* Custom tooltip style */
+ .info-icon {
+ display: inline-block;
+ width: 1rem;
+ height: 1rem;
+ background-color: #9ca3af;
+ /* gray-400 */
+ color: white;
+ border-radius: 50%;
+ text-align: center;
+ font-size: 0.75rem;
+ line-height: 1rem;
+ font-weight: bold;
+ font-style: normal;
+ cursor: help;
+ margin-left: 4px;
+ position: relative;
+ }
+
+ /* Tooltip text - hidden by default */
+ .info-icon::after {
+ content: attr(data-tooltip);
+ position: absolute;
+ bottom: 125%;
+ /* Position above the icon */
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: #1f2937;
+ /* gray-800 */
+ color: #fff;
+ padding: 8px 12px;
+ border-radius: 6px;
+ font-size: 0.875rem;
+ font-weight: 500;
+ line-height: 1.25;
+ white-space: normal;
+ width: 320px;
+ /* Fixed width for better readability */
+ text-align: left;
+ visibility: hidden;
+ opacity: 0;
+ transition: opacity 0.2s, visibility 0.2s;
+ z-index: 10;
+ }
+
+ /* Show tooltip on hover */
+ .info-icon:hover::after {
+ visibility: visible;
+ opacity: 1;
+ }
+
+ /* Custom style for the sticky summary box */
+ .sticky-summary {
+ position: sticky;
+ top: 1.5rem;
+ /* 24px */
+ align-self: start;
+ /* Prevents stretching to grid height */
+ }
+
+ /* Style for the material info boxes */
+ .material-info {
+ background-color: #f9fafb;
+ /* gray-50 */
+ border: 1px solid #e5e7eb;
+ /* gray-200 */
+ border-radius: 0.5rem;
+ padding: 0.75rem;
+ margin-top: 0.5rem;
+ font-size: 0.875rem;
+ }
+
+ /* Pie Chart */
+ #pie-chart {
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+ /* Conic gradient will be set by JS */
+ background-image: conic-gradient(#3b82f6 0% 0%,
+ /* Material (Blue) */
+ #10b981 0% 0%,
+ /* Labor (Green) */
+ #f59e0b 0% 0%,
+ /* Machine (Amber) */
+ #ef4444 0% 0%,
+ /* Tooling (Red) */
+ #8b5cf6 0% 0%
+ /* Finishing (Violet) */
+ );
+ border: 2px solid #e5e7eb;
+ }
+
+ /* Quote Modal */
+ #quote-modal-backdrop {
+ background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ /* Print styles for Quote Modal */
+ @media print {
+ body * {
+ visibility: hidden;
+ }
+
+ #quote-modal-content,
+ #quote-modal-content * {
+ visibility: visible;
+ }
+
+ #quote-modal-content {
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ border: none !important;
+ box-shadow: none !important;
+ padding: 0 !important;
+ }
+
+ #quote-modal-header,
+ #quote-modal-footer {
+ display: none;
+ }
+
+ body {
+ background-color: #ffffff;
+ }
+ }
+
+ /* Collapsible reference sections */
+ details summary {
+ cursor: pointer;
+ font-weight: 500;
+ color: #1f2937;
+ /* gray-800 */
+ padding: 8px;
+ background-color: #f9fafb;
+ /* gray-50 */
+ border-radius: 0.375rem;
+ transition: background-color 0.2s;
+ }
+
+ details summary:hover {
+ background-color: #f3f4f6;
+ /* gray-100 */
+ }
+
+ details[open] summary {
+ border-bottom-left-radius: 0;
+ border-bottom-right-radius: 0;
+ }
+
+ details&gt;div {
+ padding: 1rem;
+ border: 1px solid #e5e7eb;
+ /* gray-200 */
+ border-top: none;
+ border-bottom-left-radius: 0.375rem;
+ border-bottom-right-radius: 0.375rem;
+ }
+ &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class="h-full bg-gray-100 p-4 sm:p-6 lg:p-8"&gt;
+ &lt;div class="container mx-auto max-w-7xl"&gt;
+
+ &lt;!-- Header --&gt;
+ &lt;header class="mb-6"&gt;
+ &lt;br /&gt;
+ &lt;br /&gt;
+ &lt;br /&gt;
+ &lt;br /&gt;
+
+ &lt;h1 class="text-3xl font-bold text-gray-900"&gt;
+ &lt;a href="https://minimal3dp.com" target="_blank" rel="noopener noreferrer"
+ class="text-blue-600 hover:underline"&gt;
+ M3DP FDM 3D Print Cost Calculator
+ &lt;/a&gt;
+ &lt;/h1&gt;
+ &lt;p class="mt-1 text-lg text-gray-600"&gt;A comprehensive tool based on the Seregi &amp; Ficzere (2025) cost model,
+ expanded for business and hobbyist quoting.&lt;/p&gt;</description></item><item><title>About Minimal 3DP</title><link>https://minimal3dp.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/about/</guid><description>&lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_567dd2861871d105.jpg" media="(max-width: 1200px)"&gt;
 &lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_f4153452389ae995.jpg" media="(min-width: 1200px)"&gt;
 &lt;style&gt;
 #td-cover-block-0 {
