@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -19,7 +19,7 @@
 
 <title>OrcaSlicer 2.3.1 Alpha Just Dropped &amp; How to Use the New Flow Rate Calibration | Minimal 3DP</title>
 <meta name="description" content="This guide provides a deep dive into the new Archimedean flow calibration feature in OrcaSlicer 2.3.1 Alpha, which replaces subjective guesswork with a visually precise test. Follow our step-by-step instructions to interpret the results and perfectly dial in your filament&#39;s flow rate for higher quality 3D prints.">
-<meta property="og:url" content="http://localhost:1313/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/">
+<meta property="og:url" content="https://minimal3dp.com/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/">
   <meta property="og:site_name" content="Minimal 3DP">
   <meta property="og:title" content="OrcaSlicer 2.3.1 Alpha Just Dropped & How to Use the New Flow Rate Calibration">
   <meta property="og:description" content="This guide provides a deep dive into the new Archimedean flow calibration feature in OrcaSlicer 2.3.1 Alpha, which replaces subjective guesswork with a visually precise test. Follow our step-by-step instructions to interpret the results and perfectly dial in your filament&#39;s flow rate for higher quality 3D prints.">
@@ -28,24 +28,39 @@
     <meta property="article:section" content="blog">
     <meta property="article:published_time" content="2025-08-24T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-08-24T15:01:29-05:00">
-    <meta property="og:image" content="http://localhost:1313/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/featured.png">
+    <meta property="og:image" content="https://minimal3dp.com/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/featured.png">
 
   <meta itemprop="name" content="OrcaSlicer 2.3.1 Alpha Just Dropped & How to Use the New Flow Rate Calibration">
   <meta itemprop="description" content="This guide provides a deep dive into the new Archimedean flow calibration feature in OrcaSlicer 2.3.1 Alpha, which replaces subjective guesswork with a visually precise test. Follow our step-by-step instructions to interpret the results and perfectly dial in your filament&#39;s flow rate for higher quality 3D prints.">
   <meta itemprop="datePublished" content="2025-08-24T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-08-24T15:01:29-05:00">
-  <meta itemprop="wordCount" content="3110">
-  <meta itemprop="image" content="http://localhost:1313/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/featured.png">
+  <meta itemprop="wordCount" content="3082">
+  <meta itemprop="image" content="https://minimal3dp.com/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/featured.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/featured.png">
+  <meta name="twitter:image" content="https://minimal3dp.com/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/featured.png">
   <meta name="twitter:title" content="OrcaSlicer 2.3.1 Alpha Just Dropped & How to Use the New Flow Rate Calibration">
   <meta name="twitter:description" content="This guide provides a deep dive into the new Archimedean flow calibration feature in OrcaSlicer 2.3.1 Alpha, which replaces subjective guesswork with a visually precise test. Follow our step-by-step instructions to interpret the results and perfectly dial in your filament&#39;s flow rate for higher quality 3D prints.">
-<link href="/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" as="style" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
+<link href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" rel="stylesheet" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W7FGE0CYM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1W7FGE0CYM');
+        }
+      </script>
   </head>
   <body class="td-page td-blog">
     <header>
@@ -65,6 +80,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/klipper-calibration/"><span>Klipper Calibration</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/tools/"><span>M3DP Tools</span></a>
       </li>
       </ul>
   </div>
@@ -193,43 +211,43 @@
             <div class="taxonomy taxonomy-terms-cloud taxo-tags">
       <h5 class="taxonomy-title">Tag Cloud</h5>
       <ul class="taxonomy-terms">
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/calibration/" data-taxonomy-term="calibration"><span class="taxonomy-label">Calibration</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/cr6/" data-taxonomy-term="cr6"><span class="taxonomy-label">Cr6</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/creality/" data-taxonomy-term="creality"><span class="taxonomy-label">Creality</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/cura/" data-taxonomy-term="cura"><span class="taxonomy-label">Cura</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/drybox/" data-taxonomy-term="drybox"><span class="taxonomy-label">Drybox</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/ender-3/" data-taxonomy-term="ender-3"><span class="taxonomy-label">Ender 3</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/ender-3-s1-plus/" data-taxonomy-term="ender-3-s1-plus"><span class="taxonomy-label">Ender 3 S1 Plus</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/filament/" data-taxonomy-term="filament"><span class="taxonomy-label">Filament</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/how-to/" data-taxonomy-term="how-to"><span class="taxonomy-label">How-To</span><span class="taxonomy-count">4</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/klipper/" data-taxonomy-term="klipper"><span class="taxonomy-label">Klipper</span><span class="taxonomy-count">3</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/mercury/" data-taxonomy-term="mercury"><span class="taxonomy-label">Mercury</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/mercury.one/" data-taxonomy-term="mercury.one"><span class="taxonomy-label">Mercury.one</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/orcaslicer/" data-taxonomy-term="orcaslicer"><span class="taxonomy-label">Orcaslicer</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/s1-plus/" data-taxonomy-term="s1-plus"><span class="taxonomy-label">S1 Plus</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/slicers/" data-taxonomy-term="slicers"><span class="taxonomy-label">Slicers</span><span class="taxonomy-count">3</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/swx1/" data-taxonomy-term="swx1"><span class="taxonomy-label">Swx1</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/voron/" data-taxonomy-term="voron"><span class="taxonomy-label">Voron</span><span class="taxonomy-count">6</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/voron-2.4/" data-taxonomy-term="voron-2.4"><span class="taxonomy-label">Voron 2.4</span><span class="taxonomy-count">4</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/tags/zerog/" data-taxonomy-term="zerog"><span class="taxonomy-label">Zerog</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/calibration/" data-taxonomy-term="calibration"><span class="taxonomy-label">Calibration</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/cr6/" data-taxonomy-term="cr6"><span class="taxonomy-label">Cr6</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/creality/" data-taxonomy-term="creality"><span class="taxonomy-label">Creality</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/cura/" data-taxonomy-term="cura"><span class="taxonomy-label">Cura</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/drybox/" data-taxonomy-term="drybox"><span class="taxonomy-label">Drybox</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/ender-3/" data-taxonomy-term="ender-3"><span class="taxonomy-label">Ender 3</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/ender-3-s1-plus/" data-taxonomy-term="ender-3-s1-plus"><span class="taxonomy-label">Ender 3 S1 Plus</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/filament/" data-taxonomy-term="filament"><span class="taxonomy-label">Filament</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/how-to/" data-taxonomy-term="how-to"><span class="taxonomy-label">How-To</span><span class="taxonomy-count">5</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/klipper/" data-taxonomy-term="klipper"><span class="taxonomy-label">Klipper</span><span class="taxonomy-count">3</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/mercury/" data-taxonomy-term="mercury"><span class="taxonomy-label">Mercury</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/mercury.one/" data-taxonomy-term="mercury.one"><span class="taxonomy-label">Mercury.one</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/orcaslicer/" data-taxonomy-term="orcaslicer"><span class="taxonomy-label">Orcaslicer</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/s1-plus/" data-taxonomy-term="s1-plus"><span class="taxonomy-label">S1 Plus</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/slicers/" data-taxonomy-term="slicers"><span class="taxonomy-label">Slicers</span><span class="taxonomy-count">3</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/swx1/" data-taxonomy-term="swx1"><span class="taxonomy-label">Swx1</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/voron/" data-taxonomy-term="voron"><span class="taxonomy-label">Voron</span><span class="taxonomy-count">6</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/voron-2.4/" data-taxonomy-term="voron-2.4"><span class="taxonomy-label">Voron 2.4</span><span class="taxonomy-count">4</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/tags/zerog/" data-taxonomy-term="zerog"><span class="taxonomy-label">Zerog</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
   <div class="taxonomy taxonomy-terms-cloud taxo-categories">
       <h5 class="taxonomy-title">Categories</h5>
       <ul class="taxonomy-terms">
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/3d-printers/" data-taxonomy-term="3d-printers"><span class="taxonomy-label">3D Printers</span><span class="taxonomy-count">8</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/assembly/" data-taxonomy-term="assembly"><span class="taxonomy-label">Assembly</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/builds/" data-taxonomy-term="builds"><span class="taxonomy-label">Builds</span><span class="taxonomy-count">3</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/configs/" data-taxonomy-term="configs"><span class="taxonomy-label">Configs</span><span class="taxonomy-count">6</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/klipper/" data-taxonomy-term="klipper"><span class="taxonomy-label">Klipper</span><span class="taxonomy-count">6</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/landing-page/" data-taxonomy-term="landing-page"><span class="taxonomy-label">Landing Page</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/projects/" data-taxonomy-term="projects"><span class="taxonomy-label">Projects</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/rassembly/" data-taxonomy-term="rassembly"><span class="taxonomy-label">RAssembly</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/references/" data-taxonomy-term="references"><span class="taxonomy-label">References</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/reviews/" data-taxonomy-term="reviews"><span class="taxonomy-label">Reviews</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/this-week/" data-taxonomy-term="this-week"><span class="taxonomy-label">This Week</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/tutorials/" data-taxonomy-term="tutorials"><span class="taxonomy-label">Tutorials</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="http://localhost:1313/categories/videos/" data-taxonomy-term="videos"><span class="taxonomy-label">Videos</span><span class="taxonomy-count">4</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/3d-printers/" data-taxonomy-term="3d-printers"><span class="taxonomy-label">3D Printers</span><span class="taxonomy-count">8</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/assembly/" data-taxonomy-term="assembly"><span class="taxonomy-label">Assembly</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/builds/" data-taxonomy-term="builds"><span class="taxonomy-label">Builds</span><span class="taxonomy-count">3</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/configs/" data-taxonomy-term="configs"><span class="taxonomy-label">Configs</span><span class="taxonomy-count">6</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/klipper/" data-taxonomy-term="klipper"><span class="taxonomy-label">Klipper</span><span class="taxonomy-count">6</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/landing-page/" data-taxonomy-term="landing-page"><span class="taxonomy-label">Landing Page</span><span class="taxonomy-count">3</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/projects/" data-taxonomy-term="projects"><span class="taxonomy-label">Projects</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/rassembly/" data-taxonomy-term="rassembly"><span class="taxonomy-label">RAssembly</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/references/" data-taxonomy-term="references"><span class="taxonomy-label">References</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/reviews/" data-taxonomy-term="reviews"><span class="taxonomy-label">Reviews</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/this-week/" data-taxonomy-term="this-week"><span class="taxonomy-label">This Week</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/tutorials/" data-taxonomy-term="tutorials"><span class="taxonomy-label">Tutorials</span><span class="taxonomy-count">2</span></a></li>
+        <li><a class="taxonomy-term" href="https://minimal3dp.com/categories/videos/" data-taxonomy-term="videos"><span class="taxonomy-label">Videos</span><span class="taxonomy-count">4</span></a></li>
         </ul>
     </div>
   
@@ -259,14 +277,9 @@
 	<header class="article-meta">
 		
   </header>
-	<h2 id="mastering-extrusion-a-deep-dive-into-orcaslicers-new-archimedean-flow-calibration">Mastering Extrusion: A Deep Dive into OrcaSlicer’s New Archimedean Flow Calibration</h2>
-<h3 id="from-subjective-guesswork-to-visual-precision-a-step-by-step-guide-to-perfecting-your-flow-rate-with-the-orcaslicer-231-alpha-feature">From Subjective Guesswork to Visual Precision: A Step-by-Step Guide to Perfecting Your Flow Rate with the OrcaSlicer 2.3.1 Alpha Feature</h3>
-<h2 id="the-next-evolution-in-slicing-introducing-orcaslicer-231-alpha">The Next Evolution in Slicing: Introducing OrcaSlicer 2.3.1 Alpha</h2>
-<h3 id="the-relentless-pursuit-of-perfection">The Relentless Pursuit of Perfection</h3>
-<p>If you&rsquo;re like me, you&rsquo;re constantly on the lookout for the latest and greatest features to elevate your 3D prints from good to flawless.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> This relentless pursuit of perfection is the lifeblood of the 3D printing community, and it&rsquo;s a spirit embodied by the team behind OrcaSlicer. More than just a piece of software, OrcaSlicer has established itself as a dynamic, open-source project at the vanguard of Fused Deposition Modeling (FDM) technology.<a href="https://github.com/OrcaSlicer/OrcaSlicer">2</a> It&rsquo;s a slicer built by and for the community, characterized by a rapid development cycle that consistently delivers powerful, cutting-edge tools into our hands.</p>
+	<h2 id="mastering-extrusion-a-deep-dive-into-orcaslicers-new-archimedean-flow-calibration">Mastering Extrusion: A Deep Dive into OrcaSlicer’s New Archimedean Flow Calibration<a class="td-heading-self-link" href="#mastering-extrusion-a-deep-dive-into-orcaslicers-new-archimedean-flow-calibration" aria-label="Heading self-link"></a></h2><h3 id="from-subjective-guesswork-to-visual-precision-a-step-by-step-guide-to-perfecting-your-flow-rate-with-the-orcaslicer-231-alpha-feature">From Subjective Guesswork to Visual Precision: A Step-by-Step Guide to Perfecting Your Flow Rate with the OrcaSlicer 2.3.1 Alpha Feature<a class="td-heading-self-link" href="#from-subjective-guesswork-to-visual-precision-a-step-by-step-guide-to-perfecting-your-flow-rate-with-the-orcaslicer-231-alpha-feature" aria-label="Heading self-link"></a></h3><h2 id="the-next-evolution-in-slicing-introducing-orcaslicer-231-alpha">The Next Evolution in Slicing: Introducing OrcaSlicer 2.3.1 Alpha<a class="td-heading-self-link" href="#the-next-evolution-in-slicing-introducing-orcaslicer-231-alpha" aria-label="Heading self-link"></a></h2><h3 id="the-relentless-pursuit-of-perfection">The Relentless Pursuit of Perfection<a class="td-heading-self-link" href="#the-relentless-pursuit-of-perfection" aria-label="Heading self-link"></a></h3><p>If you&rsquo;re like me, you&rsquo;re constantly on the lookout for the latest and greatest features to elevate your 3D prints from good to flawless.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> This relentless pursuit of perfection is the lifeblood of the 3D printing community, and it&rsquo;s a spirit embodied by the team behind OrcaSlicer. More than just a piece of software, OrcaSlicer has established itself as a dynamic, open-source project at the vanguard of Fused Deposition Modeling (FDM) technology.<a href="https://github.com/OrcaSlicer/OrcaSlicer">2</a> It&rsquo;s a slicer built by and for the community, characterized by a rapid development cycle that consistently delivers powerful, cutting-edge tools into our hands.</p>
 <p>It is in this spirit of continuous innovation that the developers have released OrcaSlicer version 2.3.1 Alpha.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> This isn&rsquo;t just a minor update; it&rsquo;s a significant leap forward, offering an exciting glimpse into the future of slicing. This release is packed with enhancements that promise to refine our workflows and improve our print quality in tangible ways.</p>
-<h3 id="a-glimpse-of-the-future-whats-new-in-version-231-alpha">A Glimpse of the Future: What&rsquo;s New in Version 2.3.1 Alpha?</h3>
-<p>The 2.3.1 Alpha release is a treasure trove of new functionalities that address various aspects of the printing process. While this guide will focus on one revolutionary feature, it&rsquo;s worth taking a moment to appreciate the breadth of improvements included in this update.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> The key additions are:</p>
+<h3 id="a-glimpse-of-the-future-whats-new-in-version-231-alpha">A Glimpse of the Future: What&rsquo;s New in Version 2.3.1 Alpha?<a class="td-heading-self-link" href="#a-glimpse-of-the-future-whats-new-in-version-231-alpha" aria-label="Heading self-link"></a></h3><p>The 2.3.1 Alpha release is a treasure trove of new functionalities that address various aspects of the printing process. While this guide will focus on one revolutionary feature, it&rsquo;s worth taking a moment to appreciate the breadth of improvements included in this update.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> The key additions are:</p>
 <ul>
 <li>A new sparse infill rotation system for stronger, more efficient internal structures.</li>
 <li>Substantial changes and improvements to the fuzzy skin feature, offering more creative control over surface textures.</li>
@@ -275,61 +288,46 @@
 <li>And, the focus of our deep dive today, a completely redesigned and more intuitive method for flow rate calibration.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></li>
 </ul>
 <p>Each of these features deserves its own detailed exploration, and I plan to cover them in future articles and videos. However, the new flow calibration method represents such a fundamental shift in approach and offers such a significant improvement in accuracy and ease of use that it warrants a dedicated, comprehensive guide. My goal here is to provide a focused, exhaustive walkthrough that will empower you to master this new tool immediately, without wasting your time.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
-<h3 id="multimedia-integration-watch-the-guide-in-action">Multimedia Integration: Watch the Guide in Action</h3>
-<p>For those who prefer a visual demonstration, I have created a complete video walkthrough that complements this written guide. You can watch it to see the entire process in action, from launching the test in OrcaSlicer to analyzing the physical prints.</p>
+<h3 id="multimedia-integration-watch-the-guide-in-action">Multimedia Integration: Watch the Guide in Action<a class="td-heading-self-link" href="#multimedia-integration-watch-the-guide-in-action" aria-label="Heading self-link"></a></h3><p>For those who prefer a visual demonstration, I have created a complete video walkthrough that complements this written guide. You can watch it to see the entire process in action, from launching the test in OrcaSlicer to analyzing the physical prints.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/afuKB8T133s?si=2DOHzn_8XdObTpyZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h3 id="the-philosophy-of-alpha-releases-in-open-source">The Philosophy of Alpha Releases in Open Source</h3>
-<p>Before we dive into the technical details, it&rsquo;s important to understand the context of an &ldquo;Alpha&rdquo; release. In the world of open-source software, an alpha version is far more than just an early, potentially unstable preview. It represents a philosophical choice that lies at the heart of community-driven development.<a href="https://github.com/OrcaSlicer/OrcaSlicer">2</a> Unlike the closed, internal testing of proprietary software, a public alpha is a transparent invitation for the most engaged users to become active participants in the development process.</p>
+<h3 id="the-philosophy-of-alpha-releases-in-open-source">The Philosophy of Alpha Releases in Open Source<a class="td-heading-self-link" href="#the-philosophy-of-alpha-releases-in-open-source" aria-label="Heading self-link"></a></h3><p>Before we dive into the technical details, it&rsquo;s important to understand the context of an &ldquo;Alpha&rdquo; release. In the world of open-source software, an alpha version is far more than just an early, potentially unstable preview. It represents a philosophical choice that lies at the heart of community-driven development.<a href="https://github.com/OrcaSlicer/OrcaSlicer">2</a> Unlike the closed, internal testing of proprietary software, a public alpha is a transparent invitation for the most engaged users to become active participants in the development process.</p>
 <p>The OrcaSlicer project thrives on this collaborative model, offering not just stable releases but also &ldquo;Nightly Builds&rdquo; for those who want to test the absolute latest code.<a href="https://github.com/OrcaSlicer/OrcaSlicer">2</a> When you download and use OrcaSlicer 2.3.1 Alpha, you are not merely a consumer; you are a collaborator. The feedback you provide, particularly through well-documented bug reports, is invaluable data that helps the developers refine, debug, and perfect these new features before they are rolled into a stable release.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> This guide will not only show you how to use the new flow calibration but also how to responsibly contribute back to the project that provides these powerful tools for free.</p>
-<h2 id="from-subjective-feel-to-objective-data-a-paradigm-shift-in-flow-calibration">From Subjective Feel to Objective Data: A Paradigm Shift in Flow Calibration</h2>
-<h3 id="the-old-way-limitations-of-the-diagonal-surface-test">The Old Way: Limitations of the Diagonal Surface Test</h3>
-<p>To fully appreciate the brilliance of the new flow calibration method, we must first understand the limitations of the one it replaces. For a long time, flow rate calibration in OrcaSlicer (and many other slicers) involved printing a series of square patches, each with a different flow modifier.[4, 5] The top surface of these squares was printed with a simple diagonal line pattern, moving back and forth at a 45-degree angle.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
+<h2 id="from-subjective-feel-to-objective-data-a-paradigm-shift-in-flow-calibration">From Subjective Feel to Objective Data: A Paradigm Shift in Flow Calibration<a class="td-heading-self-link" href="#from-subjective-feel-to-objective-data-a-paradigm-shift-in-flow-calibration" aria-label="Heading self-link"></a></h2><h3 id="the-old-way-limitations-of-the-diagonal-surface-test">The Old Way: Limitations of the Diagonal Surface Test<a class="td-heading-self-link" href="#the-old-way-limitations-of-the-diagonal-surface-test" aria-label="Heading self-link"></a></h3><p>To fully appreciate the brilliance of the new flow calibration method, we must first understand the limitations of the one it replaces. For a long time, flow rate calibration in OrcaSlicer (and many other slicers) involved printing a series of square patches, each with a different flow modifier.[4, 5] The top surface of these squares was printed with a simple diagonal line pattern, moving back and forth at a 45-degree angle.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
 <p>The process for determining the correct flow rate was almost entirely subjective. The official instruction was to run your fingers across the printed squares and select the one that felt the smoothest to the touch.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> While this method can work, its effectiveness is heavily dependent on the user&rsquo;s experience and tactile sensitivity. A beginner might struggle to discern the subtle differences between patches, while even an expert&rsquo;s judgment could be influenced by lighting or the specific texture of the filament. This subjectivity was the primary weakness of the old system, creating a barrier to achieving consistent, repeatable results.</p>
-<h3 id="introducing-the-archimedean-chord-a-smarter-pattern-for-a-smarter-slicer">Introducing the Archimedean Chord: A Smarter Pattern for a Smarter Slicer</h3>
-<p>The 2.3.1 Alpha release replaces the ambiguous diagonal pattern with a far more intelligent design: a concentric pattern based on an Archimedean chord.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> This isn&rsquo;t just a cosmetic change; it&rsquo;s a fundamental re-engineering of the test based on geometric principles.</p>
+<h3 id="introducing-the-archimedean-chord-a-smarter-pattern-for-a-smarter-slicer">Introducing the Archimedean Chord: A Smarter Pattern for a Smarter Slicer<a class="td-heading-self-link" href="#introducing-the-archimedean-chord-a-smarter-pattern-for-a-smarter-slicer" aria-label="Heading self-link"></a></h3><p>The 2.3.1 Alpha release replaces the ambiguous diagonal pattern with a far more intelligent design: a concentric pattern based on an Archimedean chord.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> This isn&rsquo;t just a cosmetic change; it&rsquo;s a fundamental re-engineering of the test based on geometric principles.</p>
 <p>An Archimedean spiral is a shape defined by a path that moves away from a central point at a constant angular velocity. In simpler terms, the distance between each successive turn of the spiral remains constant. When the toolhead of a 3D printer traces this path, it should lay down a series of perfectly concentric lines with a uniform gap between them. This geometric purity is the key to the test&rsquo;s effectiveness. Any deviation from the ideal amount of extruded filament—either too much or too little—will immediately disrupt this perfect, repeating pattern in a way that is visually and tactically obvious.</p>
 <p>Unlike the old diagonal pattern, where over-extrusion might simply result in a slightly rougher surface, the Archimedean pattern provides clear, unmistakable evidence. This new test, as highlighted in the updated OrcaSlicer wiki, is now the recommended method for dialing in your flow rate.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
-<h3 id="the-democratization-of-precision">The Democratization of Precision</h3>
-<p>This evolution from a tactile, experience-based method to a visually explicit one represents more than just a technical upgrade; it&rsquo;s a move that democratizes precision in 3D printing. It effectively lowers the barrier to entry for achieving one of the most critical calibrations, empowering users of all skill levels to diagnose and resolve extrusion issues with a newfound level of confidence.</p>
+<h3 id="the-democratization-of-precision">The Democratization of Precision<a class="td-heading-self-link" href="#the-democratization-of-precision" aria-label="Heading self-link"></a></h3><p>This evolution from a tactile, experience-based method to a visually explicit one represents more than just a technical upgrade; it&rsquo;s a move that democratizes precision in 3D printing. It effectively lowers the barrier to entry for achieving one of the most critical calibrations, empowering users of all skill levels to diagnose and resolve extrusion issues with a newfound level of confidence.</p>
 <p>The old method relied on an acquired skill—a developed &ldquo;feel&rdquo; for surface smoothness that created a knowledge gap between newcomers and seasoned veterans.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> The new test replaces this subjectivity with objective, observable data. Over-extrusion presents itself as distinct ridges where &ldquo;the edge of the circle is really sticking out,&rdquo; while under-extrusion creates clear &ldquo;valleys&rdquo; or gaps between the lines.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> These are not matters of opinion; they are measurable physical artifacts.</p>
 <p>This aligns perfectly with OrcaSlicer&rsquo;s overarching mission: to package &ldquo;advanced calibration tools&rdquo; within a &ldquo;user-friendly interface&rdquo; that supports a &ldquo;wide printer compatibility&rdquo;.<a href="https://github.com/OrcaSlicer/OrcaSlicer">2</a> By making a foundational calibration process like flow rate easier to perform and more reliable to interpret, the software empowers a much broader range of users to achieve superior print quality. It removes the gatekeeper of subjective &ldquo;feel&rdquo; and replaces it with the clarity of visual evidence. This new feature is a perfect encapsulation of the project&rsquo;s philosophy: it doesn&rsquo;t just add power for experts; it engineers that power in a way that elevates the entire community.</p>
-<h2 id="a-practical-guide-dialing-in-your-flow-rate-with-the-new-test">A Practical Guide: Dialing in Your Flow Rate with the New Test</h2>
-<h3 id="prerequisites-and-setup">Prerequisites and Setup</h3>
-<p>Before you jump into printing the new calibration test, a little preparation will ensure you get the most accurate results possible.</p>
+<h2 id="a-practical-guide-dialing-in-your-flow-rate-with-the-new-test">A Practical Guide: Dialing in Your Flow Rate with the New Test<a class="td-heading-self-link" href="#a-practical-guide-dialing-in-your-flow-rate-with-the-new-test" aria-label="Heading self-link"></a></h2><h3 id="prerequisites-and-setup">Prerequisites and Setup<a class="td-heading-self-link" href="#prerequisites-and-setup" aria-label="Heading self-link"></a></h3><p>Before you jump into printing the new calibration test, a little preparation will ensure you get the most accurate results possible.</p>
 <p>First, this test is designed to refine an existing flow rate, not to establish one from absolute zero. It is most effective when you start with a filament profile that is already reasonably well-configured. The calibration test works by applying small positive and negative modifiers to your filament&rsquo;s <em>current</em> flow ratio setting. As the transcript notes, &ldquo;it doesn&rsquo;t reset it back to one. It&rsquo;s based on what it&rsquo;s currently set at&rdquo;.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> So, if your filament profile&rsquo;s flow ratio is already set to 0.98, the test chips will be modifiers based on that value.</p>
 <p>Second, for the most scientifically accurate calibration, it&rsquo;s crucial to follow the recommended order of operations. According to the official OrcaSlicer wiki, you should always calibrate temperature <em>before</em> calibrating flow rate.<a href="https://github.com/OrcaSlicer/OrcaSlicer/wiki/Calibration">4</a> The temperature of your nozzle directly affects the viscosity of the filament, which in turn impacts how it flows. Dialing in your temperature first ensures that you are calibrating flow under the correct thermal conditions.</p>
-<h3 id="step-1-launching-the-calibration-test">Step 1: Launching the Calibration Test</h3>
-<p>With your slicer open and your printer profile selected, launching the new test is straightforward.</p>
+<h3 id="step-1-launching-the-calibration-test">Step 1: Launching the Calibration Test<a class="td-heading-self-link" href="#step-1-launching-the-calibration-test" aria-label="Heading self-link"></a></h3><p>With your slicer open and your printer profile selected, launching the new test is straightforward.</p>
 <ol>
 <li>Navigate to the top menu bar.</li>
 <li>Click on the &ldquo;Calibration&rdquo; dropdown.</li>
 <li>Select &ldquo;Flow Rate.&rdquo; A new test plate will be automatically generated in your workspace.</li>
 </ol>
 <p>You will see a series of small, square chips laid out on the build plate. Each chip is labeled with a modifier value, such as <code>0</code>, <code>-0.01</code>, <code>+0.01</code>, etc. This is the new, recommended test that utilizes the Archimedean pattern.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
-<h3 id="step-2-printing-and-initial-observation">Step 2: Printing and Initial Observation</h3>
-<p>Once the test plate is generated, simply slice it using the filament profile you wish to calibrate and send it to your printer. While it&rsquo;s printing, prepare a well-lit area for inspection. Good lighting is critical for visually identifying the subtle surface differences between the test chips.</p>
-<h3 id="step-3-interpreting-the-print--the-art-of-sight-and-touch">Step 3: Interpreting the Print – The Art of Sight and Touch</h3>
-<p>This is the most critical part of the process. Once the print is finished and has cooled, carefully remove it from the build plate. You will now analyze each chip, using both your eyes and your fingertips, to find the one that represents the &ldquo;Goldilocks&rdquo; zone of perfect extrusion.</p>
-<h4 id="identifying-over-extrusion">Identifying Over-extrusion</h4>
-<p>Over-extrusion occurs when the printer pushes out too much filament. On the Archimedean pattern, this is incredibly easy to spot.</p>
+<h3 id="step-2-printing-and-initial-observation">Step 2: Printing and Initial Observation<a class="td-heading-self-link" href="#step-2-printing-and-initial-observation" aria-label="Heading self-link"></a></h3><p>Once the test plate is generated, simply slice it using the filament profile you wish to calibrate and send it to your printer. While it&rsquo;s printing, prepare a well-lit area for inspection. Good lighting is critical for visually identifying the subtle surface differences between the test chips.</p>
+<h3 id="step-3-interpreting-the-print--the-art-of-sight-and-touch">Step 3: Interpreting the Print – The Art of Sight and Touch<a class="td-heading-self-link" href="#step-3-interpreting-the-print--the-art-of-sight-and-touch" aria-label="Heading self-link"></a></h3><p>This is the most critical part of the process. Once the print is finished and has cooled, carefully remove it from the build plate. You will now analyze each chip, using both your eyes and your fingertips, to find the one that represents the &ldquo;Goldilocks&rdquo; zone of perfect extrusion.</p>
+<h4 id="identifying-over-extrusion">Identifying Over-extrusion<a class="td-heading-self-link" href="#identifying-over-extrusion" aria-label="Heading self-link"></a></h4><p>Over-extrusion occurs when the printer pushes out too much filament. On the Archimedean pattern, this is incredibly easy to spot.</p>
 <ul>
 <li><strong>Visual Cues:</strong> Look for concentric circles where the edges are raised and pronounced. As the transcript describes, &ldquo;the edge of the circle is really sticking out&rdquo;.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> This happens because the excess plastic has nowhere to go and is forced upwards, creating distinct ridges. The surface may look overly glossy and lose fine detail.</li>
 <li><strong>Tactile Cues:</strong> When you run your finger across an over-extruded chip, it will feel bumpy and rough. You will be able to clearly feel the ridges formed by the excess filament. The chips with positive modifiers (e.g., <code>+0.03</code>, <code>+0.05</code>) are most likely to exhibit these characteristics.</li>
 </ul>
-<h4 id="identifying-under-extrusion">Identifying Under-extrusion</h4>
-<p>Under-extrusion is the opposite problem: the printer is not pushing out enough filament to fill the toolpath completely.</p>
+<h4 id="identifying-under-extrusion">Identifying Under-extrusion<a class="td-heading-self-link" href="#identifying-under-extrusion" aria-label="Heading self-link"></a></h4><p>Under-extrusion is the opposite problem: the printer is not pushing out enough filament to fill the toolpath completely.</p>
 <ul>
 <li><strong>Visual Cues:</strong> Look for visible gaps between the concentric lines. You may be able to see the layer below through these gaps. The transcript refers to these as &ldquo;valleys&rdquo; in the surface.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> The surface might also have a dull, matte, or unfinished appearance because the lines are not properly squishing together.</li>
 <li><strong>Tactile Cues:</strong> An under-extruded chip will feel textured or even hollow. Your finger will catch on the gaps between the lines, giving it a rough or scratchy feel. The chips with negative modifiers (e.g., <code>-0.03</code>, <code>-0.05</code>) are the primary candidates for this issue.</li>
 </ul>
-<h4 id="the-goldilocks-zone--identifying-the-optimal-result">The &ldquo;Goldilocks&rdquo; Zone – Identifying the Optimal Result</h4>
-<p>Your goal is to find the single chip that is perfectly smooth, both visually and by feel.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
+<h4 id="the-goldilocks-zone--identifying-the-optimal-result">The &ldquo;Goldilocks&rdquo; Zone – Identifying the Optimal Result<a class="td-heading-self-link" href="#the-goldilocks-zone--identifying-the-optimal-result" aria-label="Heading self-link"></a></h4><p>Your goal is to find the single chip that is perfectly smooth, both visually and by feel.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
 <ul>
 <li><strong>The Ideal Chip:</strong> The best chip will have a uniform, smooth top surface with a consistent, healthy shine.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> The concentric lines should be laid down perfectly next to each other with very little to no visible gaps. When you run your finger across it, it should feel almost like a single, solid surface. In my own testing for the video, the chip labeled <code>0</code> was the best, indicating my existing flow rate was already well-calibrated.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></li>
 <li><strong>An Important Nuance:</strong> It is crucial to understand one key detail from the official documentation: &ldquo;it is okay to have a visible line between the inner and outer spiral&rdquo;.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> The goal is not to create a completely fused, monolithic surface where the lines are indistinguishable. The perfect result is one that shows distinct lines laid down with &ldquo;very little gap between&rdquo; them.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a> Do not mistake the faint line between toolpaths for under-extrusion. You are looking for the smoothest possible surface that is free of ridges (over-extrusion) and significant valleys (under-extrusion).</li>
 </ul>
-<h3 id="step-4-applying-the-results-and-updating-your-profile">Step 4: Applying the Results and Updating Your Profile</h3>
-<p>Once you have identified the best chip, updating your filament profile is incredibly simple. The value printed on the chip is the exact modifier you need to apply to your current flow ratio.</p>
+<h3 id="step-4-applying-the-results-and-updating-your-profile">Step 4: Applying the Results and Updating Your Profile<a class="td-heading-self-link" href="#step-4-applying-the-results-and-updating-your-profile" aria-label="Heading self-link"></a></h3><p>Once you have identified the best chip, updating your filament profile is incredibly simple. The value printed on the chip is the exact modifier you need to apply to your current flow ratio.</p>
 <p>The logic is simple addition or subtraction:</p>
 <ul>
 <li>If you picked a chip with a <strong>positive</strong> value (e.g., <code>+0.02</code>), you <strong>add</strong> that value to your current flow ratio.</li>
@@ -345,11 +343,8 @@
 <li>Enter your newly calculated value.</li>
 <li><strong>Crucially, click the &ldquo;Save&rdquo; icon at the top of the window to save your changes to the profile.</strong> Forgetting this last step is a common mistake that will cause you to lose your newly calibrated value.</li>
 </ol>
-<h2 id="the-enablers-guide-responsible-use-of-alpha-software">The Enabler&rsquo;s Guide: Responsible Use of Alpha Software</h2>
-<h3 id="you-are-now-part-of-the-development-team">You Are Now Part of the Development Team</h3>
-<p>Choosing to use alpha software is choosing to step onto the front lines of development. It&rsquo;s a decision that reframes your role from a passive user to an active tester and contributor. Every print you run, every setting you tweak, provides real-world data that is impossible to replicate in a controlled lab environment. By engaging with these new features early, you are providing an invaluable service to the developers and the entire OrcaSlicer community. You are helping to forge the tools that everyone will be using in the next stable release.</p>
-<h3 id="how-to-submit-an-effective-bug-report-a-checklist">How to Submit an Effective Bug Report: A Checklist</h3>
-<p>Finding a bug in alpha software is not a failure; it&rsquo;s a success. It&rsquo;s an opportunity to contribute directly to the project&rsquo;s improvement. However, the usefulness of your discovery depends entirely on the quality of your bug report. A vague or incomplete report is often unusable. To help you make the most impactful contributions, here is a checklist for submitting an effective bug report on the OrcaSlicer GitHub page, based directly on best practices.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
+<h2 id="the-enablers-guide-responsible-use-of-alpha-software">The Enabler&rsquo;s Guide: Responsible Use of Alpha Software<a class="td-heading-self-link" href="#the-enablers-guide-responsible-use-of-alpha-software" aria-label="Heading self-link"></a></h2><h3 id="you-are-now-part-of-the-development-team">You Are Now Part of the Development Team<a class="td-heading-self-link" href="#you-are-now-part-of-the-development-team" aria-label="Heading self-link"></a></h3><p>Choosing to use alpha software is choosing to step onto the front lines of development. It&rsquo;s a decision that reframes your role from a passive user to an active tester and contributor. Every print you run, every setting you tweak, provides real-world data that is impossible to replicate in a controlled lab environment. By engaging with these new features early, you are providing an invaluable service to the developers and the entire OrcaSlicer community. You are helping to forge the tools that everyone will be using in the next stable release.</p>
+<h3 id="how-to-submit-an-effective-bug-report-a-checklist">How to Submit an Effective Bug Report: A Checklist<a class="td-heading-self-link" href="#how-to-submit-an-effective-bug-report-a-checklist" aria-label="Heading self-link"></a></h3><p>Finding a bug in alpha software is not a failure; it&rsquo;s a success. It&rsquo;s an opportunity to contribute directly to the project&rsquo;s improvement. However, the usefulness of your discovery depends entirely on the quality of your bug report. A vague or incomplete report is often unusable. To help you make the most impactful contributions, here is a checklist for submitting an effective bug report on the OrcaSlicer GitHub page, based directly on best practices.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
 <table>
   <thead>
       <tr>
@@ -386,20 +381,15 @@
       </tr>
   </tbody>
 </table>
-<h3 id="the-power-of-community-feedback">The Power of Community Feedback</h3>
-<p>A well-structured bug report is one of the most powerful contributions a user can make to an open-source project. It transforms a moment of frustration into a constructive step toward a more robust and reliable piece of software for everyone. Despite its &ldquo;Alpha&rdquo; status, my own experience with version 2.3.1 has been that it &ldquo;seems rock solid,&rdquo; a testament to the quality of the developers&rsquo; work and likely the result of excellent community feedback during the nightly build phase.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
-<h2 id="conclusion-community-and-further-resources">Conclusion, Community, and Further Resources</h2>
-<h3 id="summary-a-step-forward-for-precision">Summary: A Step Forward for Precision</h3>
-<p>The introduction of the Archimedean chord flow calibration in OrcaSlicer 2.3.1 Alpha is a definitive step forward for precision 3D printing. By replacing a subjective, tactile test with a visually objective and geometrically intelligent one, OrcaSlicer has made a critical calibration process more accessible, repeatable, and accurate for users of all experience levels. It is a smarter test for a smarter slicer, and a perfect example of the thoughtful innovation that defines the project.</p>
-<h3 id="join-the-conversation-a-call-to-action">Join the Conversation: A Call to Action</h3>
-<p>Your experience and feedback are what make the 3D printing community thrive. Now that you&rsquo;ve learned about this new feature, I encourage you to join the conversation.</p>
+<h3 id="the-power-of-community-feedback">The Power of Community Feedback<a class="td-heading-self-link" href="#the-power-of-community-feedback" aria-label="Heading self-link"></a></h3><p>A well-structured bug report is one of the most powerful contributions a user can make to an open-source project. It transforms a moment of frustration into a constructive step toward a more robust and reliable piece of software for everyone. Despite its &ldquo;Alpha&rdquo; status, my own experience with version 2.3.1 has been that it &ldquo;seems rock solid,&rdquo; a testament to the quality of the developers&rsquo; work and likely the result of excellent community feedback during the nightly build phase.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></p>
+<h2 id="conclusion-community-and-further-resources">Conclusion, Community, and Further Resources<a class="td-heading-self-link" href="#conclusion-community-and-further-resources" aria-label="Heading self-link"></a></h2><h3 id="summary-a-step-forward-for-precision">Summary: A Step Forward for Precision<a class="td-heading-self-link" href="#summary-a-step-forward-for-precision" aria-label="Heading self-link"></a></h3><p>The introduction of the Archimedean chord flow calibration in OrcaSlicer 2.3.1 Alpha is a definitive step forward for precision 3D printing. By replacing a subjective, tactile test with a visually objective and geometrically intelligent one, OrcaSlicer has made a critical calibration process more accessible, repeatable, and accurate for users of all experience levels. It is a smarter test for a smarter slicer, and a perfect example of the thoughtful innovation that defines the project.</p>
+<h3 id="join-the-conversation-a-call-to-action">Join the Conversation: A Call to Action<a class="td-heading-self-link" href="#join-the-conversation-a-call-to-action" aria-label="Heading self-link"></a></h3><p>Your experience and feedback are what make the 3D printing community thrive. Now that you&rsquo;ve learned about this new feature, I encourage you to join the conversation.</p>
 <ul>
 <li>Have you tried the new flow test? What were your results? Is there another new feature in the 2.3.1 Alpha release that you feel I should highlight in a future guide? As I always say, &ldquo;just leave me a comment and I&rsquo;ll get back to you as soon as I can&rdquo;.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></li>
 <li>If you found this guide valuable, please consider giving it a few &lsquo;claps&rsquo; here on Medium. This is a simple, free way to show your support, and it helps the platform&rsquo;s algorithm show this article to more people who might benefit from it.</li>
 <li>For more deep dives, tutorials, and the latest updates in 3D printing and OrcaSlicer, be sure to subscribe to my YouTube channel and follow me here on Medium.<a href="https://www.youtube.com/watch?v=afuKB8T133s">1</a></li>
 </ul>
-<h3 id="the-orcaslicer-ecosystem-references-and-further-reading">The OrcaSlicer Ecosystem: References and Further Reading</h3>
-<p>To continue your journey and become more involved with the OrcaSlicer project, here are the essential official resources. I strongly recommend bookmarking these to ensure you are always getting information from the primary source.</p>
+<h3 id="the-orcaslicer-ecosystem-references-and-further-reading">The OrcaSlicer Ecosystem: References and Further Reading<a class="td-heading-self-link" href="#the-orcaslicer-ecosystem-references-and-further-reading" aria-label="Heading self-link"></a></h3><p>To continue your journey and become more involved with the OrcaSlicer project, here are the essential official resources. I strongly recommend bookmarking these to ensure you are always getting information from the primary source.</p>
 <ul>
 <li><strong>Official OrcaSlicer GitHub Repository:</strong> This is the home of the project. Here you can download the latest stable and alpha releases, read the full release notes, and report bugs.<a href="https://github.com/OrcaSlicer/OrcaSlicer">2</a></li>
 <li><strong>Official OrcaSlicer Wiki:</strong> An invaluable resource for detailed documentation on all of OrcaSlicer&rsquo;s features, including the main Calibration page which provides a broader overview of the entire tuning process.<a href="https://github.com/OrcaSlicer/OrcaSlicer/wiki/Calibration">4</a></li>
@@ -484,8 +474,8 @@
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+    <script src="/js/main.min.0280fcb09772cdf1e7606dd6189973f9059a9bc7e5194bec20b1c5fc43861989.js" integrity="sha256-AoD8sJdyzfHnYG3WGJlz&#43;QWam8flGUvsILHF/EOGGYk=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>
