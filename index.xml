@@ -1008,34 +1008,11 @@ verbose: True
  background-color: rgba(0, 0, 0, 0.5);
  }
 
- /* Print styles for Quote Modal */
+ /* Print styles - Not used since we open a new window */
  @media print {
- body * {
- visibility: hidden;
- }
-
- #quote-modal-content,
- #quote-modal-content * {
- visibility: visible;
- }
-
- #quote-modal-content {
- position: absolute;
- left: 0;
- top: 0;
- width: 100%;
- border: none !important;
- box-shadow: none !important;
- padding: 0 !important;
- }
-
- #quote-modal-header,
- #quote-modal-footer {
- display: none;
- }
-
- body {
- background-color: #ffffff;
+ @page {
+ size: letter;
+ margin: 0.5in;
  }
  }
 
