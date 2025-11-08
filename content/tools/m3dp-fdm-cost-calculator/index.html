@@ -124,34 +124,11 @@ description: >
             background-color: rgba(0, 0, 0, 0.5);
         }
 
-        /* Print styles for Quote Modal */
+        /* Print styles - Not used since we open a new window */
         @media print {
-            body * {
-                visibility: hidden;
-            }
-
-            #quote-modal-content,
-            #quote-modal-content * {
-                visibility: visible;
-            }
-
-            #quote-modal-content {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                border: none !important;
-                box-shadow: none !important;
-                padding: 0 !important;
-            }
-
-            #quote-modal-header,
-            #quote-modal-footer {
-                display: none;
-            }
-
-            body {
-                background-color: #ffffff;
+            @page {
+                size: letter;
+                margin: 0.5in;
             }
         }
 
@@ -217,15 +194,14 @@ description: >
                     <div class="flex flex-col sm:flex-row gap-4">
                         <button id="save_profile"
                             class="flex-1 bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                            Save Printer Profile
+                            Save All Settings
                         </button>
                         <button id="load_profile"
                             class="flex-1 bg-gray-200 text-gray-800 font-medium py-2 px-4 rounded-lg shadow-sm hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
-                            Load Printer Profile
+                            Load All Settings
                         </button>
                     </div>
-                    <p class="text-xs text-gray-500 mt-3 text-center">Saves/Loads all machine, tooling, power, and
-                        markup settings. Job-specific parameters are not saved.</p>
+                    <p class="text-xs text-gray-500 mt-3 text-center">Saves/Loads all calculator inputs including job parameters, materials, machine settings, and pricing.</p>
                 </div>
 
                 <!-- Card 1: Job Parameters -->
@@ -943,19 +919,25 @@ description: >
 
         <!-- Modal Content -->
         <div id="quote-modal-content"
-            class="bg-white rounded-lg shadow-2xl z-10 w-full max-w-2xl border border-gray-300">
-            <div id="quote-modal-header" class="flex justify-between items-center p-4 border-b">
+            class="bg-white rounded-lg shadow-2xl z-10 w-full max-w-2xl border border-gray-300 max-h-[90vh] flex flex-col">
+            <div id="quote-modal-header" class="flex justify-between items-center p-4 border-b flex-shrink-0">
                 <h2 class="text-xl font-semibold text-gray-800">Print Job Quote</h2>
-                <button id="quote-modal-close" class="text-gray-400 hover:text-gray-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
+                <div class="flex gap-2 items-center">
+                    <button id="quote-modal-print-top"
+                        class="bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        Print Quote
+                    </button>
+                    <button id="quote-modal-close" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
-            <div class="p-8">
+            <div class="p-8 overflow-y-auto flex-grow">
                 <div class="flex justify-between items-start mb-6">
                     <div>
                         <h3 class="text-2xl font-bold text-gray-900">Quote</h3>
@@ -1043,7 +1025,7 @@ description: >
                 </div>
             </div>
 
-            <div id="quote-modal-footer" class="flex justify-end items-center p-4 bg-gray-50 border-t rounded-b-lg">
+            <div id="quote-modal-footer" class="flex justify-end items-center p-4 bg-gray-50 border-t rounded-b-lg flex-shrink-0">
                 <button id="quote-modal-print"
                     class="bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Print Quote
@@ -1157,21 +1139,7 @@ description: >
                 storageAvailable = true;
             } catch (e) {
                 storageAvailable = false;
-                console.warn("LocalStorage is not available. Profile/Material saving will be disabled.");
-                // Disable buttons and show a persistent error
-                if (saveProfileButton) saveProfileButton.disabled = true;
-                if (loadProfileButton) loadProfileButton.disabled = true;
-                if (saveMaterialButton) saveMaterialButton.disabled = true;
-                if (saveProfileButton) saveProfileButton.classList.add('opacity-50', 'cursor-not-allowed');
-                if (loadProfileButton) loadProfileButton.classList.add('opacity-50', 'cursor-not-allowed');
-                if (saveMaterialButton) saveMaterialButton.classList.add('opacity-50', 'cursor-not-allowed');
-
-                // Show a message in the *main* message box
-                if (messageBox) {
-                    messageBox.textContent = 'Profile & Material saving is disabled: Browser storage is not available or blocked.';
-                    messageBox.className = 'mt-4 p-3 rounded-md text-sm bg-yellow-100 text-yellow-800';
-                    messageBox.classList.remove('hidden');
-                }
+                console.warn("LocalStorage is not available. Profile/Material saving may not work.");
             }
 
             const CUSTOM_MATERIALS_KEY = 'fdmCustomMaterials';
@@ -1584,59 +1552,52 @@ description: >
 
             // --- PROFILE SAVE/LOAD ---
 
-            // List of all input IDs that are *not* job-specific
-            const profileInputIds = [
-                'markup_percent', 'printer_cost', 'printer_lifespan_hr', 'maintenance_cost_hr',
-                'machine_power_w', 'electricity_cost_kwh',
-                'model_material_cost_kg', 'model_material_type', 'model_material_density_custom',
-                'support_material_cost_kg', 'support_material_type', 'support_material_density_custom',
-                'hourly_wage',
-                'prep_slicing_time', 'manual_labor_time', // v2: Added build plate-level labor
-                'build_plate_cost', 'build_plate_lifespan_hr',
-                'model_nozzle_cost', 'model_nozzle_lifespan_kg',
-                'support_nozzle_cost', 'support_nozzle_lifespan_kg',
-                'solvent_cost_liter', 'tank_power_w'
-                // Note: finishing_labor_time_part and finishing_materials_cost are job-specific
-            ];
-
             function saveProfile() {
-                if (!storageAvailable) {
-                    showMessage('Error: Browser storage is not available or blocked.', 'error');
-                    return;
-                }
+                console.log('Save Profile button clicked');
+                console.log('Storage available:', storageAvailable);
                 try {
                     const profile = {};
-                    for (const id of profileInputIds) {
-                        const el = document.getElementById(id);
-                        if (el) {
-                            profile[id] = el.value;
+                    // Save ALL input and select elements
+                    allInputs.forEach(input => {
+                        if (input.id) {
+                            profile[input.id] = input.value;
                         }
-                    }
+                    });
+                    console.log('Profile data:', profile);
                     localStorage.setItem('fdmCalculatorProfile', JSON.stringify(profile));
-                    showMessage('Printer profile saved successfully!', 'success');
+                    console.log('Profile saved to localStorage');
+                    showMessage('All settings saved successfully!', 'success');
                 } catch (error) {
                     console.error("Failed to save profile:", error);
-                    showMessage('Error saving profile. Storage may be full or blocked by browser settings.', 'error');
+                    if (!storageAvailable) {
+                        showMessage('Error: Browser storage is not available or blocked.', 'error');
+                    } else {
+                        showMessage('Error saving profile. Storage may be full or blocked by browser settings.', 'error');
+                    }
                 }
             }
 
             function loadProfile() {
-                if (!storageAvailable) {
-                    showMessage('Error: Browser storage is not available or blocked.', 'error');
-                    return;
-                }
+                console.log('Load Profile button clicked');
+                console.log('Storage available:', storageAvailable);
                 try {
                     const profileString = localStorage.getItem('fdmCalculatorProfile');
+                    console.log('Profile string from localStorage:', profileString);
                     if (!profileString) {
-                        showMessage('No saved profile found.', 'error');
+                        showMessage('No saved profile found.', 'warn');
                         return;
                     }
                     const profile = JSON.parse(profileString);
-                    for (const id of profileInputIds) {
-                        if (profile[id] !== undefined) {
+                    console.log('Loaded profile data:', profile);
+                    
+                    // Load ALL saved values
+                    for (const id in profile) {
+                        if (profile.hasOwnProperty(id)) {
                             const el = document.getElementById(id);
                             if (el) {
                                 el.value = profile[id];
+                                // Trigger input event to update UI
+                                el.dispatchEvent(new Event('input', { bubbles: true }));
                             }
                         }
                     }
@@ -1649,32 +1610,35 @@ description: >
 
                     // Recalculate
                     calculateCost();
-                    showMessage('Profile loaded successfully!', 'success');
+                    showMessage('All settings loaded successfully!', 'success');
                 } catch (error) {
                     console.error("Failed to load profile:", error);
-                    showMessage('Error loading profile. Data may be corrupt or blocked by browser settings.', 'error');
+                    if (!storageAvailable) {
+                        showMessage('Error: Browser storage is not available or blocked.', 'error');
+                    } else {
+                        showMessage('Error loading profile. Data may be corrupt or blocked by browser settings.', 'error');
+                    }
                 }
             }
 
             // --- CUSTOM MATERIAL MANAGER ---
 
             function getCustomMaterials() {
-                if (!storageAvailable) return [];
                 try {
                     const materialsString = localStorage.getItem(CUSTOM_MATERIALS_KEY);
                     return materialsString ? JSON.parse(materialsString) : [];
                 } catch (e) {
+                    console.error("Failed to get custom materials:", e);
                     return [];
                 }
             }
 
             function saveCustomMaterials(materials) {
-                if (!storageAvailable) return;
                 try {
                     localStorage.setItem(CUSTOM_MATERIALS_KEY, JSON.stringify(materials));
                 } catch (e) {
                     console.error("Failed to save custom materials:", e);
-                    showMessage('Error saving custom material. Storage may be full.', 'error');
+                    showMessage('Error saving custom material. Storage may be full or blocked.', 'error');
                 }
             }
 
@@ -1798,16 +1762,133 @@ description: >
             }
 
             function printQuote() {
-                // Store notes value so it persists after print dialog
-                const notes = document.getElementById('quote_notes_input');
-                if (notes) notes.dataset.value = notes.value;
-
-                window.print();
-
-                // Restore value after print
-                if (notes && notes.dataset.value) {
-                    notes.value = notes.dataset.value;
+                console.log('Print Quote button clicked');
+                
+                // Get the printable content (the scrollable div with actual content)
+                const printContent = document.querySelector('#quote-modal-content .overflow-y-auto');
+                
+                if (!printContent) {
+                    console.error('Print content not found');
+                    showMessage('Error: Could not find content to print', 'error');
+                    return;
                 }
+
+                // Create a new window for printing
+                const printWindow = window.open('', '_blank', 'width=800,height=600');
+                
+                if (!printWindow) {
+                    console.error('Could not open print window');
+                    showMessage('Error: Popup blocked. Please allow popups for this site.', 'error');
+                    return;
+                }
+
+                // Build the HTML for the print window
+                const printHTML = `
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Print Job Quote</title>
+                        <style>
+                            @page {
+                                size: letter;
+                                margin: 0.5in;
+                            }
+                            body {
+                                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                                line-height: 1.5;
+                                color: #1f2937;
+                                background: white;
+                                margin: 0;
+                                padding: 20px;
+                            }
+                            h3, h4 {
+                                color: #1f2937;
+                                margin-top: 1.5rem;
+                                margin-bottom: 0.5rem;
+                            }
+                            h3 {
+                                font-size: 1.5rem;
+                                font-weight: bold;
+                            }
+                            h4 {
+                                font-size: 1.125rem;
+                                font-weight: 600;
+                            }
+                            table {
+                                width: 100%;
+                                border-collapse: collapse;
+                                margin-bottom: 1.5rem;
+                                border: 1px solid #e5e7eb;
+                            }
+                            th, td {
+                                padding: 0.75rem;
+                                text-align: left;
+                                border: 1px solid #e5e7eb;
+                            }
+                            th {
+                                background-color: #f9fafb;
+                                font-weight: 600;
+                                font-size: 0.75rem;
+                                text-transform: uppercase;
+                                color: #6b7280;
+                            }
+                            thead th {
+                                background-color: #f9fafb;
+                            }
+                            tfoot td {
+                                background-color: #f9fafb;
+                                font-weight: bold;
+                            }
+                            .text-right {
+                                text-align: right;
+                            }
+                            textarea {
+                                width: 100%;
+                                padding: 0.5rem;
+                                border: 1px solid #e5e7eb;
+                                border-radius: 0.375rem;
+                                font-family: inherit;
+                                min-height: 100px;
+                            }
+                            p {
+                                margin: 0.5rem 0;
+                            }
+                            .header-section {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 1.5rem;
+                            }
+                            .to-section {
+                                background-color: #f9fafb;
+                                padding: 1rem;
+                                border-radius: 0.5rem;
+                                margin-bottom: 1.5rem;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        ${printContent.innerHTML}
+                    </body>
+                    </html>
+                `;
+
+                // Write content to the new window
+                printWindow.document.open();
+                printWindow.document.write(printHTML);
+                printWindow.document.close();
+
+                // Wait for content to load, then print
+                printWindow.onload = function() {
+                    console.log('Print window loaded');
+                    setTimeout(() => {
+                        printWindow.print();
+                        // Close the window after printing
+                        setTimeout(() => {
+                            printWindow.close();
+                        }, 500);
+                    }, 250);
+                };
             }
 
 
@@ -1829,8 +1910,20 @@ description: >
             });
 
             // Add listeners for Save/Load buttons
-            if (saveProfileButton) saveProfileButton.addEventListener('click', saveProfile);
-            if (loadProfileButton) loadProfileButton.addEventListener('click', loadProfile);
+            console.log('saveProfileButton element:', saveProfileButton);
+            console.log('loadProfileButton element:', loadProfileButton);
+            if (saveProfileButton) {
+                saveProfileButton.addEventListener('click', saveProfile);
+                console.log('Save profile event listener attached');
+            } else {
+                console.error('saveProfileButton not found!');
+            }
+            if (loadProfileButton) {
+                loadProfileButton.addEventListener('click', loadProfile);
+                console.log('Load profile event listener attached');
+            } else {
+                console.error('loadProfileButton not found!');
+            }
 
             // Custom Material Listeners
             if (saveMaterialButton) saveMaterialButton.addEventListener('click', saveNewCustomMaterial);
@@ -1842,6 +1935,10 @@ description: >
             if (quoteModalCloseBtn) quoteModalCloseBtn.addEventListener('click', closeQuoteModal);
             if (quoteModalBackdrop) quoteModalBackdrop.addEventListener('click', closeQuoteModal);
             if (printQuoteBtn) printQuoteBtn.addEventListener('click', printQuote);
+            
+            // Add listener for the top print button
+            const printQuoteBtnTop = document.getElementById('quote-modal-print-top');
+            if (printQuoteBtnTop) printQuoteBtnTop.addEventListener('click', printQuote);
 
             // --- INITIALIZATION ---
 

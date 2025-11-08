@@ -6,15 +6,8 @@
     <description>Recent content in How-To on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 12:52:29 -0600</lastBuildDate>
     <atom:link href="https://minimal3dp.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>M3DP Tools</title>
-      <link>https://minimal3dp.com/tools/</link>
-      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/tools/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Minimal 3DP Tools and Helper Scripts - A Work in Progress&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Launched - 2025-11-08&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon</title>
       <link>https://minimal3dp.com/blog/2025/05/03/level-up-your-prints-why-line-width-is-your-3d-printing-secret-weapon/</link>
@@ -42,6 +35,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://minimal3dp.com/klipper-calibration/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Launched - 2024-04-12&lt;/p&gt;&#xA;&lt;p&gt;This section is my attempt to to create a Klipper Calibration website. It is based on my &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing&#34;&gt;Klipper Calibration Spreadsheet&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>M3DP Tools</title>
+      <link>https://minimal3dp.com/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://minimal3dp.com/tools/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Minimal 3DP Tools and Helper Scripts - A Work in Progress&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Launched - 2025-11-08&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
