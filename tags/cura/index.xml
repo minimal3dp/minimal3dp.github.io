@@ -1,34 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cura on Minimal 3DP</title><link>https://minimal3dp.com/tags/cura/</link><description>Recent content in Cura on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 02 Nov 2025 11:08:12 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/tags/cura/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker Cura - Download and Install</title><link>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cura on Minimal 3DP</title><link>https://minimal3dp.com/tags/cura/</link><description>Recent content in Cura on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 08 Nov 2025 12:52:29 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/tags/cura/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker Cura - Download and Install</title><link>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/tutorials/ultimaker-cura/cura-download-install/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
 &lt;p&gt;Downloading and Installing Cura&lt;/p&gt;
 
 &lt;/div&gt;
 
-&lt;h1 id="install-process"&gt;Install Process&lt;/h1&gt;
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;h1 id="install-process"&gt;Install Process&lt;a class="td-heading-self-link" href="#install-process" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wbL86wn9v2Q?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
-&lt;h2 id="download-ultimaker-cura"&gt;Download Ultimaker Cura:&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id="download-ultimaker-cura"&gt;Download Ultimaker Cura:&lt;a class="td-heading-self-link" href="#download-ultimaker-cura" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Visit the &lt;a href="https://ultimaker.com/software/ultimaker-cura"&gt;Ultimaker Cura website&lt;/a&gt; to download the latest version.&lt;/li&gt;
 &lt;li&gt;Choose the appropriate version for your operating system (Windows, Mac, or Linux).&lt;/li&gt;
 &lt;li&gt;Click the download link to start the download process.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="installation"&gt;Installation:&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id="installation"&gt;Installation:&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Once the download is complete, locate the downloaded file (e.g., &lt;code&gt;*.exe&lt;/code&gt; for Windows, &lt;code&gt;*.dmg&lt;/code&gt; for Mac).&lt;/li&gt;
 &lt;li&gt;Run the install wizard by double-clicking the downloaded file.&lt;/li&gt;
 &lt;li&gt;Follow the on-screen instructions to install Ultimaker Cura.&lt;/li&gt;
 &lt;li&gt;During installation, you may be prompted to configure the software for your specific 3D printer. Choose the appropriate printer model if applicable. The various printer profiles can be found under &amp;ldquo;Non-Network Printers&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="launching-for-the-first-time"&gt;Launching for the First Time:&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id="launching-for-the-first-time"&gt;Launching for the First Time:&lt;a class="td-heading-self-link" href="#launching-for-the-first-time" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;After installation, launch Ultimaker Cura.&lt;/li&gt;
 &lt;li&gt;You&amp;rsquo;ll see an interface where you can load your 3D models, adjust settings, and prepare them for printing.&lt;/li&gt;
 &lt;li&gt;Ultimaker Cura provides recommended for yourselected printer with settings for various print quality levels. I use these profiles as a base for custom profiles.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="references"&gt;References:&lt;/h2&gt;
-&lt;p&gt;(1) UltiMaker Cura - UltiMaker. &lt;a href="https://ultimaker.com/software/ultimaker-cura/"&gt;https://ultimaker.com/software/ultimaker-cura/&lt;/a&gt;.
+&lt;h2 id="references"&gt;References:&lt;a class="td-heading-self-link" href="#references" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;(1) UltiMaker Cura - UltiMaker. &lt;a href="https://ultimaker.com/software/ultimaker-cura/"&gt;https://ultimaker.com/software/ultimaker-cura/&lt;/a&gt;.
 (2) Install Ultimaker™ Cura on Ubuntu using the Snap Store - Snapcraft. &lt;a href="https://snapcraft.io/install/cura-slicer/ubuntu"&gt;https://snapcraft.io/install/cura-slicer/ubuntu&lt;/a&gt;.
 (3) UltiMaker Cura installation. &lt;a href="https://support.ultimaker.com/s/article/1667410778218"&gt;https://support.ultimaker.com/s/article/1667410778218&lt;/a&gt;.
 (4) How to Use Ultimaker Cura to Prepare Designs for 3D Printing. &lt;a href="https://www.tomshardware.com/how-to/use-ultimaker-cura-to-prepare-designs-for-3d-printing"&gt;https://www.tomshardware.com/how-to/use-ultimaker-cura-to-prepare-designs-for-3d-printing&lt;/a&gt;.
