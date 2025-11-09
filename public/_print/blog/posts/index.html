@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55827&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://minimal3dp.com/blog/posts/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://minimal3dp.com/blog/posts/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:55827/blog/posts/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:55827/blog/posts/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,7 +21,7 @@
 
 <title>Posts | Minimal 3DP</title>
 <meta name="description" content="">
-<meta property="og:url" content="https://minimal3dp.com/blog/posts/">
+<meta property="og:url" content="http://localhost:55827/blog/posts/">
   <meta property="og:site_name" content="Minimal 3DP">
   <meta property="og:title" content="Posts">
   <meta property="og:locale" content="en">
@@ -31,27 +31,12 @@
   <meta itemprop="dateModified" content="2024-04-28T10:32:41-05:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts">
-<link rel="preload" href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" as="style" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
-<link href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" rel="stylesheet" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
+<link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W7FGE0CYM"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-1W7FGE0CYM');
-        }
-      </script>
   </head>
   <body class="td-section td-blog">
     <header>
@@ -124,6 +109,16 @@ This is the multi-page printable view of this section.
   
   
 
+  
+    
+    
+	
+
+    <li><a href="#pg-395963b71d9ed9f3701a2fa7904f5b03">M3DP 3D Print Cost Calculator</a></li>
+
+
+
+    
   
     
     
@@ -213,6 +208,69 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-395963b71d9ed9f3701a2fa7904f5b03">M3DP 3D Print Cost Calculator</h1>
+	<div class="lead">This tool is designed to help you capture all those hidden costs and generate a detailed quote for your 3D prints, which you can save for your own records or print as a PDF to send to a customer</div>
+	<div class="td-byline mb-4">
+		By <b>Mike Wilson (<a href="mailto:minimal3dp@gmail.com">minimal3dp@gmail.com</a>)</b> |
+        
+		<time datetime="2025-11-09" class="text-body-secondary">Sunday, November 09, 2025</time>
+        
+	</div>
+	<p>If you&rsquo;ve ever thought about selling your 3D prints, one of the first and biggest hurdles is figuring out how to price them accurately. Most people just look at the material and electricity costs, but that&rsquo;s a quick way to lose money.</p>
+<p>[cite_start]I recently read an article called &ldquo;Refined Cost Calculation Framework for FDM Parts,&rdquo; which breaks down the <em>entire</em> cost process into much greater detail[cite: 2, 3]. It factors in everything:</p>
+<ul>
+<li>[cite_start]Machine costs and energy [cite: 6]</li>
+<li>[cite_start]Tooling costs (like nozzle wear and build sheet lifespan) [cite: 9]</li>
+<li>[cite_start]Material and model costs [cite: 5]</li>
+<li>[cite_start]Labor costs (for setup, slicing, and post-processing) [cite: 5]</li>
+</ul>
+<p>[cite_start]This model is far more accurate, but the one major problem is that with so many inputs, it&rsquo;s incredibly hard to keep it all straight[cite: 11].</p>
+<p>[cite_start]I started building a spreadsheet to manage this for myself, and&hellip; well, it turned into a full-blown web tool[cite: 12].</p>
+<h2 id="introducing-the-m3dp-3d-print-cost-calculator">Introducing the M3DP 3D Print Cost Calculator<a class="td-heading-self-link" href="#introducing-the-m3dp-3d-print-cost-calculator" aria-label="Heading self-link"></a></h2><p>[cite_start]I&rsquo;ve created a <strong><a href="https://minimal3dp.com">3D Print Cost Calculator</a></strong> that&rsquo;s now live on my website[cite: 15]. [cite_start]You can find it under the &ldquo;M3DP Tools&rdquo; menu item[cite: 15, 16].</p>
+<p>[cite_start]This tool is designed to help you capture all those hidden costs and generate a detailed quote, which you can save for your own records or print as a PDF to send to a customer[cite: 13].</p>
+<p>In it, you can dial in specific parameters for:</p>
+<ul>
+<li>[cite_start]<strong>Labor:</strong> Set your own hourly rate for slicing, machine setup, and post-processing[cite: 36, 51].</li>
+<li>[cite_start]<strong>Machine:</strong> Input your machine&rsquo;s cost and estimated lifespan in hours[cite: 42, 43].</li>
+<li>[cite_start]<strong>Components:</strong> Add costs and lifespans for your nozzle and build plate (I found research suggesting a PEI sheet can last 5,000+ hours!)[cite: 45, 46, 47].</li>
+<li>[cite_start]<strong>Failure Rate:</strong> Add a percentage to help cover the cost of failed prints[cite: 38, 40].</li>
+<li>[cite_start]<strong>Markup:</strong> Add a final markup to the total calculated value[cite: 53].</li>
+</ul>
+<p>[cite_start]One of the most important features: <strong>everything is saved 100% client-side</strong>[cite: 65]. [cite_start]It all stays on your machine; nothing is saved to my server[cite: 65]. [cite_start]You can even save and load different setting profiles[cite: 62, 63, 64].</p>
+<h2 id="watch-the-full-walkthrough">Watch the Full Walkthrough<a class="td-heading-self-link" href="#watch-the-full-walkthrough" aria-label="Heading self-link"></a></h2><p>I put together a video walking through the entire calculator, using a real-world part as an example. I show you where to find the tool, how to pull the data from your slicer, and how to fill out every field.</p>
+<p>Watch the full video on YouTube: <strong><a href="https://youtu.be/nA_-z5UbBJY">https://youtu.be/nA_-z5UbBJY</a></strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/nA_-z5UbBJY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="i-need-your-feedback">I Need Your Feedback!<a class="td-heading-self-link" href="#i-need-your-feedback" aria-label="Heading self-link"></a></h2><p>[cite_start]This tool is brand new, and I&rsquo;m still testing it and adding features[cite: 14, 61].</p>
+<p>Please check it out, give it a try, and let me know what you think. [cite_start]If you see any errors, have suggestions for new features, or think of any costs that I&rsquo;m not currently capturing, please let me know in the video comments or contact me through the site[cite: 61, 62, 66].</p>
+<p>Hopefully, this helps you price your prints more accurately and professionally. I look forward to hearing what you think!</p>
+<hr>
+<h2 id="references">References<a class="td-heading-self-link" href="#references" aria-label="Heading self-link"></a></h2><p>[cite_start]The methodology for this calculator was based on the concepts presented in the following research, which is also referenced within the tool itself[cite: 56]:</p>
+<ul>
+<li>[cite_start]<strong>Primary Article:</strong> Refined Cost Calculation Framework for FDM Parts [cite: 2]</li>
+<li>[cite_start]<strong>Component Research:</strong> The tool also incorporates research findings for the average lifespan of components like nozzles and build plates[cite: 46, 54].</li>
+</ul>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-fc56b1c24329c50e1db77b838a98523e">OrcaSlicer 2.3.1 Alpha Just Dropped &amp; How to Use the New Flow Rate Calibration</h1>
 	<div class="lead">This guide provides a deep dive into the new Archimedean flow calibration feature in OrcaSlicer 2.3.1 Alpha, which replaces subjective guesswork with a visually precise test. Follow our step-by-step instructions to interpret the results and perfectly dial in your filament&rsquo;s flow rate for higher quality 3D prints.</div>
 	<div class="td-byline mb-4">
@@ -715,8 +773,8 @@ M3DP Tools and Connections
 </footer>
 
     </div>
-    <script src="/js/main.min.0280fcb09772cdf1e7606dd6189973f9059a9bc7e5194bec20b1c5fc43861989.js" integrity="sha256-AoD8sJdyzfHnYG3WGJlz&#43;QWam8flGUvsILHF/EOGGYk=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>

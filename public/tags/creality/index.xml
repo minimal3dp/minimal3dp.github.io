@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Creality on Minimal 3DP</title>
-    <link>https://minimal3dp.com/tags/creality/</link>
+    <link>http://localhost:55827/tags/creality/</link>
     <description>Recent content in Creality on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate>
-    <atom:link href="https://minimal3dp.com/tags/creality/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55827/tags/creality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creality CR6 SE</title>
-      <link>https://minimal3dp.com/projects/3d-printers/cr6-se/</link>
+      <link>http://localhost:55827/projects/3d-printers/cr6-se/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://minimal3dp.com/projects/3d-printers/cr6-se/</guid>
+      <guid>http://localhost:55827/projects/3d-printers/cr6-se/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Creality CR6 SE&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Creality CR6 SE landing page.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Belt Driven Ender 3 Build on Minimal 3DP</title>
-    <link>https://minimal3dp.com/projects/journal/belt-driven-ender-3/</link>
+    <link>http://localhost:55827/projects/journal/belt-driven-ender-3/</link>
     <description>Recent content in Belt Driven Ender 3 Build on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://minimal3dp.com/projects/journal/belt-driven-ender-3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55827/projects/journal/belt-driven-ender-3/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
