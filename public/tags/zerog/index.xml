@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zerog on Minimal 3DP</title>
-    <link>http://localhost:55827/tags/zerog/</link>
+    <link>https://minimal3dp.com/tags/zerog/</link>
     <description>Recent content in Zerog on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate>
-    <atom:link href="http://localhost:55827/tags/zerog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://minimal3dp.com/tags/zerog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zero G Mercury One.1</title>
-      <link>http://localhost:55827/projects/3d-printers/mercury-one/</link>
+      <link>https://minimal3dp.com/projects/3d-printers/mercury-one/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55827/projects/3d-printers/mercury-one/</guid>
+      <guid>https://minimal3dp.com/projects/3d-printers/mercury-one/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Zero G Mercury One.1&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Mercury One.1 landing page.&lt;/p&gt;</description>
     </item>
   </channel>
