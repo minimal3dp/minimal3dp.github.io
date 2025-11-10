@@ -171,4 +171,60 @@
  &lt;/a&gt;
  &lt;/h1&gt;
  &lt;p class="mt-1 text-lg text-gray-600"&gt;A comprehensive tool based on the Seregi &amp; Ficzere (2025) cost model,
- expanded for business and hobbyist quoting.&lt;/p&gt;</description></item></channel></rss>
+ expanded for business and hobbyist quoting.&lt;/p&gt;</description></item><item><title>3D Print Shinkage Calculator</title><link>https://minimal3dp.com/tools/m3dp-shinkage-calculator/</link><pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/tools/m3dp-shinkage-calculator/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" class="h-full"&gt;
+
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ &lt;title&gt;Filament Shrinkage Calculator&lt;/title&gt;
+ &lt;!-- Load Tailwind CSS --&gt;
+ &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+ &lt;!-- Load Inter font --&gt;
+ &lt;link
+ href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Mono:wght@400;500&amp;display=swap"
+ rel="stylesheet"&gt;
+ &lt;style&gt;
+ /* Use Inter as the default font */
+ body {
+ font-family: 'Inter', sans-serif;
+ }
+
+ /* Use a monospace font for results */
+ .font-mono {
+ font-family: 'Mono', monospace;
+ }
+
+ /* Custom styles for copy button feedback */
+ .copy-btn-feedback::after {
+ content: 'Copied!';
+ position: absolute;
+ top: -1.75rem;
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: #10B981;
+ /* green-500 */
+ color: white;
+ padding: 0.25rem 0.5rem;
+ border-radius: 0.25rem;
+ font-size: 0.75rem;
+ font-weight: bold;
+ opacity: 0;
+ transition: opacity 0.3s ease;
+ pointer-events: none;
+ }
+
+ .copy-btn-feedback.show-feedback::after {
+ opacity: 1;
+ }
+ &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class="bg-gray-900 text-gray-100 h-full flex items-center justify-center py-12 px-4"&gt;
+
+ &lt;div class="max-w-4xl w-full bg-gray-800 rounded-2xl shadow-2xl p-8 space-y-8"&gt;
+
+ &lt;!-- Header --&gt;
+ &lt;div class="text-center"&gt;
+ &lt;h1 class="text-3xl font-bold text-white"&gt;Filament Shrinkage Calculator&lt;/h1&gt;
+ &lt;p class="mt-2 text-lg text-gray-400"&gt;For OrcaSlicer &amp; BambuSlicer (using Calibration Cross)&lt;/p&gt;</description></item></channel></rss>
