@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://minimal3dp.com/tools/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://minimal3dp.com/tools/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/tools/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/tools/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -22,7 +22,7 @@
 <title>M3DP Tools | Minimal 3DP</title>
 <meta name="description" content="Minimal 3DP Tools and Helper Scripts - A Work in Progress
 Launched - 2025-11-08">
-<meta property="og:url" content="https://minimal3dp.com/tools/">
+<meta property="og:url" content="http://localhost:1313/tools/">
   <meta property="og:site_name" content="Minimal 3DP">
   <meta property="og:title" content="M3DP Tools">
   <meta property="og:description" content="Minimal 3DP Tools and Helper Scripts - A Work in Progress
@@ -40,27 +40,12 @@ Launched - 2025-11-08">
   <meta name="twitter:title" content="M3DP Tools">
   <meta name="twitter:description" content="Minimal 3DP Tools and Helper Scripts - A Work in Progress
 Launched - 2025-11-08">
-<link rel="preload" href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" as="style" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
-<link href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" rel="stylesheet" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
+<link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W7FGE0CYM"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-1W7FGE0CYM');
-        }
-      </script>
   </head>
   <body class="td-section">
     <header>
@@ -134,6 +119,14 @@ This is the multi-page printable view of this section.
     
 	
 <li>1: <a href="#pg-17f852d0ecc83d91afe54f19297f2ff0">3D Print Cost Calculator</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-4c42dc3209f6e4052e69c9952bc249f2">3D Print Shinkage Calculator</a></li>
 
 
     
@@ -2135,6 +2128,486 @@ This is the multi-page printable view of this section.
     
 	
   
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-4c42dc3209f6e4052e69c9952bc249f2">2 - 3D Print Shinkage Calculator</h1>
+    <div class="lead">Calculate the shrinkage of 3D prints with FDM technology.</div>
+	
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filament Shrinkage Calculator</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Use Inter as the default font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Use a monospace font for results */
+        .font-mono {
+            font-family: 'Mono', monospace;
+        }
+
+        /* Custom styles for copy button feedback */
+        .copy-btn-feedback::after {
+            content: 'Copied!';
+            position: absolute;
+            top: -1.75rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #10B981;
+            /* green-500 */
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .copy-btn-feedback.show-feedback::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 h-full flex items-center justify-center py-12 px-4">
+
+    <div class="max-w-4xl w-full bg-gray-800 rounded-2xl shadow-2xl p-8 space-y-8">
+
+        <!-- Header -->
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-white">Filament Shrinkage Calculator</h1>
+            <p class="mt-2 text-lg text-gray-400">For OrcaSlicer & BambuSlicer (using Calibration Cross)</p>
+        </div>
+
+        <!-- Instructions Section -->
+        <div>
+            <h2 class="text-xl font-semibold text-gray-200 mb-3">Instructions</h2>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300 bg-gray-900 p-4 rounded-lg">
+                <li>Load the calibration model: <a href="./Multi-Measurement-Calibration-Cross.stl" target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-400 hover:text-blue-300 underline">Multi-Measurement-Calibration-Cross.stl</a>.
+                </li>
+                <li>Print the model with <strong>100% shrinkage</strong> and <strong>0mm XY Compensation</strong>.</li>
+                <li>Let the print cool completely, then measure it carefully with calipers.</li>
+                <li>Enter your 8 measured values below and click "Calculate".</li>
+            </ol>
+        </div>
+
+        <!-- Calculator Form -->
+        <div id="calculator-form" class="space-y-6">
+
+            <!-- Error Message Area -->
+            <div id="error-message" class="hidden bg-red-800 border border-red-700 text-red-100 px-4 py-3 rounded-lg"
+                role="alert">
+                <p>Please enter valid measured values for all 8 fields.</p>
+            </div>
+
+            <!-- Section 1: Outer Dimensions (for Shrinkage) -->
+            <fieldset class="bg-gray-900/50 p-6 rounded-lg">
+                <legend class="text-lg font-semibold text-white px-2">1. Outer Dimensions (for Shrinkage)</legend>
+                <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                    <!-- Input fields for outer dimensions -->
+                    <div class="space-y-4">
+                        <p class="text-sm text-gray-400 mb-2">Designed values are 80mm (A, B) and 20mm (C, D).</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="measured-a" class="block text-sm font-medium text-gray-300 mb-1">Measured A
+                                    (mm)</label>
+                                <input type="number" id="measured-a" placeholder="e.g., 79.85" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="measured-b" class="block text-sm font-medium text-gray-300 mb-1">Measured B
+                                    (mm)</label>
+                                <input type="number" id="measured-b" placeholder="e.g., 79.88" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="measured-c" class="block text-sm font-medium text-gray-300 mb-1">Measured C
+                                    (mm)</label>
+                                <input type="number" id="measured-c" placeholder="e.g., 19.90" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="measured-d" class="block text-sm font-medium text-gray-300 mb-1">Measured D
+                                    (mm)</label>
+                                <input type="number" id="measured-d" placeholder="e.g., 19.92" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SVG Diagram for Outer Dimensions -->
+                    <div class="mt-6 md:mt-0 flex items-center justify-center">
+                        <svg viewBox="-10 -15 130 135" class="w-80 h-auto text-gray-400" stroke="currentColor" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <title>Top-down diagram of outer cross measurements</title>
+                            <!-- Cross Shape -->
+                            <path d="M 40 10 H 60 V 40 H 90 V 60 H 60 V 90 H 40 V 60 H 10 V 40 H 40 Z"
+                                fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+
+                            <!-- A Measurement (Horizontal) -->
+                            <path d="M 10 98 H 90" stroke="#60A5FA" stroke-width="1.5" />
+                            <path d="M 10 98 l 5 -3 M 10 98 l 5 3 M 90 98 l -5 -3 M 90 98 l -5 3" stroke="#60A5FA"
+                                stroke-width="1.5" />
+                            <path d="M 10 90 v 8" stroke="#60A5FA" stroke-dasharray="2,2" stroke-width="1" />
+                            <path d="M 90 90 v 8" stroke="#60A5FA" stroke-dasharray="2,2" stroke-width="1" />
+                            <!-- Background for text -->
+                            <rect x="30" y="105" width="40" height="13" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="50" y="113.5" fill="#60A5FA" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle">A (80)</text>
+
+                            <!-- B Measurement (Vertical) -->
+                            <path d="M 98 10 V 90" stroke="#34D399" stroke-width="1.5" />
+                            <path d="M 98 10 l -3 5 M 98 10 l 3 5 M 98 90 l -3 -5 M 98 90 l 3 -5" stroke="#34D399"
+                                stroke-width="1.5" />
+                            <path d="M 90 10 h 8" stroke="#34D399" stroke-dasharray="2,2" stroke-width="1" />
+                            <path d="M 90 90 h 8" stroke="#34D399" stroke-dasharray="2,2" stroke-width="1" />
+                            <!-- Background for text -->
+                            <rect x="105" y="40" width="13" height="40" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="111.5" y="63" fill="#34D399" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle" transform="rotate(90 111.5 63)">B (80)</text>
+
+                            <!-- C Measurement (Horizontal Arm) -->
+                            <path d="M 40 5 H 60" stroke="#FBBF24" stroke-width="1.5" />
+                            <path d="M 40 5 l 5 -3 M 40 5 l 5 3 M 60 5 l -5 -3 M 60 5 l -5 3"
+                                stroke="#FBBF24" stroke-width="1.5" />
+                            <path d="M 40 10 v -5" stroke="#FBBF24" stroke-dasharray="2,2" stroke-width="1" />
+                            <path d="M 60 10 v -5" stroke="#FBBF24" stroke-dasharray="2,2" stroke-width="1" />
+                            <!-- Background for text -->
+                            <rect x="35" y="-13" width="30" height="13" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="50" y="-4.5" fill="#FBBF24" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle">C (20)</text>
+
+                            <!-- D Measurement (Vertical Arm) -->
+                            <path d="M 5 40 V 60" stroke="#F87171" stroke-width="1.5" />
+                            <path d="M 5 40 l -3 5 M 5 40 l 3 5 M 5 60 l -3 -5 M 5 60 l 3 -5" stroke="#F87171"
+                                stroke-width="1.5" />
+                            <path d="M 10 40 h -5" stroke="#F87171" stroke-dasharray="2,2" stroke-width="1" />
+                            <path d="M 10 60 h -5" stroke="#F87171" stroke-dasharray="2,2" stroke-width="1" />
+                            <!-- Background for text -->
+                            <rect x="-10" y="42" width="13" height="30" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="-3.5" y="59.5" fill="#F87171" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle" transform="rotate(-90 -3.5 59.5)">D (20)</text>
+                        </svg>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Section 2: Inner Dimensions (for Hole Compensation) -->
+            <fieldset class="bg-gray-900/50 p-6 rounded-lg">
+                <legend class="text-lg font-semibold text-white px-2">2. Inner Dimensions (for Hole Comp.)</legend>
+                <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                    <!-- Input fields for inner dimensions -->
+                    <div class="space-y-4">
+                        <div>
+                            <label for="designed-hole" class="block text-sm font-medium text-gray-300 mb-1">Designed
+                                Hole (mm)</label>
+                            <input type="number" id="designed-hole" value="10" readonly
+                                class="w-full bg-gray-700 border-gray-600 text-gray-400 rounded-lg p-3">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="measured-e" class="block text-sm font-medium text-gray-300 mb-1">Measured E
+                                    (mm)</label>
+                                <input type="number" id="measured-e" placeholder="e.g., 9.80" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="measured-f" class="block text-sm font-medium text-gray-300 mb-1">Measured F
+                                    (mm)</label>
+                                <input type="number" id="measured-f" placeholder="e.g., 9.82" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="measured-g" class="block text-sm font-medium text-gray-300 mb-1">Measured G
+                                    (mm)</label>
+                                <input type="number" id="measured-g" placeholder="e.g., 9.81" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="measured-h" class="block text-sm font-medium text-gray-300 mb-1">Measured H
+                                    (mm)</label>
+                                <input type="number" id="measured-h" placeholder="e.g., 9.79" step="0.01"
+                                    class="w-full bg-gray-700 border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SVG Diagram for Inner Dimensions -->
+                    <div class="mt-6 md:mt-0 flex items-center justify-center">
+                        <svg viewBox="-5 -15 110 130" class="w-80 h-auto text-gray-400" stroke="currentColor" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <title>Top-down diagram of inner hole measurements</title>
+                            <!-- Cross Shape -->
+                            <path d="M 40 10 H 60 V 40 H 90 V 60 H 60 V 90 H 40 V 60 H 10 V 40 H 40 Z"
+                                fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+
+                            <!-- Holes -->
+                            <circle cx="75" cy="50" r="7" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" />
+                            <circle cx="25" cy="50" r="7" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" />
+                            <circle cx="50" cy="25" r="7" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" />
+                            <circle cx="50" cy="75" r="7" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" />
+
+                            <!-- E Measurement -->
+                            <path d="M 68 50 H 82" stroke="#FBBF24" stroke-width="1.5" />
+                            <path d="M 68 50 l 3 -2 M 68 50 l 3 2 M 82 50 l -3 -2 M 82 50 l -3 2" stroke="#FBBF24" stroke-width="1.5" />
+                            <!-- Background for text -->
+                            <rect x="68" y="58" width="30" height="13" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="83" y="66.5" fill="#FBBF24" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle">E (10)</text>
+
+                            <!-- F Measurement -->
+                            <path d="M 18 50 H 32" stroke="#FBBF24" stroke-width="1.5" />
+                            <path d="M 18 50 l 3 -2 M 18 50 l 3 2 M 32 50 l -3 -2 M 32 50 l -3 2" stroke="#FBBF24" stroke-width="1.5" />
+                            <!-- Background for text -->
+                            <rect x="2" y="58" width="30" height="13" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="17" y="66.5" fill="#FBBF24" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle">F (10)</text>
+
+                            <!-- G Measurement -->
+                            <path d="M 50 18 V 32" stroke="#FBBF24" stroke-width="1.5" />
+                            <path d="M 50 18 l -2 3 M 50 18 l 2 3 M 50 32 l -2 -3 M 50 32 l 2 -3" stroke="#FBBF24" stroke-width="1.5" />
+                            <!-- Background for text -->
+                            <rect x="35" y="-13" width="30" height="13" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="50" y="-4.5" fill="#FBBF24" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle">G (10)</text>
+
+                            <!-- H Measurement -->
+                            <path d="M 50 68 V 82" stroke="#FBBF24" stroke-width="1.5" />
+                            <path d="M 50 68 l -2 3 M 50 68 l 2 3 M 50 82 l -2 -3 M 50 82 l 2 -3" stroke="#FBBF24" stroke-width="1.5" />
+                            <!-- Background for text -->
+                            <rect x="35" y="100" width="30" height="13" rx="2" fill="rgba(17, 24, 39, 0.95)" />
+                            <text x="50" y="108.5" fill="#FBBF24" font-size="8" font-weight="100" font-family="Inter, sans-serif"
+                                text-anchor="middle">H (10)</text>
+                        </svg>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Action Buttons -->
+            <div class="flex gap-4">
+                <button id="calculate-btn"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 ease-in-out shadow-md">
+                    Calculate
+                </button>
+                <button id="clear-btn"
+                    class="w-1/3 bg-gray-600 hover:bg-gray-500 text-white font-bold py-3 px-6 rounded-lg transition duration-200 ease-in-out">
+                    Clear
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Section (Initially Hidden) -->
+        <div id="results-section" class="hidden space-y-6">
+            <h2 class="text-2xl font-bold text-center text-white">Your OrcaSlicer Values</h2>
+
+            <div class="bg-gray-900 p-6 rounded-lg border border-gray-700 space-y-6">
+                <!-- Result 1: Shrinkage -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-1">Shrinkage</label>
+                    <div class="flex items-center">
+                        <input id="result-shrinkage" type="text" readonly
+                            class="flex-grow bg-gray-800 text-green-400 text-3xl font-mono p-3 rounded-l-lg border-y border-l border-gray-600 focus:outline-none">
+                        <button id="copy-shrinkage-btn" data-clipboard-target="#result-shrinkage"
+                            class="copy-btn relative bg-gray-600 hover:bg-gray-500 text-white font-semibold py-3 px-4 rounded-r-lg"
+                            style="padding-top: 1.125rem; padding-bottom: 1.125rem;">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result 2: X-Y Contour Compensation -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-1">X-Y Contour Compensation</label>
+                    <div class="flex items-center">
+                        <input id="result-hole-comp" type="text" readonly
+                            class="flex-grow bg-gray-800 text-green-400 text-3xl font-mono p-3 rounded-l-lg border-y border-l border-gray-600 focus:outline-none">
+                        <button id="copy-hole-comp-btn" data-clipboard-target="#result-hole-comp"
+                            class="copy-btn relative bg-gray-600 hover:bg-gray-500 text-white font-semibold py-3 px-4 rounded-r-lg"
+                            style="padding-top: 1.125rem; padding-bottom: 1.125rem;">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explanation Section -->
+            <div class="bg-gray-900/50 p-6 rounded-lg">
+                <h3 class="text-lg font-semibold text-white mb-3">Where to put these values in OrcaSlicer:</h3>
+                <p class="text-gray-300 mb-4">Go to: <code
+                        class="bg-gray-700 px-2 py-1 rounded-md text-sm">Filament Settings</code> → <code
+                        class="bg-gray-700 px-2 py-1 rounded-md text-sm">Filament</code> tab</p>
+                <ul class="list-disc list-inside space-y-3 text-gray-300">
+                    <li>Paste the <strong class="text-white">Shrinkage</strong> value into the "Shrinkage" field.</li>
+                    <li>Paste the <strong class="text-white">X-Y Contour Compensation</strong> value into the "X-Y
+                        contour compensation" field (under the Compensation section).</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get DOM elements
+            const calculateBtn = document.getElementById('calculate-btn');
+            const clearBtn = document.getElementById('clear-btn');
+            const errorMessage = document.getElementById('error-message');
+            const resultsSection = document.getElementById('results-section');
+
+            // Input fields
+            const measuredAEl = document.getElementById('measured-a');
+            const measuredBEl = document.getElementById('measured-b');
+            const measuredCEl = document.getElementById('measured-c');
+            const measuredDEl = document.getElementById('measured-d');
+
+            const designedHoleEl = document.getElementById('designed-hole');
+            const measuredEEl = document.getElementById('measured-e');
+            const measuredFEl = document.getElementById('measured-f');
+            const measuredGEl = document.getElementById('measured-g');
+            const measuredHEl = document.getElementById('measured-h');
+
+            // Result fields
+            const resultShrinkageEl = document.getElementById('result-shrinkage');
+            const resultHoleCompEl = document.getElementById('result-hole-comp');
+
+            // Copy buttons
+            const copyShrinkageBtn = document.getElementById('copy-shrinkage-btn');
+            const copyHoleCompBtn = document.getElementById('copy-hole-comp-btn');
+
+            <!-- Calculate button logic -->
+            calculateBtn.addEventListener('click', () => {
+                // Read and parse values
+                const measuredA = parseFloat(measuredAEl.value);
+                const measuredB = parseFloat(measuredBEl.value);
+                const measuredC = parseFloat(measuredCEl.value);
+                const measuredD = parseFloat(measuredDEl.value);
+
+                const designedHole = parseFloat(designedHoleEl.value);
+                const measuredE = parseFloat(measuredEEl.value);
+                const measuredF = parseFloat(measuredFEl.value);
+                const measuredG = parseFloat(measuredGEl.value);
+                const measuredH = parseFloat(measuredHEl.value);
+
+                // Validation
+                if (isNaN(measuredA) || isNaN(measuredB) || isNaN(measuredC) || isNaN(measuredD) ||
+                    isNaN(measuredE) || isNaN(measuredF) || isNaN(measuredG) || isNaN(measuredH) ||
+                    measuredA <= 0 || measuredB <= 0 || measuredC <= 0 || measuredD <= 0 ||
+                    measuredE <= 0 || measuredF <= 0 || measuredG <= 0 || measuredH <= 0) {
+                    errorMessage.classList.remove('hidden');
+                    resultsSection.classList.add('hidden');
+                    return;
+                }
+
+                // Hide error message if valid
+                errorMessage.classList.add('hidden');
+
+                // --- Calculations ---
+
+                // 1. Shrinkage Calculation
+                // (Total Measured / Total Designed) * 100
+                // Total Designed = 80 + 80 + 20 + 20 = 200
+                const totalDesigned = 200.0;
+                const totalMeasured = measuredA + measuredB + measuredC + measuredD;
+                const shrinkagePercent = (totalMeasured / totalDesigned) * 100;
+
+                // 2. Hole Compensation Calculation
+                // Average the 4 hole measurements
+                const measuredHoleAvg = (measuredE + measuredF + measuredG + measuredH) / 4.0;
+                // (Designed - Measured Avg) / 2
+                const holeComp = (designedHole - measuredHoleAvg) / 2;
+
+                // --- Display Results ---
+                // Format: 99.123%
+                resultShrinkageEl.value = `${shrinkagePercent.toFixed(3)}%`;
+                // Format: 0.123 mm
+                resultHoleCompEl.value = `${holeComp.toFixed(3)} mm`;
+
+                // Show the results section
+                resultsSection.classList.remove('hidden');
+            });
+
+            // Clear button logic
+            clearBtn.addEventListener('click', () => {
+                // Clear inputs
+                measuredAEl.value = '';
+                measuredBEl.value = '';
+                measuredCEl.value = '';
+                measuredDEl.value = '';
+                measuredEEl.value = '';
+                measuredFEl.value = '';
+                measuredGEl.value = '';
+                measuredHEl.value = '';
+
+                // Hide results and errors
+                resultsSection.classList.add('hidden');
+                errorMessage.classList.add('hidden');
+            });
+
+            // --- Copy Button Logic ---
+            function copyToClipboard(button, textToCopy) {
+                // Create a temporary textarea to hold the text
+                const tempTextarea = document.createElement('textarea');
+                tempTextarea.value = textToCopy.replace(/ mm|%/g, ''); // Copy just the number
+                document.body.appendChild(tempTextarea);
+                tempTextarea.select();
+
+                try {
+                    // Use execCommand for broader compatibility in iFrames
+                    document.execCommand('copy');
+
+                    // Show "Copied!" feedback
+                    button.classList.add('copy-btn-feedback', 'show-feedback');
+                    setTimeout(() => {
+                        button.classList.remove('show-feedback');
+                        setTimeout(() => button.classList.remove('copy-btn-feedback'), 300);
+                    }, 1500);
+
+                } catch (err) {
+                    console.error('Failed to copy text: ', err);
+                }
+
+                // Remove the temporary textarea
+                document.body.removeChild(tempTextarea);
+            }
+
+            copyShrinkageBtn.addEventListener('click', () => {
+                copyToClipboard(copyShrinkageBtn, resultShrinkageEl.value);
+            });
+
+            copyHoleCompBtn.addEventListener('click', () => {
+                copyToClipboard(copyHoleCompBtn, resultHoleCompEl.value);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+</div>
+
+
+
+    
+	
+  
 
 
 
@@ -2200,8 +2673,8 @@ This is the multi-page printable view of this section.
 </footer>
 
     </div>
-    <script src="/js/main.min.0280fcb09772cdf1e7606dd6189973f9059a9bc7e5194bec20b1c5fc43861989.js" integrity="sha256-AoD8sJdyzfHnYG3WGJlz&#43;QWam8flGUvsILHF/EOGGYk=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>
