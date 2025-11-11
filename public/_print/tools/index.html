@@ -1404,25 +1404,30 @@ This is the multi-page printable view of this section.
              * Gets the density for a selected material.
              * @param {string} typeSelectId - The ID of the material type dropdown.
              * @param {string} customInputId - The ID of the custom density input.
-             * @returns {number} The density in g/cm³.
+             * @returns {number} The density in g/cm³. Always returns a value > 0 to prevent division by zero.
              */
             function getDensity(typeSelectId, customInputId) {
                 const typeVal = getStr(typeSelectId);
+                let density = 0;
+                
                 if (typeVal === 'custom') {
-                    return getVal(customInputId);
+                    density = getVal(customInputId);
+                } else if (materialProperties[typeVal]) {
+                    // Check standard properties
+                    density = materialProperties[typeVal].density;
+                } else if (typeVal.includes('_')) {
+                    // Check custom materials (value will be density_name)
+                    density = parseFloat(typeVal.split('_')[0]);
                 }
 
-                // Check standard properties
-                if (materialProperties[typeVal]) {
-                    return materialProperties[typeVal].density;
+                // Validation: Ensure density is positive, default to PLA density if invalid
+                // This prevents division by zero errors in volume calculations
+                if (isNaN(density) || density <= 0) {
+                    console.warn(`Invalid density value (${density}). Defaulting to PLA density (1.24 g/cm³)`);
+                    return 1.24;
                 }
 
-                // Check custom materials (value will be density_name)
-                if (typeVal.includes('_')) {
-                    return parseFloat(typeVal.split('_')[0]);
-                }
-
-                return 1.24; // Default to PLA density if not found
+                return density;
             }
 
             /**
@@ -1547,12 +1552,25 @@ This is the multi-page printable view of this section.
 
                 // --- Helper Calcs: Volumes (V) ---
                 // Volume = Mass / Density. V_model and V_support in cm³
+                // Validation: Ensure density > 0 to avoid division by zero
                 const V_model_total = (d_model > 0) ? (m_model_g / d_model) : 0;
                 const V_support_total = (d_support > 0) ? (m_support_g / d_support) : 0;
 
                 // --- Helper Calcs: Lifespan Conversions ---
                 // Convert Nozzle Lifespan from mass (kg) to volume (cm³)
-                // Lifetime_Volume = (Lifetime_Mass_g / Density)
+                // 
+                // Why convert mass to volume?
+                // Nozzle wear is primarily a function of the volume of material extruded through it,
+                // not just the mass. Different materials with different densities will have different
+                // volumes for the same mass. By converting to volume, we can accurately track nozzle
+                // wear regardless of material type.
+                //
+                // Conversion: kg → g → cm³
+                // Step 1: m_model_tip_lifespan_kg * 1000 = grams
+                // Step 2: grams / density (g/cm³) = cm³
+                // Result: Lifetime_Volume_cm³ = (Lifetime_Mass_kg * 1000) / Density_g/cm³
+                //
+                // Validation: Ensure density > 0 to avoid division by zero
                 const V_m_lifespan = (d_model > 0) ? ((m_model_tip_lifespan_kg * 1000) / d_model) : 0;
                 const V_s_lifespan = (d_support > 0) ? ((m_support_tip_lifespan_kg * 1000) / d_support) : 0;
 
@@ -1571,6 +1589,7 @@ This is the multi-page printable view of this section.
 
                 // --- Cost Component 3: Machine Operation (C_machine) (Eq 3 & 4, expanded) ---
                 // C_depreciation ($/hr) = Printer Cost / Printer Lifespan
+                // Validation: Check printer lifespan > 0 to avoid division by zero
                 const C_depreciation_hr = (t_printer_lifespan > 0) ? (p_printer / t_printer_lifespan) : 0;
                 // C_power ($/hr) = (Watts / 1000) * $/kWh
                 const C_power_hr = (E_machine_w / 1000) * p_electricity_kwh;
@@ -1580,13 +1599,20 @@ This is the multi-page printable view of this section.
 
                 // --- Cost Component 4: Tooling (C_tooling) (Eq 5, modified) ---
                 // C_bed = (Bed Cost / Bed Lifespan_hr) * Program_hr
+                // Validation: Check lifespan > 0 to avoid division by zero
                 const C_bed = (t_bed_lifespan > 0) ? (p_bed / t_bed_lifespan) * t_program : 0;
+                
                 // C_nozzle = (Nozzle Cost / Nozzle Lifespan_cm³) * Volume_cm³
+                // Validation: Check V_m_lifespan > 0 to avoid division by zero
                 const C_model_tip = (V_m_lifespan > 0) ? (p_model_tip / V_m_lifespan) * V_model_total : 0;
+                
                 // Check if separate support nozzle is used
+                // Validation: Check both cost and lifespan > 0 before division
                 const C_support_tip = (p_support_tip > 0 && V_s_lifespan > 0) ?
                     (p_support_tip / V_s_lifespan) * V_support_total : 0;
+                
                 // If no separate support nozzle, add support volume to model nozzle wear
+                // Validation: Check V_m_lifespan > 0 to avoid division by zero
                 const C_model_tip_extra_wear = (p_support_tip <= 0 && V_m_lifespan > 0) ?
                     (p_model_tip / V_m_lifespan) * V_support_total : 0;
 
@@ -1622,6 +1648,7 @@ This is the multi-page printable view of this section.
 
                 // --- 4. Calculate Quick Metrics ---
                 const total_mass_g = m_model_g + m_support_g;
+                // Validation: Check divisors > 0 to avoid division by zero
                 const C_per_hour = (t_program > 0) ? (C_total_build_plate / t_program) : 0;
                 const C_per_gram = (total_mass_g > 0) ? (C_total_build_plate / total_mass_g) : 0;
 
@@ -2644,7 +2671,7 @@ This is the multi-page printable view of this section.
         <ul class="td-footer__links-list">
   
   <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
-    <a target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/minimal3dp" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>

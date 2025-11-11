@@ -167,7 +167,7 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/google/docsy"
+  url = "https://github.com/minimal3dp"
   icon = "fab fa-github"
   desc = "Development takes place here!"
 [[params.links.developer]]
@@ -183,7 +183,7 @@ enable = false
 
 [services]
   [services.googleAnalytics]
-    ID = 'G-1W7FGE0CYM'
+    ID = 'G-VQ8RPWC2MK'
 
 # hugo module configuration
 
