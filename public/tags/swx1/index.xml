@@ -1,235 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Swx1 on Minimal 3DP</title><link>https://minimal3dp.com/tags/swx1/</link><description>Recent content in Swx1 on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/tags/swx1/index.xml" rel="self" type="application/rss+xml"/><item><title>Sidewinder X1 (SWX1) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
-&lt;p&gt;SWX1 with a BTT SKR 2&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href="https://github.com/minimal3dp/swx1-skr2-klipper/tree/main"&gt;GitHub Backup&lt;/a&gt;&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;[include shell_command.cfg]
-[include fluidd.cfg]
-[include mainsail.cfg]
-
-# This file contains common pin mappings for the BigTreeTech SKR 2.
-# To use this config, the firmware should be compiled for the
-# STM32F407 with a &amp;#34;32KiB bootloader&amp;#34;.
-
-# In newer versions of this board shipped in late 2021 the STM32F429
-# is used, if this is the case compile for this with a &amp;#34;32KiB bootloader&amp;#34;
-# You will need to check the chip on your board to identify which you have.
-#
-# The &amp;#34;make flash&amp;#34; command does not work on the SKR 2. Instead,
-# after running &amp;#34;make&amp;#34;, copy the generated &amp;#34;out/klipper.bin&amp;#34; file to a
-# file named &amp;#34;firmware.bin&amp;#34; on an SD card and then restart the SKR 2
-# with that SD card.
-
-# See docs/Config_Reference.md for a description of parameters.
-
-# Note: The initial revision of this board has a flaw that can cause
-# damage to itself and other boards. Be sure to verify the board is
-# not impacted by this flaw before using it.
-
-[stepper_x]
-step_pin: PE2
-dir_pin: !PE1
-enable_pin: !PE3
-microsteps: 16
-rotation_distance: 40
-endstop_pin: ^!PC1
-position_endstop: 0
-position_max: 300
-homing_speed: 100
-
-[tmc2209 stepper_x]
-uart_pin: PE0
-run_current: 0.800
-diag_pin:
-
-[stepper_y]
-step_pin: PD5
-dir_pin: !PD4
-enable_pin: !PD6
-microsteps: 16
-rotation_distance: 40
-endstop_pin: ^!PC3
-position_endstop: 0
-position_max: 300
-homing_speed: 100
-
-[tmc2209 stepper_y]
-uart_pin: PD3
-run_current: 0.800
-diag_pin:
-
-[stepper_z]
-step_pin: PA15
-dir_pin: PA8
-enable_pin: !PD1
-microsteps: 16
-rotation_distance: 8
-endstop_pin: probe:z_virtual_endstop
-position_max: 400
-homing_speed: 20
-second_homing_speed: 1
-
-[tmc2209 stepper_z]
-uart_pin: PD0
-run_current: 0.800
-diag_pin:
-
-[stepper_z1]
-step_pin: PD11
-dir_pin: PD10
-enable_pin: !PD13
-microsteps: 16
-rotation_distance: 8
-
-[tmc2209 stepper_z1]
-uart_pin: PD12
-run_current: 0.800
-diag_pin:
-
-[extruder]
-step_pin: PD15
-dir_pin: PD14
-enable_pin: !PC7
-microsteps: 16
-rotation_distance: 33.500
-nozzle_diameter: 0.400
-filament_diameter: 1.750
-heater_pin: PB3
-sensor_type: EPCOS 100K B57560G104F
-sensor_pin: PA2
-#control: pid
-#pid_Kp: 22.2
-#pid_Ki: 1.08
-#pid_Kd: 114
-min_temp: 0
-max_temp: 250
-
-[tmc2209 extruder]
-uart_pin: PC6
-run_current: 0.600
-diag_pin:
-
-[heater_bed]
-heater_pin: PD7
-sensor_type: EPCOS 100K B57560G104F
-sensor_pin: PA1
-#control: pid
-min_temp: 0
-max_temp: 130
-#pid_kp: 42.365
-#pid_ki: 0.545
-#pid_kd: 822.940
-
-[fan]
-pin: PB7
-
-[heater_fan fan1]
-pin: PB6
-
-#[heater_fan fan2]
-#pin: PB5
-
-# Due to BTT implementing a Marlin-specific safety feature,
-# &amp;#34;anti-reversal stepper protection&amp;#34;, this pin needs pulling
-# high to pass power to stepper drivers and most FETs
-
-[output_pin motor_power]
-pin: PC13
-value: 1
-
-[mcu]
-serial: /dev/serial/by-id/usb-Klipper_stm32f429xx_200044001450304738323420-if00
-
-[printer]
-kinematics: cartesian
-max_velocity: 250
-max_accel: 3000
-max_z_velocity: 50
-max_z_accel: 400
-square_corner_velocity: 5.0
-
-[bltouch]
-## If these change, adjust coords in [z_tilt], [safe_z_home]
-sensor_pin: ^PE4
-control_pin: PE5
-x_offset: 29
-y_offset: -34
-z_offset: 10
-samples: 3
-samples_result:average
-probe_with_touch_mode: true
-stow_on_each_sample: false
-
-[safe_z_home]
-home_xy_position: 122,183
-speed: 150
-z_hop: 10 # Move up 10mm
-z_hop_speed: 5
-
-[bed_screws]
-screw1: 55,55
-screw1_name: front left
-screw2: 255,55
-screw2_name: front right
-screw3: 255,255
-screw3_name: back right
-screw4: 55,255
-screw4_name: back left
-speed: 100.0
-
-
-[screws_tilt_adjust]
-screw1: 22,83
-screw1_name: front left
-screw2: 222,83
-screw2_name: front right
-screw3: 22,283
-screw3_name: back left
-screw4: 222,283
-screw4_name: back right
-speed: 100.0
-screw_thread: CW-M5
-
-[bed_mesh]
-speed: 800
-mesh_min: 30,30
-mesh_max: 270,270
-probe_count: 5,5
-mesh_pps: 2,2
-algorithm: bicubic
-bicubic_tension: 0.2
-move_check_distance: 3.0
-split_delta_z: .010
-fade_start: 1.0
-fade_end: 5.0
-
-########################################
-# EXP1 / EXP2 (display) pins
-########################################
-
-[board_pins]
-aliases:
- # EXP1 header
- EXP1_1=PC5, EXP1_3=PB1, EXP1_5=PE10, EXP1_7=PE12, EXP1_9=&amp;lt;GND&amp;gt;,
- EXP1_2=PB0, EXP1_4=PE9, EXP1_6=PE11, EXP1_8=PE13, EXP1_10=&amp;lt;5V&amp;gt;,
- # EXP2 header
- EXP2_1=PA6, EXP2_3=PE7, EXP2_5=PB2, EXP2_7=PC4, EXP2_9=&amp;lt;GND&amp;gt;,
- EXP2_2=PA5, EXP2_4=PA4, EXP2_6=PA7, EXP2_8=&amp;lt;RST&amp;gt;, EXP2_10=&amp;lt;NC&amp;gt;
-
-# See the sample-lcd.cfg file for definitions of common LCD displays.
-
-[gcode_macro update_git]
-gcode:
- RUN_SHELL_COMMAND CMD=update_git_script
-
-[gcode_shell_command update_git_script]
-command: bash /home/wilsonm/printer_1_data/klipper-backup/script.sh
-timeout: 90.0
-verbose: True
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Artillary Sidewinder X1</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
-&lt;p&gt;Artillery Sidewinder X1 (SWX1)&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;SWX1 landing page.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swx1 on Minimal 3DP</title>
+    <link>http://localhost:1313/tags/swx1/</link>
+    <description>Recent content in Swx1 on Minimal 3DP</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Apr 2024 10:32:41 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/swx1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sidewinder X1 (SWX1) Klipper Config</title>
+      <link>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;SWX1 with a BTT SKR 2&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/minimal3dp/swx1-skr2-klipper/tree/main&#34;&gt;GitHub Backup&lt;/a&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[include shell_command.cfg]&#xA;[include fluidd.cfg]&#xA;[include mainsail.cfg]&#xA;&#xA;# This file contains common pin mappings for the BigTreeTech SKR 2.&#xA;# To use this config, the firmware should be compiled for the&#xA;# STM32F407 with a &amp;#34;32KiB bootloader&amp;#34;.&#xA;&#xA;# In newer versions of this board shipped in late 2021 the STM32F429&#xA;# is used, if this is the case compile for this with a &amp;#34;32KiB bootloader&amp;#34;&#xA;# You will need to check the chip on your board to identify which you have.&#xA;#&#xA;# The &amp;#34;make flash&amp;#34; command does not work on the SKR 2. Instead,&#xA;# after running &amp;#34;make&amp;#34;, copy the generated &amp;#34;out/klipper.bin&amp;#34; file to a&#xA;# file named &amp;#34;firmware.bin&amp;#34; on an SD card and then restart the SKR 2&#xA;# with that SD card.&#xA;&#xA;# See docs/Config_Reference.md for a description of parameters.&#xA;&#xA;# Note: The initial revision of this board has a flaw that can cause&#xA;# damage to itself and other boards. Be sure to verify the board is&#xA;# not impacted by this flaw before using it.&#xA;&#xA;[stepper_x]&#xA;step_pin: PE2&#xA;dir_pin: !PE1&#xA;enable_pin: !PE3&#xA;microsteps: 16&#xA;rotation_distance: 40&#xA;endstop_pin: ^!PC1&#xA;position_endstop: 0&#xA;position_max: 300&#xA;homing_speed: 100&#xA;&#xA;[tmc2209 stepper_x]&#xA;uart_pin: PE0&#xA;run_current: 0.800&#xA;diag_pin:&#xA;&#xA;[stepper_y]&#xA;step_pin: PD5&#xA;dir_pin: !PD4&#xA;enable_pin: !PD6&#xA;microsteps: 16&#xA;rotation_distance: 40&#xA;endstop_pin: ^!PC3&#xA;position_endstop: 0&#xA;position_max: 300&#xA;homing_speed: 100&#xA;&#xA;[tmc2209 stepper_y]&#xA;uart_pin: PD3&#xA;run_current: 0.800&#xA;diag_pin:&#xA;&#xA;[stepper_z]&#xA;step_pin: PA15&#xA;dir_pin: PA8&#xA;enable_pin: !PD1&#xA;microsteps: 16&#xA;rotation_distance: 8&#xA;endstop_pin: probe:z_virtual_endstop&#xA;position_max: 400&#xA;homing_speed: 20&#xA;second_homing_speed: 1&#xA;&#xA;[tmc2209 stepper_z]&#xA;uart_pin: PD0&#xA;run_current: 0.800&#xA;diag_pin:&#xA;&#xA;[stepper_z1]&#xA;step_pin: PD11&#xA;dir_pin: PD10&#xA;enable_pin: !PD13&#xA;microsteps: 16&#xA;rotation_distance: 8&#xA;&#xA;[tmc2209 stepper_z1]&#xA;uart_pin: PD12&#xA;run_current: 0.800&#xA;diag_pin:&#xA;&#xA;[extruder]&#xA;step_pin: PD15&#xA;dir_pin: PD14&#xA;enable_pin: !PC7&#xA;microsteps: 16&#xA;rotation_distance: 33.500&#xA;nozzle_diameter: 0.400&#xA;filament_diameter: 1.750&#xA;heater_pin: PB3&#xA;sensor_type: EPCOS 100K B57560G104F&#xA;sensor_pin: PA2&#xA;#control: pid&#xA;#pid_Kp: 22.2&#xA;#pid_Ki: 1.08&#xA;#pid_Kd: 114&#xA;min_temp: 0&#xA;max_temp: 250&#xA;&#xA;[tmc2209 extruder]&#xA;uart_pin: PC6&#xA;run_current: 0.600&#xA;diag_pin:&#xA;&#xA;[heater_bed]&#xA;heater_pin: PD7&#xA;sensor_type: EPCOS 100K B57560G104F&#xA;sensor_pin: PA1&#xA;#control: pid&#xA;min_temp: 0&#xA;max_temp: 130&#xA;#pid_kp: 42.365&#xA;#pid_ki: 0.545&#xA;#pid_kd: 822.940&#xA;&#xA;[fan]&#xA;pin: PB7&#xA;&#xA;[heater_fan fan1]&#xA;pin: PB6&#xA;&#xA;#[heater_fan fan2]&#xA;#pin: PB5&#xA;&#xA;# Due to BTT implementing a Marlin-specific safety feature,&#xA;# &amp;#34;anti-reversal stepper protection&amp;#34;, this pin needs pulling&#xA;# high to pass power to stepper drivers and most FETs&#xA;&#xA;[output_pin motor_power]&#xA;pin: PC13&#xA;value: 1&#xA;&#xA;[mcu]&#xA;serial: /dev/serial/by-id/usb-Klipper_stm32f429xx_200044001450304738323420-if00&#xA;&#xA;[printer]&#xA;kinematics: cartesian&#xA;max_velocity: 250&#xA;max_accel: 3000&#xA;max_z_velocity: 50&#xA;max_z_accel: 400&#xA;square_corner_velocity: 5.0&#xA;&#xA;[bltouch]&#xA;## If these change, adjust coords in [z_tilt], [safe_z_home]&#xA;sensor_pin: ^PE4&#xA;control_pin: PE5&#xA;x_offset: 29&#xA;y_offset: -34&#xA;z_offset: 10&#xA;samples: 3&#xA;samples_result:average&#xA;probe_with_touch_mode: true&#xA;stow_on_each_sample: false&#xA;&#xA;[safe_z_home]&#xA;home_xy_position: 122,183&#xA;speed: 150&#xA;z_hop: 10  # Move up 10mm&#xA;z_hop_speed: 5&#xA;&#xA;[bed_screws]&#xA;screw1: 55,55&#xA;screw1_name: front left&#xA;screw2: 255,55&#xA;screw2_name: front right&#xA;screw3: 255,255&#xA;screw3_name: back right&#xA;screw4: 55,255&#xA;screw4_name: back left&#xA;speed: 100.0&#xA;&#xA;&#xA;[screws_tilt_adjust]&#xA;screw1: 22,83&#xA;screw1_name: front left&#xA;screw2: 222,83&#xA;screw2_name: front right&#xA;screw3: 22,283&#xA;screw3_name: back left&#xA;screw4: 222,283&#xA;screw4_name: back right&#xA;speed: 100.0&#xA;screw_thread: CW-M5&#xA;&#xA;[bed_mesh]&#xA;speed: 800&#xA;mesh_min: 30,30&#xA;mesh_max: 270,270&#xA;probe_count: 5,5&#xA;mesh_pps: 2,2&#xA;algorithm: bicubic&#xA;bicubic_tension: 0.2&#xA;move_check_distance: 3.0&#xA;split_delta_z: .010&#xA;fade_start: 1.0&#xA;fade_end: 5.0&#xA;&#xA;########################################&#xA;# EXP1 / EXP2 (display) pins&#xA;########################################&#xA;&#xA;[board_pins]&#xA;aliases:&#xA;    # EXP1 header&#xA;    EXP1_1=PC5, EXP1_3=PB1, EXP1_5=PE10, EXP1_7=PE12, EXP1_9=&amp;lt;GND&amp;gt;,&#xA;    EXP1_2=PB0, EXP1_4=PE9, EXP1_6=PE11, EXP1_8=PE13, EXP1_10=&amp;lt;5V&amp;gt;,&#xA;    # EXP2 header&#xA;    EXP2_1=PA6, EXP2_3=PE7, EXP2_5=PB2, EXP2_7=PC4,   EXP2_9=&amp;lt;GND&amp;gt;,&#xA;    EXP2_2=PA5, EXP2_4=PA4, EXP2_6=PA7, EXP2_8=&amp;lt;RST&amp;gt;, EXP2_10=&amp;lt;NC&amp;gt;&#xA;&#xA;# See the sample-lcd.cfg file for definitions of common LCD displays.&#xA;&#xA;[gcode_macro update_git]&#xA;gcode:&#xA;    RUN_SHELL_COMMAND CMD=update_git_script&#xA;&#xA;[gcode_shell_command update_git_script]&#xA;command: bash /home/wilsonm/printer_1_data/klipper-backup/script.sh&#xA;timeout: 90.0&#xA;verbose: True&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Artillary Sidewinder X1</title>
+      <link>http://localhost:1313/projects/3d-printers/sidewinder-x1/</link>
+      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/3d-printers/sidewinder-x1/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Artillery Sidewinder X1 (SWX1)&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;SWX1 landing page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
