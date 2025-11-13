@@ -1,9 +1,8 @@
 {
   "version": 2,
-  "framework": null,
-  "buildCommand": "curl -L https://go.dev/dl/go1.21.5.linux-amd64.tar.gz | tar -C /tmp -xzf - && export PATH=/tmp/go/bin:$PATH && hugo --gc --minify",
+  "buildCommand": "curl -L https://go.dev/dl/go1.21.5.linux-amd64.tar.gz | tar -C /tmp -xzf - && curl -L https://github.com/gohugoio/hugo/releases/download/v0.152.2/hugo_extended_0.152.2_linux-amd64.tar.gz | tar -xzf - -C /tmp && /tmp/go/bin/go version && /tmp/hugo version && /tmp/hugo --gc --minify",
   "outputDirectory": "public",
-  "installCommand": "npm install && curl -L https://github.com/gohugoio/hugo/releases/download/v0.152.2/hugo_extended_0.152.2_linux-amd64.tar.gz | tar -xzf - -C /tmp && export PATH=/tmp:$PATH",
+  "installCommand": "npm install",
   "env": {
     "HUGO_VERSION": "0.152.2",
     "HUGO_MODULE_WORKSPACE": "off",
