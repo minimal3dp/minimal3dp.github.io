@@ -75,7 +75,7 @@ privacy_policy = "https://policies.google.com/privacy"
 google_site_verification = "gekyEs3f8YOHosuLYzm98WAde8kIZn31TT3drLkKEv4"
 
 # First one is picked as the Twitter card image if not set on page.
-images = ["/images/minimal3dp-og-1200x630.png"]
+images = ["/images/minimal3dp-og-1200x630.jpg"]
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
