@@ -1,0 +1,4 @@
+# Ignore public directory (will be built)
+public/
+resources/
+.hugo_build.lock
