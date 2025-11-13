@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://localhost:1313/tools/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/tools/index.xml">
+<link rel="canonical" type="text/html" href="https://minimal3dp.com/tools/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://minimal3dp.com/tools/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -22,7 +22,7 @@
 <title>M3DP Tools | Minimal 3DP</title>
 <meta name="description" content="Minimal 3DP Tools and Helper Scripts - A Work in Progress
 Launched - 2025-11-08">
-<meta property="og:url" content="http://localhost:1313/tools/">
+<meta property="og:url" content="https://minimal3dp.com/tools/">
   <meta property="og:site_name" content="Minimal 3DP">
   <meta property="og:title" content="M3DP Tools">
   <meta property="og:description" content="Minimal 3DP Tools and Helper Scripts - A Work in Progress
@@ -40,12 +40,27 @@ Launched - 2025-11-08">
   <meta name="twitter:title" content="M3DP Tools">
   <meta name="twitter:description" content="Minimal 3DP Tools and Helper Scripts - A Work in Progress
 Launched - 2025-11-08">
-<link href="/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" as="style" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
+<link href="/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css" rel="stylesheet" integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq&#43;vE4=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ8RPWC2MK"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-VQ8RPWC2MK');
+        }
+      </script>
   </head>
   <body class="td-section">
     <header>
@@ -443,15 +458,6 @@ This is the multi-page printable view of this section.
                                     data-tooltip="Print duration for ONE build plate, in hours. From your slicer's estimate. (e.g., 4.5 for 4h 30m). Total job time = this × number of plates.">i</span>
                             </label>
                             <input type="number" id="program_length_hr" value="1" min="0" step="0.1"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                        </div>
-                        <div>
-                            <label for="model_material_g" class="block text-sm font-medium text-gray-700">
-                                Model Material Per Plate (grams)
-                                <span class="info-icon"
-                                    data-tooltip="Mass of main model material for ONE build plate, in grams. From your slicer. Total material = this × number of plates.">i</span>
-                            </label>
-                            <input type="number" id="model_material_g" value="10" min="0"
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                         </div>
                         <div>
@@ -1738,14 +1744,15 @@ This is the multi-page printable view of this section.
                 const failure_rate = getVal('failure_rate') / 100; // as decimal
 
                 // Material & Labor
-                const p_model_kg = getVal('model_material_cost_kg'); // $/kg
+                const p_model_kg = getVal('model_material_cost_kg'); // $/kg (used for legacy/fallback)
                 const p_support_kg = getVal('support_material_cost_kg'); // $/kg
                 const p_hourlywage = getVal('hourly_wage'); // $/hour
                 const t_prep_min = getVal('prep_slicing_time'); // minutes/build plate
                 const t_manual_min = getVal('manual_labor_time'); // minutes/build plate
 
                 // Densities
-                const d_model = getDensity('model_material_type', 'model_material_density_custom'); // g/cm³
+                // For nozzle wear calculations, use first material's density as representative
+                const d_model = getDensity('material_1_type', 'material_1_density_custom'); // g/cm³
                 const d_support = getDensity('support_material_type', 'support_material_density_custom'); // g/cm³
 
                 // Machine Operation
@@ -1775,10 +1782,9 @@ This is the multi-page printable view of this section.
 
                 // --- 2. Perform Calculations (based on article) ---
 
-                // --- Helper Calcs: Volumes (V) ---
-                // Volume = Mass / Density. V_model and V_support in cm³
+                // --- Helper Calcs: Support Material Volume (V) ---
+                // Volume = Mass / Density. V_support in cm³
                 // Validation: Ensure density > 0 to avoid division by zero
-                const V_model_total = (d_model > 0) ? (m_model_g / d_model) : 0;
                 const V_support_total = (d_support > 0) ? (m_support_g / d_support) : 0;
 
                 // --- Helper Calcs: Lifespan Conversions ---
@@ -1795,6 +1801,7 @@ This is the multi-page printable view of this section.
                 // Step 2: grams / density (g/cm³) = cm³
                 // Result: Lifetime_Volume_cm³ = (Lifetime_Mass_kg * 1000) / Density_g/cm³
                 //
+                // For model materials, use first material's density as representative for nozzle wear
                 // Validation: Ensure density > 0 to avoid division by zero
                 const V_m_lifespan = (d_model > 0) ? ((m_model_tip_lifespan_kg * 1000) / d_model) : 0;
                 const V_s_lifespan = (d_support > 0) ? ((m_support_tip_lifespan_kg * 1000) / d_support) : 0;
@@ -3064,8 +3071,8 @@ This is the multi-page printable view of this section.
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+    <script src="/js/main.min.0280fcb09772cdf1e7606dd6189973f9059a9bc7e5194bec20b1c5fc43861989.js" integrity="sha256-AoD8sJdyzfHnYG3WGJlz&#43;QWam8flGUvsILHF/EOGGYk=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>
