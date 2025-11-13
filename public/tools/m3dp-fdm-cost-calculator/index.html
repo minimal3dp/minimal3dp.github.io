@@ -27,13 +27,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="tools">
     <meta property="article:published_time" content="2025-11-08T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-11-08T15:08:03-06:00">
+    <meta property="article:modified_time" content="2025-11-10T18:41:03-06:00">
 
   <meta itemprop="name" content="3D Print Cost Calculator">
   <meta itemprop="description" content="Calculate the cost of 3D printing with FDM technology.">
   <meta itemprop="datePublished" content="2025-11-08T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-11-08T15:08:03-06:00">
-  <meta itemprop="wordCount" content="644">
+  <meta itemprop="dateModified" content="2025-11-10T18:41:03-06:00">
+  <meta itemprop="wordCount" content="735">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="3D Print Cost Calculator">
   <meta name="twitter:description" content="Calculate the cost of 3D printing with FDM technology.">
@@ -257,10 +257,12 @@
         /* Custom style for the sticky summary box */
         .sticky-summary {
             position: sticky;
-            top: 1.5rem;
-            /* 24px */
+            top: 6rem;
+            /* 96px - Increased to prevent overlap with site header on scroll */
             align-self: start;
             /* Prevents stretching to grid height */
+            z-index: 10;
+            /* Ensure proper stacking order */
         }
 
         /* Style for the material info boxes */
@@ -380,6 +382,34 @@
                     <p class="text-xs text-gray-500 mt-3 text-center">Saves/Loads all calculator inputs including job parameters, materials, machine settings, and pricing.</p>
                 </div>
 
+                <!-- Currency Selection -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-semibold text-gray-800 border-b pb-3 mb-4">Currency</h2>
+                    <div>
+                        <label for="currency_selector" class="block text-sm font-medium text-gray-700 mb-2">
+                            Select Currency Symbol
+                            <span class="info-icon"
+                                data-tooltip="Choose the currency symbol to display in all pricing fields. This is display-only and does not perform currency conversion.">i</span>
+                        </label>
+                        <select id="currency_selector"
+                            class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                            <option value="USD" selected>$ - US Dollar (USD)</option>
+                            <option value="GBP">£ - British Pound (GBP)</option>
+                            <option value="EUR">€ - Euro (EUR)</option>
+                            <option value="JPY">¥ - Japanese Yen (JPY)</option>
+                            <option value="CAD">C$ - Canadian Dollar (CAD)</option>
+                            <option value="AUD">A$ - Australian Dollar (AUD)</option>
+                            <option value="CHF">CHF - Swiss Franc</option>
+                            <option value="CNY">¥ - Chinese Yuan (CNY)</option>
+                            <option value="INR">₹ - Indian Rupee (INR)</option>
+                            <option value="KRW">₩ - South Korean Won (KRW)</option>
+                            <option value="MXN">MX$ - Mexican Peso (MXN)</option>
+                            <option value="BRL">R$ - Brazilian Real (BRL)</option>
+                        </select>
+                        <p class="text-xs text-gray-500 mt-2">Note: This changes the display symbol only. All calculations remain the same - no currency conversion is performed.</p>
+                    </div>
+                </div>
+
                 <!-- Card 1: Job Parameters -->
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h2 class="text-xl font-semibold text-gray-800 border-b pb-3 mb-4">1. Job Parameters</h2>
@@ -413,28 +443,28 @@
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                         </div>
                         <div>
-                            <label for="program_length_hr" class="block text-sm font-medium text-gray-700">
-                                Total Print Time (Hours)
+                            <label for="number_of_plates" class="block text-sm font-medium text-gray-700">
+                                Number of Build Plates
                                 <span class="info-icon"
-                                    data-tooltip="Total print job duration, in hours. From your slicer's estimate. (e.g., 4.5 for 4h 30m)">i</span>
+                                    data-tooltip="How many build plates you need to print for this job. Example: 8 plates × 64 parts/plate = 512 total parts. Costs are calculated per plate, then multiplied.">i</span>
+                            </label>
+                            <input type="number" id="number_of_plates" value="1" min="1" step="1"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="program_length_hr" class="block text-sm font-medium text-gray-700">
+                                Print Time Per Plate (Hours)
+                                <span class="info-icon"
+                                    data-tooltip="Print duration for ONE build plate, in hours. From your slicer's estimate. (e.g., 4.5 for 4h 30m). Total job time = this × number of plates.">i</span>
                             </label>
                             <input type="number" id="program_length_hr" value="1" min="0" step="0.1"
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                         </div>
                         <div>
-                            <label for="model_material_g" class="block text-sm font-medium text-gray-700">
-                                Model Material (grams)
-                                <span class="info-icon"
-                                    data-tooltip="Total mass of the main model material used, in grams. From your slicer.">i</span>
-                            </label>
-                            <input type="number" id="model_material_g" value="10" min="0"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                        </div>
-                        <div>
                             <label for="support_material_g" class="block text-sm font-medium text-gray-700">
-                                Support Material (grams)
+                                Support Material Per Plate (grams)
                                 <span class="info-icon"
-                                    data-tooltip="Total mass of support material used, in grams. From your slicer. Enter 0 if no support is used.">i</span>
+                                    data-tooltip="Mass of support material for ONE build plate, in grams. From your slicer. Enter 0 if no support is used. Total = this × number of plates.">i</span>
                             </label>
                             <input type="number" id="support_material_g" value="0" min="0"
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
@@ -454,104 +484,89 @@
                 <!-- Card 2: Material & Labor -->
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h2 class="text-xl font-semibold text-gray-800 border-b pb-3 mb-4">2. Material & Labor</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
-                        <!-- Model Material -->
-                        <div>
-                            <label for="model_material_cost_kg" class="block text-sm font-medium text-gray-700">
-                                Model Material Cost ($/kg)
-                                <span class="info-icon"
-                                    data-tooltip="The price you paid for a 1kg roll of your model filament. (e.g., 20)">i</span>
-                            </label>
-                            <input type="number" id="model_material_cost_kg" value="20" min="0"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                        </div>
-                        <div>
-                            <label for="model_material_type" class="block text-sm font-medium text-gray-700">Model
-                                Material Type</label>
-                            <select id="model_material_type"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                                <optgroup label="Common">
-                                    <option value="1.24">PLA (1.24 g/cm³)</option>
-                                    <option value="1.27">PETG (1.27 g/cm³)</option>
-                                    <option value="1.04">ABS (1.04 g/cm³)</option>
-                                    <option value="1.06">ASA (1.06 g/cm³)</option>
-                                </optgroup>
-                                <optgroup label="Engineering/Flexible">
-                                    <option value="1.20">TPU/TPE (1.20 g/cm³)</option>
-                                    <option value="1.08">Nylon (PA) (1.08 g/cm³)</option>
-                                    <option value="1.21">Polycarbonate (PC) (1.20 g/cm³)</option>
-                                </optgroup>
-                                <optgroup label="My Materials" id="model_material_custom_group">
-                                    <!-- Custom materials added by JS -->
-                                </optgroup>
-                                <optgroup label="Other">
-                                    <option value="custom">Add New Custom...</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div id="model_material_density_custom_wrapper" class="hidden sm:col-span-2">
-                            <label for="model_material_density_custom"
-                                class="block text-sm font-medium text-gray-700">Custom Model Density (g/cm³)</label>
-                            <input type="number" id="model_material_density_custom" value="1.24" min="0" step="0.01"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                        </div>
-                        <!-- Model Material Info Box -->
-                        <div id="model_material_info" class="material-info sm:col-span-2">
-                            <!-- Content dynamically inserted by JS -->
-                        </div>
+                    
+                    <!-- Number of Model Materials Selector -->
+                    <div class="mb-4 pb-4 border-b">
+                        <label for="num_model_materials" class="block text-sm font-medium text-gray-700 mb-2">
+                            Number of Model Materials
+                            <span class="info-icon"
+                                data-tooltip="How many different filament types/colors for the model (not including supports). Multi-color prints or mixed materials like PETG + TPU. Most prints use 1-2 materials.">i</span>
+                        </label>
+                        <select id="num_model_materials"
+                            class="block w-full max-w-xs rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                            <option value="1">1 Material (Standard)</option>
+                            <option value="2">2 Materials (Dual Color/Type)</option>
+                            <option value="3">3 Materials (Triple Color/Type)</option>
+                            <option value="4">4 Materials (Quad Color/Type)</option>
+                            <option value="5">5 Materials</option>
+                            <option value="6">6 Materials</option>
+                        </select>
+                    </div>
 
-                        <!-- Support Material -->
-                        <div class="sm:col-span-2 border-t pt-4"></div>
-                        <div>
-                            <label for="support_material_cost_kg" class="block text-sm font-medium text-gray-700">
-                                Support Material Cost ($/kg)
-                                <span class="info-icon"
-                                    data-tooltip="The price you paid for a 1kg roll of your support filament.">i</span>
-                            </label>
-                            <input type="number" id="support_material_cost_kg" value="20" min="0"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                        </div>
-                        <div>
-                            <label for="support_material_type" class="block text-sm font-medium text-gray-700">Support
-                                Material Type</label>
-                            <select id="support_material_type"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                                <optgroup label="Soluble">
-                                    <option value="1.25">PVA (1.25 g/cm³)</option>
-                                    <option value="1.07">HIPS (1.07 g/cm³)</option>
-                                </optgroup>
-                                <optgroup label="Breakaway">
-                                    <option value="1.24">PLA (1.24 g/cm³)</option>
-                                    <option value="1.27">PETG (1.27 g/cm³)</option>
-                                    <option value="1.04">ABS (1.04 g/cm³)</option>
-                                    <option value="1.06">ASA (1.06 g/cm³)</option>
-                                </optgroup>
-                                <optgroup label="My Materials" id="support_material_custom_group">
-                                    <!-- Custom materials added by JS -->
-                                </optgroup>
-                                <optgroup label="Other">
-                                    <option value="custom">Add New Custom...</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div id="support_material_density_custom_wrapper" class="hidden sm:col-span-2">
-                            <label for="support_material_density_custom"
-                                class="block text-sm font-medium text-gray-700">Custom Support Density (g/cm³)</label>
-                            <input type="number" id="support_material_density_custom" value="1.24" min="0" step="0.01"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-                        </div>
-                        <!-- Support Material Info Box -->
-                        <div id="support_material_info" class="material-info sm:col-span-2">
-                            <!-- Content dynamically inserted by JS -->
-                        </div>
+                    <!-- Model Materials Container (dynamically populated) -->
+                    <div id="model_materials_container">
+                        <!-- Material input groups will be inserted here by JavaScript -->
+                    </div>
 
-                        <!-- Labor -->
-                        <div class="sm:col-span-2 border-t pt-4"></div>
-                        <div>
-                            <label for="hourly_wage" class="block text-sm font-medium text-gray-700">
-                                Labor Rate ($/hour)
-                                <span class="info-icon"
-                                    data-tooltip="Your hourly rate for all manual labor (prep, post-processing, finishing).">i</span>
+                    <!-- Support Material (Optional) -->
+                    <div class="border-t pt-4 mt-4">
+                        <h3 class="text-lg font-medium text-gray-700 mb-3">Support Material (Optional)</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+                            <div>
+                                <label for="support_material_cost_kg" class="block text-sm font-medium text-gray-700">
+                                    Support Material Cost ($/kg)
+                                    <span class="info-icon"
+                                        data-tooltip="The price you paid for a 1kg roll of your support filament. Enter 0 if no supports used.">i</span>
+                                </label>
+                                <input type="number" id="support_material_cost_kg" value="20" min="0"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="support_material_type" class="block text-sm font-medium text-gray-700">Support
+                                    Material Type</label>
+                                <select id="support_material_type"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                    <optgroup label="Soluble">
+                                        <option value="1.25">PVA (1.25 g/cm³)</option>
+                                        <option value="1.07">HIPS (1.07 g/cm³)</option>
+                                    </optgroup>
+                                    <optgroup label="Breakaway">
+                                        <option value="1.24">PLA (1.24 g/cm³)</option>
+                                        <option value="1.27">PETG (1.27 g/cm³)</option>
+                                        <option value="1.04">ABS (1.04 g/cm³)</option>
+                                        <option value="1.06">ASA (1.06 g/cm³)</option>
+                                    </optgroup>
+                                    <optgroup label="My Materials" id="support_material_custom_group">
+                                        <!-- Custom materials added by JS -->
+                                    </optgroup>
+                                    <optgroup label="Other">
+                                        <option value="custom">Add New Custom...</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div id="support_material_density_custom_wrapper" class="hidden sm:col-span-2">
+                                <label for="support_material_density_custom"
+                                    class="block text-sm font-medium text-gray-700">Custom Support Density (g/cm³)</label>
+                                <input type="number" id="support_material_density_custom" value="1.24" min="0" step="0.01"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                            </div>
+                            <!-- Support Material Info Box -->
+                            <div id="support_material_info" class="material-info sm:col-span-2">
+                                <!-- Content dynamically inserted by JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Labor -->
+                    <div class="border-t pt-4 mt-4">
+                        <h3 class="text-lg font-medium text-gray-700 mb-3">Labor Costs</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+                            <div>
+                                <label for="hourly_wage" class="block text-sm font-medium text-gray-700">
+                                    Labor Rate ($/hour)
+                                    <span class="info-icon"
+                                        data-tooltip="Your hourly rate for all manual labor (prep, post-processing, finishing).">i</span>
+                                </label>
                             </label>
                             <input type="number" id="hourly_wage" value="20" min="0"
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
@@ -740,9 +755,18 @@
                             <label for="finishing_labor_time_part" class="block text-sm font-medium text-gray-700">
                                 Finishing Labor (min/part)
                                 <span class="info-icon"
-                                    data-tooltip="Time spent *per part* on sanding, painting, assembly, etc. Added to your total labor cost.">i</span>
+                                    data-tooltip="Time spent *per part* on sanding, painting, etc. Example: 5 minutes per part for sanding.">i</span>
                             </label>
                             <input type="number" id="finishing_labor_time_part" value="0" min="0"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="finishing_labor_time_plate" class="block text-sm font-medium text-gray-700">
+                                Finishing Labor (min/plate)
+                                <span class="info-icon"
+                                    data-tooltip="Time spent *per build plate* on handling, packing, quality control, etc., regardless of part count. Example: 10 minutes for packing entire plate.">i</span>
+                            </label>
+                            <input type="number" id="finishing_labor_time_plate" value="0" min="0"
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                         </div>
                         <div>
@@ -792,14 +816,44 @@
                 <!-- Card 7: Markup -->
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h2 class="text-xl font-semibold text-gray-800 border-b pb-3 mb-4">7. Markup (Optional)</h2>
+                    
+                    <!-- Markup Type Selection -->
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Markup Type</label>
+                        <div class="flex gap-6">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="markup_type" value="percent" checked
+                                    class="form-radio h-4 w-4 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Percentage (%)</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="markup_type" value="flat"
+                                    class="form-radio h-4 w-4 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Flat Dollar Amount ($)</span>
+                            </label>
+                        </div>
+                    </div>
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
+                        <!-- Percentage Markup -->
+                        <div id="markup_percent_wrapper">
                             <label for="markup_percent" class="block text-sm font-medium text-gray-700">
                                 Overhead & Profit Markup (%)
                                 <span class="info-icon"
-                                    data-tooltip="A percentage markup applied to the total cost per part for business overhead and profit. (e.g., 50)">i</span>
+                                    data-tooltip="A percentage markup applied to the total cost per part for business overhead and profit. (e.g., 50 for 50%)">i</span>
                             </label>
                             <input type="number" id="markup_percent" value="0" min="0"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <!-- Flat Dollar Markup -->
+                        <div id="markup_flat_wrapper" style="display: none;">
+                            <label for="markup_flat_dollar" class="block text-sm font-medium text-gray-700">
+                                Flat Markup Amount ($)
+                                <span class="info-icon"
+                                    data-tooltip="A fixed dollar amount added to the total cost per build plate. Useful when you've agreed on a specific markup with your client. (e.g., 50)">i</span>
+                            </label>
+                            <input type="number" id="markup_flat_dollar" value="0" min="0" step="0.01"
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                         </div>
                     </div>
@@ -966,12 +1020,12 @@
 
                     <div class="bg-gray-50 rounded-lg p-4 mb-4">
                         <div class="flex justify-between items-center text-sm font-medium text-gray-600">
-                            <span>Total Build Plate Cost (for <span id="summary_parts_count_1">1</span> part):</span>
-                            <span id="summary_total_build_plate_cost" class="text-gray-900">$0.00</span>
+                            <span>Total Job Cost (<span id="summary_parts_count_1">1</span> parts):</span>
+                            <span id="summary_total_build_plate_cost" class="text-gray-900 font-semibold">$0.00</span>
                         </div>
-                        <div class="flex justify-between items-center text-sm font-medium text-gray-600 mt-1">
-                            <span>Base Cost (per Part):</span>
-                            <span id="summary_base_cost_per_part" class="text-gray-900">$0.00</span>
+                        <div class="flex justify-between items-center text-sm text-gray-500 mt-1">
+                            <span>Cost per Part:</span>
+                            <span id="summary_base_cost_per_part" class="text-gray-700">$0.00</span>
                         </div>
                     </div>
 
@@ -1321,6 +1375,22 @@
             const CUSTOM_MATERIALS_KEY = 'fdmCustomMaterials';
             let lastCalculatedCosts = {}; // Store results for the quote modal
 
+            // Currency configuration
+            const currencyConfig = {
+                'USD': { symbol: '$', code: 'USD', locale: 'en-US' },
+                'GBP': { symbol: '£', code: 'GBP', locale: 'en-GB' },
+                'EUR': { symbol: '€', code: 'EUR', locale: 'en-EU' },
+                'JPY': { symbol: '¥', code: 'JPY', locale: 'ja-JP' },
+                'CAD': { symbol: 'C$', code: 'CAD', locale: 'en-CA' },
+                'AUD': { symbol: 'A$', code: 'AUD', locale: 'en-AU' },
+                'CHF': { symbol: 'CHF', code: 'CHF', locale: 'de-CH' },
+                'CNY': { symbol: '¥', code: 'CNY', locale: 'zh-CN' },
+                'INR': { symbol: '₹', code: 'INR', locale: 'en-IN' },
+                'KRW': { symbol: '₩', code: 'KRW', locale: 'ko-KR' },
+                'MXN': { symbol: 'MX$', code: 'MXN', locale: 'es-MX' },
+                'BRL': { symbol: 'R$', code: 'BRL', locale: 'pt-BR' }
+            };
+
             // --- HELPER FUNCTIONS ---
 
             /**
@@ -1349,18 +1419,41 @@
             }
 
             /**
-             * Formats a number as a currency string.
+             * Gets the currently selected currency configuration.
+             * @returns {Object} The currency config object with symbol, code, and locale.
+             */
+            function getCurrentCurrency() {
+                const currencySelect = document.getElementById('currency_selector');
+                const selectedCode = currencySelect ? currencySelect.value : 'USD';
+                return currencyConfig[selectedCode] || currencyConfig['USD'];
+            }
+
+            /**
+             * Formats a number as a currency string using the selected currency.
              * @param {number} num - The number to format.
-             * @returns {string} The formatted currency string (e.g., "$1.23").
+             * @returns {string} The formatted currency string (e.g., "$1.23" or "£1.23").
              */
             function formatCurrency(num) {
-                if (isNaN(num)) return "$0.00";
-                return num.toLocaleString('en-US', {
-                    style: 'currency',
-                    currency: 'USD',
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2
-                });
+                if (isNaN(num)) {
+                    const currency = getCurrentCurrency();
+                    return `${currency.symbol}0.00`;
+                }
+                
+                const currency = getCurrentCurrency();
+                
+                // Use Intl.NumberFormat for proper currency formatting
+                try {
+                    const formatter = new Intl.NumberFormat(currency.locale, {
+                        style: 'currency',
+                        currency: currency.code,
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
+                    });
+                    return formatter.format(num);
+                } catch (e) {
+                    // Fallback to simple formatting if locale is not supported
+                    return `${currency.symbol}${num.toFixed(2)}`;
+                }
             }
 
             /**
@@ -1412,6 +1505,25 @@
                     wrapper.classList.remove('hidden');
                 } else {
                     wrapper.classList.add('hidden');
+                }
+            }
+
+            /**
+             * Toggles between percentage and flat dollar markup options.
+             */
+            function toggleMarkupType() {
+                const markupType = document.querySelector('input[name="markup_type"]:checked');
+                const percentWrapper = document.getElementById('markup_percent_wrapper');
+                const flatWrapper = document.getElementById('markup_flat_wrapper');
+                
+                if (!markupType || !percentWrapper || !flatWrapper) return;
+                
+                if (markupType.value === 'percent') {
+                    percentWrapper.style.display = 'block';
+                    flatWrapper.style.display = 'none';
+                } else {
+                    percentWrapper.style.display = 'none';
+                    flatWrapper.style.display = 'block';
                 }
             }
 
@@ -1470,6 +1582,109 @@
             }
 
             /**
+             * Generates material input groups dynamically based on number selected.
+             * @param {number} numMaterials - Number of materials to generate (1-6).
+             */
+            function generateMaterialGroups(numMaterials) {
+                const container = document.getElementById('model_materials_container');
+                if (!container) return;
+
+                // Clear existing content
+                container.innerHTML = '';
+
+                // Generate material groups
+                for (let i = 1; i <= numMaterials; i++) {
+                    const materialHTML = `
+                        <div class="material-group border-b pb-4 mb-4" data-material-index="${i}">
+                            <h3 class="text-lg font-medium text-gray-700 mb-3">Material ${i}${i === 1 ? ' (Primary)' : ''}</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-4">
+                                <!-- Material mass -->
+                                <div>
+                                    <label for="material_${i}_mass_g" class="block text-sm font-medium text-gray-700">
+                                        Mass Per Plate (grams)
+                                        <span class="info-icon"
+                                            data-tooltip="Grams of this material/color used for ONE build plate. From your slicer.">i</span>
+                                    </label>
+                                    <input type="number" id="material_${i}_mass_g" value="${i === 1 ? '10' : '0'}" min="0"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                </div>
+
+                                <!-- Material cost -->
+                                <div>
+                                    <label for="material_${i}_cost_kg" class="block text-sm font-medium text-gray-700">
+                                        Cost ($/kg)
+                                        <span class="info-icon"
+                                            data-tooltip="Price per kilogram for this filament.">i</span>
+                                    </label>
+                                    <input type="number" id="material_${i}_cost_kg" value="20" min="0"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                </div>
+
+                                <!-- Material type -->
+                                <div>
+                                    <label for="material_${i}_type" class="block text-sm font-medium text-gray-700">
+                                        Material Type
+                                    </label>
+                                    <select id="material_${i}_type"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                        <optgroup label="Common">
+                                            <option value="1.24" ${i === 1 ? 'selected' : ''}>PLA (1.24 g/cm³)</option>
+                                            <option value="1.27">PETG (1.27 g/cm³)</option>
+                                            <option value="1.04">ABS (1.04 g/cm³)</option>
+                                            <option value="1.06">ASA (1.06 g/cm³)</option>
+                                        </optgroup>
+                                        <optgroup label="Engineering/Flexible">
+                                            <option value="1.20">TPU/TPE (1.20 g/cm³)</option>
+                                            <option value="1.08">Nylon (PA) (1.08 g/cm³)</option>
+                                            <option value="1.21">Polycarbonate (PC) (1.20 g/cm³)</option>
+                                        </optgroup>
+                                        <optgroup label="Other">
+                                            <option value="custom">Add New Custom...</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+
+                                <!-- Custom density input (hidden by default) -->
+                                <div id="material_${i}_density_custom_wrapper" class="hidden sm:col-span-3">
+                                    <label for="material_${i}_density_custom"
+                                        class="block text-sm font-medium text-gray-700">Custom Density (g/cm³)</label>
+                                    <input type="number" id="material_${i}_density_custom" value="1.24" min="0" step="0.01"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                </div>
+
+                                <!-- Material info box -->
+                                <div id="material_${i}_info" class="material-info sm:col-span-3">
+                                    <!-- Content dynamically inserted by JS -->
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', materialHTML);
+
+                    // Add event listeners for this material
+                    setTimeout(() => {
+                        const typeSelect = document.getElementById(`material_${i}_type`);
+                        if (typeSelect) {
+                            typeSelect.addEventListener('input', () => {
+                                toggleCustomDensity(`material_${i}_type`, `material_${i}_density_custom_wrapper`);
+                                updateMaterialInfo(`material_${i}_type`, `material_${i}_info`);
+                            });
+                            // Trigger initial update
+                            updateMaterialInfo(`material_${i}_type`, `material_${i}_info`);
+                        }
+
+                        // Add to allInputs for calculation recalc
+                        const massInput = document.getElementById(`material_${i}_mass_g`);
+                        const costInput = document.getElementById(`material_${i}_cost_kg`);
+                        const densityInput = document.getElementById(`material_${i}_density_custom`);
+                        if (massInput) massInput.addEventListener('input', calculateCost);
+                        if (costInput) costInput.addEventListener('input', calculateCost);
+                        if (densityInput) densityInput.addEventListener('input', calculateCost);
+                    }, 0);
+                }
+            }
+
+            /**
              * Updates the material info box.
              * @param {string} selectId - The ID of the material <select> element.
              * @param {string} infoBoxId - The ID of the info box <div>.
@@ -1521,21 +1736,23 @@
                 // --- 1. Get All Input Values ---
 
                 // Job Parameters
-                const N_parts = getVal('parts_per_program');
-                const t_program = getVal('program_length_hr'); // hours
-                const m_model_g = getVal('model_material_g'); // grams
-                const m_support_g = getVal('support_material_g'); // grams
+                const N_parts = getVal('parts_per_program'); // parts per plate
+                const N_plates = getVal('number_of_plates'); // number of plates for job
+                const t_program = getVal('program_length_hr'); // hours per plate
+                const m_model_g = getVal('model_material_g'); // grams per plate
+                const m_support_g = getVal('support_material_g'); // grams per plate
                 const failure_rate = getVal('failure_rate') / 100; // as decimal
 
                 // Material & Labor
-                const p_model_kg = getVal('model_material_cost_kg'); // $/kg
+                const p_model_kg = getVal('model_material_cost_kg'); // $/kg (used for legacy/fallback)
                 const p_support_kg = getVal('support_material_cost_kg'); // $/kg
                 const p_hourlywage = getVal('hourly_wage'); // $/hour
                 const t_prep_min = getVal('prep_slicing_time'); // minutes/build plate
                 const t_manual_min = getVal('manual_labor_time'); // minutes/build plate
 
                 // Densities
-                const d_model = getDensity('model_material_type', 'model_material_density_custom'); // g/cm³
+                // For nozzle wear calculations, use first material's density as representative
+                const d_model = getDensity('material_1_type', 'material_1_density_custom'); // g/cm³
                 const d_support = getDensity('support_material_type', 'support_material_density_custom'); // g/cm³
 
                 // Machine Operation
@@ -1565,10 +1782,9 @@
 
                 // --- 2. Perform Calculations (based on article) ---
 
-                // --- Helper Calcs: Volumes (V) ---
-                // Volume = Mass / Density. V_model and V_support in cm³
+                // --- Helper Calcs: Support Material Volume (V) ---
+                // Volume = Mass / Density. V_support in cm³
                 // Validation: Ensure density > 0 to avoid division by zero
-                const V_model_total = (d_model > 0) ? (m_model_g / d_model) : 0;
                 const V_support_total = (d_support > 0) ? (m_support_g / d_support) : 0;
 
                 // --- Helper Calcs: Lifespan Conversions ---
@@ -1585,21 +1801,73 @@
                 // Step 2: grams / density (g/cm³) = cm³
                 // Result: Lifetime_Volume_cm³ = (Lifetime_Mass_kg * 1000) / Density_g/cm³
                 //
+                // For model materials, use first material's density as representative for nozzle wear
                 // Validation: Ensure density > 0 to avoid division by zero
                 const V_m_lifespan = (d_model > 0) ? ((m_model_tip_lifespan_kg * 1000) / d_model) : 0;
                 const V_s_lifespan = (d_support > 0) ? ((m_support_tip_lifespan_kg * 1000) / d_support) : 0;
 
 
-                // --- Cost Component 1: Material (C_material) (Eq 1, modified) ---
-                // We use mass (g) and price per kg ($/kg)
-                const C_model = (m_model_g / 1000) * p_model_kg;
+                // --- Cost Component 1: Material (C_material) (Eq 1, modified, multi-material) ---
+                // Loop through all model materials and sum costs
+                const num_model_materials = parseInt(getStr('num_model_materials') || '1');
+                let C_material_build_plate = 0;
+                let total_model_mass_g = 0;
+                let total_model_volume_cm3 = 0;
+                const materials = []; // Store material details for quote
+                
+                // Calculate cost for each model material
+                for (let i = 1; i <= num_model_materials; i++) {
+                    const mass_g = getVal(`material_${i}_mass_g`);
+                    const cost_kg = getVal(`material_${i}_cost_kg`);
+                    const material_type = getStr(`material_${i}_type`) || 'PLA';
+                    const density = getDensity(`material_${i}_type`, `material_${i}_density_custom`);
+                    
+                    // Material cost
+                    const material_cost = (mass_g / 1000) * cost_kg;
+                    C_material_build_plate += material_cost;
+                    
+                    // Track totals for tooling calculations
+                    total_model_mass_g += mass_g;
+                    if (density > 0) {
+                        total_model_volume_cm3 += (mass_g / density);
+                    }
+                    
+                    // Store for quote display
+                    materials.push({
+                        name: getMaterialName(`material_${i}_type`),
+                        mass_g: mass_g,
+                        cost_kg: cost_kg,
+                        cost: material_cost
+                    });
+                }
+                
+                // Support material (separate, optional)
                 const C_support = (m_support_g / 1000) * p_support_kg;
-                const C_material_build_plate = C_model + C_support;
+                C_material_build_plate += C_support;
+                
+                // Add support material to materials array if used
+                if (m_support_g > 0) {
+                    materials.push({
+                        name: getMaterialName('support_material_type') + ' (Support)',
+                        mass_g: m_support_g,
+                        cost_kg: p_support_kg,
+                        cost: C_support
+                    });
+                }
 
-                // --- Cost Component 2: Labor (C_labor) (Eq 6, v2) ---
+                // --- Cost Component 2: Labor (C_labor) (Eq 6, v2, expanded) ---
+                // Pre-print labor (per plate): slicing, bed prep, removal
                 const t_build_plate_labor_min = t_prep_min + t_manual_min;
+                
+                // Per-part finishing labor: sanding, painting, etc. per part
                 const t_part_labor_min = t_finishing_min_part * N_parts;
-                const t_total_labor_hr = (t_build_plate_labor_min + t_part_labor_min) / 60;
+                
+                // Per-plate finishing labor: handling, packing, QC per plate
+                const t_finishing_min_plate = getVal('finishing_labor_time_plate'); // minutes/plate
+                const t_plate_finishing_labor_min = t_finishing_min_plate;
+                
+                // Total labor time in hours
+                const t_total_labor_hr = (t_build_plate_labor_min + t_part_labor_min + t_plate_finishing_labor_min) / 60;
                 const C_labor_build_plate = p_hourlywage * t_total_labor_hr;
 
                 // --- Cost Component 3: Machine Operation (C_machine) (Eq 3 & 4, expanded) ---
@@ -1612,14 +1880,15 @@
                 const C_machine_hr = C_depreciation_hr + p_maintenance_hr + C_power_hr;
                 const C_machine_build_plate = C_machine_hr * t_program;
 
-                // --- Cost Component 4: Tooling (C_tooling) (Eq 5, modified) ---
+                // --- Cost Component 4: Tooling (C_tooling) (Eq 5, modified, multi-material) ---
                 // C_bed = (Bed Cost / Bed Lifespan_hr) * Program_hr
                 // Validation: Check lifespan > 0 to avoid division by zero
                 const C_bed = (t_bed_lifespan > 0) ? (p_bed / t_bed_lifespan) * t_program : 0;
                 
-                // C_nozzle = (Nozzle Cost / Nozzle Lifespan_cm³) * Volume_cm³
+                // C_nozzle = (Nozzle Cost / Nozzle Lifespan_cm³) * Total_Volume_cm³
+                // Use aggregated model material volume from all materials
                 // Validation: Check V_m_lifespan > 0 to avoid division by zero
-                const C_model_tip = (V_m_lifespan > 0) ? (p_model_tip / V_m_lifespan) * V_model_total : 0;
+                const C_model_tip = (V_m_lifespan > 0) ? (p_model_tip / V_m_lifespan) * total_model_volume_cm3 : 0;
                 
                 // Check if separate support nozzle is used
                 // Validation: Check both cost and lifespan > 0 before division
@@ -1642,52 +1911,101 @@
 
                 // --- 3. Calculate Totals (Eq 7, expanded) ---
 
-                // C_subtotal_build_plate = Sum of all base costs
+                // C_subtotal_build_plate = Sum of all base costs FOR ONE PLATE
                 const C_subtotal_build_plate = C_material_build_plate + C_labor_build_plate + C_machine_build_plate + C_tooling_build_plate + C_postprocess_build_plate;
 
-                // C_failure_markup = Cost to account for failures
+                // C_failure_markup = Cost to account for failures (per plate)
                 const C_failure_markup = (failure_rate > 0 && failure_rate < 1) ?
                     (C_subtotal_build_plate / (1 - failure_rate)) - C_subtotal_build_plate : 0;
 
-                // C_total_build_plate = Base cost + Failure markup
+                // C_total_build_plate = Base cost + Failure markup (per plate)
                 const C_total_build_plate = C_subtotal_build_plate + C_failure_markup;
 
-                // C_total_per_part = Total build plate cost / number of parts
+                // C_total_per_part = Total build plate cost / number of parts per plate
                 const C_total_per_part = (N_parts > 0) ? (C_total_build_plate / N_parts) : 0;
 
-                // C_markup_per_part = Markup % applied to cost per part
-                const C_markup_per_part = C_total_per_part * markup_percent;
+                // --- Calculate Markup (Percentage or Flat Dollar) ---
+                const markupTypeElement = document.querySelector('input[name="markup_type"]:checked');
+                const markupType = markupTypeElement ? markupTypeElement.value : 'percent';
+                let C_markup_per_part = 0;
+                let C_markup_per_plate = 0;
+                
+                if (markupType === 'percent') {
+                    // Percentage markup: applied to cost per part
+                    C_markup_per_part = C_total_per_part * markup_percent;
+                    C_markup_per_plate = C_markup_per_part * N_parts;
+                } else if (markupType === 'flat') {
+                    // Flat dollar markup: applied per build plate, then divided by parts
+                    const markup_flat = getVal('markup_flat_dollar');
+                    C_markup_per_plate = markup_flat;
+                    C_markup_per_part = (N_parts > 0) ? (markup_flat / N_parts) : 0;
+                }
 
-                // C_final_quote = Final price to charge customer
-                const C_final_quote = C_total_per_part + C_markup_per_part;
+                // C_final_quote_per_part = Final price per part to charge customer
+                const C_final_quote_per_part = C_total_per_part + C_markup_per_part;
+                
+                // C_final_quote_per_plate = Final price per plate (with markup)
+                const C_final_quote_per_plate = C_total_build_plate + C_markup_per_plate;
+
+                // --- BATCH JOB CALCULATIONS (Multiple Plates) ---
+                const N_parts_total = N_parts * N_plates; // Total parts across all plates
+                const t_program_total = t_program * N_plates; // Total print time for all plates
+                const total_mass_g_per_plate = total_model_mass_g + m_support_g; // Mass per plate (all materials)
+                const total_mass_g_total = total_mass_g_per_plate * N_plates; // Total mass all plates
+
+                // Total job costs (all plates)
+                const C_material_total = C_material_build_plate * N_plates;
+                const C_labor_total = C_labor_build_plate * N_plates;
+                const C_machine_total = C_machine_build_plate * N_plates;
+                const C_tooling_total = C_tooling_build_plate * N_plates;
+                const C_postprocess_total = C_postprocess_build_plate * N_plates;
+                const C_subtotal_total = C_subtotal_build_plate * N_plates;
+                const C_failure_total = C_failure_markup * N_plates;
+                const C_total_job_base = C_total_build_plate * N_plates;
+                const C_markup_total = C_markup_per_plate * N_plates;
+                const C_final_quote_total = C_final_quote_per_plate * N_plates;
 
                 // --- 4. Calculate Quick Metrics ---
-                const total_mass_g = m_model_g + m_support_g;
                 // Validation: Check divisors > 0 to avoid division by zero
                 const C_per_hour = (t_program > 0) ? (C_total_build_plate / t_program) : 0;
-                const C_per_gram = (total_mass_g > 0) ? (C_total_build_plate / total_mass_g) : 0;
+                const C_per_gram = (total_mass_g_per_plate > 0) ? (C_total_build_plate / total_mass_g_per_plate) : 0;
 
                 // --- 5. Store values for Quote Modal ---
                 lastCalculatedCosts = {
-                    C_final_quote, C_total_per_part, C_markup_per_part,
+                    // Per-part pricing
+                    C_final_quote_per_part, C_total_per_part, C_markup_per_part,
+                    
+                    // Per-plate costs
                     C_total_build_plate, C_material_build_plate, C_labor_build_plate,
                     C_machine_build_plate, C_tooling_build_plate, C_postprocess_build_plate,
-                    C_subtotal_build_plate, C_failure_markup,
-                    N_parts, t_program, total_mass_g, C_per_hour, C_per_gram
+                    C_subtotal_build_plate, C_failure_markup, C_final_quote_per_plate,
+                    
+                    // Total job costs (all plates)
+                    C_material_total, C_labor_total, C_machine_total, C_tooling_total, 
+                    C_postprocess_total, C_subtotal_total, C_failure_total,
+                    C_total_job_base, C_markup_total, C_final_quote_total,
+                    
+                    // Quantities and metrics
+                    N_parts, N_plates, N_parts_total, t_program, t_program_total,
+                    total_mass_g_per_plate, total_mass_g_total, C_per_hour, C_per_gram,
+                    
+                    // Material details for quote
+                    materials: materials,
+                    num_model_materials: num_model_materials
                 };
 
                 // --- 6. Update UI ---
 
-                // Main Display
-                document.getElementById('summary_final_quote').textContent = formatCurrency(C_final_quote);
+                // Main Display - show per part price
+                document.getElementById('summary_final_quote').textContent = formatCurrency(C_final_quote_per_part);
                 document.getElementById('summary_total_cost_per_part').textContent = `(${formatCurrency(C_total_per_part)} base cost + ${formatCurrency(C_markup_per_part)} markup)`;
 
-                // Program/Part Summary
-                document.getElementById('summary_parts_count_1').textContent = N_parts;
-                document.getElementById('summary_total_build_plate_cost').textContent = formatCurrency(C_total_build_plate);
+                // Program/Part Summary - show batch info
+                document.getElementById('summary_parts_count_1').textContent = N_parts_total;
+                document.getElementById('summary_total_build_plate_cost').textContent = formatCurrency(C_final_quote_total);
                 document.getElementById('summary_base_cost_per_part').textContent = formatCurrency(C_total_per_part);
 
-                // Cost Breakdown
+                // Cost Breakdown - show PER PLATE costs (as these are more useful for understanding the breakdown)
                 document.getElementById('summary_material_cost').textContent = formatCurrency(C_material_build_plate);
                 document.getElementById('summary_labor_cost').textContent = formatCurrency(C_labor_build_plate);
                 document.getElementById('summary_machine_cost').textContent = formatCurrency(C_machine_build_plate);
@@ -1699,9 +2017,9 @@
                 document.getElementById('summary_failure_cost').textContent = formatCurrency(C_failure_markup);
                 document.getElementById('summary_total_cost').textContent = formatCurrency(C_total_build_plate);
 
-                // Quick Metrics
+                // Quick Metrics - show per plate metrics
                 document.getElementById('summary_total_time').textContent = `${formatNum(t_program, 2)} hr`;
-                document.getElementById('summary_total_mass').textContent = `${formatNum(total_mass_g, 1)} g`;
+                document.getElementById('summary_total_mass').textContent = `${formatNum(total_mass_g_per_plate, 1)} g`;
                 document.getElementById('summary_cost_per_hour').textContent = formatCurrency(C_per_hour);
                 document.getElementById('summary_cost_per_gram').textContent = formatCurrency(C_per_gram);
 
@@ -1941,19 +2259,33 @@
                 // Populate modal with data from last calculation
                 const customer = getStr('quote_customer') || "N/A";
                 const partName = getStr('quote_part_name') || "N/A";
-                const materialName = getMaterialName('model_material_type');
+                
+                // Build materials list
+                let materialText = '';
+                if (lastCalculatedCosts.materials && lastCalculatedCosts.materials.length > 0) {
+                    materialText = lastCalculatedCosts.materials.map(mat => {
+                        return `${mat.name}: ${formatNum(mat.mass_g, 1)}g @ ${formatCurrency(mat.cost_kg)}/kg`;
+                    }).join('<br>');
+                } else {
+                    materialText = 'N/A';
+                }
 
                 document.getElementById('quote_date').textContent = new Date().toLocaleDateString();
                 document.getElementById('quote_customer_name').textContent = customer;
                 document.getElementById('quote_part_name_val').textContent = partName;
-                document.getElementById('quote_material_val').textContent = materialName;
-                document.getElementById('quote_time_val').textContent = `${formatNum(lastCalculatedCosts.t_program, 2)} hr`;
+                document.getElementById('quote_material_val').innerHTML = materialText;
+                
+                // Show per-plate time and total job time if multiple plates
+                const timeText = lastCalculatedCosts.N_plates > 1 
+                    ? `${formatNum(lastCalculatedCosts.t_program, 2)} hr/plate (${formatNum(lastCalculatedCosts.t_program_total, 2)} hr total)`
+                    : `${formatNum(lastCalculatedCosts.t_program, 2)} hr`;
+                document.getElementById('quote_time_val').textContent = timeText;
 
                 document.getElementById('quote_item_name').textContent = partName;
-                document.getElementById('quote_quantity_val').textContent = lastCalculatedCosts.N_parts;
-                document.getElementById('quote_price_per_val').textContent = formatCurrency(lastCalculatedCosts.C_final_quote);
+                document.getElementById('quote_quantity_val').textContent = lastCalculatedCosts.N_parts_total;
+                document.getElementById('quote_price_per_val').textContent = formatCurrency(lastCalculatedCosts.C_final_quote_per_part);
 
-                const total = lastCalculatedCosts.C_final_quote * lastCalculatedCosts.N_parts;
+                const total = lastCalculatedCosts.C_final_quote_total;
                 document.getElementById('quote_total_val').textContent = formatCurrency(total);
                 document.getElementById('quote_grand_total_val').textContent = formatCurrency(total);
 
@@ -2097,19 +2429,43 @@
 
             // --- EVENT LISTENERS ---
 
+            // Initialize material groups on page load
+            generateMaterialGroups(1); // Start with 1 material
+            
+            // Add listener for number of materials selector
+            const numMaterialsSelect = document.getElementById('num_model_materials');
+            if (numMaterialsSelect) {
+                numMaterialsSelect.addEventListener('change', (e) => {
+                    const numMaterials = parseInt(e.target.value);
+                    generateMaterialGroups(numMaterials);
+                    calculateCost();
+                });
+            }
+
             // Add 'input' event listener to all inputs to recalculate
             allInputs.forEach(input => {
                 input.addEventListener('input', calculateCost);
             });
 
-            // Add listeners for custom density toggles
-            document.getElementById('model_material_type').addEventListener('input', () => {
-                toggleCustomDensity('model_material_type', 'model_material_density_custom_wrapper');
-                updateMaterialInfo('model_material_type', 'model_material_info');
-            });
-            document.getElementById('support_material_type').addEventListener('input', () => {
+            // Add listeners for custom density toggles (support material only now)
+            document.getElementById('support_material_type')?.addEventListener('input', () => {
                 toggleCustomDensity('support_material_type', 'support_material_density_custom_wrapper');
                 updateMaterialInfo('support_material_type', 'support_material_info');
+            });
+
+            // Add listener for currency selector
+            const currencySelector = document.getElementById('currency_selector');
+            if (currencySelector) {
+                currencySelector.addEventListener('change', calculateCost);
+            }
+
+            // Add listeners for markup type radio buttons
+            const markupTypeRadios = document.querySelectorAll('input[name="markup_type"]');
+            markupTypeRadios.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    toggleMarkupType();
+                    calculateCost();
+                });
             });
 
             // Add listeners for Save/Load buttons
@@ -2220,7 +2576,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 8, 2025: <a data-proofer-ignore href="https://github.com/minimal3dp/minimal3dp.github.io/commit/771303c253c24705a2d0d40d688eb1e313beba90">Code for calculator now working (771303c2)</a>
+  Last modified November 10, 2025: <a data-proofer-ignore href="https://github.com/minimal3dp/minimal3dp.github.io/commit/ee3cc9d4f0e4ac6d170741509bbc313314ea695a">Updated calculator (ee3cc9d4)</a>
 </div>
 
 </div>
