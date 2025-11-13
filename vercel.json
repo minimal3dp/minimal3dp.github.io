@@ -2,12 +2,19 @@
   "version": 2,
   "name": "minimal3dp",
   "framework": "hugo",
-  "buildCommand": "npm run build:production",
+  "buildCommand": "hugo --gc --minify",
   "outputDirectory": "public",
   "installCommand": "npm install",
   "devCommand": "hugo server --buildDrafts --buildFuture",
   "env": {
-    "HUGO_VERSION": "0.152.2"
+    "HUGO_VERSION": "0.152.2",
+    "GO_VERSION": "1.24"
+  },
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.152.2",
+      "GO_VERSION": "1.24"
+    }
   },
   "headers": [
     {
