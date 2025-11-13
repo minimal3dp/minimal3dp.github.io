@@ -1,19 +1,16 @@
 {
   "version": 2,
-  "name": "minimal3dp",
-  "buildCommand": "bash build.sh",
-  "outputDirectory": "public",
-  "installCommand": "npm install",
-  "devCommand": "hugo server --buildDrafts --buildFuture",
-  "env": {
-    "HUGO_VERSION": "0.152.2",
-    "GO_VERSION": "1.24"
-  },
-  "build": {
-    "env": {
-      "HUGO_VERSION": "0.152.2",
-      "GO_VERSION": "1.24"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
     }
+  ],
+  "env": {
+    "HUGO_VERSION": "0.152.2"
   },
   "headers": [
     {
