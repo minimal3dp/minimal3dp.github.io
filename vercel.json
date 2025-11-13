@@ -1,8 +1,7 @@
 {
   "version": 2,
   "name": "minimal3dp",
-  "framework": "hugo",
-  "buildCommand": "hugo --gc --minify",
+  "buildCommand": "bash build.sh",
   "outputDirectory": "public",
   "installCommand": "npm install",
   "devCommand": "hugo server --buildDrafts --buildFuture",
