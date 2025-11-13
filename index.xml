@@ -965,10 +965,12 @@ verbose: True
  /* Custom style for the sticky summary box */
  .sticky-summary {
  position: sticky;
- top: 1.5rem;
- /* 24px */
+ top: 6rem;
+ /* 96px - Increased to prevent overlap with site header on scroll */
  align-self: start;
  /* Prevents stretching to grid height */
+ z-index: 10;
+ /* Ensure proper stacking order */
  }
 
  /* Style for the material info boxes */
