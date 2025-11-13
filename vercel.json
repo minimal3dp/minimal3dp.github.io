@@ -1,16 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public"
-      }
-    }
-  ],
+  "framework": "hugo",
+  "buildCommand": "hugo --gc --minify",
+  "outputDirectory": "public",
+  "installCommand": "npm install",
   "env": {
-    "HUGO_VERSION": "0.152.2"
+    "HUGO_VERSION": "0.152.2",
+    "HUGO_MODULE_WORKSPACE": "off"
   },
   "headers": [
     {
