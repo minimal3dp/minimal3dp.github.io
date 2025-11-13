@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "curl -L https://go.dev/dl/go1.21.5.linux-amd64.tar.gz | tar -C /tmp -xzf - && curl -L https://github.com/gohugoio/hugo/releases/download/v0.152.2/hugo_extended_0.152.2_linux-amd64.tar.gz | tar -xzf - -C /tmp && /tmp/go/bin/go version && /tmp/hugo version && /tmp/hugo --gc --minify",
+  "buildCommand": "bash build.sh",
   "outputDirectory": "public",
   "installCommand": "npm install",
   "env": {
