@@ -948,6 +948,407 @@ GitHub: github.com/minimal3dp
 
 <Brief description of what tool does>
 
+---
+
+## 📝 Medium.com Cross-Posting Strategy
+
+### Why Use Medium?
+
+**Benefits:**
+- **Expanded Reach:** Medium has 100M+ monthly readers
+- **Built-in Audience:** Tap into Medium's recommendation algorithm
+- **Backlinks:** All Medium posts link back to minimal3dp.com
+- **SEO:** Canonical tags prevent duplicate content penalties
+- **Authority:** Medium posts rank well in Google (domain rating 95+)
+- **Monetization:** Medium Partner Program ($5-50/article for high performers)
+
+**Your Profile:** https://medium.com/@minimal3dp
+
+### Hugo → Medium Workflow
+
+#### Option 1: Manual Cross-Posting (Recommended - Best Control)
+
+**Process:**
+1. Publish on minimal3dp.com first (establish ownership)
+2. Wait 24-48 hours for Google to index
+3. Copy content to Medium
+4. Add canonical URL pointing to original
+5. Add call-to-action linking to minimal3dp.com
+
+**Implementation:**
+
+1. **Write and Publish on Hugo Site:**
+```bash
+hugo new blog/posts/my-post.md
+# Write content
+hugo server -D  # Preview
+# Set draft: false
+git commit -am "Add new post"
+git push  # Auto-deploys to Vercel
+```
+
+2. **Wait for Google Indexing:**
+- Check Google Search Console: URL Inspection tool
+- Confirm URL is indexed (usually 24-48 hours)
+
+3. **Cross-Post to Medium:**
+- Go to https://medium.com/new-story
+- Copy Markdown content from Hugo
+- Paste into Medium editor
+- Format images (reupload if needed)
+- Add canonical URL (see below)
+- Add intro paragraph with CTA
+
+4. **Set Canonical URL (Critical for SEO):**
+```
+Medium Editor → Story Settings (three dots menu) → Advanced Settings → Canonical URL
+
+Enter: https://minimal3dp.com/blog/posts/my-post
+```
+
+**This tells Google:** "This is a republished version. The original is on minimal3dp.com."
+
+5. **Add Medium-Specific Elements:**
+
+**Intro Paragraph (before original content):**
+```
+Originally published at minimal3dp.com: https://minimal3dp.com/blog/posts/my-post
+
+For interactive calculators, video tutorials, and more free tools, visit minimal3dp.com.
+
+━━━━━━━━━━━━━━━━━━━━━
+```
+
+**End CTA (after original content):**
+```
+━━━━━━━━━━━━━━━━━━━━━
+
+👉 Read the full guide with interactive tools: https://minimal3dp.com/blog/posts/my-post
+
+🎥 Watch the video version: https://youtube.com/watch?v=VIDEO_ID
+
+🔧 Free 3D Printing Tools: https://minimal3dp.com/tools
+
+💬 Join our community on Discord: [link]
+
+📧 Subscribe to our newsletter for more 3D printing tips: [link]
+```
+
+6. **Choose Publication (Optional):**
+- Submit to relevant Medium publications:
+  - "Towards Data Science" (for technical content)
+  - "Better Programming" (for code/tools)
+  - "3D Printing" publications
+- Increases reach but reduces control
+
+7. **Add Tags (5 max):**
+- Primary keyword (e.g., "3D Printing")
+- Secondary keywords ("Klipper", "Flow Calibration")
+- Material/brand names ("PLA", "Bambu Lab")
+
+8. **Publish on Medium:**
+- Publish immediately or schedule
+- Share on Twitter, Discord, LinkedIn
+
+#### Option 2: Automated Cross-Posting (Advanced - Requires Setup)
+
+**Tools Available:**
+
+**A. Medium API + GitHub Actions (Free, Most Control)**
+
+Create `.github/workflows/medium-crosspost.yml`:
+```yaml
+name: Cross-post to Medium
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/blog/posts/**'
+
+jobs:
+  crosspost:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests python-frontmatter markdown2
+      
+      - name: Cross-post to Medium
+        env:
+          MEDIUM_TOKEN: ${{ secrets.MEDIUM_TOKEN }}
+        run: python .github/scripts/crosspost-medium.py
+```
+
+Create `.github/scripts/crosspost-medium.py`:
+```python
+import os
+import requests
+import frontmatter
+import markdown2
+from pathlib import Path
+
+MEDIUM_TOKEN = os.environ['MEDIUM_TOKEN']
+SITE_URL = 'https://minimal3dp.com'
+
+def get_changed_posts():
+    # Get recently modified posts
+    # Implementation details...
+    pass
+
+def convert_hugo_to_medium(post_path):
+    # Read Hugo markdown
+    with open(post_path, 'r') as f:
+        post = frontmatter.load(f)
+    
+    # Convert to HTML
+    content_html = markdown2.markdown(post.content)
+    
+    # Get canonical URL from front matter
+    slug = Path(post_path).parent.name
+    canonical_url = f"{SITE_URL}/blog/posts/{slug}"
+    
+    # Add intro and CTA
+    intro = f'<p><em>Originally published at <a href="{canonical_url}">minimal3dp.com</a></em></p><hr>'
+    cta = f'''<hr>
+    <p>👉 <a href="{canonical_url}">Read the full guide with interactive tools</a></p>
+    <p>🔧 <a href="{SITE_URL}/tools">Free 3D Printing Tools</a></p>
+    '''
+    
+    full_content = intro + content_html + cta
+    
+    return {
+        'title': post['title'],
+        'content': full_content,
+        'canonicalUrl': canonical_url,
+        'tags': post.get('tags', [])[:5],  # Medium allows max 5 tags
+        'publishStatus': 'draft'  # Or 'public' for auto-publish
+    }
+
+def post_to_medium(data):
+    # Get user ID
+    me_response = requests.get(
+        'https://api.medium.com/v1/me',
+        headers={'Authorization': f'Bearer {MEDIUM_TOKEN}'}
+    )
+    user_id = me_response.json()['data']['id']
+    
+    # Create post
+    response = requests.post(
+        f'https://api.medium.com/v1/users/{user_id}/posts',
+        headers={
+            'Authorization': f'Bearer {MEDIUM_TOKEN}',
+            'Content-Type': 'application/json'
+        },
+        json=data
+    )
+    
+    return response.json()
+
+# Main execution
+changed_posts = get_changed_posts()
+for post in changed_posts:
+    medium_data = convert_hugo_to_medium(post)
+    result = post_to_medium(medium_data)
+    print(f"Posted to Medium: {result['data']['url']}")
+```
+
+**Setup Requirements:**
+1. Get Medium Integration Token: https://medium.com/me/settings/security
+2. Add token to GitHub Secrets: `MEDIUM_TOKEN`
+3. Configure workflow to trigger on new posts
+4. Test with draft posts first
+
+**Pros:**
+- Fully automated on git push
+- Maintains canonical URLs
+- Consistent formatting
+- Free (runs on GitHub Actions)
+
+**Cons:**
+- Requires Python scripting knowledge
+- Medium API has rate limits (publish status may be "draft" only)
+- Images need special handling (reupload to Medium or use absolute URLs)
+- Less control over final formatting
+
+**B. Zapier/Make.com (Paid, No-Code)**
+
+**Workflow:**
+1. RSS Trigger: New post on minimal3dp.com/blog/index.xml
+2. Delay: 48 hours (for Google indexing)
+3. Medium Action: Create draft post
+4. Manual review and publish
+
+**Pros:**
+- No coding required
+- Visual workflow builder
+- Reliable
+
+**Cons:**
+- Costs $20-30/month
+- Still requires manual review
+- Limited customization
+
+**C. IFTTT (Simple but Limited)**
+
+- Free tier available
+- RSS → Medium integration
+- Very basic, no canonical URL support
+- **Not recommended** (no SEO control)
+
+#### Option 3: Hybrid Approach (Best of Both Worlds)
+
+**Recommended Setup:**
+
+1. **Automated Draft Creation:**
+   - Use GitHub Actions to auto-create Medium drafts
+   - Set `publishStatus: 'draft'`
+   - Notification sent when draft ready
+
+2. **Manual Review & Publish:**
+   - Review formatting on Medium
+   - Adjust images if needed
+   - Add any Medium-specific enhancements
+   - Publish manually
+
+3. **Tracking:**
+   - Add UTM parameters to all links:
+     ```
+     https://minimal3dp.com/tools?utm_source=medium&utm_medium=referral&utm_campaign=cross-post
+     ```
+   - Track Medium referral traffic in GA4
+
+### Content Selection Strategy
+
+**What to Cross-Post:**
+
+✅ **High-Quality Tutorials:**
+- Klipper calibration guides
+- 3D printing troubleshooting
+- How-to guides
+- Best practices
+
+✅ **Product Reviews:**
+- Printer reviews
+- Filament comparisons
+- Tool comparisons
+
+✅ **Long-Form Content (1,500+ words):**
+- Medium algorithm favors depth
+- Better chance of curation
+
+✅ **Evergreen Content:**
+- Content that stays relevant
+- Not time-sensitive news
+
+❌ **Don't Cross-Post:**
+- Short posts (<800 words)
+- Time-sensitive news
+- Pure product listings
+- Tool pages (keep exclusive to minimal3dp.com)
+
+### Medium SEO Best Practices
+
+1. **Canonical URLs Always:**
+   - Every Medium post should have canonical URL pointing to minimal3dp.com
+   - This gives minimal3dp.com the SEO credit
+
+2. **Strategic Linking:**
+   - Link to minimal3dp.com in intro and conclusion
+   - Link to specific tools/calculators throughout
+   - Use descriptive anchor text
+
+3. **Image Optimization:**
+   - High-quality images (Medium compresses heavily)
+   - Add alt text in Hugo (copy to Medium)
+   - Include diagrams and screenshots
+
+4. **Engagement:**
+   - Respond to Medium comments
+   - Engage with readers
+   - Higher engagement = more recommendations
+
+5. **Publications:**
+   - Submit best content to relevant Medium publications
+   - Increases reach 5-10x
+   - Maintains your byline and links
+
+### Medium Monetization
+
+**Medium Partner Program:**
+- $5/month membership required to join
+- Earn based on reading time from members
+- Typical earnings: $5-50/article for niche content
+- Top articles: $100-500/month
+
+**Strategy:**
+- Cross-posted content earns passive income
+- Doesn't compete with Amazon Associates (both can coexist)
+- Additional revenue stream from same content
+
+### Success Metrics
+
+**Track Monthly:**
+- Medium views
+- Medium reads (full read-through)
+- Medium followers gained
+- Clicks to minimal3dp.com from Medium (GA4 referral traffic)
+- Medium Partner Program earnings (if enrolled)
+
+**Goals:**
+
+**Month 1:**
+- 5-10 cross-posts
+- 500-1,000 views
+- 50-100 followers
+- 50+ clicks to minimal3dp.com
+
+**Month 3:**
+- 20-30 cross-posts
+- 3,000-5,000 views
+- 300-500 followers
+- 300+ clicks to minimal3dp.com
+
+**Month 6:**
+- 40-60 cross-posts
+- 10,000-20,000 views
+- 1,000+ followers
+- 1,000+ clicks to minimal3dp.com
+- $20-50/month Medium earnings (if enrolled)
+
+### Recommended Workflow (Pragmatic)
+
+**Week 1-2: Manual Testing**
+1. Cross-post 3-5 existing Hugo posts manually
+2. Set canonical URLs correctly
+3. Track referral traffic in GA4
+4. Measure engagement (views, reads, clicks)
+
+**Week 3-4: Optimize Process**
+1. Create templates for intro/CTA
+2. Document workflow (screenshot tutorial)
+3. Decide if automation worth effort
+
+**Month 2+: Scale or Automate**
+- If manual works well: Continue (15 min per post)
+- If volume increases: Implement GitHub Actions automation
+- If budget allows: Use Zapier for convenience
+
+**Ideal Cadence:**
+- Publish on minimal3dp.com first
+- Cross-post to Medium 48 hours later
+- 1-2 cross-posts per week
+- Focus on best-performing Hugo content
+
+
+
 Perfect for <use cases>!
 ```
 

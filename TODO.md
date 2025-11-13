@@ -547,39 +547,104 @@ function trackCalculatorUse(calculatorName) {
 
 ---
 
+### 22. **Set Up Medium Cross-Posting** (3-4 hours)
+**Impact:** ⭐⭐⭐⭐ (Reach, backlinks, passive income)
+
+**Expand reach to Medium's 100M+ readers, drive traffic back to minimal3dp.com**
+
+**Phase 1: Manual Testing (Week 1-2)**
+- [ ] Create posting template (intro + CTA)
+- [ ] Cross-post 3-5 existing blog posts manually
+- [ ] Set canonical URLs correctly (Story Settings → Advanced → Canonical URL)
+- [ ] Add UTM tracking (`?utm_source=medium&utm_medium=referral`)
+- [ ] Track referral traffic in GA4
+- [ ] Measure engagement (views, reads, clicks to site)
+
+**Phase 2: Optimize Process (Week 3-4)**
+- [ ] Document workflow (screenshot tutorial)
+- [ ] Create Hugo front matter template with Medium metadata
+- [ ] Identify top 10 posts to cross-post
+- [ ] Test submitting to relevant Medium publications
+- [ ] Apply for Medium Partner Program (if desired)
+
+**Expected Results:**
+- 500-1,000 Medium views in first month
+- 50+ clicks back to minimal3dp.com
+- 50-100 Medium followers
+- Additional backlinks (DR 95 domain)
+
+**Time:** 3-4 hours
+
+**Reference:** See MINIMAL3DP_APP_GUIDE.md → Medium.com Cross-Posting Strategy
+
+---
+
+### 23. **Automate Medium Cross-Posting (GitHub Actions)** (6-8 hours)
+**Impact:** ⭐⭐⭐ (Efficiency, scale)
+
+**Only implement after manual testing proves valuable**
+
+**Steps:**
+- [ ] Get Medium Integration Token (https://medium.com/me/settings/security)
+- [ ] Add `MEDIUM_TOKEN` to GitHub Secrets
+- [ ] Create `.github/workflows/medium-crosspost.yml`
+- [ ] Create `.github/scripts/crosspost-medium.py`
+- [ ] Add Medium metadata to Hugo front matter:
+  ```yaml
+  medium_crosspost: true
+  medium_tags: ["3D Printing", "Klipper", "Tutorial"]
+  ```
+- [ ] Test with draft posts first
+- [ ] Configure to create drafts (manual review before publish)
+- [ ] Handle image conversions (absolute URLs)
+- [ ] Add error handling and notifications
+- [ ] Document automation workflow
+
+**Expected Results:**
+- Auto-create Medium drafts on git push
+- Save 10-15 mins per cross-post
+- Scale to 8-12 posts/month
+- Consistent formatting
+
+**Time:** 6-8 hours
+
+**Reference:** See MINIMAL3DP_APP_GUIDE.md → Medium.com Cross-Posting Strategy → Option 2
+
+---
+
 ## 🔮 FUTURE - BACKLOG
 
-### 22. Premium Features (40+ hours)
+### 24. Premium Features (40+ hours)
 - User accounts
 - Advanced calculators
 - Downloadable guides
 - Private community
 - Consultation scheduling
 
-### 23. Mobile App (100+ hours)
+### 25. Mobile App (100+ hours)
 - React Native/Flutter
 - Offline access
 - Push notifications
 - AR features
 
-### 24. Subdomain Tool Suite
+### 26. Subdomain Tool Suite
 - calc.minimal3dp.com
 - guides.minimal3dp.com
 - compare.minimal3dp.com
 - api.minimal3dp.com
 
-### 25. Community Features
+### 27. Community Features
 - Forum (Discourse)
 - Discord server
 - User gallery
 - Profile sharing
 
-### 26. Digital Products
+### 28. Digital Products
 - Ebook: "Complete Klipper Guide" ($9.99)
 - Video course ($49)
 - Profile packs ($14.99)
 
-### 27. Advanced SEO
+### 29. Advanced SEO
 - International SEO
 - Video schema
 - Local SEO
@@ -595,6 +660,7 @@ function trackCalculatorUse(calculatorName) {
 - YouTube: Subscribers, views
 - Amazon Associates: Clicks, conversions
 - Email list: New subscribers
+- Medium: Views, reads, referrals (if cross-posting)
 
 ### Monthly Reviews (30 mins)
 - Traffic growth vs last month
@@ -602,6 +668,7 @@ function trackCalculatorUse(calculatorName) {
 - Keyword rankings
 - Revenue
 - Backlinks
+- Medium performance (if cross-posting)
 
 ### Quarterly Goals
 
@@ -611,6 +678,7 @@ function trackCalculatorUse(calculatorName) {
 - $300/month affiliate revenue
 - Page 1 ranking for 5 keywords
 - 8,000 YouTube subscribers
+- 3,000 Medium views (if cross-posting)
 
 **Q2 2026:**
 - 25,000 monthly visitors
@@ -618,6 +686,7 @@ function trackCalculatorUse(calculatorName) {
 - $800/month affiliate revenue
 - Page 1 ranking for 15 keywords
 - 12,000 YouTube subscribers
+- 10,000 Medium views
 
 **Year End 2026:**
 - 50,000 monthly visitors
@@ -625,6 +694,7 @@ function trackCalculatorUse(calculatorName) {
 - $1,500/month affiliate revenue
 - Top 3 ranking for 10 keywords
 - 20,000 YouTube subscribers
+- 25,000 Medium views
 
 ---
 
