@@ -1624,7 +1624,42 @@ Minimal 3DP YouTube Banner
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
-&lt;h2 id="video-description"&gt;Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;</description></item><item><title>About Minimal 3DP</title><link>https://minimal3dp.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/about/</guid><description>&lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_567dd2861871d105.jpg" media="(max-width: 1200px)"&gt;
+&lt;h2 id="video-description"&gt;Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;</description></item><item><title/><link>https://minimal3dp.com/_templates/ga4-tracking-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/_templates/ga4-tracking-guide/</guid><description>&lt;h1 id="ga4-event-tracking-guide"&gt;GA4 Event Tracking Guide&lt;a class="td-heading-self-link" href="#ga4-event-tracking-guide" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; November 13, 2025&lt;br&gt;
+&lt;strong&gt;File Location:&lt;/strong&gt; &lt;code&gt;/layouts/partials/hooks/head-end.html&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This site uses a centralized GA4 event tracking library that automatically tracks user interactions and provides manual tracking functions for custom events.&lt;/p&gt;
+&lt;h2 id="tracking-functions-available"&gt;Tracking Functions Available&lt;a class="td-heading-self-link" href="#tracking-functions-available" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="1-affiliate-link-clicks"&gt;1. &lt;strong&gt;Affiliate Link Clicks&lt;/strong&gt;&lt;a class="td-heading-self-link" href="#1-affiliate-link-clicks" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;trackAffiliateClick&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;asin&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#000"&gt;title&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Automatic:&lt;/strong&gt; All links with &lt;code&gt;rel=&amp;quot;sponsored&amp;quot;&lt;/code&gt; are automatically tracked.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Manual Usage:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;a&lt;/span&gt; &lt;span style="color:#c4a000"&gt;href&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#34;https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#c4a000"&gt;onclick&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#34;trackAffiliateClick(&amp;#39;B0XXXXX&amp;#39;, &amp;#39;Product Name&amp;#39;)&amp;#34;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Buy Now
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;a&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;GA4 Event:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Event Name: &lt;code&gt;affiliate_click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Category: &lt;code&gt;Amazon&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Label: Product title&lt;/li&gt;
+&lt;li&gt;Product ID: ASIN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id="2-youtube-subscribe-clicks"&gt;2. &lt;strong&gt;YouTube Subscribe Clicks&lt;/strong&gt;&lt;a class="td-heading-self-link" href="#2-youtube-subscribe-clicks" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;trackYouTubeSubscribe&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;source&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Usage:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://minimal3dp.com/_templates/youtube-integration-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/_templates/youtube-integration-guide/</guid><description>&lt;h1 id="youtube-integration-usage-guide"&gt;YouTube Integration Usage Guide&lt;a class="td-heading-self-link" href="#youtube-integration-usage-guide" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="overview"&gt;Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This guide explains how to use the YouTube integration elements created for Minimal 3DP.&lt;/p&gt;
+&lt;h2 id="files-created"&gt;Files Created&lt;a class="td-heading-self-link" href="#files-created" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/content/_templates/youtube-description.txt&lt;/code&gt; - Template for YouTube video descriptions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/layouts/partials/youtube-subscribe-cta.html&lt;/code&gt; - Full CTA box for blog posts&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/layouts/partials/watch-on-youtube.html&lt;/code&gt; - Compact badge for tutorials&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id="1-youtube-video-description-template"&gt;1. YouTube Video Description Template&lt;a class="td-heading-self-link" href="#1-youtube-video-description-template" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; &lt;code&gt;/content/_templates/youtube-description.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy the template content&lt;/li&gt;
+&lt;li&gt;Replace &lt;code&gt;[page-url]&lt;/code&gt; with the actual blog post URL&lt;/li&gt;
+&lt;li&gt;Add your timestamps&lt;/li&gt;
+&lt;li&gt;Add product affiliate links if applicable&lt;/li&gt;
+&lt;li&gt;Paste into YouTube video description&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>About Minimal 3DP</title><link>https://minimal3dp.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/about/</guid><description>&lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_567dd2861871d105.jpg" media="(max-width: 1200px)"&gt;
 &lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_f4153452389ae995.jpg" media="(min-width: 1200px)"&gt;
 &lt;style&gt;
 #td-cover-block-0 {

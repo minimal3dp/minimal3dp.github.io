@@ -1,0 +1,57 @@
+🎯 [Brief 1-2 sentence description of what viewers will learn in this video]
+
+📖 FULL WRITTEN GUIDE: https://minimal3dp.com/[page-url]
+
+Get step-by-step instructions, additional tips, and downloadable resources on the website.
+
+━━━━━━━━━━━━━━━━━━━━━
+🔧 FREE TOOLS & RESOURCES
+━━━━━━━━━━━━━━━━━━━━━
+
+FDM Cost Calculator: https://minimal3dp.com/tools/m3dp-fdm-cost-calculator/
+Shrinkage Calculator: https://minimal3dp.com/tools/m3dp-shinkage-calculator/
+Klipper Calibration Guides: https://minimal3dp.com/klipper-calibration/
+All Tools: https://minimal3dp.com/tools/
+
+━━━━━━━━━━━━━━━━━━━━━
+⏱️ TIMESTAMPS
+━━━━━━━━━━━━━━━━━━━━━
+
+0:00 - Introduction
+[Add your timestamps here]
+[Example: 1:30 - Setting up the printer]
+[Example: 3:45 - First test print]
+[Example: 6:20 - Troubleshooting tips]
+[Example: 8:15 - Final results]
+
+━━━━━━━━━━━━━━━━━━━━━
+📬 STAY CONNECTED
+━━━━━━━━━━━━━━━━━━━━━
+
+🔔 Subscribe for more 3D printing tutorials: https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1
+🌐 Website: https://minimal3dp.com
+📧 Contact: contact@minimal3dp.com
+🐦 Twitter: https://twitter.com/Michael24919360
+
+━━━━━━━━━━━━━━━━━━━━━
+🏷️ PRODUCTS MENTIONED
+━━━━━━━━━━━━━━━━━━━━━
+
+[Add affiliate links to products shown in video]
+[Example: Filament Dryer: https://amazon.com/dp/ASIN?tag=mwf064-20]
+
+As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.
+
+━━━━━━━━━━━━━━━━━━━━━
+#️⃣ TAGS
+━━━━━━━━━━━━━━━━━━━━━
+
+#3dprinting #klipper #orcaslicer #3dprinter #fdm #tutorial #maker #diy
+
+━━━━━━━━━━━━━━━━━━━━━
+📌 ABOUT MINIMAL 3DP
+━━━━━━━━━━━━━━━━━━━━━
+
+Minimal 3DP provides expert 3D printing tutorials, honest product reviews, and professional tools to help you get the most out of your 3D printer. Whether you're calibrating Klipper, optimizing your slicer settings, or choosing the right filament, we've got you covered.
+
+New videos every week!
