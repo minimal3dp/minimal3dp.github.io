@@ -1,0 +1,18 @@
+{{/* Compact "Watch on YouTube" badge for tutorial pages */}}
+{{/* Usage: {{ partial "watch-on-youtube.html" (dict "videoId" "VIDEO_ID" "title" "Video Title") }} */}}
+
+{{ $videoId := .videoId }}
+{{ $title := .title | default "Watch on YouTube" }}
+
+{{ if $videoId }}
+<div class="watch-youtube-badge" style="background: #FF0000; color: #fff; padding: 12px 20px; border-radius: 8px; display: inline-flex; align-items: center; gap: 10px; margin: 20px 0; box-shadow: 0 3px 8px rgba(255,0,0,0.3);">
+  <i class="fab fa-youtube" style="font-size: 24px;"></i>
+  <a href="https://www.youtube.com/watch?v={{ $videoId }}" 
+     target="_blank"
+     rel="noopener"
+     onclick="trackYouTubeVideo('{{ $videoId }}', '{{ $title }}')"
+     style="color: #fff; text-decoration: none; font-weight: 600; font-size: 1em;">
+    ▶️ {{ $title }}
+  </a>
+</div>
+{{ end }}

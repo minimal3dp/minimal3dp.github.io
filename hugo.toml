@@ -77,8 +77,12 @@ google_site_verification = "gekyEs3f8YOHosuLYzm98WAde8kIZn31TT3drLkKEv4"
 # Site Identity
 author = "Mike Wilson"
 site_name = "Minimal 3DP"
+tagline = "3D Printing Tutorials, Reviews & Professional Tools"
 description = "Your complete 3D printing resource with expert tutorials, printer reviews, Klipper calibration guides, and professional FDM cost calculators."
 email = "contact@minimal3dp.com"
+
+# SEO
+keywords = "3d printing, klipper, orca slicer, 3d printer reviews, fdm calculator, 3d printing tutorials, filament guide, printer calibration"
 
 # Social Media
 twitter_creator = "@Michael24919360"
@@ -89,6 +93,7 @@ github_repo_name = "minimal3dp/minimal3dp.github.io"
 
 # Affiliate Configuration
 affiliate_tag = "mwf064-20"
+affiliate_disclosure = true
 
 # First one is picked as the Twitter card image if not set on page.
 images = ["/images/minimal3dp-og-1200x630.jpg"]

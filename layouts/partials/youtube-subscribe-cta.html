@@ -1,0 +1,37 @@
+{{/* YouTube Subscribe CTA for blog posts and tutorials */}}
+{{/* Usage: {{ partial "youtube-subscribe-cta.html" . }} */}}
+
+{{ $channelId := .Site.Params.youtube_channel_id }}
+{{ $subscribers := .Site.Params.youtube_subscribers }}
+
+{{ if $channelId }}
+<div class="youtube-subscribe-cta" style="background: linear-gradient(135deg, #FF0000 0%, #C30000 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+    <div style="font-size: 48px;">
+      <i class="fab fa-youtube" style="color: #fff;"></i>
+    </div>
+    <div style="text-align: left;">
+      <h3 style="color: #fff; margin: 0; font-size: 1.5em; font-weight: 700;">
+        📺 Watch on YouTube
+      </h3>
+      <p style="color: rgba(255,255,255,0.9); margin: 5px 0 0 0; font-size: 1em;">
+        {{ if $subscribers }}Join {{ $subscribers }} subscribers{{ else }}Subscribe for more tutorials{{ end }}
+      </p>
+    </div>
+  </div>
+  
+  <a href="https://www.youtube.com/channel/{{ $channelId }}?sub_confirmation=1" 
+     target="_blank"
+     rel="noopener"
+     onclick="trackYouTubeSubscribe('blog-cta')"
+     style="display: inline-block; background: #fff; color: #FF0000; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1em; margin-top: 20px; transition: transform 0.2s, box-shadow 0.2s;"
+     onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.3)';"
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';">
+    🔔 Subscribe Now
+  </a>
+  
+  <p style="color: rgba(255,255,255,0.8); margin-top: 15px; font-size: 0.9em;">
+    Get notified when we post new videos every week
+  </p>
+</div>
+{{ end }}

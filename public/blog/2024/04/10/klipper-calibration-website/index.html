@@ -80,6 +80,232 @@
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
+
+
+
+<script>
+
+
+
+
+
+
+function trackAffiliateClick(asin, title) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'affiliate_click', {
+      'event_category': 'Amazon',
+      'event_label': title || 'Unknown Product',
+      'product_id': asin,
+      'value': 1
+    });
+    console.log('GA4 Event: affiliate_click', { asin, title });
+  }
+}
+
+
+
+function trackYouTubeSubscribe(source) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'youtube_subscribe_click', {
+      'event_category': 'YouTube',
+      'event_label': source || 'Unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: youtube_subscribe_click', { source });
+  }
+}
+
+
+
+function trackYouTubeVideo(videoId, title) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'youtube_video_click', {
+      'event_category': 'YouTube',
+      'event_label': title || videoId,
+      'video_id': videoId,
+      'value': 1
+    });
+    console.log('GA4 Event: youtube_video_click', { videoId, title });
+  }
+}
+
+
+
+function trackRelatedPostClick(postTitle, postUrl) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'related_post_click', {
+      'event_category': 'Related Posts',
+      'event_label': postTitle,
+      'page_path': postUrl,
+      'value': 1
+    });
+    console.log('GA4 Event: related_post_click', { postTitle, postUrl });
+  }
+}
+
+
+
+function trackCalculatorUse(calculatorName, action) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'calculator_use', {
+      'event_category': 'Tools',
+      'event_label': calculatorName,
+      'calculator_action': action || 'calculate',
+      'value': 1
+    });
+    console.log('GA4 Event: calculator_use', { calculatorName, action });
+  }
+}
+
+
+
+function trackEmailSignup(formLocation, listType) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'email_signup', {
+      'event_category': 'Lead Generation',
+      'event_label': formLocation,
+      'list_type': listType || 'newsletter',
+      'value': 5
+    });
+    console.log('GA4 Event: email_signup', { formLocation, listType });
+  }
+}
+
+
+
+function trackVideoPlay(videoId, videoTitle) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'video_play', {
+      'event_category': 'Video Engagement',
+      'event_label': videoTitle || videoId,
+      'video_id': videoId,
+      'value': 2
+    });
+    console.log('GA4 Event: video_play', { videoId, videoTitle });
+  }
+}
+
+
+
+function trackCtaClick(ctaType, location) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'cta_click', {
+      'event_category': 'CTA',
+      'event_label': ctaType,
+      'cta_location': location || 'unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: cta_click', { ctaType, location });
+  }
+}
+
+
+
+function trackSiteSearch(searchQuery, resultsCount) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'search', {
+      'search_term': searchQuery,
+      'results_count': resultsCount || 0
+    });
+    console.log('GA4 Event: search', { searchQuery, resultsCount });
+  }
+}
+
+
+
+function trackOutboundLink(url, linkText) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'click', {
+      'event_category': 'Outbound Link',
+      'event_label': url,
+      'link_text': linkText || 'Unknown',
+      'transport_type': 'beacon'
+    });
+    console.log('GA4 Event: outbound_link', { url, linkText });
+  }
+}
+
+
+
+function trackFileDownload(fileName, fileType) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'file_download', {
+      'event_category': 'Download',
+      'event_label': fileName,
+      'file_extension': fileType || 'unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: file_download', { fileName, fileType });
+  }
+}
+
+
+
+
+
+
+document.addEventListener('click', function(e) {
+  const affiliateLink = e.target.closest('a[rel*="sponsored"]');
+  if (affiliateLink) {
+    const asin = affiliateLink.href.match(/\/dp\/([A-Z0-9]+)/);
+    const title = affiliateLink.getAttribute('data-product-name') || 
+                  affiliateLink.textContent.trim() || 
+                  'Unknown Product';
+    
+    if (asin && asin[1]) {
+      trackAffiliateClick(asin[1], title);
+    }
+  }
+});
+
+
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link && link.href) {
+    const isExternal = link.hostname !== window.location.hostname;
+    const isBlank = link.target === '_blank';
+    const isSponsored = link.rel && link.rel.includes('sponsored');
+    
+    
+    if ((isExternal || isBlank) && !isSponsored) {
+      const linkText = link.textContent.trim() || link.getAttribute('aria-label') || 'Unknown';
+      trackOutboundLink(link.href, linkText);
+    }
+  }
+});
+
+
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link && link.href) {
+    const url = link.href.toLowerCase();
+    const downloadExtensions = ['.pdf', '.stl', '.gcode', '.zip', '.cfg', '.json', '.txt', '.csv'];
+    const extension = downloadExtensions.find(ext => url.endsWith(ext));
+    
+    if (extension) {
+      const fileName = link.href.split('/').pop() || 'unknown';
+      trackFileDownload(fileName, extension.substring(1));
+    }
+  }
+});
+
+
+console.log('✅ GA4 Event Tracking Library Loaded');
+console.log('📊 Available tracking functions:', [
+  'trackAffiliateClick()',
+  'trackYouTubeSubscribe()',
+  'trackYouTubeVideo()',
+  'trackRelatedPostClick()',
+  'trackCalculatorUse()',
+  'trackEmailSignup()',
+  'trackVideoPlay()',
+  'trackCtaClick()',
+  'trackSiteSearch()',
+  'trackOutboundLink()',
+  'trackFileDownload()'
+]);
+</script>
+
   </head>
   <body class="td-page td-blog">
     <header>

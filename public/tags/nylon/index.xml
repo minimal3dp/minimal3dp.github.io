@@ -1,19 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Nylon on Minimal 3DP</title>
-    <link>http://localhost:1313/tags/nylon/</link>
-    <description>Recent content in Nylon on Minimal 3DP</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 13 Nov 2025 21:45:26 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nylon/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested</title>
-      <link>http://localhost:1313/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</link>
-      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</guid>
-      <description>&lt;p&gt;Choosing the right 3D printing filament can make or break your project. After years of testing dozens of brands and materials, I&amp;rsquo;ve compiled this comprehensive guide to help you find the perfect filament for any application.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quick Navigation:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#pla-filaments&#34;&gt;PLA Filaments&lt;/a&gt; (Beginner-friendly)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#petg-filaments&#34;&gt;PETG Filaments&lt;/a&gt; (Functional parts)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#abs-asa-filaments&#34;&gt;ABS &amp;amp; ASA&lt;/a&gt; (Heat &amp;amp; UV resistant)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#tpu-flexible-filaments&#34;&gt;TPU (Flexible)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#nylon-filaments&#34;&gt;Nylon&lt;/a&gt; (Engineering)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#specialty-materials&#34;&gt;Specialty Materials&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#support-materials&#34;&gt;Support Materials&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pla-filaments&#34;&gt;PLA Filaments&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#pla-filaments&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;PLA (Polylactic Acid) is the most popular 3D printing filament for good reason: it&amp;rsquo;s easy to print, doesn&amp;rsquo;t require a heated bed, and produces minimal odor. Perfect for beginners and decorative prints.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nylon on Minimal 3DP</title><link>https://minimal3dp.com/tags/nylon/</link><description>Recent content in Nylon on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 13 Nov 2025 21:45:26 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/tags/nylon/index.xml" rel="self" type="application/rss+xml"/><item><title>The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested</title><link>https://minimal3dp.com/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</link><pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</guid><description>&lt;p&gt;Choosing the right 3D printing filament can make or break your project. After years of testing dozens of brands and materials, I&amp;rsquo;ve compiled this comprehensive guide to help you find the perfect filament for any application.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quick Navigation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#pla-filaments"&gt;PLA Filaments&lt;/a&gt; (Beginner-friendly)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#petg-filaments"&gt;PETG Filaments&lt;/a&gt; (Functional parts)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#abs-asa-filaments"&gt;ABS &amp;amp; ASA&lt;/a&gt; (Heat &amp;amp; UV resistant)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#tpu-flexible-filaments"&gt;TPU (Flexible)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#nylon-filaments"&gt;Nylon&lt;/a&gt; (Engineering)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#specialty-materials"&gt;Specialty Materials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#support-materials"&gt;Support Materials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="pla-filaments"&gt;PLA Filaments&lt;a class="td-heading-self-link" href="#pla-filaments" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;PLA (Polylactic Acid) is the most popular 3D printing filament for good reason: it&amp;rsquo;s easy to print, doesn&amp;rsquo;t require a heated bed, and produces minimal odor. Perfect for beginners and decorative prints.&lt;/p&gt;</description></item></channel></rss>

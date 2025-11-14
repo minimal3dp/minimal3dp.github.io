@@ -21,17 +21,4 @@
     {{ end }}
   </div>
 </section>
-
-<script>
-function trackRelatedPostClick(postTitle, postUrl) {
-  if (typeof gtag === 'function') {
-    gtag('event', 'related_post_click', {
-      'event_category': 'Related Posts',
-      'event_label': postTitle,
-      'page_path': postUrl,
-      'value': 1
-    });
-  }
-}
-</script>
 {{ end }}

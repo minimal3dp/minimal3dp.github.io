@@ -1,0 +1,258 @@
+{{/* Centralized GA4 Event Tracking Library */}}
+{{/* This file contains all event tracking functions used across the site */}}
+{{/* Include this partial in your head or before </body> */}}
+
+<script>
+// ============================================================================
+// GA4 EVENT TRACKING LIBRARY
+// ============================================================================
+
+/**
+ * Track affiliate link clicks (Amazon Associates)
+ * @param {string} asin - Amazon product ASIN
+ * @param {string} title - Product title
+ */
+function trackAffiliateClick(asin, title) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'affiliate_click', {
+      'event_category': 'Amazon',
+      'event_label': title || 'Unknown Product',
+      'product_id': asin,
+      'value': 1
+    });
+    console.log('GA4 Event: affiliate_click', { asin, title });
+  }
+}
+
+/**
+ * Track YouTube subscribe button clicks
+ * @param {string} source - Where the click came from (e.g., 'blog-cta', 'sidebar', 'homepage')
+ */
+function trackYouTubeSubscribe(source) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'youtube_subscribe_click', {
+      'event_category': 'YouTube',
+      'event_label': source || 'Unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: youtube_subscribe_click', { source });
+  }
+}
+
+/**
+ * Track YouTube video link clicks (watch on YouTube badges)
+ * @param {string} videoId - YouTube video ID
+ * @param {string} title - Video title or description
+ */
+function trackYouTubeVideo(videoId, title) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'youtube_video_click', {
+      'event_category': 'YouTube',
+      'event_label': title || videoId,
+      'video_id': videoId,
+      'value': 1
+    });
+    console.log('GA4 Event: youtube_video_click', { videoId, title });
+  }
+}
+
+/**
+ * Track related post clicks
+ * @param {string} postTitle - Title of the clicked post
+ * @param {string} postUrl - URL of the clicked post
+ */
+function trackRelatedPostClick(postTitle, postUrl) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'related_post_click', {
+      'event_category': 'Related Posts',
+      'event_label': postTitle,
+      'page_path': postUrl,
+      'value': 1
+    });
+    console.log('GA4 Event: related_post_click', { postTitle, postUrl });
+  }
+}
+
+/**
+ * Track calculator usage (triggered when user interacts with calculators)
+ * @param {string} calculatorName - Name of the calculator (e.g., 'fdm-cost', 'shrinkage')
+ * @param {string} action - Action performed (e.g., 'calculate', 'reset', 'export')
+ */
+function trackCalculatorUse(calculatorName, action) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'calculator_use', {
+      'event_category': 'Tools',
+      'event_label': calculatorName,
+      'calculator_action': action || 'calculate',
+      'value': 1
+    });
+    console.log('GA4 Event: calculator_use', { calculatorName, action });
+  }
+}
+
+/**
+ * Track email signup submissions
+ * @param {string} formLocation - Where the form is located (e.g., 'sidebar', 'footer', 'blog-inline')
+ * @param {string} listType - Type of list (e.g., 'newsletter', 'course', 'ebook')
+ */
+function trackEmailSignup(formLocation, listType) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'email_signup', {
+      'event_category': 'Lead Generation',
+      'event_label': formLocation,
+      'list_type': listType || 'newsletter',
+      'value': 5
+    });
+    console.log('GA4 Event: email_signup', { formLocation, listType });
+  }
+}
+
+/**
+ * Track embedded YouTube video plays (via YouTube IFrame API)
+ * @param {string} videoId - YouTube video ID
+ * @param {string} videoTitle - Video title
+ */
+function trackVideoPlay(videoId, videoTitle) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'video_play', {
+      'event_category': 'Video Engagement',
+      'event_label': videoTitle || videoId,
+      'video_id': videoId,
+      'value': 2
+    });
+    console.log('GA4 Event: video_play', { videoId, videoTitle });
+  }
+}
+
+/**
+ * Track CTA button clicks (Call-to-Action)
+ * @param {string} ctaType - Type of CTA (e.g., 'youtube', 'calculator', 'email', 'support')
+ * @param {string} location - Where the CTA is located (e.g., 'blog-post', 'sidebar', 'homepage')
+ */
+function trackCtaClick(ctaType, location) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'cta_click', {
+      'event_category': 'CTA',
+      'event_label': ctaType,
+      'cta_location': location || 'unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: cta_click', { ctaType, location });
+  }
+}
+
+/**
+ * Track search usage (if search is implemented)
+ * @param {string} searchQuery - User's search query
+ * @param {number} resultsCount - Number of results returned
+ */
+function trackSiteSearch(searchQuery, resultsCount) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'search', {
+      'search_term': searchQuery,
+      'results_count': resultsCount || 0
+    });
+    console.log('GA4 Event: search', { searchQuery, resultsCount });
+  }
+}
+
+/**
+ * Track outbound links (external links)
+ * @param {string} url - Destination URL
+ * @param {string} linkText - Text of the clicked link
+ */
+function trackOutboundLink(url, linkText) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'click', {
+      'event_category': 'Outbound Link',
+      'event_label': url,
+      'link_text': linkText || 'Unknown',
+      'transport_type': 'beacon'
+    });
+    console.log('GA4 Event: outbound_link', { url, linkText });
+  }
+}
+
+/**
+ * Track file downloads (PDFs, STL files, configs, etc.)
+ * @param {string} fileName - Name of the downloaded file
+ * @param {string} fileType - Type of file (e.g., 'pdf', 'stl', 'gcode', 'config')
+ */
+function trackFileDownload(fileName, fileType) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'file_download', {
+      'event_category': 'Download',
+      'event_label': fileName,
+      'file_extension': fileType || 'unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: file_download', { fileName, fileType });
+  }
+}
+
+// ============================================================================
+// AUTOMATIC EVENT LISTENERS
+// ============================================================================
+
+// Auto-track all affiliate links (rel="sponsored")
+document.addEventListener('click', function(e) {
+  const affiliateLink = e.target.closest('a[rel*="sponsored"]');
+  if (affiliateLink) {
+    const asin = affiliateLink.href.match(/\/dp\/([A-Z0-9]+)/);
+    const title = affiliateLink.getAttribute('data-product-name') || 
+                  affiliateLink.textContent.trim() || 
+                  'Unknown Product';
+    
+    if (asin && asin[1]) {
+      trackAffiliateClick(asin[1], title);
+    }
+  }
+});
+
+// Auto-track outbound links (target="_blank" or external domains)
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link && link.href) {
+    const isExternal = link.hostname !== window.location.hostname;
+    const isBlank = link.target === '_blank';
+    const isSponsored = link.rel && link.rel.includes('sponsored');
+    
+    // Track external links (but not affiliate links - already tracked above)
+    if ((isExternal || isBlank) && !isSponsored) {
+      const linkText = link.textContent.trim() || link.getAttribute('aria-label') || 'Unknown';
+      trackOutboundLink(link.href, linkText);
+    }
+  }
+});
+
+// Auto-track file downloads
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link && link.href) {
+    const url = link.href.toLowerCase();
+    const downloadExtensions = ['.pdf', '.stl', '.gcode', '.zip', '.cfg', '.json', '.txt', '.csv'];
+    const extension = downloadExtensions.find(ext => url.endsWith(ext));
+    
+    if (extension) {
+      const fileName = link.href.split('/').pop() || 'unknown';
+      trackFileDownload(fileName, extension.substring(1));
+    }
+  }
+});
+
+// Console log for debugging
+console.log('✅ GA4 Event Tracking Library Loaded');
+console.log('📊 Available tracking functions:', [
+  'trackAffiliateClick()',
+  'trackYouTubeSubscribe()',
+  'trackYouTubeVideo()',
+  'trackRelatedPostClick()',
+  'trackCalculatorUse()',
+  'trackEmailSignup()',
+  'trackVideoPlay()',
+  'trackCtaClick()',
+  'trackSiteSearch()',
+  'trackOutboundLink()',
+  'trackFileDownload()'
+]);
+</script>
