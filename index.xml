@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP</title><link>https://minimal3dp.com/</link><description>Recent content on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Sidewinder X1 (SWX1) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minimal 3DP - 3D Printing Tutorials, Calculators &amp; Expert Reviews on Minimal 3DP</title><link>https://minimal3dp.com/</link><description>Recent content in Minimal 3DP - 3D Printing Tutorials, Calculators &amp; Expert Reviews on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Sidewinder X1 (SWX1) Klipper Config</title><link>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
 &lt;p&gt;SWX1 with a BTT SKR 2&lt;/p&gt;
 
 &lt;/div&gt;
@@ -1643,7 +1643,18 @@ Minimal 3DP YouTube Banner
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id="2-youtube-subscribe-clicks"&gt;2. &lt;strong&gt;YouTube Subscribe Clicks&lt;/strong&gt;&lt;a class="td-heading-self-link" href="#2-youtube-subscribe-clicks" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;trackYouTubeSubscribe&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;source&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Usage:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://minimal3dp.com/_templates/youtube-integration-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/_templates/youtube-integration-guide/</guid><description>&lt;h1 id="youtube-integration-usage-guide"&gt;YouTube Integration Usage Guide&lt;a class="td-heading-self-link" href="#youtube-integration-usage-guide" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="overview"&gt;Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This guide explains how to use the YouTube integration elements created for Minimal 3DP.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Usage:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://minimal3dp.com/_templates/top-10-pages-optimization-summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/_templates/top-10-pages-optimization-summary/</guid><description>&lt;h1 id="top-10-pages-optimization-summary"&gt;Top 10 Pages Optimization Summary&lt;a class="td-heading-self-link" href="#top-10-pages-optimization-summary" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Date Completed:&lt;/strong&gt; November 13, 2025&lt;br&gt;
+&lt;strong&gt;Time Invested:&lt;/strong&gt; ~2 hours (optimized 4 high-impact pages + created FAQ system)&lt;br&gt;
+&lt;strong&gt;Status:&lt;/strong&gt; Phase 1 Complete - Core pages optimized with FAQ schema&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-completed-optimizations"&gt;✅ Completed Optimizations&lt;a class="td-heading-self-link" href="#-completed-optimizations" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="1-homepage-content_indexmd---fully-optimized-"&gt;1. Homepage (&lt;code&gt;content/_index.md&lt;/code&gt;) - FULLY OPTIMIZED ⭐⭐⭐⭐⭐&lt;a class="td-heading-self-link" href="#1-homepage-content_indexmd---fully-optimized-" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;SEO Enhancements:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ Added comprehensive meta description (160 chars)&lt;/li&gt;
+&lt;li&gt;✅ Improved title: &amp;ldquo;Minimal 3DP - 3D Printing Tutorials, Calculators &amp;amp; Expert Reviews&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;✅ Added keywords array (10 targeted keywords)&lt;/li&gt;
+&lt;li&gt;✅ Improved H1: &amp;ldquo;Welcome to Minimal 3DP: Your 3D Printing Resource&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Content Additions:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://minimal3dp.com/_templates/youtube-integration-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/_templates/youtube-integration-guide/</guid><description>&lt;h1 id="youtube-integration-usage-guide"&gt;YouTube Integration Usage Guide&lt;a class="td-heading-self-link" href="#youtube-integration-usage-guide" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="overview"&gt;Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This guide explains how to use the YouTube integration elements created for Minimal 3DP.&lt;/p&gt;
 &lt;h2 id="files-created"&gt;Files Created&lt;a class="td-heading-self-link" href="#files-created" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;/content/_templates/youtube-description.txt&lt;/code&gt; - Template for YouTube video descriptions&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;/layouts/partials/youtube-subscribe-cta.html&lt;/code&gt; - Full CTA box for blog posts&lt;/li&gt;
@@ -1659,7 +1670,7 @@ Minimal 3DP YouTube Banner
 &lt;li&gt;Add product affiliate links if applicable&lt;/li&gt;
 &lt;li&gt;Paste into YouTube video description&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>About Minimal 3DP</title><link>https://minimal3dp.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/about/</guid><description>&lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_567dd2861871d105.jpg" media="(max-width: 1200px)"&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>About Minimal 3DP - Mike Wilson | 3D Printing Expert &amp; Maker</title><link>https://minimal3dp.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/about/</guid><description>&lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_567dd2861871d105.jpg" media="(max-width: 1200px)"&gt;
 &lt;link rel="preload" as="image" href="https://minimal3dp.com/about/featured-background_hu_f4153452389ae995.jpg" media="(min-width: 1200px)"&gt;
 &lt;style&gt;
 #td-cover-block-0 {
@@ -1698,9 +1709,4 @@ Minimal 3DP YouTube Banner
 &lt;div class="col-12"&gt;
 &lt;div class="container text-center td-arrow-down"&gt;
 &lt;div class="h4 mb-0"&gt;
-&lt;p&gt;My Name is Mike Wilson and I can help.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;NEED HELP?&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Schedule a FREE 15-minute Google Meet&lt;/p&gt;
-&lt;p&gt;Consultation:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://calendly.com/minimal3dp/m3dp-15-minute-session"&gt;Schedule 15 Minutes&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;NEED MORE HELP? Contact me regarding scheduling an extended Help Session. I can be reached at &lt;a href="mailto:minimal3dp@gmail.com"&gt;minimal3dp@gmail.com&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Search Results</title><link>https://minimal3dp.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/search/</guid><description/></item></channel></rss>
+&lt;h2 id="hi-im-mike-wilson"&gt;Hi, I&amp;rsquo;m Mike Wilson&lt;a class="td-heading-self-link" href="#hi-im-mike-wilson" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m a 3D printing enthusiast, maker, and the creator of Minimal 3DP. With over 5,000 YouTube subscribers and years of hands-on experience, I&amp;rsquo;ve helped countless makers solve their 3D printing challenges.&lt;/p&gt;</description></item><item><title>Search Results</title><link>https://minimal3dp.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/search/</guid><description/></item></channel></rss>
