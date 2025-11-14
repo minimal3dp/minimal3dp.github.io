@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Minimal 3DP</title>
-    <link>http://localhost:60426/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Nov 2025 20:25:42 -0600</lastBuildDate>
-    <atom:link href="http://localhost:60426/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Nov 2025 21:45:26 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reviews</title>
-      <link>http://localhost:60426/categories/reviews/</link>
+      <link>http://localhost:1313/categories/reviews/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/reviews/</guid>
+      <guid>http://localhost:1313/categories/reviews/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorials</title>
-      <link>http://localhost:60426/categories/tutorials/</link>
+      <link>http://localhost:1313/categories/tutorials/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/tutorials/</guid>
+      <guid>http://localhost:1313/categories/tutorials/</guid>
       <description></description>
     </item>
     <item>
       <title>3D Printers</title>
-      <link>http://localhost:60426/categories/3d-printers/</link>
+      <link>http://localhost:1313/categories/3d-printers/</link>
       <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/3d-printers/</guid>
+      <guid>http://localhost:1313/categories/3d-printers/</guid>
       <description></description>
     </item>
     <item>
       <title>Videos</title>
-      <link>http://localhost:60426/categories/videos/</link>
+      <link>http://localhost:1313/categories/videos/</link>
       <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/videos/</guid>
+      <guid>http://localhost:1313/categories/videos/</guid>
       <description></description>
     </item>
     <item>
       <title>This Week</title>
-      <link>http://localhost:60426/categories/this-week/</link>
+      <link>http://localhost:1313/categories/this-week/</link>
       <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/this-week/</guid>
+      <guid>http://localhost:1313/categories/this-week/</guid>
       <description></description>
     </item>
     <item>
       <title>Assembly</title>
-      <link>http://localhost:60426/categories/assembly/</link>
+      <link>http://localhost:1313/categories/assembly/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/assembly/</guid>
+      <guid>http://localhost:1313/categories/assembly/</guid>
       <description></description>
     </item>
     <item>
       <title>Builds</title>
-      <link>http://localhost:60426/categories/builds/</link>
+      <link>http://localhost:1313/categories/builds/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/builds/</guid>
+      <guid>http://localhost:1313/categories/builds/</guid>
       <description></description>
     </item>
     <item>
       <title>RAssembly</title>
-      <link>http://localhost:60426/categories/rassembly/</link>
+      <link>http://localhost:1313/categories/rassembly/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/rassembly/</guid>
+      <guid>http://localhost:1313/categories/rassembly/</guid>
       <description></description>
     </item>
     <item>
       <title>References</title>
-      <link>http://localhost:60426/categories/references/</link>
+      <link>http://localhost:1313/categories/references/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/references/</guid>
+      <guid>http://localhost:1313/categories/references/</guid>
       <description></description>
     </item>
     <item>
       <title>Configs</title>
-      <link>http://localhost:60426/categories/configs/</link>
+      <link>http://localhost:1313/categories/configs/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/configs/</guid>
+      <guid>http://localhost:1313/categories/configs/</guid>
       <description></description>
     </item>
     <item>
       <title>Klipper</title>
-      <link>http://localhost:60426/categories/klipper/</link>
+      <link>http://localhost:1313/categories/klipper/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/klipper/</guid>
+      <guid>http://localhost:1313/categories/klipper/</guid>
       <description></description>
     </item>
     <item>
       <title>Landing Page</title>
-      <link>http://localhost:60426/categories/landing-page/</link>
+      <link>http://localhost:1313/categories/landing-page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/landing-page/</guid>
+      <guid>http://localhost:1313/categories/landing-page/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:60426/categories/projects/</link>
+      <link>http://localhost:1313/categories/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60426/categories/projects/</guid>
+      <guid>http://localhost:1313/categories/projects/</guid>
       <description></description>
     </item>
   </channel>

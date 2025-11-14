@@ -1,6 +1,6 @@
 # Minimal 3DP Implementation Roadmap
 
-**Last Updated:** November 12, 2025  
+**Last Updated:** November 13, 2025  
 **Strategy:** Quick wins → High-impact changes → Long-term growth  
 **Based on:** MINIMAL3DP_APP_GUIDE.md patterns + SEO best practices
 
@@ -139,7 +139,7 @@
 - [x] Add `[minify]` configuration
 - [x] Enable `[related]` indices for related posts
 - [x] Test build: `hugo --gc --minify`
-- [ ] Add social media params (YouTube, Twitter handles)
+- [x] Add social media params (YouTube, Twitter handles) ✅
 - [x] Verify output is minified in production
 
 **Result:**
@@ -147,8 +147,11 @@
 - Minification enabled for CSS, HTML, JS, JSON, SVG, XML
 - Related posts system enabled (weights: tags=100, categories=80, date=10, threshold=80)
 - Build performance: 330ms (fast incremental builds with caching)
-- Resource caching set to "always" for faster incremental builds
+- Resource caching set to "fallback" for reliable local development
 - Production minification verified: HTML (single line), CSS (compressed), JS (compressed)
+- **Social media params added:** twitter_creator, youtube_channel_id, youtube_subscribers, facebook_page, github_repo_name
+- **Site identity params added:** author, site_name, description, email
+- **Organization schema updated:** Now includes YouTube, Twitter, GitHub social links
 
 **Files Changed:** `hugo.toml`  
 **Time:** 30 minutes
@@ -262,30 +265,62 @@
 
 ---
 
-### 8. **Create Content Archetypes** (1.5 hours)
+### 8. **Create Content Archetypes** ✅ COMPLETED (1.5 hours)
 **Impact:** ⭐⭐ (Faster content creation, consistency)
 
 **Priority:**
-1. [ ] Blog post archetype: `/archetypes/blog.md` (45 mins)
-2. [ ] Product review archetype: `/archetypes/reviews.md` (45 mins)
+1. [x] Blog post archetype: `/archetypes/blog.md` ✅
+2. [x] Product review archetype: `/archetypes/reviews.md` ✅
 
-**Include in Archetypes:**
-- Complete front matter template
-- Placeholder content structure
-- SEO keyword section
-- Affiliate disclosure reminder (if review)
-- YouTube embed placeholder
-- CTA shortcode at end
+**Result:**
 
-**Reference:** RECOMMENDATIONS.md Section: Hugo Best Practices → Content Archetypes
+**Blog Post Archetype (`/archetypes/blog.md`):**
+- Complete front matter template with SEO fields (title, description, keywords, images)
+- Taxonomy placeholders (categories, tags with examples)
+- Date/lastmod auto-populated
+- Structured content sections (Introduction, Main sections, Conclusion)
+- Shortcode examples embedded in comments (youtube-embed, cta, alert)
+- "What you'll learn" bullet template
+- Pre-publishing checklist (10 items)
+- Usage instructions and best practices
 
-**Usage After Setup:**
+**Product Review Archetype (`/archetypes/reviews.md`):**
+- Product-specific front matter (product name, brand, price, amazon_id)
+- Quick verdict section at top
+- Testing period info box with alert shortcode
+- Specifications table template
+- Structured review sections:
+  - Unboxing & First Impressions
+  - Setup & Installation
+  - Performance Testing (3 test templates)
+  - Real-World Usage
+  - Pros & Cons (formatted with emoji)
+  - Comparison table with product-compare shortcode
+  - Who Should Buy This (buy if/skip if)
+  - Where to Buy (affiliate product card template with GA4 tracking)
+  - FAQ section (5 Q&A templates)
+  - Final Verdict with star rating
+- Complete affiliate shortcode template with GA4 tracking function
+- Pre-publishing checklist (14 items)
+- YouTube CTA at end
+
+**Usage:**
 ```bash
-hugo new blog/posts/my-post.md        # Uses blog archetype
-hugo new reviews/product-name.md      # Uses reviews archetype
+hugo new blog/posts/my-post.md        # Creates post from blog archetype
+hugo new reviews/product-name.md      # Creates review from reviews archetype
 ```
 
-**Expected Result:** New content in 2 minutes vs 10 minutes
+**Testing:**
+- Tested blog archetype: `hugo new blog/posts/test-blog-archetype.md`
+- Front matter populated correctly with current date
+- All template sections included
+- Shortcode examples preserved in comments
+
+**Expected Result:** New content in 2 minutes vs 10 minutes ✅
+
+**Files Created:**
+- `/archetypes/blog.md` (111 lines)
+- `/archetypes/reviews.md` (223 lines)
 
 **Time:** 1.5 hours
 

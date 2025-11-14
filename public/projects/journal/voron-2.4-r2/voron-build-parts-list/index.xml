@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Voron 2.4 R2 Pro&#43; Build Parts List on Minimal 3DP</title>
-    <link>http://localhost:60426/projects/journal/voron-2.4-r2/voron-build-parts-list/</link>
+    <link>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-parts-list/</link>
     <description>Recent content in Voron 2.4 R2 Pro&#43; Build Parts List on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:60426/projects/journal/voron-2.4-r2/voron-build-parts-list/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-parts-list/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
