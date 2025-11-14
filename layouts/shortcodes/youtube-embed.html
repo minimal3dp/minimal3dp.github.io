@@ -1,0 +1,40 @@
+{{/* Usage: {{< youtube-embed id="VIDEO_ID" title="Video Title" >}} */}}
+
+{{ $id := .Get "id" }}
+{{ $title := .Get "title" | default "YouTube Video" }}
+{{ $channelId := .Site.Params.youtube_channel_id }}
+
+<div class="youtube-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 30px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube-nocookie.com/embed/{{ $id }}?rel=0&modestbranding=1" 
+    title="{{ $title }}"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
+
+{{ if $channelId }}
+<div class="youtube-cta" style="text-align: center; margin: 15px 0;">
+  <a href="https://www.youtube.com/channel/{{ $channelId }}?sub_confirmation=1" 
+     target="_blank"
+     rel="noopener"
+     onclick="trackYouTubeSubscribe('{{ $title }}')"
+     style="display: inline-block; background: #FF0000; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">
+    ▶️ Subscribe on YouTube
+  </a>
+</div>
+
+<script>
+function trackYouTubeSubscribe(source) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'subscribe_click', {
+      'event_category': 'YouTube',
+      'event_label': source
+    });
+  }
+}
+</script>
+{{ end }}

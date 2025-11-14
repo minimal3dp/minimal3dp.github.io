@@ -1,0 +1,35 @@
+{{ if and .IsPage (not .IsHome) (in .Section "blog") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description | default .Summary }}",
+  "image": "{{ if .Params.images }}{{ index .Params.images 0 | absURL }}{{ else }}{{ index .Site.Params.images 0 | absURL }}{{ end }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author | default "Mike Wilson" }}",
+    "url": "{{ .Site.BaseURL }}/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}/favicons/android-192x192.png",
+      "width": 192,
+      "height": 192
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }{{ if .WordCount }},
+  "wordCount": {{ .WordCount }}{{ end }}{{ if .Params.categories }},
+  "articleSection": "{{ index .Params.categories 0 }}"{{ end }}{{ if .Params.tags }},
+  "keywords": "{{ delimit .Params.tags ", " }}"{{ end }}
+}
+</script>
+{{ end }}

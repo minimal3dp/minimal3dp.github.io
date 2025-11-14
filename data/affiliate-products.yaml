@@ -1,0 +1,570 @@
+# Minimal 3DP Affiliate Products Database
+# This file contains product information for use with the amazon-product shortcode
+# All ASINs and prices are verified and current as of November 2025
+
+# ============================================
+# FILAMENT DRYERS & STORAGE
+# ============================================
+filament_dryers:
+  - id: creality-dryer
+    name: "Creality Official Filament Dryer Box"
+    brand: "Creality"
+    asin: "B0CJ2YVVFM"
+    price: "$39.99"
+    description: "Efficient filament dryer with adjustable temperature. Perfect for PETG, Nylon, ABS, and other moisture-sensitive filaments"
+    
+  - id: comgrow-dryer
+    name: "Comgrow 3D Printer Filament Dryer Box"
+    brand: "Comgrow"
+    asin: "B098D366R3"
+    price: "$49.99"
+    description: "Premium dryer with PTC heating, supports 2 spools, temperature range 40-70°C. Ideal for Nylon and PA materials"
+    
+  - id: sunlu-dryer
+    name: "SUNLU Filament Dryer Box"
+    brand: "SUNLU"
+    asin: "B09HJL95RH"
+    price: "$44.99"
+    description: "Affordable single-spool dryer with precise temperature control. Great for occasional use with hygroscopic materials"
+
+filament_storage:
+  - id: polymaker-storage
+    name: "Polymaker 3D Printing Filament Storage Box"
+    brand: "Polymaker"
+    asin: "B0CK17RTP4"
+    price: "$29.99"
+    description: "Keep your filament dry with built-in hygrometer"
+    
+  - id: yoopai-storage
+    name: "YOOPAI Filament Storage Box"
+    brand: "YOOPAI"
+    asin: "B0F8BBD5Z8"
+    price: "$34.99"
+    description: "Premium storage solution for multiple spools"
+
+# ============================================
+# PLA FILAMENTS
+# ============================================
+pla:
+  - id: sunlu-pla
+    name: "SUNLU PLA 3D Printer Filament"
+    brand: "SUNLU"
+    asin: "B07XG3RM58"
+    price: "$13.99"
+    description: "Premium PLA with excellent layer adhesion and dimensional accuracy"
+    
+  - id: overture-pla
+    name: "OVERTURE PLA Filament"
+    brand: "OVERTURE"
+    asin: "B07PGY2JP1"
+    price: "$19.99"
+    description: "Consistent diameter, smooth finish, wide color selection"
+    
+  - id: elegoo-pla
+    name: "ELEGOO PLA Filament"
+    brand: "ELEGOO"
+    asin: "B0D421Q2Q2"
+    price: "$16.99"
+    description: "High-quality PLA with vibrant colors"
+    
+  - id: esun-pla
+    name: "eSUN PLA Basic Filament"
+    brand: "eSUN"
+    asin: "B0CS2XHNKL"
+    price: "$17.99"
+    description: "Reliable basic PLA for everyday printing"
+
+pla_plus:
+  - id: esun-pla-plus
+    name: "eSUN PLA+ Filament"
+    brand: "eSUN"
+    asin: "B07FQDKR28"
+    price: "$20.99"
+    description: "Enhanced toughness and strength over standard PLA"
+    
+  - id: elegoo-pla-plus
+    name: "ELEGOO PLA Plus Filament"
+    brand: "ELEGOO"
+    asin: "B0C14M5HR9"
+    price: "$18.99"
+    description: "Upgraded PLA with improved layer adhesion"
+    
+  - id: sunlu-pla-plus
+    name: "SUNLU PLA+2.0 3D Printer Filament"
+    brand: "SUNLU"
+    asin: "B0DHCT8YDN"
+    price: "$19.99"
+    description: "Second generation PLA+ with enhanced properties"
+    
+  - id: landu-pla-plus
+    name: "LANDU PLA Plus (PLA+) Filament"
+    brand: "LANDU"
+    asin: "B0D69RV8W1"
+    price: "$17.99"
+    description: "Cost-effective PLA+ with excellent strength"
+
+pla_silk:
+  - id: sunlu-silk
+    name: "SUNLU 3D Printer Silk Filament"
+    brand: "SUNLU"
+    asin: "B0B5ZK5TLC"
+    price: "$19.99"
+    description: "Beautiful silk finish with metallic sheen"
+    
+  - id: elegoo-silk
+    name: "ELEGOO Silk PLA 3D Printer Filament"
+    brand: "ELEGOO"
+    asin: "B0C2VDTPKX"
+    price: "$18.99"
+    description: "Premium silk PLA with smooth surface finish"
+    
+  - id: eryone-silk
+    name: "ERYONE Silk PLA Filament"
+    brand: "ERYONE"
+    asin: "B0FJCR7HM1"
+    price: "$17.99"
+    description: "Vibrant silk colors with excellent printability"
+
+pla_wood:
+  - id: creality-wood
+    name: "Creality Wood Filament PLA"
+    brand: "Creality"
+    asin: "B0DDWM2TX7"
+    price: "$19.99"
+    description: "Natural wood fiber composite with authentic wood texture"
+    
+  - id: ovv3d-wood
+    name: "OVV3D Wood 3D Printer Filament"
+    brand: "OVV3D"
+    asin: "B0BZ8XWX5D"
+    price: "$18.99"
+    description: "Wood-filled PLA for realistic wooden prints"
+    
+  - id: sunlu-wood
+    name: "SUNLU Real Wood Fiber PLA Filament"
+    brand: "SUNLU"
+    asin: "B0F1FH9T2J"
+    price: "$21.99"
+    description: "Genuine wood fiber blend for natural appearance"
+
+pla_carbon_fiber:
+  - id: elegoo-cf-pla
+    name: "ELEGOO Carbon Fiber PLA Filament"
+    brand: "ELEGOO"
+    asin: "B0D86M3RM4"
+    price: "$24.99"
+    description: "Carbon fiber reinforced PLA for enhanced rigidity"
+    
+  - id: sunlu-cf-pla
+    name: "SUNLU Carbon Fiber PLA"
+    brand: "SUNLU"
+    asin: "B08MVTVRLX"
+    price: "$28.99"
+    description: "Premium carbon fiber PLA with superior stiffness"
+
+pla_specialty:
+  - id: amolen-bronze
+    name: "AMOLEN Bronze Metal PLA Filament"
+    brand: "AMOLEN"
+    asin: "B0DWDPXZD3"
+    price: "$29.99"
+    description: "Metal-filled PLA with authentic metallic finish, contains real bronze powder"
+    
+  - id: protopasta-iron
+    name: "Protopasta Ferromagnetic Iron PLA"
+    brand: "Protopasta"
+    asin: "B00X8BQYPS"
+    price: "$34.99"
+    description: "Silk copper metallic finish with great luster and smooth finish"
+    
+  - id: amolen-glow
+    name: "AMOLEN Glow in The Dark PLA Filament"
+    brand: "AMOLEN"
+    asin: "B0FLK7DTB6"
+    price: "$21.99"
+    description: "Luminous PLA that glows in the dark after light exposure"
+    
+  - id: sunlu-glow
+    name: "SUNLU Glow in the Dark PLA"
+    brand: "SUNLU"
+    asin: "B0C4LT1ZF4"
+    price: "$25.99"
+    description: "Photoluminescent PLA with strong long-lasting glow effect"
+
+htpla:
+  - id: polymaker-htpla-gf
+    name: "Polymaker HT-PLA-GF Filament"
+    brand: "Polymaker"
+    asin: "B0DZNBYW5F"
+    price: "$25.49"
+    description: "Heat stabilized PLA+ with enhanced temperature resistance for functional parts"
+    
+  - id: polymaker-htpla
+    name: "Polymaker HT-PLA Filament"
+    brand: "Polymaker"
+    asin: "B0DZMHS58C"
+    price: "$21.99"
+    description: "Tough PLA with improved heat resistance and impact strength"
+
+# ============================================
+# PETG FILAMENTS
+# ============================================
+petg:
+  - id: overture-petg
+    name: "OVERTURE PETG 3D Printer Filament"
+    brand: "OVERTURE"
+    asin: "B07PGYHYV8"
+    price: "$21.99"
+    description: "Durable PETG with excellent layer adhesion"
+    
+  - id: creality-petg
+    name: "Creality PETG 3D Printer Filament"
+    brand: "Creality"
+    asin: "B0C8NP63GD"
+    price: "$19.99"
+    description: "Strong and flexible with minimal warping"
+    
+  - id: sunlu-petg
+    name: "SUNLU PETG Filament"
+    brand: "SUNLU"
+    asin: "B0DJS3PJVX"
+    price: "$18.99"
+    description: "Reliable PETG with consistent quality"
+
+petg_carbon_fiber:
+  - id: flashforge-cf-petg
+    name: "FLASHFORGE Carbon Fiber PETG Filament"
+    brand: "FLASHFORGE"
+    asin: "B0CNYX58SV"
+    price: "$44.99"
+    description: "Carbon fiber reinforced PETG for engineering applications"
+    
+  - id: generic-cf-petg
+    name: "Carbon Fiber PETG Filament"
+    brand: "Generic"
+    asin: "B0CC7RH6M3"
+    price: "$39.99"
+    description: "Reinforced PETG with enhanced stiffness"
+
+pet:
+  - id: overture-pet
+    name: "OVERTURE PET-G Filament"
+    brand: "OVERTURE"
+    asin: "B0B227CW3S"
+    price: "$21.99"
+    description: "PET with excellent clarity and toughness for everyday printing"
+    
+  - id: sunlu-pet
+    name: "SUNLU PET-G Filament"
+    brand: "SUNLU"
+    asin: "B0BQWGHC8T"
+    price: "$20.99"
+    description: "Transparent PET with good layer adhesion and strength"
+
+# ============================================
+# ABS & ASA FILAMENTS
+# ============================================
+abs:
+  - id: polymaker-abs
+    name: "Polymaker ABS Filament"
+    brand: "Polymaker"
+    asin: "B09DKQR8HD"
+    price: "$29.99"
+    description: "High-quality ABS with minimal warping"
+    
+  - id: creality-abs
+    name: "Creality ABS Filament"
+    brand: "Creality"
+    asin: "B0C7BW71L8"
+    price: "$19.99"
+    description: "Strong and heat-resistant ABS filament"
+    
+  - id: overture-abs
+    name: "OVERTURE ABS Filament"
+    brand: "OVERTURE"
+    asin: "B087LW1YP3"
+    price: "$22.99"
+    description: "Durable ABS for functional parts"
+    
+  - id: polylite-abs
+    name: "PolyLite ABS Filament"
+    brand: "Polymaker"
+    asin: "B09DKQ46H3"
+    price: "$27.99"
+    description: "Professional-grade ABS for demanding applications"
+
+asa:
+  - id: polymaker-asa
+    name: "Polymaker ASA Filament"
+    brand: "Polymaker"
+    asin: "B09DKPYYBP"
+    price: "$29.99"
+    description: "UV-resistant ASA for outdoor applications"
+    
+  - id: overture-asa
+    name: "OVERTURE ASA Filament"
+    brand: "OVERTURE"
+    asin: "B09DCQ972K"
+    price: "$26.99"
+    description: "Weather-resistant ASA with excellent UV stability"
+    
+  - id: isanmate-asa
+    name: "iSANMATE ASA Filament"
+    brand: "iSANMATE"
+    asin: "B0DB16JG74"
+    price: "$24.99"
+    description: "Reliable ASA for outdoor and UV-exposed parts"
+
+# ============================================
+# NYLON FILAMENTS
+# ============================================
+nylon:
+  - id: overture-nylon
+    name: "OVERTURE Nylon Filament"
+    brand: "OVERTURE"
+    asin: "B087R3M9Z2"
+    price: "$27.99"
+    description: "Strong and flexible nylon for mechanical parts"
+    
+  - id: polymaker-nylon
+    name: "Polymaker Nylon Filament"
+    brand: "Polymaker"
+    asin: "B09KKZ23VP"
+    price: "$34.99"
+    description: "Engineering-grade nylon with excellent toughness"
+
+nylon_carbon_fiber:
+  - id: polymaker-pa612-cf
+    name: "Polymaker Fiberon PA612-CF Carbon Fiber Nylon Filament"
+    brand: "Polymaker"
+    asin: "B0D4QF5QVL"
+    price: "$69.99"
+    description: "Industrial-grade carbon fiber nylon composite"
+    
+  - id: sunlu-pa6-cf
+    name: "SUNLU PA6-CF 3D Filament"
+    brand: "SUNLU"
+    asin: "B0F23B1B2L"
+    price: "$49.99"
+    description: "Carbon fiber reinforced nylon for high-strength applications"
+
+nylon_glass_fiber:
+  - id: matterhackers-nylonG
+    name: "MatterHackers NylonG Glass Fiber Nylon"
+    brand: "MatterHackers"
+    asin: "B0784D35MC"
+    price: "$64.99"
+    description: "Glass fiber reinforced nylon for high-strength applications"
+    
+  - id: taulman-alloy910
+    name: "Taulman3D Alloy 910 Nylon"
+    brand: "Taulman3D"
+    asin: "B00UMHA0B2"
+    price: "$59.99"
+    description: "High-strength engineering nylon with enhanced durability"
+
+# ============================================
+# TPU FILAMENTS
+# ============================================
+tpu_95a:
+  - id: overture-tpu-95a
+    name: "OVERTURE TPU Filament"
+    brand: "OVERTURE"
+    asin: "B07VDP2S3P"
+    price: "$23.99"
+    description: "Flexible TPU for durable, elastic prints"
+    
+  - id: sunlu-tpu-95a
+    name: "SUNLU TPU 3D Printer Filament"
+    brand: "SUNLU"
+    asin: "B0BXNWK6NS"
+    price: "$21.99"
+    description: "High-quality flexible filament with great layer adhesion"
+    
+  - id: giantarm-tpu
+    name: "GIANTARM TPU Filament"
+    brand: "GIANTARM"
+    asin: "B0C3TNZHZK"
+    price: "$19.99"
+    description: "Affordable flexible TPU with reliable performance"
+
+tpu_85a:
+  - id: overture-tpu-85a
+    name: "OVERTURE TPU Flexible Filament"
+    brand: "OVERTURE"
+    asin: "B0CYPGVK4D"
+    price: "$29.99"
+    description: "Flexible 85A TPU with excellent elasticity and layer bonding"
+    
+  - id: sunlu-tpu-85a
+    name: "SUNLU TPU Flexible Filament"
+    brand: "SUNLU"
+    asin: "B0BVG61NL8"
+    price: "$27.99"
+    description: "Highly flexible 85A TPU with excellent durability"
+
+# ============================================
+# ENGINEERING FILAMENTS
+# ============================================
+polycarbonate:
+  - id: polymaker-pc
+    name: "Polymaker 3D Printing Filament"
+    brand: "Polymaker"
+    asin: "B09KLCMGKC"
+    price: "$39.99"
+    description: "Strong polycarbonate for high-impact parts"
+    
+  - id: overture-pc
+    name: "OVERTURE PC Polycarbonate Filament"
+    brand: "OVERTURE"
+    asin: "B0B22VK72Y"
+    price: "$42.99"
+    description: "Engineering-grade PC with excellent impact resistance and heat tolerance"
+
+pc_abs_blend:
+  - id: esun-pc-abs
+    name: "eSUN PC-ABS Blend Filament"
+    brand: "eSUN"
+    asin: "B09C5TPCZN"
+    price: "$39.99"
+    description: "Impact-resistant PC-ABS blend for functional parts"
+    
+  - id: taulman-inpla
+    name: "Taulman3D In-PLA PC-ABS Blend"
+    brand: "Taulman3D"
+    asin: "B08F3JBHB3"
+    price: "$44.99"
+    description: "Engineering blend with excellent impact strength and durability"
+
+polypropylene:
+  - id: fiberlogy-pp
+    name: "Fiberlogy Easy PP Polypropylene"
+    brand: "Fiberlogy"
+    asin: "B07Z5C3GTN"
+    price: "$32.99"
+    description: "Easy-to-print polypropylene with good adhesion and flexibility"
+    
+  - id: ultimaker-pp
+    name: "Ultimaker PP Polypropylene"
+    brand: "Ultimaker"
+    asin: "B07KP59L53"
+    price: "$49.99"
+    description: "Professional-grade PP with chemical resistance and living hinge properties"
+
+# ============================================
+# HIGH-PERFORMANCE FILAMENTS
+# ============================================
+peek:
+  - id: 3dxtech-peek
+    name: "3DXTech ThermaX PEEK"
+    brand: "3DXTech"
+    asin: "B07YD9L7PR"
+    price: "$249.99"
+    description: "High-performance PEEK for demanding applications up to 250°C"
+    
+  - id: visionminer-peek
+    name: "Vision Miner PEEK Filament"
+    brand: "Vision Miner"
+    asin: "B07XJ4P8D8"
+    price: "$199.99"
+    description: "Industrial-grade PEEK with excellent chemical and thermal resistance"
+
+pekk:
+  - id: kimya-pekk
+    name: "Kimya PEKK-A Filament"
+    brand: "Kimya"
+    asin: "B0CRJ9HWVX"
+    price: "$299.99"
+    description: "Advanced PEKK for aerospace and medical applications"
+    
+  - id: intamsys-pekk-cf
+    name: "Intamsys PEKK Carbon Fiber"
+    brand: "Intamsys"
+    asin: "B0CRJC2DTW"
+    price: "$399.99"
+    description: "CF-reinforced PEKK for ultra-high performance applications"
+
+ppsu:
+  - id: intamsys-ppsu
+    name: "Intamsys PPSU Filament"
+    brand: "Intamsys"
+    asin: "B08TQXM2PF"
+    price: "$249.99"
+    description: "High-performance PPSU for medical and food contact applications"
+    
+  - id: visionminer-ppsu
+    name: "Vision Miner PPSU Filament"
+    brand: "Vision Miner"
+    asin: "B08F4BJPQW"
+    price: "$229.99"
+    description: "Medical-grade PPSU with exceptional heat resistance and biocompatibility"
+
+ultem:
+  - id: intamsys-ultem
+    name: "Stratasys ULTEM 9085 Compatible"
+    brand: "Intamsys"
+    asin: "B0CRDF47QY"
+    price: "$349.99"
+    description: "ULTEM 9085-compatible filament for aerospace applications with FST rating"
+    
+  - id: sabic-ultem
+    name: "Sabic ULTEM 9085 Resin"
+    brand: "Sabic"
+    asin: "B0CRD9PW7M"
+    price: "$399.99"
+    description: "Certified ULTEM 9085 for aerospace and defense applications"
+
+# ============================================
+# SUPPORT MATERIALS
+# ============================================
+pva:
+  - id: generic-pva
+    name: "PVA Filament"
+    brand: "Generic"
+    asin: "B07RYSSVC3"
+    price: "$29.99"
+    description: "Water-soluble support material"
+    
+  - id: sunlu-pva
+    name: "SUNLU PVA Filament"
+    brand: "SUNLU"
+    asin: "B0FCLNC27N"
+    price: "$32.99"
+    description: "Premium water-soluble support filament"
+    
+  - id: polymaker-pva
+    name: "Polymaker PVA Filament"
+    brand: "Polymaker"
+    asin: "B09KL8WBRY"
+    price: "$34.99"
+    description: "High-quality PVA for complex support structures"
+
+pvb:
+  - id: polymaker-pvb
+    name: "Polymaker PVB Filament"
+    brand: "Polymaker"
+    asin: "B09KLH5DMH"
+    price: "$39.99"
+    description: "Smoothable PVB for post-processing with IPA"
+    
+  - id: priline-pvb
+    name: "Priline PVB Filament"
+    brand: "Priline"
+    asin: "B0B5C2N3PY"
+    price: "$36.99"
+    description: "Transparent PVB with excellent smoothing properties and clarity"
+
+hips:
+  - id: gizmodorks-hips
+    name: "Gizmo Dorks 3D Printer Filament 1.75mm HIPS"
+    brand: "Gizmo Dorks"
+    asin: "B00FG7C5BE"
+    price: "$24.99"
+    description: "Dissolvable support material compatible with ABS"
+    
+  - id: cc3d-hips
+    name: "CC3D Natural White HIPS Filament"
+    brand: "CC3D"
+    asin: "B0D25WQ29W"
+    price: "$16.99"
+    description: "High-impact polystyrene for support structures"

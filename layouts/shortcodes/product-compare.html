@@ -1,0 +1,35 @@
+{{/* Usage in markdown:
+{{< product-compare >}}
+| Feature | Product A | Product B |
+|---------|-----------|-----------|
+| Price | $100 | $150 |
+| Quality | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Buy | [Amazon](link1) | [Amazon](link2) |
+{{< /product-compare >}}
+*/}}
+
+<div class="product-comparison" style="overflow-x: auto; margin: 30px 0;">
+  {{ .Inner | markdownify }}
+</div>
+
+<style>
+.product-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.product-comparison th {
+  background: #3B82F6;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+}
+.product-comparison td {
+  padding: 12px;
+  border-bottom: 1px solid #E5E7EB;
+}
+.product-comparison tr:hover {
+  background: #F3F4F6;
+}
+</style>

@@ -74,6 +74,9 @@ privacy_policy = "https://policies.google.com/privacy"
 
 google_site_verification = "gekyEs3f8YOHosuLYzm98WAde8kIZn31TT3drLkKEv4"
 
+# Affiliate Configuration
+affiliate_tag = "mwf064-20"
+
 # First one is picked as the Twitter card image if not set on page.
 images = ["/images/minimal3dp-og-1200x630.jpg"]
 
@@ -186,6 +189,51 @@ enable = false
 [services]
   [services.googleAnalytics]
     ID = 'G-VQ8RPWC2MK'
+
+# Performance & Build Optimization
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "24h"
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = "24h"
+  [caches.images]
+    dir = ":resourceDir/_gen"
+    maxAge = "720h"  # 30 days
+  [caches.assets]
+    dir = ":resourceDir/_gen"
+    maxAge = "720h"
+  [caches.modules]
+    dir = ":cacheDir/modules"
+    maxAge = "720h"
+
+[build]
+  writeStats = true  # For Tailwind CSS purging
+  useResourceCacheWhen = "fallback"
+  
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+
+[related]
+  # Enable "Related Posts" functionality
+  threshold = 80
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+  [[related.indices]]
+    name = "date"
+    weight = 10
 
 # hugo module configuration
 

@@ -1,0 +1,27 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ .Site.BaseURL }}/favicons/android-192x192.png",
+    "width": 192,
+    "height": 192
+  },
+  "description": "{{ .Site.Params.description | default "Your complete 3D printing resource with expert tutorials, printer reviews, Klipper calibration guides, and professional FDM cost calculators." }}",
+  "sameAs": [
+    {{ if .Site.Params.youtube_channel_id }}"https://www.youtube.com/channel/{{ .Site.Params.youtube_channel_id }}"{{ end }}
+    {{ if .Site.Params.twitter_creator }},"https://twitter.com/{{ strings.TrimPrefix "@" .Site.Params.twitter_creator }}"{{ end }}
+    {{ if .Site.Params.github_repo }},"https://github.com/{{ .Site.Params.github_repo }}"{{ end }}
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "{{ .Site.Params.email | default "contact@minimal3dp.com" }}"
+  }
+}
+</script>
+{{ end }}

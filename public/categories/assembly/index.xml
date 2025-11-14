@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assembly on Minimal 3DP</title><link>https://minimal3dp.com/categories/assembly/</link><description>Recent content in Assembly on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 04 May 2024 13:54:48 -0500</lastBuildDate><atom:link href="https://minimal3dp.com/categories/assembly/index.xml" rel="self" type="application/rss+xml"/><item><title>Voron 2.4 R2 Pro+ Build - Building the Frame</title><link>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</link><pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
-&lt;p&gt;In this section, I will be building the frame of my Voron 2.4 R2 Kit&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;References and Links&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf"&gt;Voron 2.4 R2 Manual&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="build-steps"&gt;Build Steps&lt;a class="td-heading-self-link" href="#build-steps" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;The Voron assembly manual starts with the building of the frame. I will start from this point.&lt;/p&gt;
-&lt;h2 id="blind-joints"&gt;Blind Joints&lt;a class="td-heading-self-link" href="#blind-joints" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px"&gt;
-&lt;img class="card-img-top" src="https://minimal3dp.com/projects/journal/voron-2.4-r2/voron-build-frame/voron-blind-joints_hu_b502350ae4978cc4.png" width="600" height="450"&gt;
-&lt;figcaption class="card-body px-0 pt-2 pb-0"&gt;
-&lt;p class="card-text"&gt;
-
-
-Voron Build Guide - Blind Joints
-&lt;small class="text-body-secondary"&gt;&lt;br/&gt;Photo: Various&lt;/small&gt;
-&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2 id="frame"&gt;Frame&lt;a class="td-heading-self-link" href="#frame" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Using the blind joints. The Frame is assembled.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assembly on Minimal 3DP</title>
+    <link>http://localhost:60426/categories/assembly/</link>
+    <description>Recent content in Assembly on Minimal 3DP</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 May 2024 13:54:48 -0500</lastBuildDate>
+    <atom:link href="http://localhost:60426/categories/assembly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Voron 2.4 R2 Pro&#43; Build - Building the Frame</title>
+      <link>http://localhost:60426/projects/journal/voron-2.4-r2/voron-build-frame/</link>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:60426/projects/journal/voron-2.4-r2/voron-build-frame/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;In this section, I will be building the frame of my Voron 2.4 R2 Kit&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;References and Links&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf&#34;&gt;Voron 2.4 R2 Manual&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;build-steps&#34;&gt;Build Steps&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#build-steps&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;The Voron assembly manual starts with the building of the frame. I will start from this point.&lt;/p&gt;&#xA;&lt;h2 id=&#34;blind-joints&#34;&gt;Blind Joints&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#blind-joints&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 610px&#34;&gt;&#xA;&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:60426/projects/journal/voron-2.4-r2/voron-build-frame/voron-blind-joints_hu_b502350ae4978cc4.png&#34; width=&#34;600&#34; height=&#34;450&#34;&gt;&#xA;&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;&#xA;&lt;p class=&#34;card-text&#34;&gt;&#xA;&#xA;&#xA;Voron Build Guide - Blind Joints&#xA;&lt;small class=&#34;text-body-secondary&#34;&gt;&lt;br/&gt;Photo: Various&lt;/small&gt;&#xA;&lt;/p&gt;&#xA;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;frame&#34;&gt;Frame&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#frame&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Using the blind joints. The Frame is assembled.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
