@@ -1,0 +1,14 @@
+{{/* FAQ Item - Individual Question/Answer */}}
+{{/* Usage: {{< faq-item question="Your question?" >}}Your answer{{< /faq-item >}} */}}
+
+{{ $question := .Get "question" }}
+{{ $answer := .Inner | markdownify | plainify | replaceRE "\"" "&quot;" }}
+
+<div class="faq-item" style="margin-bottom: 20px; padding: 20px; background: #FFFFFF; border-left: 4px solid #3B82F6; border-radius: 4px;" data-question="{{ $question }}" data-answer="{{ $answer }}">
+  <h3 style="margin: 0 0 10px 0; color: #1F2937; font-size: 1.1em;">
+    <span style="color: #3B82F6; margin-right: 8px;">Q:</span>{{ $question }}
+  </h3>
+  <div style="color: #4B5563; line-height: 1.6;">
+    <span style="font-weight: 600; color: #3B82F6; margin-right: 8px;">A:</span>{{ .Inner | markdownify }}
+  </div>
+</div>
