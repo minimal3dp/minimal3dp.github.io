@@ -11,6 +11,8 @@ resources:
     title: "Image #:counter"
     params:
       byline: "Photo: Mike Wilson / CC-BY-CA"
+images:
+  - /images/minimal3dp-og-1200x630.jpg
 draft: false
 ---
 

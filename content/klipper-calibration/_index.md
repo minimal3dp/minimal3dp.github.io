@@ -5,6 +5,8 @@ cascade:
   - type: "docs"
 categories: [Landing Page]
 tags: [calibration, how-to]
+images:
+  - /images/minimal3dp-og-1200x630.jpg
 ---
 
 {{% pageinfo %}}

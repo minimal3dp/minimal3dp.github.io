@@ -2,6 +2,8 @@
 title: About Minimal 3DP
 linkTitle: About
 menu: {main: {weight: 10}}
+images:
+  - /images/minimal3dp-og-1200x630.jpg
 ---
 
 {{% blocks/cover title="About Minimal 3DP" image_anchor="bottom" height="auto" %}}

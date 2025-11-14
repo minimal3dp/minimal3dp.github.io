@@ -1,5 +1,7 @@
 ---
 title: Minimal 3DP
+images:
+  - /images/minimal3dp-og-1200x630.jpg
 ---
 
 {{< blocks/cover title="Welcome to Minimal 3DP" image_anchor="top" height="full" >}}

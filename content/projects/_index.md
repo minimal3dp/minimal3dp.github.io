@@ -6,6 +6,8 @@ weight: 30
 cascade:
   - type: "docs"
 categories: [Landing Page, Projects]
+images:
+  - /images/minimal3dp-og-1200x630.jpg
 ---
 
 {{% pageinfo %}}
