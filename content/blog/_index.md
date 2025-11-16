@@ -1,5 +1,5 @@
 ---
-title: 3D Printing Blog - Tutorials, Reviews & News | Minimal 3DP
+title: 3D Printing Blog - Tutorials, Reviews & News
 menu: { main: { weight: 20 } }
 description: Latest 3D printing tutorials, product reviews, Klipper guides, OrcaSlicer tips, and maker news. Updated weekly with tested solutions and honest reviews.
 keywords: [3d printing blog, klipper tutorials, orcaslicer guides, 3d printer reviews, filament reviews, 3d printing tips, maker blog]
