@@ -68,9 +68,9 @@ This research is incredibly helpful, but it's not easy for everyone to parse. So
 I'm excited to show you what I've built: **The OrcaSlicer Expert Assistant**.
 
 {{< cta type="calculator" >}}
-**➡️ Try the FREE app now:** [https://settings.minimal3dp.com](https://settings.minimal3dp.com)
-
-No registration required • Works in your browser • Based on real research
+<strong>➡️ Try the FREE app now:</strong><br>
+<a href="https://settings.minimal3dp.com" target="_blank" rel="noopener" style="display:inline-block;background:#2563EB;color:#fff;padding:15px 30px;text-decoration:none;border-radius:4px;font-weight:bold;margin:10px 0 0 0;box-shadow:0 2px 8px rgba(0,0,0,0.07);font-size:1.15em;">https://settings.minimal3dp.com</a>
+<br><span style="font-size:0.95em;opacity:0.92;">No registration required • Works in your browser • Based on real research</span>
 {{< /cta >}}
 
 While it's named for OrcaSlicer, the principles and recommendations should work for any slicer you use, including PrusaSlicer and Cura.

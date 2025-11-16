@@ -6,22 +6,22 @@
 {{ $image := .Get "image" }}
 {{ $tag := .Site.Params.affiliate_tag | default "mwf064-20" }}
 
-<div class="affiliate-product-card" style="border: 2px solid #3B82F6; border-radius: 8px; padding: 20px; margin: 20px 0; display: flex; gap: 20px; flex-wrap: wrap;">
+<div class="affiliate-product-card">
   {{ if $image }}
-  <div class="product-image" style="flex: 0 0 150px;">
-    <img src="{{ $image }}" alt="{{ $title }}" style="width: 100%; border-radius: 4px;" loading="lazy">
+  <div class="product-image">
+    <img src="{{ $image }}" alt="{{ $title }}" loading="lazy">
   </div>
   {{ end }}
   
-  <div class="product-info" style="flex: 1; min-width: 250px;">
-    <h3 style="margin-top: 0; color: #1F2937;">{{ $title }}</h3>
+  <div class="product-info">
+    <h3>{{ $title }}</h3>
     
     {{ if $price }}
-    <p class="price" style="font-size: 1.5em; font-weight: bold; color: #3B82F6; margin: 10px 0;">{{ $price }}</p>
+    <p class="price">{{ $price }}</p>
     {{ end }}
     
     {{ if .Inner }}
-    <div class="product-description" style="margin: 15px 0;">
+    <div class="product-description">
       {{ .Inner | markdownify }}
     </div>
     {{ end }}
@@ -31,11 +31,11 @@
        rel="nofollow noopener sponsored"
        class="btn btn-amazon"
        onclick="trackAffiliateClick('{{ $asin }}', '{{ $title }}')"
-       style="display: inline-block; background: #FF9900; color: #000; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px;">
+       >
       🛒 View on Amazon
     </a>
     
-    <p class="affiliate-disclosure" style="font-size: 0.85em; color: #6B7280; margin-top: 10px;">
+    <p class="affiliate-disclosure">
       <small>As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</small>
     </p>
   </div>

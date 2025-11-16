@@ -242,6 +242,7 @@
       "hover:text-blue-300",
       "hover:text-gray-600",
       "hover:underline",
+      "img-fluid",
       "info-icon",
       "inline-block",
       "inline-flex",

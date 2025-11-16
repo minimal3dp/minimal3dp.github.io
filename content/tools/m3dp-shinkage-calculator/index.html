@@ -1,10 +1,12 @@
 ---
-title: 3D Print Shinkage Calculator
-linkTitle: "3D Print Shinkage Calculator"
+title: 3D Print Shrinkage Calculator
+linkTitle: "3D Print Shrinkage Calculator"
 date: 2025-11-09
 weight: 4
 description: >
   Calculate the shrinkage of 3D prints with FDM technology.
+aliases:
+    - /tools/m3dp-shrinkage-calculator/
 ---
 
 <!DOCTYPE html>
@@ -361,7 +363,7 @@ description: >
             const copyShrinkageBtn = document.getElementById('copy-shrinkage-btn');
             const copyHoleCompBtn = document.getElementById('copy-hole-comp-btn');
 
-            <!-- Calculate button logic -->
+            // Calculate button logic
             calculateBtn.addEventListener('click', () => {
                 // Read and parse values
                 const measuredA = parseFloat(measuredAEl.value);

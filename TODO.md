@@ -265,6 +265,29 @@
 
 ---
 
+## ✅ CODE REVIEW ADDITIONS (Nov 15, 2025)
+
+### Quick Wins (1-2 hours)
+- [ ] Add OrcaSlicer Expert Assistant to Tools index (`/content/tools/_index.md`) with a short description and external link to `https://settings.minimal3dp.com` (open in new tab, `rel="noopener"`). Add GA event on click: `onclick="trackCtaClick('orcaslicer_app','tools_index')"`.
+- [ ] Standardize CTA tracking: switch `layouts/shortcodes/cta.html` to use global `trackCtaClick(type, location)` from `hooks/head-end.html` and remove the shortcode-local `trackCTA()` duplication.
+- [ ] Configure email CTA: replace `YOUR_EMAIL_SERVICE_URL` in `layouts/shortcodes/cta.html` with a real endpoint or hide the email variant until configured.
+- [ ] Update internal links to shrinkage calculator to use the corrected path `/tools/m3dp-shrinkage-calculator/` (alias added). Current link text remains correct; fix URL spelling in new content going forward.
+
+### Analytics (1 hour)
+- [ ] GA4 cross-domain session linking: add linker domains `['minimal3dp.com','settings.minimal3dp.com']` after GA init so sessions persist when users click from minimal3dp.com to the app subdomain. Implementation: call `gtag('config','G-VQ8RPWC2MK',{ linker: { domains: ['minimal3dp.com','settings.minimal3dp.com'] }})` once `gtag` is available.
+
+### Styling/Perf (2-3 hours)
+- [ ] Move inline CTA styles into SCSS (`assets/scss/_variables_project.scss` + a small partial). Keep colors in variables to ensure consistency across CTA types.
+- [ ] Consider preloading critical fonts/CSS on high-traffic pages and adding `preconnect` for Google Fonts used by the Shrinkage tool HTML to reduce layout flashes.
+
+### Accessibility (30-45 mins)
+- [ ] Add `aria-label` or descriptive text for CTA-only icons where needed; ensure sufficient contrast on all CTA button text across gradients (current calculator CTA fixed; re-check YouTube/support variants).
+
+### Documentation (30 mins)
+- [ ] In `MINIMAL3DP_APP_GUIDE.md`, add a short note under Launch Checklist to: 1) list new apps on `/tools/`, and 2) configure GA4 cross-domain linker when using subdomains. Also include a one-line reminder to use the corrected "Shrinkage" spelling.
+
+---
+
 ### 8. **Create Content Archetypes** ✅ COMPLETED (1.5 hours)
 **Impact:** ⭐⭐ (Faster content creation, consistency)
 
