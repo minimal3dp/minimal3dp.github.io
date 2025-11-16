@@ -1,5 +1,5 @@
 ---
-title: Free 3D Printing Calculators & Tools | Minimal 3DP
+title: Free 3D Printing Calculators & Tools
 menu: { main: { weight: 50 } }
 description: Free online 3D printing calculators - FDM Cost Calculator, Shrinkage Calculator, and more. No registration required, works directly in your browser.
 keywords: [3d printing calculator, fdm cost calculator, print cost calculator, shrinkage calculator, 3d print tools, free 3d printing tools, filament calculator]
