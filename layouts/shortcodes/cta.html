@@ -1,9 +1,14 @@
 {{/* Usage: {{< cta type="youtube" location="blog-post" >}}Custom text{{< /cta >}} */}}
 {{/* Types: youtube, email, calculator, support */}}
+{{/* Extended: app (generic external app/button) */}}
 
 {{ $type := .Get "type" | default "youtube" }}
 {{ $location := .Get "location" | default "content" }}
 {{ $customText := .Inner }}
+{{ $href := .Get "href" }}
+{{ $btnText := .Get "btnText" }}
+{{ $titleParam := .Get "title" }}
+{{ $ctaType := .Get "ctaType" | default $type }}
 
 {{ if eq $type "youtube" }}
 <div class="cta cta--youtube">
@@ -23,15 +28,15 @@
 
 {{ else if eq $type "calculator" }}
 <div class="cta cta--calculator">
-  <h3 class="cta__title">🧮 Try Our Free Calculator</h3>
+  <h3 class="cta__title">{{ if $titleParam }}{{ $titleParam }}{{ else }}🧮 Try Our Free Calculator{{ end }}</h3>
   {{ if $customText }}
     <p class="cta__text">{{ $customText | markdownify }}</p>
   {{ else }}
     <p class="cta__text">Calculate your 3D print costs accurately with our professional FDM cost calculator.</p>
   {{ end }}
-  <a class="cta__btn" href="/tools/m3dp-fdm-cost-calculator/" 
-     onclick="trackCtaClick('calculator','{{ $location }}')">
-    🎯 Open Calculator
+  <a class="cta__btn" href="{{ if $href }}{{ $href }}{{ else }}/tools/m3dp-fdm-cost-calculator/{{ end }}" 
+     onclick="trackCtaClick('{{ $ctaType }}','{{ $location }}')">
+    {{ if $btnText }}{{ $btnText }}{{ else }}🎯 Open Calculator{{ end }}
   </a>
   </div>
 
@@ -65,6 +70,19 @@
      rel="noopener"
      onclick="trackCtaClick('support','{{ $location }}')">
     ❤️ Subscribe & Support
+  </a>
+  </div>
+
+{{ else if eq $type "app" }}
+<div class="cta cta--app">
+  <h3 class="cta__title">{{ if $titleParam }}{{ $titleParam }}{{ else }}🚀 Open the App{{ end }}</h3>
+  {{ if $customText }}
+    <p class="cta__text">{{ $customText | markdownify }}</p>
+  {{ end }}
+  <a class="cta__btn" href="{{ $href }}"
+     {{ if strings.HasPrefix $href "http" }}target="_blank" rel="noopener"{{ end }}
+     onclick="trackCtaClick('{{ $ctaType }}','{{ $location }}')">
+    {{ if $btnText }}{{ $btnText }}{{ else }}Open App ↗{{ end }}
   </a>
   </div>
 

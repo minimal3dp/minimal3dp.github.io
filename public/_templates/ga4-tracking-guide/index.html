@@ -1,73 +1,496 @@
-<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en class=no-js><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><link rel="shortcut icon" href=/favicons/favicon.ico><link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180><link rel=icon type=image/png href=/favicons/favicon-16x16.png sizes=16x16><link rel=icon type=image/png href=/favicons/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/favicons/android-36x36.png sizes=36x36><link rel=icon type=image/png href=/favicons/android-48x48.png sizes=48x48><link rel=icon type=image/png href=/favicons/android-72x72.png sizes=72x72><link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96><link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144><link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192><title>Minimal 3DP</title><meta name=description content='GA4 Event Tracking GuideLast Updated: November 13, 2025
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Minimal 3DP</title>
+<meta name="description" content="GA4 Event Tracking GuideLast Updated: November 13, 2025
 File Location: /layouts/partials/hooks/head-end.html
 OverviewThis site uses a centralized GA4 event tracking library that automatically tracks user interactions and provides manual tracking functions for custom events.
-Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel="sponsored" are automatically tracked.
+Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel=&#34;sponsored&#34; are automatically tracked.
 Manual Usage:
-<a href="https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20" onclick="trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)"> Buy Now </a> GA4 Event:
-Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:'><meta property="og:url" content="https://minimal3dp.com/_templates/ga4-tracking-guide/"><meta property="og:site_name" content="Minimal 3DP"><meta property="og:title" content="Minimal 3DP"><meta property="og:description" content='GA4 Event Tracking GuideLast Updated: November 13, 2025
+&lt;a href=&#34;https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20&#34; onclick=&#34;trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)&#34;&gt; Buy Now &lt;/a&gt; GA4 Event:
+Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:">
+<meta property="og:url" content="http://localhost:1313/_templates/ga4-tracking-guide/">
+  <meta property="og:site_name" content="Minimal 3DP">
+  <meta property="og:title" content="Minimal 3DP">
+  <meta property="og:description" content="GA4 Event Tracking GuideLast Updated: November 13, 2025
 File Location: /layouts/partials/hooks/head-end.html
 OverviewThis site uses a centralized GA4 event tracking library that automatically tracks user interactions and provides manual tracking functions for custom events.
-Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel="sponsored" are automatically tracked.
+Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel=&#34;sponsored&#34; are automatically tracked.
 Manual Usage:
-<a href="https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20" onclick="trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)"> Buy Now </a> GA4 Event:
-Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="_templates"><meta property="article:modified_time" content="2025-11-13T22:09:08-06:00"><meta property="og:image" content="https://minimal3dp.com/images/minimal3dp-og-1200x630.jpg"><meta itemprop=name content="Minimal 3DP"><meta itemprop=description content='GA4 Event Tracking GuideLast Updated: November 13, 2025
+&lt;a href=&#34;https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20&#34; onclick=&#34;trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)&#34;&gt; Buy Now &lt;/a&gt; GA4 Event:
+Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="_templates">
+    <meta property="article:modified_time" content="2025-11-13T22:09:08-06:00">
+    <meta property="og:image" content="http://localhost:1313/images/minimal3dp-og-1200x630.jpg">
+
+  <meta itemprop="name" content="Minimal 3DP">
+  <meta itemprop="description" content="GA4 Event Tracking GuideLast Updated: November 13, 2025
 File Location: /layouts/partials/hooks/head-end.html
 OverviewThis site uses a centralized GA4 event tracking library that automatically tracks user interactions and provides manual tracking functions for custom events.
-Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel="sponsored" are automatically tracked.
+Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel=&#34;sponsored&#34; are automatically tracked.
 Manual Usage:
-<a href="https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20" onclick="trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)"> Buy Now </a> GA4 Event:
-Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:'><meta itemprop=dateModified content="2025-11-13T22:09:08-06:00"><meta itemprop=wordCount content="1246"><meta itemprop=image content="https://minimal3dp.com/images/minimal3dp-og-1200x630.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://minimal3dp.com/images/minimal3dp-og-1200x630.jpg"><meta name=twitter:title content="Minimal 3DP"><meta name=twitter:description content='GA4 Event Tracking GuideLast Updated: November 13, 2025
+&lt;a href=&#34;https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20&#34; onclick=&#34;trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)&#34;&gt; Buy Now &lt;/a&gt; GA4 Event:
+Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:">
+  <meta itemprop="dateModified" content="2025-11-13T22:09:08-06:00">
+  <meta itemprop="wordCount" content="1246">
+  <meta itemprop="image" content="http://localhost:1313/images/minimal3dp-og-1200x630.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/minimal3dp-og-1200x630.jpg">
+  <meta name="twitter:title" content="Minimal 3DP">
+  <meta name="twitter:description" content="GA4 Event Tracking GuideLast Updated: November 13, 2025
 File Location: /layouts/partials/hooks/head-end.html
 OverviewThis site uses a centralized GA4 event tracking library that automatically tracks user interactions and provides manual tracking functions for custom events.
-Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel="sponsored" are automatically tracked.
+Tracking Functions Available1. Affiliate Link ClickstrackAffiliateClick(asin, title) Automatic: All links with rel=&#34;sponsored&#34; are automatically tracked.
 Manual Usage:
-<a href="https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20" onclick="trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)"> Buy Now </a> GA4 Event:
-Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:'><link rel=preload href=/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css as=style integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq+vE4=" crossorigin=anonymous><link href=/scss/main.min.12ec6193c846e3bf4d662d7c20cdb93f3e62e46dcfaa3ad605307ae21abebc4e.css rel=stylesheet integrity="sha256-Euxhk8hG479NZi18IM25Pz5i5G3PqjrWBTB64hq+vE4=" crossorigin=anonymous><script src=https://code.jquery.com/jquery-3.7.1.min.js integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin=anonymous></script><script>function trackAffiliateClick(e,t){typeof gtag=="function"&&(gtag("event","affiliate_click",{event_category:"Amazon",event_label:t||"Unknown Product",product_id:e,value:1}),console.log("GA4 Event: affiliate_click",{asin:e,title:t}))}function trackYouTubeSubscribe(e){typeof gtag=="function"&&(gtag("event","youtube_subscribe_click",{event_category:"YouTube",event_label:e||"Unknown",value:1}),console.log("GA4 Event: youtube_subscribe_click",{source:e}))}function trackYouTubeVideo(e,t){typeof gtag=="function"&&(gtag("event","youtube_video_click",{event_category:"YouTube",event_label:t||e,video_id:e,value:1}),console.log("GA4 Event: youtube_video_click",{videoId:e,title:t}))}function trackRelatedPostClick(e,t){typeof gtag=="function"&&(gtag("event","related_post_click",{event_category:"Related Posts",event_label:e,page_path:t,value:1}),console.log("GA4 Event: related_post_click",{postTitle:e,postUrl:t}))}function trackCalculatorUse(e,t){typeof gtag=="function"&&(gtag("event","calculator_use",{event_category:"Tools",event_label:e,calculator_action:t||"calculate",value:1}),console.log("GA4 Event: calculator_use",{calculatorName:e,action:t}))}function trackEmailSignup(e,t){typeof gtag=="function"&&(gtag("event","email_signup",{event_category:"Lead Generation",event_label:e,list_type:t||"newsletter",value:5}),console.log("GA4 Event: email_signup",{formLocation:e,listType:t}))}function trackVideoPlay(e,t){typeof gtag=="function"&&(gtag("event","video_play",{event_category:"Video Engagement",event_label:t||e,video_id:e,value:2}),console.log("GA4 Event: video_play",{videoId:e,videoTitle:t}))}function trackCtaClick(e,t){typeof gtag=="function"&&(gtag("event","cta_click",{event_category:"CTA",event_label:e,cta_location:t||"unknown",value:1}),console.log("GA4 Event: cta_click",{ctaType:e,location:t}))}function trackSiteSearch(e,t){typeof gtag=="function"&&(gtag("event","search",{search_term:e,results_count:t||0}),console.log("GA4 Event: search",{searchQuery:e,resultsCount:t}))}function trackOutboundLink(e,t){typeof gtag=="function"&&(gtag("event","click",{event_category:"Outbound Link",event_label:e,link_text:t||"Unknown",transport_type:"beacon"}),console.log("GA4 Event: outbound_link",{url:e,linkText:t}))}function trackFileDownload(e,t){typeof gtag=="function"&&(gtag("event","file_download",{event_category:"Download",event_label:e,file_extension:t||"unknown",value:1}),console.log("GA4 Event: file_download",{fileName:e,fileType:t}))}document.addEventListener("click",function(e){const t=e.target.closest('a[rel*="sponsored"]');if(t){const e=t.href.match(/\/dp\/([A-Z0-9]+)/),n=t.getAttribute("data-product-name")||t.textContent.trim()||"Unknown Product";e&&e[1]&&trackAffiliateClick(e[1],n)}}),document.addEventListener("click",function(e){const t=e.target.closest("a");if(t&&t.href){const e=t.hostname!==window.location.hostname,n=t.target==="_blank",s=t.rel&&t.rel.includes("sponsored");if((e||n)&&!s){const e=t.textContent.trim()||t.getAttribute("aria-label")||"Unknown";trackOutboundLink(t.href,e)}}}),document.addEventListener("click",function(e){const t=e.target.closest("a");if(t&&t.href){const n=t.href.toLowerCase(),s=[".pdf",".stl",".gcode",".zip",".cfg",".json",".txt",".csv"],e=s.find(e=>n.endsWith(e));if(e){const n=t.href.split("/").pop()||"unknown";trackFileDownload(n,e.substring(1))}}}),console.log("✅ GA4 Event Tracking Library Loaded"),console.log("📊 Available tracking functions:",["trackAffiliateClick()","trackYouTubeSubscribe()","trackYouTubeVideo()","trackRelatedPostClick()","trackCalculatorUse()","trackEmailSignup()","trackVideoPlay()","trackCtaClick()","trackSiteSearch()","trackOutboundLink()","trackFileDownload()"])</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ8RPWC2MK"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-VQ8RPWC2MK")}</script><script>typeof gtag=="function"&&(gtag("config","G-VQ8RPWC2MK",{linker:{domains:["minimal3dp.com","settings.minimal3dp.com"]}}),console.log("🔗 GA4 linker configured for cross-domain sessions"))</script></head><body class=td-page><header><nav class="td-navbar js-navbar-scroll" data-bs-theme=dark><div class="container-fluid flex-column flex-md-row"><a class=navbar-brand href=/><span class="navbar-brand__logo navbar-logo"></span><span class=navbar-brand__name>Minimal 3DP</span></a><div class="td-navbar-nav-scroll ms-md-auto" id=main_navbar><ul class=navbar-nav><li class=nav-item><a class=nav-link href=/about/><span>About</span></a></li><li class=nav-item><a class=nav-link href=/blog/><span>3D Printing Blog - Tutorials, Reviews & News</span></a></li><li class=nav-item><a class=nav-link href=/projects/><span>Projects</span></a></li><li class=nav-item><a class=nav-link href=/klipper-calibration/><span>Klipper Calibration</span></a></li><li class=nav-item><a class=nav-link href=/tools/><span>Free 3D Printing Calculators & Tools</span></a></li></ul></div><div class="d-none d-lg-block"><div class=td-search><div class=td-search__icon></div><input type=search class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete=off></div></div></div></nav></header><div class="container-fluid td-default td-outer"><main role=main class=td-main><h1 id=ga4-event-tracking-guide>GA4 Event Tracking Guide<a class=td-heading-self-link href=#ga4-event-tracking-guide aria-label="Heading self-link"></a></h1><p><strong>Last Updated:</strong> November 13, 2025<br><strong>File Location:</strong> <code>/layouts/partials/hooks/head-end.html</code></p><h2 id=overview>Overview<a class=td-heading-self-link href=#overview aria-label="Heading self-link"></a></h2><p>This site uses a centralized GA4 event tracking library that automatically tracks user interactions and provides manual tracking functions for custom events.</p><h2 id=tracking-functions-available>Tracking Functions Available<a class=td-heading-self-link href=#tracking-functions-available aria-label="Heading self-link"></a></h2><h3 id=1-affiliate-link-clicks>1. <strong>Affiliate Link Clicks</strong><a class=td-heading-self-link href=#1-affiliate-link-clicks aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackAffiliateClick</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>asin</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>title</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Automatic:</strong> All links with <code>rel="sponsored"</code> are automatically tracked.</p><p><strong>Manual Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>a</span> <span style=color:#c4a000>href</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20&#34;</span>
-</span></span><span style=display:flex><span>   <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>   Buy Now
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>a</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>affiliate_click</code></li><li>Category: <code>Amazon</code></li><li>Label: Product title</li><li>Product ID: ASIN</li></ul><hr><h3 id=2-youtube-subscribe-clicks>2. <strong>YouTube Subscribe Clicks</strong><a class=td-heading-self-link href=#2-youtube-subscribe-clicks aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackYouTubeSubscribe</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>source</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>a</span> <span style=color:#c4a000>href</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1&#34;</span>
-</span></span><span style=display:flex><span>   <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;trackYouTubeSubscribe(&#39;homepage&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>   Subscribe
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>a</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>Already Implemented In:</strong></p><ul><li>✅ <code>youtube-subscribe-cta.html</code> partial (blog-cta)</li><li>✅ Homepage hero section</li></ul><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>youtube_subscribe_click</code></li><li>Category: <code>YouTube</code></li><li>Label: Source location</li><li>Value: 1</li></ul><hr><h3 id=3-youtube-video-link-clicks>3. <strong>YouTube Video Link Clicks</strong><a class=td-heading-self-link href=#3-youtube-video-link-clicks aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackYouTubeVideo</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>videoId</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>title</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>a</span> <span style=color:#c4a000>href</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;https://www.youtube.com/watch?v=ABC123&#34;</span>
-</span></span><span style=display:flex><span>   <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;trackYouTubeVideo(&#39;ABC123&#39;, &#39;Tutorial Title&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>   Watch Video
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>a</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>Already Implemented In:</strong></p><ul><li>✅ <code>watch-on-youtube.html</code> partial</li></ul><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>youtube_video_click</code></li><li>Category: <code>YouTube</code></li><li>Label: Video title or ID</li><li>Video ID: YouTube video ID</li><li>Value: 1</li></ul><hr><h3 id=4-related-post-clicks>4. <strong>Related Post Clicks</strong><a class=td-heading-self-link href=#4-related-post-clicks aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackRelatedPostClick</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>postTitle</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>postUrl</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>a</span> <span style=color:#c4a000>href</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;/blog/post-url/&#34;</span>
-</span></span><span style=display:flex><span>   <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;trackRelatedPostClick(&#39;Post Title&#39;, &#39;/blog/post-url/&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>   Read More
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>a</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>Already Implemented In:</strong></p><ul><li>✅ <code>related-posts.html</code> partial</li></ul><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>related_post_click</code></li><li>Category: <code>Related Posts</code></li><li>Label: Post title</li><li>Page Path: Destination URL</li><li>Value: 1</li></ul><hr><h3 id=5-calculator-usage->5. <strong>Calculator Usage</strong> 🆕<a class=td-heading-self-link href=#5-calculator-usage- aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackCalculatorUse</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>calculatorName</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>action</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage in Calculator Pages:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>button</span> <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;calculateCost(); trackCalculatorUse(&#39;fdm-cost&#39;, &#39;calculate&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>  Calculate
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>button</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>button</span> <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;resetForm(); trackCalculatorUse(&#39;fdm-cost&#39;, &#39;reset&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>  Reset
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>button</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>button</span> <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;exportResults(); trackCalculatorUse(&#39;fdm-cost&#39;, &#39;export&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>  Export
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>button</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>Calculator Names:</strong></p><ul><li><code>fdm-cost</code> - FDM Cost Calculator</li><li><code>shrinkage</code> - Shrinkage Calculator</li><li><code>resin-cost</code> - Resin Print Cost (future)</li><li><code>filament-drying</code> - Filament Drying Time (future)</li></ul><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>calculator_use</code></li><li>Category: <code>Tools</code></li><li>Label: Calculator name</li><li>Calculator Action: calculate/reset/export</li><li>Value: 1</li></ul><hr><h3 id=6-email-signups->6. <strong>Email Signups</strong> 🆕<a class=td-heading-self-link href=#6-email-signups- aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackEmailSignup</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>formLocation</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>listType</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>form</span> <span style=color:#c4a000>onsubmit</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;trackEmailSignup(&#39;sidebar&#39;, &#39;newsletter&#39;); return true;&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>input</span> <span style=color:#c4a000>type</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;email&#34;</span> <span style=color:#c4a000>name</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;email&#34;</span> <span style=color:#c4a000>required</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>button</span> <span style=color:#c4a000>type</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;submit&#34;</span><span style=color:#000;font-weight:700>&gt;</span>Subscribe<span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>button</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>form</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>Form Locations:</strong></p><ul><li><code>sidebar</code> - Sidebar widget</li><li><code>footer</code> - Footer CTA</li><li><code>blog-inline</code> - Inside blog posts</li><li><code>homepage</code> - Homepage hero</li><li><code>popup</code> - Modal popup</li></ul><p><strong>List Types:</strong></p><ul><li><code>newsletter</code> - Weekly newsletter</li><li><code>course</code> - Email course</li><li><code>ebook</code> - Free ebook download</li><li><code>updates</code> - Product updates</li></ul><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>email_signup</code></li><li>Category: <code>Lead Generation</code></li><li>Label: Form location</li><li>List Type: Type of list</li><li>Value: 5</li></ul><hr><h3 id=7-video-plays->7. <strong>Video Plays</strong> 🆕<a class=td-heading-self-link href=#7-video-plays- aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackVideoPlay</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>videoId</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>videoTitle</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage with YouTube IFrame API:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// When video starts playing
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#000>player</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>addEventListener</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;onStateChange&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#204a87;font-weight:700>function</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>event</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>if</span> <span style=color:#000;font-weight:700>(</span><span style=color:#000>event</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>data</span> <span style=color:#ce5c00;font-weight:700>==</span> <span style=color:#000>YT</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>PlayerState</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>PLAYING</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>    <span style=color:#000>trackVideoPlay</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;ABC123&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;Tutorial: Setting Up Klipper&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>});</span>
-</span></span></code></pre></div><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>video_play</code></li><li>Category: <code>Video Engagement</code></li><li>Label: Video title or ID</li><li>Video ID: YouTube video ID</li><li>Value: 2</li></ul><hr><h3 id=8-cta-button-clicks->8. <strong>CTA Button Clicks</strong> 🆕<a class=td-heading-self-link href=#8-cta-button-clicks- aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackCtaClick</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>ctaType</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>location</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>
+&lt;a href=&#34;https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20&#34; onclick=&#34;trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)&#34;&gt; Buy Now &lt;/a&gt; GA4 Event:
+Event Name: affiliate_click Category: Amazon Label: Product title Product ID: ASIN 2. YouTube Subscribe ClickstrackYouTubeSubscribe(source) Usage:">
+
+
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+
+
+
+<script>
+
+
+
+
+
+
+function trackAffiliateClick(asin, title) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'affiliate_click', {
+      'event_category': 'Amazon',
+      'event_label': title || 'Unknown Product',
+      'product_id': asin,
+      'value': 1
+    });
+    console.log('GA4 Event: affiliate_click', { asin, title });
+  }
+}
+
+
+
+function trackYouTubeSubscribe(source) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'youtube_subscribe_click', {
+      'event_category': 'YouTube',
+      'event_label': source || 'Unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: youtube_subscribe_click', { source });
+  }
+}
+
+
+
+function trackYouTubeVideo(videoId, title) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'youtube_video_click', {
+      'event_category': 'YouTube',
+      'event_label': title || videoId,
+      'video_id': videoId,
+      'value': 1
+    });
+    console.log('GA4 Event: youtube_video_click', { videoId, title });
+  }
+}
+
+
+
+function trackRelatedPostClick(postTitle, postUrl) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'related_post_click', {
+      'event_category': 'Related Posts',
+      'event_label': postTitle,
+      'page_path': postUrl,
+      'value': 1
+    });
+    console.log('GA4 Event: related_post_click', { postTitle, postUrl });
+  }
+}
+
+
+
+function trackCalculatorUse(calculatorName, action) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'calculator_use', {
+      'event_category': 'Tools',
+      'event_label': calculatorName,
+      'calculator_action': action || 'calculate',
+      'value': 1
+    });
+    console.log('GA4 Event: calculator_use', { calculatorName, action });
+  }
+}
+
+
+
+function trackEmailSignup(formLocation, listType) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'email_signup', {
+      'event_category': 'Lead Generation',
+      'event_label': formLocation,
+      'list_type': listType || 'newsletter',
+      'value': 5
+    });
+    console.log('GA4 Event: email_signup', { formLocation, listType });
+  }
+}
+
+
+
+function trackVideoPlay(videoId, videoTitle) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'video_play', {
+      'event_category': 'Video Engagement',
+      'event_label': videoTitle || videoId,
+      'video_id': videoId,
+      'value': 2
+    });
+    console.log('GA4 Event: video_play', { videoId, videoTitle });
+  }
+}
+
+
+
+function trackCtaClick(ctaType, location) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'cta_click', {
+      'event_category': 'CTA',
+      'event_label': ctaType,
+      'cta_location': location || 'unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: cta_click', { ctaType, location });
+  }
+}
+
+
+
+function trackSiteSearch(searchQuery, resultsCount) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'search', {
+      'search_term': searchQuery,
+      'results_count': resultsCount || 0
+    });
+    console.log('GA4 Event: search', { searchQuery, resultsCount });
+  }
+}
+
+
+
+function trackOutboundLink(url, linkText) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'click', {
+      'event_category': 'Outbound Link',
+      'event_label': url,
+      'link_text': linkText || 'Unknown',
+      'transport_type': 'beacon'
+    });
+    console.log('GA4 Event: outbound_link', { url, linkText });
+  }
+}
+
+
+
+function trackFileDownload(fileName, fileType) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'file_download', {
+      'event_category': 'Download',
+      'event_label': fileName,
+      'file_extension': fileType || 'unknown',
+      'value': 1
+    });
+    console.log('GA4 Event: file_download', { fileName, fileType });
+  }
+}
+
+
+
+
+
+
+document.addEventListener('click', function(e) {
+  const affiliateLink = e.target.closest('a[rel*="sponsored"]');
+  if (affiliateLink) {
+    const asin = affiliateLink.href.match(/\/dp\/([A-Z0-9]+)/);
+    const title = affiliateLink.getAttribute('data-product-name') || 
+                  affiliateLink.textContent.trim() || 
+                  'Unknown Product';
+    
+    if (asin && asin[1]) {
+      trackAffiliateClick(asin[1], title);
+    }
+  }
+});
+
+
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link && link.href) {
+    const isExternal = link.hostname !== window.location.hostname;
+    const isBlank = link.target === '_blank';
+    const isSponsored = link.rel && link.rel.includes('sponsored');
+    
+    
+    if ((isExternal || isBlank) && !isSponsored) {
+      const linkText = link.textContent.trim() || link.getAttribute('aria-label') || 'Unknown';
+      trackOutboundLink(link.href, linkText);
+    }
+  }
+});
+
+
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link && link.href) {
+    const url = link.href.toLowerCase();
+    const downloadExtensions = ['.pdf', '.stl', '.gcode', '.zip', '.cfg', '.json', '.txt', '.csv'];
+    const extension = downloadExtensions.find(ext => url.endsWith(ext));
+    
+    if (extension) {
+      const fileName = link.href.split('/').pop() || 'unknown';
+      trackFileDownload(fileName, extension.substring(1));
+    }
+  }
+});
+
+
+console.log('✅ GA4 Event Tracking Library Loaded');
+console.log('📊 Available tracking functions:', [
+  'trackAffiliateClick()',
+  'trackYouTubeSubscribe()',
+  'trackYouTubeVideo()',
+  'trackRelatedPostClick()',
+  'trackCalculatorUse()',
+  'trackEmailSignup()',
+  'trackVideoPlay()',
+  'trackCtaClick()',
+  'trackSiteSearch()',
+  'trackOutboundLink()',
+  'trackFileDownload()'
+]);
+</script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">Minimal 3DP</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/about/"><span>About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog/"><span>3D Printing Blog - Tutorials, Reviews &amp; News</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/projects/"><span>Projects</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/klipper-calibration/"><span>Klipper Calibration</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/tools/"><span>Free 3D Printing Calculators &amp; Tools</span></a>
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search">
+  <div class="td-search__icon"></div>
+  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        <h1 id="ga4-event-tracking-guide">GA4 Event Tracking Guide<a class="td-heading-self-link" href="#ga4-event-tracking-guide" aria-label="Heading self-link"></a></h1><p><strong>Last Updated:</strong> November 13, 2025<br>
+<strong>File Location:</strong> <code>/layouts/partials/hooks/head-end.html</code></p>
+<h2 id="overview">Overview<a class="td-heading-self-link" href="#overview" aria-label="Heading self-link"></a></h2><p>This site uses a centralized GA4 event tracking library that automatically tracks user interactions and provides manual tracking functions for custom events.</p>
+<h2 id="tracking-functions-available">Tracking Functions Available<a class="td-heading-self-link" href="#tracking-functions-available" aria-label="Heading self-link"></a></h2><h3 id="1-affiliate-link-clicks">1. <strong>Affiliate Link Clicks</strong><a class="td-heading-self-link" href="#1-affiliate-link-clicks" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackAffiliateClick</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">asin</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">title</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Automatic:</strong> All links with <code>rel=&quot;sponsored&quot;</code> are automatically tracked.</p>
+<p><strong>Manual Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://www.amazon.com/dp/B0XXXXX?tag=mwf064-20&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;trackAffiliateClick(&#39;B0XXXXX&#39;, &#39;Product Name&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   Buy Now
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>affiliate_click</code></li>
+<li>Category: <code>Amazon</code></li>
+<li>Label: Product title</li>
+<li>Product ID: ASIN</li>
+</ul>
+<hr>
+<h3 id="2-youtube-subscribe-clicks">2. <strong>YouTube Subscribe Clicks</strong><a class="td-heading-self-link" href="#2-youtube-subscribe-clicks" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackYouTubeSubscribe</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">source</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;trackYouTubeSubscribe(&#39;homepage&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   Subscribe
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>Already Implemented In:</strong></p>
+<ul>
+<li>✅ <code>youtube-subscribe-cta.html</code> partial (blog-cta)</li>
+<li>✅ Homepage hero section</li>
+</ul>
+<p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>youtube_subscribe_click</code></li>
+<li>Category: <code>YouTube</code></li>
+<li>Label: Source location</li>
+<li>Value: 1</li>
+</ul>
+<hr>
+<h3 id="3-youtube-video-link-clicks">3. <strong>YouTube Video Link Clicks</strong><a class="td-heading-self-link" href="#3-youtube-video-link-clicks" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackYouTubeVideo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">videoId</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">title</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://www.youtube.com/watch?v=ABC123&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;trackYouTubeVideo(&#39;ABC123&#39;, &#39;Tutorial Title&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   Watch Video
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>Already Implemented In:</strong></p>
+<ul>
+<li>✅ <code>watch-on-youtube.html</code> partial</li>
+</ul>
+<p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>youtube_video_click</code></li>
+<li>Category: <code>YouTube</code></li>
+<li>Label: Video title or ID</li>
+<li>Video ID: YouTube video ID</li>
+<li>Value: 1</li>
+</ul>
+<hr>
+<h3 id="4-related-post-clicks">4. <strong>Related Post Clicks</strong><a class="td-heading-self-link" href="#4-related-post-clicks" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackRelatedPostClick</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">postTitle</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">postUrl</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;/blog/post-url/&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;trackRelatedPostClick(&#39;Post Title&#39;, &#39;/blog/post-url/&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   Read More
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>Already Implemented In:</strong></p>
+<ul>
+<li>✅ <code>related-posts.html</code> partial</li>
+</ul>
+<p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>related_post_click</code></li>
+<li>Category: <code>Related Posts</code></li>
+<li>Label: Post title</li>
+<li>Page Path: Destination URL</li>
+<li>Value: 1</li>
+</ul>
+<hr>
+<h3 id="5-calculator-usage-">5. <strong>Calculator Usage</strong> 🆕<a class="td-heading-self-link" href="#5-calculator-usage-" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackCalculatorUse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">calculatorName</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">action</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage in Calculator Pages:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">button</span> <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;calculateCost(); trackCalculatorUse(&#39;fdm-cost&#39;, &#39;calculate&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  Calculate
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">button</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">button</span> <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;resetForm(); trackCalculatorUse(&#39;fdm-cost&#39;, &#39;reset&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  Reset
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">button</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">button</span> <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;exportResults(); trackCalculatorUse(&#39;fdm-cost&#39;, &#39;export&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  Export
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">button</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>Calculator Names:</strong></p>
+<ul>
+<li><code>fdm-cost</code> - FDM Cost Calculator</li>
+<li><code>shrinkage</code> - Shrinkage Calculator</li>
+<li><code>resin-cost</code> - Resin Print Cost (future)</li>
+<li><code>filament-drying</code> - Filament Drying Time (future)</li>
+</ul>
+<p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>calculator_use</code></li>
+<li>Category: <code>Tools</code></li>
+<li>Label: Calculator name</li>
+<li>Calculator Action: calculate/reset/export</li>
+<li>Value: 1</li>
+</ul>
+<hr>
+<h3 id="6-email-signups-">6. <strong>Email Signups</strong> 🆕<a class="td-heading-self-link" href="#6-email-signups-" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackEmailSignup</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">formLocation</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">listType</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">form</span> <span style="color:#c4a000">onsubmit</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;trackEmailSignup(&#39;sidebar&#39;, &#39;newsletter&#39;); return true;&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">input</span> <span style="color:#c4a000">type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;email&#34;</span> <span style="color:#c4a000">name</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;email&#34;</span> <span style="color:#c4a000">required</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">button</span> <span style="color:#c4a000">type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;submit&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>Subscribe<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">button</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">form</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>Form Locations:</strong></p>
+<ul>
+<li><code>sidebar</code> - Sidebar widget</li>
+<li><code>footer</code> - Footer CTA</li>
+<li><code>blog-inline</code> - Inside blog posts</li>
+<li><code>homepage</code> - Homepage hero</li>
+<li><code>popup</code> - Modal popup</li>
+</ul>
+<p><strong>List Types:</strong></p>
+<ul>
+<li><code>newsletter</code> - Weekly newsletter</li>
+<li><code>course</code> - Email course</li>
+<li><code>ebook</code> - Free ebook download</li>
+<li><code>updates</code> - Product updates</li>
+</ul>
+<p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>email_signup</code></li>
+<li>Category: <code>Lead Generation</code></li>
+<li>Label: Form location</li>
+<li>List Type: Type of list</li>
+<li>Value: 5</li>
+</ul>
+<hr>
+<h3 id="7-video-plays-">7. <strong>Video Plays</strong> 🆕<a class="td-heading-self-link" href="#7-video-plays-" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackVideoPlay</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">videoId</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">videoTitle</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage with YouTube IFrame API:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// When video starts playing
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">player</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addEventListener</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;onStateChange&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">function</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">event</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">event</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">YT</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">PlayerState</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">PLAYING</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">trackVideoPlay</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;ABC123&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;Tutorial: Setting Up Klipper&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">});</span>
+</span></span></code></pre></div><p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>video_play</code></li>
+<li>Category: <code>Video Engagement</code></li>
+<li>Label: Video title or ID</li>
+<li>Video ID: YouTube video ID</li>
+<li>Value: 2</li>
+</ul>
+<hr>
+<h3 id="8-cta-button-clicks-">8. <strong>CTA Button Clicks</strong> 🆕<a class="td-heading-self-link" href="#8-cta-button-clicks-" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackCtaClick</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ctaType</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">location</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>
+
+
+
+
+
 
 
 
@@ -76,114 +499,445 @@ Event Name: affiliate_click Category: Amazon Label: Product title Product ID: AS
 
 
 <div class="cta cta--youtube">
-  <h3 class=cta__title>📺 Watch This Tutorial on YouTube</h3>
+  <h3 class="cta__title">📺 Watch This Tutorial on YouTube</h3>
   
-    <p class=cta__text><a href=https://youtube.com/... onclick='trackCtaClick("youtube","blog-post")'>
+    <p class="cta__text"><a href="https://youtube.com/..." 
+onclick="trackCtaClick('youtube', 'blog-post')">
 Subscribe on YouTube
 </a></p>
   
-  <a class=cta__btn href="https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1" target=_blank rel=noopener onclick='trackCtaClick("youtube","content")'>
+  <a class="cta__btn" href="https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1" 
+     target="_blank"
+     rel="noopener"
+     onclick="trackCtaClick('youtube','content')">
     ▶️ Subscribe Now - 5000&#43; subscribers
   </a>
   </div>
 
 
 
-</span></span></code></pre></div><p><strong>CTA Types:</strong></p><ul><li><code>youtube</code> - YouTube subscribe</li><li><code>calculator</code> - Calculator CTA</li><li><code>email</code> - Email signup</li><li><code>support</code> - Support/donate</li><li><code>product</code> - Product recommendation</li></ul><p><strong>Locations:</strong></p><ul><li><code>blog-post</code> - Within blog content</li><li><code>sidebar</code> - Sidebar widget</li><li><code>homepage</code> - Homepage</li><li><code>tutorial</code> - Tutorial page</li><li><code>footer</code> - Footer</li></ul><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>cta_click</code></li><li>Category: <code>CTA</code></li><li>Label: CTA type</li><li>CTA Location: Where clicked</li><li>Value: 1</li></ul><hr><h3 id=9-site-search->9. <strong>Site Search</strong> 🆕<a class=td-heading-self-link href=#9-site-search- aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackSiteSearch</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>searchQuery</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>resultsCount</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// When search is executed
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>performSearch</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>query</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>results</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000>getSearchResults</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>query</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>  <span style=color:#000>trackSiteSearch</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>query</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>results</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>length</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>  <span style=color:#000>displayResults</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>results</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>search</code></li><li>Search Term: User&rsquo;s query</li><li>Results Count: Number of results</li></ul><hr><h3 id=10-outbound-links->10. <strong>Outbound Links</strong> 🆕<a class=td-heading-self-link href=#10-outbound-links- aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackOutboundLink</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>url</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>linkText</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Automatic:</strong> All links with <code>target="_blank"</code> or external domains are automatically tracked (except sponsored links).</p><p><strong>Manual Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>a</span> <span style=color:#c4a000>href</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;https://external-site.com&#34;</span>
-</span></span><span style=display:flex><span>   <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;trackOutboundLink(&#39;https://external-site.com&#39;, &#39;External Resource&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>   Visit Site
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>a</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>click</code></li><li>Category: <code>Outbound Link</code></li><li>Label: Destination URL</li><li>Link Text: Text of the link</li></ul><hr><h3 id=11-file-downloads->11. <strong>File Downloads</strong> 🆕<a class=td-heading-self-link href=#11-file-downloads- aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#000>trackFileDownload</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>fileName</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>fileType</span><span style=color:#000;font-weight:700>)</span>
-</span></span></code></pre></div><p><strong>Automatic:</strong> Downloads of PDFs, STL files, GCODE, configs, etc. are automatically tracked.</p><p><strong>Manual Usage:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>a</span> <span style=color:#c4a000>href</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;/files/klipper-config.cfg&#34;</span>
-</span></span><span style=display:flex><span>   <span style=color:#c4a000>onclick</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;trackFileDownload(&#39;klipper-config.cfg&#39;, &#39;cfg&#39;)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>   Download Config
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>a</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><p><strong>Tracked File Types:</strong></p><ul><li><code>.pdf</code> - PDF documents</li><li><code>.stl</code> - 3D model files</li><li><code>.gcode</code> - G-code files</li><li><code>.zip</code> - Compressed archives</li><li><code>.cfg</code> - Configuration files</li><li><code>.json</code> - JSON data</li><li><code>.txt</code> - Text files</li><li><code>.csv</code> - CSV exports</li></ul><p><strong>GA4 Event:</strong></p><ul><li>Event Name: <code>file_download</code></li><li>Category: <code>Download</code></li><li>Label: File name</li><li>File Extension: File type</li><li>Value: 1</li></ul><hr><h2 id=automatic-tracking-features>Automatic Tracking Features<a class=td-heading-self-link href=#automatic-tracking-features aria-label="Heading self-link"></a></h2><h3 id=already-tracking-automatically>Already Tracking Automatically:<a class=td-heading-self-link href=#already-tracking-automatically aria-label="Heading self-link"></a></h3><ol><li>✅ <strong>Affiliate Links</strong> - All <code>rel="sponsored"</code> links</li><li>✅ <strong>Outbound Links</strong> - All external links</li><li>✅ <strong>File Downloads</strong> - PDFs, STL, GCODE, configs, etc.</li></ol><h3 id=manual-implementation-required>Manual Implementation Required:<a class=td-heading-self-link href=#manual-implementation-required aria-label="Heading self-link"></a></h3><ol><li>⏳ <strong>Calculator Usage</strong> - Add to calculator JS files</li><li>⏳ <strong>Email Signups</strong> - Add to email forms (when implemented)</li><li>⏳ <strong>Video Plays</strong> - Add to YouTube embed shortcode (optional)</li></ol><hr><h2 id=implementation-examples>Implementation Examples<a class=td-heading-self-link href=#implementation-examples aria-label="Heading self-link"></a></h2><h3 id=example-1-add-tracking-to-fdm-calculator>Example 1: Add Tracking to FDM Calculator<a class=td-heading-self-link href=#example-1-add-tracking-to-fdm-calculator aria-label="Heading self-link"></a></h3><p><strong>File:</strong> <code>/tools/m3dp-fdm-cost-calculator/index.html</code></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// In the calculate function
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>calculate</span><span style=color:#000;font-weight:700>()</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#8f5902;font-style:italic>// ... calculation logic ...
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>  
-</span></span><span style=display:flex><span>  <span style=color:#8f5902;font-style:italic>// Track calculator usage
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>  <span style=color:#000>trackCalculatorUse</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;fdm-cost&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;calculate&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span>  <span style=color:#8f5902;font-style:italic>// Display results
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>  <span style=color:#000>showResults</span><span style=color:#000;font-weight:700>();</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// In the reset function
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>resetCalculator</span><span style=color:#000;font-weight:700>()</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#8f5902;font-style:italic>// ... reset logic ...
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>  <span style=color:#000>trackCalculatorUse</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;fdm-cost&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;reset&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// In the export function
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>exportToPDF</span><span style=color:#000;font-weight:700>()</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#8f5902;font-style:italic>// ... export logic ...
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>  <span style=color:#000>trackCalculatorUse</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;fdm-cost&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;export&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><hr><h3 id=example-2-add-tracking-to-email-form-convertkit>Example 2: Add Tracking to Email Form (ConvertKit)<a class=td-heading-self-link href=#example-2-add-tracking-to-email-form-convertkit aria-label="Heading self-link"></a></h3><p><strong>When Form is Implemented:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>form</span> <span style=color:#c4a000>id</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;newsletter-form&#34;</span> <span style=color:#c4a000>onsubmit</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;handleSubmit(event)&#34;</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>input</span> <span style=color:#c4a000>type</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;email&#34;</span> <span style=color:#c4a000>name</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;email&#34;</span> <span style=color:#c4a000>required</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>button</span> <span style=color:#c4a000>type</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;submit&#34;</span><span style=color:#000;font-weight:700>&gt;</span>Subscribe<span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>button</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>form</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>script</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>handleSubmit</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>event</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#8f5902;font-style:italic>// Track the signup
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>  <span style=color:#000>trackEmailSignup</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;sidebar&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;newsletter&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span>  <span style=color:#8f5902;font-style:italic>// Let form submit normally
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>  <span style=color:#204a87;font-weight:700>return</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>;</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>script</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><hr><h3 id=example-3-add-video-play-tracking-to-youtube-embed>Example 3: Add Video Play Tracking to YouTube Embed<a class=td-heading-self-link href=#example-3-add-video-play-tracking-to-youtube-embed aria-label="Heading self-link"></a></h3><p><strong>File:</strong> <code>/layouts/shortcodes/youtube-embed.html</code></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>script</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// YouTube IFrame API
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>var</span> <span style=color:#000>tag</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#204a87>document</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>createElement</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;script&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span><span style=color:#000>tag</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>src</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#4e9a06>&#34;https://www.youtube.com/iframe_api&#34;</span><span style=color:#000;font-weight:700>;</span>
-</span></span><span style=display:flex><span><span style=color:#204a87;font-weight:700>var</span> <span style=color:#000>firstScriptTag</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#204a87>document</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>getElementsByTagName</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;script&#39;</span><span style=color:#000;font-weight:700>)[</span><span style=color:#0000cf;font-weight:700>0</span><span style=color:#000;font-weight:700>];</span>
-</span></span><span style=display:flex><span><span style=color:#000>firstScriptTag</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>parentNode</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>insertBefore</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>tag</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>firstScriptTag</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Create player
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>onYouTubeIframeAPIReady</span><span style=color:#000;font-weight:700>()</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>var</span> <span style=color:#000>player</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#204a87;font-weight:700>new</span> <span style=color:#000>YT</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>Player</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;youtube-{{ .Get &#34;id&#34; }}&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>    <span style=color:#000>events</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>      <span style=color:#4e9a06>&#39;onStateChange&#39;</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#000>onPlayerStateChange</span>
-</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>});</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Track when video plays
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>onPlayerStateChange</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>event</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>if</span> <span style=color:#000;font-weight:700>(</span><span style=color:#000>event</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>data</span> <span style=color:#ce5c00;font-weight:700>==</span> <span style=color:#000>YT</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>PlayerState</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>PLAYING</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>    <span style=color:#000>trackVideoPlay</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;{{ .Get &#34;id&#34; }}&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;{{ .Get &#34;title&#34; }}&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>&lt;/</span><span style=color:#204a87;font-weight:700>script</span><span style=color:#000;font-weight:700>&gt;</span>
-</span></span></code></pre></div><hr><h2 id=testing-in-browser-console>Testing in Browser Console<a class=td-heading-self-link href=#testing-in-browser-console aria-label="Heading self-link"></a></h2><h3 id=check-if-tracking-is-loaded>Check if Tracking is Loaded:<a class=td-heading-self-link href=#check-if-tracking-is-loaded aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Should see success message in console
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#a40000>✅</span> <span style=color:#000>GA4</span> <span style=color:#000>Event</span> <span style=color:#000>Tracking</span> <span style=color:#000>Library</span> <span style=color:#000>Loaded</span>
-</span></span></code></pre></div><h3 id=test-individual-functions>Test Individual Functions:<a class=td-heading-self-link href=#test-individual-functions aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Test affiliate click
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#000>trackAffiliateClick</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;B0XXXXX&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;Test Product&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Test YouTube subscribe
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#000>trackYouTubeSubscribe</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;console-test&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Test calculator use
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#000>trackCalculatorUse</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;fdm-cost&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;calculate&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Test email signup
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#000>trackEmailSignup</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#39;sidebar&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#39;newsletter&#39;</span><span style=color:#000;font-weight:700>);</span>
-</span></span></code></pre></div><h3 id=view-events-in-ga4>View Events in GA4:<a class=td-heading-self-link href=#view-events-in-ga4 aria-label="Heading self-link"></a></h3><ol><li>Go to Google Analytics 4</li><li>Navigate to Reports → Realtime</li><li>Perform action on site</li><li>Event should appear within 5-10 seconds</li></ol><hr><h2 id=ga4-event-summary>GA4 Event Summary<a class=td-heading-self-link href=#ga4-event-summary aria-label="Heading self-link"></a></h2><table><thead><tr><th>Event Name</th><th>Category</th><th>Already Tracking</th><th>Manual Setup Needed</th></tr></thead><tbody><tr><td><code>affiliate_click</code></td><td>Amazon</td><td>✅ Auto</td><td>No</td></tr><tr><td><code>youtube_subscribe_click</code></td><td>YouTube</td><td>✅ Partials</td><td>No</td></tr><tr><td><code>youtube_video_click</code></td><td>YouTube</td><td>✅ Partials</td><td>No</td></tr><tr><td><code>related_post_click</code></td><td>Related Posts</td><td>✅ Partials</td><td>No</td></tr><tr><td><code>calculator_use</code></td><td>Tools</td><td>❌</td><td><strong>Yes - Add to calculators</strong></td></tr><tr><td><code>email_signup</code></td><td>Lead Generation</td><td>❌</td><td><strong>Yes - When form added</strong></td></tr><tr><td><code>video_play</code></td><td>Video Engagement</td><td>❌</td><td>Optional (nice-to-have)</td></tr><tr><td><code>cta_click</code></td><td>CTA</td><td>❌</td><td>Optional</td></tr><tr><td><code>search</code></td><td>Search</td><td>❌</td><td>When search added</td></tr><tr><td><code>click</code> (outbound)</td><td>Outbound Link</td><td>✅ Auto</td><td>No</td></tr><tr><td><code>file_download</code></td><td>Download</td><td>✅ Auto</td><td>No</td></tr></tbody></table><hr><h2 id=priority-implementation>Priority Implementation<a class=td-heading-self-link href=#priority-implementation aria-label="Heading self-link"></a></h2><h3 id=immediate-this-week>Immediate (This Week):<a class=td-heading-self-link href=#immediate-this-week aria-label="Heading self-link"></a></h3><ol><li>✅ Deploy centralized tracking library</li><li>⏳ Add tracking to FDM Cost Calculator</li><li>⏳ Add tracking to Shrinkage Calculator</li></ol><h3 id=short-term-this-month>Short-term (This Month):<a class=td-heading-self-link href=#short-term-this-month aria-label="Heading self-link"></a></h3><ol><li>Add email signup form with tracking</li><li>Add CTA tracking to shortcodes</li><li>Test all events in GA4</li></ol><h3 id=long-term-future>Long-term (Future):<a class=td-heading-self-link href=#long-term-future aria-label="Heading self-link"></a></h3><ol><li>Add video play tracking (YouTube IFrame API)</li><li>Add search tracking (when search is implemented)</li><li>Create custom GA4 dashboard with all events</li></ol><hr><h2 id=debugging>Debugging<a class=td-heading-self-link href=#debugging aria-label="Heading self-link"></a></h2><h3 id=events-not-showing-in-ga4>Events Not Showing in GA4?<a class=td-heading-self-link href=#events-not-showing-in-ga4 aria-label="Heading self-link"></a></h3><ol><li><p><strong>Check Console:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Should see log messages like:
-</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#000>GA4</span> <span style=color:#000>Event</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#000>affiliate_click</span> <span style=color:#000;font-weight:700>{</span> <span style=color:#000>asin</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#4e9a06>&#39;B0XXXXX&#39;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>title</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#4e9a06>&#39;Product&#39;</span> <span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div></li><li><p><strong>Check gtag is Loaded:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#204a87;font-weight:700>typeof</span> <span style=color:#000>gtag</span> <span style=color:#ce5c00;font-weight:700>===</span> <span style=color:#4e9a06>&#39;function&#39;</span>  <span style=color:#8f5902;font-style:italic>// Should return true
-</span></span></span></code></pre></div></li><li><p><strong>Check GA4 Measurement ID:</strong></p><ul><li>File: <code>hugo.toml</code></li><li>Look for: <code>googleAnalytics = "G-VQ8RPWC2MK"</code></li></ul></li><li><p><strong>Test in Incognito Mode:</strong></p><ul><li>Ad blockers can prevent GA4 tracking</li><li>Use incognito to test without extensions</li></ul></li><li><p><strong>Check Realtime Reports:</strong></p><ul><li>GA4 → Reports → Realtime</li><li>Events appear within 5-10 seconds</li></ul></li></ol><hr><h2 id=file-locations>File Locations<a class=td-heading-self-link href=#file-locations aria-label="Heading self-link"></a></h2><p><strong>Main Library:</strong></p><ul><li><code>/layouts/partials/hooks/head-end.html</code> (centralized tracking)</li></ul><p><strong>Partials Using Tracking:</strong></p><ul><li><code>/layouts/partials/related-posts.html</code> (trackRelatedPostClick)</li><li><code>/layouts/partials/youtube-subscribe-cta.html</code> (trackYouTubeSubscribe)</li><li><code>/layouts/partials/watch-on-youtube.html</code> (trackYouTubeVideo)</li></ul><p><strong>Shortcodes Using Tracking:</strong></p><ul><li><code>/layouts/shortcodes/amazon-product.html</code> (trackAffiliateClick)</li><li><code>/layouts/shortcodes/cta.html</code> (trackCtaClick - optional)</li><li><code>/layouts/shortcodes/youtube-embed.html</code> (trackVideoPlay - optional)</li></ul><hr><h2 id=next-steps>Next Steps<a class=td-heading-self-link href=#next-steps aria-label="Heading self-link"></a></h2><ol><li><p><strong>Deploy Changes:</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git add layouts/partials/hooks/head-end.html
-</span></span><span style=display:flex><span>git commit -m <span style=color:#4e9a06>&#34;Add centralized GA4 event tracking library&#34;</span>
-</span></span><span style=display:flex><span>git push
-</span></span></code></pre></div></li><li><p><strong>Add Calculator Tracking:</strong></p><ul><li>Update FDM Cost Calculator JS</li><li>Update Shrinkage Calculator JS</li><li>Test in browser console</li></ul></li><li><p><strong>Monitor in GA4:</strong></p><ul><li>Wait 24-48 hours for data</li><li>Create custom reports</li><li>Set up conversion tracking</li></ul></li><li><p><strong>Document Results:</strong></p><ul><li>Track which CTAs get most clicks</li><li>Measure calculator usage rates</li><li>Optimize based on data</li></ul></li></ol><hr><p><strong>Questions?</strong> Check the console logs or test functions in browser DevTools.</p><p><strong>Last Updated:</strong> November 13, 2025</p></main><footer class="td-footer row d-print-none"><div class=container-fluid><div class="row mx-md-2"><div class="td-footer__left col-6 col-sm-4 order-sm-1"><ul class=td-footer__links-list><li class=td-footer__links-item data-bs-toggle=tooltip title=YouTube aria-label=YouTube><a target=_blank rel=noopener href="https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1" aria-label=YouTube><i class="fa fa-youtube"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title=Twitter aria-label=Twitter><a target=_blank rel=noopener href=https://twitter.com/Michael24919360 aria-label=Twitter><i class="fab fa-twitter"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title=Facebook aria-label=Facebook><a target=_blank rel=noopener href="https://www.facebook.com/profile.php?id=100089187391163" aria-label=Facebook><i class="fab facebook"></i></a></li></ul></div><div class="td-footer__right col-6 col-sm-4 order-sm-3"><ul class=td-footer__links-list><li class=td-footer__links-item data-bs-toggle=tooltip title=GitHub aria-label=GitHub><a target=_blank rel=noopener href=https://github.com/minimal3dp aria-label=GitHub><i class="fab fa-github"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title="Minimal 3DP Github" aria-label="Minimal 3DP Github"><a target=_blank rel=noopener href=https://github.com/minimal3dp/minimal3dp.github.io aria-label="Minimal 3DP Github"><i class="fab fa-github"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title="Developer mailing list" aria-label="Developer mailing list"><a target=_blank rel=noopener href=https://example.org/mail aria-label="Developer mailing list"><i class="fa fa-envelope"></i></a></li></ul></div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2"><span class=td-footer__copyright>&copy;
-2021&ndash;2025
-<span class=td-footer__authors>Mike Wilson and Minimal 3DP | <a href=https://creativecommons.org/licenses/by/4.0>CC BY 4.0</a> |</span></span><span class=td-footer__all_rights_reserved>All Rights Reserved</span><span class=ms-2><a href=https://policies.google.com/privacy target=_blank rel=noopener>Privacy Policy</a></span></div></div></div></footer></div><script src=/js/main.min.0280fcb09772cdf1e7606dd6189973f9059a9bc7e5194bec20b1c5fc43861989.js integrity="sha256-AoD8sJdyzfHnYG3WGJlz+QWam8flGUvsILHF/EOGGYk=" crossorigin=anonymous></script><script defer src=/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js integrity="sha256-c0eKfUgHaYrtfjVesj+YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin=anonymous></script><script src=/js/tabpane-persist.js></script></body></html>
+</span></span></code></pre></div><p><strong>CTA Types:</strong></p>
+<ul>
+<li><code>youtube</code> - YouTube subscribe</li>
+<li><code>calculator</code> - Calculator CTA</li>
+<li><code>email</code> - Email signup</li>
+<li><code>support</code> - Support/donate</li>
+<li><code>product</code> - Product recommendation</li>
+</ul>
+<p><strong>Locations:</strong></p>
+<ul>
+<li><code>blog-post</code> - Within blog content</li>
+<li><code>sidebar</code> - Sidebar widget</li>
+<li><code>homepage</code> - Homepage</li>
+<li><code>tutorial</code> - Tutorial page</li>
+<li><code>footer</code> - Footer</li>
+</ul>
+<p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>cta_click</code></li>
+<li>Category: <code>CTA</code></li>
+<li>Label: CTA type</li>
+<li>CTA Location: Where clicked</li>
+<li>Value: 1</li>
+</ul>
+<hr>
+<h3 id="9-site-search-">9. <strong>Site Search</strong> 🆕<a class="td-heading-self-link" href="#9-site-search-" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackSiteSearch</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">searchQuery</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">resultsCount</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// When search is executed
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">performSearch</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">query</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">results</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">getSearchResults</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">query</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">trackSiteSearch</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">query</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">results</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">length</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">displayResults</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">results</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>search</code></li>
+<li>Search Term: User&rsquo;s query</li>
+<li>Results Count: Number of results</li>
+</ul>
+<hr>
+<h3 id="10-outbound-links-">10. <strong>Outbound Links</strong> 🆕<a class="td-heading-self-link" href="#10-outbound-links-" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackOutboundLink</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">url</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">linkText</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Automatic:</strong> All links with <code>target=&quot;_blank&quot;</code> or external domains are automatically tracked (except sponsored links).</p>
+<p><strong>Manual Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://external-site.com&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;trackOutboundLink(&#39;https://external-site.com&#39;, &#39;External Resource&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   Visit Site
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>click</code></li>
+<li>Category: <code>Outbound Link</code></li>
+<li>Label: Destination URL</li>
+<li>Link Text: Text of the link</li>
+</ul>
+<hr>
+<h3 id="11-file-downloads-">11. <strong>File Downloads</strong> 🆕<a class="td-heading-self-link" href="#11-file-downloads-" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">trackFileDownload</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">fileName</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">fileType</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p><strong>Automatic:</strong> Downloads of PDFs, STL files, GCODE, configs, etc. are automatically tracked.</p>
+<p><strong>Manual Usage:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;/files/klipper-config.cfg&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#c4a000">onclick</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;trackFileDownload(&#39;klipper-config.cfg&#39;, &#39;cfg&#39;)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   Download Config
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p><strong>Tracked File Types:</strong></p>
+<ul>
+<li><code>.pdf</code> - PDF documents</li>
+<li><code>.stl</code> - 3D model files</li>
+<li><code>.gcode</code> - G-code files</li>
+<li><code>.zip</code> - Compressed archives</li>
+<li><code>.cfg</code> - Configuration files</li>
+<li><code>.json</code> - JSON data</li>
+<li><code>.txt</code> - Text files</li>
+<li><code>.csv</code> - CSV exports</li>
+</ul>
+<p><strong>GA4 Event:</strong></p>
+<ul>
+<li>Event Name: <code>file_download</code></li>
+<li>Category: <code>Download</code></li>
+<li>Label: File name</li>
+<li>File Extension: File type</li>
+<li>Value: 1</li>
+</ul>
+<hr>
+<h2 id="automatic-tracking-features">Automatic Tracking Features<a class="td-heading-self-link" href="#automatic-tracking-features" aria-label="Heading self-link"></a></h2><h3 id="already-tracking-automatically">Already Tracking Automatically:<a class="td-heading-self-link" href="#already-tracking-automatically" aria-label="Heading self-link"></a></h3><ol>
+<li>✅ <strong>Affiliate Links</strong> - All <code>rel=&quot;sponsored&quot;</code> links</li>
+<li>✅ <strong>Outbound Links</strong> - All external links</li>
+<li>✅ <strong>File Downloads</strong> - PDFs, STL, GCODE, configs, etc.</li>
+</ol>
+<h3 id="manual-implementation-required">Manual Implementation Required:<a class="td-heading-self-link" href="#manual-implementation-required" aria-label="Heading self-link"></a></h3><ol>
+<li>⏳ <strong>Calculator Usage</strong> - Add to calculator JS files</li>
+<li>⏳ <strong>Email Signups</strong> - Add to email forms (when implemented)</li>
+<li>⏳ <strong>Video Plays</strong> - Add to YouTube embed shortcode (optional)</li>
+</ol>
+<hr>
+<h2 id="implementation-examples">Implementation Examples<a class="td-heading-self-link" href="#implementation-examples" aria-label="Heading self-link"></a></h2><h3 id="example-1-add-tracking-to-fdm-calculator">Example 1: Add Tracking to FDM Calculator<a class="td-heading-self-link" href="#example-1-add-tracking-to-fdm-calculator" aria-label="Heading self-link"></a></h3><p><strong>File:</strong> <code>/tools/m3dp-fdm-cost-calculator/index.html</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// In the calculate function
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">calculate</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">// ... calculation logic ...
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">// Track calculator usage
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">trackCalculatorUse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;fdm-cost&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;calculate&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">// Display results
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">showResults</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// In the reset function
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">resetCalculator</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">// ... reset logic ...
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">trackCalculatorUse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;fdm-cost&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;reset&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// In the export function
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">exportToPDF</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">// ... export logic ...
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">trackCalculatorUse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;fdm-cost&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;export&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><hr>
+<h3 id="example-2-add-tracking-to-email-form-convertkit">Example 2: Add Tracking to Email Form (ConvertKit)<a class="td-heading-self-link" href="#example-2-add-tracking-to-email-form-convertkit" aria-label="Heading self-link"></a></h3><p><strong>When Form is Implemented:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">form</span> <span style="color:#c4a000">id</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;newsletter-form&#34;</span> <span style="color:#c4a000">onsubmit</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;handleSubmit(event)&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">input</span> <span style="color:#c4a000">type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;email&#34;</span> <span style="color:#c4a000">name</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;email&#34;</span> <span style="color:#c4a000">required</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">button</span> <span style="color:#c4a000">type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;submit&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>Subscribe<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">button</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">form</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">script</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">handleSubmit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">event</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">// Track the signup
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#000">trackEmailSignup</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;sidebar&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;newsletter&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">// Let form submit normally
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">script</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><hr>
+<h3 id="example-3-add-video-play-tracking-to-youtube-embed">Example 3: Add Video Play Tracking to YouTube Embed<a class="td-heading-self-link" href="#example-3-add-video-play-tracking-to-youtube-embed" aria-label="Heading self-link"></a></h3><p><strong>File:</strong> <code>/layouts/shortcodes/youtube-embed.html</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">script</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// YouTube IFrame API
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">tag</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createElement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;script&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">tag</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">src</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;https://www.youtube.com/iframe_api&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">firstScriptTag</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;script&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">firstScriptTag</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parentNode</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">insertBefore</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">tag</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">firstScriptTag</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Create player
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">onYouTubeIframeAPIReady</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">player</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">YT</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Player</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;youtube-{{ .Get &#34;id&#34; }}&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">events</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#4e9a06">&#39;onStateChange&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000">onPlayerStateChange</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">});</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Track when video plays
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">onPlayerStateChange</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">event</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">event</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">YT</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">PlayerState</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">PLAYING</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">trackVideoPlay</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;{{ .Get &#34;id&#34; }}&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;{{ .Get &#34;title&#34; }}&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">script</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><hr>
+<h2 id="testing-in-browser-console">Testing in Browser Console<a class="td-heading-self-link" href="#testing-in-browser-console" aria-label="Heading self-link"></a></h2><h3 id="check-if-tracking-is-loaded">Check if Tracking is Loaded:<a class="td-heading-self-link" href="#check-if-tracking-is-loaded" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Should see success message in console
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#a40000">✅</span> <span style="color:#000">GA4</span> <span style="color:#000">Event</span> <span style="color:#000">Tracking</span> <span style="color:#000">Library</span> <span style="color:#000">Loaded</span>
+</span></span></code></pre></div><h3 id="test-individual-functions">Test Individual Functions:<a class="td-heading-self-link" href="#test-individual-functions" aria-label="Heading self-link"></a></h3><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Test affiliate click
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">trackAffiliateClick</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;B0XXXXX&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;Test Product&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Test YouTube subscribe
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">trackYouTubeSubscribe</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;console-test&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Test calculator use
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">trackCalculatorUse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;fdm-cost&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;calculate&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Test email signup
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">trackEmailSignup</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;sidebar&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;newsletter&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h3 id="view-events-in-ga4">View Events in GA4:<a class="td-heading-self-link" href="#view-events-in-ga4" aria-label="Heading self-link"></a></h3><ol>
+<li>Go to Google Analytics 4</li>
+<li>Navigate to Reports → Realtime</li>
+<li>Perform action on site</li>
+<li>Event should appear within 5-10 seconds</li>
+</ol>
+<hr>
+<h2 id="ga4-event-summary">GA4 Event Summary<a class="td-heading-self-link" href="#ga4-event-summary" aria-label="Heading self-link"></a></h2><table>
+  <thead>
+      <tr>
+          <th>Event Name</th>
+          <th>Category</th>
+          <th>Already Tracking</th>
+          <th>Manual Setup Needed</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>affiliate_click</code></td>
+          <td>Amazon</td>
+          <td>✅ Auto</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td><code>youtube_subscribe_click</code></td>
+          <td>YouTube</td>
+          <td>✅ Partials</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td><code>youtube_video_click</code></td>
+          <td>YouTube</td>
+          <td>✅ Partials</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td><code>related_post_click</code></td>
+          <td>Related Posts</td>
+          <td>✅ Partials</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td><code>calculator_use</code></td>
+          <td>Tools</td>
+          <td>❌</td>
+          <td><strong>Yes - Add to calculators</strong></td>
+      </tr>
+      <tr>
+          <td><code>email_signup</code></td>
+          <td>Lead Generation</td>
+          <td>❌</td>
+          <td><strong>Yes - When form added</strong></td>
+      </tr>
+      <tr>
+          <td><code>video_play</code></td>
+          <td>Video Engagement</td>
+          <td>❌</td>
+          <td>Optional (nice-to-have)</td>
+      </tr>
+      <tr>
+          <td><code>cta_click</code></td>
+          <td>CTA</td>
+          <td>❌</td>
+          <td>Optional</td>
+      </tr>
+      <tr>
+          <td><code>search</code></td>
+          <td>Search</td>
+          <td>❌</td>
+          <td>When search added</td>
+      </tr>
+      <tr>
+          <td><code>click</code> (outbound)</td>
+          <td>Outbound Link</td>
+          <td>✅ Auto</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td><code>file_download</code></td>
+          <td>Download</td>
+          <td>✅ Auto</td>
+          <td>No</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="priority-implementation">Priority Implementation<a class="td-heading-self-link" href="#priority-implementation" aria-label="Heading self-link"></a></h2><h3 id="immediate-this-week">Immediate (This Week):<a class="td-heading-self-link" href="#immediate-this-week" aria-label="Heading self-link"></a></h3><ol>
+<li>✅ Deploy centralized tracking library</li>
+<li>⏳ Add tracking to FDM Cost Calculator</li>
+<li>⏳ Add tracking to Shrinkage Calculator</li>
+</ol>
+<h3 id="short-term-this-month">Short-term (This Month):<a class="td-heading-self-link" href="#short-term-this-month" aria-label="Heading self-link"></a></h3><ol>
+<li>Add email signup form with tracking</li>
+<li>Add CTA tracking to shortcodes</li>
+<li>Test all events in GA4</li>
+</ol>
+<h3 id="long-term-future">Long-term (Future):<a class="td-heading-self-link" href="#long-term-future" aria-label="Heading self-link"></a></h3><ol>
+<li>Add video play tracking (YouTube IFrame API)</li>
+<li>Add search tracking (when search is implemented)</li>
+<li>Create custom GA4 dashboard with all events</li>
+</ol>
+<hr>
+<h2 id="debugging">Debugging<a class="td-heading-self-link" href="#debugging" aria-label="Heading self-link"></a></h2><h3 id="events-not-showing-in-ga4">Events Not Showing in GA4?<a class="td-heading-self-link" href="#events-not-showing-in-ga4" aria-label="Heading self-link"></a></h3><ol>
+<li>
+<p><strong>Check Console:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Should see log messages like:
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">GA4</span> <span style="color:#000">Event</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000">affiliate_click</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">asin</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;B0XXXXX&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;Product&#39;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Check gtag is Loaded:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">typeof</span> <span style="color:#000">gtag</span> <span style="color:#ce5c00;font-weight:bold">===</span> <span style="color:#4e9a06">&#39;function&#39;</span>  <span style="color:#8f5902;font-style:italic">// Should return true
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Check GA4 Measurement ID:</strong></p>
+<ul>
+<li>File: <code>hugo.toml</code></li>
+<li>Look for: <code>googleAnalytics = &quot;G-VQ8RPWC2MK&quot;</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Test in Incognito Mode:</strong></p>
+<ul>
+<li>Ad blockers can prevent GA4 tracking</li>
+<li>Use incognito to test without extensions</li>
+</ul>
+</li>
+<li>
+<p><strong>Check Realtime Reports:</strong></p>
+<ul>
+<li>GA4 → Reports → Realtime</li>
+<li>Events appear within 5-10 seconds</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="file-locations">File Locations<a class="td-heading-self-link" href="#file-locations" aria-label="Heading self-link"></a></h2><p><strong>Main Library:</strong></p>
+<ul>
+<li><code>/layouts/partials/hooks/head-end.html</code> (centralized tracking)</li>
+</ul>
+<p><strong>Partials Using Tracking:</strong></p>
+<ul>
+<li><code>/layouts/partials/related-posts.html</code> (trackRelatedPostClick)</li>
+<li><code>/layouts/partials/youtube-subscribe-cta.html</code> (trackYouTubeSubscribe)</li>
+<li><code>/layouts/partials/watch-on-youtube.html</code> (trackYouTubeVideo)</li>
+</ul>
+<p><strong>Shortcodes Using Tracking:</strong></p>
+<ul>
+<li><code>/layouts/shortcodes/amazon-product.html</code> (trackAffiliateClick)</li>
+<li><code>/layouts/shortcodes/cta.html</code> (trackCtaClick - optional)</li>
+<li><code>/layouts/shortcodes/youtube-embed.html</code> (trackVideoPlay - optional)</li>
+</ul>
+<hr>
+<h2 id="next-steps">Next Steps<a class="td-heading-self-link" href="#next-steps" aria-label="Heading self-link"></a></h2><ol>
+<li>
+<p><strong>Deploy Changes:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add layouts/partials/hooks/head-end.html
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#4e9a06">&#34;Add centralized GA4 event tracking library&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Add Calculator Tracking:</strong></p>
+<ul>
+<li>Update FDM Cost Calculator JS</li>
+<li>Update Shrinkage Calculator JS</li>
+<li>Test in browser console</li>
+</ul>
+</li>
+<li>
+<p><strong>Monitor in GA4:</strong></p>
+<ul>
+<li>Wait 24-48 hours for data</li>
+<li>Create custom reports</li>
+<li>Set up conversion tracking</li>
+</ul>
+</li>
+<li>
+<p><strong>Document Results:</strong></p>
+<ul>
+<li>Track which CTAs get most clicks</li>
+<li>Measure calculator usage rates</li>
+<li>Optimize based on data</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Questions?</strong> Check the console logs or test functions in browser DevTools.</p>
+<p><strong>Last Updated:</strong> November 13, 2025</p>
+
+      </main>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="YouTube" aria-label="YouTube">
+    <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1" aria-label="YouTube">
+      <i class="fa fa-youtube"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/Michael24919360" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Facebook" aria-label="Facebook">
+    <a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100089187391163" aria-label="Facebook">
+      <i class="fab facebook"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/minimal3dp" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Minimal 3DP Github" aria-label="Minimal 3DP Github">
+    <a target="_blank" rel="noopener" href="https://github.com/minimal3dp/minimal3dp.github.io" aria-label="Minimal 3DP Github">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Developer mailing list" aria-label="Developer mailing list">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2021&ndash;2025
+    <span class="td-footer__authors">Mike Wilson and Minimal 3DP | <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a> |</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

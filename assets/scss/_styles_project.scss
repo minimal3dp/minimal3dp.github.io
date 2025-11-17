@@ -73,11 +73,13 @@ img.img-fluid {
 /* CTA blocks (used by cta shortcode) */
 .cta {
   color: #fff;
-  padding: 30px;
+  padding: 56px;
   border-radius: 8px;
   text-align: center;
-  margin: 40px 0;
+  margin: 80px 0;
+  box-sizing: border-box;
 }
+.cta + .cta { margin-top: 120px; }
 .cta__title {
   margin-top: 0;
   color: #fff;
@@ -150,11 +152,59 @@ img.img-fluid {
   color: #8B5CF6;
 }
 
+/* Generic App CTA variant */
+.cta--app {
+  background: linear-gradient(135deg, #06B6D4 0%, #0EA5E9 100%);
+}
+.cta--app .cta__btn {
+  color: #0EA5E9;
+}
+
 @media (max-width: 480px) {
   .cta {
-    padding: 20px;
+    padding: 32px;
+    margin: 64px 0;
   }
   .cta__btn {
     width: 100%;
   }
+  .cta + .cta { margin-top: 84px; }
+}
+
+/* Simple vertical spacers for selective page use */
+.m3dp-spacer-40 { display: block; height: 40px; width: 100%; }
+.m3dp-spacer-64 { display: block; height: 64px; width: 100%; }
+.m3dp-spacer-80 { display: block; height: 80px; width: 100%; }
+@media (max-width: 480px) {
+  .m3dp-spacer-40 { height: 28px; }
+  .m3dp-spacer-64 { height: 44px; }
+  .m3dp-spacer-80 { height: 56px; }
+}
+
+/* Inline CTA badges (compact) */
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0F172A; /* base dark */
+  background: #E5E7EB; /* default neutral */
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: transform 0.05s ease, box-shadow 0.1s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+.cta-badge:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+.cta-badge__label { white-space: nowrap; }
+
+/* Badge variants */
+.cta-badge--calculator { background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); color: #111827; }
+.cta-badge--app { background: linear-gradient(135deg, #CFFAFE 0%, #BAE6FD 100%); color: #0C4A6E; }
+
+.cta-badge + .cta-badge { margin-left: 10px; }
+
+@media (max-width: 480px) {
+  .cta-badge { display: inline-flex; margin-bottom: 8px; }
 }

@@ -1,0 +1,21 @@
+{{/* Usage:
+  {{< cta-badge type="app|calculator" href="..." label="..." ctaType="..." location="..." >}}
+*/}}
+
+{{ $type := .Get "type" | default "calculator" }}
+{{ $href := .Get "href" }}
+{{ $label := .Get "label" | default "Open" }}
+{{ $ctaType := .Get "ctaType" | default $type }}
+{{ $location := .Get "location" | default "content" }}
+
+{{ if not $href }}
+  {{ errorf "cta-badge shortcode requires 'href' parameter" }}
+{{ end }}
+
+<a class="cta-badge {{ printf "cta-badge--%s" $type }}"
+   href="{{ $href }}"
+   {{ if strings.HasPrefix $href "http" }}target="_blank" rel="noopener"{{ end }}
+   onclick="trackCtaClick('{{ $ctaType }}','{{ $location }}')"
+   aria-label="{{ $label }}">
+  <span class="cta-badge__label">{{ $label }}</span>
+</a>
