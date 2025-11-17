@@ -4,15 +4,50 @@
 &lt;/div&gt;
 
 &lt;p&gt;This section is my attempt to document my projects, ideas, and other informational links/references.&lt;/p&gt;</description></item><item><title>Free 3D Printing Calculators &amp; Tools</title><link>https://minimal3dp.com/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/tools/</guid><description>&lt;h2 id="free-3d-printing-calculators--tools"&gt;Free 3D Printing Calculators &amp;amp; Tools&lt;a class="td-heading-self-link" href="#free-3d-printing-calculators--tools" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;All tools are 100% free, require no registration, and run directly in your browser. Created by &lt;a href="https://minimal3dp.com/about/"&gt;Mike Wilson&lt;/a&gt; for the 3D printing community.&lt;/p&gt;
-&lt;h3 id="available-calculators"&gt;Available Calculators&lt;a class="td-heading-self-link" href="#available-calculators" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;&lt;a href="https://minimal3dp.com/tools/m3dp-fdm-cost-calculator/"&gt;FDM Cost Calculator&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Calculate true print costs including material, electricity, and time&lt;/li&gt;
-&lt;li&gt;Factor in printer depreciation and hourly rates&lt;/li&gt;
-&lt;li&gt;Compare costs across different filaments and settings&lt;/li&gt;
-&lt;li&gt;Perfect for pricing prints or understanding hobby costs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://minimal3dp.com/tools/m3dp-shinkage-calculator/"&gt;Shrinkage Calculator&lt;/a&gt;&lt;/strong&gt;
-&lt;strong&gt;OrcaSlicer Expert Assistant&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Klipper Calibration</title><link>https://minimal3dp.com/klipper-calibration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;h3 id="available-calculators"&gt;Available Calculators&lt;a class="td-heading-self-link" href="#available-calculators" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="cta cta--calculator"&gt;
+ &lt;h3 class="cta__title"&gt;🧮 FDM Cost Calculator&lt;/h3&gt;
+ 
+ &lt;p class="cta__text"&gt;Calculate true print costs including material, electricity, time, and optional depreciation. Compare across filaments and settings for accurate pricing and planning.&lt;/p&gt;
+ 
+ &lt;a class="cta__btn" href="https://minimal3dp.com/tools/m3dp-fdm-cost-calculator/" 
+ onclick="trackCtaClick('fdm_calculator','tools_index')"&gt;
+ Open FDM Cost Calculator
+ &lt;/a&gt;
+ &lt;/div&gt;
+
+
+
+&lt;br /&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="cta cta--app"&gt;
+ &lt;h3 class="cta__title"&gt;🧠 OrcaSlicer Expert Assistant&lt;/h3&gt;
+ 
+ &lt;p class="cta__text"&gt;Select filament, set priorities (Strength, Speed, Quality, Accuracy), and get expert recommendations for layer height, wall speed, infill, and more.&lt;/p&gt;</description></item><item><title>Klipper Calibration</title><link>https://minimal3dp.com/klipper-calibration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/klipper-calibration/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
 &lt;p&gt;Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress&lt;/p&gt;
 
 &lt;/div&gt;
