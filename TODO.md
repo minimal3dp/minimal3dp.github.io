@@ -298,8 +298,8 @@ Reviewed:
 ## ✅ CODE REVIEW ADDITIONS (Nov 15, 2025)
 
 ### Quick Wins (1-2 hours)
-- [ ] Add OrcaSlicer Expert Assistant to Tools index (`/content/tools/_index.md`) with a short description and external link to `https://settings.minimal3dp.com` (open in new tab, `rel="noopener"`). Add GA event on click: `onclick="trackCtaClick('orcaslicer_app','tools_index')"`.
-- [ ] Standardize CTA tracking: switch `layouts/shortcodes/cta.html` to use global `trackCtaClick(type, location)` from `hooks/head-end.html` and remove the shortcode-local `trackCTA()` duplication.
+- [x] Add OrcaSlicer Expert Assistant to Tools index (`/content/tools/_index.md`) with a short description and external link to `https://settings.minimal3dp.com` (open in new tab, `rel="noopener"`). Add GA event on click: `onclick="trackCtaClick('orcaslicer_app','tools_index')"`. ✅ COMPLETED
+- [x] Standardize CTA tracking: switch `layouts/shortcodes/cta.html` to use global `trackCtaClick(type, location)` from `hooks/head-end.html` and remove the shortcode-local `trackCTA()` duplication. ✅ COMPLETED
 - [ ] Configure email CTA: replace `YOUR_EMAIL_SERVICE_URL` in `layouts/shortcodes/cta.html` with a real endpoint or hide the email variant until configured.
 - [ ] Update internal links to shrinkage calculator to use the corrected path `/tools/m3dp-shrinkage-calculator/` (alias added). Current link text remains correct; fix URL spelling in new content going forward.
 

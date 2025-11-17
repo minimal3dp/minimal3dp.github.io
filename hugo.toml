@@ -267,5 +267,8 @@ enable = false
     path = "github.com/google/docsy"
     disable = false
   [[module.mounts]]
+      source = "assets"
+      target = "assets"
+  [[module.mounts]]
       source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       target = "assets/js/bootstrap.bundle.min.js"

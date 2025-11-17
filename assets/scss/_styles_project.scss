@@ -181,6 +181,43 @@ img.img-fluid {
   .m3dp-spacer-80 { height: 56px; }
 }
 
+/* Fix link visibility in lead/primary sections - using !important for specificity */
+.td-content.blocks-lead a:not(.btn),
+.blocks-lead .td-content a:not(.btn),
+.td-content .blocks-lead a:not(.btn),
+.td-content.blocks-section a:not(.btn),
+.blocks-section .td-content a:not(.btn),
+.td-content .blocks-section a:not(.btn) {
+  color: #1F2937 !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
+.td-content.blocks-lead a:not(.btn):hover,
+.blocks-lead .td-content a:not(.btn):hover,
+.td-content .blocks-lead a:not(.btn):hover,
+.td-content.blocks-section a:not(.btn):hover,
+.blocks-section .td-content a:not(.btn):hover,
+.td-content .blocks-section a:not(.btn):hover {
+  color: #0F172A !important;
+  text-decoration: underline !important;
+}
+
+/* Ensure sufficient contrast for links in primary-colored sections */
+.td-overlay--primary .td-content a:not(.btn),
+.td-overlay--primary a:not(.btn),
+[class*="color-primary"] .td-content a:not(.btn),
+[class*="color-primary"] a:not(.btn) {
+  color: #FFFFFF !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
+.td-overlay--primary .td-content a:not(.btn):hover,
+.td-overlay--primary a:not(.btn):hover,
+[class*="color-primary"] .td-content a:not(.btn):hover,
+[class*="color-primary"] a:not(.btn):hover {
+  color: #F0F9FF !important;
+}
+
 /* Inline CTA badges (compact) */
 .cta-badge {
   display: inline-flex;

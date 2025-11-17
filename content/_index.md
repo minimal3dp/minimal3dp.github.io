@@ -73,8 +73,14 @@ Minimal 3DP isn't just another 3D printing blog. As a maker with over 5,000 YouT
 - **[Klipper Calibration Guides](/klipper-calibration/)** - Step-by-step firmware optimization tutorials
 - **[OrcaSlicer Tutorials](/projects/tutorials/orca-slicer/)** - Master the most powerful slicer
 
+{{% /blocks/section %}}
+
+<div style="text-align: center; margin: 30px 0;">
 {{< cta-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" location="home_index" label="🧮 Try FDM Cost Calculator" >}}
 {{< cta-badge type="app" href="https://settings.minimal3dp.com/" ctaType="orcaslicer_app" location="home_index" label="🧠 Open OrcaSlicer Assistant" >}}
+</div>
+
+{{% blocks/section color="white" %}}
 
 ### Popular Content
 
