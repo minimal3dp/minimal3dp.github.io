@@ -1,5 +1,9 @@
 # Minimal 3DP: Comprehensive Recommendations
 
+> Note: This document is frozen and superseded.
+>
+> As of Nov 16, 2025, all actionable items from this document have been merged into `TODO.md` under “Merged from RECOMMENDATIONS.md”. Please treat `TODO.md` as the single source of truth. This file remains for historical context only.
+
 **Last Updated:** November 12, 2025  
 **Focus:** Hosting, Performance, Architecture, Monetization, User Experience, and Platform Analysis
 

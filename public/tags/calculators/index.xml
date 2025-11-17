@@ -1,18 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Calculators on Minimal 3DP</title>
-    <link>http://localhost:1313/tags/calculators/</link>
-    <description>Recent content in Calculators on Minimal 3DP</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/tags/calculators/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Free 3D Printing Calculators &amp; Tools</title>
-      <link>http://localhost:1313/tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/</guid>
-      <description>&lt;h2 id=&#34;free-3d-printing-calculators--tools&#34;&gt;Free 3D Printing Calculators &amp;amp; Tools&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#free-3d-printing-calculators--tools&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;All tools are 100% free, require no registration, and run directly in your browser. Created by &lt;a href=&#34;http://localhost:1313/about/&#34;&gt;Mike Wilson&lt;/a&gt; for the 3D printing community.&lt;/p&gt;&#xA;&lt;h3 id=&#34;available-calculators&#34;&gt;Available Calculators&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#available-calculators&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/tools/m3dp-fdm-cost-calculator/&#34;&gt;FDM Cost Calculator&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Calculate true print costs including material, electricity, and time&lt;/li&gt;&#xA;&lt;li&gt;Factor in printer depreciation and hourly rates&lt;/li&gt;&#xA;&lt;li&gt;Compare costs across different filaments and settings&lt;/li&gt;&#xA;&lt;li&gt;Perfect for pricing prints or understanding hobby costs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/tools/m3dp-shinkage-calculator/&#34;&gt;Shrinkage Calculator&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Compensate for material shrinkage in your prints&lt;/li&gt;&#xA;&lt;li&gt;Support for ABS, PETG, Nylon, and other materials&lt;/li&gt;&#xA;&lt;li&gt;Accurate dimensional scaling for precision parts&lt;/li&gt;&#xA;&lt;li&gt;Essential for engineering and functional prints&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;coming-soon&#34;&gt;Coming Soon&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#coming-soon&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resin Print Cost Calculator&lt;/strong&gt; - Calculate resin printing costs&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Filament Drying Time Calculator&lt;/strong&gt; - Optimal drying times by material&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Build Volume Optimizer&lt;/strong&gt; - Maximize your print bed usage&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;why-use-these-tools&#34;&gt;Why Use These Tools?&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#why-use-these-tools&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;✅ &lt;strong&gt;No Registration Required&lt;/strong&gt; - Start calculating immediately&#xA;✅ &lt;strong&gt;Privacy Focused&lt;/strong&gt; - All calculations happen in your browser&#xA;✅ &lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Works on any device&#xA;✅ &lt;strong&gt;Regularly Updated&lt;/strong&gt; - Based on community feedback&#xA;✅ &lt;strong&gt;Open to Suggestions&lt;/strong&gt; - &lt;a href=&#34;http://localhost:1313/about/&#34;&gt;Contact me&lt;/a&gt; with tool ideas&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calculators on Minimal 3DP</title><link>https://minimal3dp.com/tags/calculators/</link><description>Recent content in Calculators on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/tags/calculators/index.xml" rel="self" type="application/rss+xml"/><item><title>Free 3D Printing Calculators &amp; Tools</title><link>https://minimal3dp.com/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/tools/</guid><description>&lt;h2 id="free-3d-printing-calculators--tools"&gt;Free 3D Printing Calculators &amp;amp; Tools&lt;a class="td-heading-self-link" href="#free-3d-printing-calculators--tools" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;All tools are 100% free, require no registration, and run directly in your browser. Created by &lt;a href="https://minimal3dp.com/about/"&gt;Mike Wilson&lt;/a&gt; for the 3D printing community.&lt;/p&gt;
+&lt;h3 id="available-calculators"&gt;Available Calculators&lt;a class="td-heading-self-link" href="#available-calculators" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;&lt;a href="https://minimal3dp.com/tools/m3dp-fdm-cost-calculator/"&gt;FDM Cost Calculator&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Calculate true print costs including material, electricity, and time&lt;/li&gt;
+&lt;li&gt;Factor in printer depreciation and hourly rates&lt;/li&gt;
+&lt;li&gt;Compare costs across different filaments and settings&lt;/li&gt;
+&lt;li&gt;Perfect for pricing prints or understanding hobby costs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://minimal3dp.com/tools/m3dp-shinkage-calculator/"&gt;Shrinkage Calculator&lt;/a&gt;&lt;/strong&gt;
+&lt;strong&gt;OrcaSlicer Expert Assistant&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

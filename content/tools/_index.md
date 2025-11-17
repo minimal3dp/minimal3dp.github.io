@@ -24,6 +24,12 @@ All tools are 100% free, require no registration, and run directly in your brows
 - Perfect for pricing prints or understanding hobby costs
 
 **[Shrinkage Calculator](/tools/m3dp-shinkage-calculator/)**
+**OrcaSlicer Expert Assistant**
+- Smart, context-aware slicer recommendations based on your printer, filament, and goals
+- Covers flow rate, temperatures, line widths, speeds, cooling, and more
+- Launch the web app:
+  <a href="https://settings.minimal3dp.com/" target="_blank" rel="noopener" onclick="trackCtaClick('orcaslicer-assistant','tools-index')">Open OrcaSlicer Expert Assistant ↗</a>
+
 - Compensate for material shrinkage in your prints
 - Support for ABS, PETG, Nylon, and other materials
 - Accurate dimensional scaling for precision parts

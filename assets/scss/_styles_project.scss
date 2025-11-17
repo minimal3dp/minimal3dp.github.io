@@ -69,3 +69,92 @@ img.img-fluid {
   max-width: 100%;
   height: auto;
 }
+
+/* CTA blocks (used by cta shortcode) */
+.cta {
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 40px 0;
+}
+.cta__title {
+  margin-top: 0;
+  color: #fff;
+}
+.cta__text {
+  margin: 0 0 10px;
+}
+.cta__btn {
+  display: inline-block;
+  background: #fff;
+  color: #1F2937;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.cta__form {
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+.cta__input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+.cta__submit {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #1F2937;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cta__note {
+  font-size: 0.85em;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Variants */
+.cta--youtube {
+  background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+}
+.cta--youtube .cta__btn {
+  color: #FF0000;
+}
+
+.cta--calculator {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+.cta--calculator .cta__btn {
+  color: #1F2937;
+}
+
+.cta--email {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+.cta--email .cta__submit {
+  color: #10B981;
+}
+
+.cta--support {
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+}
+.cta--support .cta__btn {
+  color: #8B5CF6;
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 20px;
+  }
+  .cta__btn {
+    width: 100%;
+  }
+}

@@ -20,6 +20,10 @@ draft: false
 
 Choosing the right 3D printing filament can make or break your project. After years of testing dozens of brands and materials, I've compiled this comprehensive guide to help you find the perfect filament for any application.
 
+{{< cta type="youtube" location="blog-post" >}}
+Want deep-dive tutorials on materials, slicer settings, and real-world tests? Subscribe for long-form guides and honest reviews.
+{{< /cta >}}
+
 **Quick Navigation:**
 - [PLA Filaments](#pla-filaments) (Beginner-friendly)
 - [PETG Filaments](#petg-filaments) (Functional parts)

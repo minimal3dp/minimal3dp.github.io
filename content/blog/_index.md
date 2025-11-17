@@ -11,6 +11,10 @@ images:
 
 Welcome to the Minimal 3DP blog! I publish in-depth tutorials, honest product reviews, and maker news every week. All content is based on real hands-on experience.
 
+{{< cta type="youtube" location="blog-index" >}}
+Prefer videos? Subscribe for long-form tutorials, slicer deep-dives, and tested build guides.
+{{< /cta >}}
+
 ### What You'll Find Here
 
 **[Posts](/blog/posts/)** - Tutorials, guides, and how-tos

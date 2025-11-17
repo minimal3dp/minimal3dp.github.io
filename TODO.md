@@ -1,8 +1,8 @@
 # Minimal 3DP Implementation Roadmap
 
-**Last Updated:** November 13, 2025  
+**Last Updated:** November 16, 2025  
 **Strategy:** Quick wins → High-impact changes → Long-term growth  
-**Based on:** MINIMAL3DP_APP_GUIDE.md patterns + SEO best practices
+**Based on:** MINIMAL3DP_APP_GUIDE.md patterns + refs/ docs + SEO best practices
 
 ---
 
@@ -262,6 +262,36 @@
 - Add remaining social media params to hugo.toml (Task #5)
 
 **Time:** 1 hour
+
+---
+
+## 📚 REFS SYNTHESIS (Nov 16, 2025)
+
+Reviewed:
+- `refs/Data-Driven Content Strategy Report for Minimal 3DP.md`
+- `refs/Minimal 3DP_ A Comprehensive Brand Specification and Technical Knowledge Base.md`
+- `refs/MINIMAL3DP_APP_GUIDE.md`
+
+### Confirmed Pillars
+- Klipper firmware: install, calibration, CAN-Bus, macros
+- OrcaSlicer: calibration, advanced settings, material tuning
+- Complex printer builds/upgrades: Voron, Ender/K2, BTT SKR
+- Utility tools: calculators on minimal3dp.com (keep on root domain)
+
+### New Priority Topics (queue in Content Calendar)
+- [ ] Creality K2 Plus Upgrade Series (3 parts): best-selling upgrades → Klipper → Orca profile
+- [ ] Klipper Wiring Masterclass: iCrimp + JST/Dupont harness with SKR demo
+- [ ] Klipper CAN-Bus Guide for Ender/K2 (beyond Voron)
+- [ ] OrcaSlicer: Specialty Filaments (Chameleon, Silk) deep-dive
+- [ ] Voron “Part 0” Sourcing Guide (rails, motors, fasteners)
+- [ ] SKR Mini E3 V3 (Klipper Edition): start-to-finish
+
+### Ecosystem Actions
+- [ ] Tools index: add OrcaSlicer Expert Assistant link (`https://settings.minimal3dp.com`, GA `trackCtaClick('orcaslicer_app','tools_index')`).
+- [ ] GA4 cross-domain linker: `['minimal3dp.com','settings.minimal3dp.com']` after GA init.
+- [ ] Launch Discord (lightweight channels mapped to pillars) and link in footer/About.
+- [ ] YouTube loop: companion page for each video, embed, pinned comment back to site.
+- [ ] Medium cross-post key longform pieces with canonical and UTM.
 
 ---
 
@@ -965,6 +995,40 @@ All SEO parameters added to `hugo.toml` [params] section:
 **Time:** 6-8 hours
 
 **Reference:** See MINIMAL3DP_APP_GUIDE.md → Medium.com Cross-Posting Strategy → Option 2
+
+---
+
+## 🧩 MERGED FROM RECOMMENDATIONS.md (Nov 16, 2025)
+
+This consolidates actionable items from `RECOMMENDATIONS.md` into this single roadmap.
+
+### Hosting & Workflow
+- [ ] Add Vercel Analytics RUM script in `layouts/partials/head.html` for Core Web Vitals.
+- [ ] Optional visual CMS: TinaCMS or Decap CMS for Git-backed GUI editing.
+
+### Search & UX
+- [ ] Replace Google CSE with Pagefind (static) or Algolia DocSearch (if eligible).
+- [ ] Progressive Web App: `manifest.json` + caching service worker for top tools/offline page.
+
+### Analytics & Monitoring
+- [ ] Add Hotjar or Microsoft Clarity for calculator UX heatmaps/recordings.
+- [ ] Optional Sentry for client-side JS error tracking.
+
+### Affiliate & Monetization
+- [ ] Create `/data/affiliate-products.yaml`; extend `amazon-product` shortcode to support data entries.
+- [ ] Consider Amazon OneLink for locale-aware links (verify program policies).
+- [ ] Expand beyond Amazon (PrintedSolid, MatterHackers, filament brands via ShareASale).
+
+### Performance & Accessibility
+- [ ] Self-host fonts or add `preconnect`/`preload` for external fonts.
+- [ ] Convert large images to WebP/AVIF; use Hugo image processing.
+- [ ] Site-wide a11y pass: alt text, focus states, ARIA labels for icon-only CTAs.
+
+### Community & Contributions
+- [ ] Launch Discord; add invite in footer/About.
+- [ ] Enable GitHub Discussions on key repos for Q&A and ideas.
+
+Note: The narrative rationale in RECOMMENDATIONS.md is now superseded by this section; only tasks remain active here.
 
 ---
 
