@@ -1,0 +1,6 @@
+{{/* Footer wrapper for Popular posts - intended for inclusion in site footer partials */}}
+{{ $count := .count | default 3 }}
+{{ $title := .title | default "Popular This Week" }}
+<div class="footer-popular">
+  {{ partial "popular-posts.html" (dict "count" $count "title" $title) }}
+</div>

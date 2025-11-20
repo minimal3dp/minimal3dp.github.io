@@ -1,0 +1,7 @@
+{{/* Sidebar wrapper for Popular posts */}}
+{{ $count := .count | default 5 }}
+{{ $title := .title | default "Popular This Week" }}
+{{ $section := .section | default "global" }}
+<div class="popular-sidebar">
+  {{ partial "popular-posts.html" (dict "count" $count "title" $title "section" $section) }}
+</div>

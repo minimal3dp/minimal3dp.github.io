@@ -244,4 +244,12 @@ img.img-fluid {
 
 @media (max-width: 480px) {
   .cta-badge { display: inline-flex; margin-bottom: 8px; }
+
+/* popular posts widget */
+.popular-posts { margin-top: 36px; }
+.popular-posts .widget-title { font-size: 1.125rem; font-weight: 700; margin-bottom: 0.75rem; }
+.popular-posts__list { list-style: none; padding: 0; margin: 0; }
+.popular-posts__item { margin-bottom: 0.625rem; }
+.popular-posts__item a { color: inherit; text-decoration: none; }
+.popular-posts__item .muted { color: #64748b; font-weight: 600; margin-left: 8px; }
 }

@@ -1,25 +1,232 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Free 3D Printing Calculators &amp; Tools on Minimal 3DP</title>
-    <link>http://localhost:58235/tools/</link>
-    <description>Recent content in Free 3D Printing Calculators &amp; Tools on Minimal 3DP</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:58235/tools/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>3D Print Cost Calculator</title>
-      <link>http://localhost:58235/tools/m3dp-fdm-cost-calculator/</link>
-      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58235/tools/m3dp-fdm-cost-calculator/</guid>
-      <description>&lt;html lang=&#34;en&#34; class=&#34;h-full&#34;&gt;&#xA;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;&#xA;    &lt;title&gt;M3DP FDM 3D Print Cost Calculator&lt;/title&gt;&#xA;    &lt;!-- Load Tailwind CSS --&gt;&#xA;    &lt;script src=&#34;https://cdn.tailwindcss.com&#34;&gt;&lt;/script&gt;&#xA;    &lt;!-- Import Inter font --&gt;&#xA;    &lt;link rel=&#34;preconnect&#34; href=&#34;https://fonts.googleapis.com&#34;&gt;&#xA;    &lt;link rel=&#34;preconnect&#34; href=&#34;https://fonts.gstatic.com&#34; crossorigin&gt;&#xA;    &lt;link href=&#34;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap&#34; rel=&#34;stylesheet&#34;&gt;&#xA;    &lt;style&gt;&#xA;        /* Custom styles */&#xA;        body {&#xA;            font-family: &#39;Inter&#39;, sans-serif;&#xA;            background-color: #f3f4f6;&#xA;            /* Light gray background */&#xA;        }&#xA;&#xA;        /* Custom tooltip style */&#xA;        .info-icon {&#xA;            display: inline-block;&#xA;            width: 1rem;&#xA;            height: 1rem;&#xA;            background-color: #9ca3af;&#xA;            /* gray-400 */&#xA;            color: white;&#xA;            border-radius: 50%;&#xA;            text-align: center;&#xA;            font-size: 0.75rem;&#xA;            line-height: 1rem;&#xA;            font-weight: bold;&#xA;            font-style: normal;&#xA;            cursor: help;&#xA;            margin-left: 4px;&#xA;            position: relative;&#xA;        }&#xA;&#xA;        /* Tooltip text - hidden by default */&#xA;        .info-icon::after {&#xA;            content: attr(data-tooltip);&#xA;            position: absolute;&#xA;            bottom: 125%;&#xA;            /* Position above the icon */&#xA;            left: 50%;&#xA;            transform: translateX(-50%);&#xA;            background-color: #1f2937;&#xA;            /* gray-800 */&#xA;            color: #fff;&#xA;            padding: 8px 12px;&#xA;            border-radius: 6px;&#xA;            font-size: 0.875rem;&#xA;            font-weight: 500;&#xA;            line-height: 1.25;&#xA;            white-space: normal;&#xA;            width: 320px;&#xA;            /* Fixed width for better readability */&#xA;            text-align: left;&#xA;            visibility: hidden;&#xA;            opacity: 0;&#xA;            transition: opacity 0.2s, visibility 0.2s;&#xA;            z-index: 10;&#xA;        }&#xA;&#xA;        /* Show tooltip on hover */&#xA;        .info-icon:hover::after {&#xA;            visibility: visible;&#xA;            opacity: 1;&#xA;        }&#xA;&#xA;        /* Custom style for the sticky summary box */&#xA;        .sticky-summary {&#xA;            position: sticky;&#xA;            top: 6rem;&#xA;            /* 96px - Increased to prevent overlap with site header on scroll */&#xA;            align-self: start;&#xA;            /* Prevents stretching to grid height */&#xA;            z-index: 10;&#xA;            /* Ensure proper stacking order */&#xA;        }&#xA;&#xA;        /* Style for the material info boxes */&#xA;        .material-info {&#xA;            background-color: #f9fafb;&#xA;            /* gray-50 */&#xA;            border: 1px solid #e5e7eb;&#xA;            /* gray-200 */&#xA;            border-radius: 0.5rem;&#xA;            padding: 0.75rem;&#xA;            margin-top: 0.5rem;&#xA;            font-size: 0.875rem;&#xA;        }&#xA;&#xA;        /* Pie Chart */&#xA;        #pie-chart {&#xA;            width: 120px;&#xA;            height: 120px;&#xA;            border-radius: 50%;&#xA;            /* Conic gradient will be set by JS */&#xA;            background-image: conic-gradient(#3b82f6 0% 0%,&#xA;                    /* Material (Blue) */&#xA;                    #10b981 0% 0%,&#xA;                    /* Labor (Green) */&#xA;                    #f59e0b 0% 0%,&#xA;                    /* Machine (Amber) */&#xA;                    #ef4444 0% 0%,&#xA;                    /* Tooling (Red) */&#xA;                    #8b5cf6 0% 0%&#xA;                    /* Finishing (Violet) */&#xA;                );&#xA;            border: 2px solid #e5e7eb;&#xA;        }&#xA;&#xA;        /* Quote Modal */&#xA;        #quote-modal-backdrop {&#xA;            background-color: rgba(0, 0, 0, 0.5);&#xA;        }&#xA;&#xA;        /* Print styles - Not used since we open a new window */&#xA;        @media print {&#xA;            @page {&#xA;                size: letter;&#xA;                margin: 0.5in;&#xA;            }&#xA;        }&#xA;&#xA;        /* Collapsible reference sections */&#xA;        details summary {&#xA;            cursor: pointer;&#xA;            font-weight: 500;&#xA;            color: #1f2937;&#xA;            /* gray-800 */&#xA;            padding: 8px;&#xA;            background-color: #f9fafb;&#xA;            /* gray-50 */&#xA;            border-radius: 0.375rem;&#xA;            transition: background-color 0.2s;&#xA;        }&#xA;&#xA;        details summary:hover {&#xA;            background-color: #f3f4f6;&#xA;            /* gray-100 */&#xA;        }&#xA;&#xA;        details[open] summary {&#xA;            border-bottom-left-radius: 0;&#xA;            border-bottom-right-radius: 0;&#xA;        }&#xA;&#xA;        details&gt;div {&#xA;            padding: 1rem;&#xA;            border: 1px solid #e5e7eb;&#xA;            /* gray-200 */&#xA;            border-top: none;&#xA;            border-bottom-left-radius: 0.375rem;&#xA;            border-bottom-right-radius: 0.375rem;&#xA;        }&#xA;    &lt;/style&gt;&#xA;&lt;/head&gt;&#xA;&#xA;&lt;body class=&#34;h-full bg-gray-100 p-4 sm:p-6 lg:p-8&#34;&gt;&#xA;    &lt;div class=&#34;container mx-auto max-w-7xl&#34;&gt;&#xA;&#xA;        &lt;!-- Header --&gt;&#xA;        &lt;header class=&#34;mb-6&#34;&gt;&#xA;&#xA;&#xA;            &lt;h1 class=&#34;text-3xl font-bold text-gray-900&#34;&gt;&#xA;                &lt;a href=&#34;https://minimal3dp.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&#xA;                    class=&#34;text-blue-600 hover:underline&#34;&gt;&#xA;                    M3DP FDM 3D Print Cost Calculator&#xA;                &lt;/a&gt;&#xA;            &lt;/h1&gt;&#xA;            &lt;p class=&#34;mt-1 text-lg text-gray-600&#34;&gt;A comprehensive tool based on the Seregi &amp; Ficzere (2025) cost model,&#xA;                expanded for business and hobbyist quoting.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3D Print Shrinkage Calculator</title>
-      <link>http://localhost:58235/tools/m3dp-shinkage-calculator/</link>
-      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58235/tools/m3dp-shinkage-calculator/</guid>
-      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34; class=&#34;h-full&#34;&gt;&#xA;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;&#xA;    &lt;title&gt;Filament Shrinkage Calculator&lt;/title&gt;&#xA;    &lt;!-- Load Tailwind CSS --&gt;&#xA;    &lt;script src=&#34;https://cdn.tailwindcss.com&#34;&gt;&lt;/script&gt;&#xA;    &lt;!-- Load Inter font --&gt;&#xA;    &lt;link&#xA;        href=&#34;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Mono:wght@400;500&amp;display=swap&#34;&#xA;        rel=&#34;stylesheet&#34;&gt;&#xA;    &lt;style&gt;&#xA;        /* Use Inter as the default font */&#xA;        body {&#xA;            font-family: &#39;Inter&#39;, sans-serif;&#xA;        }&#xA;&#xA;        /* Use a monospace font for results */&#xA;        .font-mono {&#xA;            font-family: &#39;Mono&#39;, monospace;&#xA;        }&#xA;&#xA;        /* Custom styles for copy button feedback */&#xA;        .copy-btn-feedback::after {&#xA;            content: &#39;Copied!&#39;;&#xA;            position: absolute;&#xA;            top: -1.75rem;&#xA;            left: 50%;&#xA;            transform: translateX(-50%);&#xA;            background-color: #10B981;&#xA;            /* green-500 */&#xA;            color: white;&#xA;            padding: 0.25rem 0.5rem;&#xA;            border-radius: 0.25rem;&#xA;            font-size: 0.75rem;&#xA;            font-weight: bold;&#xA;            opacity: 0;&#xA;            transition: opacity 0.3s ease;&#xA;            pointer-events: none;&#xA;        }&#xA;&#xA;        .copy-btn-feedback.show-feedback::after {&#xA;            opacity: 1;&#xA;        }&#xA;    &lt;/style&gt;&#xA;&lt;/head&gt;&#xA;&#xA;&lt;body class=&#34;bg-gray-900 text-gray-100 h-full flex items-center justify-center py-12 px-4&#34;&gt;&#xA;&#xA;    &lt;div class=&#34;max-w-4xl w-full bg-gray-800 rounded-2xl shadow-2xl p-8 space-y-8&#34;&gt;&#xA;&#xA;        &lt;!-- Header --&gt;&#xA;        &lt;div class=&#34;text-center&#34;&gt;&#xA;            &lt;h1 class=&#34;text-3xl font-bold text-white&#34;&gt;Filament Shrinkage Calculator&lt;/h1&gt;&#xA;            &lt;p class=&#34;mt-2 text-lg text-gray-400&#34;&gt;For OrcaSlicer &amp; BambuSlicer (using Calibration Cross)&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Free 3D Printing Calculators &amp; Tools on Minimal 3DP</title><link>https://minimal3dp.com/tools/</link><description>Recent content in Free 3D Printing Calculators &amp; Tools on Minimal 3DP</description><generator>Hugo</generator><language>en</language><atom:link href="https://minimal3dp.com/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>3D Print Cost Calculator</title><link>https://minimal3dp.com/tools/m3dp-fdm-cost-calculator/</link><pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/tools/m3dp-fdm-cost-calculator/</guid><description>&lt;html lang="en" class="h-full"&gt;
+
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ &lt;title&gt;M3DP FDM 3D Print Cost Calculator&lt;/title&gt;
+ &lt;!-- Load Tailwind CSS --&gt;
+ &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+ &lt;!-- Import Inter font --&gt;
+ &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+ &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;
+ &lt;style&gt;
+ /* Custom styles */
+ body {
+ font-family: 'Inter', sans-serif;
+ background-color: #f3f4f6;
+ /* Light gray background */
+ }
+
+ /* Custom tooltip style */
+ .info-icon {
+ display: inline-block;
+ width: 1rem;
+ height: 1rem;
+ background-color: #9ca3af;
+ /* gray-400 */
+ color: white;
+ border-radius: 50%;
+ text-align: center;
+ font-size: 0.75rem;
+ line-height: 1rem;
+ font-weight: bold;
+ font-style: normal;
+ cursor: help;
+ margin-left: 4px;
+ position: relative;
+ }
+
+ /* Tooltip text - hidden by default */
+ .info-icon::after {
+ content: attr(data-tooltip);
+ position: absolute;
+ bottom: 125%;
+ /* Position above the icon */
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: #1f2937;
+ /* gray-800 */
+ color: #fff;
+ padding: 8px 12px;
+ border-radius: 6px;
+ font-size: 0.875rem;
+ font-weight: 500;
+ line-height: 1.25;
+ white-space: normal;
+ width: 320px;
+ /* Fixed width for better readability */
+ text-align: left;
+ visibility: hidden;
+ opacity: 0;
+ transition: opacity 0.2s, visibility 0.2s;
+ z-index: 10;
+ }
+
+ /* Show tooltip on hover */
+ .info-icon:hover::after {
+ visibility: visible;
+ opacity: 1;
+ }
+
+ /* Custom style for the sticky summary box */
+ .sticky-summary {
+ position: sticky;
+ top: 6rem;
+ /* 96px - Increased to prevent overlap with site header on scroll */
+ align-self: start;
+ /* Prevents stretching to grid height */
+ z-index: 10;
+ /* Ensure proper stacking order */
+ }
+
+ /* Style for the material info boxes */
+ .material-info {
+ background-color: #f9fafb;
+ /* gray-50 */
+ border: 1px solid #e5e7eb;
+ /* gray-200 */
+ border-radius: 0.5rem;
+ padding: 0.75rem;
+ margin-top: 0.5rem;
+ font-size: 0.875rem;
+ }
+
+ /* Pie Chart */
+ #pie-chart {
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+ /* Conic gradient will be set by JS */
+ background-image: conic-gradient(#3b82f6 0% 0%,
+ /* Material (Blue) */
+ #10b981 0% 0%,
+ /* Labor (Green) */
+ #f59e0b 0% 0%,
+ /* Machine (Amber) */
+ #ef4444 0% 0%,
+ /* Tooling (Red) */
+ #8b5cf6 0% 0%
+ /* Finishing (Violet) */
+ );
+ border: 2px solid #e5e7eb;
+ }
+
+ /* Quote Modal */
+ #quote-modal-backdrop {
+ background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ /* Print styles - Not used since we open a new window */
+ @media print {
+ @page {
+ size: letter;
+ margin: 0.5in;
+ }
+ }
+
+ /* Collapsible reference sections */
+ details summary {
+ cursor: pointer;
+ font-weight: 500;
+ color: #1f2937;
+ /* gray-800 */
+ padding: 8px;
+ background-color: #f9fafb;
+ /* gray-50 */
+ border-radius: 0.375rem;
+ transition: background-color 0.2s;
+ }
+
+ details summary:hover {
+ background-color: #f3f4f6;
+ /* gray-100 */
+ }
+
+ details[open] summary {
+ border-bottom-left-radius: 0;
+ border-bottom-right-radius: 0;
+ }
+
+ details&gt;div {
+ padding: 1rem;
+ border: 1px solid #e5e7eb;
+ /* gray-200 */
+ border-top: none;
+ border-bottom-left-radius: 0.375rem;
+ border-bottom-right-radius: 0.375rem;
+ }
+ &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class="h-full bg-gray-100 p-4 sm:p-6 lg:p-8"&gt;
+ &lt;div class="container mx-auto max-w-7xl"&gt;
+
+ &lt;!-- Header --&gt;
+ &lt;header class="mb-6"&gt;
+
+
+ &lt;h1 class="text-3xl font-bold text-gray-900"&gt;
+ &lt;a href="https://minimal3dp.com" target="_blank" rel="noopener noreferrer"
+ class="text-blue-600 hover:underline"&gt;
+ M3DP FDM 3D Print Cost Calculator
+ &lt;/a&gt;
+ &lt;/h1&gt;
+ &lt;p class="mt-1 text-lg text-gray-600"&gt;A comprehensive tool based on the Seregi &amp; Ficzere (2025) cost model,
+ expanded for business and hobbyist quoting.&lt;/p&gt;</description></item><item><title>3D Print Shrinkage Calculator</title><link>https://minimal3dp.com/tools/m3dp-shinkage-calculator/</link><pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/tools/m3dp-shinkage-calculator/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" class="h-full"&gt;
+
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ &lt;title&gt;Filament Shrinkage Calculator&lt;/title&gt;
+ &lt;!-- Load Tailwind CSS --&gt;
+ &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+ &lt;!-- Load Inter font --&gt;
+ &lt;link
+ href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Mono:wght@400;500&amp;display=swap"
+ rel="stylesheet"&gt;
+ &lt;style&gt;
+ /* Use Inter as the default font */
+ body {
+ font-family: 'Inter', sans-serif;
+ }
+
+ /* Use a monospace font for results */
+ .font-mono {
+ font-family: 'Mono', monospace;
+ }
+
+ /* Custom styles for copy button feedback */
+ .copy-btn-feedback::after {
+ content: 'Copied!';
+ position: absolute;
+ top: -1.75rem;
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: #10B981;
+ /* green-500 */
+ color: white;
+ padding: 0.25rem 0.5rem;
+ border-radius: 0.25rem;
+ font-size: 0.75rem;
+ font-weight: bold;
+ opacity: 0;
+ transition: opacity 0.3s ease;
+ pointer-events: none;
+ }
+
+ .copy-btn-feedback.show-feedback::after {
+ opacity: 1;
+ }
+ &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class="bg-gray-900 text-gray-100 h-full flex items-center justify-center py-12 px-4"&gt;
+
+ &lt;div class="max-w-4xl w-full bg-gray-800 rounded-2xl shadow-2xl p-8 space-y-8"&gt;
+
+ &lt;!-- Header --&gt;
+ &lt;div class="text-center"&gt;
+ &lt;h1 class="text-3xl font-bold text-white"&gt;Filament Shrinkage Calculator&lt;/h1&gt;
+ &lt;p class="mt-2 text-lg text-gray-400"&gt;For OrcaSlicer &amp; BambuSlicer (using Calibration Cross)&lt;/p&gt;</description></item></channel></rss>

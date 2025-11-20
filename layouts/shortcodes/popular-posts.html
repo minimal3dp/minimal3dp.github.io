@@ -1,0 +1,8 @@
+{{/* Shortcode to insert popular posts. Usage:
+   {{< popular-posts count="5" title="Top Read" >}}
+*/}}
+
+{{ $count := .Get "count" | default 5 | int }}
+{{ $title := .Get "title" | default "Popular Posts" }}
+{{ $section := .Get "section" | default "global" }}
+{{ partial "popular-posts.html" (dict "count" $count "title" $title "section" $section) }}

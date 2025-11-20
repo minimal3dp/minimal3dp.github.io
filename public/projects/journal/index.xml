@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>M3DP Project Plans and Journals on Minimal 3DP</title>
-    <link>http://localhost:58235/projects/journal/</link>
-    <description>Recent content in M3DP Project Plans and Journals on Minimal 3DP</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:58235/projects/journal/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>M3DP Project Plans and Journals on Minimal 3DP</title><link>https://minimal3dp.com/projects/journal/</link><description>Recent content in M3DP Project Plans and Journals on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate/><atom:link href="https://minimal3dp.com/projects/journal/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
