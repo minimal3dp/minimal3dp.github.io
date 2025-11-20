@@ -32,10 +32,11 @@ Data sourced from YouTube Data API via youtube-popular.json
             <div class="pv-thumb-wrapper">
               {{- $vid := .id | default .videoId -}}
               {{- if $fallback -}}
+                {{- /* Local fallback images - use Hugo processing */ -}}
                 {{- $orig := resources.Get (printf "images/youtube-fallback/%s.jpg" $vid) -}}
                 {{- if $orig -}}
-                  {{- $webp := ($orig.Fit "480x270").Convert "webp" -}}
-                  {{- $lqip := ($orig.Resize "24x").Convert "webp" -}}
+                  {{- $webp := $orig.Process "fit 480x270 webp" -}}
+                  {{- $lqip := $orig.Process "resize 24x webp" -}}
                   {{- $lqipData := printf "data:%s;base64,%s" $lqip.MediaType (base64Encode $lqip.Content) -}}
                   <img src="{{ $webp.RelPermalink }}"
                        alt="{{ .title }}"
@@ -53,12 +54,29 @@ Data sourced from YouTube Data API via youtube-popular.json
                        onload="this.classList.remove('is-blurred')">
                 {{- end -}}
               {{- else -}}
-                <img src="{{ .thumbnail | safeURL }}"
-                     alt="{{ .title }}"
-                     class="pv-thumb is-blurred"
-                     width="480" height="270"
-                     loading="lazy"
-                     onload="this.classList.remove('is-blurred')">
+                {{- /* Live YouTube thumbnails - fetch and convert to WebP */ -}}
+                {{- $thumbUrl := .thumbnail -}}
+                {{- $remoteImg := resources.GetRemote $thumbUrl -}}
+                {{- if $remoteImg -}}
+                  {{- $webp := $remoteImg.Process "fit 480x270 webp" -}}
+                  {{- $lqip := $remoteImg.Process "resize 24x webp" -}}
+                  {{- $lqipData := printf "data:%s;base64,%s" $lqip.MediaType (base64Encode $lqip.Content) -}}
+                  <img src="{{ $webp.RelPermalink }}"
+                       alt="{{ .title }}"
+                       class="pv-thumb is-blurred"
+                       width="{{ $webp.Width }}" height="{{ $webp.Height }}"
+                       loading="lazy"
+                       data-lqip="{{ $lqipData }}"
+                       onload="this.classList.remove('is-blurred')">
+                {{- else -}}
+                  {{- /* Fallback to direct thumbnail URL if remote fetch fails */ -}}
+                  <img src="{{ $thumbUrl | safeURL }}"
+                       alt="{{ .title }}"
+                       class="pv-thumb is-blurred"
+                       width="480" height="270"
+                       loading="lazy"
+                       onload="this.classList.remove('is-blurred')">
+                {{- end -}}
               {{- end -}}
               <div class="play-overlay">
                 <i class="fa-solid fa-play" style="color: white; font-size: 20px; margin-left: 4px;"></i>

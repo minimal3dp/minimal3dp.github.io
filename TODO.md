@@ -44,8 +44,8 @@
 - [x] Add `loading="lazy"`
 - [x] Add `width` and `height` attributes
 - [x] Add blur placeholder removal on load
-- [ ] Convert thumbnails to WebP via Hugo image processing
-- [ ] Generate very low-res base64 thumb for LQIP (optional)
+- [x] Convert thumbnails to WebP via Hugo image processing
+- [x] Generate very low-res base64 thumb for LQIP
 
 ### 4. Publish OrcaSlicer Bed Types Post
 - [x] Review and edit content (`content/blog/posts/orcaslicer-bed-types/index.md`)

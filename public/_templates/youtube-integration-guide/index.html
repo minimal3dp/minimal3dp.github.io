@@ -413,19 +413,30 @@ Get step-by-step instructions, additional tips, and downloadable resources on th
 
 
 
+<div class="youtube-wrapper" id="yt-VIDEO_ID" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 30px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background: #000;"><iframe 
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0&modestbranding=1" 
+      title="Video Title"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      loading="lazy">
+    </iframe></div>
 
-
-<div class="youtube-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 30px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0&modestbranding=1" 
-    title="Video Title"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
+<script>
+function loadYouTubeIframe(videoId, title) {
+  const wrapper = document.getElementById('yt-' + videoId);
+  const iframe = document.createElement('iframe');
+  iframe.style.cssText = 'position: absolute; top: 0; left: 0; width: 100%; height: 100%;';
+  iframe.src = 'https://www.youtube-nocookie.com/embed/' + videoId + '?rel=0&modestbranding=1&autoplay=1';
+  iframe.title = title;
+  iframe.frameBorder = '0';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  iframe.allowFullscreen = true;
+  wrapper.innerHTML = '';
+  wrapper.appendChild(iframe);
+}
+</script>
 
 
 <div class="youtube-cta" style="text-align: center; margin: 15px 0;">
@@ -462,19 +473,33 @@ function trackYouTubeSubscribe(source) {
 
 
 
+<div class="youtube-wrapper" id="yt-DJZnYB0IVCY" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 30px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background: #000;"><div class="yt-thumbnail-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;" onclick="loadYouTubeIframe('DJZnYB0IVCY', 'Professional Firmware for Ender 3 v2')">
+      <img src="/maxresdefault_2491709132590411951_hu_78833f06a2521da5.webp"
+           alt="Professional Firmware for Ender 3 v2"
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+           class="is-blurred"
+           width="1280" height="720"
+           loading="lazy"data-lqip="data:image/webp;base64,UklGRlYBAABXRUJQVlA4IEoBAADQBwCdASogABIAPpk4lEQioaEYBgArCYT2AE6ZQjqzQV6XbQc71pnPoAGQBpAmgxf8NIUIzmCz6roxB6gT8zWQbn9Jm1nwcAD&#43;TT6WrQX7LfCOHGytzVUfz7jmz2pvXd8SjeAi15iHIhCeXgOwp05pVKQZseEnlORIqGdiaoVHLrA7/Hhz/GKVlzTY/4xSs3/o5vtmH&#43;qoZ/DGWhFyGE7Nc1Smw0oLX1WOfKZKCXBdT6hR78cBIsqdRiPr1ZOLqX&#43;UoP5s0FTrlhwqwQrq1bLoPOrOrUmnBZiu4MrsvZcDxf3GegsqTayPHJbOWLndeyYuV/i3nAf1/rziWEjDJDzTHiuxycHXeAZHWWQonxvHXbpbp4ZmuuVHRxw7QCv3o9MGC/sL9ZZThLuv2Gefel6Pecf9v&#43;PtaeBfxN/B/gX8ThuZ3xN/A5fAAAA="
+           onload="this.classList.remove('is-blurred')">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); border-radius: 50%; width: 68px; height: 48px; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
+        <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%"><path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg>
+      </div>
+    </div></div>
 
-
-<div class="youtube-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 30px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube-nocookie.com/embed/DJZnYB0IVCY?rel=0&modestbranding=1" 
-    title="Professional Firmware for Ender 3 v2"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
+<script>
+function loadYouTubeIframe(videoId, title) {
+  const wrapper = document.getElementById('yt-' + videoId);
+  const iframe = document.createElement('iframe');
+  iframe.style.cssText = 'position: absolute; top: 0; left: 0; width: 100%; height: 100%;';
+  iframe.src = 'https://www.youtube-nocookie.com/embed/' + videoId + '?rel=0&modestbranding=1&autoplay=1';
+  iframe.title = title;
+  iframe.frameBorder = '0';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  iframe.allowFullscreen = true;
+  wrapper.innerHTML = '';
+  wrapper.appendChild(iframe);
+}
+</script>
 
 
 <div class="youtube-cta" style="text-align: center; margin: 15px 0;">
@@ -518,19 +543,30 @@ function trackYouTubeSubscribe(source) {
 
 
 
+<div class="youtube-wrapper" id="yt-ABC123" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 30px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background: #000;"><iframe 
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      src="https://www.youtube-nocookie.com/embed/ABC123?rel=0&modestbranding=1" 
+      title="Klipper Pressure Advance Tutorial"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      loading="lazy">
+    </iframe></div>
 
-
-<div class="youtube-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 30px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube-nocookie.com/embed/ABC123?rel=0&modestbranding=1" 
-    title="Klipper Pressure Advance Tutorial"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
+<script>
+function loadYouTubeIframe(videoId, title) {
+  const wrapper = document.getElementById('yt-' + videoId);
+  const iframe = document.createElement('iframe');
+  iframe.style.cssText = 'position: absolute; top: 0; left: 0; width: 100%; height: 100%;';
+  iframe.src = 'https://www.youtube-nocookie.com/embed/' + videoId + '?rel=0&modestbranding=1&autoplay=1';
+  iframe.title = title;
+  iframe.frameBorder = '0';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  iframe.allowFullscreen = true;
+  wrapper.innerHTML = '';
+  wrapper.appendChild(iframe);
+}
+</script>
 
 
 <div class="youtube-cta" style="text-align: center; margin: 15px 0;">

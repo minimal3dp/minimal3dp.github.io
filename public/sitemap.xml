@@ -14,10 +14,61 @@
     <loc>http://localhost:1313/projects/3d-printers/sidewinder-x1/swx1-klipper-config/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/cr6-se/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/mercury-one/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/sidewinder-x1/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printing-reviews/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/journal/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/journal/belt-driven-ender-3/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/journal/voron-2.4-r2/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/journal/vzbot/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/overview/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/tutorials/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/tutorials/orca-slicer/_template/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/cr6-se/cr6-se-klipper-config/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/3d-printers/mercury-one/mercury-one-klipper-config/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/voron-klipper-config/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tools/m3dp-fdm-cost-calculator/</loc>
@@ -31,6 +82,9 @@
   </url><url>
     <loc>http://localhost:1313/projects/tutorials/ultimaker-cura/cura-download-install/</loc>
     <lastmod>2024-05-05T15:40:19-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/journal/voron-2.4-r2/voron-build-z-drive/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/3d-printers/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
@@ -96,28 +150,58 @@
     <lastmod>2024-05-05T21:36:08-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/3d-printers/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/calibration/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/creality-k2-plus/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/extruder/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/how-to/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2025/11/19/k2-plus-upgrade-series-part-1-all-metal-extruder-gear-kit/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2025/11/19/k2-plus-upgrade-series-part-2-nozzle-wiper-module/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2025/11/19/k2-plus-upgrade-series-part-3-klipper-installation-orcaslicer-profile/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/klipper/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/maintenance/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/2025/11/19/mastering-bed-types-in-orcaslicer-automate-z-offsets-and-temperatures/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/orcaslicer/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/slicers/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/tutorials/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/upgrades/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/videos/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/3d-printing/</loc>
     <lastmod>2025-11-15T18:28:48-06:00</lastmod>
@@ -143,9 +227,6 @@
     <loc>http://localhost:1313/tags/tools/</loc>
     <lastmod>2025-11-16T22:20:14-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tutorials/</loc>
-    <lastmod>2025-11-16T21:34:56-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/abs/</loc>
     <lastmod>2025-11-16T21:34:56-06:00</lastmod>
   </url><url>
@@ -170,8 +251,14 @@
     <loc>http://localhost:1313/tags/reviews/</loc>
     <lastmod>2025-11-16T21:34:56-06:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog/2025/11/13/shortcode-examples-usage-guide/</loc>
+    <lastmod>2025-11-13T21:45:26-06:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/tpu/</loc>
     <lastmod>2025-11-16T21:34:56-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2025/11/12/amazon-product-shortcode-usage-example/</loc>
+    <lastmod>2025-11-12T22:40:07-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/2025/11/09/m3dp-3d-print-cost-calculator/</loc>
     <lastmod>2025-11-13T20:25:42-06:00</lastmod>
@@ -182,11 +269,26 @@
     <loc>http://localhost:1313/blog/2025/05/03/level-up-your-prints-why-line-width-is-your-3d-printing-secret-weapon/</loc>
     <lastmod>2025-05-03T12:35:42-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog/2025/04/18/extrusion-rate-smoothing-in-orcaslicer/</loc>
+    <lastmod>2025-04-17T21:31:36-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/2025/01/01/3d-printing-and-max-volumetric-speed/</loc>
     <lastmod>2025-01-01T22:07:30-06:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/assembly/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/builds/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/cura/</loc>
     <lastmod>2024-05-05T15:40:19-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/voron/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/voron-2.4/</loc>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/2024/04/29/new-minimal-3dp-website/</loc>
     <lastmod>2024-04-29T10:08:45-05:00</lastmod>
@@ -197,20 +299,8 @@
     <loc>http://localhost:1313/categories/this-week/</loc>
     <lastmod>2024-04-28T20:01:02-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/voron/</loc>
-    <lastmod>2024-05-04T13:54:48-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/assembly/</loc>
-    <lastmod>2024-05-04T13:54:48-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/builds/</loc>
-    <lastmod>2024-05-04T13:54:48-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/rassembly/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/voron-2.4/</loc>
-    <lastmod>2024-05-04T13:54:48-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/2024/04/21/this-week-on-minimal-3dp-april-21/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
@@ -231,9 +321,6 @@
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/klipper/</loc>
-    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/klipper/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swx1/</loc>
@@ -284,6 +371,15 @@
     <loc>http://localhost:1313/_templates/youtube-integration-guide/</loc>
     <lastmod>2025-11-13T22:09:08-06:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog/1/01/01/</loc>
+    <lastmod>2024-04-29T10:08:45-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/1/01/01/</loc>
+    <lastmod>2024-04-29T10:08:45-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/1/01/01/</loc>
+    <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/_templates/</loc>
     <lastmod>2025-11-19T18:17:33-06:00</lastmod>
   </url><url>
@@ -294,9 +390,6 @@
     <lastmod>2025-11-13T22:18:03-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/calculators/</loc>
-    <lastmod>2025-11-16T22:20:14-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/calibration/</loc>
     <lastmod>2025-11-16T22:20:14-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ender-3/</loc>
@@ -315,7 +408,7 @@
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-16T22:49:19-06:00</lastmod>
+    <lastmod>2025-11-19T22:37:22-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/projects/</loc>
     <lastmod>2025-11-13T20:25:42-06:00</lastmod>
@@ -325,6 +418,9 @@
   </url><url>
     <loc>http://localhost:1313/search/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/test-popular/</loc>
+    <lastmod>2025-11-19T18:17:33-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/journal/vzbot/</loc>
     <lastmod>2024-04-28T10:32:41-05:00</lastmod>
