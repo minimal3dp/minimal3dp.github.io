@@ -20045,4 +20045,36 @@ img.img-fluid, .td-content img {
     font-weight: 600;
     margin-left: 8px; } }
 
+/* Popular videos thumbnail blur placeholder */
+.pv-thumb-wrapper {
+  position: relative;
+  background: linear-gradient(135deg, #1E293B 0%, #334155 100%);
+  aspect-ratio: 16/9;
+  overflow: hidden; }
+
+.pv-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter .4s ease, transform .4s ease; }
+
+.pv-thumb.is-blurred {
+  filter: blur(14px);
+  transform: scale(1.04); }
+
+.pv-thumb-wrapper .play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 0, 0, 0.9);
+  border-radius: 50%;
+  width: 68px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; }
+
 /*# sourceMappingURL=main.css.map */

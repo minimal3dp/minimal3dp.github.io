@@ -18,18 +18,16 @@ jobs:
       GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
       SECTIONS: '/blog/,/tools/,/projects/'
       OUTPUT_PATH: data/popular.json
-      # Optional notification targets (set these as repository secrets)
-      # SLACK_WEBHOOK_URL: Slack Incoming Webhook URL (saved as secret, injected below)
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
         with:
-          python-version: '3.11'
+          enable-cache: true
+      - name: Set up Python
+        run: uv python install 3.11
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
+        run: uv sync
       - name: Decode GA4 service account
         run: |
           echo "$GA4_SERVICE_ACCOUNT" | base64 --decode > /tmp/ga4_service_account.json
@@ -38,7 +36,7 @@ jobs:
       - name: Run fetch script
         run: |
           export GOOGLE_APPLICATION_CREDENTIALS=/tmp/ga4_service_account.json
-          python scripts/fetch_ga4_popular.py
+          uv run python scripts/fetch_ga4_popular.py
       - name: Debug output
         run: |
           echo '--- data/popular.json ---'
@@ -49,25 +47,33 @@ jobs:
         run: |
           mkdir -p static/data || true
           cp data/popular.json static/data/popular.json || true
+      - name: Prepare email summary
+        id: summary
+        run: |
+          if [ ! -s data/popular.json ]; then echo "top_pages=Unavailable" >> "$GITHUB_OUTPUT"; exit 0; fi
+          TOP=$(jq -r '.global[0:5][] | "- " + .title + " (" + (.views|tostring) + " views)"' data/popular.json 2>/dev/null || echo "")
+          printf 'top_pages<<EOF\n%s\nEOF\n' "$TOP" >> "$GITHUB_OUTPUT"
       - name: Commit data
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Update popular posts data"
           commit_user_name: automation
           commit_user_email: action@minimal3dp.com
-      - name: Notify Slack (success)
-        if: success()
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      - name: Determine email config
+        id: email_config
         run: |
-          if [ -z "$SLACK_WEBHOOK_URL" ]; then
-            echo "Skipping Slack success notification; SLACK_WEBHOOK_URL not set."; exit 0; fi
-          SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
-          curl -X POST -H 'Content-type: application/json' \
-            --data "{\"text\":\"✅ Popular posts data updated (commit $SHORT_SHA). Run $GITHUB_RUN_ID in $GITHUB_REPOSITORY\"}" \
-            "$SLACK_WEBHOOK_URL"
+          if [ -n "${{ secrets.SMTP_SERVER }}" ] && \
+             [ -n "${{ secrets.SMTP_PORT }}" ] && \
+             [ -n "${{ secrets.SMTP_USERNAME }}" ] && \
+             [ -n "${{ secrets.SMTP_PASSWORD }}" ] && \
+             [ -n "${{ secrets.TO_EMAIL }}" ] && \
+             [ -n "${{ secrets.FROM_EMAIL }}" ]; then
+            echo "have_email=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "have_email=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Send Email (success)
-        if: success() && secrets.SMTP_SERVER && secrets.SMTP_PORT && secrets.SMTP_USERNAME && secrets.SMTP_PASSWORD && secrets.TO_EMAIL && secrets.FROM_EMAIL
+        if: success() && steps.email_config.outputs.have_email == 'true'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
@@ -79,24 +85,15 @@ jobs:
           from: ${{ secrets.FROM_EMAIL }}
           body: |
             Success updating popular posts data.
+            Top Pages:
+            ${{ steps.summary.outputs.top_pages }}
             Repo: ${{ github.repository }}
             Run: ${{ github.run_id }}
             Commit: ${{ github.sha }}
             File: data/popular.json
             View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-      - name: Notify Slack (failure)
-        if: failure()
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        run: |
-          if [ -z "$SLACK_WEBHOOK_URL" ]; then
-            echo "Skipping Slack failure notification; SLACK_WEBHOOK_URL not set."; exit 0; fi
-            SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
-            curl -X POST -H 'Content-type: application/json' \
-              --data "{\"text\":\"🚨 Popular posts workflow FAILED (commit $SHORT_SHA). Run $GITHUB_RUN_ID: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\"}" \
-              "$SLACK_WEBHOOK_URL"
       - name: Send Email (failure)
-        if: failure() && secrets.SMTP_SERVER && secrets.SMTP_PORT && secrets.SMTP_USERNAME && secrets.SMTP_PASSWORD && secrets.TO_EMAIL && secrets.FROM_EMAIL
+        if: failure() && steps.email_config.outputs.have_email == 'true'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
@@ -108,6 +105,8 @@ jobs:
           from: ${{ secrets.FROM_EMAIL }}
           body: |
             Failure updating popular posts data.
+            Attempted Top Pages (if available):
+            ${{ steps.summary.outputs.top_pages }}
             Repo: ${{ github.repository }}
             Run: ${{ github.run_id }}
             Commit: ${{ github.sha }}

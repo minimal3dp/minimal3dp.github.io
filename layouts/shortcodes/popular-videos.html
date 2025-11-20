@@ -1,0 +1,127 @@
+{{/* 
+Usage: {{< popular-videos count="3" >}}
+
+Displays the most popular YouTube videos from the channel.
+Data sourced from YouTube Data API via youtube-popular.json
+*/}}
+
+{{ $count := .Get "count" | default 3 }}
+{{ $fallback := false }}
+{{ $videos := site.Data.youtube_popular.videos }}
+{{ $mode := "youtube" }}
+{{ if or (not $videos) (lt (len $videos) 1) }}
+  {{/* Attempt GA4 popular posts as interim fallback before curated list */}}
+  {{ $ga4 := site.Data.popular.global }}
+  {{ if and $ga4 (gt (len $ga4) 0) }}
+    {{ $videos = $ga4 }}
+    {{ $mode = "posts" }}
+  {{ else }}
+    {{ $videos = site.Data.youtube_popular_fallback.videos }}
+    {{ $fallback = true }}
+  {{ end }}
+{{ end }}
+
+<div class="row">
+{{- with $videos -}}
+    {{- range first (int $count) . -}}
+      <div class="col-lg-4 mb-4">
+        <div class="h-100" style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          {{- /* YouTube Thumbnail */ -}}
+          {{ if eq $mode "youtube" }}
+          <a href="https://www.youtube.com/watch?v={{ if .id }}{{ .id }}{{ else }}{{ .videoId }}{{ end }}" target="_blank" rel="noopener" style="display: block; position: relative;">
+            <div class="pv-thumb-wrapper">
+              {{- $vid := .id | default .videoId -}}
+              {{- if $fallback -}}
+                {{- $orig := resources.Get (printf "images/youtube-fallback/%s.jpg" $vid) -}}
+                {{- if $orig -}}
+                  {{- $webp := ($orig.Fit "480x270").Convert "webp" -}}
+                  {{- $lqip := ($orig.Resize "24x").Convert "webp" -}}
+                  {{- $lqipData := printf "data:%s;base64,%s" $lqip.MediaType (base64Encode $lqip.Content) -}}
+                  <img src="{{ $webp.RelPermalink }}"
+                       alt="{{ .title }}"
+                       class="pv-thumb is-blurred"
+                       width="{{ $webp.Width }}" height="{{ $webp.Height }}"
+                       loading="lazy"
+                       data-lqip="{{ $lqipData }}"
+                       onload="this.classList.remove('is-blurred')">
+                {{- else -}}
+                  <img src="{{ .thumbnail | safeURL }}"
+                       alt="{{ .title }}"
+                       class="pv-thumb is-blurred"
+                       width="480" height="270"
+                       loading="lazy"
+                       onload="this.classList.remove('is-blurred')">
+                {{- end -}}
+              {{- else -}}
+                <img src="{{ .thumbnail | safeURL }}"
+                     alt="{{ .title }}"
+                     class="pv-thumb is-blurred"
+                     width="480" height="270"
+                     loading="lazy"
+                     onload="this.classList.remove('is-blurred')">
+              {{- end -}}
+              <div class="play-overlay">
+                <i class="fa-solid fa-play" style="color: white; font-size: 20px; margin-left: 4px;"></i>
+              </div>
+            </div>
+          </a>
+          {{ else if eq $mode "posts" }}
+          <a href="{{ .url }}" style="display: block; position: relative; text-decoration:none;" >
+            <div class="pv-thumb-wrapper" style="background:linear-gradient(135deg,#343a40,#495057);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:1rem;">
+              <span style="padding:0 12px;text-align:center;">Popular Article</span>
+            </div>
+          </a>
+          {{ end }}
+          {{- /* Video Info */ -}}
+          <div class="p-3" style="background: var(--bs-light);">
+            <h4 class="h6 mb-2" style="line-height: 1.4;">
+              {{- /* Ensure title appears only once by selecting mode-specific href */ -}}
+              {{- $href := "" -}}
+              {{- if eq $mode "youtube" -}}
+                {{- $href = printf "https://www.youtube.com/watch?v=%s" (cond (isset . "id") .id .videoId) -}}
+              {{- else if eq $mode "posts" -}}
+                {{- $href = .url -}}
+              {{- end -}}
+              <a href="{{ $href }}" {{ if eq $mode "youtube" }}target="_blank" rel="noopener"{{ end }} style="text-decoration: none; color: inherit;">
+                {{- .title -}}
+              </a>
+            </h4>
+            <div class="d-flex justify-content-between align-items-center">
+              {{ if eq $mode "youtube" }}
+                {{- if .viewCount -}}
+                  <span class="text-muted small"><i class="fa-solid fa-eye me-1"></i>{{ .viewCount }} views</span>
+                {{- else -}}
+                  <span class="text-muted small"><i class="fa-solid fa-eye me-1"></i>Views updating…</span>
+                {{- end -}}
+                {{- if .likeCount -}}
+                  <span class="text-muted small"><i class="fa-solid fa-thumbs-up me-1"></i>{{ .likeCount }}</span>
+                {{- end -}}
+              {{ else if eq $mode "posts" }}
+                {{- if .views -}}
+                  <span class="text-muted small"><i class="fa-solid fa-eye me-1"></i>{{ .views }} views</span>
+                {{- end -}}
+                <span class="badge bg-secondary small">Site</span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{- end -}}
+{{- else -}}
+  <div class="col-12">
+    <div class="alert alert-warning text-center mb-0">
+      <i class="fa-brands fa-youtube me-2"></i>No videos available.
+    </div>
+  </div>
+{{- end -}}
+</div>
+
+{{ if eq $mode "posts" }}
+  <div class="mt-2 text-center">
+    <small class="text-muted">Showing site popular articles while video data loads.</small>
+  </div>
+{{ else if $fallback }}
+  <div class="mt-2 text-center">
+    <small class="text-muted">Showing curated fallback videos until live metrics are available.</small>
+  </div>
+{{ end }}

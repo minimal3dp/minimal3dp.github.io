@@ -40,23 +40,8 @@ For announcement of latest videos, tutorials, etc.
 {{% blocks/section %}}
 Popular Videos
 {.h1 .text-center}
-{{% /blocks/section %}}
 
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fa-solid fa-video" title="Orca Slicer Tutorials" url="https://youtu.be/VLMo24oDwQE" %}}
-
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-solid fa-play" title="Professional Firmware for the Neder 3 v2!"
-    url="https://youtu.be/DJZnYB0IVCY" %}}
-
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-solid fa-film" title="Installing klipper firmware on a Raspberry Pi - A Detailed (and Boring) Guide"
-    url="https://youtu.be/zzFxnu3Liyo" %}}
-
-{{% /blocks/feature %}}
+{{< popular-videos count="3" section="blog" >}}
 
 {{% /blocks/section %}}
 

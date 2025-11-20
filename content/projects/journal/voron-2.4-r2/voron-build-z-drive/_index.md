@@ -28,7 +28,7 @@ Once I build the frame, I am starting to work on building the Z Drive.
 
 ## Linear Rails
 
-{{< imgproc zdrives Fill "600x600" >}}
+{{< imgproc voron-build-zdrives Fill "600x600" >}}
 Voron Build Guide - Z Drive
 {{< /imgproc >}}
 
@@ -36,14 +36,12 @@ Voron Build Guide - Z Drive
 
 Using the blind joints. The Frame is assembled.
 
-{{< youtube  >}}
-
 ### Z Drive Parts
 
 - M3 x 8
 - M3 T Nuts
 - MGN9 Linear Rails
 
-{{< imgproc frame Fill "450x600" >}}
+{{< imgproc voron-build-zdrives Fill "450x600" >}}
 Assembled Z Drive
 {{< /imgproc >}}

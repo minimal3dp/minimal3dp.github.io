@@ -35,6 +35,20 @@ jobs:
     - name: Build
       run: hugo --minify
 
+    - name: Install Lighthouse CI
+      run: npm install --no-fund --no-audit --save-dev @lhci/cli
+
+    - name: Lighthouse CI Audit
+      run: npx @lhci/cli autorun --config=./lighthouserc.json || echo "Lighthouse assertions failed (non-blocking)"
+      continue-on-error: true
+
+    - name: Upload Lighthouse Reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: lighthouse-report
+        path: .lighthouseci
+
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.9.0
@@ -42,18 +56,21 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
-    - name: Notify Slack (success)
-      if: success()
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    - name: Determine email config
+      id: email_config
       run: |
-        if [ -z "$SLACK_WEBHOOK_URL" ]; then echo "Skipping Slack success notification; SLACK_WEBHOOK_URL not set."; exit 0; fi
-        SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
-        curl -X POST -H 'Content-type: application/json' \
-          --data "{\"text\":\"✅ Site deployed (commit $SHORT_SHA) to gh-pages. Run $GITHUB_RUN_ID\"}" \
-          "$SLACK_WEBHOOK_URL"
+        if [ -n "${{ secrets.SMTP_SERVER }}" ] && \
+           [ -n "${{ secrets.SMTP_PORT }}" ] && \
+           [ -n "${{ secrets.SMTP_USERNAME }}" ] && \
+           [ -n "${{ secrets.SMTP_PASSWORD }}" ] && \
+           [ -n "${{ secrets.TO_EMAIL }}" ] && \
+           [ -n "${{ secrets.FROM_EMAIL }}" ]; then
+          echo "have_email=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "have_email=false" >> "$GITHUB_OUTPUT"
+        fi
     - name: Send Email (success)
-      if: success()
+      if: success() && steps.email_config.outputs.have_email == 'true'
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: ${{ secrets.SMTP_SERVER }}
@@ -69,19 +86,10 @@ jobs:
           Run: ${{ github.run_id }}
           Commit: ${{ github.sha }}
           Branch: gh-pages
+          Lighthouse report artifact: lighthouse-report (see run artifacts)
           View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-    - name: Notify Slack (failure)
-      if: failure()
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-      run: |
-        if [ -z "$SLACK_WEBHOOK_URL" ]; then echo "Skipping Slack failure notification; SLACK_WEBHOOK_URL not set."; exit 0; fi
-        SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
-        curl -X POST -H 'Content-type: application/json' \
-          --data "{\"text\":\"🚨 Deployment FAILED (commit $SHORT_SHA). Run $GITHUB_RUN_ID: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\"}" \
-          "$SLACK_WEBHOOK_URL"
     - name: Send Email (failure)
-      if: failure()
+      if: failure() && steps.email_config.outputs.have_email == 'true'
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: ${{ secrets.SMTP_SERVER }}
@@ -97,3 +105,4 @@ jobs:
           Run: ${{ github.run_id }}
           Commit: ${{ github.sha }}
           Inspect logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          (If build succeeded before failure you may still have Lighthouse artifacts.)
