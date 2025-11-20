@@ -42,3 +42,58 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
+    - name: Notify Slack (success)
+      if: success()
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      run: |
+        if [ -z "$SLACK_WEBHOOK_URL" ]; then echo "Skipping Slack success notification; SLACK_WEBHOOK_URL not set."; exit 0; fi
+        SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
+        curl -X POST -H 'Content-type: application/json' \
+          --data "{\"text\":\"✅ Site deployed (commit $SHORT_SHA) to gh-pages. Run $GITHUB_RUN_ID\"}" \
+          "$SLACK_WEBHOOK_URL"
+    - name: Send Email (success)
+      if: success()
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.SMTP_SERVER }}
+        server_port: ${{ secrets.SMTP_PORT }}
+        username: ${{ secrets.SMTP_USERNAME }}
+        password: ${{ secrets.SMTP_PASSWORD }}
+        subject: "Site deployed ✔"
+        to: ${{ secrets.TO_EMAIL }}
+        from: ${{ secrets.FROM_EMAIL }}
+        body: |
+          Successful deployment.
+          Repo: ${{ github.repository }}
+          Run: ${{ github.run_id }}
+          Commit: ${{ github.sha }}
+          Branch: gh-pages
+          View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    - name: Notify Slack (failure)
+      if: failure()
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      run: |
+        if [ -z "$SLACK_WEBHOOK_URL" ]; then echo "Skipping Slack failure notification; SLACK_WEBHOOK_URL not set."; exit 0; fi
+        SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
+        curl -X POST -H 'Content-type: application/json' \
+          --data "{\"text\":\"🚨 Deployment FAILED (commit $SHORT_SHA). Run $GITHUB_RUN_ID: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\"}" \
+          "$SLACK_WEBHOOK_URL"
+    - name: Send Email (failure)
+      if: failure()
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.SMTP_SERVER }}
+        server_port: ${{ secrets.SMTP_PORT }}
+        username: ${{ secrets.SMTP_USERNAME }}
+        password: ${{ secrets.SMTP_PASSWORD }}
+        subject: "Deployment FAILED ✖"
+        to: ${{ secrets.TO_EMAIL }}
+        from: ${{ secrets.FROM_EMAIL }}
+        body: |
+          Deployment failure.
+          Repo: ${{ github.repository }}
+          Run: ${{ github.run_id }}
+          Commit: ${{ github.sha }}
+          Inspect logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
