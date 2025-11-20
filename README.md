@@ -23,7 +23,7 @@ hugo
 ## Docs
 
 - Copilot usage guidelines: see `.github/copilot-instructions.md` for repo-specific conventions and prompt efficiency tips.
-# touch to trigger popular workflow
+- Setup guides: see `docs/` folder for SMTP, recommendations, and archived notes.
 
 ## Notifications (Slack)
 
@@ -55,7 +55,7 @@ Email notifications are now implemented for both workflows (success + failure). 
 
 On success you receive a summary; on failure an alert with run URL. If any secret is missing the email step is skipped safely.
 
-Detailed provider-specific instructions: see `SMTP-SETUP.md`.
+Detailed provider-specific instructions: see `docs/SMTP-SETUP.md`.
 
 ### One-click SMTP Smoke Test
 - Go to GitHub → Actions → "SMTP Smoke Test" → Run workflow.
