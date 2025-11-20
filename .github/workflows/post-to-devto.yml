@@ -1,0 +1,80 @@
+name: Post to Dev.to
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_path:
+        description: 'Path to blog post (e.g., content/blog/posts/my-post/index.md)'
+        required: true
+        type: string
+      publish_status:
+        description: 'Publish status on Dev.to'
+        required: true
+        type: choice
+        options:
+          - draft
+          - public
+        default: draft
+
+jobs:
+  post-to-devto:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Validate post path
+        run: |
+          if [ ! -f "${{ github.event.inputs.post_path }}" ]; then
+            echo "❌ File not found: ${{ github.event.inputs.post_path }}"; exit 1; fi
+          echo "✅ Found post file"
+
+      - name: Post to Dev.to
+        id: devto
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: |
+          python scripts/post_to_devto.py "${{ github.event.inputs.post_path }}" --publish "${{ github.event.inputs.publish_status }}"
+
+      - name: Success email
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "✅ Dev.to Post Successful"
+          to: ${{ secrets.NOTIFICATION_EMAIL }}
+          from: Minimal3DP Bot
+          body: |
+            Posted to Dev.to successfully.
+            Source: ${{ github.event.inputs.post_path }}
+            Publish: ${{ github.event.inputs.publish_status }}
+            URL: ${{ steps.devto.outputs.devto_url }}
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Failure email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "❌ Dev.to Post Failed"
+          to: ${{ secrets.NOTIFICATION_EMAIL }}
+          from: Minimal3DP Bot
+          body: |
+            Failed to post to Dev.to.
+            Source: ${{ github.event.inputs.post_path }}
+            Publish: ${{ github.event.inputs.publish_status }}
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

@@ -4,6 +4,14 @@
   {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
   {{ .Content }}
 
+  {{/* Auto-insert related content for blog + calibration sections */}}
+  {{ if or (eq .Section "blog") (eq .Section "klipper-calibration") }}
+    <hr class="my-4" />
+    {{/* Shortcode syntax invalid in templates; replicate logic inline using partial for maintainability */}}
+    {{/* Pass dict for consistency with shortcode usage */}}
+    {{ partial "related-inline.html" (dict "page" .) }}
+  {{ end }}
+
   {{ partial "popular-posts.html" (dict "count" 5 "title" "Popular This Week") }}
 </div>
 {{ end }}

@@ -165,6 +165,7 @@ Based on `dev/refs/MINIMAL3DP_APP_GUIDE.md`:
 - 🔲 Create content hub pages (e.g., "All Klipper Guides")
 
 **External Promotion:**
+- ❌ Medium automation deprecated (no API tokens) – use manual copy/paste when strategically valuable (see updated `docs/MEDIUM-SETUP.md`).
 - 🔲 Reddit strategy (r/3Dprinting, r/klippers, r/VORONDesign)
 - 🔲 Discord presence (Klipper, Voron communities)
 - 🔲 Guest posts on other 3D printing blogs
@@ -353,6 +354,7 @@ Based on audience needs:
 - `dev/refs/Minimal 3DP_ A Comprehensive Brand Specification...md` - Core brand pillars
 - `docs/YOUTUBE-SETUP.md` - YouTube API integration guide
 - `docs/SMTP-SETUP.md` - Email notification setup
+- `docs/MEDIUM-SETUP.md` - Manual Medium cross-post guide (automation deprecated)
 - `docs/RECOMMENDATIONS.md` - Historical SEO recommendations (archived)
 - `docs/SHORTCODES-AND-PARTIALS.md` - Comprehensive shortcode and partial reference
 - `.github/copilot-instructions.md` - AI agent guidance for this repo

@@ -1,0 +1,94 @@
+name: Post to Medium
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_path:
+        description: 'Path to blog post (e.g., content/blog/posts/my-post/index.md)'
+        required: true
+        type: string
+      publish_status:
+        description: 'Publish status on Medium'
+        required: true
+        type: choice
+        options:
+          - draft
+          - public
+          - unlisted
+        default: draft
+
+jobs:
+  post-to-medium:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      
+      - name: Install dependencies
+        run: uv pip install --system requests
+      
+      - name: Validate post path
+        run: |
+          if [ ! -f "${{ github.event.inputs.post_path }}" ]; then
+            echo "❌ Error: File not found: ${{ github.event.inputs.post_path }}"
+            exit 1
+          fi
+          echo "✅ Post file exists"
+      
+      - name: Post to Medium
+        id: post
+        env:
+          MEDIUM_API_TOKEN: ${{ secrets.MEDIUM_API_TOKEN }}
+        run: |
+          python scripts/post_to_medium.py "${{ github.event.inputs.post_path }}"
+      
+      - name: Send success notification
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "✅ Medium Post Published Successfully"
+          to: ${{ secrets.NOTIFICATION_EMAIL }}
+          from: Minimal 3DP Bot
+          body: |
+            Successfully posted to Medium!
+            
+            Post: ${{ github.event.inputs.post_path }}
+            Medium URL: ${{ steps.post.outputs.medium_url }}
+            Post ID: ${{ steps.post.outputs.medium_id }}
+            Status: ${{ github.event.inputs.publish_status }}
+            
+            Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      
+      - name: Send failure notification
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "❌ Medium Post Failed"
+          to: ${{ secrets.NOTIFICATION_EMAIL }}
+          from: Minimal 3DP Bot
+          body: |
+            Failed to post to Medium.
+            
+            Post: ${{ github.event.inputs.post_path }}
+            Status: ${{ github.event.inputs.publish_status }}
+            
+            Check logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

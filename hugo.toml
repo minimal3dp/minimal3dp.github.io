@@ -137,6 +137,13 @@ offlineSearch = false
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+# Related content configuration
+relatedDefaultCount = 4
+relatedRecency30Boost = 2  # extra points if <=30 days old
+relatedRecency120Boost = 1 # extra points if <=120 days old (and >30)
+relatedPopularTopBoost = 3       # boost if in top global list slice
+relatedPopularViewsDivisor = 50  # views/divisor added (bounded)
+
 [params.copyright]
   authors = "Mike Wilson and Minimal 3DP | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | "
   from_year = 2021

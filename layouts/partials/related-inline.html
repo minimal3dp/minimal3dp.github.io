@@ -1,0 +1,101 @@
+{{/* Inline related content renderer used by template and shortcode.
+Accepts optional dict with keys: page (required), count (optional).
+Weights: tag overlap (3 each), same section (2), recency boosts via site params.
+*/}}
+{{ $input := . }}
+{{ $page := (cond (and (reflect.IsMap $input) (index $input "page")) (index $input "page") $input) }}
+{{ $site := $page.Site }}
+{{ $count := (cond (and (reflect.IsMap $input) (index $input "count")) (index $input "count") $site.Params.relatedDefaultCount) | default 4 }}
+{{ $tags := $page.Params.tags }}
+{{ $section := $page.Section }}
+{{ $candidates := where site.RegularPages "Permalink" "ne" $page.Permalink }}
+{{ $recency30 := $site.Params.relatedRecency30Boost | default 2 }}
+{{ $recency120 := $site.Params.relatedRecency120Boost | default 1 }}
+{{ $popularTopBoost := $site.Params.relatedPopularTopBoost | default 3 }}
+{{ $popularViewsDiv := $site.Params.relatedPopularViewsDivisor | default 50 }}
+{{ $popular := $site.Data.popular }}
+{{/* Build map of popular URLs to views */}}
+{{ $popularMap := dict }}
+{{ if $popular }}
+  {{ range $popular.global }}
+    {{ $popularMap = merge $popularMap (dict .url .views) }}
+  {{ end }}
+  {{/* also include section specific lists for breadth */}}
+  {{ range $popular.blog }}
+    {{ $popularMap = merge $popularMap (dict .url .views) }}
+  {{ end }}
+  {{ range $popular.tools }}
+    {{ $popularMap = merge $popularMap (dict .url .views) }}
+  {{ end }}
+  {{ range $popular.projects }}
+    {{ $popularMap = merge $popularMap (dict .url .views) }}
+  {{ end }}
+{{ end }}
+{{ $globalTop := slice }}
+{{ if $popular }}
+  {{ $globalTop = first 5 $popular.global }}
+{{ end }}
+{{ $scored := slice }}
+{{ range $candidates }}
+  {{ $score := 0 }}
+  {{ if and $tags .Params.tags }}
+    {{ $overlap := intersect $tags .Params.tags }}
+    {{ $score = add $score (mul (len $overlap) 3) }}
+  {{ end }}
+  {{ if eq .Section $section }}
+    {{ $score = add $score 2 }}
+  {{ end }}
+  {{/* Penalize near self-similar slug patterns */}}
+  {{ if in .RelPermalink $page.File.BaseFileName }}
+    {{ $score = add $score -5 }}
+  {{ end }}
+  {{/* Recency weighting */}}
+  {{ $ageDays := div (sub (now.Unix) (.Date.Unix)) 86400 }}
+  {{ if le $ageDays 30 }}
+    {{ $score = add $score $recency30 }}
+  {{ else if le $ageDays 120 }}
+    {{ $score = add $score $recency120 }}
+  {{ end }}
+  {{ if gt $score 0 }}
+    {{/* Popular weighting */}}
+    {{ $url := .RelPermalink }}
+    {{ if $popularMap }}
+      {{ $views := index $popularMap $url }}
+      {{ if $views }}
+        {{/* Add scaled views boost (bounded by 10) - Hugo lacks min: emulate */}}
+        {{ $rawBoost := div $views $popularViewsDiv }}
+        {{ $viewsBoost := (cond (gt $rawBoost 10) 10 $rawBoost) }}
+        {{ $score = add $score $viewsBoost }}
+      {{ end }}
+    {{ end }}
+    {{ if $globalTop }}
+      {{ $isTop := false }}
+      {{ range $globalTop }}
+        {{ if eq .url $url }}
+          {{ $isTop = true }}
+        {{ end }}
+      {{ end }}
+      {{ if $isTop }}
+        {{ $score = add $score $popularTopBoost }}
+      {{ end }}
+    {{ end }}
+    {{ $scored = $scored | append (dict "score" $score "page" .) }}
+  {{ end }}
+{{ end }}
+{{ $sorted := sort $scored "score" "desc" }}
+{{ if lt (len $sorted) 1 }}
+  <div class="alert alert-info small">No related content found yet.</div>
+{{ else }}
+  <div class="related-content">
+    <h3 class="h5 mb-3">Related Guides</h3>
+    <ul class="list-unstyled mb-0">
+    {{ range first (int $count) $sorted }}
+      {{ $p := .page }}
+      <li class="mb-2">
+        <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+        {{ with $p.Params.description }}<small class="text-muted d-block">{{ . }}</small>{{ end }}
+      </li>
+    {{ end }}
+    </ul>
+  </div>
+{{ end }}
