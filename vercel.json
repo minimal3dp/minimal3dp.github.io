@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "bash build.sh",
+  "buildCommand": "bash scripts/build.sh",
   "outputDirectory": "public",
   "installCommand": "npm install",
   "env": {
