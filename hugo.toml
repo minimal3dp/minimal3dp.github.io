@@ -87,7 +87,7 @@ keywords = "3d printing, klipper, orca slicer, 3d printer reviews, fdm calculato
 # Social Media
 twitter_creator = "@Michael24919360"
 youtube_channel_id = "UCM_8Mv-0S1LnnJpRJLjahaw"
-youtube_subscribers = "5000+"
+youtube_subscribers = "10000+"
 facebook_page = "100089187391163"
 github_repo_name = "minimal3dp/minimal3dp.github.io"
 
@@ -136,6 +136,13 @@ offlineSearch = false
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
+
+# Related content configuration
+relatedDefaultCount = 4
+relatedRecency30Boost = 2  # extra points if <=30 days old
+relatedRecency120Boost = 1 # extra points if <=120 days old (and >30)
+relatedPopularTopBoost = 3       # boost if in top global list slice
+relatedPopularViewsDivisor = 50  # views/divisor added (bounded)
 
 [params.copyright]
   authors = "Mike Wilson and Minimal 3DP | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | "
@@ -266,6 +273,9 @@ enable = false
   [[module.imports]]
     path = "github.com/google/docsy"
     disable = false
+  [[module.mounts]]
+      source = "assets"
+      target = "assets"
   [[module.mounts]]
       source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       target = "assets/js/bootstrap.bundle.min.js"

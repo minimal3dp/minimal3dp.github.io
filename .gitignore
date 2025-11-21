@@ -1,6 +1,21 @@
 
+# Build artifacts
 resources/
+public/
+hugo_stats.json
+.hugo_build.lock
+
+# Dependencies
 node_modules/
 package-lock.json
-.hugo_build.lock
+.venv/
+
+# Deployment
 .vercel
+.vercelignore
+
+# Local development
+dev/
+
+# OS files
+.DS_Store

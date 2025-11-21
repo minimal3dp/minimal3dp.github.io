@@ -1,0 +1,18 @@
+[project]
+name = "minimal3dp"
+version = "0.1.0"
+description = "Minimal 3DP site automation scripts"
+requires-python = ">=3.11"
+dependencies = [
+    "google-analytics-data>=0.12.0",
+    "google-api-python-client>=2.100.0",
+    "python-dateutil>=2.8.0",
+    "requests>=2.31.0",
+    "pillow>=10.0.0",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]

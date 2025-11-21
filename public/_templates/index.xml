@@ -16,6 +16,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/_templates/popular-posts-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_templates/popular-posts-setup/</guid>
+      <description>&lt;h1 id=&#34;popular-posts-setup&#34;&gt;Popular Posts Setup&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#popular-posts-setup&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;This page describes how the &amp;ldquo;Popular posts&amp;rdquo; widget works and how to enable it on the site.&lt;/p&gt;&#xA;&lt;p&gt;Server-side partial&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The site includes &lt;code&gt;layouts/partials/popular-posts.html&lt;/code&gt; which reads from &lt;code&gt;data/popular.json&lt;/code&gt; if present.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;If &lt;code&gt;data/popular.json&lt;/code&gt; is not present, the partial falls back to a Hugo heuristic that sorts &lt;code&gt;blog&lt;/code&gt; pages by &lt;code&gt;Params.popularity&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;To render this partial at the end of each article, we included:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;{{ partial &amp;quot;popular-posts.html&amp;quot; (dict &amp;quot;count&amp;quot; 5 &amp;quot;title&amp;quot; &amp;quot;Popular This Week&amp;quot;) }}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/_templates/top-10-pages-optimization-summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/_templates/top-10-pages-optimization-summary/</guid>

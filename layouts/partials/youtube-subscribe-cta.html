@@ -3,6 +3,13 @@
 
 {{ $channelId := .Site.Params.youtube_channel_id }}
 {{ $subscribers := .Site.Params.youtube_subscribers }}
+{{ $data := site.Data.youtube_channel }}
+{{ if $data }}
+  {{ $display := $data.subscriberCountDisplay }}
+  {{ if $display }}
+    {{ $subscribers = (printf "%s" $display) }}
+  {{ end }}
+{{ end }}
 
 {{ if $channelId }}
 <div class="youtube-subscribe-cta" style="background: linear-gradient(135deg, #FF0000 0%, #C30000 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);">
@@ -15,7 +22,7 @@
         📺 Watch on YouTube
       </h3>
       <p style="color: rgba(255,255,255,0.9); margin: 5px 0 0 0; font-size: 1em;">
-        {{ if $subscribers }}Join {{ $subscribers }} subscribers{{ else }}Subscribe for more tutorials{{ end }}
+        {{ if $subscribers }}Join {{ $subscribers }} subscribers (weekly refresh){{ else }}Subscribe for more tutorials{{ end }}
       </p>
     </div>
   </div>

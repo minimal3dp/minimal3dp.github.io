@@ -6,8 +6,71 @@
     <description>Recent content in Tags on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 18:12:28 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 14:20:24 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calibration</title>
+      <link>http://localhost:1313/tags/calibration/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/calibration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Creality K2 Plus</title>
+      <link>http://localhost:1313/tags/creality-k2-plus/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/creality-k2-plus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extruder</title>
+      <link>http://localhost:1313/tags/extruder/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/extruder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How-To</title>
+      <link>http://localhost:1313/tags/how-to/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Klipper</title>
+      <link>http://localhost:1313/tags/klipper/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/klipper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maintenance</title>
+      <link>http://localhost:1313/tags/maintenance/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/maintenance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orcaslicer</title>
+      <link>http://localhost:1313/tags/orcaslicer/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/orcaslicer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slicers</title>
+      <link>http://localhost:1313/tags/slicers/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/slicers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upgrades</title>
+      <link>http://localhost:1313/tags/upgrades/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/upgrades/</guid>
+      <description></description>
+    </item>
     <item>
       <title>3D Printing</title>
       <link>http://localhost:1313/tags/3d-printing/</link>
@@ -34,13 +97,6 @@
       <link>http://localhost:1313/tags/optimization/</link>
       <pubDate>Sat, 15 Nov 2025 12:00:00 -0600</pubDate>
       <guid>http://localhost:1313/tags/optimization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Orcaslicer</title>
-      <link>http://localhost:1313/tags/orcaslicer/</link>
-      <pubDate>Sat, 15 Nov 2025 12:00:00 -0600</pubDate>
-      <guid>http://localhost:1313/tags/orcaslicer/</guid>
       <description></description>
     </item>
     <item>
@@ -107,20 +163,6 @@
       <description></description>
     </item>
     <item>
-      <title>How-To</title>
-      <link>http://localhost:1313/tags/how-to/</link>
-      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/how-to/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Slicers</title>
-      <link>http://localhost:1313/tags/slicers/</link>
-      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/slicers/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Cura</title>
       <link>http://localhost:1313/tags/cura/</link>
       <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
@@ -130,14 +172,14 @@
     <item>
       <title>Voron</title>
       <link>http://localhost:1313/tags/voron/</link>
-      <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/voron/</guid>
       <description></description>
     </item>
     <item>
       <title>Voron 2.4</title>
       <link>http://localhost:1313/tags/voron-2.4/</link>
-      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/voron-2.4/</guid>
       <description></description>
     </item>
@@ -146,13 +188,6 @@
       <link>http://localhost:1313/tags/ender-3-s1-plus/</link>
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ender-3-s1-plus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Klipper</title>
-      <link>http://localhost:1313/tags/klipper/</link>
-      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/klipper/</guid>
       <description></description>
     </item>
     <item>
@@ -202,13 +237,6 @@
       <link>http://localhost:1313/tags/calculators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/calculators/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Calibration</title>
-      <link>http://localhost:1313/tags/calibration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/calibration/</guid>
       <description></description>
     </item>
     <item>

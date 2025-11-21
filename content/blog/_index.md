@@ -11,6 +11,10 @@ images:
 
 Welcome to the Minimal 3DP blog! I publish in-depth tutorials, honest product reviews, and maker news every week. All content is based on real hands-on experience.
 
+{{< cta type="youtube" location="blog-index" >}}
+Prefer videos? Subscribe for long-form tutorials, slicer deep-dives, and tested build guides.
+{{< /cta >}}
+
 ### What You'll Find Here
 
 **[Posts](/blog/posts/)** - Tutorials, guides, and how-tos
@@ -31,6 +35,9 @@ Welcome to the Minimal 3DP blog! I publish in-depth tutorials, honest product re
 - **[Klipper Guides](/klipper-calibration/)** - Comprehensive calibration tutorials
 - **[Product Reviews](/projects/3d-printing-reviews/)** - Honest, tested reviews
 - **[YouTube Channel](https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw)** - Video versions of tutorials
+
+{{< cta-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" location="blog_index" label="🧮 FDM Cost Calculator" >}}
+{{< cta-badge type="app" href="https://settings.minimal3dp.com/" ctaType="orcaslicer_app" location="blog_index" label="🧠 OrcaSlicer Expert Assistant" >}}
 
 ### Subscribe for Updates
 

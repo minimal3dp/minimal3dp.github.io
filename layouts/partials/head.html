@@ -49,6 +49,15 @@
 {{/* To comply with GDPR, cookie consent scripts places in head-end must execute before Google Analytics is enabled */ -}}
 {{ if hugo.IsProduction -}}
   {{ template "_internal/google_analytics.html" . -}}
+  <script>
+    // GA4 cross-domain session linking between main site and app subdomain
+    if (typeof gtag === 'function') {
+      gtag('config', '{{ site.Config.Services.GoogleAnalytics.ID }}', {
+        linker: { domains: ['minimal3dp.com', 'settings.minimal3dp.com'] }
+      });
+      console.log('🔗 GA4 linker configured for cross-domain sessions');
+    }
+  </script>
 {{ end -}}
 
 {{ define "algolia/head" -}}

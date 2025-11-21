@@ -1,0 +1,53 @@
+{{/*
+Partial: popular-posts.html
+Usage: {{ partial "popular-posts.html" (dict "count" 5 "title" "Popular This Week") }}
+
+Behavior:
+- If `site.Data.popular` exists and is an array of objects {title, url,views}, use that
+- Else fall back to a Hugo heuristic (recent posts or highest weight, first N)
+*/}}
+
+{{ $count := .count | default 5 }}
+{{ $title := .title | default "Popular Posts" }}
+{{ $section := .section | default "global" }}
+
+<div class="popular-posts widget">
+  <h3 class="widget-title">{{ $title }}</h3>
+  <ul class="popular-posts__list">
+    {{- with site.Data.popular -}}
+      {{- /* Check if this is the new map format (has 'global' key) */ -}}
+      {{- $globalData := index . "global" -}}
+      {{- if $globalData -}}
+        {{- /* New format: use the section key */ -}}
+        {{- with index . $section -}}
+          {{- range first $count . -}}
+            <li class="popular-posts__item">
+              <a href="{{ .url | relURL }}">{{ .title }}</a>
+              {{- with .views }}<span class="muted"> — {{ . }} views</span>{{ end -}}
+            </li>
+          {{- end -}}
+        {{- end -}}
+      {{- else -}}
+        {{- /* Legacy format: flat array */ -}}
+        {{- range first $count . -}}
+          <li class="popular-posts__item">
+            <a href="{{ .url | relURL }}">{{ .title }}</a>
+            {{- with .views }}<span class="muted"> — {{ . }} views</span>{{ end -}}
+          </li>
+        {{- end -}}
+      {{- end -}}
+    {{- else -}}
+      {{/* Fallback: use Hugo pages sorted by popularity param or date */}}
+      {{- $pages := site.RegularPages -}}
+      {{- if not $pages -}}
+        {{- $pages = where site.Pages "Section" "blog" -}}
+      {{- end -}}
+      {{- range first $count (sort $pages "Params.popularity" "desc") -}}
+        <li class="popular-posts__item">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{- with .Params.popularity }}<span class="muted"> — {{ . }} views</span>{{- end }}
+        </li>
+      {{- end -}}
+    {{- end -}}
+  </ul>
+</div>

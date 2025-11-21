@@ -1,0 +1,113 @@
+name: Fetch Popular Posts
+
+on:
+  schedule:
+    # runs daily at 3:05am
+    - cron: '5 3 * * *'
+  workflow_dispatch: {}
+  push:
+    paths:
+      - 'scripts/fetch_ga4_popular.py'
+      - 'data/popular.json'
+      - '.github/workflows/fetch-popular.yml'
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+      SECTIONS: '/blog/,/tools/,/projects/'
+      OUTPUT_PATH: data/popular.json
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Set up Python
+        run: uv python install 3.11
+      - name: Install dependencies
+        run: uv sync
+      - name: Decode GA4 service account
+        run: |
+          echo "$GA4_SERVICE_ACCOUNT" | base64 --decode > /tmp/ga4_service_account.json
+        env:
+          GA4_SERVICE_ACCOUNT: ${{ secrets.GA4_SERVICE_ACCOUNT }}
+      - name: Run fetch script
+        run: |
+          export GOOGLE_APPLICATION_CREDENTIALS=/tmp/ga4_service_account.json
+          uv run python scripts/fetch_ga4_popular.py
+      - name: Debug output
+        run: |
+          echo '--- data/popular.json ---'
+          sed -n '1,120p' data/popular.json || true
+          echo '--- static/data/popular.json ---'
+          sed -n '1,120p' static/data/popular.json || true
+      - name: Copy to static for client-side fetch
+        run: |
+          mkdir -p static/data || true
+          cp data/popular.json static/data/popular.json || true
+      - name: Prepare email summary
+        id: summary
+        run: |
+          if [ ! -s data/popular.json ]; then echo "top_pages=Unavailable" >> "$GITHUB_OUTPUT"; exit 0; fi
+          TOP=$(jq -r '.global[0:5][] | "- " + .title + " (" + (.views|tostring) + " views)"' data/popular.json 2>/dev/null || echo "")
+          printf 'top_pages<<EOF\n%s\nEOF\n' "$TOP" >> "$GITHUB_OUTPUT"
+      - name: Commit data
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update popular posts data"
+          commit_user_name: automation
+          commit_user_email: action@minimal3dp.com
+      - name: Determine email config
+        id: email_config
+        run: |
+          if [ -n "${{ secrets.SMTP_SERVER }}" ] && \
+             [ -n "${{ secrets.SMTP_PORT }}" ] && \
+             [ -n "${{ secrets.SMTP_USERNAME }}" ] && \
+             [ -n "${{ secrets.SMTP_PASSWORD }}" ] && \
+             [ -n "${{ secrets.TO_EMAIL }}" ] && \
+             [ -n "${{ secrets.FROM_EMAIL }}" ]; then
+            echo "have_email=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "have_email=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Send Email (success)
+        if: success() && steps.email_config.outputs.have_email == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "Popular posts data updated ✔"
+          to: ${{ secrets.TO_EMAIL }}
+          from: ${{ secrets.FROM_EMAIL }}
+          body: |
+            Success updating popular posts data.
+            Top Pages:
+            ${{ steps.summary.outputs.top_pages }}
+            Repo: ${{ github.repository }}
+            Run: ${{ github.run_id }}
+            Commit: ${{ github.sha }}
+            File: data/popular.json
+            View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      - name: Send Email (failure)
+        if: failure() && steps.email_config.outputs.have_email == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "Popular posts workflow FAILED ✖"
+          to: ${{ secrets.TO_EMAIL }}
+          from: ${{ secrets.FROM_EMAIL }}
+          body: |
+            Failure updating popular posts data.
+            Attempted Top Pages (if available):
+            ${{ steps.summary.outputs.top_pages }}
+            Repo: ${{ github.repository }}
+            Run: ${{ github.run_id }}
+            Commit: ${{ github.sha }}
+            Inspect logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}

@@ -40,23 +40,8 @@ For announcement of latest videos, tutorials, etc.
 {{% blocks/section %}}
 Popular Videos
 {.h1 .text-center}
-{{% /blocks/section %}}
 
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fa-solid fa-video" title="Orca Slicer Tutorials" url="https://youtu.be/VLMo24oDwQE" %}}
-
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-solid fa-play" title="Professional Firmware for the Neder 3 v2!"
-    url="https://youtu.be/DJZnYB0IVCY" %}}
-
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-solid fa-film" title="Installing klipper firmware on a Raspberry Pi - A Detailed (and Boring) Guide"
-    url="https://youtu.be/zzFxnu3Liyo" %}}
-
-{{% /blocks/feature %}}
+{{< popular-videos count="3" section="blog" >}}
 
 {{% /blocks/section %}}
 
@@ -69,9 +54,18 @@ Minimal 3DP isn't just another 3D printing blog. As a maker with over 5,000 YouT
 ### Free Tools & Resources
 
 - **[FDM Cost Calculator](/tools/m3dp-fdm-cost-calculator/)** - Calculate true print costs including electricity and time
-- **[Shrinkage Calculator](/tools/m3dp-shinkage-calculator/)** - Compensate for material shrinkage in your prints
+- **[Shrinkage Calculator](/tools/m3dp-shrinkage-calculator/)** - Compensate for material shrinkage in your prints
 - **[Klipper Calibration Guides](/klipper-calibration/)** - Step-by-step firmware optimization tutorials
 - **[OrcaSlicer Tutorials](/projects/tutorials/orca-slicer/)** - Master the most powerful slicer
+
+{{% /blocks/section %}}
+
+<div style="text-align: center; margin: 30px 0;">
+{{< cta-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" location="home_index" label="🧮 Try FDM Cost Calculator" >}}
+{{< cta-badge type="app" href="https://settings.minimal3dp.com/" ctaType="orcaslicer_app" location="home_index" label="🧠 Open OrcaSlicer Assistant" >}}
+</div>
+
+{{% blocks/section color="white" %}}
 
 ### Popular Content
 

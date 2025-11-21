@@ -1,0 +1,112 @@
+name: Fetch Popular YouTube Videos
+
+on:
+  schedule:
+    # Runs daily at 3:15am
+    - cron: '15 3 * * *'
+  workflow_dispatch: {}
+  push:
+    paths:
+      - 'scripts/fetch_youtube_popular.py'
+      - 'static/data/youtube-popular.json'
+      - '.github/workflows/fetch-youtube-popular.yml'
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
+      OUTPUT_PATH: data/youtube_popular.json
+      MAX_VIDEOS: 3
+      DAYS_AGO: 180
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Set up Python
+        run: uv python install 3.11
+      - name: Install dependencies
+        run: uv sync
+          
+      - name: Run YouTube fetch script
+        run: uv run python scripts/fetch_youtube_popular.py
+        
+      - name: Debug output
+        run: |
+          echo '--- data/youtube_popular.json ---'
+          sed -n '1,160p' data/youtube_popular.json || echo "File not found"
+      - name: Copy to static for site fetch
+        run: |
+          mkdir -p static/data
+          cp data/youtube_popular.json static/data/youtube_popular.json
+      - name: Prepare email summary
+        id: summary
+        run: |
+          if [ ! -s data/youtube_popular.json ]; then echo "top_videos=Unavailable" >> "$GITHUB_OUTPUT"; exit 0; fi
+          TOP=$(jq -r '.videos[0:5][] | "- " + .title' data/youtube_popular.json 2>/dev/null || echo "")
+          printf 'top_videos<<EOF\n%s\nEOF\n' "$TOP" >> "$GITHUB_OUTPUT"
+          
+      - name: Commit data
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update popular YouTube videos data"
+          commit_user_name: automation
+          commit_user_email: action@minimal3dp.com
+          file_pattern: data/youtube_popular.json static/data/youtube_popular.json
+      - name: Determine email config
+        id: email_config
+        run: |
+          if [ -n "${{ secrets.SMTP_SERVER }}" ] && \
+             [ -n "${{ secrets.SMTP_PORT }}" ] && \
+             [ -n "${{ secrets.SMTP_USERNAME }}" ] && \
+             [ -n "${{ secrets.SMTP_PASSWORD }}" ] && \
+             [ -n "${{ secrets.TO_EMAIL }}" ] && \
+             [ -n "${{ secrets.FROM_EMAIL }}" ]; then
+            echo "have_email=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "have_email=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Send Email (success)
+        if: success() && steps.email_config.outputs.have_email == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "Popular YouTube videos updated ✔"
+          to: ${{ secrets.TO_EMAIL }}
+          from: ${{ secrets.FROM_EMAIL }}
+          body: |
+            Success updating popular YouTube videos.
+            Top Videos:
+            ${{ steps.summary.outputs.top_videos }}
+            Repo: ${{ github.repository }}
+            Run: ${{ github.run_id }}
+            Commit: ${{ github.sha }}
+            File: static/data/youtube-popular.json
+            View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            
+      - name: Send Email (failure)
+        if: failure() && steps.email_config.outputs.have_email == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "YouTube videos workflow FAILED ✖"
+          to: ${{ secrets.TO_EMAIL }}
+          from: ${{ secrets.FROM_EMAIL }}
+          body: |
+            Failure updating popular YouTube videos.
+            Attempted Top Videos (if available):
+            ${{ steps.summary.outputs.top_videos }}
+            Repo: ${{ github.repository }}
+            Run: ${{ github.run_id }}
+            Commit: ${{ github.sha }}
+            Inspect logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}

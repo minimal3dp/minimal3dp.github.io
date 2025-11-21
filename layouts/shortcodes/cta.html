@@ -1,86 +1,89 @@
-{{/* Usage: {{< cta type="youtube" >}}Custom text{{< /cta >}} */}}
+{{/* Usage: {{< cta type="youtube" location="blog-post" >}}Custom text{{< /cta >}} */}}
 {{/* Types: youtube, email, calculator, support */}}
+{{/* Extended: app (generic external app/button) */}}
 
 {{ $type := .Get "type" | default "youtube" }}
+{{ $location := .Get "location" | default "content" }}
 {{ $customText := .Inner }}
+{{ $href := .Get "href" }}
+{{ $btnText := .Get "btnText" }}
+{{ $titleParam := .Get "title" }}
+{{ $ctaType := .Get "ctaType" | default $type }}
 
 {{ if eq $type "youtube" }}
-<div class="cta-box youtube" style="background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%); color: #fff; padding: 30px; border-radius: 8px; text-align: center; margin: 40px 0;">
-  <h3 style="margin-top: 0; color: #fff;">📺 Watch This Tutorial on YouTube</h3>
+<div class="cta cta--youtube">
+  <h3 class="cta__title">📺 Watch This Tutorial on YouTube</h3>
   {{ if $customText }}
-    <p>{{ $customText | markdownify }}</p>
+    <p class="cta__text">{{ $customText | markdownify }}</p>
   {{ else }}
-    <p>Subscribe to Minimal 3DP for more 3D printing tutorials, reviews, and tips!</p>
+    <p class="cta__text">Subscribe to Minimal 3DP for more 3D printing tutorials, reviews, and tips!</p>
   {{ end }}
-  <a href="https://www.youtube.com/channel/{{ .Site.Params.youtube_channel_id }}?sub_confirmation=1" 
+  <a class="cta__btn" href="https://www.youtube.com/channel/{{ .Site.Params.youtube_channel_id }}?sub_confirmation=1" 
      target="_blank"
      rel="noopener"
-     onclick="trackCTA('youtube_subscribe')"
-     style="display: inline-block; background: #fff; color: #FF0000; padding: 15px 30px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px;">
+     onclick="trackCtaClick('youtube','{{ $location }}')">
     ▶️ Subscribe Now - {{ .Site.Params.youtube_subscribers | default "5,000+" }} subscribers
   </a>
-</div>
+  </div>
 
 {{ else if eq $type "calculator" }}
-<div class="cta-box calculator" style="background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%); color: #fff; padding: 30px; border-radius: 8px; text-align: center; margin: 40px 0;">
-  <h3 style="margin-top: 0; color: #fff;">🧮 Try Our Free Calculator</h3>
+<div class="cta cta--calculator">
+  <h3 class="cta__title">{{ if $titleParam }}{{ $titleParam }}{{ else }}🧮 Try Our Free Calculator{{ end }}</h3>
   {{ if $customText }}
-    <p>{{ $customText | markdownify }}</p>
+    <p class="cta__text">{{ $customText | markdownify }}</p>
   {{ else }}
-    <p>Calculate your 3D print costs accurately with our professional FDM cost calculator.</p>
+    <p class="cta__text">Calculate your 3D print costs accurately with our professional FDM cost calculator.</p>
   {{ end }}
-  <a href="/tools/m3dp-fdm-cost-calculator/" 
-     onclick="trackCTA('calculator_click')"
-     style="display: inline-block; background: #fff; color: #1F2937; padding: 15px 30px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px;">
-    🎯 Open Calculator
+  <a class="cta__btn" href="{{ if $href }}{{ $href }}{{ else }}/tools/m3dp-fdm-cost-calculator/{{ end }}" 
+     onclick="trackCtaClick('{{ $ctaType }}','{{ $location }}')">
+    {{ if $btnText }}{{ $btnText }}{{ else }}🎯 Open Calculator{{ end }}
   </a>
-</div>
+  </div>
 
 {{ else if eq $type "email" }}
-<div class="cta-box email" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); color: #fff; padding: 30px; border-radius: 8px; text-align: center; margin: 40px 0;">
-  <h3 style="margin-top: 0; color: #fff;">📧 Get Free 3D Printing Tips</h3>
+<div class="cta cta--email">
+  <h3 class="cta__title">📧 Get Free 3D Printing Tips</h3>
   {{ if $customText }}
-    <p>{{ $customText | markdownify }}</p>
+    <p class="cta__text">{{ $customText | markdownify }}</p>
   {{ else }}
-    <p>Join our newsletter for weekly tutorials, reviews, and exclusive deals!</p>
+    <p class="cta__text">Join our newsletter for weekly tutorials, reviews, and exclusive deals!</p>
   {{ end }}
-  <form action="YOUR_EMAIL_SERVICE_URL" method="post" style="max-width: 400px; margin: 20px auto 0;">
-    <input type="email" name="email" placeholder="Your email address" required 
-           style="width: 100%; padding: 12px; border: none; border-radius: 4px 4px 0 0;">
-    <button type="submit" onclick="trackCTA('email_signup')"
-            style="width: 100%; padding: 12px; background: #fff; color: #10B981; border: none; border-radius: 0 0 4px 4px; font-weight: bold; cursor: pointer;">
+  <form class="cta__form" action="YOUR_EMAIL_SERVICE_URL" method="post">
+    <input class="cta__input" type="email" name="email" placeholder="Your email address" required>
+    <button class="cta__submit" type="submit" onclick="trackCtaClick('email','{{ $location }}')">
       Subscribe (It's Free!)
     </button>
   </form>
-  <p style="font-size: 0.85em; margin-top: 10px; opacity: 0.9;">No spam. Unsubscribe anytime.</p>
-</div>
+  <p class="cta__note">No spam. Unsubscribe anytime.</p>
+  </div>
 
 {{ else if eq $type "support" }}
-<div class="cta-box support" style="background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); color: #fff; padding: 30px; border-radius: 8px; text-align: center; margin: 40px 0;">
-  <h3 style="margin-top: 0; color: #fff;">💜 Support This Content</h3>
+<div class="cta cta--support">
+  <h3 class="cta__title">💜 Support This Content</h3>
   {{ if $customText }}
-    <p>{{ $customText | markdownify }}</p>
+    <p class="cta__text">{{ $customText | markdownify }}</p>
   {{ else }}
-    <p>If you found this helpful, consider supporting us through affiliate purchases or YouTube!</p>
+    <p class="cta__text">If you found this helpful, consider supporting us through affiliate purchases or YouTube!</p>
   {{ end }}
-  <a href="https://www.youtube.com/channel/{{ .Site.Params.youtube_channel_id }}?sub_confirmation=1" 
+  <a class="cta__btn" href="https://www.youtube.com/channel/{{ .Site.Params.youtube_channel_id }}?sub_confirmation=1" 
      target="_blank"
      rel="noopener"
-     onclick="trackCTA('support_click')"
-     style="display: inline-block; background: #fff; color: #8B5CF6; padding: 15px 30px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px;">
+     onclick="trackCtaClick('support','{{ $location }}')">
     ❤️ Subscribe & Support
   </a>
-</div>
+  </div>
+
+{{ else if eq $type "app" }}
+<div class="cta cta--app">
+  <h3 class="cta__title">{{ if $titleParam }}{{ $titleParam }}{{ else }}🚀 Open the App{{ end }}</h3>
+  {{ if $customText }}
+    <p class="cta__text">{{ $customText | markdownify }}</p>
+  {{ end }}
+  <a class="cta__btn" href="{{ $href }}"
+     {{ if strings.HasPrefix $href "http" }}target="_blank" rel="noopener"{{ end }}
+     onclick="trackCtaClick('{{ $ctaType }}','{{ $location }}')">
+    {{ if $btnText }}{{ $btnText }}{{ else }}Open App ↗{{ end }}
+  </a>
+  </div>
 
 {{ end }}
-
-<script>
-function trackCTA(action) {
-  if (typeof gtag === 'function') {
-    gtag('event', 'cta_click', {
-      'event_category': 'CTA',
-      'event_label': action
-    });
-  }
-}
-</script>

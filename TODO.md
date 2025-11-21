@@ -1,1082 +1,365 @@
-# Minimal 3DP Implementation Roadmap
+# Minimal 3DP TODO & Recommendations
 
-**Last Updated:** November 13, 2025  
-**Strategy:** Quick wins → High-impact changes → Long-term growth  
-**Based on:** MINIMAL3DP_APP_GUIDE.md patterns + SEO best practices
-
----
-
-## 📋 PRIORITIZATION FRAMEWORK
-
-**Priority Levels:**
-- 🔥 **CRITICAL** (Do First): 1-4 hours, high impact, enables other work
-- ⚡ **QUICK WINS** (This Week): <2 hours each, immediate visible results
-- 🎯 **HIGH IMPACT** (This Month): 2-8 hours, significant SEO/revenue boost
-- 📈 **GROWTH** (This Quarter): 8-40 hours, compounds over time
-- 🔮 **FUTURE** (Backlog): Good ideas for later
+**Last Updated:** November 19, 2025  
+**Status:** Post YouTube Popular Videos Implementation
 
 ---
 
-## 🔥 CRITICAL - DO FIRST (4 hours total)
+## ✅ Recently Completed (Nov 2025)
 
-### 1. **Deploy to Vercel** ✅ COMPLETED (1.5 hours)
-**Why First:** Faster site = better SEO + automatic deployments = less friction for all future work
+### YouTube Popular Videos Feature
+- [x] Created `fetch_youtube_popular.py` script with YouTube Data API v3 integration
+- [x] Built `popular-videos.html` shortcode with thumbnail display
+- [x] Added GitHub workflow (`fetch-youtube-popular.yml`) with daily automation
+- [x] Converted project to use `uv` for Python dependency management
+- [x] Created comprehensive setup documentation (`docs/YOUTUBE-SETUP.md`)
+- [x] Tested and verified real data fetch (3 videos displaying correctly)
+- [x] Integrated with email notification system (Slack removed)
 
-**Steps:**
-- [x] Create `vercel.json` in project root (see RECOMMENDATIONS.md Section 2)
-- [x] Install Vercel CLI: `npm i -g vercel`
-- [x] Run `vercel` in project directory
-- [x] Configure custom domain in Vercel dashboard
-- [x] Update DNS CNAME record to `cname.vercel-dns.com.`
-- [x] Wait for DNS propagation (15 mins)
-- [x] Verify HTTPS certificate auto-provisioned
-- [x] Test: `curl -I https://minimal3dp.com` (should return 200)
-- [x] Create `build.sh` script to install Go and Hugo (resolved module dependency issues)
-- [x] Delete rsync.sh (no longer needed!)
+### Project Organization
+- [x] Created `dev/` folder for untracked local development files
+- [x] Moved `ga4/` and `refs/` folders to `dev/`
+- [x] Organized documentation into `docs/` folder
+- [x] Moved utility scripts to `scripts/` folder
+- [x] Updated `.gitignore` for clean repository structure
 
-**Result:** Site successfully deployed to Vercel with automatic GitHub deployments. Build includes Go 1.21.5 and Hugo Extended 0.152.2 for module support.
-
-**Time:** ~3 hours (troubleshooting Go module dependencies took extra time)
-
-**Next Steps:** 
-- Monitor first few deployments to ensure stability
-- Update DNS if not yet propagated
-- Remove old rsync.sh deployment script once confirmed working
+### Content
+- [x] Created blog post: "Mastering Bed Types in OrcaSlicer" (draft)
+- [x] Fixed broken content in Voron build pages (YouTube/imgproc shortcodes)
 
 ---
 
-### 2. **Google Search Console Setup** ✅ COMPLETED (30 mins)
-**Why Critical:** Can't improve SEO without data. This should have been done first!
+## 🔧 Immediate Action Items (High Priority)
 
-**Steps:**
-- [x] Go to [Google Search Console](https://search.google.com/search-console)
-- [x] Add property: `https://minimal3dp.com`
-- [x] Verify ownership (HTML meta tag method)
-- [x] Add verification tag to `hugo.toml`:
-```toml
-[params]
-  google_site_verification = "gekyEs3f8YOHosuLYzm98WAde8kIZn31TT3drLkKEv4"
-```
-- [x] Rebuild and deploy
-- [x] Submit sitemap: `https://minimal3dp.com/sitemap.xml`
-- [x] Enable all reports (Performance, Coverage, Enhancements)
-- [x] Set email alerts for critical issues
+### 1. GitHub Workflow Cleanup
+- [x] Remove Slack; switch to email-only notifications (documented in `README.md`)
+- [x] Replace conditional secret checks with config detection output
+- [ ] (Optional) Manually dispatch workflows to confirm email success/failure behavior
 
-**Result:** Google Search Console successfully configured and verified. Sitemap submitted. SEO data will start flowing within 24-48 hours.
+### 2. Update Popular Videos Section - Static Fallback
+- [x] Add 3–4 curated evergreen popular videos as fallback
+- [x] Pull from existing popular posts data as interim solution (choose approach)
 
-**Time:** 30 minutes
+### 3. Add YouTube Thumbnail Optimization
+- [x] Add `loading="lazy"`
+- [x] Add `width` and `height` attributes
+- [x] Add blur placeholder removal on load
+- [x] Convert thumbnails to WebP via Hugo image processing
+- [x] Generate very low-res base64 thumb for LQIP
 
-**Next Steps:**
-- Monitor GSC daily for the first week
-- Check for any indexing errors
-- Review Performance report once data is available (48 hours)
-
----
-
-### 3. **Create Open Graph Image** ✅ COMPLETED (1 hour)
-**Why Critical:** Every social share without OG image is a lost opportunity. YouTube embeds, Twitter cards, etc.
-
-**Steps:**
-- [x] Open Canva.com (free account)
-- [x] Create custom size: 1200x630px
-- [x] Design elements:
-  - Background: Clean gradient or solid color (#3B82F6)
-  - Text: "Minimal 3DP - 3D Printing Tutorials & Tools"
-  - Subtitle: "Free Calculators | Klipper Guides | Expert Reviews"
-  - Logo/icon (if you have one)
-  - Optional: Photo of 3D printer or print
-- [x] Export as JPG (quality: 85%)
-- [x] Save to `/static/images/minimal3dp-og-1200x630.jpg`
-- [x] Optimize: run through TinyPNG.com (<300KB target)
-- [x] Add to `hugo.toml`:
-```toml
-[params]
-  images = ["/images/minimal3dp-og-1200x630.jpg"]
-```
-- [x] Test: Paste URL into [Facebook Debugger](https://developers.facebook.com/tools/debug/)
-
-**Result:** Open Graph image created and configured. Social media shares now display professional preview cards with branding.
-
-**Time:** 1 hour
-
-**Next Steps:**
-- Test OG image on Twitter/X by sharing a post
-- Monitor social sharing metrics in GA4
-- Update image seasonally or for special campaigns if needed
+### 4. Publish OrcaSlicer Bed Types Post
+- [x] Review and edit content (`content/blog/posts/orcaslicer-bed-types/index.md`)
+- [x] Add featured image
+- [x] Change `draft: true` to `draft: false`
+- [ ] Add to social media promotion queue
+- [x] Create accompanying YouTube video (reference Data-Driven Strategy doc)
 
 ---
 
-### 4. **Add Affiliate Disclosure Shortcode** ✅ COMPLETED (3 hours)
-**Why Critical:** FTC compliance + enables all affiliate content. Required before adding more affiliate links.
+## 📊 Content Strategy Recommendations
 
-**Steps:**
-- [x] Create `/layouts/shortcodes/amazon-product.html` (see RECOMMENDATIONS.md Hugo Best Practices)
-- [x] Create `/data/affiliate-products.yaml` with initial products
-- [x] Test shortcode on draft post: Created comprehensive filament guide with 20+ products
-- [x] Add GA4 tracking for affiliate clicks (trackAffiliateClick function implemented)
-- [x] Verify `rel="sponsored nofollow"` attributes (confirmed in built HTML)
+### Based on Data-Driven Analysis (`dev/refs/Data-Driven Content Strategy Report`)
 
-**Result:** 
-- FTC-compliant affiliate shortcode fully operational
-- Comprehensive filament guide created: `/content/blog/posts/best-3d-printing-filaments-2025/index.md`
-- 20+ affiliate products showcased with proper disclosures
-- All links include correct `rel="nofollow noopener sponsored"` attributes
-- GA4 tracking implemented: `trackAffiliateClick()` fires on all affiliate clicks
-- Affiliate tag verified: `mwf064-20`
-- Ready for deployment and revenue generation
+**Top 6 Video/Blog Topics (Ranked by Audience Demand):**
 
-**Time:** 3 hours (including comprehensive blog post creation)
+1. **Creality K2 Plus Upgrade Series (3-part series)**
+   - Part 1: All-Metal Extruder Gear Kit installation
+   - Part 2: Nozzle Wiper Module upgrade
+   - Part 3: Klipper installation + OrcaSlicer profile
+   - **Why:** Direct affiliate sales data shows high interest (4× gear kit purchases in 2025)
+   - **Revenue potential:** High (hardware + affiliate links)
 
----
+2. **Klipper Wiring Masterclass: Crimpers, JST & Dupont**
+   - Hands-on tutorial for custom wiring harnesses
+   - Feature iCrimp tools and connector kits (consistent best-sellers)
+   - **Why:** Addresses proven high-friction task (tool purchases confirm)
+   - **Cross-sell:** BTT control boards (also best-sellers)
 
-## ⚡ QUICK WINS - THIS WEEK (8-10 hours) ✅ COMPLETED 7/7 (100%)
+3. **Definitive Klipper CAN-Bus Guide (Beyond Voron)**
+   - Comprehensive guide for Ender 3 / K2 Plus
+   - **Why:** Leverage #1 performing video topic (Voron CAN guide) for broader audience
+   - **Revenue potential:** Very high (proven with $19.34 revenue on Voron version)
 
-### 5. **Enhance Hugo Configuration** ✅ COMPLETED (30 mins)
-**Impact:** ⭐⭐⭐ (Performance + SEO + Caching)
+4. **OrcaSlicer Deep Dive: Mastering Specialty Filaments**
+   - Focus on FLASHFORGE Chameleon & Silk PLA (audience purchasing these)
+   - Settings optimization for visual effects
+   - **Why:** Combines top-performing category (OrcaSlicer) with purchase behavior
 
-**Steps:**
-- [x] Copy caching config from RECOMMENDATIONS.md to `hugo.toml`
-- [x] Add `[minify]` configuration
-- [x] Enable `[related]` indices for related posts
-- [x] Test build: `hugo --gc --minify`
-- [x] Add social media params (YouTube, Twitter handles) ✅
-- [x] Verify output is minified in production
+5. **"Part 0" Voron Build: Ultimate Component Sourcing Guide**
+   - Complete shopping list with affiliate links
+   - **Why:** Capture audience at beginning of build journey
+   - **Revenue potential:** High (multiple component purchases)
 
-**Result:**
-- Caching configuration added for all resource types (images: 30 days, assets: 30 days, JSON/CSV: 24h)
-- Minification enabled for CSS, HTML, JS, JSON, SVG, XML
-- Related posts system enabled (weights: tags=100, categories=80, date=10, threshold=80)
-- Build performance: 330ms (fast incremental builds with caching)
-- Resource caching set to "fallback" for reliable local development
-- Production minification verified: HTML (single line), CSS (compressed), JS (compressed)
-- **Social media params added:** twitter_creator, youtube_channel_id, youtube_subscribers, facebook_page, github_repo_name
-- **Site identity params added:** author, site_name, description, email
-- **Organization schema updated:** Now includes YouTube, Twitter, GitHub social links
+6. **Ultimate BTT SKR Mini E3 V3.0 Installation (Klipper Edition)**
+   - Start-to-finish board swap + Klipper config
+   - **Why:** One of most consistent affiliate purchases (2024-2025)
+   - **Entry point:** Perfect for Klipper beginners
 
-**Files Changed:** `hugo.toml`  
-**Time:** 30 minutes
+**Implementation Priority:**
+1. K2 Plus Series (immediate affiliate opportunity)
+2. Klipper Wiring (fills content gap, high engagement potential)
+3. CAN-Bus Guide (proven revenue driver)
+4. Others as time permits
 
 ---
 
-### 6. **Create Essential Shortcodes** ✅ COMPLETED (2 hours)
-**Impact:** ⭐⭐⭐ (Content creation speed + consistency)
+## 🛠️ Technical Improvements
 
-**Priority Order:**
-1. [x] `youtube-embed.html` - Embed videos with subscribe CTA (30 mins)
-2. [x] `cta.html` - Reusable call-to-action boxes (30 mins)
-3. [x] `alert.html` - Info/warning/tip boxes (20 mins)
-4. [x] `product-compare.html` - Comparison tables (40 mins)
+### Python Environment (uv)
+**Status:** ✅ Implemented
 
-**Result:**
-- **youtube-embed.html**: Responsive 16:9 video embeds with automatic subscribe button, GA4 tracking
-  - Privacy-friendly (youtube-nocookie.com), lazy loading, modestbranding
-  - Automatic channel subscribe CTA if youtube_channel_id configured
-  - Usage: `{{< youtube-embed id="VIDEO_ID" title="Video Title" >}}`
+Benefits realized:
+- Faster CI builds with caching
+- Reproducible builds via `uv.lock`
+- Single `pyproject.toml` replaces `scripts/requirements.txt`
 
-- **cta.html**: 4 pre-styled CTA types with gradient backgrounds
-  - Types: `youtube` (red), `calculator` (blue), `email` (green), `support` (purple)
-  - Responsive design, GA4 event tracking for all clicks
-  - Customizable text via inner content
-  - Usage: `{{< cta type="youtube" >}}Custom text{{< /cta >}}`
+**Remaining:**
+- Consider adding dev dependencies for testing/linting
+- Add pre-commit hooks for Python code quality
 
-- **alert.html**: 5 alert box types with color-coded styling
-  - Types: `info` 🔵, `warning` 🟡, `success` 🟢, `danger` 🔴, `tip` 🟣
-  - Left border accent, subtle background, emoji icons
-  - Supports markdown in content
-  - Usage: `{{< alert type="warning" >}}Your message{{< /alert >}}`
+### Hugo Build Optimization
+**Current:** 1.6s build time, 218 pages
 
-- **product-compare.html**: Responsive comparison tables
-  - Professional styling with hover effects
-  - Mobile-friendly horizontal scroll
-  - Blue header, alternating row colors
-  - Usage: Wrap markdown table in `{{< product-compare >}}...{{< /product-compare >}}`
+Potential improvements:
+- [ ] Enable Hugo caching in CI (`--cacheDir` flag)
+- [ ] Add build performance monitoring
+- [ ] Consider splitting large data files if they grow
 
-- **Example page created**: `content/blog/posts/shortcode-examples.md` (draft)
-  - Complete usage guide with all variations
-  - Best practices and tips
-  - Real-world examples
+### Monitoring & Analytics
+**Current Setup:**
+- GA4 Data API (automated popular posts)
+- YouTube Data API (automated popular videos)
+- GitHub Actions workflows with email notifications
 
-**Expected Result:** 5-10 minutes faster per blog post, consistent styling ✅
+**Gaps to address:**
+1. **No uptime monitoring** - Add service like UptimeRobot or Better Uptime
+2. **No performance monitoring** - Consider Lighthouse CI in deploy workflow
+3. **No error tracking** - Consider Sentry for client-side errors (optional, may be overkill)
+4. **Quota monitoring** - Add alerts for YouTube/GA4 API quota limits
 
-**Files Created:**
-- `/layouts/shortcodes/youtube-embed.html`
-- `/layouts/shortcodes/cta.html`
-- `/layouts/shortcodes/alert.html`
-- `/layouts/shortcodes/product-compare.html`
-- `/content/blog/posts/shortcode-examples.md` (reference guide)
+### Security & Maintenance
+**Priority:** Medium
 
-**Time:** 2 hours
+Action items:
+- [ ] Rotate YouTube API key annually (set calendar reminder)
+- [ ] Review GitHub secret access quarterly
+- [x] Add dependabot for Hugo module updates
+- [ ] Document disaster recovery plan (backup strategy)
 
 ---
 
-### 7. **Add Structured Data (JSON-LD)** ✅ COMPLETED (1 hour)
-**Impact:** ⭐⭐⭐ (Rich snippets in Google search)
+## 📈 SEO & Growth Opportunities
 
-**Steps:**
-- [x] Create `/layouts/partials/schema-organization.html` ✅
-- [x] Create `/layouts/partials/schema-article.html` ✅
-- [x] Add to `/layouts/partials/head.html` ✅
-- [ ] Test with [Google Rich Results Test](https://search.google.com/test/rich-results) (PENDING DEPLOYMENT)
+### Cross-Promotion Strategy
+Based on `dev/refs/MINIMAL3DP_APP_GUIDE.md`:
 
-**Result:**
+**YouTube → Website Integration:**
+- ✅ Every video links back to minimal3dp.com
+- ✅ Video descriptions include tool/guide links
+- 🔲 Add end screens with website CTAs
+- 🔲 Create "YouTube Playlist" pages on site (embed playlists with context)
 
-**Schema Organization (Homepage):**
-- Created `/layouts/partials/schema-organization.html` (22 lines)
-- Properties: name, url, logo (192x192px), description, sameAs[], contactPoint
-- Social links: YouTube, Twitter (requires params), GitHub
-- Contact point with email address
-- Conditional rendering: `{{ if .IsHome }}`
+**Internal Linking:**
+- [x] Audit existing posts for internal link opportunities
+- 🔲 Add "Related Content" sections (manual or automated)
+- 🔲 Create content hub pages (e.g., "All Klipper Guides")
 
-**Schema Article (Blog Posts):**
-- Created `/layouts/partials/schema-article.html` (25 lines)
-- Properties: headline, description, image, dates (ISO 8601)
-- Author (Person type) with name and URL
-- Publisher (Organization type) with logo
-- Main entity (WebPage) with permalink
-- Optional: wordCount, articleSection (categories), keywords (tags)
-- Conditional rendering: `{{ if and .IsPage (not .IsHome) (in .Section "blog") }}`
+**External Promotion:**
+- ❌ Medium automation deprecated (no API tokens) – use manual copy/paste when strategically valuable (see updated `docs/MEDIUM-SETUP.md`).
+- 🔲 Reddit strategy (r/3Dprinting, r/klippers, r/VORONDesign)
+- 🔲 Discord presence (Klipper, Voron communities)
+- 🔲 Guest posts on other 3D printing blogs
 
-**Integration:**
-- Modified `/layouts/partials/head.html` to include both partials
-- Positioned after OpenGraph, internal schema, Twitter cards
-- All URLs use `absURL` for absolute paths
+### Email Marketing
+**Status:** Not implemented
 
-**Verification:**
-- Build tested successfully: 1071ms, 194 pages
-- Organization schema verified in `public/index.html` (properly minified)
-- Article schema verified in blog post HTML (properly minified)
-- Both schemas render as single-line JSON-LD in production HTML
+Potential:
+- Newsletter signup on high-traffic pages
+- Weekly/monthly digest of new tools/guides
+- Exclusive content for subscribers
+- Affiliate promotion channel
 
-**Expected Result:** Rich snippets in search results, +15-25% CTR boost ✅
-
-**Files Created:**
-- `/layouts/partials/schema-organization.html`
-- `/layouts/partials/schema-article.html`
-
-**Files Modified:**
-- `/layouts/partials/head.html` (added schema partial includes)
-
-**Next Steps:**
-- Deploy to production
-- Test with Google Rich Results Test
-- Add remaining social media params to hugo.toml (Task #5)
-
-**Time:** 1 hour
+**Implementation:**
+- Start with simple Mailchimp/ConvertKit integration
+- Gate downloadable resources (Klipper configs, cheat sheets)
+- Build list before creating complex automations
 
 ---
 
-## ✅ CODE REVIEW ADDITIONS (Nov 15, 2025)
+## 🔄 Workflow Improvements
 
-### Quick Wins (1-2 hours)
-- [ ] Add OrcaSlicer Expert Assistant to Tools index (`/content/tools/_index.md`) with a short description and external link to `https://settings.minimal3dp.com` (open in new tab, `rel="noopener"`). Add GA event on click: `onclick="trackCtaClick('orcaslicer_app','tools_index')"`.
-- [ ] Standardize CTA tracking: switch `layouts/shortcodes/cta.html` to use global `trackCtaClick(type, location)` from `hooks/head-end.html` and remove the shortcode-local `trackCTA()` duplication.
-- [ ] Configure email CTA: replace `YOUR_EMAIL_SERVICE_URL` in `layouts/shortcodes/cta.html` with a real endpoint or hide the email variant until configured.
-- [ ] Update internal links to shrinkage calculator to use the corrected path `/tools/m3dp-shrinkage-calculator/` (alias added). Current link text remains correct; fix URL spelling in new content going forward.
-
-### Analytics (1 hour)
-- [ ] GA4 cross-domain session linking: add linker domains `['minimal3dp.com','settings.minimal3dp.com']` after GA init so sessions persist when users click from minimal3dp.com to the app subdomain. Implementation: call `gtag('config','G-VQ8RPWC2MK',{ linker: { domains: ['minimal3dp.com','settings.minimal3dp.com'] }})` once `gtag` is available.
-
-### Styling/Perf (2-3 hours)
-- [ ] Move inline CTA styles into SCSS (`assets/scss/_variables_project.scss` + a small partial). Keep colors in variables to ensure consistency across CTA types.
-- [ ] Consider preloading critical fonts/CSS on high-traffic pages and adding `preconnect` for Google Fonts used by the Shrinkage tool HTML to reduce layout flashes.
-
-### Accessibility (30-45 mins)
-- [ ] Add `aria-label` or descriptive text for CTA-only icons where needed; ensure sufficient contrast on all CTA button text across gradients (current calculator CTA fixed; re-check YouTube/support variants).
-
-### Documentation (30 mins)
-- [ ] In `MINIMAL3DP_APP_GUIDE.md`, add a short note under Launch Checklist to: 1) list new apps on `/tools/`, and 2) configure GA4 cross-domain linker when using subdomains. Also include a one-line reminder to use the corrected "Shrinkage" spelling.
-
----
-
-### 8. **Create Content Archetypes** ✅ COMPLETED (1.5 hours)
-**Impact:** ⭐⭐ (Faster content creation, consistency)
-
-**Priority:**
-1. [x] Blog post archetype: `/archetypes/blog.md` ✅
-2. [x] Product review archetype: `/archetypes/reviews.md` ✅
-
-**Result:**
-
-**Blog Post Archetype (`/archetypes/blog.md`):**
-- Complete front matter template with SEO fields (title, description, keywords, images)
-- Taxonomy placeholders (categories, tags with examples)
-- Date/lastmod auto-populated
-- Structured content sections (Introduction, Main sections, Conclusion)
-- Shortcode examples embedded in comments (youtube-embed, cta, alert)
-- "What you'll learn" bullet template
-- Pre-publishing checklist (10 items)
-- Usage instructions and best practices
-
-**Product Review Archetype (`/archetypes/reviews.md`):**
-- Product-specific front matter (product name, brand, price, amazon_id)
-- Quick verdict section at top
-- Testing period info box with alert shortcode
-- Specifications table template
-- Structured review sections:
-  - Unboxing & First Impressions
-  - Setup & Installation
-  - Performance Testing (3 test templates)
-  - Real-World Usage
-  - Pros & Cons (formatted with emoji)
-  - Comparison table with product-compare shortcode
-  - Who Should Buy This (buy if/skip if)
-  - Where to Buy (affiliate product card template with GA4 tracking)
-  - FAQ section (5 Q&A templates)
-  - Final Verdict with star rating
-- Complete affiliate shortcode template with GA4 tracking function
-- Pre-publishing checklist (14 items)
-- YouTube CTA at end
-
-**Usage:**
-```bash
-hugo new blog/posts/my-post.md        # Creates post from blog archetype
-hugo new reviews/product-name.md      # Creates review from reviews archetype
+### Add to fetch-youtube-popular.yml:
+```yaml
+# Consider adding:
+- Caching previous JSON to avoid quota waste if no new videos
+- Error handling: Keep old data if API fails
+- Include video titles in email body
+- Testing: Dry-run mode for local development
 ```
 
-**Testing:**
-- Tested blog archetype: `hugo new blog/posts/test-blog-archetype.md`
-- Front matter populated correctly with current date
-- All template sections included
-- Shortcode examples preserved in comments
-
-**Expected Result:** New content in 2 minutes vs 10 minutes ✅
-
-**Files Created:**
-- `/archetypes/blog.md` (111 lines)
-- `/archetypes/reviews.md` (223 lines)
-
-**Time:** 1.5 hours
-
----
-
-### 9. **Update hugo.toml with SEO Params** ✅ COMPLETED (15 mins)
-**Impact:** ⭐⭐⭐ (Site-wide SEO improvement)
-
-**Result:**
-
-All SEO parameters added to `hugo.toml` [params] section:
-
-**Site Identity:**
-- ✅ site_name = "Minimal 3DP"
-- ✅ author = "Mike Wilson"
-- ✅ tagline = "3D Printing Tutorials, Reviews & Professional Tools" (NEW)
-- ✅ description = "Your complete 3D printing resource..." (from Task #5)
-- ✅ email = "contact@minimal3dp.com" (from Task #5)
-
-**SEO:**
-- ✅ keywords = "3d printing, klipper, orca slicer, 3d printer reviews, fdm calculator, 3d printing tutorials, filament guide, printer calibration" (NEW)
-- ✅ images = ["/images/minimal3dp-og-1200x630.jpg"] (from Task #3)
-- ✅ google_site_verification = "gekyEs3f8YOHosuLYzm98WAde8kIZn31TT3drLkKEv4" (from Task #2)
-
-**Social Media:**
-- ✅ twitter_creator = "@Michael24919360" (from Task #5)
-- ✅ youtube_channel_id = "UCM_8Mv-0S1LnnJpRJLjahaw" (from Task #5)
-- ✅ youtube_subscribers = "5000+" (from Task #5)
-- ✅ facebook_page = "100089187391163" (from Task #5)
-- ✅ github_repo_name = "minimal3dp/minimal3dp.github.io" (from Task #5)
-
-**Affiliate:**
-- ✅ affiliate_tag = "mwf064-20" (from Task #4)
-- ✅ affiliate_disclosure = true (NEW)
-
-**Additional:**
-- ✅ privacy_policy = "https://policies.google.com/privacy" (existing)
-
-**Build Test:**
-- Build successful: 1001ms, 194 pages
-- No errors or warnings
-- All params accessible in templates via .Site.Params
-
-**Expected Result:** Enhanced SEO metadata site-wide, better search engine understanding ✅
-
-**Files Modified:**
-- `/hugo.toml` (added tagline, keywords, affiliate_disclosure)
-
-**Time:** 15 minutes (faster than expected since most params already added in Task #5)
-
----
-
-### 10. **Add YouTube Integration Elements** ✅ COMPLETED (1 hour)
-**Impact:** ⭐⭐⭐ (Cross-promotion, subscriber growth)
-
-**Result:**
-
-**1. YouTube Video Description Template:**
-- Created `/content/_templates/youtube-description.txt` (comprehensive template)
-- Includes sections for:
-  - Video description with emoji
-  - Link to written guide on website
-  - Free tools & resources section (FDM calculator, Klipper guides)
-  - Timestamps section with examples
-  - Stay connected (subscribe link, social media)
-  - Products mentioned (affiliate links placeholder)
-  - Tags for SEO (#3dprinting, #klipper, etc.)
-  - About Minimal 3DP section
-- Ready to copy/paste for every video upload
-
-**2. YouTube Subscribe CTA Partial (Full Box):**
-- Created `/layouts/partials/youtube-subscribe-cta.html`
-- Features:
-  - Large red gradient box with YouTube branding
-  - Displays subscriber count from hugo.toml
-  - "Subscribe Now" button with hover effects
-  - GA4 tracking: `trackYouTubeSubscribe('blog-cta')`
-  - Responsive design
-- Usage: `{{ partial "youtube-subscribe-cta.html" . }}`
-- Perfect for end of blog posts
-
-**3. Watch on YouTube Badge (Compact):**
-- Created `/layouts/partials/watch-on-youtube.html`
-- Features:
-  - Compact red badge design
-  - Direct link to specific video
-  - GA4 tracking: `trackYouTubeVideo(videoId, title)`
-  - Customizable title text
-- Usage: `{{ partial "watch-on-youtube.html" (dict "videoId" "VIDEO_ID" "title" "Watch Tutorial") }}`
-- Perfect for top of tutorials
-
-**4. Usage Guide:**
-- Created `/content/_templates/YOUTUBE-INTEGRATION-GUIDE.md`
-- Complete documentation with:
-  - File locations and purposes
-  - Usage examples for each component
-  - Recommended content structure
-  - GA4 event tracking details
-  - Best practices
-  - Quick reference table
-  - Testing checklist
-
-**Homepage:**
-- ✅ Already has YouTube subscribe button in hero section
-- ✅ Already has YouTube channel feature link
-- ✅ Already has popular videos section
-- No additional changes needed
-
-**GA4 Events Tracked:**
-- `youtube_subscribe_click` - When users click subscribe CTAs
-- `youtube_video_click` - When users click video links
-- All include event_category, event_label, and video_id
-
-**Build Test:**
-- Build successful: 1067ms, 198 pages (4 new pages from templates)
-- No errors or warnings
-- All partials ready to use
-
-**Expected Result:** Increased YouTube subscribers, better video-to-website traffic flow ✅
-
-**Files Created:**
-- `/content/_templates/youtube-description.txt` (template)
-- `/layouts/partials/youtube-subscribe-cta.html` (CTA box)
-- `/layouts/partials/watch-on-youtube.html` (compact badge)
-- `/content/_templates/YOUTUBE-INTEGRATION-GUIDE.md` (documentation)
-
-**Usage Examples:**
-
-**For tutorials with video:**
-```html
-<!-- Top: Compact badge -->
-{{ partial "watch-on-youtube.html" (dict "videoId" "ABC123" "title" "Watch Full Tutorial") }}
-
-<!-- Middle: Full embed -->
-{{< youtube-embed id="ABC123" title="Tutorial Title" >}}
-
-<!-- End: Subscribe CTA -->
-{{ partial "youtube-subscribe-cta.html" . }}
+### Add to fetch-popular.yml:
+```yaml
+# Consider adding:
+- Combine with YouTube fetch (single daily run?)
+- Add website vs YouTube performance comparison
+- Generate "trending" vs "evergreen" content reports
 ```
 
-**Time:** 1 hour
+---
+
+## 💡 Future Features (Backlog)
+
+### Tools to Consider
+Based on audience needs:
+
+1. **Klipper Config Generator**
+   - Web tool for generating printer.cfg files
+   - Templates for popular printers (Ender 3, Voron, K2 Plus)
+   - Revenue: Affiliate links to control boards
+
+2. **Print Time Estimator**
+   - Compare slicer settings impact on print time
+   - Show time/quality tradeoffs
+   - Revenue: Affiliate links to faster printers/hotends
+
+3. **Filament Drying Calculator**
+   - Temperature/time recommendations by filament type
+   - Revenue: Affiliate links to filament dryers
+
+4. **Support Material Calculator**
+   - Estimate support material waste and cost
+   - Revenue: Affiliate links to support-friendly filaments
+
+### Platform Enhancements
+
+1. **User Accounts (far future)**
+   - Save calculator settings
+   - Store favorite content
+   - Personalized recommendations
+   - **Caveat:** Adds complexity, only if audience demands it
+
+2. **Interactive Klipper Configurator**
+   - Visual config builder
+   - Real-time syntax validation
+   - One-click download
+   - **Effort:** High, but high value for audience
+
+3. **Community Forum**
+   - Q&A platform (self-hosted Discourse?)
+   - Alternative: Discord integration
+   - **Decision:** Validate demand first (Discord poll?)
 
 ---
 
-### 11. **Set Up GA4 Event Tracking** ✅ COMPLETED (1 hour)
-**Impact:** ⭐⭐⭐ (Measure what matters)
+## 📝 Documentation Needs
 
-**Result:**
+### User-Facing
+- [x] YouTube API setup guide ✅
+- [x] SMTP notification setup ✅
+- [ ] "How to Use This Site" guide
+- [ ] FAQ page expansion
+- [ ] Calculator user guides (embed in tools)
 
-**Centralized GA4 Event Tracking Library:**
-- Created `/layouts/partials/hooks/head-end.html` (287 lines)
-- 11 tracking functions implemented
-- 3 automatic event listeners (affiliate links, outbound links, file downloads)
-- Console logging for debugging
-
-**Tracking Functions Implemented:**
-
-1. **trackAffiliateClick(asin, title)** ✅
-   - Automatic tracking for all `rel="sponsored"` links
-   - Tracks: Amazon affiliate clicks with ASIN and product name
-   - GA4 event: `affiliate_click` (Amazon category)
-
-2. **trackYouTubeSubscribe(source)** ✅
-   - Already used in `youtube-subscribe-cta.html` partial
-   - Tracks: YouTube subscribe button clicks by source location
-   - GA4 event: `youtube_subscribe_click` (YouTube category)
-
-3. **trackYouTubeVideo(videoId, title)** ✅
-   - Already used in `watch-on-youtube.html` partial
-   - Tracks: Video link clicks with video ID
-   - GA4 event: `youtube_video_click` (YouTube category)
-
-4. **trackRelatedPostClick(postTitle, postUrl)** ✅
-   - Already used in `related-posts.html` partial
-   - Tracks: Related post clicks with destination
-   - GA4 event: `related_post_click` (Related Posts category)
-
-5. **trackCalculatorUse(calculatorName, action)** 🆕
-   - Ready for implementation in calculator JS
-   - Tracks: Calculate, reset, export actions
-   - GA4 event: `calculator_use` (Tools category)
-
-6. **trackEmailSignup(formLocation, listType)** 🆕
-   - Ready for when email forms are added
-   - Tracks: Newsletter, course, ebook signups
-   - GA4 event: `email_signup` (Lead Generation category, value: 5)
-
-7. **trackVideoPlay(videoId, videoTitle)** 🆕
-   - Optional: For YouTube IFrame API integration
-   - Tracks: When embedded videos start playing
-   - GA4 event: `video_play` (Video Engagement category, value: 2)
-
-8. **trackCtaClick(ctaType, location)** 🆕
-   - Ready for CTA shortcodes
-   - Tracks: CTA button clicks by type and location
-   - GA4 event: `cta_click` (CTA category)
-
-9. **trackSiteSearch(searchQuery, resultsCount)** 🆕
-   - Ready for when search is implemented
-   - Tracks: Search queries and result counts
-   - GA4 event: `search`
-
-10. **trackOutboundLink(url, linkText)** 🆕
-    - Automatic tracking for all external links
-    - Tracks: Clicks to external sites (not sponsored)
-    - GA4 event: `click` (Outbound Link category)
-
-11. **trackFileDownload(fileName, fileType)** 🆕
-    - Automatic tracking for PDFs, STL, GCODE, configs, etc.
-    - Tracks: All downloadable file types
-    - GA4 event: `file_download` (Download category)
-
-**Automatic Event Listeners:**
-- ✅ All affiliate links (`rel="sponsored"`) auto-tracked
-- ✅ All outbound links (`target="_blank"` or external) auto-tracked
-- ✅ All file downloads (.pdf, .stl, .gcode, .cfg, etc.) auto-tracked
-
-**Code Refactoring:**
-- Removed duplicate tracking functions from 4 partials:
-  - `related-posts.html` (removed individual script)
-  - `youtube-subscribe-cta.html` (removed individual script)
-  - `watch-on-youtube.html` (removed individual script)
-  - `amazon-product.html` shortcode (removed individual script)
-- All partials now use centralized functions
-- No duplicate function definitions
-
-**Documentation:**
-- Created `/content/_templates/GA4-TRACKING-GUIDE.md` (complete usage guide)
-- Includes:
-  - All 11 function signatures and usage examples
-  - Implementation examples for calculators
-  - Testing instructions
-  - GA4 event summary table
-  - Priority implementation roadmap
-  - Debugging guide
-
-**Build Test:**
-- Build successful: 1035ms, 199 pages (1 new guide page)
-- No errors or warnings
-- Tracking library verified in homepage and blog posts
-- Only 1 function definition per page (no duplicates)
-
-**Next Steps (Manual Implementation):**
-1. ⏳ Add `trackCalculatorUse()` to FDM Cost Calculator JS
-2. ⏳ Add `trackCalculatorUse()` to Shrinkage Calculator JS
-3. ⏳ Add `trackEmailSignup()` when email forms are implemented
-4. Optional: Add `trackVideoPlay()` to youtube-embed shortcode (YouTube IFrame API)
-5. Monitor events in GA4 Realtime reports
-
-**Expected Result:** Complete user journey tracking, data-driven optimization ✅
-
-**Files Created:**
-- `/layouts/partials/hooks/head-end.html` (centralized tracking library)
-- `/content/_templates/GA4-TRACKING-GUIDE.md` (usage documentation)
-
-**Files Modified:**
-- `/layouts/partials/related-posts.html` (removed script tag)
-- `/layouts/partials/youtube-subscribe-cta.html` (removed script tag)
-- `/layouts/partials/watch-on-youtube.html` (removed script tag)
-- `/layouts/shortcodes/amazon-product.html` (removed script tag)
-
-**Time:** 1 hour
+### Developer-Facing
+- [x] Python environment setup (uv) ✅
+- [x] Workflow documentation ✅
+- [ ] Hugo customization guide
+- [ ] Deployment process documentation
+- [ ] API documentation (if exposing endpoints)
 
 ---
 
-## 🎯 HIGH IMPACT - THIS MONTH (20-25 hours)
+## 🎯 Success Metrics
 
-### 12. **Create 5 Product Review Posts** (10 hours)
-**Impact:** ⭐⭐⭐⭐ (Affiliate revenue, SEO traffic)
+### Track Monthly:
+- Unique visitors (GA4)
+- Popular page views (top 10)
+- YouTube → Website conversion rate
+- Affiliate click-through rate
+- Affiliate revenue (Amazon Associates)
+- Email list growth (when implemented)
+- Popular videos refresh accuracy
 
-**Priority Products (based on search volume + commission):**
-1. [ ] FixDry Double NT1 (filament dryer) - 2 hours
-2. [ ] Creality Ender 3 S1 Plus - 2 hours
-3. [ ] Bambu Lab P1S vs X1C comparison - 2 hours
-4. [ ] Best PLA filament roundup (5 brands) - 2 hours
-5. [ ] Top Klipper-compatible printer comparison - 2 hours
-
-**Each Review Should Include:**
-- Full specifications table
-- Real-world testing results (photos/videos)
-- Pros/cons analysis
-- Comparison with alternatives
-- "Who should buy this" section
-- Affiliate purchase links (amazon-product shortcode)
-- YouTube video embed (if you have one)
-- FAQ section with schema markup
-- Related products at end
-
-**SEO Optimization:**
-- Title: "Product Name Review (2025) - Honest Testing Results"
-- Meta description: Under 160 chars, includes primary keyword
-- H2s: Target long-tail keywords ("Is the X worth it?")
-- Images: Optimized, alt text with keywords
-- Internal links: To related tutorials, calculators
-
-**Time:** 2 hours per review × 5 = 10 hours
+### Track Quarterly:
+- Organic search traffic growth
+- Domain authority / backlinks
+- YouTube subscriber growth correlation with site traffic
+- Tool usage statistics (calculator pageviews)
+- Content ROI (time invested vs traffic generated)
 
 ---
 
-### 13. **Implement Email Capture** (3 hours)
-**Impact:** ⭐⭐⭐⭐ (Audience building, recurring revenue)
+## 📌 Notes & Context
 
-**Platform Choice:** ConvertKit (free up to 1,000 subscribers)
+### Design Decisions Made
 
-**Steps:**
-- [ ] Sign up for ConvertKit: https://convertkit.com
-- [ ] Create landing page form
-- [ ] Create inline email form (for blog posts)
-- [ ] Set up welcome sequence (3-5 emails)
-- [ ] Create Hugo shortcode for email form (see RECOMMENDATIONS.md)
-- [ ] Add to key pages: homepage, top 10 blog posts, about page
-- [ ] Track signups in GA4
+**Why uv instead of pip/conda?**
+- 10-100× faster than pip
+- Deterministic builds (lock file)
+- Better caching in CI/CD
+- Single file configuration
 
-**Expected Revenue:** $200-500/month within 6 months (affiliate + digital products)
+**Why data/ + static/data/ for JSON?**
+- `data/` = Hugo can access via `site.Data`
+- `static/data/` = Client-side JS can fetch
+- Workflow copies data → static for both use cases
 
-**Time:** 3 hours
+**Why not use YouTube Analytics API?**
+- Requires OAuth (complex setup)
+- Data API v3 sufficient for view counts
+- Keeps implementation simple
+- API key auth easier to manage
 
----
+### Known Limitations
 
-### 14. **Optimize Top 10 Pages** ✅ PHASE 1 COMPLETE (2 hours)
-**Impact:** ⭐⭐⭐⭐ (SEO + Conversions)
+1. **YouTube API quota:** 10k units/day (script uses ~200 per run)
+2. **GA4 Data API:** Limited to properties user has access to
+3. **Hugo build time:** Scales linearly with content (acceptable for now)
+4. **No database:** All data in flat files (fine for current scale)
 
-**Result - Phase 1: Core 4 Pages Fully Optimized**
+### When to Revisit Decisions
 
-**New FAQ Shortcode System Created:**
-- Created `/layouts/shortcodes/faq.html` (FAQ container with automatic Schema.org FAQPage JSON-LD)
-- Created `/layouts/shortcodes/faq-item.html` (Individual Q&A with styled display)
-- Generates valid FAQPage schema for rich snippets
-- Mobile-responsive design with blue accent styling
-- Reusable across all pages
+**Move tools to subdomains?**
+- When a single tool exceeds 10k monthly users
+- When tool needs separate tech stack (e.g., React app)
+- When SEO data shows subdomain would benefit
 
-**Pages Fully Optimized (4 of 10):**
+**Add user accounts?**
+- When at least 100 users request saved settings
+- When building tools that require state (config builders)
+- Not before validating demand
 
-**1. Homepage (`content/_index.md`)** ⭐⭐⭐⭐⭐
-- ✅ Added meta description (160 chars)
-- ✅ Improved title: "Minimal 3DP - 3D Printing Tutorials, Calculators & Expert Reviews"
-- ✅ Added keywords array (10 keywords)
-- ✅ Improved H1: "Welcome to Minimal 3DP: Your 3D Printing Resource"
-- ✅ Added "What Makes Minimal 3DP Different?" section
-- ✅ Added "Free Tools & Resources" section (4 internal links)
-- ✅ Added "Popular Content" section (4 internal links)
-- ✅ Added 5-question FAQ with schema markup
-- ✅ Added "Stay Connected" CTA section (2 buttons)
-- **Total enhancements:** 8 internal links, 2 CTAs, 5 FAQ items
-
-**2. About Page (`content/about/index.md`)** ⭐⭐⭐⭐⭐
-- ✅ Added meta description (Mike Wilson, free consultations)
-- ✅ Improved title: "About Minimal 3DP - Mike Wilson | 3D Printing Expert & Maker"
-- ✅ Added keywords array (7 keywords)
-- ✅ Complete rewrite with professional bio
-- ✅ "What I Do" section (4 value props with links)
-- ✅ Enhanced consultation info section
-- ✅ Added 4-question FAQ with schema markup
-- ✅ "Connect With Me" section (3 CTAs)
-- **Total enhancements:** 6 internal links, 3 CTAs, 4 FAQ items
-
-**3. Tools Index (`content/tools/_index.md`)** ⭐⭐⭐⭐⭐
-- ✅ Added meta description (free calculators)
-- ✅ Improved title: "Free 3D Printing Calculators & Tools | Minimal 3DP"
-- ✅ Added keywords array (7 keywords)
-- ✅ Complete rewrite with detailed calculator descriptions
-- ✅ "Coming Soon" section (3 future tools)
-- ✅ "Why Use These Tools?" section (5 benefits)
-- ✅ "Need Help?" section (4 internal links)
-- ✅ Added 4-question FAQ with schema markup
-- **Total enhancements:** 5 internal links, 4 FAQ items
-
-**4. Blog Index (`content/blog/_index.md`)** ⭐⭐⭐⭐
-- ✅ Added meta description (weekly content)
-- ✅ Improved title: "3D Printing Blog - Tutorials, Reviews & News | Minimal 3DP"
-- ✅ Added keywords array (7 keywords)
-- ✅ "Latest 3D Printing Content" heading
-- ✅ "What You'll Find Here" section (Posts & News breakdown)
-- ✅ "More Resources" section (4 internal links)
-- ✅ "Subscribe for Updates" CTA
-- **Total enhancements:** 6 internal links, 1 CTA
-
-**Aggregate Results:**
-- **Pages optimized:** 4 (Homepage, About, Tools, Blog)
-- **Total FAQ items:** 13 with Schema.org FAQPage markup
-- **Total internal links:** 25 strategic links
-- **Total CTAs:** 6 optimized call-to-actions
-- **Meta descriptions:** 4 pages (all under 160 chars)
-- **Keywords added:** 31 targeted keywords across 4 pages
-
-**Build Results:**
-- Build successful: 1550ms, 203 pages (+4 from 199)
-- No errors or warnings
-- FAQ schema validated
-- Mobile responsive (Hugo Docsy theme)
-
-**Expected SEO Impact:**
-- +15-25% CTR from FAQ rich snippets (1-3 months)
-- +10-20% time on site from internal linking
-- Better crawl efficiency from strategic linking
-- Featured snippet eligibility for 13 FAQ items
-
-**Documentation:**
-- Created `/content/_templates/TOP-10-PAGES-OPTIMIZATION-SUMMARY.md`
-- Complete breakdown of all optimizations
-- Testing checklist
-- Phase 2 recommendations (6 remaining pages)
-
-**Phase 2 Recommended (Optional - 4 hours):**
-1. [ ] Klipper Calibration Hub - 30 mins
-2. [ ] FDM Cost Calculator - 30 mins
-3. [ ] Shrinkage Calculator - 30 mins
-4. [ ] Projects Index - 30 mins
-5. [ ] Filament Guide Blog Post - 30 mins
-6. [ ] Top Tutorial Page (identify from GA4) - 30 mins
-
-**Next Steps:**
-1. Deploy to production
-2. Test with [Google Rich Results Test](https://search.google.com/test/rich-results)
-3. Monitor Google Search Console for rich snippet impressions
-4. Track CTR improvements over next 30 days
-
-**Files Created:**
-- `/layouts/shortcodes/faq.html` (FAQ container with schema)
-- `/layouts/shortcodes/faq-item.html` (individual Q&A)
-- `/content/_templates/TOP-10-PAGES-OPTIMIZATION-SUMMARY.md` (documentation)
-
-**Files Modified:**
-- `/content/_index.md` (homepage)
-- `/content/about/index.md`
-- `/content/tools/_index.md`
-- `/content/blog/_index.md`
-
-**Time:** 2 hours (Phase 1 - prioritized highest-impact pages)
+**Implement email marketing?**
+- When monthly visitors exceed 5k
+- When 50+ users request newsletter
+- When content production is consistent (2× per week)
 
 ---
 
-### 15. **Create Related Posts System** ✅ COMPLETED (1 hour)
-**Impact:** ⭐⭐⭐ (Time on site, internal linking, SEO)
+## 🏁 Next Steps (This Week)
 
-**Steps:**
-- [x] Create `/layouts/partials/related-posts.html` (see RECOMMENDATIONS.md)
-- [x] Add to single post template (`/layouts/blog/single.html`)
-- [x] Configure related content in `hugo.toml` (already completed in Task #5)
-- [x] Test on blog posts (working correctly)
-- [x] Add GA4 tracking for related post clicks
-
-**Result:**
-- Related posts partial created with responsive grid layout
-- Shows up to 3 related articles based on tags (weight: 100), categories (weight: 80), and date (weight: 10)
-- Includes post image (if available), title, summary (truncated to 100 chars), and "Read More" link
-- Clean card-based design with gray background section
-- Custom blog single.html template created (extends Docsy theme)
-- Successfully tested on filament guide post - shows related OrcaSlicer tutorial
-- **GA4 tracking implemented:** `trackRelatedPostClick()` fires on both title and "Read More" link clicks
-- Tracks: event_category='Related Posts', event_label=(post title), page_path=(destination URL)
-
-**Expected Result:** +30% pages per session, -15% bounce rate
-
-**Time:** 1 hour
+1. **Fix workflow linting errors** (30 min)
+2. **Copy youtube_popular.json to static/** for local builds (5 min) ✅
+3. **Review and publish OrcaSlicer bed types post** (1 hour)
+4. **Plan K2 Plus video/post** (reference data-driven doc) (2 hours)
+5. **Update README** with YouTube feature (10 min)
+6. **Test popular videos section** on production (after deploy) (15 min)
 
 ---
 
-### 16. **Build Backlink Outreach List** (2 hours)
-**Impact:** ⭐⭐⭐⭐ (Domain authority, SEO rankings)
+## 📚 Reference Documents
 
-**Easy Wins:**
-- [ ] Reddit: r/3Dprinting, r/klippers, r/BambuLab
-- [ ] YouTube: Update ALL video descriptions
-- [ ] Discord: OrcaSlicer, Bambu Lab, Voron servers
-- [ ] GitHub: Klipper, OrcaSlicer repos
-
-**Medium Effort:**
-- [ ] All3DP: Tools roundup submission
-- [ ] 3DPrintBeginner: Guest post offer
-- [ ] Prusa Blog: Feature outreach
-
-**Goal:** 25 quality backlinks in 3 months
-
-**Time:** 2 hours to build list + 1 hour/week ongoing
+- `dev/refs/Data-Driven Content Strategy Report for Minimal 3DP.md` - Audience behavior analysis
+- `dev/refs/MINIMAL3DP_APP_GUIDE.md` - Brand identity and architecture standards
+- `dev/refs/Minimal 3DP_ A Comprehensive Brand Specification...md` - Core brand pillars
+- `docs/YOUTUBE-SETUP.md` - YouTube API integration guide
+- `docs/SMTP-SETUP.md` - Email notification setup
+- `docs/MEDIUM-SETUP.md` - Manual Medium cross-post guide (automation deprecated)
+- `docs/RECOMMENDATIONS.md` - Historical SEO recommendations (archived)
+- `docs/SHORTCODES-AND-PARTIALS.md` - Comprehensive shortcode and partial reference
+- `.github/copilot-instructions.md` - AI agent guidance for this repo
 
 ---
 
-### 17. **Add FAQ Schema to Key Pages** (2 hours)
-**Impact:** ⭐⭐⭐ (Rich snippets, featured snippets)
-
-**Steps:**
-- [ ] Create `/layouts/shortcodes/faq.html` (see RECOMMENDATIONS.md)
-- [ ] Add FAQs to: homepage, calculator, Klipper guides, product reviews
-- [ ] Test with Google Rich Results Test
-
-**Time:** 2 hours
-
----
-
-## 📈 GROWTH - THIS QUARTER (40-50 hours)
-
-### 18. **Content Calendar: 2 Posts/Week** (48 hours)
-**Impact:** ⭐⭐⭐⭐⭐ (Long-term traffic growth)
-
-**Weekly Schedule:**
-- Monday: Tutorial or How-To (2 hours)
-- Friday: Review or News (2 hours)
-
-**24 posts in 12 weeks = 4 hours/week**
-
-**Content Mix:**
-- 12 Tutorials (Klipper, slicer settings, troubleshooting)
-- 8 Reviews (filament, printers, tools)
-- 4 News/Updates (industry, tool updates)
-
-**Expected Result:** 10x traffic in 12 months, $500-1k/month revenue
-
-**Time:** 48 hours over 12 weeks
-
----
-
-### 19. **YouTube Video Production** (30 hours)
-**Impact:** ⭐⭐⭐⭐⭐ (Traffic, authority, revenue)
-
-**Goal:** 1 video/week (minimum 12 videos this quarter)
-
-**Video Types:**
-- 8 Tutorial videos
-- 2 Tool demos
-- 2 Product reviews
-
-**Each Video:** 5-7 hours (script, film, edit, optimize)
-
-**Expected Result:** 10k YouTube subs, 50k monthly views
-
-**Time:** 30 hours
-
----
-
-### 20. **Expand Calculator Suite** (20 hours)
-**Impact:** ⭐⭐⭐⭐ (Unique value, traffic)
-
-**New Calculators:**
-1. Shrinkage Calculator (polish existing) - 2 hours
-2. Resin Print Cost Calculator - 8 hours
-3. Filament Drying Time Calculator - 4 hours
-4. Build Volume Optimizer - 6 hours
-
-**Time:** 20 hours
-
----
-
-### 21. **Implement Dynamic Affiliate System (PA-API)** (12 hours)
-**Impact:** ⭐⭐⭐⭐ (Revenue, product diversity)
-
-**Only implement if hitting static catalog limitations**
-
-**Steps:**
-- [ ] Apply for PA-API access
-- [ ] Create Vercel serverless function
-- [ ] Implement product search
-- [ ] Add caching layer
-- [ ] Test and monitor
-
-**Time:** 12 hours (spread over 2-3 weeks)
-
----
-
-### 22. **Set Up Medium Cross-Posting** (3-4 hours)
-**Impact:** ⭐⭐⭐⭐ (Reach, backlinks, passive income)
-
-**Expand reach to Medium's 100M+ readers, drive traffic back to minimal3dp.com**
-
-**Phase 1: Manual Testing (Week 1-2)**
-- [ ] Create posting template (intro + CTA)
-- [ ] Cross-post 3-5 existing blog posts manually
-- [ ] Set canonical URLs correctly (Story Settings → Advanced → Canonical URL)
-- [ ] Add UTM tracking (`?utm_source=medium&utm_medium=referral`)
-- [ ] Track referral traffic in GA4
-- [ ] Measure engagement (views, reads, clicks to site)
-
-**Phase 2: Optimize Process (Week 3-4)**
-- [ ] Document workflow (screenshot tutorial)
-- [ ] Create Hugo front matter template with Medium metadata
-- [ ] Identify top 10 posts to cross-post
-- [ ] Test submitting to relevant Medium publications
-- [ ] Apply for Medium Partner Program (if desired)
-
-**Expected Results:**
-- 500-1,000 Medium views in first month
-- 50+ clicks back to minimal3dp.com
-- 50-100 Medium followers
-- Additional backlinks (DR 95 domain)
-
-**Time:** 3-4 hours
-
-**Reference:** See MINIMAL3DP_APP_GUIDE.md → Medium.com Cross-Posting Strategy
-
----
-
-### 23. **Automate Medium Cross-Posting (GitHub Actions)** (6-8 hours)
-**Impact:** ⭐⭐⭐ (Efficiency, scale)
-
-**Only implement after manual testing proves valuable**
-
-**Steps:**
-- [ ] Get Medium Integration Token (https://medium.com/me/settings/security)
-- [ ] Add `MEDIUM_TOKEN` to GitHub Secrets
-- [ ] Create `.github/workflows/medium-crosspost.yml`
-- [ ] Create `.github/scripts/crosspost-medium.py`
-- [ ] Add Medium metadata to Hugo front matter:
-  ```yaml
-  medium_crosspost: true
-  medium_tags: ["3D Printing", "Klipper", "Tutorial"]
-  ```
-- [ ] Test with draft posts first
-- [ ] Configure to create drafts (manual review before publish)
-- [ ] Handle image conversions (absolute URLs)
-- [ ] Add error handling and notifications
-- [ ] Document automation workflow
-
-**Expected Results:**
-- Auto-create Medium drafts on git push
-- Save 10-15 mins per cross-post
-- Scale to 8-12 posts/month
-- Consistent formatting
-
-**Time:** 6-8 hours
-
-**Reference:** See MINIMAL3DP_APP_GUIDE.md → Medium.com Cross-Posting Strategy → Option 2
-
----
-
-## 🔮 FUTURE - BACKLOG
-
-### 24. Premium Features (40+ hours)
-- User accounts
-- Advanced calculators
-- Downloadable guides
-- Private community
-- Consultation scheduling
-
-### 25. Mobile App (100+ hours)
-- React Native/Flutter
-- Offline access
-- Push notifications
-- AR features
-
-### 26. Subdomain Tool Suite
-- calc.minimal3dp.com
-- guides.minimal3dp.com
-- compare.minimal3dp.com
-- api.minimal3dp.com
-
-### 27. Community Features
-- Forum (Discourse)
-- Discord server
-- User gallery
-- Profile sharing
-
-### 28. Digital Products
-- Ebook: "Complete Klipper Guide" ($9.99)
-- Video course ($49)
-- Profile packs ($14.99)
-
-### 29. Advanced SEO
-- International SEO
-- Video schema
-- Local SEO
-- Advanced link building
-
----
-
-## 📊 SUCCESS METRICS
-
-### Weekly Check-ins (15 mins)
-- Google Analytics: Users, sessions, bounce rate
-- Search Console: Impressions, clicks, position
-- YouTube: Subscribers, views
-- Amazon Associates: Clicks, conversions
-- Email list: New subscribers
-- Medium: Views, reads, referrals (if cross-posting)
-
-### Monthly Reviews (30 mins)
-- Traffic growth vs last month
-- Top performing content
-- Keyword rankings
-- Revenue
-- Backlinks
-- Medium performance (if cross-posting)
-
-### Quarterly Goals
-
-**Q1 2026:**
-- 10,000 monthly visitors
-- 500 email subscribers
-- $300/month affiliate revenue
-- Page 1 ranking for 5 keywords
-- 8,000 YouTube subscribers
-- 3,000 Medium views (if cross-posting)
-
-**Q2 2026:**
-- 25,000 monthly visitors
-- 1,500 email subscribers
-- $800/month affiliate revenue
-- Page 1 ranking for 15 keywords
-- 12,000 YouTube subscribers
-- 10,000 Medium views
-
-**Year End 2026:**
-- 50,000 monthly visitors
-- 3,000 email subscribers
-- $1,500/month affiliate revenue
-- Top 3 ranking for 10 keywords
-- 20,000 YouTube subscribers
-- 25,000 Medium views
-
----
-
-## 🛠️ TOOLS & RESOURCES
-
-**SEO:**
-- Google Search Console, Analytics 4 (free)
-- Ubersuggest, Ahrefs Webmaster Tools (free tiers)
-- TinyPNG, Canva
-
-**Content:**
-- Grammarly, Hemingway Editor
-- Answer The Public, BuzzSumo
-
-**Email:**
-- ConvertKit, MailerLite (free up to 1k)
-
-**YouTube:**
-- TubeBuddy, VidIQ
-- DaVinci Resolve (free editing)
-
-**Development:**
-- Hugo Docs, Vercel Docs, Docsy Theme
-
----
-
-**Last Updated:** November 12, 2025  
-**Next Review:** Weekly (progress), Monthly (metrics)  
-**Vision:** #1 resource for 3D printing optimization & tools 🚀
+**Maintained by:** GitHub Copilot + Mike Wilson  
+**Review Frequency:** Monthly or after major feature additions

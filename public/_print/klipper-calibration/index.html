@@ -22,13 +22,15 @@
 <title>Klipper Calibration | Minimal 3DP</title>
 <meta name="description" content="Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress
 Launched - 2024-04-12
-This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet">
+This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet
+OverviewWelcome to the Klipper Calibration Hub – a structured path to dial in motion, extrusion, temperature, resonance and reliability. Each guide below is purpose-built, minimal in theory, and focused on actionable measurement &#43; adjustment.">
 <meta property="og:url" content="http://localhost:1313/klipper-calibration/">
   <meta property="og:site_name" content="Minimal 3DP">
   <meta property="og:title" content="Klipper Calibration">
   <meta property="og:description" content="Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress
 Launched - 2024-04-12
-This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet">
+This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet
+OverviewWelcome to the Klipper Calibration Hub – a structured path to dial in motion, extrusion, temperature, resonance and reliability. Each guide below is purpose-built, minimal in theory, and focused on actionable measurement &#43; adjustment.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/minimal3dp-og-1200x630.jpg">
@@ -36,9 +38,10 @@ This section is my attempt to to create a Klipper Calibration website. It is bas
   <meta itemprop="name" content="Klipper Calibration">
   <meta itemprop="description" content="Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress
 Launched - 2024-04-12
-This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet">
-  <meta itemprop="dateModified" content="2025-11-13T20:25:42-06:00">
-  <meta itemprop="wordCount" content="35">
+This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet
+OverviewWelcome to the Klipper Calibration Hub – a structured path to dial in motion, extrusion, temperature, resonance and reliability. Each guide below is purpose-built, minimal in theory, and focused on actionable measurement &#43; adjustment.">
+  <meta itemprop="dateModified" content="2025-11-20T14:20:24-06:00">
+  <meta itemprop="wordCount" content="438">
   <meta itemprop="image" content="http://localhost:1313/images/minimal3dp-og-1200x630.jpg">
   <meta itemprop="keywords" content="Calibration,How-To">
   <meta name="twitter:card" content="summary_large_image">
@@ -46,7 +49,8 @@ This section is my attempt to to create a Klipper Calibration website. It is bas
   <meta name="twitter:title" content="Klipper Calibration">
   <meta name="twitter:description" content="Minimal 3DP Klipper Calibration and Optimization Website - A Work in Progress
 Launched - 2024-04-12
-This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet">
+This section is my attempt to to create a Klipper Calibration website. It is based on my Klipper Calibration Spreadsheet
+OverviewWelcome to the Klipper Calibration Hub – a structured path to dial in motion, extrusion, temperature, resonance and reliability. Each guide below is purpose-built, minimal in theory, and focused on actionable measurement &#43; adjustment.">
 
 
 <link href="/scss/main.css" rel="stylesheet">
@@ -444,6 +448,1905 @@ This is the multi-page printable view of this section.
 
 <p>Launched - 2024-04-12</p>
 <p>This section is my attempt to to create a Klipper Calibration website. It is based on my <a href="https://docs.google.com/spreadsheets/d/1LlSHsa86RuT_btswmDsmQp0LrTJ9U0HJcRhorsqz1ug/edit?usp=sharing">Klipper Calibration Spreadsheet</a></p>
+<h2 id="overview">Overview<a class="td-heading-self-link" href="#overview" aria-label="Heading self-link"></a></h2><p>Welcome to the Klipper Calibration Hub – a structured path to dial in motion, extrusion, temperature, resonance and reliability. Each guide below is purpose-built, minimal in theory, and focused on actionable measurement + adjustment.</p>
+<h3 id="quick-start-sequence">Quick Start Sequence<a class="td-heading-self-link" href="#quick-start-sequence" aria-label="Heading self-link"></a></h3><ol>
+<li>Flow Calibration</li>
+<li>Pressure Advance</li>
+<li>Input Shaping</li>
+<li>Max Volumetric Speed</li>
+<li>PID Tuning (bed + hotend)</li>
+<li>Run Current &amp; Mechanical Checks</li>
+</ol>
+<blockquote>
+<p>Tip: Re-run Pressure Advance and Input Shaping if you change belts, pulleys, hotend, nozzle diameter, or extruder gearing.</p>
+</blockquote>
+<h3 id="core-guides">Core Guides<a class="td-heading-self-link" href="#core-guides" aria-label="Heading self-link"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Topic</th>
+          <th>Goal</th>
+          <th>Time</th>
+          <th>Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Flow Calibration</td>
+          <td>Accurate extrusion baseline</td>
+          <td>~15 min</td>
+          <td><a href="/klipper-calibration/flow-calibration/">/klipper-calibration/flow-calibration/</a></td>
+      </tr>
+      <tr>
+          <td>Pressure Advance</td>
+          <td>Compensate extrusion inertia</td>
+          <td>~20 min</td>
+          <td><a href="/klipper-calibration/pressure-advance/">/klipper-calibration/pressure-advance/</a></td>
+      </tr>
+      <tr>
+          <td>Input Shaping</td>
+          <td>Reduce ringing / ghosting</td>
+          <td>~25 min</td>
+          <td><a href="/klipper-calibration/input-shaping/">/klipper-calibration/input-shaping/</a></td>
+      </tr>
+      <tr>
+          <td>Max Volumetric Speed</td>
+          <td>Define safe flow ceiling</td>
+          <td>~30 min</td>
+          <td><a href="/klipper-calibration/max-volumetric-speed/">/klipper-calibration/max-volumetric-speed/</a></td>
+      </tr>
+      <tr>
+          <td>PID Tuning</td>
+          <td>Stable temperature control</td>
+          <td>~10 min</td>
+          <td><a href="/klipper-calibration/pid-tuning/">/klipper-calibration/pid-tuning/</a></td>
+      </tr>
+      <tr>
+          <td>Run Current</td>
+          <td>Motor torque vs heat balance</td>
+          <td>~10 min</td>
+          <td><a href="/klipper-calibration/run-current/">/klipper-calibration/run-current/</a></td>
+      </tr>
+      <tr>
+          <td>X &amp; Y Offsets</td>
+          <td>Squareness + dimensional fidelity</td>
+          <td>~10 min</td>
+          <td><a href="/klipper-calibration/x-and-y-offsets/">/klipper-calibration/x-and-y-offsets/</a></td>
+      </tr>
+      <tr>
+          <td>Lead Screw Rotation Distance</td>
+          <td>Precise Z motion scaling</td>
+          <td>~15 min</td>
+          <td><a href="/klipper-calibration/lead-screw-rotation-distance/">/klipper-calibration/lead-screw-rotation-distance/</a></td>
+      </tr>
+      <tr>
+          <td>Rotational Distance</td>
+          <td>Accurate steps/mm equivalent</td>
+          <td>~15 min</td>
+          <td><a href="/klipper-calibration/rotational-distance/">/klipper-calibration/rotational-distance/</a></td>
+      </tr>
+      <tr>
+          <td>BLTouch Testing</td>
+          <td>Probe accuracy &amp; repeatability</td>
+          <td>~10 min</td>
+          <td><a href="/klipper-calibration/bltouch-testing/">/klipper-calibration/bltouch-testing/</a></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="when-to-revisit">When to Revisit<a class="td-heading-self-link" href="#when-to-revisit" aria-label="Heading self-link"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Change</th>
+          <th>Re-run Guides</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>New filament type</td>
+          <td>Flow, Pressure Advance</td>
+      </tr>
+      <tr>
+          <td>Extruder upgrade</td>
+          <td>Flow, Pressure Advance, Max Volumetric</td>
+      </tr>
+      <tr>
+          <td>Hotend change</td>
+          <td>Flow, Max Volumetric, PID</td>
+      </tr>
+      <tr>
+          <td>Belt / pulley change</td>
+          <td>Input Shaping, X/Y Offsets</td>
+      </tr>
+      <tr>
+          <td>Stepper swap</td>
+          <td>Run Current, Input Shaping</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="tooling--measurement-aids">Tooling &amp; Measurement Aids<a class="td-heading-self-link" href="#tooling--measurement-aids" aria-label="Heading self-link"></a></h3><ul>
+<li>Calipers (0.01 mm resolution) for flow cube measurement</li>
+<li>Accelerometer (if available) for Input Shaping – otherwise use visual artifact evaluation</li>
+<li>Infrared thermometer for verifying bed / hotend overshoot during PID tuning</li>
+</ul>
+<h3 id="recommended-order-rationale">Recommended Order Rationale<a class="td-heading-self-link" href="#recommended-order-rationale" aria-label="Heading self-link"></a></h3><p>Calibrating flow first ensures subsequent dynamic compensations (pressure advance) are based on correct extrusion. Input shaping benefits from stable extrusion and mechanically sound motion. Volumetric limits prevent quality degradation during high-speed profiles. PID tuning locks temperature stability so volumetric tests remain valid.</p>
+<h3 id="next-steps-after-core-set">Next Steps After Core Set<a class="td-heading-self-link" href="#next-steps-after-core-set" aria-label="Heading self-link"></a></h3><ol>
+<li>Refine slicer profile (layer times, cooling curves)</li>
+<li>Compare benchmark prints (Benchy, stress tests)</li>
+<li>Log long-run stability (30–60 min prints) for temperature and ringing recurrence</li>
+</ol>
+<h3 id="related-content">Related Content<a class="td-heading-self-link" href="#related-content" aria-label="Heading self-link"></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+  
+
+
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+        
+        
+        
+        
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+      
+        
+      
+    
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+        
+        
+        
+        
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+        
+        
+        
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+      
+        
+      
+    
+    
+  
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+        
+        
+        
+        
+      
+    
+    
+      
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+      
+        
+      
+    
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    
+      
+      
+        
+        
+        
+        
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+        
+        
+        
+      
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+    
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+  <div class="related-content">
+    <h3 class="h5 mb-3">Related Guides</h3>
+    <ul class="list-unstyled mb-0">
+    
+      
+      <li class="mb-2">
+        <a href="/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/">The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested</a>
+        <small class="text-muted d-block">Comprehensive guide to the best 3D printing filaments for every application. From PLA to PEEK, find the perfect filament for your next project with honest reviews and recommendations.
+</small>
+      </li>
+    
+      
+      <li class="mb-2">
+        <a href="/tools/m3dp-fdm-cost-calculator/">3D Print Cost Calculator</a>
+        <small class="text-muted d-block">Calculate the cost of 3D printing with FDM technology.
+</small>
+      </li>
+    
+      
+      <li class="mb-2">
+        <a href="/klipper-calibration/pid-tuning/">PID Tuning in Klipper</a>
+        <small class="text-muted d-block">Running PID Tuning in Klipper
+</small>
+      </li>
+    
+      
+      <li class="mb-2">
+        <a href="/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/">OrcaSlicer Calibration and Max Flowrate</a>
+        <small class="text-muted d-block">Think of MVS as an automatic speed limiter for your 3D printer&#39;s filament flow.
+</small>
+      </li>
+    
+      
+      <li class="mb-2">
+        <a href="/projects/3d-printers/_template/"></a>
+        
+      </li>
+    
+      
+      <li class="mb-2">
+        <a href="/projects/3d-printers/cr6-se/_template/"></a>
+        
+      </li>
+    
+    </ul>
+  </div>
+
+
+
 
 </div>
 </div>
@@ -463,7 +2366,7 @@ This is the multi-page printable view of this section.
 	
     
 
-<div class="td-content" style="">
+<div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-0a90cbc70286b74a00ea059b475fbe66">1 - Rotational Distance</h1>
     <div class="lead">Calculate your Rotational Distance for Klipper</div>

@@ -1,0 +1,3 @@
+{{/* Wrapper shortcode delegating to shared partial. Usage: {{< related count="4" >}} */}}
+{{ $count := .Get "count" }}
+{{ partial "related-inline.html" (dict "page" .Page "count" $count) }}

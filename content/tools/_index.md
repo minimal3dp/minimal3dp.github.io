@@ -17,17 +17,21 @@ All tools are 100% free, require no registration, and run directly in your brows
 
 ### Available Calculators
 
-**[FDM Cost Calculator](/tools/m3dp-fdm-cost-calculator/)**
-- Calculate true print costs including material, electricity, and time
-- Factor in printer depreciation and hourly rates
-- Compare costs across different filaments and settings
-- Perfect for pricing prints or understanding hobby costs
+{{< cta type="calculator" location="tools_index" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" title="🧮 FDM Cost Calculator" btnText="Open FDM Cost Calculator" >}}
+Calculate true print costs including material, electricity, time, and optional depreciation. Compare across filaments and settings for accurate pricing and planning.
+{{< /cta >}}
 
-**[Shrinkage Calculator](/tools/m3dp-shinkage-calculator/)**
-- Compensate for material shrinkage in your prints
-- Support for ABS, PETG, Nylon, and other materials
-- Accurate dimensional scaling for precision parts
-- Essential for engineering and functional prints
+<br />
+
+{{< cta type="app" location="tools_index" href="https://settings.minimal3dp.com/" ctaType="orcaslicer_app" title="🧠 OrcaSlicer Expert Assistant" btnText="Open OrcaSlicer Expert Assistant ↗" >}}
+Select filament, set priorities (Strength, Speed, Quality, Accuracy), and get expert recommendations for layer height, wall speed, infill, and more.
+{{< /cta >}}
+
+<br />
+
+{{< cta type="calculator" location="tools_index" href="/tools/m3dp-shrinkage-calculator/" ctaType="shrinkage_calculator" title="📏 Shrinkage Calculator" btnText="Open Shrinkage Calculator" >}}
+Compensate for material shrinkage (ABS, PETG, Nylon, etc.) with precise scaling for dimensionally accurate, functional parts.
+{{< /cta >}}
 
 ### Coming Soon
 

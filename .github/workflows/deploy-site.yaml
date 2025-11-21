@@ -35,6 +35,20 @@ jobs:
     - name: Build
       run: hugo --minify
 
+    - name: Install Lighthouse CI
+      run: npm install --no-fund --no-audit --save-dev @lhci/cli
+
+    - name: Lighthouse CI Audit
+      run: npx @lhci/cli autorun --config=./lighthouserc.json || echo "Lighthouse assertions failed (non-blocking)"
+      continue-on-error: true
+
+    - name: Upload Lighthouse Reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: lighthouse-report
+        path: .lighthouseci
+
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.9.0
@@ -42,3 +56,53 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
+    - name: Determine email config
+      id: email_config
+      run: |
+        if [ -n "${{ secrets.SMTP_SERVER }}" ] && \
+           [ -n "${{ secrets.SMTP_PORT }}" ] && \
+           [ -n "${{ secrets.SMTP_USERNAME }}" ] && \
+           [ -n "${{ secrets.SMTP_PASSWORD }}" ] && \
+           [ -n "${{ secrets.TO_EMAIL }}" ] && \
+           [ -n "${{ secrets.FROM_EMAIL }}" ]; then
+          echo "have_email=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "have_email=false" >> "$GITHUB_OUTPUT"
+        fi
+    - name: Send Email (success)
+      if: success() && steps.email_config.outputs.have_email == 'true'
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.SMTP_SERVER }}
+        server_port: ${{ secrets.SMTP_PORT }}
+        username: ${{ secrets.SMTP_USERNAME }}
+        password: ${{ secrets.SMTP_PASSWORD }}
+        subject: "Site deployed ✔"
+        to: ${{ secrets.TO_EMAIL }}
+        from: ${{ secrets.FROM_EMAIL }}
+        body: |
+          Successful deployment.
+          Repo: ${{ github.repository }}
+          Run: ${{ github.run_id }}
+          Commit: ${{ github.sha }}
+          Branch: gh-pages
+          Lighthouse report artifact: lighthouse-report (see run artifacts)
+          View run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    - name: Send Email (failure)
+      if: failure() && steps.email_config.outputs.have_email == 'true'
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.SMTP_SERVER }}
+        server_port: ${{ secrets.SMTP_PORT }}
+        username: ${{ secrets.SMTP_USERNAME }}
+        password: ${{ secrets.SMTP_PASSWORD }}
+        subject: "Deployment FAILED ✖"
+        to: ${{ secrets.TO_EMAIL }}
+        from: ${{ secrets.FROM_EMAIL }}
+        body: |
+          Deployment failure.
+          Repo: ${{ github.repository }}
+          Run: ${{ github.run_id }}
+          Commit: ${{ github.sha }}
+          Inspect logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          (If build succeeded before failure you may still have Lighthouse artifacts.)
