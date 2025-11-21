@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>App on Minimal 3DP</title><link>https://minimal3dp.com/tags/app/</link><description>Recent content in App on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 15 Nov 2025 18:28:48 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/tags/app/index.xml" rel="self" type="application/rss+xml"/><item><title>Stop Guessing: I Built a FREE App for Your Best 3D Slicer Settings</title><link>https://minimal3dp.com/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</link><pubDate>Sat, 15 Nov 2025 12:00:00 -0600</pubDate><guid>https://minimal3dp.com/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</guid><description>&lt;div class="alert alert-success" style="border-left: 4px solid #10B981; background: #10B98115; padding: 15px 20px; margin: 20px 0; border-radius: 4px;"&gt;
- &lt;strong&gt;✅ Success:&lt;/strong&gt;
- &lt;strong&gt;🎉 NEW FREE TOOL LAUNCH:&lt;/strong&gt; The OrcaSlicer Expert Assistant is now live at &lt;a href="https://settings.minimal3dp.com"&gt;settings.minimal3dp.com&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Hey, this is Mike from Minimal3DP.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve had a lot of time to think recently while recovering from heart surgery, and I put that time to use. Today, I want to talk about &amp;ldquo;the best 3D printer slicer settings&amp;rdquo; and what that really means.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App on Minimal 3DP</title>
+    <link>http://localhost:1313/tags/app/</link>
+    <description>Recent content in App on Minimal 3DP</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Nov 2025 18:28:48 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stop Guessing: I Built a FREE App for Your Best 3D Slicer Settings</title>
+      <link>http://localhost:1313/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</link>
+      <pubDate>Sat, 15 Nov 2025 12:00:00 -0600</pubDate>
+      <guid>http://localhost:1313/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</guid>
+      <description>&lt;div class=&#34;alert alert-success&#34; style=&#34;border-left: 4px solid #10B981; background: #10B98115; padding: 15px 20px; margin: 20px 0; border-radius: 4px;&#34;&gt;&#xA;  &lt;strong&gt;✅ Success:&lt;/strong&gt;&#xA;  &lt;strong&gt;🎉 NEW FREE TOOL LAUNCH:&lt;/strong&gt; The OrcaSlicer Expert Assistant is now live at &lt;a href=&#34;https://settings.minimal3dp.com&#34;&gt;settings.minimal3dp.com&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Hey, this is Mike from Minimal3DP.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had a lot of time to think recently while recovering from heart surgery, and I put that time to use. Today, I want to talk about &amp;ldquo;the best 3D printer slicer settings&amp;rdquo; and what that really means.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
