@@ -53,6 +53,7 @@ Minimal 3DP isn't just another 3D printing blog. As a maker with over 5,000 YouT
 
 ### Free Tools & Resources
 
+- **[FDM Filament Recommendation Engine](http://filament.minimal3dp.com/)** - Find the perfect filament for your project from 40+ materials
 - **[FDM Cost Calculator](/tools/m3dp-fdm-cost-calculator/)** - Calculate true print costs including electricity and time
 - **[Shrinkage Calculator](/tools/m3dp-shrinkage-calculator/)** - Compensate for material shrinkage in your prints
 - **[Klipper Calibration Guides](/klipper-calibration/)** - Step-by-step firmware optimization tutorials
@@ -61,6 +62,7 @@ Minimal 3DP isn't just another 3D printing blog. As a maker with over 5,000 YouT
 {{% /blocks/section %}}
 
 <div style="text-align: center; margin: 30px 0;">
+{{< cta-badge type="app" href="http://filament.minimal3dp.com/" ctaType="filament_engine" location="home_index" label="🧪 Find Your Filament" >}}
 {{< cta-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" location="home_index" label="🧮 Try FDM Cost Calculator" >}}
 {{< cta-badge type="app" href="https://settings.minimal3dp.com/" ctaType="orcaslicer_app" location="home_index" label="🧠 Open OrcaSlicer Assistant" >}}
 </div>

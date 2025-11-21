@@ -1,7 +1,7 @@
 ---
 title: "Stop Guessing: Introducing the FDM Filament Recommendation Engine"
 date: 2025-11-21T10:00:00-06:00
-draft: true
+draft: false
 author: "Mike Wilson"
 description: "Discover the FDM Filament Recommendation Engine—a data-driven tool that helps you find the perfect 3D printing material for your project by filtering over 40 filaments by strength, printability, UV resistance, and more."
 tags: ["3dprinting", "filament", "tools", "materials", "fdm", "engineering"]

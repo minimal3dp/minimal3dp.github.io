@@ -1,26 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Reviews on Minimal 3DP</title>
-    <link>http://localhost:1313/categories/reviews/</link>
-    <description>Recent content in Reviews on Minimal 3DP</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 16 Nov 2025 21:34:56 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/reviews/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested</title>
-      <link>http://localhost:1313/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</link>
-      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</guid>
-      <description>&lt;p&gt;Choosing the right 3D printing filament can make or break your project. After years of testing dozens of brands and materials, I&amp;rsquo;ve compiled this comprehensive guide to help you find the perfect filament for any application.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;cta cta--youtube&#34;&gt;&#xA;  &lt;h3 class=&#34;cta__title&#34;&gt;📺 Watch This Tutorial on YouTube&lt;/h3&gt;&#xA;  &#xA;    &lt;p class=&#34;cta__text&#34;&gt;Want deep-dive tutorials on materials, slicer settings, and real-world tests? Subscribe for long-form guides and honest reviews.&lt;/p&gt;&#xA;  &#xA;  &lt;a class=&#34;cta__btn&#34; href=&#34;https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1&#34; &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener&#34;&#xA;     onclick=&#34;trackCtaClick(&#39;youtube&#39;,&#39;blog-post&#39;)&#34;&gt;&#xA;    ▶️ Subscribe Now - 10000&amp;#43; subscribers&#xA;  &lt;/a&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Quick Navigation:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#pla-filaments&#34;&gt;PLA Filaments&lt;/a&gt; (Beginner-friendly)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#petg-filaments&#34;&gt;PETG Filaments&lt;/a&gt; (Functional parts)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#abs-asa-filaments&#34;&gt;ABS &amp;amp; ASA&lt;/a&gt; (Heat &amp;amp; UV resistant)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#tpu-flexible-filaments&#34;&gt;TPU (Flexible)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#nylon-filaments&#34;&gt;Nylon&lt;/a&gt; (Engineering)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#specialty-materials&#34;&gt;Specialty Materials&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#support-materials&#34;&gt;Support Materials&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pla-filaments&#34;&gt;PLA Filaments&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#pla-filaments&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;PLA (Polylactic Acid) is the most popular 3D printing filament for good reason: it&amp;rsquo;s easy to print, doesn&amp;rsquo;t require a heated bed, and produces minimal odor. Perfect for beginners and decorative prints.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>FixDry Double NT1</title>
-      <link>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</link>
-      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bit.ly/3vSfOOa&#34;&gt;FIXDRY 3D Filament 2 Spools Compatible Dryerbox DOUBLE-NT1&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;fixdry-nt1-review&#34;&gt;FixDry NT1 Review&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#fixdry-nt1-review&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Level Up Your 3D Printer! FIXDRY DOUBLE-NT1 Filament Dryer Box Review &amp;amp; Demonstration&lt;/p&gt;&#xA;&lt;p&gt;red of battling wet filament and failed 3D prints? Struggling to keep your prints crisp and free of warping?&lt;/p&gt;&#xA;&lt;p&gt;In this video, we take action! We unbox and put the FIXDRY DOUBLE-NT1 Filament Dryer to the test. See for yourself how this 2-spool dryer can transform your printing experience.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reviews on Minimal 3DP</title><link>https://minimal3dp.com/categories/reviews/</link><description>Recent content in Reviews on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 16 Nov 2025 21:34:56 -0600</lastBuildDate><atom:link href="https://minimal3dp.com/categories/reviews/index.xml" rel="self" type="application/rss+xml"/><item><title>The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested</title><link>https://minimal3dp.com/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</link><pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</guid><description>&lt;p&gt;Choosing the right 3D printing filament can make or break your project. After years of testing dozens of brands and materials, I&amp;rsquo;ve compiled this comprehensive guide to help you find the perfect filament for any application.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class="cta cta--youtube"&gt;
+ &lt;h3 class="cta__title"&gt;📺 Watch This Tutorial on YouTube&lt;/h3&gt;
+ 
+ &lt;p class="cta__text"&gt;Want deep-dive tutorials on materials, slicer settings, and real-world tests? Subscribe for long-form guides and honest reviews.&lt;/p&gt;
+ 
+ &lt;a class="cta__btn" href="https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1" 
+ target="_blank"
+ rel="noopener"
+ onclick="trackCtaClick('youtube','blog-post')"&gt;
+ ▶️ Subscribe Now - 10000&amp;#43; subscribers
+ &lt;/a&gt;
+ &lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;strong&gt;Quick Navigation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#pla-filaments"&gt;PLA Filaments&lt;/a&gt; (Beginner-friendly)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#petg-filaments"&gt;PETG Filaments&lt;/a&gt; (Functional parts)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#abs-asa-filaments"&gt;ABS &amp;amp; ASA&lt;/a&gt; (Heat &amp;amp; UV resistant)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#tpu-flexible-filaments"&gt;TPU (Flexible)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#nylon-filaments"&gt;Nylon&lt;/a&gt; (Engineering)&lt;/li&gt;
+&lt;li&gt;&lt;a href="#specialty-materials"&gt;Specialty Materials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#support-materials"&gt;Support Materials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="pla-filaments"&gt;PLA Filaments&lt;a class="td-heading-self-link" href="#pla-filaments" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;PLA (Polylactic Acid) is the most popular 3D printing filament for good reason: it&amp;rsquo;s easy to print, doesn&amp;rsquo;t require a heated bed, and produces minimal odor. Perfect for beginners and decorative prints.&lt;/p&gt;</description></item><item><title>FixDry Double NT1</title><link>https://minimal3dp.com/projects/3d-printing-reviews/fixdry-double-nt1/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://minimal3dp.com/projects/3d-printing-reviews/fixdry-double-nt1/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+&lt;p&gt;&lt;a href="https://bit.ly/3vSfOOa"&gt;FIXDRY 3D Filament 2 Spools Compatible Dryerbox DOUBLE-NT1&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id="fixdry-nt1-review"&gt;FixDry NT1 Review&lt;a class="td-heading-self-link" href="#fixdry-nt1-review" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Level Up Your 3D Printer! FIXDRY DOUBLE-NT1 Filament Dryer Box Review &amp;amp; Demonstration&lt;/p&gt;
+&lt;p&gt;red of battling wet filament and failed 3D prints? Struggling to keep your prints crisp and free of warping?&lt;/p&gt;
+&lt;p&gt;In this video, we take action! We unbox and put the FIXDRY DOUBLE-NT1 Filament Dryer to the test. See for yourself how this 2-spool dryer can transform your printing experience.&lt;/p&gt;</description></item></channel></rss>

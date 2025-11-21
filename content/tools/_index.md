@@ -17,6 +17,12 @@ All tools are 100% free, require no registration, and run directly in your brows
 
 ### Available Calculators
 
+{{< cta type="app" location="tools_index" href="http://filament.minimal3dp.com/" ctaType="filament_engine" title="🧪 FDM Filament Recommendation Engine" btnText="Open Filament Engine ↗" >}}
+Find the perfect filament for your project. Filter and compare 40+ materials by strength, printability, UV resistance, cost, and more using data from manufacturer TDS and peer-reviewed research.
+{{< /cta >}}
+
+<br />
+
 {{< cta type="calculator" location="tools_index" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" title="🧮 FDM Cost Calculator" btnText="Open FDM Cost Calculator" >}}
 Calculate true print costs including material, electricity, time, and optional depreciation. Compare across filaments and settings for accurate pricing and planning.
 {{< /cta >}}
