@@ -12,6 +12,11 @@
     {{ partial "related-inline.html" (dict "page" .) }}
   {{ end }}
 
+  {{/* Newsletter signup after content */}}
+  {{ if eq .Section "blog" }}
+    {{ partial "newsletter-signup.html" . }}
+  {{ end }}
+
   {{ partial "popular-posts.html" (dict "count" 5 "title" "Popular This Week") }}
 </div>
 {{ end }}

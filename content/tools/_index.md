@@ -45,6 +45,14 @@ Compensate for material shrinkage (ABS, PETG, Nylon, etc.) with precise scaling 
 - **Filament Drying Time Calculator** - Optimal drying times by material
 - **Build Volume Optimizer** - Maximize your print bed usage
 
+---
+
+## Stay Updated on New Tools
+
+{{ partial "newsletter-signup.html" . }}
+
+---
+
 ### Why Use These Tools?
 
 ✅ **No Registration Required** - Start calculating immediately
