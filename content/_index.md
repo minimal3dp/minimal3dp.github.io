@@ -112,7 +112,7 @@ Get the latest tutorials, tool updates, and 3D printing tips delivered weekly.
 
 {.text-center}
 
-{{ partial "newsletter-signup.html" . }}
+{{< newsletter-signup >}}
 
 <div style="text-align: center; margin-top: 30px;">
   <a class="btn btn-lg btn-light me-3 mb-4" href="https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw?sub_confirmation=1">

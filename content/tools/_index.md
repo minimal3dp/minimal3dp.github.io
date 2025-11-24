@@ -49,7 +49,7 @@ Compensate for material shrinkage (ABS, PETG, Nylon, etc.) with precise scaling 
 
 ## Stay Updated on New Tools
 
-{{ partial "newsletter-signup.html" . }}
+{{< newsletter-signup >}}
 
 ---
 
