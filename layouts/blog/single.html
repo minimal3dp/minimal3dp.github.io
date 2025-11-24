@@ -19,6 +19,9 @@
 	{{/* Add Related Posts Section */}}
 	{{ partial "related-posts.html" . }}
 
+	{{/* Newsletter signup after related posts */}}
+	{{ partial "newsletter-signup.html" . }}
+
 	{{/* popular posts - server-driven or fallback to heuristic */}}
 	{{ partial "popular-posts.html" (dict "count" 5 "title" "Popular This Week") }}
 </div>
