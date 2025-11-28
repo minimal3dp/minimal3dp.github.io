@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Nov 2025 20:26:44 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3d-Printer-Mods</title>
+      <link>http://localhost:1313/tags/3d-printer-mods/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/3d-printer-mods/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Creality K2 Plus</title>
+      <link>http://localhost:1313/tags/creality-k2-plus/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/creality-k2-plus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware-Upgrade</title>
+      <link>http://localhost:1313/tags/hardware-upgrade/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hardware-upgrade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hotend-Upgrade</title>
+      <link>http://localhost:1313/tags/hotend-upgrade/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hotend-upgrade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Micro-Swiss</title>
+      <link>http://localhost:1313/tags/micro-swiss/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/micro-swiss/</guid>
+      <description></description>
+    </item>
     <item>
       <title>3dprinting</title>
       <link>http://localhost:1313/tags/3dprinting/</link>
@@ -55,13 +90,6 @@
       <link>http://localhost:1313/tags/calibration/</link>
       <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/calibration/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Creality K2 Plus</title>
-      <link>http://localhost:1313/tags/creality-k2-plus/</link>
-      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/creality-k2-plus/</guid>
       <description></description>
     </item>
     <item>

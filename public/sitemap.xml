@@ -149,11 +149,41 @@
     <loc>http://localhost:1313/klipper-calibration/bltouch-testing/</loc>
     <lastmod>2024-05-05T21:36:08-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/3dprinting/</loc>
-    <lastmod>2025-11-21T15:31:11-06:00</lastmod>
+    <loc>http://localhost:1313/categories/3d-printers/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/3d-printer-mods/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-11-23T20:26:44-06:00</lastmod>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/creality-k2-plus/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hardware-upgrade/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hotend-upgrade/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2025/11/28/creality-k2-plus-upgrade-series-installing-the-micro-swiss-flowtech-hotend/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/micro-swiss/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/reviews/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/tutorials/</loc>
+    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/3dprinting/</loc>
+    <lastmod>2025-11-21T15:31:11-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/engineering/</loc>
     <lastmod>2025-11-21T15:31:11-06:00</lastmod>
@@ -170,26 +200,14 @@
     <loc>http://localhost:1313/blog/2025/11/21/stop-guessing-introducing-the-fdm-filament-recommendation-engine/</loc>
     <lastmod>2025-11-21T15:31:11-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-11-23T20:26:44-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/tools/</loc>
     <lastmod>2025-11-21T15:31:11-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tools/</loc>
     <lastmod>2025-11-23T20:26:44-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tutorials/</loc>
-    <lastmod>2025-11-21T15:31:11-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/3d-printers/</loc>
-    <lastmod>2025-11-20T22:08:38-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/calibration/</loc>
     <lastmod>2025-11-23T20:26:44-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/creality-k2-plus/</loc>
-    <lastmod>2025-11-20T22:08:38-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/extruder/</loc>
     <lastmod>2025-11-20T22:08:38-06:00</lastmod>
@@ -255,9 +273,6 @@
     <lastmod>2025-11-16T21:34:56-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pla/</loc>
-    <lastmod>2025-11-16T21:34:56-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/reviews/</loc>
     <lastmod>2025-11-16T21:34:56-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/reviews/</loc>

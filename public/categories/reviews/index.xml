@@ -6,8 +6,15 @@
     <description>Recent content in Reviews on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Nov 2025 21:34:56 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creality K2 Plus Upgrade Series: Installing the Micro Swiss FlowTech Hotend</title>
+      <link>http://localhost:1313/blog/2025/11/28/creality-k2-plus-upgrade-series-installing-the-micro-swiss-flowtech-hotend/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2025/11/28/creality-k2-plus-upgrade-series-installing-the-micro-swiss-flowtech-hotend/</guid>
+      <description>&lt;p&gt;The Creality K2 Plus has established itself as a flagship machine, but for the &amp;ldquo;Engineering Enthusiast,&amp;rdquo; stock hardware is rarely the end of the road. In the latest installment of the K2 Plus Upgrade Series, I tackle a critical component swap: replacing the stock hotend with the &lt;strong&gt;Micro Swiss FlowTech&lt;/strong&gt; system equipped with the &lt;strong&gt;CM2 High Flow Hardened Steel nozzle&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This guide covers the technical specifications, a direct weight comparison, and the step-by-step installation process to help you decide if this upgrade is right for your rig.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested</title>
       <link>http://localhost:1313/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/</link>

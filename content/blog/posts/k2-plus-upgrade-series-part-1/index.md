@@ -1,7 +1,7 @@
 ---
 title: "K2 Plus Upgrade Series Part 1: All-Metal Extruder Gear Kit"
 date: 2025-11-19
-draft: true
+draft: false
 tags: ["Creality K2 Plus", "Upgrades", "Extruder", "Calibration"]
 categories: ["3d-printers", "tutorials"]
 description: "Install and calibrate an all-metal extruder gear kit on the Creality K2 Plus for improved reliability and extrusion consistency."
