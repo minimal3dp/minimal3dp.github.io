@@ -1,68 +1,7 @@
-/* Affiliate product card (used by amazon-product shortcode) */
-.affiliate-product-card {
-  border: 2px solid #3B82F6;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px 0;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.affiliate-product-card .product-image {
-  flex: 0 0 150px;
-}
-.affiliate-product-card .product-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  display: block;
-}
-.affiliate-product-card .product-info {
-  flex: 1;
-  min-width: 250px;
-}
-.affiliate-product-card .product-info h3 {
-  margin-top: 0;
-  color: #1F2937;
-}
-.affiliate-product-card .product-info .price {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #3B82F6;
-  margin: 10px 0;
-}
-.affiliate-product-card .product-description {
-  margin: 15px 0;
-}
-.btn.btn-amazon {
-  display: inline-block;
-  background: #FF9900;
-  color: #000;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.affiliate-disclosure {
-  font-size: 0.85em;
-  color: #6B7280;
-  margin-top: 10px;
-}
+/* Import design system from Hugo module */
+@import "m3dp-design-system/m3dp-design-system";
 
-/* Mobile adjustments */
-@media (max-width: 480px) {
-  .affiliate-product-card {
-    flex-direction: column;
-  }
-  .affiliate-product-card .product-info {
-    min-width: 0;
-  }
-  .affiliate-product-card .product-image {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
+/* Site-specific styles - Affiliate, CTA, and other components now in design system module */
 
 /* Ensure images inserted by imgproc shortcode are responsive */
 img.img-fluid {
@@ -70,180 +9,58 @@ img.img-fluid {
   height: auto;
 }
 
-/* CTA blocks (used by cta shortcode) */
-.cta {
-  color: #fff;
-  padding: 56px;
-  border-radius: 8px;
-  text-align: center;
-  margin: 80px 0;
-  box-sizing: border-box;
-}
-.cta + .cta { margin-top: 120px; }
-.cta__title {
-  margin-top: 0;
-  color: #fff;
-}
-.cta__text {
-  margin: 0 0 10px;
-}
-.cta__btn {
-  display: inline-block;
-  background: #fff;
-  color: #1F2937;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.cta__form {
-  max-width: 400px;
-  margin: 20px auto 0;
-}
-.cta__input {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 4px 4px 0 0;
-}
-.cta__submit {
-  width: 100%;
-  padding: 12px;
-  background: #fff;
-  color: #1F2937;
-  border: none;
-  border-radius: 0 0 4px 4px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.cta__note {
-  font-size: 0.85em;
-  margin-top: 10px;
-  opacity: 0.9;
-}
+/* Fix text and link visibility in dark background sections */
 
-/* Variants */
-.cta--youtube {
-  background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
-}
-.cta--youtube .cta__btn {
-  color: #FF0000;
-}
-
-.cta--calculator {
-  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
-}
-.cta--calculator .cta__btn {
-  color: #1F2937;
-}
-
-.cta--email {
-  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-}
-.cta--email .cta__submit {
-  color: #10B981;
-}
-
-.cta--support {
-  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
-}
-.cta--support .cta__btn {
-  color: #8B5CF6;
-}
-
-/* Generic App CTA variant */
-.cta--app {
-  background: linear-gradient(135deg, #06B6D4 0%, #0EA5E9 100%);
-}
-.cta--app .cta__btn {
-  color: #0EA5E9;
-}
-
-@media (max-width: 480px) {
-  .cta {
-    padding: 32px;
-    margin: 64px 0;
-  }
-  .cta__btn {
-    width: 100%;
-  }
-  .cta + .cta { margin-top: 84px; }
-}
-
-/* Simple vertical spacers for selective page use */
-.m3dp-spacer-40 { display: block; height: 40px; width: 100%; }
-.m3dp-spacer-64 { display: block; height: 64px; width: 100%; }
-.m3dp-spacer-80 { display: block; height: 80px; width: 100%; }
-@media (max-width: 480px) {
-  .m3dp-spacer-40 { height: 28px; }
-  .m3dp-spacer-64 { height: 44px; }
-  .m3dp-spacer-80 { height: 56px; }
-}
-
-/* Fix link visibility in lead/primary sections - using !important for specificity */
-.td-content.blocks-lead a:not(.btn),
-.blocks-lead .td-content a:not(.btn),
-.td-content .blocks-lead a:not(.btn),
-.td-content.blocks-section a:not(.btn),
-.blocks-section .td-content a:not(.btn),
-.td-content .blocks-section a:not(.btn) {
-  color: #1F2937 !important;
-  text-decoration: underline !important;
-  font-weight: 600 !important;
-}
-.td-content.blocks-lead a:not(.btn):hover,
-.blocks-lead .td-content a:not(.btn):hover,
-.td-content .blocks-lead a:not(.btn):hover,
-.td-content.blocks-section a:not(.btn):hover,
-.blocks-section .td-content a:not(.btn):hover,
-.td-content .blocks-section a:not(.btn):hover {
-  color: #0F172A !important;
-  text-decoration: underline !important;
-}
-
-/* Ensure sufficient contrast for links in primary-colored sections */
-.td-overlay--primary .td-content a:not(.btn),
-.td-overlay--primary a:not(.btn),
-[class*="color-primary"] .td-content a:not(.btn),
-[class*="color-primary"] a:not(.btn) {
+/* Primary and dark overlay sections need white text */
+.td-overlay--dark,
+.td-box--primary,
+.td-box--dark {
   color: #FFFFFF !important;
-  text-decoration: underline !important;
-  font-weight: 600 !important;
-}
-.td-overlay--primary .td-content a:not(.btn):hover,
-.td-overlay--primary a:not(.btn):hover,
-[class*="color-primary"] .td-content a:not(.btn):hover,
-[class*="color-primary"] a:not(.btn):hover {
-  color: #F0F9FF !important;
+  
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #FFFFFF !important;
+  }
+  
+  p, .lead {
+    color: #FFFFFF !important;
+  }
+  
+  a:not(.btn) {
+    color: #FFFFFF !important;
+    text-decoration: underline !important;
+    font-weight: 600 !important;
+    
+    &:hover {
+      color: #F0F9FF !important;
+    }
+  }
 }
 
-/* Inline CTA badges (compact) */
-.cta-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #0F172A; /* base dark */
-  background: #E5E7EB; /* default neutral */
-  border: 1px solid rgba(0,0,0,0.06);
-  transition: transform 0.05s ease, box-shadow 0.1s ease;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+/* Newsletter form text should be dark for readability */
+.ml-form-embedContent h4,
+.ml-form-embedContent p {
+  color: #1F2937 !important;
 }
-.cta-badge:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
-.cta-badge__label { white-space: nowrap; }
 
-/* Badge variants */
-.cta-badge--calculator { background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); color: #111827; }
-.cta-badge--app { background: linear-gradient(135deg, #CFFAFE 0%, #BAE6FD 100%); color: #0C4A6E; }
+/* Light background sections can have dark text */
+.td-box--white,
+.td-box--light {
+  color: #1F2937;
+  
+  a:not(.btn) {
+    color: #1F2937 !important;
+    text-decoration: underline !important;
+    font-weight: 600 !important;
+    
+    &:hover {
+      color: #0F172A !important;
+    }
+  }
+}
 
-.cta-badge + .cta-badge { margin-left: 10px; }
+
 
 @media (max-width: 480px) {
-  .cta-badge { display: inline-flex; margin-bottom: 8px; }
 
 /* popular posts widget */
 .popular-posts { margin-top: 36px; }

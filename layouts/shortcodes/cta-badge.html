@@ -1,5 +1,58 @@
 {{/* Usage:
-  {{< cta-badge type="app|calculator" href="..." label="..." ctaType="..." location="..." >}}
+{{/*
+Deprecated shortcode: cta-badge
+
+Purpose: Backward-compatibility wrapper that renders HTML compatible with the
+design system badge component (`m3dp-badge`). We cannot invoke a shortcode from
+another shortcode in Hugo, so we output equivalent HTML using DS classes.
+
+Mapping:
+- type      -> variant class `m3dp-badge--<type>`
+- href      -> anchor vs span
+- label     -> inner text (fallback when .Inner empty)
+- size      -> optional size class `m3dp-badge--<size>`
+- location  -> data attribute `data-location` for tracking
+- ctaType   -> ignored (legacy)
+*/}}
+
+{{ $type := .Get "type" }}
+{{ $href := .Get "href" }}
+{{ $label := .Get "label" }}
+{{ $size := .Get "size" }}
+{{ $location := .Get "location" }}
+{{ $target := .Get "target" }}
+{{ $rel := .Get "rel" }}
+
+{{ if not $type }}
+  {{ errorf "cta-badge requires 'type' parameter" }}
+{{ end }}
+
+{{ $inner := .Inner }}
+{{ if not $inner }}
+  {{ $inner = $label }}
+{{ end }}
+
+{{ if not $inner }}
+  {{ errorf "cta-badge requires inner content or 'label' parameter" }}
+{{ end }}
+
+{{/* Build class list */}}
+{{ $classes := slice "m3dp-badge" (printf "m3dp-badge--%s" $type) }}
+{{ if $size }}
+  {{ $classes = $classes | append (printf "m3dp-badge--%s" $size) }}
+{{ end }}
+{{ $classAttr := delimit $classes " " }}
+
+{{/* Render anchor when href is provided; otherwise a span */}}
+{{ if $href }}
+  <a class="{{ $classAttr }}" href="{{ $href }}" {{ if $target }}target="{{ $target }}"{{ end }} {{ if $rel }}rel="{{ $rel }}"{{ end }} {{ if $location }}data-location="{{ $location }}"{{ end }}>
+    {{ $inner }}
+  </a>
+{{ else }}
+  <span class="{{ $classAttr }}" {{ if $location }}data-location="{{ $location }}"{{ end }}>
+    {{ $inner }}
+  </span>
+{{ end }}
 */}}
 
 {{ $type := .Get "type" | default "calculator" }}
@@ -9,13 +62,13 @@
 {{ $location := .Get "location" | default "content" }}
 
 {{ if not $href }}
-  {{ errorf "cta-badge shortcode requires 'href' parameter" }}
+{{/* href no longer mandatory; legacy message removed */}}
 {{ end }}
 
-<a class="cta-badge {{ printf "cta-badge--%s" $type }}"
+{{/* Legacy HTML replaced with DS-compatible markup above */}}
    href="{{ $href }}"
    {{ if strings.HasPrefix $href "http" }}target="_blank" rel="noopener"{{ end }}
    onclick="trackCtaClick('{{ $ctaType }}','{{ $location }}')"
    aria-label="{{ $label }}">
-  <span class="cta-badge__label">{{ $label }}</span>
+{{/* Label now provided via inner content in DS-compatible markup */}}
 </a>

@@ -34,9 +34,9 @@ The CM2 boasts a flow rate of **50 cubic millimeters per second**, ensuring the 
 
 **📸 IMAGE PLACEHOLDER: Product shot of Micro Swiss FlowTech hotend and CM2 nozzle packaging**
 
-{{< amazon-product asin="3XYpRM0" title="Micro Swiss FlowTech Hotend for Creality K2 Plus" description="High-performance hotend replacement designed specifically for the K2 Plus" />}}
+{{< amazon-product asin="B0FCMV36HR" title="Micro Swiss FlowTech Hotend for Creality K2 Plus" description="High-performance hotend replacement designed specifically for the K2 Plus" />}}
 
-{{< amazon-product asin="48nuLai" title="Micro Swiss CM2 High Flow Hardened Steel Nozzle" description="50mm³/s flow rate, hardened steel for abrasive filaments" />}}
+{{< amazon-product asin="B0DQ5XF8PG" title="Micro Swiss CM2 High Flow Hardened Steel Nozzle" description="50mm³/s flow rate, hardened steel for abrasive filaments" />}}
 
 {{% alert title="💡 Deal Alert" color="info" %}}
 If you are shopping during Q4, keep an eye on the official Micro Swiss website. Using the code **BFCM2025** can unlock significant discounts (up to 30%) during Black Friday and Cyber Monday events.
@@ -152,15 +152,15 @@ For users struggling with ASA adhesion, switching to a dedicated **Cryo build pl
 
 ### Primary Components
 
-{{< amazon-product asin="3XYpRM0" title="Micro Swiss FlowTech for K2 Plus" description="Drop-in hotend replacement" />}}
+{{< amazon-product asin="B0FCMV36HR" title="Micro Swiss FlowTech for K2 Plus" description="Drop-in hotend replacement" />}}
 
-{{< amazon-product asin="48nuLai" title="CM2 High Flow Nozzle (Hardened Steel)" description="50mm³/s flow, abrasion resistant" />}}
+{{< amazon-product asin="B0DQ61LR3B" title="CM2 High Flow Nozzle (Hardened Steel)" description="50mm³/s flow, abrasion resistant" />}}
 
 ### Recommended Companion Upgrades
 
-{{< amazon-product asin="3XTvz1P" title="Creality K2 Plus Printer" description="Core XY high-speed printer" />}}
+{{< amazon-product asin="B0DY119F9G" title="Creality K2 Plus Printer" description="Core XY high-speed printer" />}}
 
-{{< amazon-product asin="4oobtYy" title="K2 Plus Hardened Extruder Gears" description="Prevent wear from abrasive filaments - highly recommended companion upgrade" />}}
+{{< amazon-product asin="B0F7X49NVK" title="K2 Plus Hardened Extruder Gears" description="Prevent wear from abrasive filaments - highly recommended companion upgrade" />}}
 
 ---
 

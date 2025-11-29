@@ -1,0 +1,42 @@
+{{/* Usage: {{< amazon-product asin="B0XXXXXX" title="Product Name" price="$99.99" image="/images/products/product.jpg" >}}Description{{< /amazon-product >}} */}}
+
+{{ $asin := .Get "asin" }}
+{{ $title := .Get "title" }}
+{{ $price := .Get "price" }}
+{{ $image := .Get "image" }}
+{{ $tag := .Site.Params.affiliate_tag | default "mwf064-20" }}
+
+<div class="affiliate-product-card">
+  {{ if $image }}
+  <div class="product-image">
+    <img src="{{ $image }}" alt="{{ $title }}" loading="lazy">
+  </div>
+  {{ end }}
+  
+  <div class="product-info">
+    <h3>{{ $title }}</h3>
+    
+    {{ if $price }}
+    <p class="price">{{ $price }}</p>
+    {{ end }}
+    
+    {{ if .Inner }}
+    <div class="product-description">
+      {{ .Inner | markdownify }}
+    </div>
+    {{ end }}
+    
+    <a href="https://www.amazon.com/dp/{{ $asin }}?tag={{ $tag }}" 
+       target="_blank" 
+       rel="nofollow noopener sponsored"
+       class="btn btn-amazon"
+       onclick="trackAffiliateClick('{{ $asin }}', '{{ $title }}')"
+       >
+      🛒 View on Amazon
+    </a>
+    
+    <p class="affiliate-disclosure">
+      <small>As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</small>
+    </p>
+  </div>
+</div>

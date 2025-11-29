@@ -36,8 +36,8 @@ Prefer videos? Subscribe for long-form tutorials, slicer deep-dives, and tested 
 - **[Product Reviews](/projects/3d-printing-reviews/)** - Honest, tested reviews
 - **[YouTube Channel](https://www.youtube.com/channel/UCM_8Mv-0S1LnnJpRJLjahaw)** - Video versions of tutorials
 
-{{< cta-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" location="blog_index" label="🧮 FDM Cost Calculator" >}}
-{{< cta-badge type="app" href="https://settings.minimal3dp.com/" ctaType="orcaslicer_app" location="blog_index" label="🧠 OrcaSlicer Expert Assistant" >}}
+{{< m3dp-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" location="blog_index" >}}🧮 FDM Cost Calculator{{< /m3dp-badge >}}
+{{< m3dp-badge type="app" href="https://settings.minimal3dp.com/" location="blog_index" >}}🧠 OrcaSlicer Expert Assistant{{< /m3dp-badge >}}
 
 ### Subscribe for Updates
 

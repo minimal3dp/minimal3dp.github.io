@@ -3,7 +3,10 @@
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
-
+{{ with resources.Get "scss/m3dp-design-system.scss" }}
+  {{ $ds := . | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $ds.RelPermalink }}">
+{{ end }}
 {{ $outputFormat := partial "outputformat.html" . -}}
 {{ if and hugo.IsProduction (ne $outputFormat "print") -}}
 <meta name="robots" content="index, follow">

@@ -1,42 +1,37 @@
-{{/* Usage: {{< amazon-product asin="B0XXXXXX" title="Product Name" price="$99.99" image="/images/products/product.jpg" >}}Description{{< /amazon-product >}} */}}
-
+{{/* Amazon Affiliate Product Card using Design System */}}
 {{ $asin := .Get "asin" }}
 {{ $title := .Get "title" }}
-{{ $price := .Get "price" }}
 {{ $image := .Get "image" }}
-{{ $tag := .Site.Params.affiliate_tag | default "mwf064-20" }}
+{{ $price := .Get "price" }}
+{{ $description := .Get "description" | default .Inner }}
 
-<div class="affiliate-product-card">
+<div class="m3dp-card m3dp-card--affiliate">
   {{ if $image }}
-  <div class="product-image">
+  <div class="m3dp-card__image">
     <img src="{{ $image }}" alt="{{ $title }}" loading="lazy">
   </div>
   {{ end }}
-  
-  <div class="product-info">
-    <h3>{{ $title }}</h3>
-    
+
+  <div class="m3dp-card__content">
+    <h3 class="m3dp-card__title">{{ $title }}</h3>
+
     {{ if $price }}
-    <p class="price">{{ $price }}</p>
+    <div class="m3dp-card__price">{{ $price }}</div>
     {{ end }}
-    
-    {{ if .Inner }}
-    <div class="product-description">
-      {{ .Inner | markdownify }}
-    </div>
+
+    {{ if $description }}
+    <div class="m3dp-card__body">{{ $description | markdownify }}</div>
     {{ end }}
-    
-    <a href="https://www.amazon.com/dp/{{ $asin }}?tag={{ $tag }}" 
-       target="_blank" 
-       rel="nofollow noopener sponsored"
-       class="btn btn-amazon"
-       onclick="trackAffiliateClick('{{ $asin }}', '{{ $title }}')"
-       >
-      🛒 View on Amazon
+
+    <a href="https://www.amazon.com/dp/{{ $asin }}?tag={{ site.Params.affiliate_tag }}" class="m3dp-btn--amazon"
+      target="_blank" rel="nofollow noopener" onclick="trackAffiliateClick('amazon', '{{ $asin }}', '{{ $title }}')">
+      View on Amazon
     </a>
-    
-    <p class="affiliate-disclosure">
-      <small>As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</small>
+
+    {{ if site.Params.affiliate_disclosure }}
+    <p class="m3dp-affiliate-disclosure">
+      As an Amazon Associate, we earn from qualifying purchases.
     </p>
+    {{ end }}
   </div>
 </div>

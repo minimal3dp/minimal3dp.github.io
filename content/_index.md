@@ -62,9 +62,9 @@ Minimal 3DP isn't just another 3D printing blog. As a maker with over 5,000 YouT
 {{% /blocks/section %}}
 
 <div style="text-align: center; margin: 30px 0;">
-{{< cta-badge type="app" href="http://filament.minimal3dp.com/" ctaType="filament_engine" location="home_index" label="🧪 Find Your Filament" >}}
-{{< cta-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" ctaType="fdm_calculator" location="home_index" label="🧮 Try FDM Cost Calculator" >}}
-{{< cta-badge type="app" href="https://settings.minimal3dp.com/" ctaType="orcaslicer_app" location="home_index" label="🧠 Open OrcaSlicer Assistant" >}}
+{{< m3dp-badge type="app" href="http://filament.minimal3dp.com/" location="home_index" >}}🧪 Find Your Filament{{< /m3dp-badge >}}
+{{< m3dp-badge type="calculator" href="/tools/m3dp-fdm-cost-calculator/" location="home_index" >}}🧮 Try FDM Cost Calculator{{< /m3dp-badge >}}
+{{< m3dp-badge type="app" href="https://settings.minimal3dp.com/" location="home_index" >}}🧠 Open OrcaSlicer Assistant{{< /m3dp-badge >}}
 </div>
 
 {{% blocks/section color="white" %}}
