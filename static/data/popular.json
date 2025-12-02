@@ -8,34 +8,34 @@
     {
       "title": "Minimal 3DP",
       "url": "/",
-      "views": 579
+      "views": 596
     },
     {
       "title": "Klipper Calibration | Minimal 3DP",
       "url": "/klipper-calibration/",
-      "views": 243
+      "views": 253
     },
     {
       "title": "The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested | Minimal 3DP",
       "url": "/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/",
-      "views": 218
+      "views": 222
     },
     {
       "title": "PID Tuning in Klipper | Minimal 3DP",
       "url": "/klipper-calibration/pid-tuning/",
-      "views": 211
+      "views": 221
     }
   ],
   "blog": [
     {
       "title": "The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested | Minimal 3DP",
       "url": "/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/",
-      "views": 218
+      "views": 222
     },
     {
       "title": "Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon | Minimal 3DP",
       "url": "/blog/2025/05/03/level-up-your-prints-why-line-width-is-your-3d-printing-secret-weapon/",
-      "views": 58
+      "views": 60
     },
     {
       "title": "OrcaSlicer 2.3.1 Alpha Just Dropped & How to Use the New Flow Rate Calibration | Minimal 3DP",
@@ -57,17 +57,17 @@
     {
       "title": "3D Print Cost Calculator | Minimal 3DP",
       "url": "/tools/m3dp-fdm-cost-calculator/",
-      "views": 176
+      "views": 180
     },
     {
       "title": "Free 3D Printing Calculators & Tools | Minimal 3DP",
       "url": "/tools/",
-      "views": 86
+      "views": 89
     },
     {
       "title": "3D Print Shrinkage Calculator | Minimal 3DP",
       "url": "/tools/m3dp-shinkage-calculator/",
-      "views": 67
+      "views": 73
     },
     {
       "title": "M3DP Tools | Minimal 3DP",
@@ -89,7 +89,7 @@
     {
       "title": "Ender 3 S1 Plus (e3s1p) Klipper Config | Minimal 3DP",
       "url": "/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/",
-      "views": 63
+      "views": 67
     },
     {
       "title": "Projects | Minimal 3DP",
