@@ -8,6 +8,13 @@ categories: ["klipper", "tutorials", "3d-printers"]
 tags: ["klipper", "btt-cb1", "kiauh", "cr10-smart-pro", "firmware-flashing"]
 ---
 
+<style>
+  pre code {
+    color: #1a202c !important;
+    background-color: #f7fafc !important;
+  }
+</style>
+
 ## Part 1: The "Part 0" Setup for the CR10 Smart Pro Upgrade
 
 If you are looking to unlock the full potential of your 3D printer, moving to Klipper is the ultimate upgrade. But before we can configure printer settings or tune input shapers, we need a solid foundation.
@@ -26,7 +33,7 @@ Below are the key components I used for this build. These are affiliate links—
 
 <div class="affiliate-product-card">
   <div class="product-image">
-    <img src="https://via.placeholder.com/200x200?text=BigTreeTech+CB1" alt="BigTreeTech CB1 Compute Module">
+    <img src="https://m.media-amazon.com/images/I/41QL2CMjsZL._SX342_.jpg" alt="BigTreeTech CB1 Compute Module">
   </div>
   <div class="product-info">
     <h4 class="product-title">BigTreeTech CB1 Compute Module</h4>
@@ -40,7 +47,7 @@ Below are the key components I used for this build. These are affiliate links—
 
 <div class="affiliate-product-card">
   <div class="product-image">
-    <img src="https://via.placeholder.com/200x200?text=BTT+M5P" alt="BigTreeTech M5P Board">
+    <img src="https://m.media-amazon.com/images/I/51+h9h2vvAL._SX342_.jpg" alt="BigTreeTech M5P Board">
   </div>
   <div class="product-info">
     <h4 class="product-title">BigTreeTech M5P Board</h4>
@@ -54,7 +61,7 @@ Below are the key components I used for this build. These are affiliate links—
 
 <div class="affiliate-product-card">
   <div class="product-image">
-    <img src="https://via.placeholder.com/200x200?text=MicroSD+Card+32GB" alt="Reliable MicroSD Card 32GB">
+    <img src="https://m.media-amazon.com/images/I/81g1H8s5YDL._SX342_.jpg" alt="Reliable MicroSD Card 32GB">
   </div>
   <div class="product-info">
     <h4 class="product-title">Reliable MicroSD Card (32GB)</h4>
