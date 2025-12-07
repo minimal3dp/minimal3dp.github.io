@@ -33,7 +33,7 @@ Below are the key components I used for this build. These are affiliate links—
 
 <div class="affiliate-product-card">
   <div class="product-image">
-    <img src="https://m.media-amazon.com/images/I/41QL2CMjsZL._SX342_.jpg" alt="BigTreeTech CB1 Compute Module">
+    <img src="https://cdn.shopify.com/s/files/1/0245/5962/2992/products/CB1_a0efc6a4-c556-45c0-b5f5-d2f30f4c33c4_600x600.jpg?v=1664532698" alt="BigTreeTech CB1 Compute Module" style="object-fit: contain; width: 100%; height: 200px;">
   </div>
   <div class="product-info">
     <h4 class="product-title">BigTreeTech CB1 Compute Module</h4>
@@ -47,7 +47,7 @@ Below are the key components I used for this build. These are affiliate links—
 
 <div class="affiliate-product-card">
   <div class="product-image">
-    <img src="https://m.media-amazon.com/images/I/51+h9h2vvAL._SX342_.jpg" alt="BigTreeTech M5P Board">
+    <img src="https://cdn.shopify.com/s/files/1/0245/5962/2992/products/BTT-M5P-Motherboard-01-1600_600x600.jpg" alt="BigTreeTech M5P Board" style="object-fit: contain; width: 100%; height: 200px;">
   </div>
   <div class="product-info">
     <h4 class="product-title">BigTreeTech M5P Board</h4>
@@ -61,7 +61,7 @@ Below are the key components I used for this build. These are affiliate links—
 
 <div class="affiliate-product-card">
   <div class="product-image">
-    <img src="https://m.media-amazon.com/images/I/81g1H8s5YDL._SX342_.jpg" alt="Reliable MicroSD Card 32GB">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81TnbkHnXmL._SL1500_.jpg" alt="Reliable MicroSD Card 32GB" style="object-fit: contain; width: 100%; height: 200px;">
   </div>
   <div class="product-info">
     <h4 class="product-title">Reliable MicroSD Card (32GB)</h4>
