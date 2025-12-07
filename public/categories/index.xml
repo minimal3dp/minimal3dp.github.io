@@ -6,13 +6,27 @@
     <description>Recent content in Categories on Minimal 3DP</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Nov 2025 12:43:32 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 07 Dec 2025 13:59:58 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Printers</title>
       <link>http://localhost:1313/categories/3d-printers/</link>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/3d-printers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Klipper</title>
+      <link>http://localhost:1313/categories/klipper/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/klipper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>http://localhost:1313/categories/tutorials/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/tutorials/</guid>
       <description></description>
     </item>
     <item>
@@ -20,13 +34,6 @@
       <link>http://localhost:1313/categories/reviews/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/reviews/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tutorials</title>
-      <link>http://localhost:1313/categories/tutorials/</link>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/tutorials/</guid>
       <description></description>
     </item>
     <item>
@@ -83,13 +90,6 @@
       <link>http://localhost:1313/categories/configs/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/configs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Klipper</title>
-      <link>http://localhost:1313/categories/klipper/</link>
-      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/klipper/</guid>
       <description></description>
     </item>
     <item>

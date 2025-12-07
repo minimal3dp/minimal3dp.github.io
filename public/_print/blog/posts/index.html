@@ -349,6 +349,16 @@ This is the multi-page printable view of this section.
     
 	
 
+    <li><a href="#pg-8ffa9290b00dd9a4aa7773923961776f">How to Install Klipper with KIAUH (Step-by-Step BTT CB1 Guide)</a></li>
+
+
+
+    
+  
+    
+    
+	
+
     <li><a href="#pg-1fc1da927a0fde558428fde57b77ce3e">Creality K2 Plus Upgrade Series: Installing the Micro Swiss FlowTech Hotend</a></li>
 
 
@@ -563,6 +573,191 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-8ffa9290b00dd9a4aa7773923961776f">How to Install Klipper with KIAUH (Step-by-Step BTT CB1 Guide)</h1>
+	<div class="lead">Complete guide to flashing a BigTreeTech CB1 compute module and installing Klipper with KIAUH. Perfect for CR10 Smart Pro upgrades or any Klipper build.</div>
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2025-12-07" class="text-body-secondary">Sunday, December 07, 2025</time>
+        
+	</div>
+	<style>
+  pre code {
+    color: #1a202c !important;
+    background-color: #f7fafc !important;
+  }
+</style>
+<h2 id="part-1-the-part-0-setup-for-the-cr10-smart-pro-upgrade">Part 1: The &ldquo;Part 0&rdquo; Setup for the CR10 Smart Pro Upgrade<a class="td-heading-self-link" href="#part-1-the-part-0-setup-for-the-cr10-smart-pro-upgrade" aria-label="Heading self-link"></a></h2><p>If you are looking to unlock the full potential of your 3D printer, moving to Klipper is the ultimate upgrade. But before we can configure printer settings or tune input shapers, we need a solid foundation.</p>
+<p>In this guide (Part 1 of my <strong>CR10 Smart Pro Upgrade Series</strong>), I&rsquo;m walking you through the &ldquo;Part 0&rdquo; essential setup: flashing the operating system to a BigTreeTech CB1 and installing the full Klipper software stack using KIAUH (Klipper Installation And Update Helper).</p>
+<p>While I am performing this on a CR10 Smart Pro, this guide applies to anyone setting up a <strong>BigTreeTech CB1</strong> for the first time.</p>
+<h3 id="-hardware-used-in-this-build">🛠️ Hardware Used in This Build<a class="td-heading-self-link" href="#-hardware-used-in-this-build" aria-label="Heading self-link"></a></h3><p>Below are the key components I used for this build. These are affiliate links—if you purchase through them, I earn a small commission at no extra cost to you, which helps support the channel.</p>
+
+
+
+
+
+<div class="m3dp-card ">
+  
+  
+  <div class="m3dp-card__body">
+    <h4 id="bigtreetech-cb1-setup">BigTreeTech CB1 Setup<a class="td-heading-self-link" href="#bigtreetech-cb1-setup" aria-label="Heading self-link"></a></h4><div class="affiliate-product-card">
+  <div class="product-image">
+    <img src="https://cdn.shopify.com/s/files/1/0245/5962/2992/products/CB1_a0efc6a4-c556-45c0-b5f5-d2f30f4c33c4_600x600.jpg?v=1664532698" alt="BigTreeTech CB1 Compute Module" style="object-fit: contain; width: 100%; height: 200px;">
+  </div>
+  <div class="product-info">
+    <h4 class="product-title">BigTreeTech CB1 Compute Module</h4>
+    <div class="price">$30–$40</div>
+    <div class="product-description">High-performance compute module for 3D printer control. Drop-in replacement for Raspberry Pi CM4.</div>
+  </div>
+</div>
+<a href="https://amzn.to/4rIZMhQ" class="btn btn-amazon" data-location="klipper_install_guide_hardware">Buy on Amazon</a>
+<hr>
+<div class="affiliate-product-card">
+  <div class="product-image">
+    <img src="https://cdn.shopify.com/s/files/1/0245/5962/2992/products/BTT-M5P-Motherboard-01-1600_600x600.jpg" alt="BigTreeTech M5P Board" style="object-fit: contain; width: 100%; height: 200px;">
+  </div>
+  <div class="product-info">
+    <h4 class="product-title">BigTreeTech M5P Board</h4>
+    <div class="price">$50–$80</div>
+    <div class="product-description">Motherboard for CB1 integration. Supports multiple stepper motors and sensors.</div>
+  </div>
+</div>
+<a href="https://amzn.to/48uRaCw" class="btn btn-amazon" data-location="klipper_install_guide_hardware">Buy on Amazon</a>
+<hr>
+<div class="affiliate-product-card">
+  <div class="product-image">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81TnbkHnXmL._SL1500_.jpg" alt="Reliable MicroSD Card 32GB" style="object-fit: contain; width: 100%; height: 200px;">
+  </div>
+  <div class="product-info">
+    <h4 class="product-title">Reliable MicroSD Card (32GB)</h4>
+    <div class="price">$10–$15</div>
+    <div class="product-description">High-speed card for OS imaging. Look for Class 10 or UHS-II rated cards for reliability.</div>
+  </div>
+</div>
+<a href="https://amzn.to/3MloTXS" class="btn btn-amazon" data-location="klipper_install_guide_hardware">Buy on Amazon</a>
+<p class="affiliate-disclosure">As an Amazon Associate, I earn from qualifying purchases. This helps support the channel at no extra cost to you.</p>
+
+  </div>
+</div>
+
+<hr>
+<h3 id="step-1-imaging-the-sd-card">Step 1: Imaging the SD Card<a class="td-heading-self-link" href="#step-1-imaging-the-sd-card" aria-label="Heading self-link"></a></h3><p>The first step is getting the operating system onto your microSD card.</p>
+<ol>
+<li><strong>Download the Raspberry Pi Imager:</strong> You&rsquo;ll need this tool to flash the image file. Download it from the official Raspberry Pi website.</li>
+<li><strong>Download the CB1 Image:</strong> Head to the BigTreeTech GitHub page. I am using the <strong>CB1 Debian 12 Minimal Kernel 6.6 image</strong>.</li>
+<li><strong>Flash the Card:</strong>
+<ul>
+<li>Open Raspberry Pi Imager.</li>
+<li>Under <strong>Device</strong>, select &ldquo;No Filtering&rdquo; from the dropdown.</li>
+<li>Under <strong>OS</strong>, scroll down to &ldquo;Use Custom&rdquo; and select the CB1 image you just downloaded.</li>
+<li>Select your SD card (ensure you don&rsquo;t have important files on it, as it will be erased!).</li>
+<li>Hit <strong>Write</strong>. This usually takes 3 to 5 minutes.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-2-configuring-wi-fi-the-critical-step">Step 2: Configuring Wi-Fi (The Critical Step)<a class="td-heading-self-link" href="#step-2-configuring-wi-fi-the-critical-step" aria-label="Heading self-link"></a></h3><p>Before putting the card into the printer, we need to tell it how to connect to the network. <strong>Note:</strong> You cannot do this step easily on a Mac; it is best done on Windows.</p>
+<ol>
+<li>Re-insert the finished SD card into your computer.</li>
+<li>Open the drive and look for a file named <code>system.cfg</code>.</li>
+<li><strong>Important:</strong> Open this file with <strong>Notepad++</strong> (do not use WordPad, as it can mess up the formatting).</li>
+<li><strong>Edit the Hostname:</strong> I changed my hostname to <code>CR10-Smart-Pro</code> so it is easy to find on the network.</li>
+<li><strong>Edit Wi-Fi Settings:</strong> Uncomment (remove the <code>#</code>) the <code>WIFI_SSID</code> and <code>WIFI_PASSWD</code> lines. Enter your router name and password.</li>
+<li>Save the file and eject the card.</li>
+</ol>
+<h3 id="step-3-first-boot-and-ssh-access">Step 3: First Boot and SSH Access<a class="td-heading-self-link" href="#step-3-first-boot-and-ssh-access" aria-label="Heading self-link"></a></h3><p>Insert the SD card into your CB1/Printer and power it on. Give it a few minutes to boot up.</p>
+<ol>
+<li>Open <strong>PuTTY</strong> (or your preferred terminal).</li>
+<li>Connect to the printer using the hostname you set (e.g., <code>CR10-Smart-Pro</code>) or its IP address.</li>
+<li><strong>Default Credentials:</strong>
+<ul>
+<li>Username: <code>root</code></li>
+<li>Password: <code>root</code></li>
+</ul>
+</li>
+<li>The system will prompt you to change the password immediately. I also recommend setting up a standard user account (I set mine up as &ldquo;mike&rdquo;) so you aren&rsquo;t always running as root.</li>
+</ol>
+<h3 id="step-4-installing-klipper-with-kiauh">Step 4: Installing Klipper with KIAUH<a class="td-heading-self-link" href="#step-4-installing-klipper-with-kiauh" aria-label="Heading self-link"></a></h3><p>The OS image provided by BigTreeTech is often a bit old (mine was nearly a year old), so we need to update it and install the 3D printing software.</p>
+<ol>
+<li><strong>Update System:</strong> Run the update commands provided in the terminal to ensure packages are current.</li>
+<li><strong>Install Git:</strong> You need Git installed to clone the KIAUH repository.</li>
+<li><strong>Run KIAUH:</strong>
+Clone the repo and launch the script:
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/dw-0/kiauh.git
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> kiauh
+</span></span><span style="display:flex;"><span>./kiauh.sh
+</span></span></code></pre></div></li>
+</ol>
+<p>From the KIAUH menu, select <strong>Install</strong> (Option 1) and install the following components in order:</p>
+<ul>
+<li><strong>Klipper:</strong> Select Python 3.x. When asked about instances, select &ldquo;1&rdquo; (since this CB1 manages one printer).</li>
+<li><strong>Moonraker:</strong> Install with default config.</li>
+<li><strong>Mainsail:</strong> This is my preferred web interface. It will default to port 80.</li>
+<li><strong>KlipperScreen:</strong> Essential if you plan on adding a touchscreen later.</li>
+<li><strong>Crowsnest:</strong> Install this if you plan to use a webcam for monitoring.</li>
+</ul>
+<h3 id="summary--whats-next">Summary &amp; What&rsquo;s Next<a class="td-heading-self-link" href="#summary--whats-next" aria-label="Heading self-link"></a></h3><p>Once KIAUH finishes, you have a CB1 that is fully loaded with the Klipper ecosystem. However, the printer itself isn&rsquo;t printing yet.</p>
+<p>In <strong>Part 2</strong>, we will take the next step: flashing the firmware to the printer&rsquo;s mainboard and configuring the <code>printer.cfg</code> file.</p>
+<hr>
+<h2 id="-resources--tools">🎯 Resources &amp; Tools<a class="td-heading-self-link" href="#-resources--tools" aria-label="Heading self-link"></a></h2><h3 id="minimal-3dp-web-applications-beta">Minimal 3DP Web Applications (Beta)<a class="td-heading-self-link" href="#minimal-3dp-web-applications-beta" aria-label="Heading self-link"></a></h3><p>Stop guessing and start printing with precision using my custom tools:</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="m3dp-cta m3dp-cta--calculator">
+  <h3 class="m3dp-cta__title">🧮 Try Our Free Calculator</h3>
+  
+    <p class="m3dp-cta__text">Explore the <strong>FDM Cost Calculator</strong> to optimize your print costs and material waste.</p>
+  
+  <a class="m3dp-cta__btn" 
+     href="/tools/m3dp-fdm-cost-calculator/" 
+     onclick="trackCtaClick('calculator','klipper_install_guide_tools')">
+    🎯 Open Calculator
+  </a>
+</div>
+
+
+
+<p><strong>📊 Available Tools:</strong></p>
+<ul>
+<li><strong>Start Here (Docs &amp; Guides):</strong> <a href="https://minimal3dp.github.io">minimal3dp.github.io</a></li>
+<li><strong>OrcaSlicer Profile Database:</strong> <a href="https://settings.minimal3dp.com">settings.minimal3dp.com</a></li>
+<li><strong>Filament Tuning Database:</strong> <a href="https://filament.minimal3dp.com">filament.minimal3dp.com</a></li>
+</ul>
+<h3 id="-support-the-channel">☕ Support the Channel<a class="td-heading-self-link" href="#-support-the-channel" aria-label="Heading self-link"></a></h3><p>Did this guide save you hours of troubleshooting?</p>
+<a href="https://ko-fi.com/minimal3dp" 
+     class="m3dp-badge m3dp-badge--support"
+     data-location="klipper_install_guide_footer"
+     onclick="if (typeof trackCtaClick === 'function') { trackCtaClick('support', '\nBuy Me a Coffee\n', 'klipper_install_guide_footer'); }"><span class="m3dp-badge__label">
+Buy Me a Coffee
+</span>
+  </a>
+<p>Your support helps me create more in-depth guides like this one.</p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-1fc1da927a0fde558428fde57b77ce3e">Creality K2 Plus Upgrade Series: Installing the Micro Swiss FlowTech Hotend</h1>
 	<div class="lead">Complete technical guide to upgrading your Creality K2 Plus with the Micro Swiss FlowTech hotend and CM2 High Flow hardened steel nozzle. Includes weight comparison, installation steps, and calibration tips.</div>
 	<div class="td-byline mb-4">
