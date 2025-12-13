@@ -1,3 +1,46 @@
+# TODO (Minimal3DP Site)
+
+Status: December 12, 2025
+
+## High Priority
+- Code blocks: move inline style fix to SCSS
+  - Replace the inline `<style> pre code { ... } </style>` in posts with a site-wide SCSS override (e.g., `assets/scss/_styles_project.scss`) for Prism/Docsy code blocks.
+  - Ensure dark text and light background across all themes.
+- Affiliate components: unify via DS
+  - Migrate raw HTML affiliate cards to a DS shortcode or partial (consistent layout, tracking, and images).
+  - Standardize `data-location` values for GA4 (define taxonomy: `home_hero`, `blog_post_footer`, `tools_index_grid`, etc.).
+- External links: replace placeholder/redirector URLs
+  - Remove `https://www.google.com/search?q=` wrappers; use direct canonical URLs (Amazon, Ko‑Fi, site domains).
+  - Run broken link check across content.
+- Images: finalize responsive, optimized assets
+  - Replace temporary CDN placeholders with owned, optimized images in `static/images/`.
+  - Prefer Hugo `imgproc` shortcode for responsiveness and alt text.
+
+## Medium Priority
+- DS documentation screenshots
+  - Add real screenshots under `m3dp-design-system/docs/images/` and embed inline in `docs/components.md`.
+- CI: expand validation
+  - Extend CSS class presence checks for DS (`.m3dp-badge`, `.m3dp-btn`, `.m3dp-cta`, `.affiliate-product-card`).
+  - Optional: add `stylelint` + rules for component CSS consistency.
+- Changelog automation
+  - Confirm release workflow appends to `CHANGELOG.md` on publish; optionally add an "Unreleased" section rotation.
+- Content structure consistency
+  - Ensure all blog posts live in a folder with `index.md` (completed for new post; audit older posts).
+
+## Low Priority / Nice-to-have
+- Analytics: event taxonomy doc
+  - Create a short doc defining allowed `location` values and usage examples.
+- Performance: image and asset audit
+  - Add Hugo image processing presets and lazy-loading defaults; verify Lighthouse scores.
+- Netlify config cleanup
+  - If migrating fully to Railway, remove `netlify.toml` or comment as deprecated in README.
+- Docs cross-links
+  - Link `INTEGRATION_GUIDE.md` and DS docs from site README.
+
+## Deployment / Infra
+- Railway deployment
+  - Follow `DEPLOYMENT_RAILWAY.md` to set up Static Site service with `hugo --gc --minify` → `public/`.
+  - Alternatively, use Dockerfile + NGINX; see guide for sample files and steps.
 # Minimal 3DP TODO & Recommendations
 
 **Last Updated:** December 2025  
