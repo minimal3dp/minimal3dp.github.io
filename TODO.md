@@ -105,15 +105,15 @@ Status: December 12, 2025
 **Goal:** Build the "force multiplier" that automates affiliate management and content gap analysis.
 
 #### A. Core M3DP-BRIDGE Application
-- [ ] **Scaffold M3DP-BRIDGE app** using AI Context Block from Strategic Blueprint
+- [x] **Scaffold M3DP-BRIDGE app** using AI Context Block from Strategic Blueprint
   - FastAPI + PostgreSQL + HTMX stack
   - Models: Printer, Filament, SlicerProfile, AffiliateLink
-  - Deploy to Railway.app ($5/mo Hobby plan)
-- [ ] **Smart Link Redirect System** (Critical Path)
+  - Ready for local development (Docker Compose)
+- [x] **Smart Link Redirect System** (Critical Path)
   - Implement `GET /go/{slug}` endpoint with async click logging
-  - Create `go.minimal3dp.com` CNAME pointing to Railway
-  - Replace top 50 YouTube video static links with smart links
-  - **Impact:** Prevents revenue loss from out-of-stock items, enables A/B testing
+  - Create `go.minimal3dp.com` CNAME pointing to Railway (Pending Deploy)
+  - Replace top 50 YouTube video static links with smart links (Audit Complete, Pending Data Entry)
+  - **Impact:** Prevents revenue loss from out-of-stock items, enabling A/B testing
 - [ ] **Profile Database MVP**
   - Seed database with 20 validated Printer + Filament + SlicerProfile combos
   - Create admin interface for adding/editing profiles (HTMX forms)
@@ -189,9 +189,9 @@ Status: December 12, 2025
 - [ ] **Create go.minimal3dp.com subdomain**
   - CNAME DNS record pointing to Railway app
   - Test redirect from `go.minimal3dp.com/test` → Amazon
-- [ ] **Audit Top 50 YouTube Videos**
+- [x] **Audit Top 50 YouTube Videos**
   - Identify videos with highest affiliate potential
-  - Document all Amazon links for migration to smart links
+  - Document all Amazon links for migration to smart links (See `smart_link_audit.md`)
   - Prioritize videos with >10k views
 
 ### Content Execution
