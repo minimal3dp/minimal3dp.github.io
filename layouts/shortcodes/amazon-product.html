@@ -1,9 +1,29 @@
 {{/* Amazon Affiliate Product Card using Design System */}}
-{{ $asin := .Get "asin" }}
-{{ $title := .Get "title" }}
-{{ $image := .Get "image" }}
-{{ $price := .Get "price" }}
-{{ $description := .Get "description" | default .Inner }}
+{{ $id := .Get "id" }}
+{{ $product := dict }}
+
+{{/* Generic lookup logic for affiliate-products.yaml */}}
+{{ if $id }}
+{{/* Access data file with hyphenated name using index */}}
+{{ $data := index site.Data "affiliate-products" }}
+{{/* Since the yaml is structured by category, we must iterate */}}
+{{ range $category, $items := $data }}
+{{ if reflect.IsSlice $items }}
+{{ range $items }}
+{{ if eq .id $id }}
+{{ $product = . }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{ $asin := .Get "asin" | default $product.asin }}
+{{ $title := .Get "title" | default $product.name }}
+{{ $image := .Get "image" | default $product.image }}
+{{ $price := .Get "price" | default $product.price }}
+{{ $description := .Get "description" | default .Inner | default $product.description }}
+{{ $customUrl := .Get "url" | default $product.url }}
 
 <div class="m3dp-card m3dp-card--affiliate">
   {{ if $image }}
@@ -23,14 +43,21 @@
     <div class="m3dp-card__body">{{ $description | markdownify }}</div>
     {{ end }}
 
+    {{ if $customUrl }}
+    <a href="{{ $customUrl }}" class="m3dp-btn--amazon" target="_blank" rel="nofollow noopener"
+      onclick="trackAffiliateClick('custom', '{{ $id }}', '{{ $title }}')">
+      View Deal
+    </a>
+    {{ else if $asin }}
     <a href="https://www.amazon.com/dp/{{ $asin }}?tag={{ site.Params.affiliate_tag }}" class="m3dp-btn--amazon"
       target="_blank" rel="nofollow noopener" onclick="trackAffiliateClick('amazon', '{{ $asin }}', '{{ $title }}')">
       View on Amazon
     </a>
+    {{ end }}
 
     {{ if site.Params.affiliate_disclosure }}
     <p class="m3dp-affiliate-disclosure">
-      As an Amazon Associate, we earn from qualifying purchases.
+      As an Associate, we earn from qualifying purchases.
     </p>
     {{ end }}
   </div>

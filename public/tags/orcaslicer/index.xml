@@ -1,152 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Orcaslicer on Minimal 3DP</title>
-    <link>http://localhost:1313/tags/orcaslicer/</link>
-    <description>Recent content in Orcaslicer on Minimal 3DP</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 19 Nov 2025 22:37:22 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printers/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printers/cr6-se/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/cr6-se/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/ender-3-s1-plus/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printers/mercury-one/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/mercury-one/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printers/sidewinder-x1/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/sidewinder-x1/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printers/voron-2.4-pro&#43;/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printing-reviews/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printing-reviews/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3d-printing-reviews/fixdry-double-nt1/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/journal/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/journal/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/journal/belt-driven-ender-3/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/journal/belt-driven-ender-3/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/journal/voron-2.4-r2/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/journal/voron-2.4-r2/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/journal/vzbot/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/journal/vzbot/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/overview/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/overview/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/tutorials/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tutorials/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/projects/tutorials/orca-slicer/_template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tutorials/orca-slicer/_template/</guid>
-      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>K2 Plus Upgrade Series Part 3: Klipper Installation &amp; OrcaSlicer Profile</title>
-      <link>http://localhost:1313/blog/2025/11/19/k2-plus-upgrade-series-part-3-klipper-installation-orcaslicer-profile/</link>
-      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025/11/19/k2-plus-upgrade-series-part-3-klipper-installation-orcaslicer-profile/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#overview&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Transformation benefits: speed, macro control, print quality.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#prerequisites&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Completed Part 1 &amp;amp; 2; hardware state summary.&lt;/p&gt;&#xA;&lt;h2 id=&#34;klipper-installation&#34;&gt;Klipper Installation&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#klipper-installation&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Flash process; configuration file sections; CAN notes (future expansion).&lt;/p&gt;&#xA;&lt;h2 id=&#34;orcaslicer-profile-tuning&#34;&gt;OrcaSlicer Profile Tuning&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#orcaslicer-profile-tuning&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Baseline settings; acceleration, input shaping references; filament presets.&lt;/p&gt;&#xA;&lt;h2 id=&#34;validation--benchmarks&#34;&gt;Validation &amp;amp; Benchmarks&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#validation--benchmarks&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Speed vs quality trade-offs; sample prints.&lt;/p&gt;&#xA;&lt;h2 id=&#34;series-wrap-up&#34;&gt;Series Wrap-Up&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#series-wrap-up&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Summarize improvements; invite feedback; internal links to related guides.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mastering Bed Types in OrcaSlicer: Automate Z-Offsets and Temperatures</title>
-      <link>http://localhost:1313/blog/2025/11/19/mastering-bed-types-in-orcaslicer-automate-z-offsets-and-temperatures/</link>
-      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025/11/19/mastering-bed-types-in-orcaslicer-automate-z-offsets-and-temperatures/</guid>
-      <description>&lt;p&gt;I found a feature that is incredibly powerful for anyone running multiple build plates on a single printer: &lt;strong&gt;specifying bed types&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;If you swap between a smooth PEI sheet, a textured plate, or a cool plate, you usually have to manually adjust your Z-offset or run a bed level every time. However, OrcaSlicer allows you to automate this process, saving your Z-offset and temperature settings based on the specific bed you select. For broader slicer tuning, visit the &lt;a href=&#34;http://localhost:1313/projects/tutorials/orca-slicer/&#34;&gt;OrcaSlicer Tutorials Hub&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Stop Guessing: I Built a FREE App for Your Best 3D Slicer Settings</title>
-      <link>http://localhost:1313/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</link>
-      <pubDate>Sat, 15 Nov 2025 12:00:00 -0600</pubDate>
-      <guid>http://localhost:1313/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</guid>
-      <description>&lt;div class=&#34;alert alert-success&#34; style=&#34;border-left: 4px solid #10B981; background: #10B98115; padding: 15px 20px; margin: 20px 0; border-radius: 4px;&#34;&gt;&#xA;  &lt;strong&gt;✅ Success:&lt;/strong&gt;&#xA;  &lt;strong&gt;🎉 NEW FREE TOOL LAUNCH:&lt;/strong&gt; The OrcaSlicer Expert Assistant is now live at &lt;a href=&#34;https://settings.minimal3dp.com&#34;&gt;settings.minimal3dp.com&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Hey, this is Mike from Minimal3DP.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had a lot of time to think recently while recovering from heart surgery, and I put that time to use. Today, I want to talk about &amp;ldquo;the best 3D printer slicer settings&amp;rdquo; and what that really means.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>This Week on Minimal 3DP (April 28)</title>
-      <link>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link>
-      <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid>
-      <description>&lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 202px&#34;&gt;&#xA;&lt;img class=&#34;card-img-top img-fluid&#34; src=&#34;http://localhost:1313/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu_e991f8ad21a544bc.PNG&#34; width=&#34;192&#34; height=&#34;192&#34;&gt;&#xA;&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;&#xA;&lt;p class=&#34;card-text&#34;&gt;&#xA;&#xA;&#xA;OrcaSlicer Logo&#xA;&lt;small class=&#34;text-body-secondary&#34;&gt;&lt;br/&gt;Photo: SoftFever&lt;/small&gt;&#xA;&lt;/p&gt;&#xA;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;the-week-of-april-28st-2024&#34;&gt;The Week of April 28st 2024&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#the-week-of-april-28st-2024&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;I am currently working on several projects this week. They include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://minimal3dp.com/projects/ideas/voron-2.4-r2/&#34;&gt;Voron 2.4 R2 Pro+ Build&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Orca Slicer Seam Settings&lt;/li&gt;&#xA;&lt;li&gt;STEM Outreach&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;voron-24-r2-pro-build&#34;&gt;Voron 2.4 R2 Pro+ Build&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#voron-24-r2-pro-build&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OrcaSlicer Calibration and Max Flowrate</title>
-      <link>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link>
-      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid>
-      <description>&lt;h1 id=&#34;orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool&#34;&gt;OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&#34;max-volumetric-speed-defined&#34;&gt;Max Volumetric Speed Defined&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#max-volumetric-speed-defined&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;According to &lt;a href=&#34;https://help.prusa3d.com/article/max-volumetric-speed_127176&#34;&gt;Prusa3D&lt;/a&gt;, Max Volumetric Speed is defined as:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;video-description&#34;&gt;Video Description&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#video-description&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Orcaslicer on Minimal 3DP</title><link>/tags/orcaslicer/</link><description>Recent content in Orcaslicer on Minimal 3DP</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/orcaslicer/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>/projects/3d-printers/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printers/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/3d-printers/cr6-se/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printers/cr6-se/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/3d-printers/ender-3-s1-plus/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printers/ender-3-s1-plus/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/3d-printers/mercury-one/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printers/mercury-one/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/3d-printers/sidewinder-x1/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printers/sidewinder-x1/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/3d-printers/voron-2.4-pro+/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printers/voron-2.4-pro+/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/3d-printing-reviews/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printing-reviews/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/3d-printing-reviews/fixdry-double-nt1/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/3d-printing-reviews/fixdry-double-nt1/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/journal/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/journal/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/journal/belt-driven-ender-3/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/journal/belt-driven-ender-3/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/journal/voron-2.4-r2/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/journal/voron-2.4-r2/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/journal/vzbot/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/journal/vzbot/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/overview/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/overview/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/tutorials/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/tutorials/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title/><link>/projects/tutorials/orca-slicer/_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/tutorials/orca-slicer/_template/</guid><description>&lt;div class="pageinfo pageinfo-primary"&gt;
+
+&lt;/div&gt;</description></item><item><title>K2 Plus Upgrade Series Part 3: Klipper Installation &amp; OrcaSlicer Profile</title><link>/blog/2025/11/19/k2-plus-upgrade-series-part-3-klipper-installation-orcaslicer-profile/</link><pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/19/k2-plus-upgrade-series-part-3-klipper-installation-orcaslicer-profile/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Transformation benefits: speed, macro control, print quality.&lt;/p&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Completed Part 1 &amp;amp; 2; hardware state summary.&lt;/p&gt;
+&lt;h2 id="klipper-installation"&gt;Klipper Installation&lt;a class="td-heading-self-link" href="#klipper-installation" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Flash process; configuration file sections; CAN notes (future expansion).&lt;/p&gt;
+&lt;h2 id="orcaslicer-profile-tuning"&gt;OrcaSlicer Profile Tuning&lt;a class="td-heading-self-link" href="#orcaslicer-profile-tuning" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Baseline settings; acceleration, input shaping references; filament presets.&lt;/p&gt;
+&lt;h2 id="validation--benchmarks"&gt;Validation &amp;amp; Benchmarks&lt;a class="td-heading-self-link" href="#validation--benchmarks" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Speed vs quality trade-offs; sample prints.&lt;/p&gt;
+&lt;h2 id="series-wrap-up"&gt;Series Wrap-Up&lt;a class="td-heading-self-link" href="#series-wrap-up" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Summarize improvements; invite feedback; internal links to related guides.&lt;/p&gt;</description></item><item><title>Mastering Bed Types in OrcaSlicer: Automate Z-Offsets and Temperatures</title><link>/blog/2025/11/19/mastering-bed-types-in-orcaslicer-automate-z-offsets-and-temperatures/</link><pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/19/mastering-bed-types-in-orcaslicer-automate-z-offsets-and-temperatures/</guid><description>&lt;p&gt;I found a feature that is incredibly powerful for anyone running multiple build plates on a single printer: &lt;strong&gt;specifying bed types&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you swap between a smooth PEI sheet, a textured plate, or a cool plate, you usually have to manually adjust your Z-offset or run a bed level every time. However, OrcaSlicer allows you to automate this process, saving your Z-offset and temperature settings based on the specific bed you select. For broader slicer tuning, visit the &lt;a href="/projects/tutorials/orca-slicer/"&gt;OrcaSlicer Tutorials Hub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Stop Guessing: I Built a FREE App for Your Best 3D Slicer Settings</title><link>/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</link><pubDate>Sat, 15 Nov 2025 12:00:00 -0600</pubDate><guid>/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/</guid><description>&lt;div class="alert alert-success" style="border-left: 4px solid #10B981; background: #10B98115; padding: 15px 20px; margin: 20px 0; border-radius: 4px;"&gt;
+ &lt;strong&gt;✅ Success:&lt;/strong&gt;
+ &lt;strong&gt;🎉 NEW FREE TOOL LAUNCH:&lt;/strong&gt; The OrcaSlicer Expert Assistant is now live at &lt;a href="https://settings.minimal3dp.com"&gt;settings.minimal3dp.com&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hey, this is Mike from Minimal3DP.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve had a lot of time to think recently while recovering from heart surgery, and I put that time to use. Today, I want to talk about &amp;ldquo;the best 3D printer slicer settings&amp;rdquo; and what that really means.&lt;/p&gt;</description></item><item><title>This Week on Minimal 3DP (April 28)</title><link>/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</link><pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate><guid>/blog/2024/04/28/this-week-on-minimal-3dp-april-28/</guid><description>&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 202px"&gt;
+&lt;img class="card-img-top img-fluid" src="/blog/2024/04/28/this-week-on-minimal-3dp-april-28/post-orcaslicer_hu_e991f8ad21a544bc.PNG" width="192" height="192"&gt;
+&lt;figcaption class="card-body px-0 pt-2 pb-0"&gt;
+&lt;p class="card-text"&gt;
+
+
+OrcaSlicer Logo
+&lt;small class="text-body-secondary"&gt;&lt;br/&gt;Photo: SoftFever&lt;/small&gt;
+&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id="the-week-of-april-28st-2024"&gt;The Week of April 28st 2024&lt;a class="td-heading-self-link" href="#the-week-of-april-28st-2024" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;I am currently working on several projects this week. They include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://minimal3dp.com/projects/ideas/voron-2.4-r2/"&gt;Voron 2.4 R2 Pro+ Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Orca Slicer Seam Settings&lt;/li&gt;
+&lt;li&gt;STEM Outreach&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="voron-24-r2-pro-build"&gt;Voron 2.4 R2 Pro+ Build&lt;a class="td-heading-self-link" href="#voron-24-r2-pro-build" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;i recordedcan unboxing video on Sunday and I have begun building the Voron this week. I am working myvway through the assembly manual and wiol drop a vireo of rrame assembly next weekend.&lt;/p&gt;</description></item><item><title>OrcaSlicer Calibration and Max Flowrate</title><link>/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/</guid><description>&lt;h1 id="orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool"&gt;OrcaSlicer Calibration and Max Flowrate: Fix It Fast with Orca Slicer&amp;rsquo;s Calibration Tool&lt;a class="td-heading-self-link" href="#orcaslicer-calibration-and-max-flowrate-fix-it-fast-with-orca-slicers-calibration-tool" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="max-volumetric-speed-defined"&gt;Max Volumetric Speed Defined&lt;a class="td-heading-self-link" href="#max-volumetric-speed-defined" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;According to &lt;a href="https://help.prusa3d.com/article/max-volumetric-speed_127176"&gt;Prusa3D&lt;/a&gt;, Max Volumetric Speed is defined as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Maximum volumetric speed setting (MVS) is one of the most powerful features in PrusaSlicer. The MVS setting essentially creates a manager for the maximum amount of filament that the slicer will attempt to push through your 3D printer’s hotend.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/midXjBUha74?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;h2 id="video-description"&gt;Video Description&lt;a class="td-heading-self-link" href="#video-description" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dial in Your Prints: OrcaSlicer Max Flow Rate Calibration Test&lt;/p&gt;</description></item></channel></rss>

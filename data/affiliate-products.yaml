@@ -568,3 +568,33 @@ hips:
     asin: "B0D25WQ29W"
     price: "$16.99"
     description: "High-impact polystyrene for support structures"
+
+# ============================================
+# BOARDS & HARDWARE
+# ============================================
+boards:
+  - id: btt-manta-e3-ez
+    name: "BigTreeTech Manta E3 EZ V1.0"
+    brand: "BigTreeTech"
+    asin: "B0C6LLFBN5"
+    price: "Check Price"
+    description: "32-bit silent motherboard designed for Ender 3 series, featuring EZ driver slots and direct HDMI support."
+
+  - id: cr10-smart-pro-kit
+    name: "Creality CR-10 Smart Pro Upgrade Kit"
+    brand: "Creality"
+    asin: ""
+    url: "https://s.click.aliexpress.com/e/_c3IvYGTn"
+    price: "Check Price"
+    description: "Essential upgrades for the CR-10 Smart Pro including PEI sheet and heavy duty springs."
+
+# ============================================
+# TOOLS
+# ============================================
+tools:
+  - id: icrimp-jst
+    name: "iCrimp JST Connector Crimping Tool"
+    brand: "iCrimp"
+    asin: "B078WNZ9FW"
+    price: "Check Price"
+    description: "Professional ratcheting crimper for JST-XH, Dupont 2.54mm, KF2510 connectors."
