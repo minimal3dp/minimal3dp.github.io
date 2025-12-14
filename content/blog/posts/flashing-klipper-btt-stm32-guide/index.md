@@ -3,7 +3,7 @@ title: "Unlocking Your Printer: The Definitive Guide to Flashing Klipper on BTT 
 description: "A definitive guide to flashing Klipper on BigTreeTech and STM32 boards. Covers KIAUH, the 'rename trick', and critical configuration steps."
 date: 2025-12-14
 lastmod: 2025-12-14
-draft: true
+draft: false
 categories: ["Tutorials", "Klipper", "Hardware"]
 tags: ["BigTreeTech", "STM32", "Klipper", "Firmware", "KIAUH", "Voron"]
 author: "Minimal 3DP"
