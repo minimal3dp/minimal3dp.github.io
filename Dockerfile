@@ -5,7 +5,7 @@ FROM node:20-slim AS builder
 # We use the pre-built binary to ensure compatibility and speed
 ENV HUGO_VERSION=0.152.2
 RUN apt-get update && apt-get install -y wget ca-certificates git golang && \
-    wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb && \
+    wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb && \
     dpkg -i hugo.deb && \
     rm hugo.deb && \
     rm -rf /var/lib/apt/lists/*
