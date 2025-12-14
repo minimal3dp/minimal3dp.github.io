@@ -17,8 +17,8 @@ This guide covers deploying the **Static Site** (Hugo) to Railway.app.
 3.  Scroll to **Build**.
     *   **Builder:** Set to **Railpack** (the successor to Nixpacks) or **Static Site**.
         *   *Note:* Nixpacks is deprecated. Railpack is the new default standard.
-    *   **Build Command:** `npm run build`
-        *   *Why?* Your `package.json` manages `hugo-extended` and `postcss`. Using `npm run build` ensures the correct versions are used.
+    *   **Build Command:** `npm install && npm run build`
+        *   *Why?* The build agent needs to install the dependencies (including Hugo) before running the build script.
     *   **Output Directory:** `public`
 4.  **Root Directory:** `/` (Default).
 
