@@ -21,6 +21,22 @@ uv run python scripts/fetch_ga4_popular.py
 uv run python scripts/fetch_youtube_popular.py
 ```
 
+## Deployment (Railway)
+
+This site is deployed on **Railway.app** using a Dockerfile.
+
+**To deploy updates:**
+```bash
+git push origin main
+```
+(Railway automatically builds and deploys from the `main` branch).
+
+**Manual Build Test (Local Docker):**
+```bash
+docker build -t m3dp-site .
+docker run -p 8080:80 m3dp-site
+```
+
 ## Run in Dev
 
 ```bash

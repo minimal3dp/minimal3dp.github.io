@@ -1,43 +1,36 @@
-# Agent Protocols & System Constraints
+# AGENTS.md: Minimal 3DP Ecosystem Rules
 
-## 🛑 Mission Lock
-**Primary Objective:** Build the **"Hardware Bridge"** — connecting mass-market appliance consumers to engineering deep-dives.
-**Constraint:** All generated content, code, or strategy MUST serve one of two funnels:
-1.  **Validated Data Ecosystem:** Tools that replace guesswork (Calculators, Slicer Profiles, Filament Tuning).
-2.  **Deep Dive Funnel:** High-technical-depth content that establishes authority (YouTube -> Website).
+## 1. 🧠 Core Directive (The "Sprint & Coast" Law)
+- **Review First:** Before generating code, check the user's current energy state (Sprint vs. Coast).
+- **Scope Control:** REJECT any request that adds new features during a "Coast" (Weeknight) phase. [cite_start]Only "Sprint" (Weekend) allows new logic.
+- **Anti-Distraction:** If the user changes topics (e.g., from "writing blog" to "redesigning logo"), INTERRUPT them. [cite_start]Ask: "Does this align with the current Sprint goal?".
 
-If a task does not fit these categories, **STOP** and request `Orchestrator` verification.
+## 2. 🛠 Tech Stack & Standards
+- [cite_start]**Platform:** Hugo (Static Site) + Docsy Theme.
+- **Deployment:** Railway + Google Antigravity.
+- **Styling:** TailwindCSS (via `m3dp-design-system`). DO NOT use inline styles or raw CSS files.
+- **Affiliates:** ALL product links must use the `m3dp-bridge` format (e.g., `{{< affiliate-link id="btt-manta" >}}`). NEVER use raw Amazon links.
 
----
+## 3. 📂 Project Structure
+- `content/blog/`: Technical tutorials.
+- `layouts/partials/`: HTML components.
+- `static/`: Images and compiled assets.
+- `AGENTS.md`: THIS FILE. Read it.
 
-## 🏗️ Project Structure & Subdomain Mapping
-Agents must strictly adhere to this mapping to prevent path hallucination.
+## 4. 🛑 "Hardware Bridge" Content Rules
+- **The Hook:** Every post MUST solve a specific software problem (e.g., "Input Shaping").
+- **The Bridge:** Every solution MUST link to a hardware component (e.g., "ADXL345 Sensor").
+- **Tone:** "Detailed and Boring." No fluff. [cite_start]Numbered lists for steps.
 
-| Subdomain | Physical Path | Purpose |
-| :--- | :--- | :--- |
-| **Main Site** (`minimal3dp.com`) | `content/blog/`, `content/projects/`, `content/_index.md` | General tutorials, project showcases, landing page. |
-| **Calc** (`calc.minimal3dp.com`) | `content/tools/`, `content/klipper-calibration/` | Physics-based calculators and interactive calibration guides. |
-| **Filament** (`filament.minimal3dp.com`) | `content/filament/` *(To Be Created)* | Tuning databases and material-specific guides. |
-| **Settings** (`settings.minimal3dp.com`) | `content/settings/` *(To Be Created)* | Slicer profiles (OrcaSlicer/PrusaSlicer) and config bundles. |
-| **Assets** | `static/`, `assets/scss/` | Images, global styles, and SCSS. |
+## 5. 🤖 Agent Configuration
+- **Location:** `.agent/` directory contains specific personas and workflows.
+- **Active Agents:**
+    -   `@Orchestrator`: Project Manager (.agent/rules/orchestrator.md)
+    -   `@Content_Ops`: Content Creator (.agent/rules/content_ops.md)
+    -   `@Strategy_Gen`: Planner (.agent/rules/strategy_gen.md)
+- **Workflows:** See `.agent/workflows/` for standard operating procedures.
 
----
-
-## 🛡️ Operational Dos & Don'ts
-
-### Dos (Enforced)
-1.  **Hugo Strict Mode:** All Hugo server commands must run with `-D` (Drafts) and `--panicOnWarning`. Zero tolerance for template warnings.
-2.  **Atomic Commits:** Changes to `content/` and `assets/` must be committed separately.
-3.  **Validate Links:** All internal links must use Hugo `ref` or `relref` shortcodes, not raw URLs.
-4.  **Hardware Accuracy:** When detailing specs for **Voron** or **Bambu Lab** printers, verify against official documentation or the `memory/hardware_specs.md` file (if exists). **DO NOT GUESS.**
-
-### Don'ts (Forbidden)
-1.  **No Global CSS Changes:** Do not modify `assets/scss/_styles_project.scss` or `m3dp-design-system` without explicit **Human Approval** via the Orchestrator.
-2.  **No Navigation Shifts:** Do not alter `hugo.toml` menu structures without a dedicated "Navigation Reshuffle" task.
-3.  **No Unvalidated Metrics:** Do not invent "Scores" or "Ratings" for printers/filament without a defined formula in `dev/refs/`.
-
----
-
-## 🚦 Safety Protocols
--   **CSS/JS Modifications:** Any change to `.scss` or `.js` files in `assets/` requires a `view_file` verification of the `hugo server` output (or browser screenshot) before task completion.
--   **New Sections:** creating a new top-level folder in `content/` requires User Approval.
+## 6. ✅ Definition of Done
+- Code compiles without warnings.
+- Affiliate links are verified against the `m3dp-bridge` database.
+- No new technical debt created (no new libraries without approval).

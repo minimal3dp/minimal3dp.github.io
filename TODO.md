@@ -38,9 +38,10 @@ Status: December 12, 2025
   - Link `INTEGRATION_GUIDE.md` and DS docs from site README.
 
 ## Deployment / Infra
-- Railway deployment
-  - Follow `DEPLOYMENT_RAILWAY.md` to set up Static Site service with `hugo --gc --minify` → `public/`.
-  - Alternatively, use Dockerfile + NGINX; see guide for sample files and steps.
+## Deployment / Infra
+- [x] Railway deployment
+  - Service: Static Site (via Dockerfile + NGINX)
+  - URL: https://minimal3dp.com
 # Minimal 3DP TODO & Recommendations
 
 **Last Updated:** December 2025  
@@ -190,9 +191,9 @@ Status: December 12, 2025
   - CNAME DNS record pointing to Railway app
   - Test redirect from `go.minimal3dp.com/test` → Amazon
 - [x] **Audit Top 50 YouTube Videos**
-  - Identify videos with highest affiliate potential
-  - Document all Amazon links for migration to smart links (See `smart_link_audit.md`)
-  - Prioritize videos with >10k views
+  - [x] Identify videos with highest affiliate potential
+  - [x] Document all Amazon links for migration to smart links (See `smart_link_audit.md`)
+  - [x] Prioritize videos with >10k views
 
 ### Content Execution
 - [ ] **Complete K2 Plus FlowTech Blog Post**
