@@ -4,11 +4,17 @@ FROM node:20-slim AS builder
 # Install Hugo Extended
 # We use the pre-built binary to ensure compatibility and speed
 ENV HUGO_VERSION=0.152.2
-RUN apt-get update && apt-get install -y wget ca-certificates git golang && \
+ENV GO_VERSION=1.25.4
+RUN apt-get update && apt-get install -y wget ca-certificates git tar && \
     wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb && \
     dpkg -i hugo.deb && \
     rm hugo.deb && \
+    wget -q https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
+    rm go${GO_VERSION}.linux-amd64.tar.gz && \
     rm -rf /var/lib/apt/lists/*
+
+ENV PATH="/usr/local/go/bin:${PATH}"
 
 WORKDIR /app
 
