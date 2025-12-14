@@ -1,64 +1,54 @@
-# Deployment: Railway.app Monorepo Guide
+# Deploying Minimal3DP Site to Railway
 
-This repository is a **Monorepo** containing two distinct services. You will deploy them as two separate services within a single Railway Project.
+This guide covers deploying the **Static Site** (Hugo) to Railway.app.
 
-| Service | Path | Type | Deployment Method |
-| :--- | :--- | :--- | :--- |
-| **Site (Static)** | `/` | Static Site | Hugo Build (`public/`) |
-| **App (Bridge)** | `/m3dp-bridge` | Web Service | Dockerfile (FastAPI + Postgres) |
+> **Note:** The `m3dp-bridge` application lives in a separate repository and is deployed separately.
 
----
+## step 1: Prepare Railway
 
-## Service 1: Minimal3DP Site (Stateless)
+1.  Log in to [Railway.app](https://railway.app/).
+2.  Click **New Project** > **Deploy from GitHub repo**.
+3.  Select `minimal3dp/minimal3dp.github.io`.
 
-This is the main documentation and blog.
+## Step 2: Configure Service
 
-1.  **Add Service > GitHub Repo**
-    *   Select `minimal3dp/minimal3dp.github.io`
-2.  **Settings > General**
-    *   **Root Directory:** `/` (Default)
-3.  **Settings > Build**
-    *   **Builder:** Static Site
-    *   **Build Command:** `hugo --gc --minify`
+1.  Click on the new service card to open **Settings**.
+2.  Go to the **Settings** tab.
+3.  Scroll to **Build**.
+    *   **Builder:** Set to **Railpack** (the successor to Nixpacks) or **Static Site**.
+        *   *Note:* Nixpacks is deprecated. Railpack is the new default standard.
+    *   **Build Command:** `npm run build`
+        *   *Why?* Your `package.json` manages `hugo-extended` and `postcss`. Using `npm run build` ensures the correct versions are used.
     *   **Output Directory:** `public`
-4.  **Domain:** `minimal3dp.com` (or Railway provided domain)
+4.  **Root Directory:** `/` (Default).
+
+## Step 3: Domain & Networking
+
+1.  Go to the **Settings** tab > **Networking**.
+2.  Click **Generate Domain** (to get a `*.up.railway.app` URL for testing).
+3.  (Optional) Click **Custom Domain** to connect `minimal3dp.com`.
+    *   Railway will provide DNS records (CNAME) to add to your registrar.
+
+## Step 4: Verify Environment
+
+Since this is a static site, you generally do *not* need Environment Variables unless your build scripts use them (e.g., Hugo secrets).
+
+1.  Go to **Variables**.
+2.  Ensure no conflicting variables are set.
+
+## Troubleshooting
+
+*   **Build Fails:** Check the **Deploy Logs**.
+    *   If it says `hugo: command not found`, ensure you are using `npm run build` (which uses the local `hugo-extended` from `node_modules`).
+*   **Styles Missing:** Ensure `Output Directory` is exactly `public`.
 
 ---
 
-## Service 2: M3DP-BRIDGE (Application)
-
-This is the "Smart Link" redirector and backend dashboard.
-
-### A. Database (PostgreSQL)
-1.  **Add Service > Database > PostgreSQL** in the same project.
-2.  Wait for it to deploy.
-3.  Copy the `DATABASE_URL` from the "Connect" tab.
-
-### B. Web Service (FastAPI)
-1.  **Add Service > GitHub Repo**
-    *   Select `minimal3dp/minimal3dp.github.io` (Again)
-2.  **Settings > General**
-    *   **Root Directory:** `/m3dp-bridge`  <-- **CRITICAL**
-3.  **Settings > Build**
-    *   **Builder:** Dockerfile
-        *   Railway should auto-detect the `Dockerfile` in `/m3dp-bridge`.
-4.  **Settings > Environment Variables**
-    *   `DATABASE_URL`: Paste the Postgres URL from Step A.
-    *   `PORT`: `8000`
-5.  **Domain:** `go.minimal3dp.com` (or `m3dp-bridge-production.up.railway.app`)
-
-### C. Verify Bridge
-1.  Visit `https://YOUR-APP-URL/health` -> Should return `{"status": "ok"}`.
-2.  Visit `https://YOUR-APP-URL/dashboard` -> Should show the Affiliate Link table.
-
----
-
-## Local Development (Docker Compose)
-To run the full stack locally (excluding the static site):
+## Local Build Verification
+Before pushing, you can verify the build command works locally:
 
 ```bash
-cd m3dp-bridge
-docker-compose up --build
+npm install
+npm run build
+# Check if public/ folder is generated
 ```
-
-Access Dashboard at: `http://localhost:8000/dashboard`
