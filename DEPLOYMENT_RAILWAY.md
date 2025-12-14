@@ -15,11 +15,10 @@ This guide covers deploying the **Static Site** (Hugo) to Railway.app.
 1.  Click on the new service card to open **Settings**.
 2.  Go to the **Settings** tab.
 3.  Scroll to **Build**.
-    *   **Builder:** Set to **Railpack** (the successor to Nixpacks) or **Static Site**.
-        *   *Note:* Nixpacks is deprecated. Railpack is the new default standard.
-    *   **Build Command:** `npm install && npm run build`
-        *   *Why?* The build agent needs to install the dependencies (including Hugo) before running the build script.
-    *   **Output Directory:** `public`
+    *   **Builder:** Select **Dockerfile**.
+        *   *Why?* This gives us complete control over the build process, avoiding Railpack's auto-detection errors.
+    *   **Build Command:** (Leave Empty - Docker handles this)
+    *   **Output Directory:** (Leave Empty - Docker handles this)
 4.  **Root Directory:** `/` (Default).
 
 ## Step 3: Domain & Networking
