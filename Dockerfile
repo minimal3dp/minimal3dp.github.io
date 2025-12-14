@@ -12,11 +12,11 @@ RUN apt-get update && apt-get install -y wget ca-certificates git && \
 
 WORKDIR /app
 
-# Copy dependency files first for caching
-COPY package.json package-lock.json ./
+# Copy dependency files
+COPY package.json ./
 
-# Install Node dependencies (including autoprefixer/postcss)
-RUN npm ci
+# Install Node dependencies
+RUN npm install
 
 # Copy the rest of the site (hugo.toml, content/, assets/, etc.)
 COPY . .
