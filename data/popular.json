@@ -8,34 +8,34 @@
     {
       "title": "Minimal 3DP",
       "url": "/",
-      "views": 779
+      "views": 777
     },
     {
       "title": "Klipper Calibration | Minimal 3DP",
       "url": "/klipper-calibration/",
-      "views": 392
+      "views": 405
     },
     {
       "title": "PID Tuning in Klipper | Minimal 3DP",
       "url": "/klipper-calibration/pid-tuning/",
-      "views": 323
+      "views": 321
     },
     {
       "title": "The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested | Minimal 3DP",
       "url": "/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/",
-      "views": 286
+      "views": 287
     }
   ],
   "blog": [
     {
       "title": "The Ultimate 3D Printing Filament Guide (2025) - Every Material Tested | Minimal 3DP",
       "url": "/blog/2025/11/13/the-ultimate-3d-printing-filament-guide-2025-every-material-tested/",
-      "views": 286
+      "views": 287
     },
     {
       "title": "OrcaSlicer 2.3.1 Alpha Just Dropped & How to Use the New Flow Rate Calibration | Minimal 3DP",
       "url": "/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/",
-      "views": 80
+      "views": 77
     },
     {
       "title": "Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon | Minimal 3DP",
@@ -45,7 +45,7 @@
     {
       "title": "3D Printing Blog - Tutorials, Reviews & News | Minimal 3DP",
       "url": "/blog/",
-      "views": 50
+      "views": 52
     },
     {
       "title": "Klipper Calibration Website | Minimal 3DP",
@@ -57,12 +57,12 @@
     {
       "title": "3D Print Cost Calculator | Minimal 3DP",
       "url": "/tools/m3dp-fdm-cost-calculator/",
-      "views": 260
+      "views": 261
     },
     {
       "title": "Free 3D Printing Calculators & Tools | Minimal 3DP",
       "url": "/tools/",
-      "views": 148
+      "views": 154
     },
     {
       "title": "3D Print Shrinkage Calculator | Minimal 3DP",
@@ -79,22 +79,22 @@
     {
       "title": "Zero G Mercury One.1 Klipper Config | Minimal 3DP",
       "url": "/projects/3d-printers/mercury-one/mercury-one-klipper-config/",
-      "views": 181
+      "views": 182
     },
     {
       "title": "Ender 3 S1 Plus (e3s1p) Klipper Config | Minimal 3DP",
       "url": "/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/",
-      "views": 99
+      "views": 94
     },
     {
       "title": "Projects | Minimal 3DP",
       "url": "/projects/",
-      "views": 49
+      "views": 48
     },
     {
       "title": "OrcaSlicer Calibration and Max Flowrate | Minimal 3DP",
       "url": "/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/",
-      "views": 44
+      "views": 43
     },
     {
       "title": "Zero G Mercury One.1 | Minimal 3DP",
