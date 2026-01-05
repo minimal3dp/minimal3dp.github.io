@@ -3,27 +3,27 @@
     {
       "title": "Minimal 3DP",
       "url": "/",
-      "views": 264
+      "views": 241
     },
     {
       "title": "Klipper Calibration | Minimal 3DP",
       "url": "/klipper-calibration/",
-      "views": 179
-    },
-    {
-      "title": "3D Print Cost Calculator | Minimal 3DP",
-      "url": "/tools/m3dp-fdm-cost-calculator/",
-      "views": 128
+      "views": 165
     },
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 118
+      "views": 126
+    },
+    {
+      "title": "3D Print Cost Calculator | Minimal 3DP",
+      "url": "/tools/m3dp-fdm-cost-calculator/",
+      "views": 119
     },
     {
       "title": "PID Tuning in Klipper | Minimal 3DP",
       "url": "/klipper-calibration/pid-tuning/",
-      "views": 105
+      "views": 96
     }
   ],
   "blog": [
@@ -40,12 +40,12 @@
     {
       "title": "Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon | Minimal 3DP",
       "url": "/blog/2025/05/03/level-up-your-prints-why-line-width-is-your-3d-printing-secret-weapon/",
-      "views": 30
+      "views": 28
     },
     {
       "title": "OrcaSlicer 2.3.1 Alpha Just Dropped & How to Use the New Flow Rate Calibration | Minimal 3DP",
       "url": "/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/",
-      "views": 29
+      "views": 28
     },
     {
       "title": "How to Install Klipper with KIAUH (Step-by-Step BTT CB1 Guide) | Minimal 3DP",
@@ -57,44 +57,44 @@
     {
       "title": "3D Print Cost Calculator | Minimal 3DP",
       "url": "/tools/m3dp-fdm-cost-calculator/",
-      "views": 128
+      "views": 119
     },
     {
       "title": "Free 3D Printing Calculators & Tools | Minimal 3DP",
       "url": "/tools/",
-      "views": 65
+      "views": 60
     },
     {
       "title": "3D Print Shrinkage Calculator | Minimal 3DP",
       "url": "/tools/m3dp-shinkage-calculator/",
-      "views": 44
+      "views": 42
     },
     {
       "title": "Minimal 3DP Platform",
       "url": "/tools/shrinkage/",
-      "views": 20
+      "views": 23
     }
   ],
   "projects": [
     {
       "title": "Zero G Mercury One.1 Klipper Config | Minimal 3DP",
       "url": "/projects/3d-printers/mercury-one/mercury-one-klipper-config/",
-      "views": 68
+      "views": 62
     },
     {
       "title": "Ender 3 S1 Plus (e3s1p) Klipper Config | Minimal 3DP",
       "url": "/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/",
-      "views": 45
+      "views": 41
     },
     {
       "title": "Projects | Minimal 3DP",
       "url": "/projects/",
-      "views": 15
+      "views": 13
     },
     {
       "title": "Zero G Mercury One.1 | Minimal 3DP",
       "url": "/projects/3d-printers/mercury-one/",
-      "views": 14
+      "views": 12
     },
     {
       "title": "Ultimaker Cura - Download and Install | Minimal 3DP",
