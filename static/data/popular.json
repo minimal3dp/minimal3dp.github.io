@@ -3,34 +3,34 @@
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 252
+      "views": 273
     },
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 250
+      "views": 260
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 129
+      "views": 136
     },
     {
       "title": "FDM Filament Finder - M3DP",
       "url": "/filament/",
-      "views": 94
+      "views": 100
     },
     {
-      "title": "Minimal 3DP",
-      "url": "/",
-      "views": 59
+      "title": "FDM Filament Finder - M3DP",
+      "url": "/filament/wizard",
+      "views": 56
     }
   ],
   "blog": [
     {
       "title": "Unlocking Your Printer: The Definitive Guide to Flashing Klipper on BTT & STM32 Boards | Minimal 3DP",
       "url": "/blog/2025/12/14/unlocking-your-printer-the-definitive-guide-to-flashing-klipper-on-btt-stm32-boards/",
-      "views": 36
+      "views": 15
     },
     {
       "title": "Level Up Your Prints: Why Line Width is Your 3D Printing Secret Weapon | Minimal 3DP",
@@ -43,14 +43,14 @@
       "views": 4
     },
     {
-      "title": "3D Printing Blog - Tutorials, Reviews & News | Minimal 3DP",
-      "url": "/blog/",
+      "title": "Stop Guessing: I Built a FREE App for Your Best 3D Slicer Settings | Minimal 3DP",
+      "url": "/blog/2025/11/15/stop-guessing-i-built-a-free-app-for-your-best-3d-slicer-settings/",
       "views": 3
     },
     {
-      "title": "OrcaSlicer 2.3.1 Alpha Just Dropped & How to Use the New Flow Rate Calibration | Minimal 3DP",
-      "url": "/blog/2025/08/24/orcaslicer-2.3.1-alpha-just-dropped-how-to-use-the-new-flow-rate-calibration/",
-      "views": 3
+      "title": "3D Printing Blog - Tutorials, Reviews & News | Minimal 3DP",
+      "url": "/blog/",
+      "views": 2
     }
   ],
   "tools": [
@@ -62,12 +62,12 @@
     {
       "title": "3D Print Cost Calculator | Minimal 3DP",
       "url": "/tools/m3dp-fdm-cost-calculator/",
-      "views": 30
+      "views": 21
     },
     {
       "title": "Free 3D Printing Calculators & Tools | Minimal 3DP",
       "url": "/tools/",
-      "views": 9
+      "views": 4
     },
     {
       "title": "3D Print Shrinkage Calculator | Minimal 3DP",
@@ -79,26 +79,21 @@
     {
       "title": "Ender 3 S1 Plus (e3s1p) Klipper Config | Minimal 3DP",
       "url": "/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/",
-      "views": 15
-    },
-    {
-      "title": "Zero G Mercury One.1 Klipper Config | Minimal 3DP",
-      "url": "/projects/3d-printers/mercury-one/mercury-one-klipper-config/",
-      "views": 6
+      "views": 12
     },
     {
       "title": "Projects | Minimal 3DP",
       "url": "/projects/",
-      "views": 5
+      "views": 3
+    },
+    {
+      "title": "Zero G Mercury One.1 Klipper Config | Minimal 3DP",
+      "url": "/projects/3d-printers/mercury-one/mercury-one-klipper-config/",
+      "views": 3
     },
     {
       "title": "OrcaSlicer Calibration and Max Flowrate | Minimal 3DP",
       "url": "/projects/tutorials/orca-slicer/orca-slicer-calibration-max-flowrate/",
-      "views": 4
-    },
-    {
-      "title": "Tutorials | Minimal 3DP",
-      "url": "/projects/tutorials/",
       "views": 3
     }
   ]
