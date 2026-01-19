@@ -43,7 +43,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "formBuilder": "^3.19.7",
-    "jquery": "^3.7.1",
+    "jquery": "^4.0.0",
     "hugo-extended": "^0.152.2"
   }
 }
