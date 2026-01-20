@@ -3,27 +3,27 @@
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 346
+      "views": 369
     },
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 322
+      "views": 336
     },
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 193
+      "views": 228
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 176
+      "views": 196
     },
     {
       "title": "FDM Filament Finder - M3DP",
       "url": "/filament/",
-      "views": 139
+      "views": 150
     }
   ],
   "blog": [
@@ -37,7 +37,7 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 193
+      "views": 228
     },
     {
       "title": "Minimal 3DP Platform",
@@ -47,11 +47,6 @@
     {
       "title": "3D Print Shrinkage Calculator | Minimal 3DP",
       "url": "/tools/m3dp-shinkage-calculator/",
-      "views": 3
-    },
-    {
-      "title": "3D Print Cost Calculator | Minimal 3DP",
-      "url": "/tools/m3dp-fdm-cost-calculator/",
       "views": 2
     },
     {
@@ -64,7 +59,7 @@
     {
       "title": "Ender 3 S1 Plus (e3s1p) Klipper Config | Minimal 3DP",
       "url": "/projects/3d-printers/ender-3-s1-plus/e3s1p-klipper-config/",
-      "views": 5
+      "views": 3
     },
     {
       "title": "Zero G Mercury One.1 Klipper Config | Minimal 3DP",
