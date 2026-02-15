@@ -3,27 +3,27 @@
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 479
+      "views": 481
     },
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 445
+      "views": 437
     },
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 422
+      "views": 425
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 224
+      "views": 229
     },
     {
       "title": "FDM Filament Finder - M3DP",
       "url": "/filament/",
-      "views": 191
+      "views": 188
     }
   ],
   "blog": [],
@@ -31,7 +31,7 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 422
+      "views": 425
     },
     {
       "title": "Brick Effect Processor - M3DP",
