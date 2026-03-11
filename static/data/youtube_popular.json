@@ -7,9 +7,20 @@
       "thumbnail": "https://i.ytimg.com/vi/2XbUvOvsWHw/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=2XbUvOvsWHw",
       "publishedAt": "2025-12-19T16:00:04Z",
-      "viewCount": 9474,
+      "viewCount": 9834,
       "likeCount": 17,
       "commentCount": 9
+    },
+    {
+      "id": "16ZUGGPG-pI",
+      "title": "OrcaSlicer v2.3.2 Beta: How to Use the New Advanced G-Code Preview",
+      "description": "Today we\u2019re diving into the OrcaSlicer v2.3.2 Beta 2 to see how the community is revolutionizing the 3D printing workflow. From a massive G-code viewer overhaul ported from PrusaSlicer to real-time vo",
+      "thumbnail": "https://i.ytimg.com/vi/16ZUGGPG-pI/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=16ZUGGPG-pI",
+      "publishedAt": "2026-03-07T17:30:00Z",
+      "viewCount": 4621,
+      "likeCount": 160,
+      "commentCount": 24
     },
     {
       "id": "LVTEGkVRSwY",
@@ -18,21 +29,10 @@
       "thumbnail": "https://i.ytimg.com/vi/LVTEGkVRSwY/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=LVTEGkVRSwY",
       "publishedAt": "2025-12-29T16:00:30Z",
-      "viewCount": 4249,
-      "likeCount": 73,
+      "viewCount": 4295,
+      "likeCount": 74,
       "commentCount": 60
-    },
-    {
-      "id": "rEeuBjrdYJM",
-      "title": "Creality K2 Plus Upgrade Series: Swapping the Stock Hotend for Micro Swiss",
-      "description": "Creality K2 Plus Upgrade Series: Swapping the Stock Hotend for Micro Swiss\n\nIs the Micro Swiss FlowTech the essential upgrade for your Creality K2 Plus? Today, we are swapping out the stock hotend for",
-      "thumbnail": "https://i.ytimg.com/vi/rEeuBjrdYJM/maxresdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=rEeuBjrdYJM",
-      "publishedAt": "2025-11-28T16:01:32Z",
-      "viewCount": 3945,
-      "likeCount": 59,
-      "commentCount": 28
     }
   ],
-  "fetched_at": "2026-03-10T04:50:37Z"
+  "fetched_at": "2026-03-11T04:51:50Z"
 }
