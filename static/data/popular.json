@@ -3,27 +3,27 @@
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 419
+      "views": 420
     },
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 321
+      "views": 325
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 199
-    },
-    {
-      "title": "Brick Effect Processor - M3DP",
-      "url": "/tools/bricklayers/",
-      "views": 134
+      "views": 202
     },
     {
       "title": "Minimal 3DP Platform",
       "url": "/calc/shrinkage",
       "views": 133
+    },
+    {
+      "title": "Brick Effect Processor - M3DP",
+      "url": "/tools/bricklayers/",
+      "views": 132
     }
   ],
   "blog": [],
@@ -31,7 +31,7 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 134
+      "views": 132
     },
     {
       "title": "Filament Deals | Minimal 3DP",
