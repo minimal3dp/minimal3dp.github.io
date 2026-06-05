@@ -3,27 +3,27 @@
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 349
+      "views": 343
     },
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 265
+      "views": 278
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 206
+      "views": 203
     },
     {
       "title": "FDM Filament Finder - M3DP",
       "url": "/filament/",
-      "views": 93
+      "views": 101
     },
     {
       "title": "Minimal 3DP Platform",
       "url": "/calc/shrinkage",
-      "views": 84
+      "views": 80
     }
   ],
   "blog": [],
@@ -31,12 +31,12 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 76
+      "views": 74
     },
     {
       "title": "Filament Deals | Minimal 3DP",
       "url": "/tools/deals/",
-      "views": 21
+      "views": 20
     },
     {
       "title": "Procesor cihlov\u00fdch efekt\u016f - M3DP",
