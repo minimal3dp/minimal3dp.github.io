@@ -1,24 +1,13 @@
 {
   "videos": [
     {
-      "id": "2XbUvOvsWHw",
-      "title": "Tripo 3.0 AI: I 3D Printed My Heart with AI (Tripo 3.0 Review)",
-      "description": "Tripo 3.0 - AI for 3D Printing and Modeling. A powerful tool for using AI in 3D printing for hobbyists and professionals.\n\nA big thanks to Tripo 3.0 for sponsoring this video! As always, all opinions ",
-      "thumbnail": "https://i.ytimg.com/vi/2XbUvOvsWHw/maxresdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=2XbUvOvsWHw",
-      "publishedAt": "2025-12-19T16:00:04Z",
-      "viewCount": 14280,
-      "likeCount": 29,
-      "commentCount": 9
-    },
-    {
       "id": "16ZUGGPG-pI",
       "title": "OrcaSlicer v2.3.2 Beta: How to Use the New Advanced G-Code Preview",
       "description": "Today we\u2019re diving into the OrcaSlicer v2.3.2 Beta 2 to see how the community is revolutionizing the 3D printing workflow. From a massive G-code viewer overhaul ported from PrusaSlicer to real-time vo",
       "thumbnail": "https://i.ytimg.com/vi/16ZUGGPG-pI/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=16ZUGGPG-pI",
       "publishedAt": "2026-03-07T17:30:00Z",
-      "viewCount": 7842,
+      "viewCount": 7851,
       "likeCount": 230,
       "commentCount": 27
     },
@@ -29,10 +18,21 @@
       "thumbnail": "https://i.ytimg.com/vi/LVTEGkVRSwY/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=LVTEGkVRSwY",
       "publishedAt": "2025-12-29T16:00:30Z",
-      "viewCount": 7509,
+      "viewCount": 7558,
       "likeCount": 98,
       "commentCount": 80
+    },
+    {
+      "id": "JYgZm96gIHg",
+      "title": "OrcaSlicer 2.3.2: Better Bridges & Flawless Outer Walls on my Creality K2 Plus",
+      "description": "Fixing the \"Ripple Effect\" & Sagging Bridges | OrcaSlicer 2.3.2 Deep Dive (Part 2)\n\nAre your prints still looking \"3D printed\" even after tuning everything? In part 2 of our OrcaSlicer 2.3.2 series, w",
+      "thumbnail": "https://i.ytimg.com/vi/JYgZm96gIHg/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=JYgZm96gIHg",
+      "publishedAt": "2026-03-15T16:00:25Z",
+      "viewCount": 5307,
+      "likeCount": 163,
+      "commentCount": 19
     }
   ],
-  "fetched_at": "2026-06-17T08:34:34Z"
+  "fetched_at": "2026-06-19T08:38:43Z"
 }
