@@ -3,17 +3,17 @@
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 217
+      "views": 213
     },
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 166
+      "views": 164
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 122
+      "views": 120
     },
     {
       "title": "Rotation Distance Calculator - M3DP-UIP",
@@ -23,7 +23,7 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 63
+      "views": 64
     }
   ],
   "blog": [],
@@ -31,12 +31,12 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 63
+      "views": 64
     },
     {
       "title": "Filament Deals | Minimal 3DP",
       "url": "/tools/deals/",
-      "views": 17
+      "views": 18
     }
   ],
   "projects": []
