@@ -8,22 +8,22 @@
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 193
+      "views": 194
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 112
+      "views": 113
     },
     {
       "title": "FDM Filament Finder - M3DP",
       "url": "/filament/",
-      "views": 73
+      "views": 74
     },
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 69
+      "views": 72
     }
   ],
   "blog": [],
@@ -31,12 +31,12 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 69
+      "views": 72
     },
     {
       "title": "Filament Deals | Minimal 3DP",
       "url": "/tools/deals/",
-      "views": 18
+      "views": 19
     }
   ],
   "projects": []
