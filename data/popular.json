@@ -3,21 +3,21 @@
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 326
+      "views": 329
     },
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 265
-    },
-    {
-      "title": "FDM Cost Calculator - Minimal 3DP",
-      "url": "/fdm-cost/",
-      "views": 112
+      "views": 260
     },
     {
       "title": "Rotation Distance Calculator - M3DP-UIP",
       "url": "/calc/rotation-distance",
+      "views": 112
+    },
+    {
+      "title": "FDM Cost Calculator - Minimal 3DP",
+      "url": "/fdm-cost/",
       "views": 110
     },
     {
@@ -36,7 +36,7 @@
     {
       "title": "Filament Deals | Minimal 3DP",
       "url": "/tools/deals/",
-      "views": 24
+      "views": 25
     }
   ],
   "projects": []
