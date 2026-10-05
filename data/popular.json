@@ -8,22 +8,22 @@
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 227
+      "views": 219
     },
     {
       "title": "FDM Filament Finder - M3DP",
       "url": "/filament/",
-      "views": 108
+      "views": 112
     },
     {
       "title": "FDM Cost Calculator - Minimal 3DP",
       "url": "/fdm-cost/",
-      "views": 100
+      "views": 103
     },
     {
       "title": "Minimal 3DP Platform",
       "url": "/calc/shrinkage",
-      "views": 92
+      "views": 93
     }
   ],
   "blog": [],
@@ -36,7 +36,7 @@
     {
       "title": "Filament Deals | Minimal 3DP",
       "url": "/tools/deals/",
-      "views": 27
+      "views": 28
     }
   ],
   "projects": []
