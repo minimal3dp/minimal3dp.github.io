@@ -1,24 +1,13 @@
 {
   "videos": [
     {
-      "id": "YkdYEYkFM0Y",
-      "title": "Creality K2 Plus Upgrades: How I Finally Fixed Adaptive Bed Leveling",
-      "description": "Creality K2 Plus Upgrades & Optimization Guide\n\nK2 Powerups Repo: https://github.com/minimal3dp/k2_powerups\n\nThe Creality K2 Plus is a powerhouse, but it has a massive bottleneck: waiting 45 minutes f",
-      "thumbnail": "https://i.ytimg.com/vi/YkdYEYkFM0Y/maxresdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=YkdYEYkFM0Y",
-      "publishedAt": "2026-05-04T14:01:00Z",
-      "viewCount": 8149,
-      "likeCount": 108,
-      "commentCount": 27
-    },
-    {
       "id": "SBB21vMz26o",
       "title": "OrcaSlicer 2.4 Officially Released! Testing the Massive Bridging Overhaul",
       "description": "60% Stronger 3D Prints? Testing OrcaSlicer 2.4's NASA Gyroid Infill & Bridging Fixes!\n\nOrcaSlicer 2.4 is officially out of beta, and the structural updates are massive! Today, we are deep-diving into ",
       "thumbnail": "https://i.ytimg.com/vi/SBB21vMz26o/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=SBB21vMz26o",
       "publishedAt": "2026-06-22T14:00:10Z",
-      "viewCount": 6000,
+      "viewCount": 6034,
       "likeCount": 102,
       "commentCount": 22
     },
@@ -29,10 +18,21 @@
       "thumbnail": "https://i.ytimg.com/vi/ufhGULdVIC0/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ufhGULdVIC0",
       "publishedAt": "2026-06-14T18:00:30Z",
-      "viewCount": 3605,
+      "viewCount": 3622,
       "likeCount": 78,
       "commentCount": 18
+    },
+    {
+      "id": "UuOqcF9IvYE",
+      "title": "Blobs on Every Corner? Fix It With OrcaSlicer Pressure Advance",
+      "description": "OrcaSlicer Calibration Masterclass Part 3: Fix Corner Blobbing & Gaps: OrcaSlicer Pressure Advance Calibration\n\nPressure Advance is the fix for blobby corners and gapped lines in OrcaSlicer \u2014 here's h",
+      "thumbnail": "https://i.ytimg.com/vi/UuOqcF9IvYE/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=UuOqcF9IvYE",
+      "publishedAt": "2026-08-09T15:00:33Z",
+      "viewCount": 2713,
+      "likeCount": 42,
+      "commentCount": 8
     }
   ],
-  "fetched_at": "2026-10-31T09:31:40Z"
+  "fetched_at": "2026-11-01T10:21:54Z"
 }
