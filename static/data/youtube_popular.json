@@ -7,7 +7,7 @@
       "thumbnail": "https://i.ytimg.com/vi/SBB21vMz26o/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=SBB21vMz26o",
       "publishedAt": "2026-06-22T14:00:10Z",
-      "viewCount": 6261,
+      "viewCount": 6278,
       "likeCount": 103,
       "commentCount": 22
     },
@@ -18,21 +18,21 @@
       "thumbnail": "https://i.ytimg.com/vi/ufhGULdVIC0/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ufhGULdVIC0",
       "publishedAt": "2026-06-14T18:00:30Z",
-      "viewCount": 3742,
+      "viewCount": 3755,
       "likeCount": 79,
       "commentCount": 18
     },
     {
-      "id": "UuOqcF9IvYE",
-      "title": "Blobs on Every Corner? Fix It With OrcaSlicer Pressure Advance",
-      "description": "OrcaSlicer Calibration Masterclass Part 3: Fix Corner Blobbing & Gaps: OrcaSlicer Pressure Advance Calibration\n\nPressure Advance is the fix for blobby corners and gapped lines in OrcaSlicer \u2014 here's h",
-      "thumbnail": "https://i.ytimg.com/vi/UuOqcF9IvYE/maxresdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=UuOqcF9IvYE",
-      "publishedAt": "2026-08-09T15:00:33Z",
-      "viewCount": 2870,
-      "likeCount": 42,
-      "commentCount": 8
+      "id": "mDyOn0BTfzI",
+      "title": "OrcaSlicer 2.5 Alpha: Real 3D Textures From the Slicer",
+      "description": "This block's texture wasn't modeled. OrcaSlicer 2.5 added it in the slicer. Here's a first look at the biggest Orca Slicer release yet: Texture Displacement, Precise Seam, wipe inward, color mixing, p",
+      "thumbnail": "https://i.ytimg.com/vi/mDyOn0BTfzI/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=mDyOn0BTfzI",
+      "publishedAt": "2026-10-31T19:06:48Z",
+      "viewCount": 2888,
+      "likeCount": 27,
+      "commentCount": 1
     }
   ],
-  "fetched_at": "2026-11-12T10:57:46Z"
+  "fetched_at": "2026-11-13T10:52:05Z"
 }
