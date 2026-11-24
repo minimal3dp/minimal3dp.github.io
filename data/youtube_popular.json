@@ -7,20 +7,9 @@
       "thumbnail": "https://i.ytimg.com/vi/SBB21vMz26o/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=SBB21vMz26o",
       "publishedAt": "2026-06-22T14:00:10Z",
-      "viewCount": 6423,
+      "viewCount": 6437,
       "likeCount": 103,
       "commentCount": 22
-    },
-    {
-      "id": "ufhGULdVIC0",
-      "title": "OrcaSlicer V2.4 Beta: The K2 Plus Fix (CFS Sync, ZAA & Flow)",
-      "description": "OrcaSlicer 2.4 Beta: K2 Plus CFS Sync & Fixing Stair-Stepped Prints!\n\nIn this video, I take a look at the massive changes in the OrcaSlicer 2.4 Beta. We dive deep into setting up the highly anticipate",
-      "thumbnail": "https://i.ytimg.com/vi/ufhGULdVIC0/maxresdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=ufhGULdVIC0",
-      "publishedAt": "2026-06-14T18:00:30Z",
-      "viewCount": 3852,
-      "likeCount": 79,
-      "commentCount": 18
     },
     {
       "id": "Saq1DAMbo60",
@@ -29,10 +18,21 @@
       "thumbnail": "https://i.ytimg.com/vi/Saq1DAMbo60/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Saq1DAMbo60",
       "publishedAt": "2026-11-15T18:00:28Z",
-      "viewCount": 3851,
+      "viewCount": 3914,
       "likeCount": 73,
       "commentCount": 9
+    },
+    {
+      "id": "ufhGULdVIC0",
+      "title": "OrcaSlicer V2.4 Beta: The K2 Plus Fix (CFS Sync, ZAA & Flow)",
+      "description": "OrcaSlicer 2.4 Beta: K2 Plus CFS Sync & Fixing Stair-Stepped Prints!\n\nIn this video, I take a look at the massive changes in the OrcaSlicer 2.4 Beta. We dive deep into setting up the highly anticipate",
+      "thumbnail": "https://i.ytimg.com/vi/ufhGULdVIC0/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=ufhGULdVIC0",
+      "publishedAt": "2026-06-14T18:00:30Z",
+      "viewCount": 3856,
+      "likeCount": 79,
+      "commentCount": 18
     }
   ],
-  "fetched_at": "2026-11-23T12:22:12Z"
+  "fetched_at": "2026-11-24T13:34:10Z"
 }
