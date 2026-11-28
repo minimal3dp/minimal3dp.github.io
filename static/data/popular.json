@@ -3,27 +3,27 @@
     {
       "title": "Extrusion Rate Smoothing - M3DP-UIP",
       "url": "/calc/extrusion-rate-smoothing",
-      "views": 1083
+      "views": 1084
     },
     {
       "title": "Calculators - M3DP",
       "url": "/calc/",
-      "views": 262
+      "views": 265
     },
     {
       "title": "Settings Assistant",
       "url": "/settings/",
-      "views": 211
+      "views": 227
     },
     {
       "title": "FDM Filament Finder - M3DP",
       "url": "/filament/",
-      "views": 116
+      "views": 121
     },
     {
       "title": "Minimal 3DP Ecosystem | Home",
       "url": "/",
-      "views": 102
+      "views": 105
     }
   ],
   "blog": [
@@ -37,12 +37,12 @@
     {
       "title": "Brick Effect Processor - M3DP",
       "url": "/tools/bricklayers/",
-      "views": 79
+      "views": 69
     },
     {
       "title": "Filament Deals | Minimal 3DP",
       "url": "/tools/deals/",
-      "views": 41
+      "views": 43
     }
   ],
   "projects": []
